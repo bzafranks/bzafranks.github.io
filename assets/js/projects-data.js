@@ -38,8 +38,8 @@ window.PORTFOLIO_PROJECTS = [
     subtitle: "Adaptive, learner-tailored instruction",
     pillar: "id",
     grade: "Grade 7",
-    status: "planned",
-    url: "",
+    status: "done",
+    url: "projects/grade7-ai/index.html",
     icon: "🤖",
     tags: ["AI", "Personalized Learning", "ELA", "Middle School"],
     summary: "Demonstrates AI-enhanced personalization: adaptive pathways, intelligent feedback, and data-informed recommendations tailored to each learner."

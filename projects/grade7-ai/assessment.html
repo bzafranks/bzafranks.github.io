@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Assessment System — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="An adaptive assessment system for Grade 7 ELA: diagnostics, adaptive quizzes, mastery checks, performance tasks, rubrics, and self/peer assessment.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Adaptive Assessment System</p>
+        <h1>Assessment That Adjusts to the Learner</h1>
+        <p class="lead">Assessments aren't just measured — they respond. Difficulty adapts, results route students to the right path, and every score feeds the analytics that guide instruction.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">The Assessment Stack</p><h2>One Coherent System</h2></div>
+        <div class="grid grid-3">
+          <div class="card feature" data-fade><span class="icon">🩺</span><h3>Diagnostic</h3><p>Establishes each learner's starting point and seeds the learner profile.</p></div>
+          <div class="card feature" data-fade><span class="icon">🔄</span><h3>Adaptive Quizzes</h3><p>Item difficulty adjusts to responses — fewer items, sharper signal.</p></div>
+          <div class="card feature" data-fade><span class="icon">✅</span><h3>Mastery Checks</h3><p>Gate progression: master it, then advance; if not, route to support.</p></div>
+          <div class="card feature" data-fade><span class="icon">🛠️</span><h3>Performance Tasks</h3><p>Authentic application scored with rubrics (the real evidence of learning).</p></div>
+          <div class="card feature" data-fade><span class="icon">🪞</span><h3>Self-Assessment</h3><p>Metacognitive checklists build ownership.</p></div>
+          <div class="card feature" data-fade><span class="icon">🤝</span><h3>Peer Feedback</h3><p>Structured "glow &amp; grow" protocols.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADAPTIVE DEMO -->
+    <section class="section section-alt">
+      <div class="container narrow">
+        <div class="section-head left"><p class="eyebrow">Try It</p><h2>An Adaptive Mastery Check</h2><p class="muted">Answer all three — the system routes you to the right next step (the same engine used in lessons).</p></div>
+        <div data-adaptive>
+          <div class="quiz-q" data-answer="1"><p class="q-text">1. "Noah double-checked his friend's math homework before the bus." You can infer Noah is…</p><div class="quiz-options"><button class="quiz-option">hungry</button><button class="quiz-option">helpful</button><button class="quiz-option">late</button></div></div>
+          <div class="quiz-q" data-answer="2"><p class="q-text">2. A claim in an argument is…</p><div class="quiz-options"><button class="quiz-option">a fact everyone agrees on</button><button class="quiz-option">a question</button><button class="quiz-option">a position you defend with evidence</button></div></div>
+          <div class="quiz-q" data-answer="0"><p class="q-text">3. The strongest evidence for a theme comes from…</p><div class="quiz-options"><button class="quiz-option">what characters learn and how they change</button><button class="quiz-option">the book's length</button><button class="quiz-option">the cover art</button></div></div>
+          <div class="adaptive-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUBRICS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Rubrics</p><h2>Clear, Standards-Based Scoring</h2></div>
+        <h3>Reading Analysis Rubric</h3>
+        <div class="table-wrap"><table><thead><tr><th>Criterion</th><th>4 Exceeds</th><th>3 Meets</th><th>2 Approaching</th><th>1 Beginning</th></tr></thead>
+          <tbody>
+            <tr><td>Inference</td><td>Insightful &amp; fully supported</td><td>Reasonable &amp; supported</td><td>Partly supported</td><td>Unsupported</td></tr>
+            <tr><td>Evidence</td><td>Precise, well-chosen quotes</td><td>Relevant evidence</td><td>Vague evidence</td><td>Missing</td></tr>
+            <tr><td>Analysis</td><td>Explains how &amp; why</td><td>Mostly clear</td><td>Unclear links</td><td>Retells only</td></tr>
+          </tbody></table></div>
+        <h3 style="margin-top:1.5rem;">Argument Writing Rubric</h3>
+        <div class="table-wrap"><table><thead><tr><th>Criterion</th><th>4</th><th>3</th><th>2</th><th>1</th></tr></thead>
+          <tbody>
+            <tr><td>Claim</td><td>Precise &amp; arguable</td><td>Clear</td><td>Vague</td><td>Missing</td></tr>
+            <tr><td>Evidence &amp; reasoning</td><td>Strong, well-linked</td><td>Adequate</td><td>Weak</td><td>Unsupported</td></tr>
+            <tr><td>Counterclaim</td><td>Addressed &amp; rebutted</td><td>Acknowledged</td><td>Attempted</td><td>Absent</td></tr>
+            <tr><td>Conventions</td><td>Polished</td><td>Few errors</td><td>Some errors</td><td>Frequent</td></tr>
+          </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section section-warm">
+      <div class="container">
+        <div class="grid grid-3">
+          <div class="card" data-fade><h3>📚 Vocabulary Assessment</h3><p class="muted">Context-based items adapt to show depth, not just recall.</p></div>
+          <div class="card" data-fade><h3>🔤 Grammar Assessment</h3><p class="muted">Embedded in authentic writing, with targeted mini-lessons on miss.</p></div>
+          <div class="card" data-fade><h3>🗂️ Project Assessment</h3><p class="muted">Unit performance tasks scored with the rubrics above.</p></div>
+        </div>
+        <div class="btn-row center" style="margin-top:1.5rem;"><a class="btn" href="analytics.html">See How Results Become Analytics →</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="analytics.html">Analytics</a></li><li><a href="learning-paths.html">Learning Paths</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

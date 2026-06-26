@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A personalized Grade 7 student dashboard: learning path, progress, mastery, goals, achievements, AI recommendations, and reflection.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Student Dashboard <span class="muted">· illustrative sample data</span></p>
+        <h1>Hi, Maya! 👋 <span class="streak">🔥 7-day streak</span></h1>
+        <p class="lead">You're on <strong>Path B · On-Grade</strong> in Unit 1. Here's your learning at a glance.</p>
+
+        <!-- METRICS -->
+        <div class="dash-grid" style="margin:1.5rem 0;">
+          <div class="metric"><div class="m-label">Overall Mastery</div><div class="m-num">82%</div><div class="m-trend up">▲ 6% this week</div></div>
+          <div class="metric teal"><div class="m-label">Lessons Completed</div><div class="m-num">24</div><div class="m-trend up">▲ 3 this week</div></div>
+          <div class="metric plum"><div class="m-label">Badges Earned</div><div class="m-num">7</div><div class="m-trend">2 to next 🎯</div></div>
+          <div class="metric leaf"><div class="m-label">Goals Met</div><div class="m-num">5 / 6</div><div class="m-trend up">on track</div></div>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- MASTERY DONUT + skills -->
+          <div class="chart-card">
+            <h4>Skill Mastery</h4>
+            <div class="donut" style="--val:82;"><div class="hole">82%</div></div>
+            <div style="margin-top:1rem;">
+              <p style="margin:0.2rem 0;">Reading: Inference <span class="muted">— 78%</span></p><div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+              <p style="margin:0.6rem 0 0.2rem;">Writing: Argument <span class="muted">— 71%</span></p><div class="progress-bar"><div class="progress-fill" style="width:71%"></div></div>
+              <p style="margin:0.6rem 0 0.2rem;">Vocabulary <span class="muted">— 90%</span></p><div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+          <!-- RECOMMENDED -->
+          <div class="chart-card">
+            <h4>🤖 Recommended for You</h4>
+            <div class="rec"><span class="rec-ico">📄</span><div class="rec-body"><b>Inference practice passage</b><div class="rec-why">Nudges your weakest skill (78%) toward green.</div></div></div>
+            <div class="rec"><span class="rec-ico">🎬</span><div class="rec-body"><b>Mini-lesson: Counterclaims</b><div class="rec-why">Prepares you for Unit 4 writing.</div></div></div>
+            <div class="rec"><span class="rec-ico">🚀</span><div class="rec-body"><b>Vocabulary challenge</b><div class="rec-why">You're strong here — ready to level up.</div></div></div>
+          </div>
+        </div>
+
+        <!-- GOALS (real, saved) -->
+        <div class="progress-tracker" data-progress="g7-student-goals" style="margin-top:1.5rem;">
+          <h3>🎯 Today's Goals</h3>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p class="progress-label"></p>
+          <ul class="progress-checklist">
+            <li><label><input type="checkbox" value="lesson"> Finish Lesson 1.1</label></li>
+            <li><label><input type="checkbox" value="practice"> Inference practice (10 min)</label></li>
+            <li><label><input type="checkbox" value="vocab"> 5 vocabulary cards</label></li>
+            <li><label><input type="checkbox" value="reflect"> Write today's reflection</label></li>
+          </ul>
+        </div>
+
+        <!-- BADGES -->
+        <div class="dashboard" style="margin-top:1.5rem;">
+          <h3>🏅 Achievements</h3>
+          <div class="badge-shelf">
+            <div class="ach-badge earned"><span class="medal">🌱</span><span class="b-name">First Lesson</span></div>
+            <div class="ach-badge earned"><span class="medal">🔥</span><span class="b-name">7-Day Streak</span></div>
+            <div class="ach-badge earned"><span class="medal">🔎</span><span class="b-name">Inference Pro</span></div>
+            <div class="ach-badge earned"><span class="medal">📚</span><span class="b-name">Word Wizard</span></div>
+            <div class="ach-badge"><span class="medal">✍️</span><span class="b-name">Essay Ace</span></div>
+            <div class="ach-badge"><span class="medal">🏆</span><span class="b-name">Unit Master</span></div>
+          </div>
+        </div>
+
+        <!-- REFLECTION JOURNAL -->
+        <div class="lesson-block" style="margin-top:1.5rem;">
+          <h3>🪞 Reflection Journal</h3>
+          <div class="reflection" data-reflection="g7-student-journal">
+            <p>What did you learn today, and what's your goal for tomorrow?</p>
+            <textarea placeholder="Your thoughts (saved on this device)..." aria-label="Reflection journal"></textarea>
+            <button class="btn small" data-save>Save entry</button>
+            <p class="save-status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <p class="muted center" style="margin-top:1.5rem;"><small>Dashboard metrics are illustrative sample data; goals and journal save live on this device.</small></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="teacher-dashboard.html">Teacher Dashboard</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

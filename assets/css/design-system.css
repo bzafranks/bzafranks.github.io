@@ -405,6 +405,87 @@ details.acc[open] > summary::after, details.module[open] > summary::after { tran
 .annotate .word { cursor: pointer; padding: 0 1px; border-radius: 3px; }
 .annotate .word.hl { background: var(--gold); color: #3a2700; }
 
+/* ============ 6b. AI, DASHBOARD & DATA-VIZ COMPONENTS (reusable) ============ */
+
+/* AI chat */
+.chat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 5px 16px var(--shadow); overflow: hidden; }
+.chat-head { background: linear-gradient(135deg, var(--plum), #5b4080); color: #fff; padding: 0.8rem 1.2rem; display: flex; align-items: center; gap: 0.6rem; font-weight: 700; }
+.chat-head .bot { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.2); display: grid; place-items: center; font-size: 1.1rem; }
+.chat-log { padding: 1rem 1.2rem; display: flex; flex-direction: column; gap: 0.7rem; max-height: 460px; overflow-y: auto; }
+.chat-msg { max-width: 82%; padding: 0.7rem 1rem; border-radius: 16px; line-height: 1.5; animation: fadeUp 0.35s ease both; }
+.chat-msg.coach { background: var(--surface-alt); color: var(--ink); border-bottom-left-radius: 4px; align-self: flex-start; }
+.chat-msg.user { background: var(--navy); color: #fff; border-bottom-right-radius: 4px; align-self: flex-end; }
+.chat-msg .who { display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.7; margin-bottom: 0.2rem; }
+.chat-suggest { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.8rem 1.2rem; border-top: 1px solid var(--border); background: var(--surface-alt); }
+.chat-chip { background: #fff; border: 1.5px solid var(--border); color: var(--navy); border-radius: 999px; padding: 0.4rem 0.9rem; font: inherit; font-size: 0.88rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.chat-chip:hover { border-color: var(--plum); color: var(--plum); }
+.chat-typing { font-style: italic; color: var(--ink-soft); }
+
+/* Dashboard metric tiles */
+.dash-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.metric { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.3rem; box-shadow: 0 5px 16px var(--shadow); border-top: 4px solid var(--gold); }
+.metric.teal { border-top-color: var(--teal); }
+.metric.plum { border-top-color: var(--plum); }
+.metric.leaf { border-top-color: var(--success); }
+.metric .m-label { font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; }
+.metric .m-num { font-family: var(--font-head); font-size: 2.2rem; color: var(--navy); line-height: 1.1; }
+.metric .m-trend { font-size: 0.85rem; font-weight: 700; }
+.m-trend.up { color: var(--success); }
+.m-trend.down { color: var(--danger); }
+
+/* Bar chart */
+.barchart { display: flex; align-items: flex-end; gap: 0.8rem; height: 200px; padding: 1rem 0 0; }
+.barchart .bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.4rem; height: 100%; justify-content: flex-end; }
+.barchart .bar { width: 100%; max-width: 54px; background: linear-gradient(var(--teal), var(--navy)); border-radius: 6px 6px 0 0; transition: height 0.6s ease; position: relative; }
+.barchart .bar .bv { position: absolute; top: -1.3rem; left: 0; right: 0; text-align: center; font-size: 0.78rem; font-weight: 700; color: var(--navy); }
+.barchart .bar-label { font-size: 0.78rem; color: var(--ink-soft); text-align: center; }
+
+/* Donut (conic-gradient) */
+.donut { width: 150px; height: 150px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto; background: conic-gradient(var(--success) calc(var(--val) * 1%), var(--surface-alt) 0); }
+.donut .hole { width: 104px; height: 104px; background: var(--surface); border-radius: 50%; display: grid; place-items: center; font-family: var(--font-head); font-size: 1.6rem; color: var(--navy); }
+
+/* Heatmap */
+.heatmap { display: grid; gap: 4px; }
+.heatmap .hm-cell { aspect-ratio: 1; border-radius: 4px; display: grid; place-items: center; font-size: 0.72rem; color: #fff; font-weight: 700; }
+.hm-0 { background: #e9eef3; color: var(--ink-soft); } .hm-1 { background: #cfe3d6; color: #2e6b4a; }
+.hm-2 { background: #8fcca7; color: #1f5236; } .hm-3 { background: #4c9a6e; } .hm-4 { background: #2f7a52; }
+.legend { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.6rem; }
+.legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+
+/* Growth line (simple SVG-friendly wrap) */
+.chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.3rem 1.5rem; box-shadow: 0 5px 16px var(--shadow); }
+.chart-card h4 { margin-top: 0; }
+
+/* Learning path cards */
+.path-card { border-left: 6px solid var(--gold); }
+.path-card.a { border-left-color: var(--coral); }
+.path-card.b { border-left-color: var(--teal); }
+.path-card.c { border-left-color: var(--navy); }
+.path-card.d { border-left-color: var(--plum); }
+.path-card.e { border-left-color: var(--success); }
+.path-tag { font-family: var(--font-head); font-size: 1.6rem; color: var(--gold-dark); }
+
+/* Recommendation list */
+.rec { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--teal); border-radius: var(--radius-sm); padding: 0.9rem 1.1rem; margin-bottom: 0.7rem; }
+.rec .rec-ico { font-size: 1.5rem; }
+.rec .rec-body { flex: 1; }
+.rec .rec-body b { color: var(--navy); }
+.rec .rec-why { font-size: 0.85rem; color: var(--ink-soft); }
+
+/* Choice board */
+.choice-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+.choice-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; text-align: center; box-shadow: 0 4px 12px var(--shadow); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+.choice-tile:hover { transform: translateY(-3px); box-shadow: 0 10px 22px var(--shadow-lg); }
+.choice-tile .ct-ico { font-size: 2rem; display: block; margin-bottom: 0.4rem; }
+.choice-tile.selected { border-color: var(--success); background: #ecf6f0; }
+
+/* Goal / streak chips */
+.streak { display: inline-flex; align-items: center; gap: 0.4rem; background: #fdf6e7; color: var(--gold-dark); font-weight: 700; padding: 0.35rem 0.9rem; border-radius: 999px; }
+
+/* AI badge */
+.ai-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: linear-gradient(135deg, var(--plum), #5b4080); color: #fff; padding: 0.25rem 0.8rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700; }
+
 /* ============ 7. STYLE-GUIDE HELPERS ============ */
 .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; }
 .swatch { border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border); }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Analytics — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="Learning analytics for the Grade 7 AI system: progress, mastery heat maps, engagement, completion, recommendation effectiveness, and a parent portal preview.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Learning Analytics</p>
+        <h1>Turning Learning Into Insight</h1>
+        <p class="lead">Every interaction becomes data; data becomes a clear next step. These visualizations show how the system makes learning visible for teachers and leaders.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="muted center">All figures below are illustrative sample data for demonstration.</p>
+
+        <div class="grid grid-3" style="margin-top:1rem;">
+          <div class="chart-card center"><h4>Lesson Completion</h4><div class="donut" style="--val:88;"><div class="hole">88%</div></div><p class="muted">Of assigned lessons completed on time.</p></div>
+          <div class="chart-card center"><h4>Mastery Rate</h4><div class="donut" style="--val:79; background:conic-gradient(var(--teal) 79%, var(--surface-alt) 0);"><div class="hole">79%</div></div><p class="muted">Objectives at mastery (75%+).</p></div>
+          <div class="chart-card center"><h4>Recommendation Hit-Rate</h4><div class="donut" style="--val:84; background:conic-gradient(var(--plum) 84%, var(--surface-alt) 0);"><div class="hole">84%</div></div><p class="muted">AI suggestions teachers approved.</p></div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <div class="chart-card">
+            <h4>Engagement — Avg. Active Minutes / Day</h4>
+            <div class="barchart">
+              <div class="bar-col"><div class="bar" data-h="55"><span class="bv">22</span></div><div class="bar-label">Mon</div></div>
+              <div class="bar-col"><div class="bar" data-h="70"><span class="bv">28</span></div><div class="bar-label">Tue</div></div>
+              <div class="bar-col"><div class="bar" data-h="62"><span class="bv">25</span></div><div class="bar-label">Wed</div></div>
+              <div class="bar-col"><div class="bar" data-h="85"><span class="bv">34</span></div><div class="bar-label">Thu</div></div>
+              <div class="bar-col"><div class="bar" data-h="48"><span class="bv">19</span></div><div class="bar-label">Fri</div></div>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4>Skill Growth — Start vs. Now</h4>
+            <div class="barchart">
+              <div class="bar-col"><div class="bar" data-h="48" style="background:linear-gradient(var(--coral),#b14a30)"><span class="bv">48</span></div><div class="bar-label">Infer (start)</div></div>
+              <div class="bar-col"><div class="bar" data-h="78"><span class="bv">78</span></div><div class="bar-label">Infer (now)</div></div>
+              <div class="bar-col"><div class="bar" data-h="52" style="background:linear-gradient(var(--coral),#b14a30)"><span class="bv">52</span></div><div class="bar-label">Argue (start)</div></div>
+              <div class="bar-col"><div class="bar" data-h="74"><span class="bv">74</span></div><div class="bar-label">Argue (now)</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MASTERY HEATMAP (class) -->
+        <div class="chart-card" style="margin-top:1.5rem;">
+          <h4>Class Mastery Heatmap — Skills × Units</h4>
+          <div class="table-wrap">
+            <div class="heatmap" style="grid-template-columns:120px repeat(6,1fr); min-width:560px;">
+              <div></div>
+              <div class="hm-cell hm-0">U1</div><div class="hm-cell hm-0">U2</div><div class="hm-cell hm-0">U3</div><div class="hm-cell hm-0">U4</div><div class="hm-cell hm-0">U5</div><div class="hm-cell hm-0">U6</div>
+              <div class="spec-label" style="align-self:center;">Reading</div><div class="hm-cell hm-3">82</div><div class="hm-cell hm-2">70</div><div class="hm-cell hm-3">79</div><div class="hm-cell hm-2">68</div><div class="hm-cell hm-3">85</div><div class="hm-cell hm-1">58</div>
+              <div class="spec-label" style="align-self:center;">Writing</div><div class="hm-cell hm-2">71</div><div class="hm-cell hm-2">66</div><div class="hm-cell hm-3">80</div><div class="hm-cell hm-3">77</div><div class="hm-cell hm-2">69</div><div class="hm-cell hm-2">64</div>
+              <div class="spec-label" style="align-self:center;">Vocabulary</div><div class="hm-cell hm-4">91</div><div class="hm-cell hm-3">84</div><div class="hm-cell hm-3">86</div><div class="hm-cell hm-4">90</div><div class="hm-cell hm-3">82</div><div class="hm-cell hm-3">79</div>
+            </div>
+          </div>
+          <div class="legend"><span><i class="hm-1"></i> &lt;60</span><span><i class="hm-2"></i> 60–74</span><span><i class="hm-3"></i> 75–89</span><span><i class="hm-4"></i> 90+</span></div>
+          <p class="muted" style="margin-top:0.6rem;">At-a-glance: Unit 6 reading (58) is the clear priority for re-teaching.</p>
+        </div>
+
+        <div class="section-head" style="margin-top:2.5rem;"><p class="eyebrow">What Analytics Drive</p><h2>From Numbers to Next Steps</h2></div>
+        <div class="grid grid-4">
+          <div class="card compact" data-fade><span class="icon">📈</span><h4>Progress graphs</h4></div>
+          <div class="card compact" data-fade><span class="icon">🔥</span><h4>Mastery heat maps</h4></div>
+          <div class="card compact" data-fade><span class="icon">📊</span><h4>Growth charts</h4></div>
+          <div class="card compact" data-fade><span class="icon">⏱️</span><h4>Engagement &amp; time-on-task</h4></div>
+          <div class="card compact" data-fade><span class="icon">✅</span><h4>Completion rates</h4></div>
+          <div class="card compact" data-fade><span class="icon">🤖</span><h4>Recommendation effectiveness</h4></div>
+          <div class="card compact" data-fade><span class="icon">🧭</span><h4>Skill development</h4></div>
+          <div class="card compact" data-fade><span class="icon">📉</span><h4>Early-warning trends</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARENT PORTAL -->
+    <section class="section section-warm">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Parent Portal</p><h2>Families in the Loop</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <h3>📬 Weekly Summary (sample)</h3>
+            <p><strong>Maya · Grade 7 ELA</strong></p>
+            <ul class="check-list"><li>Completed 3 lessons; mastery up 6%.</li><li>Strength: vocabulary (90%).</li><li>Growing: inference (78%) — practicing this week.</li><li>🎉 Earned the "Inference Pro" badge!</li></ul>
+          </div>
+          <div class="card" data-fade>
+            <h3>🏠 Suggested Home Support</h3>
+            <ul class="arrow-list"><li><strong>Read together:</strong> pause and ask "How do you know how that character feels?"</li><li><strong>Writing:</strong> have Maya explain one opinion with two reasons at dinner.</li><li><strong>Reading suggestion:</strong> a short-story collection matched to her level.</li><li><strong>Celebrate:</strong> her 7-day learning streak!</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="teacher-dashboard.html">Teacher Dashboard</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

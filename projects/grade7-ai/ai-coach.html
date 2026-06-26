@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Learning Coach — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="Three embedded AI coaches — Learning, Writing, and Reading — that scaffold student thinking with questions and hints instead of giving answers.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">AI Coaches</p>
+        <h1>A Thinking Partner, Not an Answer Key</h1>
+        <p class="lead">Three embedded AI coaches scaffold student thinking with guiding questions, hints, and encouragement. Try them — each is interactive. Tap a prompt to see how the coach responds.</p>
+        <div class="callout warn" style="background:rgba(255,255,255,0.1);border-left-color:var(--gold);color:#eaf1f9;"><strong>Design rule:</strong> the coach <em>never simply gives the answer</em>. It builds the student's reasoning, then hands the win back to them.</div>
+      </div>
+    </section>
+
+    <!-- LEARNING COACH -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-head left"><p class="eyebrow">AI Learning Coach</p><h2>General Tutor &amp; Encourager</h2><p class="muted">Explains concepts, gives hints, asks guiding questions, suggests review or enrichment, and supports motivation.</p></div>
+        <div class="chat" data-coach="tutor">
+          <div class="chat-head"><span class="bot">🤖</span> AI Learning Coach</div>
+          <div class="chat-log"></div>
+          <div class="chat-suggest"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING COACH -->
+    <section class="section section-alt" id="writing">
+      <div class="container narrow">
+        <div class="section-head left"><p class="eyebrow">AI Writing Coach</p><h2>Plan · Draft · Revise · Reflect</h2><p class="muted">Helps with prompts, planning, organization, sentence-level revision, grammar hints, and goal-setting — without writing it for the student.</p></div>
+        <div class="chat" data-coach="writing">
+          <div class="chat-head"><span class="bot">✍️</span> AI Writing Coach</div>
+          <div class="chat-log"></div>
+          <div class="chat-suggest"></div>
+        </div>
+        <div class="grid grid-3" style="margin-top:1.5rem;">
+          <div class="card compact"><h4>Planning</h4><p class="muted">Claim, reasons, outline scaffolds.</p></div>
+          <div class="card compact"><h4>Revising</h4><p class="muted">Stronger verbs, clarity, organization checks.</p></div>
+          <div class="card compact"><h4>Reflecting</h4><p class="muted">Goal-setting and self-assessment prompts.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- READING COACH -->
+    <section class="section" id="reading">
+      <div class="container narrow">
+        <div class="section-head left"><p class="eyebrow">AI Reading Coach</p><h2>Comprehension &amp; Critical Thinking</h2><p class="muted">Supports vocabulary, annotation, summarizing, inference, theme, prediction, and question-generation.</p></div>
+        <div class="chat" data-coach="reading">
+          <div class="chat-head"><span class="bot">📖</span> AI Reading Coach</div>
+          <div class="chat-log"></div>
+          <div class="chat-suggest"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT SCAFFOLDS -->
+    <section class="section section-warm">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Under the Hood</p><h2>How the Coach Scaffolds (Not Solves)</h2></div>
+        <div class="grid grid-3">
+          <div class="card" data-fade><h3>1 · Diagnose</h3><p>Identifies what the student is really stuck on before responding.</p></div>
+          <div class="card" data-fade><h3>2 · Question</h3><p>Asks a guiding question or gives a hint that moves thinking one step.</p></div>
+          <div class="card" data-fade><h3>3 · Hand back the win</h3><p>Returns the final reasoning to the student and reinforces effort.</p></div>
+        </div>
+        <div class="callout note"><p><strong>Implementation note:</strong> in production this is powered by a large language model with a carefully engineered system prompt (Socratic, grade-appropriate, safety-filtered) plus teacher-visible logs. The demo above runs scripted responses client-side. See the <a href="implementation.html">Implementation Guide</a> for responsible-AI and data-privacy details.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="framework.html">AI Framework</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="implementation.html">Responsible AI</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

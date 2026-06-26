@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A Grade 7 teacher analytics dashboard: class overview, standards-mastery heatmap, intervention alerts, growth charts, and AI recommendations the teacher controls.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Teacher Dashboard <span class="muted">· illustrative sample data</span></p>
+        <h1>Period 3 · Grade 7 ELA</h1>
+        <p class="lead">Everything you need to act today — at a glance, with AI doing the watching so you can do the teaching. <strong>Every AI suggestion is yours to approve or override.</strong></p>
+
+        <div class="dash-grid" style="margin:1.5rem 0;">
+          <div class="metric"><div class="m-label">Class Avg. Mastery</div><div class="m-num">79%</div><div class="m-trend up">▲ 4%</div></div>
+          <div class="metric teal"><div class="m-label">On Track</div><div class="m-num">21 / 28</div><div class="m-trend up">▲ 2</div></div>
+          <div class="metric plum"><div class="m-label">Need Support</div><div class="m-num">4</div><div class="m-trend down">flagged</div></div>
+          <div class="metric leaf"><div class="m-label">Ready for Enrichment</div><div class="m-num">3</div><div class="m-trend up">+1</div></div>
+        </div>
+
+        <!-- INTERVENTION ALERTS -->
+        <div class="section-head left" style="margin:1rem 0 0.6rem;"><h2>🔔 Intervention &amp; Enrichment Alerts</h2></div>
+        <div class="callout warn"><h4>⚠️ 4 students need support — Inference (RL.7.1)</h4><p>J. Rivera, T. Brooks, S. Patel, and M. Lin scored below 60% on the latest mastery check. <strong>AI suggests:</strong> small-group re-teach + Path A. <a href="#">Approve grouping →</a> · <a href="#">Override</a></p></div>
+        <div class="callout tip"><h4>🚀 3 students ready for enrichment — Argument (W.7.1)</h4><p>A. Okafor, D. Chen, and R. Gomez mastered the objective early. <strong>AI suggests:</strong> Path D independent challenge. <a href="#">Assign →</a> · <a href="#">Override</a></p></div>
+
+        <!-- STANDARDS MASTERY HEATMAP -->
+        <div class="chart-card" style="margin-top:1.5rem;">
+          <h4>Standards Mastery Heatmap <span class="muted" style="font-weight:normal;">(sample · by student × skill)</span></h4>
+          <div class="table-wrap">
+            <div class="heatmap" style="grid-template-columns: 120px repeat(5, 1fr); min-width:540px;">
+              <div></div>
+              <div class="hm-cell hm-0">Infer</div><div class="hm-cell hm-0">Theme</div><div class="hm-cell hm-0">Argument</div><div class="hm-cell hm-0">Vocab</div><div class="hm-cell hm-0">Grammar</div>
+              <div class="spec-label" style="align-self:center;">J. Rivera</div><div class="hm-cell hm-1">58</div><div class="hm-cell hm-2">72</div><div class="hm-cell hm-1">61</div><div class="hm-cell hm-3">85</div><div class="hm-cell hm-2">70</div>
+              <div class="spec-label" style="align-self:center;">A. Okafor</div><div class="hm-cell hm-4">95</div><div class="hm-cell hm-4">92</div><div class="hm-cell hm-3">88</div><div class="hm-cell hm-4">97</div><div class="hm-cell hm-3">86</div>
+              <div class="spec-label" style="align-self:center;">M. Lin</div><div class="hm-cell hm-1">55</div><div class="hm-cell hm-1">60</div><div class="hm-cell hm-2">68</div><div class="hm-cell hm-2">74</div><div class="hm-cell hm-1">59</div>
+              <div class="spec-label" style="align-self:center;">D. Chen</div><div class="hm-cell hm-3">84</div><div class="hm-cell hm-3">87</div><div class="hm-cell hm-4">93</div><div class="hm-cell hm-3">82</div><div class="hm-cell hm-4">90</div>
+              <div class="spec-label" style="align-self:center;">S. Patel</div><div class="hm-cell hm-1">57</div><div class="hm-cell hm-2">66</div><div class="hm-cell hm-2">71</div><div class="hm-cell hm-3">80</div><div class="hm-cell hm-2">69</div>
+            </div>
+          </div>
+          <div class="legend"><span><i class="hm-1"></i> &lt;60 (support)</span><span><i class="hm-2"></i> 60–74</span><span><i class="hm-3"></i> 75–89</span><span><i class="hm-4"></i> 90+ (mastery)</span></div>
+        </div>
+
+        <!-- GROWTH CHARTS -->
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <div class="chart-card">
+            <h4>Class Growth by Strand (term)</h4>
+            <div class="barchart">
+              <div class="bar-col"><div class="bar" data-h="62"><span class="bv">62→</span></div><div class="bar-label">Reading</div></div>
+              <div class="bar-col"><div class="bar" data-h="58"><span class="bv">58→</span></div><div class="bar-label">Writing</div></div>
+              <div class="bar-col"><div class="bar" data-h="80"><span class="bv">80</span></div><div class="bar-label">Vocab</div></div>
+              <div class="bar-col"><div class="bar" data-h="70"><span class="bv">70</span></div><div class="bar-label">Grammar</div></div>
+              <div class="bar-col"><div class="bar" data-h="66"><span class="bv">66</span></div><div class="bar-label">Speaking</div></div>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4>🤖 AI Recommendations (this week)</h4>
+            <div class="rec"><span class="rec-ico">👥</span><div class="rec-body"><b>Form an inference re-teach group (4)</b><div class="rec-why">Cluster of below-60% scores on RL.7.1.</div></div></div>
+            <div class="rec"><span class="rec-ico">📈</span><div class="rec-body"><b>Advance 3 students to Path D</b><div class="rec-why">Early mastery on W.7.1.</div></div></div>
+            <div class="rec"><span class="rec-ico">⏱️</span><div class="rec-body"><b>Check in with M. Lin</b><div class="rec-why">Time-on-task dropped 40% this week.</div></div></div>
+          </div>
+        </div>
+
+        <div class="callout note" style="margin-top:1.5rem;"><p><strong>Teacher in control:</strong> AI surfaces patterns and proposes actions; you approve, adjust, or override. Nothing changes a student's path without your sign-off.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="analytics.html">Learning Analytics</a></li><li><a href="student-dashboard.html">Student Dashboard</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Learning Paths — Grade 7 ELA · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="Five adaptive learning paths and the AI recommendation engine that routes each Grade 7 student to the right support, practice, or challenge.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 7 AI Personalized Learning" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 7 · AI Personalized Learning</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="learning-paths.html">Paths</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Personalized Learning Paths</p>
+        <h1>Five Paths. One Standard. Every Learner.</h1>
+        <p class="lead">Every lesson generates multiple pathways. Students don't get a watered-down or inflated curriculum — they reach the same standards by the route that fits them now, and move between paths as mastery grows.</p>
+      </div>
+    </section>
+
+    <!-- THE FIVE PATHS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">The Pathways</p><h2>A–E, Built Into Every Lesson</h2></div>
+        <div class="stack">
+          <div class="card path-card a" data-fade><span class="path-tag">Path A</span> <span class="tag coral">Targeted Support</span><h3>Needs additional support</h3><p>Re-teaching video, heavily scaffolded practice with hints, vocabulary pre-teach, and sentence frames. Builds the foundation before independence.</p></div>
+          <div class="card path-card b" data-fade><span class="path-tag">Path B</span> <span class="tag teal">On-Grade</span><h3>On-grade level</h3><p>Core instruction, targeted practice, and peer discussion — the on-track route with timely feedback.</p></div>
+          <div class="card path-card c" data-fade><span class="path-tag">Path C</span> <span class="tag navy">Advanced</span><h3>Advanced learner</h3><p>Compressed instruction plus deeper application tasks and a harder text to stretch mastery.</p></div>
+          <div class="card path-card d" data-fade><span class="path-tag">Path D</span> <span class="tag plum">Independent</span><h3>Independent challenge</h3><p>Self-directed inquiry with a complex problem, lighter scaffolding, and a mastery checkpoint.</p></div>
+          <div class="card path-card e" data-fade><span class="path-tag">Path E</span> <span class="tag leaf">Creative</span><h3>Creative extension</h3><p>Demonstrate the skill in a new medium — podcast, comic, video, or design — for transfer and engagement.</p></div>
+        </div>
+        <div class="callout note"><h4>Movement is the point</h4><p>Paths aren't tracks. A student on Path A who masters a skill moves to B or C the same day. A student who stumbles on C drops back for a quick re-teach, then returns. The AI suggests; the student and teacher decide.</p></div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATION ENGINE DEMO -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">AI Recommendation Engine</p><h2>Try It: How Routing Works</h2><p class="muted">Pick a student's most recent mastery-check result and watch the engine recommend a path and resources.</p></div>
+        <div class="grid grid-2" data-recommender>
+          <div>
+            <p style="font-weight:700;">Most recent mastery check:</p>
+            <div class="btn-row">
+              <button class="btn ghost" data-score="low">Below 60%</button>
+              <button class="btn ghost" data-score="mid">60–79%</button>
+              <button class="btn ghost" data-score="high">80–89%</button>
+              <button class="btn ghost" data-score="top">90–100%</button>
+            </div>
+            <div class="callout" style="margin-top:1.2rem;">
+              <h4>The logic (simplified)</h4>
+<pre><code>if score &lt; 60:   → Path A  (re-teach + scaffold)
+elif score &lt; 80: → Path B  (targeted practice)
+elif score &lt; 90: → Path C  (application)
+else:            → Path D/E (challenge + create)
+# Always overridable by the teacher.</code></pre>
+            </div>
+          </div>
+          <div class="card rec-output"><p class="muted">👈 Choose a score to see the AI's recommendation.</p></div>
+        </div>
+        <p class="muted center"><small>Demonstration logic runs in your browser — no data leaves this page.</small></p>
+      </div>
+    </section>
+
+    <!-- WHAT THE ENGINE RECOMMENDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Beyond Paths</p><h2>What the Engine Can Recommend</h2></div>
+        <div class="grid grid-4">
+          <div class="card compact" data-fade><span class="icon">🎬</span><h4>Review lessons</h4></div>
+          <div class="card compact" data-fade><span class="icon">🧩</span><h4>Practice activities</h4></div>
+          <div class="card compact" data-fade><span class="icon">📺</span><h4>Videos</h4></div>
+          <div class="card compact" data-fade><span class="icon">🎮</span><h4>Interactive games</h4></div>
+          <div class="card compact" data-fade><span class="icon">📄</span><h4>Reading passages</h4></div>
+          <div class="card compact" data-fade><span class="icon">✍️</span><h4>Writing activities</h4></div>
+          <div class="card compact" data-fade><span class="icon">🧠</span><h4>Vocabulary practice</h4></div>
+          <div class="card compact" data-fade><span class="icon">🚀</span><h4>Enrichment &amp; intervention</h4></div>
+        </div>
+        <div class="btn-row center" style="margin-top:2rem;"><a class="btn" href="lessons.html">See a Lesson with All 5 Paths →</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 7 ELA · AI Personalized Learning</h4><p style="color:#c9d6e6;">A personalized learning ecosystem that adapts to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="framework.html">AI Framework</a></li><li><a href="ai-coach.html">AI Coach</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · AI features are simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>
