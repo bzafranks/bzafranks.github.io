@@ -13,10 +13,11 @@
 
 **Innovative Learning Solutions for Schools, Districts, Ministries of Education, and EdTech Organizations.**
 
-The professional portfolio of **Dr. Barbara Z. Franks**, President & CEO of **D.R.E.A.M.
-Education Solutions** — a growing collection of complete instructional-design and instructional-
-leadership solutions, all built on one shared design system so the whole portfolio feels like a
-single premium educational platform.
+The **personal professional portfolio of Dr. Barbara Z. Franks** — educator, instructional
+designer, curriculum developer, and academic leader (President & CEO of D.R.E.A.M. Education
+Solutions, a separate organization with its own website). A growing collection of complete
+instructional-design and instructional-leadership solutions, all built on one shared design
+system so the whole portfolio feels like a single premium educational platform.
 
 ---
 

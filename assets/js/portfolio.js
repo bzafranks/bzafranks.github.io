@@ -60,7 +60,7 @@ function initPortfolioRibbon() {
   ribbon.className = "pf-ribbon";
   ribbon.innerHTML =
     '<div class="container">' +
-      '<a href="' + root + 'index.html">← D.R.E.A.M. · Curriculum Innovation Portfolio</a>' +
+      '<a href="' + root + 'index.html">← Dr. Barbara Z. Franks · Curriculum Innovation Portfolio</a>' +
       '<span class="crumbs">Portfolio / <strong>' + name + '</strong></span>' +
     '</div>';
   body.insertBefore(ribbon, body.firstChild);
@@ -401,7 +401,7 @@ function initTranscriptDownloads() {
       var player = document.querySelector(btn.getAttribute("data-download-transcript"));
       if (!player) return;
       var title = btn.getAttribute("data-title") || "Lesson";
-      var lines = [title + " — Narration Transcript", "D.R.E.A.M. Education Solutions", "==================================================", ""];
+      var lines = [title + " — Narration Transcript", "Dr. Barbara Z. Franks · Curriculum Innovation Portfolio", "==================================================", ""];
       player.querySelectorAll(".video-slide").forEach(function (s, i) {
         var st = s.querySelector("h3") ? s.querySelector("h3").textContent : "Slide " + (i + 1);
         lines.push("[Slide " + (i + 1) + "] " + st); lines.push(s.getAttribute("data-narration") || ""); lines.push("");
