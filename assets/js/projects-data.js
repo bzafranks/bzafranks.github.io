@@ -58,15 +58,15 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     id: "bahamas-udl",
-    title: "Bahamian Curriculum — Universal Design for Learning",
-    subtitle: "Inclusive by design",
+    title: "Grade 10 Biology — Universal Design for Learning",
+    subtitle: "Making the Bahamas curriculum accessible to every learner",
     pillar: "id",
-    grade: "Bahamas",
-    status: "planned",
-    url: "",
-    icon: "🌈",
-    tags: ["UDL", "Inclusion", "Accessibility", "National Curriculum"],
-    summary: "An inclusive instructional design model applying UDL so every learner — across abilities, languages, and needs — can access rigorous content."
+    grade: "Bahamas · Gr 10",
+    status: "done",
+    url: "projects/grade10-bio-udl/index.html",
+    icon: "🧬",
+    tags: ["UDL", "Inclusion", "Accessibility", "Biology", "Bahamas National Curriculum", "Virtual Lab"],
+    summary: "Transforms the official Bahamas Grade 10 Biology curriculum into an inclusive digital system using Universal Design for Learning — multiple means of engagement, representation, and expression, a virtual lab, and a built-in accessibility toolbar."
   },
   {
     id: "bahamas-data",

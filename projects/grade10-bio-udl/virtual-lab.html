@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Laboratory — Grade 10 Biology UDL · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A virtual biology laboratory: virtual microscope, enzyme-activity simulation, virtual field study, lab safety, and scientific investigation — accessible to all learners.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 10 Biology · UDL" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 10 Biology · UDL</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="udl-framework.html">UDL Framework</a></li><li><a href="curriculum.html">Curriculum</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="virtual-lab.html">Virtual Lab</a></li><li><a href="teacher.html">Teacher</a></li><li><a href="student.html">Student</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Virtual Laboratory</p>
+        <h1>Do the Science — Anywhere, by Anyone</h1>
+        <p class="lead">Hands-on biology without barriers: a virtual microscope, simulations, and field studies that work on any device, support assistive technology, and never require costly equipment.</p>
+      </div>
+    </section>
+
+    <!-- LAB SAFETY -->
+    <section class="section"><div class="container">
+      <div class="callout warn"><h4>🥽 Lab Safety First</h4><p>Before any investigation: follow instructions, handle equipment carefully, wash hands, never taste specimens, and report spills. These virtual labs also build the safe habits used in a physical lab.</p></div>
+    </div></section>
+
+    <!-- VIRTUAL MICROSCOPE -->
+    <section class="section section-alt"><div class="container">
+      <div class="section-head"><p class="eyebrow">Station 1 · Cell Biology</p><h2>🔬 Virtual Microscope</h2><p class="muted">Aligned to the <em>Cells</em> unit: observe plant &amp; animal cell structures under low and high power.</p></div>
+      <div class="microscope" data-microscope>
+        <div class="scope-view"><span class="scope-cell">🌿</span></div>
+        <div class="scope-controls" style="display:flex;gap:0.6rem;justify-content:center;margin-top:0.8rem;">
+          <button class="btn ghost small" data-power="1">Low power ×100</button>
+          <button class="btn ghost small" data-power="2">High power ×400</button>
+        </div>
+        <p class="scope-readout"></p>
+        <div class="scope-parts">
+          <button class="scope-part" data-power="1" data-desc="The outer boundary controlling what enters and leaves the cell. In all cells.">Cell membrane</button>
+          <button class="scope-part" data-power="1" data-desc="Controls the cell's activities; contains the genetic material.">Nucleus</button>
+          <button class="scope-part" data-power="1" data-desc="Rigid outer layer found ONLY in plant cells — support &amp; shape.">Cell wall (plant)</button>
+          <button class="scope-part" data-power="2" data-desc="Site of respiration — releases energy. Active cells have many.">Mitochondria</button>
+          <button class="scope-part" data-power="2" data-desc="Green organelles found ONLY in plant cells; do photosynthesis.">Chloroplast (plant)</button>
+          <button class="scope-part" data-power="2" data-desc="Make proteins; found on the endoplasmic reticulum.">Ribosomes / ER</button>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- ENZYME SIM -->
+    <section class="section" id="enzyme"><div class="container narrow">
+      <div class="section-head left"><p class="eyebrow">Station 2 · Cell Biology</p><h2>🧪 Enzyme Activity Simulation</h2><p class="muted">Aligned to <em>Activity of Enzymes in Cells</em>: test how temperature affects reaction rate. Form a hypothesis, then drag the slider.</p></div>
+      <div class="card" data-enzyme-sim>
+        <p><strong>Hypothesis prompt:</strong> at what temperature will the enzyme work fastest? Predict, then test.</p>
+        <label for="enzT"><strong>Temperature: <span class="enz-temp">20</span>°C</strong></label>
+        <input id="enzT" type="range" class="lab-range" min="0" max="80" value="20" aria-label="Temperature in degrees Celsius">
+        <div class="sim-bar-track"><div class="sim-bar-fill"></div></div>
+        <p class="sim-readout enz-rate"></p>
+        <p class="muted"><small>Notice: rate rises to a peak near 37°C (body temperature), then falls sharply as the enzyme <strong>denatures</strong> above ~50°C — and does not recover.</small></p>
+      </div>
+    </div></section>
+
+    <!-- VIRTUAL FIELD STUDY -->
+    <section class="section section-alt"><div class="container">
+      <div class="section-head"><p class="eyebrow">Station 3 · Environmental Biology</p><h2>🌿 Virtual Field Study</h2><p class="muted">Aligned to <em>Mangrove/Coral/Rocky Shore</em> units: practise field sampling and classification.</p></div>
+      <div class="grid grid-2">
+        <div class="card" data-fade><h3>Steps</h3><ol><li>Choose an ecosystem (mangrove, coral reef, rocky shore).</li><li>"Place" a quadrat or run a transect.</li><li>Record the organisms you observe.</li><li>Classify by group and graph relative abundance.</li><li>Note biotic and abiotic factors.</li></ol></div>
+        <div class="card" data-fade><h3>Observation Journal</h3>
+          <div class="reflection" data-reflection="bio-field-journal"><p>Record your field observations (organisms, zone, conditions):</p><textarea placeholder="e.g., Inter-tidal zone: red mangrove prop roots, small crabs, barnacles; salinity high…"></textarea><button class="btn small" data-save>Save observations</button><p class="save-status" aria-live="polite"></p></div>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- LAB SKILLS -->
+    <section class="section"><div class="container">
+      <div class="section-head"><p class="eyebrow">Lab Skills Built</p><h2>Real Scientific Practice</h2></div>
+      <div class="grid grid-4">
+        <div class="card compact"><span class="icon">🔬</span><h4>Microscopy</h4></div>
+        <div class="card compact"><span class="icon">📊</span><h4>Data Collection</h4></div>
+        <div class="card compact"><span class="icon">🧪</span><h4>Hypothesis Testing</h4></div>
+        <div class="card compact"><span class="icon">📐</span><h4>Field Sampling</h4></div>
+        <div class="card compact"><span class="icon">🔎</span><h4>Observation</h4></div>
+        <div class="card compact"><span class="icon">🗂️</span><h4>Classification</h4></div>
+        <div class="card compact"><span class="icon">📈</span><h4>Graphing</h4></div>
+        <div class="card compact"><span class="icon">🥽</span><h4>Lab Safety</h4></div>
+      </div>
+      <div class="callout note" style="margin-top:1.5rem;"><h4>Why a virtual lab supports UDL</h4><p>It removes barriers of cost, equipment, mobility, and location — every student can investigate, repeat trials safely, and learn at their own pace, with captions, keyboard access, and the accessibility toolbar.</p></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 10 Biology · UDL</h4><p style="color:#c9d6e6;">Making the Bahamas National Curriculum accessible to every learner.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="lessons.html">Lessons</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Aligned to the Bahamas National Curriculum (Biology, Grades 10–12, 2010).</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="bio.js"></script>
+</body>
+</html>

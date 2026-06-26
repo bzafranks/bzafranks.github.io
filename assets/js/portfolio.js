@@ -28,8 +28,49 @@ document.addEventListener("DOMContentLoaded", function () {
   initTranscriptDownloads();
   initPrintButtons();
   initDashboard();
+  initA11yToolbar();
   initFadeIn();
 });
+
+/* ---------- Accessibility toolbar (UDL) ----------
+   Add data-a11y-toolbar to <body> to enable. Preferences persist in
+   localStorage and apply on load. Supports text scaling, high contrast,
+   readable/dyslexia-friendly mode, and read-aloud. */
+function initA11yToolbar() {
+  if (!document.body.hasAttribute("data-a11y-toolbar")) return;
+  var KEY = "dream-a11y";
+  var st = { scale: 100, contrast: false, readable: false };
+  try { st = Object.assign(st, JSON.parse(localStorage.getItem(KEY) || "{}")); } catch (e) {}
+  function apply() {
+    document.documentElement.style.fontSize = st.scale + "%";
+    document.body.classList.toggle("a11y-contrast", !!st.contrast);
+    document.body.classList.toggle("a11y-readable", !!st.readable);
+    try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {}
+  }
+  var bar = document.createElement("div");
+  bar.className = "a11y-bar"; bar.setAttribute("role", "region"); bar.setAttribute("aria-label", "Accessibility tools");
+  var lab = document.createElement("span"); lab.className = "a11y-label"; lab.textContent = "A11y"; bar.appendChild(lab);
+  function btn(label, txt, fn) {
+    var b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", label); b.title = label; b.textContent = txt;
+    b.addEventListener("click", fn); bar.appendChild(b); return b;
+  }
+  btn("Decrease text size", "A−", function () { st.scale = Math.max(80, st.scale - 10); apply(); });
+  btn("Increase text size", "A+", function () { st.scale = Math.min(160, st.scale + 10); apply(); });
+  btn("Toggle high contrast", "◑", function () { st.contrast = !st.contrast; apply(); });
+  btn("Toggle readable font and spacing", "𝐀", function () { st.readable = !st.readable; apply(); });
+  var speaking = false;
+  btn("Read page aloud", "🔊", function () {
+    if (!("speechSynthesis" in window)) return;
+    if (speaking) { window.speechSynthesis.cancel(); speaking = false; return; }
+    var main = document.getElementById("main") || document.body;
+    var u = new SpeechSynthesisUtterance((main.innerText || "").slice(0, 8000));
+    u.rate = 0.98; speaking = true; u.onend = function () { speaking = false; };
+    window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+  });
+  btn("Reset accessibility settings", "↺", function () { st = { scale: 100, contrast: false, readable: false }; apply(); });
+  document.body.appendChild(bar);
+  apply();
+}
 
 /* ---------- Nav ---------- */
 function initNav() {
