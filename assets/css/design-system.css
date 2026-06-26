@@ -109,7 +109,7 @@ pre code { background: none; padding: 0; }
 .skip-link { position: absolute; left: -999px; top: 0; background: var(--gold); color: #3a2700; padding: 0.6rem 1rem; z-index: 999; border-radius: 0 0 var(--radius-sm) 0; }
 .skip-link:focus { left: 0; }
 
-.grid { display: grid; gap: 1.5rem; }
+.grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .grid-4 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
