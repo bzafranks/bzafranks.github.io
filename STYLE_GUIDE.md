@@ -85,7 +85,8 @@ autoplaying motion, parallax, or anything that competes with content.
 3. Internal project nav + standard footer.
 4. One entry in `assets/js/projects-data.js` (`pillar`, `status`, `url`, `tags`, `summary`, `icon`).
 5. Each project includes a consultant-style **case study** (see `templates/case-study-template.html`).
-6. Run the accessibility checklist (§7) before publishing.
+6. **REQUIRED — Delivery Modes:** every project must explicitly offer **synchronous AND asynchronous** delivery, usable **in school or virtually, with or without a teacher present** (instructional continuity during teacher shortages). Include a **Delivery Modes** section (home/framework: 🏫 In-School · 🟢 Synchronous Virtual · 🔄 Asynchronous/No-Teacher) and a per-lesson delivery treatment using `.tabs[data-tabs]`. Both are pre-built in the templates. Reference implementations: Grade 5 (full) and Grade 4 CBE.
+7. Run the accessibility checklist (§7) before publishing.
 
 ## 11. Scalability Principle
 Nothing in an individual project should redefine global styles. The design system is the only
