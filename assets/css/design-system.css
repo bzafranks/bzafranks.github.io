@@ -153,6 +153,13 @@ pre code { background: none; padding: 0; }
 .hero-byline .who { line-height: 1.3; }
 .hero-byline .who strong { color: #fff; }
 .hero-byline .who span { color: #c9d6e6; font-size: 0.92rem; }
+.hero-byline .avatar-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); flex: 0 0 auto; }
+
+/* Portrait (About page) */
+.about-intro { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 1rem; }
+.about-intro .bio { flex: 1 1 320px; }
+.portrait { width: 210px; height: 210px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 28px var(--shadow-lg); border: 5px solid #fff; flex: 0 0 auto; }
+@media (max-width: 620px) { .about-intro { justify-content: center; text-align: center; } .about-intro .portrait { margin: 0 auto; } }
 
 /* Pillars */
 .pillar-card { position: relative; overflow: hidden; }
