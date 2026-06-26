@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard &amp; Portfolio — Grade 4 SS CBE · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A Grade 4 student dashboard and digital portfolio: competency mastery, badges, goals, recommended activities, and a working portfolio builder.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Grade 4 Social Studies · CBE" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Grade 4 Social Studies · CBE</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="competencies.html">Competencies</a></li><li><a href="progressions.html">Progressions</a></li><li><a href="units.html">Units</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="parent-dashboard.html">Parent</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Student Dashboard <span class="muted">· illustrative sample</span></p>
+        <h1>Hi, Andre! 🇧🇸 <span class="streak">⭐ 3 badges earned</span></h1>
+        <p class="lead">Your mastery journey through Grade 4 Social Studies.</p>
+
+        <!-- COMPETENCY MASTERY -->
+        <div class="chart-card" style="margin:1.2rem 0;">
+          <h4>My Competency Mastery</h4>
+          <p style="margin:0.2rem 0;">🏛️ Bahamian Historian <span class="tag leaf">Mastery</span></p><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">🗺️ Bahamian Geographer <span class="tag navy">Approaching</span></p><div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">⚖️ Informed Citizen <span class="tag gold">Developing</span></p><div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">💰 Economic Thinker <span class="tag coral">Beginning</span></p><div class="progress-bar"><div class="progress-fill" style="width:25%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">🎭 Culture Champion <span class="tag leaf">Mastery</span></p><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- BADGES -->
+          <div class="dashboard"><h3>🏅 My Badges</h3>
+            <div class="badge-shelf">
+              <div class="ach-badge earned"><span class="medal">🏛️</span><span class="b-name">History Investigator</span></div>
+              <div class="ach-badge earned"><span class="medal">🎭</span><span class="b-name">Culture Champion</span></div>
+              <div class="ach-badge earned"><span class="medal">🧭</span><span class="b-name">Community Explorer</span></div>
+              <div class="ach-badge"><span class="medal">🗺️</span><span class="b-name">Map Reader</span></div>
+              <div class="ach-badge"><span class="medal">⚖️</span><span class="b-name">Responsible Citizen</span></div>
+            </div>
+          </div>
+          <!-- RECOMMENDED + PATHWAY -->
+          <div class="chart-card"><h4>🎯 Recommended Next</h4>
+            <div class="rec"><span class="rec-ico">🗺️</span><div class="rec-body"><b>Finish "Reading Our Islands"</b><div class="rec-why">You're Approaching mastery — one step from your Map Reader badge.</div></div></div>
+            <div class="rec"><span class="rec-ico">💰</span><div class="rec-body"><b>Start "Resources &amp; Our Economy"</b><div class="rec-why">Your next competency to begin.</div></div></div>
+          </div>
+        </div>
+
+        <!-- GOALS -->
+        <div class="progress-tracker" data-progress="cbe-student-goals" style="margin-top:1.5rem;">
+          <h3>🎯 My Learning Goals</h3>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p class="progress-label"></p>
+          <ul class="progress-checklist">
+            <li><label><input type="checkbox" value="map"> Earn the Map Reader badge</label></li>
+            <li><label><input type="checkbox" value="econ"> Begin the Economics lesson</label></li>
+            <li><label><input type="checkbox" value="port"> Add 2 artifacts to my portfolio</label></li>
+          </ul>
+        </div>
+
+        <!-- PORTFOLIO BUILDER (interactive) -->
+        <div class="lesson-block" style="margin-top:1.5rem;">
+          <h3>🗂️ My Digital Portfolio</h3>
+          <p class="muted">Collect your evidence of mastery — projects, reflections, and badge proof. Saved on this device.</p>
+          <div data-portfolio="andre">
+            <div class="grid grid-2" style="align-items:end;">
+              <div class="field"><label>Artifact type</label>
+                <select class="pf-type">
+                  <option>Project</option><option>Reflection</option><option>Performance Task</option><option>Badge Evidence</option><option>Community Activity</option><option>Learning Goal</option>
+                </select>
+              </div>
+              <div class="field"><label>Title</label><input class="pf-title" type="text" placeholder="e.g., My Bahamian Timeline"></div>
+            </div>
+            <div class="field"><label>Note / reflection</label><textarea class="pf-note" placeholder="What does this show about my learning?"></textarea></div>
+            <button class="btn small" data-add>➕ Add to portfolio</button>
+            <div class="pf-items" style="margin-top:1rem;"></div>
+          </div>
+        </div>
+
+        <!-- REFLECTION JOURNAL -->
+        <div class="lesson-block gold" style="margin-top:1.5rem;">
+          <h3>🪞 Growth Reflection</h3>
+          <div class="reflection" data-reflection="cbe-student-journal">
+            <p>What competency am I most proud of, and what is my next goal?</p>
+            <textarea placeholder="Saved on this device..."></textarea>
+            <button class="btn small" data-save>Save</button><p class="save-status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <p class="muted center" style="margin-top:1.5rem;"><small>Mastery levels &amp; badges are illustrative sample data; goals, portfolio, and journal save live on this device.</small></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Grade 4 Social Studies · CBE</h4><p style="color:#c9d6e6;">A competency-based reimagining of the Bahamas National Curriculum.</p></div>
+        <div><h4>This Project</h4><ul><li><a href="teacher-dashboard.html">Teacher Dashboard</a></li><li><a href="parent-dashboard.html">Parent Dashboard</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+        <div><h4>Portfolio</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../about.html">About</a></li><li><a href="mailto:barbara.franks@mydreamedu.org">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Aligned to the Bahamas National Curriculum (Grades 4–6 Social Studies, 2022–2027).</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="cbe.js"></script>
+</body>
+</html>

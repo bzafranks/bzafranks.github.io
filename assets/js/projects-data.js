@@ -46,15 +46,15 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     id: "bahamas-cbe",
-    title: "Bahamian Curriculum — Competency-Based Learning",
-    subtitle: "Mastery over seat-time",
+    title: "Grade 4 Social Studies — Competency-Based Learning",
+    subtitle: "Reimagining the Bahamas National Curriculum through mastery",
     pillar: "id",
-    grade: "Bahamas",
-    status: "planned",
-    url: "",
+    grade: "Bahamas · Gr 4",
+    status: "done",
+    url: "projects/grade4-cbe/index.html",
     icon: "🎯",
-    tags: ["Competency-Based", "Mastery Learning", "National Curriculum"],
-    summary: "A mastery-based system where students advance on demonstrated competency, with flexible pacing and transparent learning progressions."
+    tags: ["Competency-Based", "Mastery Learning", "Bahamas National Curriculum", "Social Studies"],
+    summary: "Transforms the official Bahamas Grade 4 Social Studies curriculum into a mastery-based digital system — competencies, learning progressions, performance assessments, badges, and portfolios — with full curriculum fidelity."
   },
   {
     id: "bahamas-udl",
