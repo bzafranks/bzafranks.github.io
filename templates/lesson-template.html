@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+  LESSON TEMPLATE — D.R.E.A.M. Education Solutions
+  A complete multimedia lesson scaffold. Copy into a project and fill in.
+  Includes: overview · intro · AI video player · interactive activities ·
+  differentiation · assessment · delivery-model comparison.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Title — Project — D.R.E.A.M. Education Solutions</title>
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="PROJECT SHORT NAME" data-project-root="../../">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- (project nav header here — copy from project-template.html) -->
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Unit X · Unit Name</p>
+        <h2>Lesson X.X — Lesson Title</h2>
+        <div class="pill-row" style="margin:0.6rem 0 1.5rem;"><span class="tag navy">Grade</span><span class="tag gold">Time</span><span class="tag leaf">STANDARD</span></div>
+
+        <div class="lesson-block"><h3>📋 Lesson Overview</h3>
+          <p><strong>Objectives:</strong> … &nbsp; <strong>Success Criteria:</strong> … &nbsp; <strong>Standards:</strong> … &nbsp; <strong>Materials / Tech:</strong> …</p>
+        </div>
+
+        <div class="lesson-block gold"><h3>🎬 Lesson Introduction</h3>
+          <p><strong>Hook:</strong> … &nbsp; <strong>Prior Knowledge:</strong> … &nbsp; <strong>Essential Question:</strong> … &nbsp; <strong>Targets:</strong> …</p>
+        </div>
+
+        <!-- AI VIDEO PLAYER -->
+        <div class="lesson-block teal"><h3>🤖 AI-Generated Instructional Video</h3>
+          <div class="video-player" id="video-x">
+            <div class="video-stage">
+              <div class="video-slide" data-duration="8" data-narration="Slide 1 narration..."><span class="slide-num">1</span><div class="slide-content"><span class="big-emoji">🎓</span><h3>Title Slide</h3><p>Subtitle</p></div></div>
+              <div class="video-slide" data-duration="10" data-interaction="Pause and think about..." data-narration="Slide 2 narration..."><span class="slide-num">2</span><div class="slide-content"><h3>Concept</h3><p>Key idea with a <span class="hl">highlight</span>.</p></div></div>
+              <!-- add 4–6 slides; last is a recap -->
+            </div>
+            <p class="video-caption" aria-live="polite"></p>
+            <p class="video-interaction" aria-live="polite"></p>
+            <div class="video-controls">
+              <button class="btn ghost small" data-play>▶ Play</button>
+              <button class="btn ghost small" data-prev>◀ Back</button>
+              <button class="btn ghost small" data-next>Next ▶</button>
+              <button class="btn ghost small" data-restart>↺ Restart</button>
+              <button class="btn ghost small" data-sound aria-pressed="true">🔊 Sound on</button>
+              <div class="video-progress"><div class="video-progress-fill"></div></div>
+              <span class="video-counter"></span>
+            </div>
+            <div class="video-toolbar">
+              <button class="btn small" data-download-transcript="#video-x" data-title="Lesson Title">⬇ Download Transcript</button>
+              <button class="btn ghost small" data-print>🖨 Print Lesson</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE ACTIVITIES -->
+        <div class="lesson-block"><h3>🕹️ Interactive Activities</h3>
+          <div data-quiz>
+            <div class="quiz-q" data-answer="0" data-why="Explanation.">
+              <p class="q-text">Question?</p>
+              <div class="quiz-options"><button class="quiz-option">Correct</button><button class="quiz-option">Other</button></div>
+              <p class="quiz-feedback" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISCUSSION BY DELIVERY MODEL -->
+        <div class="lesson-block plum"><h3>💬 Discussion Activities</h3>
+          <div class="tabs" data-tabs><div class="tab-btns"></div>
+            <div class="tab-panel" data-tab="Face-to-Face"><p>…</p></div>
+            <div class="tab-panel" data-tab="Synchronous"><p>…</p></div>
+            <div class="tab-panel" data-tab="Asynchronous"><p>…</p></div>
+          </div>
+        </div>
+
+        <!-- DIFFERENTIATION -->
+        <div class="lesson-block coral"><h3>🌈 Differentiation</h3>
+          <div class="table-wrap"><table><thead><tr><th>Learner</th><th>Support</th></tr></thead>
+            <tbody><tr><td>Below grade level</td><td>…</td></tr><tr><td>Advanced</td><td>…</td></tr><tr><td>ELL</td><td>…</td></tr><tr><td>Students with disabilities</td><td>…</td></tr></tbody></table></div>
+        </div>
+
+        <!-- ASSESSMENT + DELIVERY COMPARISON -->
+        <div class="lesson-block leaf"><h3>📊 Assessment</h3><p><strong>Exit Ticket:</strong> … &nbsp; <strong>Quiz:</strong> above. &nbsp; <strong>Rubric:</strong> …</p></div>
+
+        <div class="progress-tracker" data-progress="UNIQUE-lesson-id">
+          <h3>📈 My Progress</h3>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p class="progress-label"></p>
+          <ul class="progress-checklist"><li><label><input type="checkbox" value="video"> Watched the video</label></li><li><label><input type="checkbox" value="quiz"> Took the quiz</label></li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../assets/js/portfolio.js"></script>
+</body>
+</html>
