@@ -82,15 +82,15 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     id: "bahamas-career",
-    title: "Bahamian Curriculum — Career & Future Skills",
-    subtitle: "Future-ready learning",
+    title: "Bahamas Career & Future Skills Academy",
+    subtitle: "A digital ecosystem for Technical High School Diploma pathways",
     pillar: "id",
-    grade: "Bahamas",
-    status: "planned",
-    url: "",
+    grade: "Bahamas · Secondary",
+    status: "done",
+    url: "projects/career-skills/index.html",
     icon: "🚀",
-    tags: ["Future Skills", "Career Readiness", "PBL"],
-    summary: "A future-ready curriculum building durable skills, career awareness, and real-world competencies through project-based learning."
+    tags: ["Career & Technical Education", "Future Skills", "Workforce", "PBL", "AI Literacy", "Micro-credentials"],
+    summary: "A career-connected learning ecosystem supporting the new Bahamas Technical High School Diploma pathways — a future-skills framework, 12 career pathways, a PBL studio, AI & entrepreneurship hubs, a digital portfolio, micro-credentials, and employer connections."
   },
   {
     id: "bahamas-ai",
