@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Library — AI Teacher Assistant Platform</title>
+  <meta name="description" content="Everything you save from any AI tool is stored here in your browser — search and filter your saved lessons, assessments, rubrics, communications, and feedback.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Resource Library</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗂️ Resource Library</span>
+          <h1>Resource Library</h1>
+          <p class="lead">Everything you save from any AI tool is stored right here — in your browser. Generate a lesson, assessment, rubric, message, or feedback note with any tool, press <b>Save to Library</b>, and it lands here. Search and filter to find exactly what you need.</p>
+        </div>
+
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;">
+          <input data-library-search type="search" placeholder="🔍 Search saved resources…" aria-label="Search saved resources" style="flex:1;min-width:200px;padding:.6rem .9rem;border:1.5px solid var(--border);border-radius:999px;">
+          <div class="segmented" data-library-filter role="group" aria-label="Filter resources by type">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="lesson">Lessons</button>
+            <button data-filter="assessment">Assessments</button>
+            <button data-filter="rubric">Rubrics</button>
+            <button data-filter="comm">Comms</button>
+            <button data-filter="feedback">Feedback</button>
+          </div>
+        </div>
+        <div data-library></div>
+
+        <!-- ===== How it works ===== -->
+        <div class="section-head left" style="margin:2.4rem 0 1rem;"><h2 style="margin:0;">How it works</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <span class="icon" aria-hidden="true">💾</span>
+            <h3>Saved as you work</h3>
+            <p class="muted">Any output you generate in the Lesson Planner, Assessment Generator, Rubric Builder, Communication, or Feedback tools can be saved with one click. Each resource keeps its title, type, and full text so you can reuse or adapt it later.</p>
+          </div>
+          <div class="card" data-fade>
+            <span class="icon" aria-hidden="true">🔍</span>
+            <h3>Search and filter</h3>
+            <p class="muted">Type in the search box to match on titles and content, or use the type filters above to narrow to just lessons, assessments, rubrics, communications, or feedback. Results update instantly as you type.</p>
+          </div>
+          <div class="card" data-fade>
+            <span class="icon" aria-hidden="true">🔒</span>
+            <h3>Stored in your browser</h3>
+            <p class="muted">This demonstration keeps your library entirely client-side in <code>localStorage</code> — nothing is uploaded to a server. Clearing your browser data or using a different device starts with a fresh, empty library. You can also clear it anytime from <a href="settings.html">Settings</a>.</p>
+          </div>
+          <div class="card" data-fade>
+            <span class="icon" aria-hidden="true">☁️</span>
+            <h3>In a production version</h3>
+            <p class="muted">A live release would sync your library to a secure teacher account and integrate with your LMS — so resources follow you across devices, can be shared with a team or PLC, and can be pushed directly into Google Classroom, Canvas, or Microsoft Teams. <span class="soon">Soon</span></p>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.6rem;"><span class="ai-pill">👤 Human-in-the-loop</span> Saved items are AI-assisted <b>drafts</b>. Review each one for accuracy, bias, and fit before sharing it with students or families.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

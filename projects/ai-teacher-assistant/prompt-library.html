@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Library — AI Teacher Assistant Platform</title>
+  <meta name="description" content="A categorized library of teacher prompts engineered for AI productivity — favorite the ones you use most and copy any prompt with one click.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Prompt Library</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📚 Prompt Library</span>
+          <h1>Prompt Library</h1>
+          <p class="lead">A categorized library of teacher prompts engineered for AI productivity. Each one is a tested, reusable starting point — favorite the ones you use most, then copy any prompt with one click and drop it into the workspace or your AI tool of choice.</p>
+        </div>
+
+        <p class="muted" style="margin-top:-0.4rem;">⭐ Favorites are saved in your browser, so the prompts you star stay starred next time you visit. Nothing is uploaded — all storage is local.</p>
+
+        <!-- ===== Lesson Design ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">📝 Lesson Design</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Full lesson plan (gradual release)</b><br><span class="muted">"Write a [duration]-minute [grade] [subject] lesson on [topic] aligned to [standard]. Use a gradual-release structure (I Do, We Do, You Do) with a measurable objective, success criteria, a hook, formative checks, and a closing exit ticket."</span></p>
+              <button class="fav-btn" data-fav="ld1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a [duration]-minute [grade] [subject] lesson on [topic] aligned to [standard]. Use a gradual-release structure (I Do, We Do, You Do) with a measurable objective, success criteria, a hook, formative checks, and a closing exit ticket." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Hook / anticipatory set</b><br><span class="muted">"Give me three engaging 5-minute hooks to open a [grade] lesson on [topic]: one that uses a real-world scenario, one that poses a provocative question, and one that uses a quick hands-on or visual activity."</span></p>
+              <button class="fav-btn" data-fav="ld2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Give me three engaging 5-minute hooks to open a [grade] lesson on [topic]: one that uses a real-world scenario, one that poses a provocative question, and one that uses a quick hands-on or visual activity." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Learning objectives &amp; success criteria</b><br><span class="muted">"Write three measurable, student-friendly learning objectives for a [grade] unit on [topic], each with matching 'I can' success criteria and a quick way to check whether students met it."</span></p>
+              <button class="fav-btn" data-fav="ld3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write three measurable, student-friendly learning objectives for a [grade] unit on [topic], each with matching 'I can' success criteria and a quick way to check whether students met it." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Five-day unit arc</b><br><span class="muted">"Sketch a 5-day [grade] [subject] unit on [topic]. For each day give the focus, the key activity, and the formative assessment, building from foundational understanding to independent application."</span></p>
+              <button class="fav-btn" data-fav="ld4" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Sketch a 5-day [grade] [subject] unit on [topic]. For each day give the focus, the key activity, and the formative assessment, building from foundational understanding to independent application." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Assessment ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🧪 Assessment</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Standards-aligned quiz with key</b><br><span class="muted">"Create a 10-question [grade] quiz on [topic] aligned to [standard]. Mix multiple choice and short constructed response, balance the answer key, vary Depth of Knowledge from DOK 1 to DOK 3, and label each item with its DOK level."</span></p>
+              <button class="fav-btn" data-fav="as1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Create a 10-question [grade] quiz on [topic] aligned to [standard]. Mix multiple choice and short constructed response, balance the answer key, vary Depth of Knowledge from DOK 1 to DOK 3, and label each item with its DOK level." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Exit ticket (3 questions)</b><br><span class="muted">"Write a 3-question exit ticket for today's [grade] lesson on [topic]: one recall question, one application question, and one reflection question I can read in under two minutes per student."</span></p>
+              <button class="fav-btn" data-fav="as2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a 3-question exit ticket for today's [grade] lesson on [topic]: one recall question, one application question, and one reflection question I can read in under two minutes per student." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Passage-based reading items</b><br><span class="muted">"Using the passage below, write five text-dependent comprehension questions for [grade] readers that require evidence from the text. Include one inference question and one question about author's craft, plus a brief answer rationale."</span></p>
+              <button class="fav-btn" data-fav="as3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Using the passage below, write five text-dependent comprehension questions for [grade] readers that require evidence from the text. Include one inference question and one question about author's craft, plus a brief answer rationale. PASSAGE: [paste passage here]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Distractor analysis</b><br><span class="muted">"For this multiple-choice question, write three high-quality distractors that each reflect a specific, common student misconception, and explain the misconception behind each one so I can use it in reteaching."</span></p>
+              <button class="fav-btn" data-fav="as4" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="For this multiple-choice question, write three high-quality distractors that each reflect a specific, common student misconception, and explain the misconception behind each one so I can use it in reteaching. QUESTION: [paste question and correct answer here]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Feedback ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">💬 Feedback</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Glow and grow feedback</b><br><span class="muted">"Turn my rough notes into warm, specific student feedback using a 'glow and grow' format: name two genuine strengths, then one actionable next step phrased as a clear strategy the student can try. Keep the tone encouraging and growth-minded. Notes: [paste notes]"</span></p>
+              <button class="fav-btn" data-fav="fb1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Turn my rough notes into warm, specific student feedback using a 'glow and grow' format: name two genuine strengths, then one actionable next step phrased as a clear strategy the student can try. Keep the tone encouraging and growth-minded. Notes: [paste notes]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Rubric-anchored essay comments</b><br><span class="muted">"Using this rubric, write three sentences of feedback on the student essay below — one tied to the strongest criterion, one to the criterion most in need of work, and one concrete revision suggestion. Quote a short phrase from the student's own writing."</span></p>
+              <button class="fav-btn" data-fav="fb2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Using this rubric, write three sentences of feedback on the student essay below — one tied to the strongest criterion, one to the criterion most in need of work, and one concrete revision suggestion. Quote a short phrase from the student's own writing. RUBRIC: [paste rubric] ESSAY: [paste essay]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Feedback that asks, not tells</b><br><span class="muted">"Rewrite my corrective comments as guiding questions that prompt the student to find and fix the issue themselves, rather than giving them the answer. Keep each question short and specific. Comments: [paste comments]"</span></p>
+              <button class="fav-btn" data-fav="fb3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Rewrite my corrective comments as guiding questions that prompt the student to find and fix the issue themselves, rather than giving them the answer. Keep each question short and specific. Comments: [paste comments]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Communication ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">✉️ Communication</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Positive note home</b><br><span class="muted">"Write a short, warm note to a family celebrating that [student] showed [specific positive behavior or growth] this week. Keep it concrete, sincere, and free of jargon, and write it so it translates cleanly into other languages."</span></p>
+              <button class="fav-btn" data-fav="cm1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a short, warm note to a family celebrating that [student] showed [specific positive behavior or growth] this week. Keep it concrete, sincere, and free of jargon, and write it so it translates cleanly into other languages." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Sensitive academic concern</b><br><span class="muted">"Draft a caring, partnership-oriented email to a family about [student]'s progress in [area]. State the facts without judgment, express confidence in the student, propose two specific supports, and invite a conversation. Keep it under 150 words."</span></p>
+              <button class="fav-btn" data-fav="cm2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Draft a caring, partnership-oriented email to a family about [student]'s progress in [area]. State the facts without judgment, express confidence in the student, propose two specific supports, and invite a conversation. Keep it under 150 words." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Weekly class newsletter</b><br><span class="muted">"Write a friendly weekly newsletter for families of my [grade] class covering what we learned in [subjects], one celebration, an upcoming date, and one easy 'how to help at home' tip. Use short sections with clear headers."</span></p>
+              <button class="fav-btn" data-fav="cm3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a friendly weekly newsletter for families of my [grade] class covering what we learned in [subjects], one celebration, an upcoming date, and one easy 'how to help at home' tip. Use short sections with clear headers." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Differentiation ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🧩 Differentiation</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Tiered versions of one task</b><br><span class="muted">"Take this activity and create three tiered versions that keep the same learning goal: one with scaffolds for students working below grade level, one on-level, and one extension for advanced learners. Activity: [paste activity]"</span></p>
+              <button class="fav-btn" data-fav="df1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Take this activity and create three tiered versions that keep the same learning goal: one with scaffolds for students working below grade level, one on-level, and one extension for advanced learners. Activity: [paste activity]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Supports for multilingual learners</b><br><span class="muted">"Suggest five supports that lower the language load of this [grade] task while keeping the rigor for multilingual learners — including sentence frames, a key-vocabulary list with kid-friendly definitions, and visual supports. Task: [paste task]"</span></p>
+              <button class="fav-btn" data-fav="df2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Suggest five supports that lower the language load of this [grade] task while keeping the rigor for multilingual learners — including sentence frames, a key-vocabulary list with kid-friendly definitions, and visual supports. Task: [paste task]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>UDL choice board</b><br><span class="muted">"Design a 3x3 choice board for [grade] students to demonstrate understanding of [topic], offering multiple means of expression (write, build, draw, record, present) while assessing the same standard."</span></p>
+              <button class="fav-btn" data-fav="df3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Design a 3x3 choice board for [grade] students to demonstrate understanding of [topic], offering multiple means of expression (write, build, draw, record, present) while assessing the same standard." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== AI Productivity ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">⚡ AI Productivity</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Summarize a long document</b><br><span class="muted">"Summarize the document below for a busy teacher: give a 3-sentence overview, then 5 bullet-point takeaways, then the single most important action I should take. Document: [paste text]"</span></p>
+              <button class="fav-btn" data-fav="ai1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Summarize the document below for a busy teacher: give a 3-sentence overview, then 5 bullet-point takeaways, then the single most important action I should take. Document: [paste text]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Make any AI output better</b><br><span class="muted">"Before answering, ask me up to three clarifying questions about grade level, standard, and student context so your response is precise and classroom-ready. Then complete this request: [paste request]"</span></p>
+              <button class="fav-btn" data-fav="ai2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Before answering, ask me up to three clarifying questions about grade level, standard, and student context so your response is precise and classroom-ready. Then complete this request: [paste request]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Reformat into a table</b><br><span class="muted">"Reorganize the information below into a clean table with columns for [column 1], [column 2], and [column 3], one row per item, so I can paste it into my planner. Information: [paste text]"</span></p>
+              <button class="fav-btn" data-fav="ai3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Reorganize the information below into a clean table with columns for [column 1], [column 2], and [column 3], one row per item, so I can paste it into my planner. Information: [paste text]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Project-Based Learning ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🛠️ Project-Based Learning</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Driving question</b><br><span class="muted">"Write three engaging, open-ended driving questions for a [grade] PBL unit on [topic] that connect to a real-world problem and an authentic audience, and explain what makes each one a strong driving question."</span></p>
+              <button class="fav-btn" data-fav="pbl1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write three engaging, open-ended driving questions for a [grade] PBL unit on [topic] that connect to a real-world problem and an authentic audience, and explain what makes each one a strong driving question." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Project milestone map</b><br><span class="muted">"Break a [duration] [grade] project on [topic] into weekly milestones, with a checkpoint deliverable and a teacher feedback point at each stage, ending in a public product or presentation."</span></p>
+              <button class="fav-btn" data-fav="pbl2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Break a [duration] [grade] project on [topic] into weekly milestones, with a checkpoint deliverable and a teacher feedback point at each stage, ending in a public product or presentation." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Group roles &amp; accountability</b><br><span class="muted">"Suggest four group roles for a [grade] project team, with a one-line description and two accountability checks per role, plus a simple peer-evaluation question set."</span></p>
+              <button class="fav-btn" data-fav="pbl3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Suggest four group roles for a [grade] project team, with a one-line description and two accountability checks per role, plus a simple peer-evaluation question set." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== STEM ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🔬 STEM</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>3-act math task</b><br><span class="muted">"Design a 3-act math task for [grade] on [concept]: Act 1 a curiosity-sparking scenario with one question, Act 2 the information students need to ask for, and Act 3 the reveal plus an extension question."</span></p>
+              <button class="fav-btn" data-fav="st1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Design a 3-act math task for [grade] on [concept]: Act 1 a curiosity-sparking scenario with one question, Act 2 the information students need to ask for, and Act 3 the reveal plus an extension question." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Hands-on science investigation</b><br><span class="muted">"Plan a safe, low-cost [grade] science investigation on [phenomenon] using common materials. Include the testable question, a simple procedure, what students record, and three guiding questions for the discussion afterward."</span></p>
+              <button class="fav-btn" data-fav="st2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Plan a safe, low-cost [grade] science investigation on [phenomenon] using common materials. Include the testable question, a simple procedure, what students record, and three guiding questions for the discussion afterward." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Math misconception coaching</b><br><span class="muted">"A [grade] student keeps making this error in [math topic]: [describe error]. Explain the likely misconception, then give me two targeted questions and one quick visual model I can use to help the student self-correct."</span></p>
+              <button class="fav-btn" data-fav="st3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="A [grade] student keeps making this error in [math topic]: [describe error]. Explain the likely misconception, then give me two targeted questions and one quick visual model I can use to help the student self-correct." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Writing ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">✍️ Writing</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Model text + annotations</b><br><span class="muted">"Write a strong grade-level model paragraph for [genre] on [topic] for [grade] writers, then annotate it to show the moves a writer made (topic sentence, evidence, transitions, conclusion) so I can use it as a mentor text."</span></p>
+              <button class="fav-btn" data-fav="wr1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a strong grade-level model paragraph for [genre] on [topic] for [grade] writers, then annotate it to show the moves a writer made (topic sentence, evidence, transitions, conclusion) so I can use it as a mentor text." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Sentence-level mini-lessons</b><br><span class="muted">"Create three 5-minute sentence-level mini-lessons for [grade] writers on [skill, e.g. combining sentences], each with a brief explanation, a model, and three practice sentences with an answer key."</span></p>
+              <button class="fav-btn" data-fav="wr2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Create three 5-minute sentence-level mini-lessons for [grade] writers on [skill, e.g. combining sentences], each with a brief explanation, a model, and three practice sentences with an answer key." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Differentiated writing prompts</b><br><span class="muted">"Generate five [genre] writing prompts for [grade] on the theme of [theme], ranging from concrete and supported to open-ended and abstract, so I can match prompts to students' readiness."</span></p>
+              <button class="fav-btn" data-fav="wr3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Generate five [genre] writing prompts for [grade] on the theme of [theme], ranging from concrete and supported to open-ended and abstract, so I can match prompts to students' readiness." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Reading ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">📖 Reading</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Leveled close-reading questions</b><br><span class="muted">"For the passage below, write a set of close-reading questions for [grade] in three layers: literal (what does the text say), interpretive (what does it mean), and analytical (how and why the author wrote it this way). Passage: [paste passage]"</span></p>
+              <button class="fav-btn" data-fav="rd1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="For the passage below, write a set of close-reading questions for [grade] in three layers: literal (what does the text say), interpretive (what does it mean), and analytical (how and why the author wrote it this way). Passage: [paste passage]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Vocabulary in context</b><br><span class="muted">"Pull eight high-value vocabulary words from the text below for [grade] readers. For each, give a kid-friendly definition, a sentence using it in this context, and a quick check-for-understanding question. Text: [paste text]"</span></p>
+              <button class="fav-btn" data-fav="rd2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Pull eight high-value vocabulary words from the text below for [grade] readers. For each, give a kid-friendly definition, a sentence using it in this context, and a quick check-for-understanding question. Text: [paste text]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Book talk &amp; discussion guide</b><br><span class="muted">"Create a discussion guide for [book title] suited to [grade] readers: a one-paragraph hook, five open-ended discussion questions, and two journal prompts that connect the theme to students' lives."</span></p>
+              <button class="fav-btn" data-fav="rd3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Create a discussion guide for [book title] suited to [grade] readers: a one-paragraph hook, five open-ended discussion questions, and two journal prompts that connect the theme to students' lives." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Leadership ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🧭 Leadership</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>PLC meeting agenda</b><br><span class="muted">"Draft a focused 45-minute PLC agenda centered on [data or instructional focus]. Include a norms reminder, a data-look protocol, a decision point, and clear next-step owners with timelines."</span></p>
+              <button class="fav-btn" data-fav="ld_lead1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Draft a focused 45-minute PLC agenda centered on [data or instructional focus]. Include a norms reminder, a data-look protocol, a decision point, and clear next-step owners with timelines." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Coaching feedback to a teacher</b><br><span class="muted">"Based on these observation notes, write strengths-based coaching feedback for a teacher: name two effective practices, pose one reflective question, and suggest one high-leverage next step framed as a partnership. Notes: [paste notes]"</span></p>
+              <button class="fav-btn" data-fav="lead2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Based on these observation notes, write strengths-based coaching feedback for a teacher: name two effective practices, pose one reflective question, and suggest one high-leverage next step framed as a partnership. Notes: [paste notes]" style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Staff communication draft</b><br><span class="muted">"Write a clear, motivating message to staff announcing [change or initiative]. Explain the why, what stays the same, what's new, the support available, and the first concrete step — in a respectful, concise tone."</span></p>
+              <button class="fav-btn" data-fav="lead3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Write a clear, motivating message to staff announcing [change or initiative]. Explain the why, what stays the same, what's new, the support available, and the first concrete step — in a respectful, concise tone." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <!-- ===== Professional Growth ===== -->
+        <div class="section-head left" style="margin:2rem 0 1rem;"><h2 style="margin:0;">🎓 Professional Growth</h2></div>
+        <div class="grid grid-2">
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>SMART professional goal</b><br><span class="muted">"Help me turn my growth area of [area] into a SMART professional goal for this [semester/year], including a measurable indicator, two strategies I'll try, and how I'll collect evidence of impact."</span></p>
+              <button class="fav-btn" data-fav="pg1" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Help me turn my growth area of [area] into a SMART professional goal for this [semester/year], including a measurable indicator, two strategies I'll try, and how I'll collect evidence of impact." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Post-lesson reflection</b><br><span class="muted">"Ask me five short reflection questions about a lesson I just taught on [topic], then synthesize my answers into two specific things to keep doing and one adjustment for next time."</span></p>
+              <button class="fav-btn" data-fav="pg2" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Ask me five short reflection questions about a lesson I just taught on [topic], then synthesize my answers into two specific things to keep doing and one adjustment for next time." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+          <div class="card" data-fade>
+            <div style="display:flex;align-items:flex-start;gap:.6rem;">
+              <p style="flex:1;margin:0;"><b>Explain a strategy simply</b><br><span class="muted">"Explain the instructional strategy [strategy name] to me as if I'm new to it: what it is, why it works, one classroom example for [grade], and a common pitfall to avoid."</span></p>
+              <button class="fav-btn" data-fav="pg3" title="Favorite" aria-label="Favorite">★</button>
+            </div>
+            <button class="out-btn" data-copy-prompt="Explain the instructional strategy [strategy name] to me as if I'm new to it: what it is, why it works, one classroom example for [grade], and a common pitfall to avoid." style="margin-top:.6rem;">📋 Copy prompt</button>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:2rem;"><span class="ai-pill">👤 Human-in-the-loop</span> These prompts produce <b>drafts</b>. Always review AI output for accuracy, bias, and fit for your students before using it. Your professional judgment stays in charge.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

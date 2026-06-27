@@ -103,5 +103,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🧠",
     tags: ["AI Strategy", "Education Policy", "Governance", "Digital Transformation", "Educational Leadership", "Systems Design"],
     summary: "A world-class national AI-in-education strategy: vision, 9 strategic pillars, a governance & ethics framework, digital infrastructure, teacher capacity, equity, an interactive implementation roadmap, funding, risk, and M&E — system-level transformation for The Bahamas."
+  },
+  {
+    id: "ai-teacher-assistant",
+    title: "AI Teacher Assistant Platform",
+    subtitle: "An AI productivity & instructional support system for K–12 educators",
+    pillar: "id",
+    grade: "K–12 · Product",
+    status: "done",
+    url: "projects/ai-teacher-assistant/index.html",
+    icon: "✨",
+    tags: ["AI Product", "Teacher Productivity", "Human-Centered AI", "SaaS Design", "Prompt Engineering", "EdTech"],
+    summary: "A commercial-grade AI productivity platform for teachers — an AI workspace plus 14 tools (lesson planner, assessment & rubric generators, differentiation, parent communication, feedback, behavior docs, classroom management, PD coach, prompt & resource libraries, dashboard) with a command palette, dark mode, and human-in-the-loop design. First product in the AI for Education Innovation Suite."
   }
 ];

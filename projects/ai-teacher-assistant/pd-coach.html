@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Development Coach — AI Teacher Assistant Platform</title>
+  <meta name="description" content="An AI instructional coach that recommends strategies, resources, professional reading, videos, micro-courses, coaching goals, reflection prompts, PLC discussion ideas, growth plans, and observation prep.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Professional Development Coach</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">✨ AI Tool</span>
+          <h1>Professional Development Coach</h1>
+          <p class="lead">Your on-demand instructional coach. Name a focus area and a goal, and the assistant builds a personalized growth plan — high-leverage strategies, resources, and reflection — so you can keep getting better, one cycle at a time.</p>
+        </div>
+
+        <p>An AI instructional coach that recommends <b>high-leverage strategies</b>, <b>resources</b>, professional reading, videos, and <b>micro-courses</b>, then frames it all into actionable <b>coaching goals</b>, <b>reflection prompts</b>, <b>PLC discussion</b> ideas, growth plans, and observation prep. Each plan starts with a baseline, names one move to try, and closes the loop with evidence of impact.</p>
+        <p class="muted" style="font-size:.88rem;">Drafts are starting points — adapt recommendations to your context, learners, and school improvement goals.</p>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="pd">
+            <h3>Build a Coaching Plan</h3>
+            <div class="field">
+              <label for="pd-area">Focus area</label>
+              <select id="pd-area" name="area">
+                <option>Engagement</option>
+                <option>Classroom Management</option>
+                <option>Assessment</option>
+                <option>Differentiation</option>
+                <option>Discourse</option>
+                <option>Technology Integration</option>
+                <option>Feedback</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pd-goal">Your coaching goal</label>
+              <textarea id="pd-goal" name="goal" placeholder="e.g., Increase student discourse so more voices are heard in every discussion."></textarea>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+          <div class="gen-output" data-output="pd">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then press Generate. The AI draft appears here.</p></div></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

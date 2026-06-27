@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — AI Teacher Assistant Platform</title>
+  <meta name="description" content="Appearance, default preferences, integrations, responsible-AI and data-privacy practices, and local data controls for the AI Teacher Assistant Platform.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Settings</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚙️ Settings</span>
+          <h1>Settings</h1>
+          <p class="lead">Manage your appearance, default preferences, and data. These settings show how a production platform would be configured — in this demonstration, everything runs and is stored entirely in your browser.</p>
+        </div>
+
+        <!-- ===== Appearance ===== -->
+        <div class="card" data-fade style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Appearance</h3>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.6rem 0;border-bottom:1px solid var(--border);">
+            <div>
+              <label for="" style="font-weight:700;display:block;">Dark mode</label>
+              <span class="muted" style="font-size:.88rem;">Switch between light and dark themes. Your choice is remembered on this device.</span>
+            </div>
+            <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+          <div style="padding:.8rem 0 0;">
+            <label style="font-weight:700;display:block;">Text scaling &amp; accessibility</label>
+            <span class="muted" style="font-size:.88rem;">Use the floating accessibility toolbar (bottom-left of every page) to enlarge text, increase contrast, and adjust spacing for comfortable reading.</span>
+          </div>
+        </div>
+
+        <!-- ===== Default preferences ===== -->
+        <div class="card" data-fade style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Default preferences</h3>
+          <p class="muted" style="margin-top:0;">Illustrative defaults that would pre-fill the tools so you spend less time on setup. (Presentational only in this demo.)</p>
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="def-grade">Default grade band</label>
+              <select id="def-grade">
+                <option>Kindergarten</option>
+                <option>Grades 1–2</option>
+                <option selected>Grades 3–5</option>
+                <option>Grades 6–8</option>
+                <option>Grades 9–12</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="def-subject">Default subject</label>
+              <select id="def-subject">
+                <option selected>English Language Arts</option>
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>Social Studies</option>
+                <option>World Languages</option>
+                <option>The Arts</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="def-tone">Default communication tone</label>
+              <select id="def-tone">
+                <option selected>Warm &amp; professional</option>
+                <option>Direct &amp; concise</option>
+                <option>Encouraging &amp; supportive</option>
+                <option>Formal</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="def-standards">Preferred standards framework</label>
+              <input id="def-standards" type="text" value="Common Core State Standards" placeholder="e.g., CCSS, TEKS, NGSS">
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Integrations ===== -->
+        <div class="card" data-fade style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Integrations <span class="soon">Coming soon</span></h3>
+          <p class="muted" style="margin-top:0;">A production release would connect securely to the systems you already use. These are planned, not active in this demonstration.</p>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>🎓 Google Classroom — push assignments &amp; rosters</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>🎨 Canvas — sync courses &amp; submissions</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>👥 Microsoft Teams — share to class teams</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>📚 Curriculum import — map to your scope &amp; sequence</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>📊 LMS grade passback — return scores automatically</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border);"><span>🎙️ Voice assistant — hands-free drafting</span> <span class="soon">Soon</span></li>
+            <li style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;"><span>🗣️ Speech-to-text — dictate notes &amp; feedback</span> <span class="soon">Soon</span></li>
+          </ul>
+        </div>
+
+        <!-- ===== Responsible AI ===== -->
+        <div class="card" data-fade style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Responsible AI &amp; Data Privacy</h3>
+          <p>This platform is built around human oversight. A few principles guide it:</p>
+          <ul>
+            <li><b>All AI is simulated client-side.</b> Every "AI" output in this demonstration is generated from templates in your own browser — there is no external model call.</li>
+            <li><b>No data leaves the browser.</b> Anything you enter or save stays on this device in <code>localStorage</code>; it is never transmitted to a server.</li>
+            <li><b>Outputs are drafts.</b> Generated lessons, assessments, messages, and feedback are starting points that require your review for accuracy, bias, and fit before use.</li>
+            <li><b>Teachers stay in control.</b> The educator makes every instructional and grading decision; AI assists, it does not decide.</li>
+          </ul>
+          <p class="muted" style="font-size:.9rem;">In a production deployment, this product would add a formal data-governance program, alignment with FERPA and GDPR, audit logs of AI-assisted actions, and explicit human-oversight gates before any output reaches students or families.</p>
+        </div>
+
+        <!-- ===== Data ===== -->
+        <div class="card" data-fade>
+          <h3 style="margin-top:0;">Data</h3>
+          <p class="muted" style="margin-top:0;">This site stores the following entirely on your device: your saved resources (<code>ats:library</code>), favorited prompts (<code>ats:favs</code>), workspace conversation history (<code>ats:history</code>), time-saved stats (<code>ats:stats</code>), and your theme choice (<code>ats:theme</code>). Clearing it cannot be undone.</p>
+          <button class="out-btn" onclick="if(confirm('Clear all saved resources, favorites, history and stats?')){localStorage.removeItem('ats:library');localStorage.removeItem('ats:favs');localStorage.removeItem('ats:history');localStorage.removeItem('ats:stats');window.ATS&&window.ATS.toast('Local data cleared','ok');}">Clear local data</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubric Builder — AI Teacher Assistant Platform</title>
+  <meta name="description" content="Build analytic and holistic rubrics for writing, projects, presentations, and labs — with editable criteria and clear, level-based scoring guides.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan &amp; Create / <b>Rubric Builder</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">✨ AI Tool</span>
+          <h1>AI Rubric Builder</h1>
+          <p class="lead">Describe the assignment, choose your criteria, and get a clear, classroom-ready rubric with consistent performance levels and a transparent scoring guide.</p>
+        </div>
+
+        <p>Create <b>analytic</b> and <b>holistic</b> rubrics for <b>writing</b>, <b>projects</b>, <b>presentations</b>, and <b>labs</b>. Each rubric comes with editable criteria and level-based descriptors, so you can fine-tune the language and point values to match your assignment and grading scale.</p>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="rubric">
+            <h3>Generate a Rubric</h3>
+            <div class="field">
+              <label for="rb-task">Assignment / task</label>
+              <input id="rb-task" name="task" placeholder="e.g., Argumentative Essay">
+            </div>
+            <div class="field">
+              <label for="rb-style">Rubric type</label>
+              <select id="rb-style" name="style">
+                <option selected>Analytic</option>
+                <option>Holistic</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Choose criteria</label>
+              <div class="chip-set" data-group="criteria">
+                <button type="button" class="chip-toggle on">Claim &amp; Focus</button>
+                <button type="button" class="chip-toggle on">Evidence &amp; Support</button>
+                <button type="button" class="chip-toggle on">Organization</button>
+                <button type="button" class="chip-toggle on">Conventions</button>
+                <button type="button" class="chip-toggle">Creativity</button>
+                <button type="button" class="chip-toggle">Collaboration</button>
+                <button type="button" class="chip-toggle">Presentation</button>
+              </div>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+          <div class="gen-output" data-output="rubric">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then press Generate. The AI draft appears here.</p></div></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Workspace — AI Teacher Assistant Platform</title>
+  <meta name="description" content="The central AI workspace: ask for anything in natural language and the assistant drafts it — lessons, assessments, parent emails, feedback, and more.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Workspace / <b>AI Assistant</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">✨ Central Workspace</span>
+          <h1>Ask for anything</h1>
+          <p class="lead">Type a request in plain language. The assistant interprets it, drafts a starting point, and points you to the full tool to refine and save. You stay the instructional decision-maker.</p>
+        </div>
+
+        <div class="ws-grid">
+          <!-- conversation -->
+          <div class="chat">
+            <div class="chat-head"><span class="bot">✨</span> AI Teaching Assistant <span class="ai-pill" style="margin-left:auto;">Simulated · client-side</span></div>
+            <div class="chat-log" data-ws-log></div>
+            <div class="chat-suggest">
+              <button class="chat-chip" data-ws-suggest>Create tomorrow's lesson on fractions</button>
+              <button class="chat-chip" data-ws-suggest>Generate a 5-question exit ticket on ecosystems</button>
+              <button class="chat-chip" data-ws-suggest>Write a positive note to a parent</button>
+              <button class="chat-chip" data-ws-suggest>Differentiate this activity for ELL students</button>
+              <button class="chat-chip" data-ws-suggest>Build a rubric for an argumentative essay</button>
+            </div>
+            <form class="composer" data-ws-form>
+              <input type="text" placeholder="e.g., “Summarize this week's assessment results for families”" aria-label="Ask the assistant">
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <!-- side panels -->
+          <div class="ws-side">
+            <div class="panel">
+              <h4>⚡ Quick Templates</h4>
+              <ul class="ws-list">
+                <li><a href="lesson-planner.html">Daily lesson plan</a></li>
+                <li><a href="assessment-generator.html">Exit ticket (3 Qs)</a></li>
+                <li><a href="communication.html">Weekly newsletter</a></li>
+                <li><a href="feedback.html">Writing feedback</a></li>
+                <li><a href="rubric-builder.html">Project rubric</a></li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h4>🕘 Recent &amp; Saved</h4>
+              <ul class="ws-list">
+                <li><a href="resource-library.html">Open Resource Library →</a></li>
+                <li><a href="prompt-library.html">Browse Prompt Library →</a></li>
+                <li><a href="teacher-dashboard.html">View your dashboard →</a></li>
+              </ul>
+              <button class="out-btn" style="margin-top:.6rem;" type="button" data-ws-clear>Clear conversation</button>
+            </div>
+            <div class="panel">
+              <h4>🛡️ Responsible AI</h4>
+              <p class="muted" style="font-size:.86rem;margin:0;">Drafts only. Review every output for accuracy, bias, and fit before sharing with students or families. <a href="settings.html">Settings →</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

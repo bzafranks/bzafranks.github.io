@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — AI Teacher Assistant Platform · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A consulting case study on designing an AI Teacher Assistant Platform: the educational challenge, teacher workload analysis, human-centered AI design, governance, implementation, ROI, and impact.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Consulting Case Study</p>
+        <h1>Designing an AI Teacher Assistant Platform</h1>
+        <p class="lead">How a clear-eyed analysis of teacher workload becomes a human-centered, responsibly governed AI product — one that gives educators time back without ever taking away their professional judgment.</p>
+      </div>
+    </section>
+
+    <section class="section"><div class="container narrow">
+
+      <div class="lesson-block">
+        <h3>The Educational Challenge</h3>
+        <p>Teachers are leaving the profession faster than systems can replace them, and time is the root cause. The average K–12 teacher spends only a fraction of the workweek on direct instruction; the rest is consumed by planning, assessment creation, grading, differentiation, documentation, and family communication — much of it after hours and unpaid. Generative AI arrived in classrooms abruptly and without a plan, creating a second problem on top of the first: tools that are powerful but ungoverned, inconsistent, and disconnected from instructional practice.</p>
+        <p>The opportunity was to design something better than a chatbot: an <strong>integrated productivity platform</strong> purpose-built for the realities of teaching, where AI accelerates repetitive work and the educator remains the instructional decision-maker on every output.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Teacher Workload Analysis</h3>
+        <p>I began with the work itself. Mapping a representative teacher week surfaced where hours actually go and which tasks are both high-volume and highly templatable — the sweet spot for AI assistance.</p>
+        <ul class="check-list">
+          <li><strong>Lesson &amp; unit planning</strong> — recurring structure, high cognitive load, ideal for strong first drafts.</li>
+          <li><strong>Assessment &amp; rubric creation</strong> — repetitive formatting, alignment, and answer-key work.</li>
+          <li><strong>Differentiation</strong> — the same activity reworked for ELL, IEP/504, and advanced learners.</li>
+          <li><strong>Family communication</strong> — newsletters, positive notes, concern messages, and conference invitations.</li>
+          <li><strong>Feedback &amp; documentation</strong> — personalized comments and objective behavior records.</li>
+        </ul>
+        <p>Crucially, the analysis also identified work that must <em>not</em> be automated: grading judgments, relationship-building, and any decision about an individual child's needs. That boundary became a design principle.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Needs Assessment</h3>
+        <p>Working from the personas of a classroom teacher, an instructional coach, and a school leader, I defined the jobs-to-be-done for each:</p>
+        <ul class="check-list">
+          <li><strong>Teachers</strong> need to start from a strong draft, not a blank page — fast, in plain language, without learning prompt syntax.</li>
+          <li><strong>Coaches</strong> need consistent, standards-aligned artifacts they can support and refine across a team.</li>
+          <li><strong>Leaders</strong> need visibility into adoption, time saved, and responsible-use safeguards.</li>
+        </ul>
+        <p>The shared requirement across all three: outputs must be <strong>clearly labeled drafts</strong> that a professional reviews before anything reaches a student or family.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>AI Workflow Design</h3>
+        <p>Rather than a single open-ended prompt box, I designed <strong>task-specific workflows</strong>. Each tool collects just enough structured input — subject, grade, topic, tone, learner profile — and routes it through a purpose-built generation template. This turns vague intent into reliable, standards-aware drafts and removes the burden of prompt engineering from the teacher.</p>
+        <p>A natural-language <strong>AI Workspace</strong> sits above the tools: a teacher types "create tomorrow's lesson on fractions," the system interprets the request, drafts a starting point, and hands off to the full tool to refine and save. Intent in; structured, editable output back.</p>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Human-Centered AI Philosophy</h3>
+        <p>The product's organizing principle is simple: <strong>AI proposes; the teacher decides.</strong> Every feature is framed as collaboration, not replacement. The assistant drafts, suggests, and accelerates; the educator reviews, adapts, and owns the result. This is expressed in the interface itself — outputs carry a visible "human-in-the-loop" review note, nothing is sent automatically, and the language throughout reinforces that the teacher is the professional in the room.</p>
+      </div>
+
+      <div class="lesson-block">
+        <h3>UX Design Process</h3>
+        <p>The experience was designed to feel like a premium SaaS product that respects a teacher's limited time and attention:</p>
+        <ul class="check-list">
+          <li><strong>Command palette (⌘/Ctrl + K)</strong> — keyboard-first access to any tool from anywhere.</li>
+          <li><strong>Consistent generator pattern</strong> — input form on the left, live draft on the right, with copy / regenerate / save actions.</li>
+          <li><strong>Calm visual system</strong> — a signature indigo accent, generous whitespace, and a built-in dark mode.</li>
+          <li><strong>Accessibility</strong> — semantic HTML, skip links, an accessibility toolbar, keyboard navigation, and high-contrast support.</li>
+          <li><strong>Trust cues</strong> — loading states, draft labeling, and a one-click "Save to Resource Library."</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Information Architecture</h3>
+        <p>The platform is organized into <strong>14 tools</strong> grouped by the rhythm of teaching, with a persistent side rail and the command palette tying everything together:</p>
+        <ul class="check-list">
+          <li><strong>Workspace</strong> — the natural-language AI Workspace.</li>
+          <li><strong>Plan &amp; Create</strong> — Lesson Planner, Assessment Generator, Rubric Builder, Differentiation.</li>
+          <li><strong>Communicate</strong> — Parent Communication, Student Feedback, Behavior Documentation.</li>
+          <li><strong>Manage</strong> — Classroom Management, Teacher Dashboard.</li>
+          <li><strong>Grow</strong> — PD Coach, Prompt Library, Resource Library, Settings.</li>
+        </ul>
+        <p>A single tool registry powers the rail, the command palette, and the Workspace router, so navigation stays consistent everywhere the product is used.</p>
+      </div>
+
+      <div class="lesson-block">
+        <h3>Responsible AI, Governance &amp; Privacy</h3>
+        <p>Responsible use is built into the product, not bolted on afterward.</p>
+        <ul class="check-list">
+          <li><strong>Human-in-the-loop by default</strong> — every output is a reviewable draft; nothing auto-sends to students or families.</li>
+          <li><strong>Bias &amp; accuracy review</strong> — explicit prompts to check outputs for fairness, accuracy, and student fit.</li>
+          <li><strong>Privacy by design</strong> — the demonstration keeps all data client-side in the browser; a production build would add role-based access, audit logging, and data-residency controls.</li>
+          <li><strong>Governance settings</strong> — a dedicated Settings area for responsible-use preferences and integration controls.</li>
+          <li><strong>Transparency</strong> — AI-generated content is clearly labeled as such throughout.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>Implementation Strategy</h3>
+        <p><em>Presented as if to a Ministry of Education or district leadership team.</em> Adoption succeeds when teachers trust the tool and leaders can see it working. I recommend a deliberately paced, four-stage rollout:</p>
+        <ul class="check-list">
+          <li><strong>Stage 1 — Foundation:</strong> governance policy, responsible-use guidelines, and data agreements established before any classroom use.</li>
+          <li><strong>Stage 2 — Teacher onboarding &amp; PD:</strong> hands-on sessions framed around time saved, with the human-in-the-loop principle taught explicitly; coaches certified as on-site champions.</li>
+          <li><strong>Stage 3 — Pilot:</strong> a small cohort across grade bands, measured against baseline workload and satisfaction, with rapid iteration on feedback.</li>
+          <li><strong>Stage 4 — Scale:</strong> phased expansion with continuous PD, a prompt/resource library curated by district experts, and quarterly evaluation gates.</li>
+        </ul>
+        <p>Teacher trust is the true bottleneck — so the strategy invests there first and lets evidence, not mandate, drive expansion.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Expected Impact &amp; Time Savings</h3>
+        <p><em>Illustrative figures for demonstration.</em> Based on the workload analysis, the platform targets meaningful, recoverable time:</p>
+        <ul class="check-list">
+          <li><strong>~6 hours/week saved per teacher</strong> across planning, assessment, and communication.</li>
+          <li><strong>~50% faster</strong> first-draft creation for lessons and assessments.</li>
+          <li><strong>100% of outputs teacher-reviewed</strong> before use — quality up, not just speed.</li>
+          <li><strong>Reduced after-hours work</strong>, a direct lever on burnout and retention.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Return on Investment</h3>
+        <p><em>Illustrative.</em> Six hours saved per teacher per week, across a 100-teacher school, is roughly 600 hours weekly returned to instruction and well-being — the equivalent of meaningful additional capacity at no added headcount. Because the demonstration runs as a static site with no per-seat AI cost, hosting is effectively free; a production deployment's cost is dominated by model usage, which the structured-workflow design keeps efficient. The dominant return, however, is non-financial: <strong>teacher retention</strong>. Replacing a single teacher costs a district far more than a year of platform access.</p>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Future Enhancements</h3>
+        <ul class="check-list">
+          <li><strong>Voice assistant</strong> — hands-free drafting while a teacher sets up the room.</li>
+          <li><strong>Speech-to-text</strong> — dictate feedback and notes between classes.</li>
+          <li><strong>LMS &amp; suite integration</strong> — Google Classroom, Canvas, and Microsoft Teams for one-click publishing and roster sync.</li>
+          <li><strong>Adaptive recommendations</strong> — suggestions tuned to a teacher's grade, subject, and past edits.</li>
+          <li><strong>Team &amp; district libraries</strong> — shared, curated prompts and resources with governance controls.</li>
+        </ul>
+      </div>
+
+      <div class="callout note">
+        <h3>A product that connects to the practice</h3>
+        <p>This platform operationalizes the same instructional-design rigor found across this portfolio — standards alignment, UDL, and Bloom's/DOK balance — and packages it as a commercially viable edtech product that any school could adopt.</p>
+      </div>
+
+      <div class="lesson-block">
+        <h3>Professional Reflection</h3>
+        <p>Designing this product reinforced that the hardest part of AI in education is not the model — it is the workflow, the trust, and the boundaries. The full first-person <a href="reflection.html">reflection →</a> explores what this build demonstrates about leading AI innovation in education.</p>
+        <div class="btn-row" style="margin-top:1rem;">
+          <a class="btn" href="workspace.html">Open the AI Workspace</a>
+          <a class="btn ghost" href="../../index.html#case-studies">All Case Studies</a>
+        </div>
+      </div>
+
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

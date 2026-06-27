@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard — AI Teacher Assistant Platform</title>
+  <meta name="description" content="Your week at a glance: AI usage, estimated time saved, planning progress, upcoming lessons, recent activity, and quick actions — all in one teacher dashboard.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Teacher Assistant Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AT</span><span class="brand-text"><span class="brand-title">AI Teacher Assistant</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="lesson-planner.html">Planner</a></li>
+        <li><a href="assessment-generator.html">Assessments</a></li>
+        <li><a href="communication.html">Communication</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="prompt-library.html">Prompts</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every tool page) ===== -->
+      <aside class="app-rail" aria-label="Tools">
+        <div class="rail-brand"><span class="mark">AT</span><b>Teacher Workspace</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">✨</span> AI Workspace</a>
+        <div class="rail-group">Plan &amp; Create</div>
+        <a class="rail-link" href="lesson-planner.html"><span class="ico">📝</span> Lesson Planner</a>
+        <a class="rail-link" href="assessment-generator.html"><span class="ico">🧪</span> Assessment Generator</a>
+        <a class="rail-link" href="rubric-builder.html"><span class="ico">📊</span> Rubric Builder</a>
+        <a class="rail-link" href="differentiation.html"><span class="ico">🧩</span> Differentiation</a>
+        <div class="rail-group">Communicate</div>
+        <a class="rail-link" href="communication.html"><span class="ico">✉️</span> Parent Communication</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Student Feedback</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">📋</span> Behavior Docs</a>
+        <div class="rail-group">Manage</div>
+        <a class="rail-link" href="classroom.html"><span class="ico">🪑</span> Classroom Mgmt</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📈</span> Teacher Dashboard</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="pd-coach.html"><span class="ico">🎓</span> PD Coach</a>
+        <a class="rail-link" href="prompt-library.html"><span class="ico">📚</span> Prompt Library</a>
+        <a class="rail-link" href="resource-library.html"><span class="ico">🗂️</span> Resource Library</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Manage / <b>Teacher Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Your Week at a Glance</span>
+          <h1>Teacher Dashboard</h1>
+          <p class="lead">A single, calm view of your week — how much AI has helped, the time it has saved, what's coming up, and what needs your attention. You stay in control of every decision.</p>
+        </div>
+
+        <!-- ===== LIVE + ILLUSTRATIVE STAT STRIP ===== -->
+        <div class="stat-strip">
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="generations">0</span></div>
+            <div class="s-label">AI drafts created</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="minutes">0</span> min</div>
+            <div class="s-label">Time saved (est.)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-count="12">0</span></div>
+            <div class="s-label">Lessons planned this week</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-count="38">0</span></div>
+            <div class="s-label">Messages sent to families</div>
+          </div>
+        </div>
+        <p class="muted" style="margin:.2rem 0 1.4rem;"><small>The first two tiles reflect your real activity in this browser. Remaining figures are illustrative for demonstration.</small></p>
+
+        <!-- ===== METRIC CARDS ===== -->
+        <div class="dash-grid">
+          <div class="metric">
+            <div class="m-label">This week's planning progress</div>
+            <div class="m-num"><span data-count="82" data-suffix="%">0</span></div>
+            <div class="m-trend up">▲ 14% vs. last week</div>
+          </div>
+          <div class="metric teal">
+            <div class="m-label">Assessments scheduled</div>
+            <div class="m-num"><span data-count="6">0</span></div>
+            <div class="m-trend up">▲ 2 due Friday</div>
+          </div>
+          <div class="metric plum">
+            <div class="m-label">Parent messages sent</div>
+            <div class="m-num"><span data-count="38">0</span></div>
+            <div class="m-trend up">▲ 100% reply rate</div>
+          </div>
+          <div class="metric leaf">
+            <div class="m-label">PD goal progress</div>
+            <div class="m-num"><span data-count="65" data-suffix="%">0</span></div>
+            <div class="m-trend up">▲ on track for term goal</div>
+          </div>
+        </div>
+
+        <!-- ===== TWO-COLUMN: UPCOMING + RECENT ===== -->
+        <div class="gen-layout" style="margin-top:1.4rem;">
+          <div class="card">
+            <h3>📅 Upcoming Lessons</h3>
+            <p class="muted" style="margin-top:-.4rem;">Your draft plan for the week — open any day in the Lesson Planner to refine.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Day</th><th>Subject</th><th>Focus</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><b>Mon</b></td><td>ELA</td><td>Main Idea &amp; Supporting Details</td><td><span class="ai-pill">Ready</span></td></tr>
+                  <tr><td><b>Tue</b></td><td>ELA</td><td>Citing Text Evidence</td><td><span class="ai-pill">Ready</span></td></tr>
+                  <tr><td><b>Wed</b></td><td>Writing</td><td>Drafting Opinion Pieces</td><td><span class="ai-pill">Draft</span></td></tr>
+                  <tr><td><b>Thu</b></td><td>ELA</td><td>Compare &amp; Contrast Texts</td><td><span class="ai-pill">Draft</span></td></tr>
+                  <tr><td><b>Fri</b></td><td>Assessment</td><td>Unit 3 Reading Check + Exit Ticket</td><td><span class="soon">Needs review</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-row" style="margin-top:1rem;">
+              <a class="btn small" href="lesson-planner.html">Open Lesson Planner →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🕘 Recent Activity</h3>
+            <p class="muted" style="margin-top:-.4rem;">Your latest AI drafts and saved resources.</p>
+            <ul class="ws-list">
+              <li><a href="lesson-planner.html">📝 Drafted "Citing Text Evidence" lesson plan</a></li>
+              <li><a href="assessment-generator.html">🧪 Generated 5-question exit ticket on ecosystems</a></li>
+              <li><a href="communication.html">✉️ Wrote weekly family newsletter</a></li>
+              <li><a href="feedback.html">💬 Created growth-minded writing feedback (×4)</a></li>
+              <li><a href="rubric-builder.html">📊 Built argumentative essay rubric</a></li>
+              <li><a href="resource-library.html">🗂️ Open your Resource Library →</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===== BAR CHART: TIME SAVED BY TOOL ===== -->
+        <div class="card" style="margin-top:1.4rem;">
+          <h3>⏱️ Time saved by tool</h3>
+          <p class="muted" style="margin-top:-.4rem;">Estimated minutes saved this week, by where the AI helped most.</p>
+          <div class="barchart" role="img" aria-label="Bar chart of estimated minutes saved by tool: Lessons 95, Assessments 70, Communication 52, Feedback 38, Rubrics 24.">
+            <div class="bar-col"><div class="bar" style="height:100%"><span class="bv">95</span></div><span class="bar-label">Lessons</span></div>
+            <div class="bar-col"><div class="bar" style="height:74%"><span class="bv">70</span></div><span class="bar-label">Assessments</span></div>
+            <div class="bar-col"><div class="bar" style="height:55%"><span class="bv">52</span></div><span class="bar-label">Comms</span></div>
+            <div class="bar-col"><div class="bar" style="height:40%"><span class="bv">38</span></div><span class="bar-label">Feedback</span></div>
+            <div class="bar-col"><div class="bar" style="height:25%"><span class="bv">24</span></div><span class="bar-label">Rubrics</span></div>
+          </div>
+        </div>
+
+        <!-- ===== QUICK ACTIONS ===== -->
+        <div class="card" style="margin-top:1.4rem;">
+          <h3>⚡ Quick Actions</h3>
+          <p class="muted" style="margin-top:-.4rem;">Jump straight into your most-used tools.</p>
+          <div class="btn-row">
+            <a class="btn" href="lesson-planner.html">📝 Plan a Lesson</a>
+            <a class="btn ghost" href="assessment-generator.html">🧪 Generate an Assessment</a>
+            <a class="btn ghost" href="communication.html">✉️ Message Families</a>
+            <a class="btn ghost" href="prompt-library.html">📚 Browse Prompts</a>
+          </div>
+        </div>
+
+        <!-- ===== EXEC BRIEF ===== -->
+        <div class="callout exec-brief" style="margin-top:1.4rem;">
+          <h4>This week in brief</h4>
+          <p style="margin:0;">You're <strong>82% through your planning</strong> with two assessments due Friday and your family communication fully caught up. AI has drafted the heavy lifting; your time has gone where it matters most — reviewing, adapting, and being with students. Keep an eye on the Friday reading check, which still needs your review before it goes out.</p>
+        </div>
+
+        <p class="muted center" style="margin-top:1.4rem;"><small>All figures on this dashboard are illustrative for demonstration, except the live "AI drafts created" and "Time saved" tiles, which reflect your activity in this browser only.</small></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Teacher Assistant Platform</h4><p style="color:#c9d6e6;">Human + AI collaboration for K–12 educators — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Tools</h4><ul><li><a href="lesson-planner.html">Lesson Planner</a></li><li><a href="assessment-generator.html">Assessments</a></li><li><a href="communication.html">Communication</a></li><li><a href="prompt-library.html">Prompts</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Dashboard</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; no data leaves your browser.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
