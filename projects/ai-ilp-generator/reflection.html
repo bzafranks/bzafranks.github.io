@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection — AI Individual Learning Plan Generator · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A first-person reflection on designing the AI Individual Learning Plan Generator: personalization at scale, designing AI as a planning assistant, explainability and educator approval, UX for warmth and student voice, integrating MTSS and UDL into software, and what it demonstrates about responsible, scalable ILP systems.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Reflection</p>
+        <h1>What designing an AI learning-plan generator taught me</h1>
+        <p class="lead">A first-person look at the instructional-design decisions behind the platform — why personalization at scale is the problem worth solving, and why the right answer keeps the AI in the role of <em>assistant</em> and the educator in the role of <strong>author</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section"><div class="container narrow">
+
+      <div class="lesson-block">
+        <h3>Why personalization at scale is the central problem</h3>
+        <p>I have watched too many teachers know exactly what a student needs and have no way to act on it for everyone at once. Individualized learning is not a mystery of pedagogy; it is a problem of time and arithmetic. A genuinely personal plan takes hours, and no one has hours times a hundred and fifty. So I started here deliberately: the central instructional-design problem of our moment is not whether we <em>can</em> personalize — it is whether we can personalize for <em>every</em> learner at a scale a human can sustain. Everything else in this build is downstream of that question.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Designing AI as a planning assistant, not a decision-maker</h3>
+        <p>The most important design decision was a refusal. I would not build a system that decides for students. The AI here does the exhausting first-draft work — synthesizing evidence into a complete plan with goals, strategies, supports, and enrichment — and then it stops and hands the pen back. The educator reviews, edits, and approves. I kept asking myself one test: if this recommendation is wrong, who catches it? As long as the answer is "a professional who knows the child, before anything reaches the student," the design is sound. The moment the AI could quietly act on a learner, it would stop being an assistant and start being a risk.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Explainability and educator approval</h3>
+        <p>A draft an educator cannot interrogate is a draft they should not trust, so I made rationale a first-class citizen rather than a footnote. Every recommendation carries <em>why</em> it surfaced and which evidence informed it. That serves two purposes: it lets a teacher weigh the suggestion against what they know firsthand, and it makes approval a real act of judgment instead of a rubber stamp. I came to see explainability and approval as a single mechanism — transparency is what makes human oversight more than a formality.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>UX for warmth and student voice</h3>
+        <p>It would have been easy to render a child as a dashboard of scores. I worked hard not to. Every plan opens with the whole learner and the student's own strengths, interests, and preferences, and the visual system is intentionally warm — encouraging, calm, framing learners by possibility rather than deficit. I wanted a teacher to feel, opening a plan, that they were meeting a person. Student voice is not decoration here; it is an input the plan is built around, because a plan a student recognizes as theirs is a plan they will actually own.</p>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Integrating MTSS and UDL into software</h3>
+        <p>Personalization without proven structure is just improvisation, so I built the platform on practice educators already trust. MTSS gives the plan its tiers — universal, targeted, intensive — with ownership and timelines, and UDL shapes the recommendations themselves toward multiple means of engagement, representation, and expression. Translating those frameworks into software taught me to treat them not as compliance checkboxes but as the grammar of a good plan: the same engine that scaffolds a struggle should stretch a strength, and barriers should be designed out from the start rather than retrofitted.</p>
+      </div>
+
+      <div class="callout note">
+        <h4>What it demonstrates</h4>
+        <p>This build is evidence of a particular point of view: that responsible AI in education means drafting and explaining, never deciding; that personalization at scale is achievable when software does the heavy first-draft work and humans keep authorship; and that a scalable individual-learning-plan system can be warm, transparent, equitable, and grounded in MTSS and UDL all at once. It is a demonstration of instructional design and enterprise edtech thinking applied to the hardest version of the personalization problem.</p>
+      </div>
+
+      <div class="lesson-block leaf">
+        <h3>What this demonstrates about responsible, scalable ILP systems</h3>
+        <p>Stepping back, the platform argues that the tension people assume — between scale and care, between AI and professional judgment — is largely false when the roles are drawn correctly. AI can carry the volume; educators can keep the meaning. Done this way, a learning-plan system gets more personal as it gets bigger, because the constraint it removes is the one that forced teachers to teach to the average. That, to me, is what responsible, scalable individual-learning-plan systems should demonstrate: more personalization, less burnout, and not one decision about a child taken out of human hands.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>What I'd build next</h3>
+        <p>If I carried this forward, I would make the assistant more present without making it more powerful: voice coaching so planning and check-ins can happen hands-free, and adaptive recommendations that propose the next best step as fresh progress data arrives. I would connect plans to the tools classrooms already use through LMS integration and link goals to AI tutoring so a plan flows into practice. And I would extend the long view — career forecasting that ties today's strengths to tomorrow's pathways, and a mobile app that puts plans, goals, and family updates in a pocket. Every one of those, though, would keep the same rule: the AI proposes, and a human approves.</p>
+        <div class="btn-row" style="margin-top:1rem;">
+          <a class="btn" href="index.html">Explore the Platform</a>
+          <a class="btn ghost" href="../../index.html">All Portfolio Projects</a>
+        </div>
+      </div>
+
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' Curriculum Innovation &amp; Instructional Design Portfolio and the AI for Education Innovation Suite.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="learning-plan.html">Plan Generator</a></li><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="teacher-dashboard.html">Teacher Dashboard</a></li><li><a href="settings.html">Settings & Ethics</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="../../index.html">All Portfolio Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · All AI is simulated client-side; data is fictional. The AI is a planning assistant; educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodations &amp; Supports — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="AI-suggested instructional supports — extended time, graphic organizers, visual supports, chunked assignments, audio support, vocabulary scaffolds, flexible grouping, and technology supports — as a draft for educator review and alignment with IEP/504 plans.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Support / <b>Accommodations &amp; Supports</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧩 Accommodations &amp; Supports</span>
+          <h1>Accommodations &amp; Supports</h1>
+          <p class="lead">The AI suggests instructional supports tailored to a learner's barriers — <strong>extended time, graphic organizers, visual supports, chunked assignments, alternative assessments, audio support, vocabulary scaffolds, flexible grouping, technology supports, and teacher prompts</strong>. Suggestions are a <em>draft for educator review</em> and must be aligned with each student's IEP/504 plan and school policy. All data is fictional.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="supports">
+            <h3>Suggest supports</h3>
+            <div class="field"><label for="sup-student">Student name (optional)</label><input id="sup-student" name="student" placeholder="e.g., Jordan M."></div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="supports">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <div class="insight" style="margin-top:1.6rem;">
+          <p style="margin:0;"><b>Educator review required.</b> These AI suggestions are a starting point, not decisions. Any accommodation must be reviewed by the educator and team and aligned with the student's IEP or 504 plan and school policy before it is put in place.</p>
+        </div>
+
+        <h2 style="margin-top:2rem;">Supports by category</h2>
+        <p class="muted" style="max-width:70ch;">Supports are organized into the four standard accommodation categories so they are easy to map onto an IEP/504 plan.</p>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>👁️ Presentation</h3>
+            <p class="muted">How information reaches the learner.</p>
+            <ul>
+              <li>Graphic organizers and concept maps</li>
+              <li>Visual supports, anchor charts, and icons</li>
+              <li>Audio support / text-to-speech for passages</li>
+              <li>Vocabulary scaffolds and pre-taught key terms</li>
+              <li>Chunked directions with teacher prompts</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>✏️ Response</h3>
+            <p class="muted">How the learner shows what they know.</p>
+            <ul>
+              <li>Sentence frames and word banks</li>
+              <li>Speech-to-text or scribe for extended writing</li>
+              <li>Alternative assessments (project, oral, portfolio)</li>
+              <li>Chunked assignments with check-ins</li>
+              <li>Use of a calculator or reference sheet where appropriate</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🪑 Setting</h3>
+            <p class="muted">Where learning and assessment happen.</p>
+            <ul>
+              <li>Flexible, quiet workspace option</li>
+              <li>Preferential seating near support</li>
+              <li>Flexible grouping (small group / partner)</li>
+              <li>Reduced-distraction testing space</li>
+              <li>Technology supports (headphones, device access)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>⏱️ Timing &amp; Scheduling</h3>
+            <p class="muted">When and for how long.</p>
+            <ul>
+              <li>Extended time on extended-response tasks</li>
+              <li>Built-in movement or processing breaks</li>
+              <li>Tasks broken into shorter, timed segments</li>
+              <li>Most demanding work scheduled at peak focus times</li>
+              <li>Advance notice of transitions and deadlines</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Every support is a draft that educators review, approve, and align with IEP/504 plans and school policy. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

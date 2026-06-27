@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Monitoring — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Monitor goal completion, assessment growth, intervention effectiveness, attendance, engagement, and learning milestones with visual growth charts and an AI progress summary — a draft for educator review and approval.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">People / <b>Progress Monitoring</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Growth Over Time</span>
+          <h1>Progress Monitoring</h1>
+          <p class="lead">Track <strong>goal completion, assessment growth, intervention effectiveness, attendance, engagement, reflection, and learning milestones</strong> with visual growth charts. Insights are a <em>draft for educator review and approval</em>. <span class="muted">All data is fictional and illustrative.</span></p>
+        </div>
+
+        <!-- ===== Scorecards ===== -->
+        <div class="kpi-grid">
+          <div class="scorecard green">
+            <div class="sc-label">Goal attainment</div>
+            <div class="sc-num"><span data-count="74" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">▲ 18% since week 1</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">On-track goals</div>
+            <div class="sc-num"><span data-count="5">0</span> / 7</div>
+            <div class="sc-trend up">▲ 2 goals this month</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Attendance rate</div>
+            <div class="sc-num"><span data-count="93" data-suffix="%">0%</span></div>
+            <div class="sc-trend flat">— steady vs. last term</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Engagement index</div>
+            <div class="sc-num"><span data-count="86" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">▲ 11% since intervention start</div>
+          </div>
+        </div>
+
+        <!-- ===== Goal completion ===== -->
+        <div class="tool-head" style="margin-top:2.4rem;">
+          <h2>Goal completion</h2>
+          <p class="lead">Progress toward each SMART goal on Jordan M.'s learning plan.</p>
+        </div>
+        <div class="goal-grid">
+          <article class="goal-card">
+            <span class="g-area">Mathematics</span>
+            <h4>2-step word problems, 80% accuracy</h4>
+            <div class="ring" data-val="72" role="img" aria-label="72 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Tier 2 small group, 4 weeks in. <span class="tl-pill green">On track</span></p>
+          </article>
+          <article class="goal-card">
+            <span class="g-area">Writing</span>
+            <h4>Organized 5-paragraph piece</h4>
+            <div class="ring" data-val="54" role="img" aria-label="54 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Transitions are the next focus. <span class="tl-pill amber">Monitor</span></p>
+          </article>
+          <article class="goal-card">
+            <span class="g-area">Executive Functioning</span>
+            <h4>Self-start work within 3 minutes</h4>
+            <div class="ring" data-val="80" role="img" aria-label="80 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Visual schedule working well. <span class="tl-pill green">On track</span></p>
+          </article>
+          <article class="goal-card">
+            <span class="g-area">Reading</span>
+            <h4>Summarize text with 2 key details</h4>
+            <div class="ring" data-val="91" role="img" aria-label="91 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Near mastery — ready to extend. <span class="tl-pill green">Nearly met</span></p>
+          </article>
+        </div>
+
+        <!-- ===== Assessment growth + intervention effectiveness ===== -->
+        <div class="grid grid-2" style="margin-top:2.4rem;">
+          <article class="card">
+            <h3>Assessment growth</h3>
+            <p class="muted" style="font-size:.88rem;">Weekly curriculum-based math probe scores (% correct), Weeks 1–8.</p>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="Math probe scores rising from 42 to 78 percent over 8 weeks">
+              <path class="area" d="M0,46 L43,44 L86,38 L129,34 L171,28 L214,22 L257,18 L300,12 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,46 L43,44 L86,38 L129,34 L171,28 L214,22 L257,18 L300,12"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Baseline 42% → current 78%. <span class="tl-pill green">▲ trending up</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Intervention effectiveness</h3>
+            <p class="muted" style="font-size:.88rem;">Progress per active intervention, vs. expected rate of improvement.</p>
+            <div class="barlist">
+              <div class="row"><span>Tier 2 math group</span><span class="track"><span class="fill" data-pct="82"></span></span><span>82%</span></div>
+              <div class="row"><span>Writing organizers</span><span class="track"><span class="fill" data-pct="64"></span></span><span>64%</span></div>
+              <div class="row"><span>EF check-in</span><span class="track"><span class="fill" data-pct="88"></span></span><span>88%</span></div>
+              <div class="row"><span>Home reading routine</span><span class="track"><span class="fill" data-pct="71"></span></span><span>71%</span></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.6rem;">Three of four interventions meeting or exceeding the expected response rate. <span class="tl-pill amber">Writing: monitor</span></p>
+          </article>
+        </div>
+
+        <!-- ===== Attendance + engagement ===== -->
+        <div class="grid grid-2" style="margin-top:1.4rem;">
+          <article class="card">
+            <h3>Attendance</h3>
+            <p class="muted" style="font-size:.88rem;">Days present by month this term.</p>
+            <div class="barlist">
+              <div class="row"><span>September</span><span class="track"><span class="fill" data-pct="95"></span></span><span>95%</span></div>
+              <div class="row"><span>October</span><span class="track"><span class="fill" data-pct="90"></span></span><span>90%</span></div>
+              <div class="row"><span>November</span><span class="track"><span class="fill" data-pct="88"></span></span><span>88%</span></div>
+              <div class="row"><span>December</span><span class="track"><span class="fill" data-pct="93"></span></span><span>93%</span></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.6rem;">Average 93% — within target band. <span class="tl-pill green">On track</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Engagement &amp; reflection</h3>
+            <p class="muted" style="font-size:.88rem;">Weekly engagement rating (observation + student self-rating), Weeks 1–8.</p>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="Engagement rating rising over 8 weeks">
+              <path class="area" d="M0,40 L43,42 L86,36 L129,30 L171,32 L214,24 L257,20 L300,16 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,40 L43,42 L86,36 L129,30 L171,32 L214,24 L257,20 L300,16"></path>
+            </svg>
+            <blockquote class="insight" style="margin-top:.6rem;"><b>Student reflection:</b> "Math is less scary when I draw the problem first. I want to keep working with my group." <span class="muted">— Jordan, Week 8</span></blockquote>
+          </article>
+        </div>
+
+        <!-- ===== Learning milestones timeline ===== -->
+        <div class="tool-head" style="margin-top:2.4rem;">
+          <h2>Learning milestones</h2>
+          <p class="lead">Key checkpoints across this monitoring cycle.</p>
+        </div>
+        <ul class="timeline">
+          <li class="done"><span class="t-when">Week 1</span><br>Baseline diagnostics completed; learning plan approved by team and family.</li>
+          <li class="done"><span class="t-when">Week 3</span><br>First family update; Tier 2 math group launched; visual schedule introduced.</li>
+          <li class="done"><span class="t-when">Week 6</span><br>Reading goal nearly met; data review confirms continue-and-extend decision.</li>
+          <li class="now"><span class="t-when">Week 8 (now)</span><br>Mid-cycle review; adjusting writing supports to focus on transitions.</li>
+          <li><span class="t-when">Week 10</span><br>Formal review with team and family; set next-cycle goals and pathway.</li>
+        </ul>
+
+        <!-- ===== AI Progress Summary ===== -->
+        <div class="card exec-brief" style="margin-top:2.4rem;">
+          <h4>✨ AI Progress Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Across this cycle, <strong>Jordan M.</strong> is showing <strong>strong, accelerating growth</strong>. Goal attainment rose to 74% (▲18 points), with 5 of 7 goals on track. Math probe scores climbed from a 42% baseline to 78%, and engagement is up 11 points since interventions began. Reading is approaching mastery and is ready to be extended. Writing is the one area progressing more slowly than expected.</p>
+          <h4 style="margin-top:1rem;">Recommended adjustments</h4>
+          <ul>
+            <li><strong>Extend the reading goal</strong> — add a compare-two-sources component now that summarizing is near mastery.</li>
+            <li><strong>Refine the writing intervention</strong> — narrow the focus to paragraph transitions with a dedicated organizer and explicit modeling.</li>
+            <li><strong>Maintain the math and EF supports</strong> — both are exceeding expected response rates; continue at current intensity.</li>
+            <li><strong>Watch attendance in November</strong> — the 88% dip is within band but worth a brief family check-in.</li>
+          </ul>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 Educator approves</span> This summary is an AI-drafted suggestion on fictional data — review, adjust, and approve before acting on it.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. All progress data shown is fictional and illustrative, for portfolio demonstration only.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

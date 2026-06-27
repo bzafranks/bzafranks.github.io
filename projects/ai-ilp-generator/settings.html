@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings &amp; Responsible AI — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Appearance, default preferences, future AI features, and the responsible-AI and ethics commitments behind the platform — human oversight, transparency, privacy, equity, and educator review. Plus an implementation guide for schools and districts.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Settings &amp; Ethics</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚙️ Deliver</span>
+          <h1>Settings &amp; Responsible AI</h1>
+          <p class="lead">Tune the experience and review the commitments that keep this platform <strong>safe, fair, and human-led</strong>. The AI is always a planning assistant — educators review, approve, and adapt every plan. All data is fictional and stored only in your browser.</p>
+        </div>
+
+        <!-- ===== 1 + 2: Appearance + Default preferences ===== -->
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 style="margin-top:0;">Appearance</h3>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.6rem 0;border-bottom:1px solid var(--border);">
+              <div>
+                <b>Dark mode</b>
+                <p class="muted" style="margin:0.2rem 0 0;font-size:.86rem;">Warm, low-glare theme for evening planning. Your choice is saved locally.</p>
+              </div>
+              <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+            </div>
+            <p class="muted" style="font-size:.86rem;margin-bottom:0;">An <strong>accessibility toolbar</strong> (text size, high contrast, readable spacing) is available site-wide via the floating control — supporting WCAG-aligned, learner-friendly reading.</p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;">Default preferences</h3>
+            <div class="field"><label for="set-grade">Default grade</label>
+              <select id="set-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option>Grade 5</option><option selected>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+            </div>
+            <div class="field"><label for="set-subject">Subject focus</label>
+              <select id="set-subject" name="subject"><option>Balanced</option><option selected>Mathematics</option><option>Reading / ELA</option><option>Writing</option><option>Science</option><option>Social-emotional</option></select>
+            </div>
+            <div class="field"><label for="set-template">Plan template</label>
+              <select id="set-template" name="template"><option selected>Comprehensive ILP</option><option>Quick plan</option><option>Intervention-focused</option><option>Enrichment-focused</option></select>
+            </div>
+            <p class="muted" style="font-size:.82rem;margin-bottom:0;">Presentational in this demo — selections illustrate how defaults would carry into generators.</p>
+          </div>
+        </div>
+
+        <!-- ===== 3: Future AI Features ===== -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3 style="margin-top:0;">Future AI features</h3>
+          <p class="muted" style="margin-top:0;">On the roadmap — designed to extend the platform while keeping educators in control.</p>
+          <ul class="stack" style="list-style:none;padding:0;margin:0;">
+            <li>🎙️ Voice coaching <span class="soon">Soon</span></li>
+            <li>🧠 Adaptive learning recommendations <span class="soon">Soon</span></li>
+            <li>🔗 LMS integration <span class="soon">Soon</span></li>
+            <li>⌚ Wearable device integration <span class="soon">Soon</span></li>
+            <li>🤖 AI tutoring <span class="soon">Soon</span></li>
+            <li>🧭 Career forecasting <span class="soon">Soon</span></li>
+            <li>🗂️ Digital portfolio integration <span class="soon">Soon</span></li>
+            <li>📝 Natural language reports <span class="soon">Soon</span></li>
+            <li>📱 Mobile companion app <span class="soon">Soon</span></li>
+          </ul>
+        </div>
+
+        <!-- ===== 4: Responsible AI & Ethics ===== -->
+        <div class="card" style="margin-top:1.5rem;border-top:4px solid var(--ilp-accent);">
+          <span class="tool-badge">🛡️ Our commitment</span>
+          <h2 style="margin:0.4rem 0;">Responsible AI &amp; Ethics</h2>
+          <p class="lead" style="font-size:1.05rem;">This platform is built on the principle that AI <strong>supports</strong> educators — it never replaces professional judgment. Every recommendation is a draft for review.</p>
+          <div class="grid grid-2">
+            <div>
+              <h4>👤 Human oversight</h4>
+              <p class="muted">A qualified educator reviews, approves, and adapts every plan, goal, and report. AI proposes; people decide.</p>
+              <h4>🔍 Transparency</h4>
+              <p class="muted">We clearly label AI-generated drafts and disclose that outputs are simulated, illustrative, and based on fictional data.</p>
+              <h4>💡 Explainability</h4>
+              <p class="muted">Recommendations include a plain-language rationale (“why this recommendation”) so educators can evaluate the reasoning.</p>
+              <h4>⚖️ Bias awareness</h4>
+              <p class="muted">We actively watch for and mitigate bias so suggestions do not disadvantage any learner or group.</p>
+            </div>
+            <div>
+              <h4>🔒 Privacy &amp; student-data protection</h4>
+              <p class="muted">Data minimization by design. In this demo, all data is fictional and stored only in your local browser — never transmitted.</p>
+              <h4>🎚️ Responsible personalization</h4>
+              <p class="muted">Personalization broadens opportunity; it never tracks learners into limiting paths or lowers expectations.</p>
+              <h4>🌍 Equity</h4>
+              <p class="muted">Tools are designed to widen access and close gaps, with attention to accessibility and diverse learner needs.</p>
+              <h4>📝 Consent considerations</h4>
+              <p class="muted">Real deployments require informed consent and clear communication with families about how AI is used.</p>
+              <h4>✅ Appropriate educator review</h4>
+              <p class="muted">No plan is shared or acted upon without an educator's explicit review and approval.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 5: Implementation Guide ===== -->
+        <div class="card" style="margin-top:1.5rem;">
+          <span class="tool-badge">🚀 For leaders</span>
+          <h2 style="margin:0.4rem 0;">Implementation guide</h2>
+          <p class="muted" style="margin-top:0;">A concise framework for schools, districts, ministries of education, student-support and special-education teams, and curriculum leaders bringing responsible AI planning to their context.</p>
+          <ol class="stack">
+            <li><b>Implementation strategy.</b> Start with a clear purpose, success criteria, and named owners. Position AI as an assistant that augments — never replaces — educator judgment.</li>
+            <li><b>Teacher training.</b> Build educator capacity in prompting, interpreting drafts, reviewing for bias, and the approval workflow before any classroom use.</li>
+            <li><b>Responsible AI.</b> Adopt the principles above as policy: human oversight, transparency, explainability, and equity, with a clear accountability chain.</li>
+            <li><b>Privacy.</b> Apply data minimization, role-based access, and family communication; align with FERPA, GDPR, and local data-protection law.</li>
+            <li><b>Data governance.</b> Define data ownership, retention, audit trails, and vendor agreements; review systems regularly for accuracy and fairness.</li>
+            <li><b>Pilot.</b> Run a small, time-boxed pilot with a representative cohort, baseline metrics, and structured educator and family feedback.</li>
+            <li><b>Scaling roadmap.</b> Expand in phases tied to readiness gates — training complete, governance signed off, and pilot outcomes met.</li>
+            <li><b>Evaluation metrics.</b> Track learning outcomes, goal-attainment rates, educator time saved, equity indicators, and stakeholder trust — and adjust.</li>
+          </ol>
+        </div>
+
+        <!-- ===== 6: Data ===== -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3 style="margin-top:0;">Data</h3>
+          <p class="muted" style="margin-top:0;">This demo stores everything in your browser's <code>localStorage</code> — nothing is sent to a server.</p>
+          <p>
+            <button class="out-btn" onclick="if(confirm('Clear saved plans, history and stats?')){localStorage.removeItem('ilp:library');localStorage.removeItem('ilp:hist');localStorage.removeItem('ilp:stats');window.ILP&&window.ILP.toast('Local data cleared','ok');}">🗑️ Clear local data</button>
+          </p>
+          <p class="muted" style="font-size:.86rem;margin-bottom:0;">Local keys used: <code>ilp:theme</code> (appearance), <code>ilp:library</code> (saved drafts), <code>ilp:hist</code> (assistant history), and <code>ilp:stats</code> (session counts). Clearing data removes the library, history, and stats; your theme preference is unaffected.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Every plan is a draft that educators review, approve, and adapt. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

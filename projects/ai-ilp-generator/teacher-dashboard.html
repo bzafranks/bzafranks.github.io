@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="A class overview hub — roster, plan status, goals on track, interventions, upcoming reviews, and an AI planning assistant. All AI is simulated client-side; data is fictional and reviewed by educators.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">People / <b>Teacher Dashboard</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📋 Class Overview</span>
+          <h1>Teacher Dashboard</h1>
+          <p class="lead">A single hub for your class — plan status at a glance, goals on track, active interventions, upcoming reviews, and an <strong>AI planning assistant</strong> to draft a starting plan for any learner. Every plan is a <em>draft for educator review and approval</em>. All data is fictional.</p>
+        </div>
+
+        <!-- ===== Live stat strip ===== -->
+        <div class="stat-strip">
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="generated">0</span></div>
+            <div class="s-label">AI drafts created (this session)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="plans">0</span></div>
+            <div class="s-label">Learning plans drafted</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-count="28">0</span></div>
+            <div class="s-label">Students in class</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-count="5">0</span></div>
+            <div class="s-label">Plans needing review</div>
+          </div>
+        </div>
+
+        <!-- ===== KPI summary ===== -->
+        <h2 style="margin:1.6rem 0 0.4rem;">Class summary</h2>
+        <div class="kpi-grid">
+          <div class="scorecard green">
+            <div class="sc-label">Goals on track</div>
+            <div class="sc-num"><span data-count="76" data-suffix="%">0</span></div>
+            <div class="sc-trend up">▲ 6% vs. last month</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Interventions active</div>
+            <div class="sc-num"><span data-count="9">0</span></div>
+            <div class="sc-trend flat">3 in Tier 2 · 2 in Tier 3</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">Reviews this week</div>
+            <div class="sc-num"><span data-count="4">0</span></div>
+            <div class="sc-trend up">▲ 1 family conference</div>
+          </div>
+          <div class="scorecard red">
+            <div class="sc-label">Learners flagged</div>
+            <div class="sc-num"><span data-count="2">0</span></div>
+            <div class="sc-trend down">Attendance &amp; math gaps</div>
+          </div>
+        </div>
+
+        <!-- ===== Class roster ===== -->
+        <h2 style="margin:1.8rem 0 0.4rem;">Class roster</h2>
+        <p class="muted" style="font-size:.9rem;margin-top:0;">Fictional students for demonstration. Select a learner in the AI assistant below to draft a plan.</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Roster status is illustrative; all plans are drafts educators review and approve.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Student</th>
+                <th scope="col">Plan status</th>
+                <th scope="col">Top goal</th>
+                <th scope="col">Next review</th>
+                <th scope="col">Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jordan M.</td>
+                <td><span class="tl-pill green">Active</span></td>
+                <td>Math: 2-step problem solving</td>
+                <td>Week 6 · Jul 8</td>
+                <td><span class="tl-pill green">Low</span></td>
+              </tr>
+              <tr>
+                <td>Amara O.</td>
+                <td><span class="tl-pill amber">Needs review</span></td>
+                <td>Writing: organized paragraphs</td>
+                <td>This week · Jun 27</td>
+                <td><span class="tl-pill amber">Watch</span></td>
+              </tr>
+              <tr>
+                <td>Diego R.</td>
+                <td><span class="tl-pill green">Active</span></td>
+                <td>Reading fluency &amp; stamina</td>
+                <td>Week 4 · Jul 1</td>
+                <td><span class="tl-pill green">Low</span></td>
+              </tr>
+              <tr>
+                <td>Priya N.</td>
+                <td><span class="tl-pill red">Attention needed</span></td>
+                <td>Attendance &amp; task initiation</td>
+                <td>This week · Jun 28</td>
+                <td><span class="tl-pill red">High</span></td>
+              </tr>
+              <tr>
+                <td>Liam K.</td>
+                <td><span class="tl-pill green">Active</span></td>
+                <td>Enrichment: inquiry project</td>
+                <td>Week 5 · Jul 3</td>
+                <td><span class="tl-pill green">Low</span></td>
+              </tr>
+              <tr>
+                <td>Sofia T.</td>
+                <td><span class="tl-pill amber">Needs review</span></td>
+                <td>Executive functioning routines</td>
+                <td>Next week · Jul 2</td>
+                <td><span class="tl-pill amber">Watch</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ===== AI Planning Assistant ===== -->
+        <h2 style="margin:1.8rem 0 0.4rem;">AI Planning Assistant</h2>
+        <p class="muted" style="font-size:.9rem;margin-top:0;">Describe a learner in plain language and the assistant drafts a starting Individual Learning Plan. You review, approve, and adapt.</p>
+        <div class="chat">
+          <div class="chat-head"><span class="bot">✨</span> AI Planning Assistant <span class="ai-pill" style="margin-left:auto;">Simulated</span></div>
+          <div class="chat-log" data-ws-log></div>
+          <div class="chat-suggest">
+            <button class="chat-chip" data-ws-suggest>Create a learning plan for a Grade 6 student strong in reading, struggling in math</button>
+            <button class="chat-chip" data-ws-suggest>Draft goals for a student with attendance challenges</button>
+          </div>
+          <form class="chat-suggest" data-ws-form style="border-top:none;background:var(--surface);">
+            <input type="text" placeholder="Describe a learner…" aria-label="Ask the planner" style="flex:1;min-width:200px;padding:0.6rem 0.75rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;background:var(--surface);color:var(--ink);">
+            <button class="btn small" type="submit">Send</button>
+          </form>
+        </div>
+        <p style="margin:0.7rem 0 0;">
+          <button class="out-btn" type="button" data-ws-clear>🧹 Clear conversation</button>
+        </p>
+
+        <!-- ===== Upcoming reviews + AI exec brief ===== -->
+        <div class="grid grid-2" style="margin-top:1.8rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Upcoming reviews</h3>
+            <ul class="timeline">
+              <li class="now"><span class="t-when">This week · Jun 27</span><br>Amara O. — writing plan review &amp; family update.</li>
+              <li class="now"><span class="t-when">This week · Jun 28</span><br>Priya N. — attendance &amp; task-initiation check-in (flagged).</li>
+              <li><span class="t-when">Jul 1</span><br>Diego R. — week-4 reading progress data review.</li>
+              <li><span class="t-when">Jul 2</span><br>Sofia T. — executive-functioning routine review.</li>
+              <li><span class="t-when">Jul 8</span><br>Jordan M. — week-6 formal plan review with team.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;"><span class="ai-pill">✨ AI Exec Brief</span></h3>
+            <p class="muted" style="font-size:.85rem;">Simulated weekly summary for educator review.</p>
+            <div class="insight"><b>Strengths trending up:</b> Reading and engagement are on track across the class; 76% of goals are progressing as planned.</div>
+            <div class="insight"><b>Watch this week:</b> Two learners need a plan review and one is flagged for attendance — earliest possible check-ins are scheduled.</div>
+            <div class="insight"><b>Suggested next step:</b> Confirm Tier 2 math small-group rosters and send three brief family updates before Friday.</div>
+            <p class="muted" style="margin-top:1rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> This brief is a draft assistant view — you decide and act.</p>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Every plan is a draft that educators review, approve, and adapt. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

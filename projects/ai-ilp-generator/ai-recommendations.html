@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Recommendations — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="AI-generated instructional recommendations — strategies, resources, interventions, enrichment, grouping, technology, family support, and reflection — each paired with a clear rationale, as a draft for educator review and approval.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>AI Recommendations</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">💡 AI Recommendations</span>
+          <h1>AI Recommendations</h1>
+          <p class="lead">The AI generates targeted recommendations for a learner — <strong>instructional strategies, resources, interventions, enrichment, grouping, technology tools, practice activities, family support, reflection prompts, and professional supports</strong> — and every recommendation comes <em>with a rationale</em> so educators can see the reasoning before they review, approve, and adapt it. All data is fictional and illustrative.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="rec">
+            <h3>Generate recommendations</h3>
+            <div class="field"><label for="rec-focus">Focus area / need</label><input id="rec-focus" name="focus" placeholder="e.g., reading comprehension" value="reading comprehension"></div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="rec">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:2.4rem;">Example recommendations</h2>
+        <p class="muted" style="max-width:70ch;">Every recommendation the AI produces explains <strong>why</strong> it was suggested. The rationale makes the reasoning transparent and supports educator review — teachers can confirm, adjust, or reject each idea based on what they know about the learner.</p>
+
+        <div class="rec-card">
+          <h4>📚 Instructional strategy</h4>
+          <p>Use reciprocal teaching (predict, question, clarify, summarize) in a structured small group, three times per week.</p>
+          <p class="why"><b>Why this recommendation:</b> The learner reasons well aloud and stays more engaged in structured discussion than in independent silent reading, so a routine that channels talk toward comprehension plays to a strength.</p>
+        </div>
+        <div class="rec-card">
+          <h4>🧰 Resource &amp; technology tool</h4>
+          <p>Provide leveled, high-interest passages with a text-to-speech option and embedded comprehension scaffolds.</p>
+          <p class="why"><b>Why this recommendation:</b> Interest-based texts increase persistence, and audio support reduces decoding load so the learner's energy goes toward meaning rather than word-by-word reading.</p>
+        </div>
+        <div class="rec-card">
+          <h4>👥 Flexible grouping &amp; practice activity</h4>
+          <p>Pair the learner with two peers at a similar instructional level for daily "teach-back" summary practice.</p>
+          <p class="why"><b>Why this recommendation:</b> Right-sized groups give more turns and faster feedback, and explaining ideas to a peer strengthens retention more than re-reading alone.</p>
+        </div>
+        <div class="rec-card">
+          <h4>🏠 Family support &amp; reflection prompt</h4>
+          <p>Send home a 10-minute shared-reading routine with one nightly "What surprised you?" reflection question.</p>
+          <p class="why"><b>Why this recommendation:</b> Brief, specific home routines are sustainable for families, and a single reflection prompt builds metacognition without adding pressure.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Every recommendation — and its rationale — is a draft that educators review, approve, and adapt. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

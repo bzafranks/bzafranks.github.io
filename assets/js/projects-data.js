@@ -151,5 +151,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🚦",
     tags: ["Predictive Analytics", "MTSS / RTI", "Explainable AI", "Student Success", "Learning Analytics", "Responsible AI"],
     summary: "An enterprise early-warning & intervention platform that helps educators identify students needing support earlier and coordinate MTSS interventions — executive & risk dashboards, whole-child student profiles, an explainable AI risk engine, MTSS tiers, intervention planning & monitoring, attendance/academic/behavior/well-being analytics, family engagement, and a report generator, with command palette, notification center, and dark mode. Responsible, educator-led, human-in-the-loop. Part of the AI for Education Innovation Suite."
+  },
+  {
+    id: "ai-ilp-generator",
+    title: "AI Individual Learning Plan Generator",
+    subtitle: "Personalized learning pathways through responsible AI",
+    pillar: "id",
+    grade: "K–12 · Personalized",
+    status: "done",
+    url: "projects/ai-ilp-generator/index.html",
+    icon: "🎯",
+    tags: ["Personalized Learning", "Individual Learning Plans", "MTSS / UDL", "Explainable AI", "Differentiation", "Responsible AI"],
+    summary: "An AI-powered personalized-learning platform that drafts Individual Learning Plans from learner evidence — 16 tools: student profile, strengths & interests, assessment review, learning-plan generator, SMART goals, pathways, AI recommendations (with rationale), accommodations & supports, intervention & enrichment planners, career connections, parent portal, teacher dashboard, progress monitoring, reports. The AI is a planning assistant; educators review and approve every plan. Command palette, dark mode. Part of the AI for Education Innovation Suite."
   }
 ];

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Goals — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Generate SMART learning goals across reading, writing, math, science, executive functioning, communication, collaboration, attendance, engagement, social-emotional, and career readiness — with progress visually tracked. A draft for educator review and approval.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>Learning Goals</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎯 SMART Goals</span>
+          <h1>Learning Goals</h1>
+          <p class="lead">Generate <strong>SMART goals</strong> across reading, writing, math, science, executive functioning, communication, collaboration, attendance, engagement, social-emotional learning, and career readiness — each written one step beyond current performance and <em>visually tracked</em>. Every goal is a <em>draft for educator review and approval</em>. All data is fictional.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="goals">
+            <h3>Generate a SMART goal</h3>
+            <div class="field">
+              <label for="g-area">Goal area</label>
+              <select id="g-area" name="area">
+                <option>Reading</option>
+                <option>Writing</option>
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>Executive Functioning</option>
+                <option>Communication</option>
+                <option>Collaboration</option>
+                <option>Attendance</option>
+                <option>Engagement</option>
+                <option>Social-Emotional</option>
+                <option>Career Readiness</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="goals">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <div class="tool-head" style="margin-top:2.4rem;">
+          <span class="tool-badge">📊 Visually Tracked</span>
+          <h2>Active goals for Jordan M.</h2>
+          <p class="lead">Live progress toward each SMART goal, updated from weekly progress-monitoring data. <span class="muted">Fictional, illustrative data.</span></p>
+        </div>
+
+        <div class="goal-grid">
+          <article class="goal-card">
+            <span class="g-area">Mathematics</span>
+            <h4>Solve 2-step word problems with 80% accuracy across 3 consecutive checks by end of term.</h4>
+            <div class="ring" data-val="72" role="img" aria-label="72 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">On track — 72% to target after 4 weeks of Tier 2 small-group support. <span class="tl-pill green">On track</span></p>
+          </article>
+
+          <article class="goal-card">
+            <span class="g-area">Writing</span>
+            <h4>Produce an organized 5-paragraph piece using a planning template with 3/4 rubric scores.</h4>
+            <div class="ring" data-val="54" role="img" aria-label="54 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Developing — graphic organizers helping structure; transitions next focus. <span class="tl-pill amber">Monitor</span></p>
+          </article>
+
+          <article class="goal-card">
+            <span class="g-area">Executive Functioning</span>
+            <h4>Self-start independent work within 3 minutes on 4 of 5 school days.</h4>
+            <div class="ring" data-val="80" role="img" aria-label="80 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Strong gains with visual schedule and check-in routine. <span class="tl-pill green">On track</span></p>
+          </article>
+
+          <article class="goal-card">
+            <span class="g-area">Reading</span>
+            <h4>Summarize informational text citing 2 key details with 85% accuracy across 3 checks.</h4>
+            <div class="ring" data-val="91" role="img" aria-label="91 percent toward goal"><div class="hole" data-ring-num>0%</div></div>
+            <p class="muted" style="font-size:.85rem;">Near mastery — ready to extend to comparing two sources. <span class="tl-pill green">Nearly met</span></p>
+          </article>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Every goal is a draft that educators review, approve, and adapt. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

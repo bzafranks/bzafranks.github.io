@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Generate Individual Learning Plans, progress reports, goal summaries, parent reports, intervention summaries, and more — drafts for educator review, with export and print options. All AI is simulated client-side; data is fictional.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Reports</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📄 Deliver</span>
+          <h1>Reports</h1>
+          <p class="lead">Turn a learner's plan and evidence into a clear, shareable report — an <strong>Individual Learning Plan</strong>, progress report, goal summary, parent report, intervention summary, conference notes, student reflection, or portfolio summary. Each report is a <em>draft for educator review and approval</em>.</p>
+          <p class="muted" style="font-size:.9rem;">Export to <strong>PDF</strong>, <strong>Word</strong>, <strong>PowerPoint</strong>, or a printable handout. <em>Export buttons are illustrative in this demo</em> — <strong>Print</strong> works through your browser's print/save-as-PDF dialog. All data is fictional.</p>
+        </div>
+
+        <!-- ===== Generator ===== -->
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="report">
+            <h3>Generate a report</h3>
+            <div class="field"><label for="rp-type">Report type</label>
+              <select id="rp-type" name="type">
+                <option>Individual Learning Plan</option>
+                <option>Progress Report</option>
+                <option>Goal Summary</option>
+                <option>Parent Report</option>
+                <option>Intervention Summary</option>
+                <option>Teacher Conference Notes</option>
+                <option>Student Reflection Report</option>
+                <option>Portfolio Summary</option>
+              </select>
+            </div>
+            <div class="field"><label for="rp-student">Student name</label><input id="rp-student" name="student" placeholder="e.g., Jordan M." value="Jordan M."></div>
+            <div class="field"><label>Export format</label>
+              <div class="chip-set" data-group="export"><button type="button" class="chip-toggle on">PDF</button><button type="button" class="chip-toggle">Word</button><button type="button" class="chip-toggle">PowerPoint</button><button type="button" class="chip-toggle">Printable</button></div>
+              <p class="muted" style="font-size:.8rem;margin:.4rem 0 0;">Export formats are illustrative; use 🖨️ Print for a real PDF via your browser.</p>
+            </div>
+            <button class="btn" type="submit">✨ Generate Report</button>
+          </form>
+
+          <div class="gen-output" data-output="report">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">📄</div><p>Pick a report type and student, then press <b>Generate</b>. The draft report appears here for your review, export, and approval.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- ===== Report Library ===== -->
+        <h2 style="margin:1.8rem 0 0.4rem;">Report library</h2>
+        <p class="muted" style="font-size:.9rem;margin-top:0;">Eight report types you can generate from a single learner profile.</p>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <div class="t-ico">📘</div>
+            <h4>Individual Learning Plan</h4>
+            <p>The full ILP — summary, strengths, goals, strategies, supports, and monitoring.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">📈</div>
+            <h4>Progress Report</h4>
+            <p>Goal-by-goal progress against baseline with next steps.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">🎯</div>
+            <h4>Goal Summary</h4>
+            <p>SMART goals at a glance with status and indicators.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">👨‍👩‍👧</div>
+            <h4>Parent Report</h4>
+            <p>A warm, plain-language family update with home supports.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">🛠️</div>
+            <h4>Intervention Summary</h4>
+            <p>Tier, frequency, duration, and outcome evaluation.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">🗒️</div>
+            <h4>Teacher Conference Notes</h4>
+            <p>Talking points and decisions for a planning conversation.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">🪞</div>
+            <h4>Student Reflection Report</h4>
+            <p>The learner's voice — goals, pride points, and next hopes.</p>
+          </article>
+          <article class="tool-card">
+            <div class="t-ico">🗂️</div>
+            <h4>Portfolio Summary</h4>
+            <p>A snapshot of growth and evidence across the term.</p>
+          </article>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a reporting assistant. Every report is a draft that educators review, approve, and adapt before sharing. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

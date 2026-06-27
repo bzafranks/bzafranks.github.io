@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Connections — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Recommend experiences based on a learner's interests — career exploration, industry pathways, clubs, volunteer work, internships, technical education, entrepreneurship, and future skills — as a draft for educator review and approval.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Support / <b>Career Connections</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧭 Interests → Futures</span>
+          <h1>Career Connections</h1>
+          <p class="lead">Turn a learner's interests into <strong>real experiences and pathways</strong> — career exploration, industry pathways, clubs, volunteer work, internships (secondary), technical education, entrepreneurship, and future skills. Each set of suggestions is a <em>draft for educator review and approval</em>. All data is fictional and illustrative.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="career">
+            <h3>Generate Career Connections</h3>
+            <div class="field"><label for="cc-interest">Student interest</label><input id="cc-interest" name="interest" placeholder="e.g., STEM / building things" value="STEM / building things"></div>
+            <div class="field-row">
+              <div class="field"><label for="cc-band">Grade band</label>
+                <select id="cc-band" name="band"><option>Elementary</option><option selected>Middle</option><option>Secondary</option></select>
+              </div>
+              <div class="field"><label for="cc-mode">Experience type</label>
+                <select id="cc-mode" name="mode"><option selected>Explore &amp; experience</option><option>Clubs &amp; activities</option><option>Service &amp; volunteer</option><option>Pathways &amp; coursework</option></select>
+              </div>
+            </div>
+            <button class="btn" type="submit">✨ Generate Career Connections</button>
+          </form>
+
+          <div class="gen-output" data-output="career">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top:2.4rem;">Career pathways to explore</h2>
+        <p class="muted" style="font-size:.9rem;">Illustrative pathways that connect a learner's interests to real-world futures.</p>
+        <div class="grid grid-3" style="margin-top:1rem;">
+          <article class="card">
+            <span class="icon" aria-hidden="true">🛠️</span>
+            <h3>Engineering &amp; skilled trades</h3>
+            <p>Design, build, and problem-solve — robotics clubs, makerspaces, and technical-education pathways.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">💻</span>
+            <h3>Technology &amp; computing</h3>
+            <p>Coding clubs, digital design, and data — early exposure to in-demand technical skills.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">🏥</span>
+            <h3>Health &amp; helping professions</h3>
+            <p>Volunteering and service experiences that connect care, science, and community.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">🎭</span>
+            <h3>Arts, media &amp; design</h3>
+            <p>Creative pathways through writing, visual arts, music, and media production.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">💡</span>
+            <h3>Entrepreneurship &amp; business</h3>
+            <p>Idea-to-product projects, school enterprises, and pitch challenges that build initiative.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">🌱</span>
+            <h3>Environment &amp; sustainability</h3>
+            <p>Field projects, citizen science, and community engagement tied to the natural world.</p>
+          </article>
+        </div>
+
+        <h2 class="section-title" style="margin-top:2.4rem;">Future-skills focus</h2>
+        <p class="muted" style="font-size:.9rem;">Illustrative emphasis across durable skills that transfer to any pathway.</p>
+        <div class="card" style="margin-top:1rem;">
+          <div class="barlist">
+            <div class="row"><span>Problem-solving</span><div class="track"><div class="fill" data-pct="88"></div></div><span>88%</span></div>
+            <div class="row"><span>Collaboration</span><div class="track"><div class="fill" data-pct="80"></div></div><span>80%</span></div>
+            <div class="row"><span>Digital literacy</span><div class="track"><div class="fill" data-pct="74"></div></div><span>74%</span></div>
+            <div class="row"><span>Creativity</span><div class="track"><div class="fill" data-pct="82"></div></div><span>82%</span></div>
+            <div class="row"><span>Communication</span><div class="track"><div class="fill" data-pct="70"></div></div><span>70%</span></div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.6rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. Career suggestions are drafts that educators and families review, approve, and adapt. All data is fictional and illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

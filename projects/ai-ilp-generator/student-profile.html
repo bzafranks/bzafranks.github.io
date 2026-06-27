@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Success Profile — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="A whole-learner Student Success Profile — academic history, strengths, growth areas, learning preferences, interests, attendance, behavior, interventions, reflections, and family and teacher voice — as an illustrative planning input for educator review.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Learner / <b>Student Profile</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧑‍🎓 Whole-Learner View</span>
+          <h1>Student Success Profile</h1>
+          <p class="lead">A whole-learner portrait that brings academics, strengths, interests, and voice together in one place — the foundation every <strong>Individual Learning Plan</strong> is built on. This profile is an <em>illustrative planning input for educator review</em>. All data shown is fictional.</p>
+        </div>
+
+        <!-- Profile header -->
+        <div class="profile-head" style="margin-bottom:1.4rem;">
+          <div class="avatar" aria-hidden="true">JM</div>
+          <div>
+            <h2>Jordan M.</h2>
+            <p style="margin:.2rem 0 .6rem;color:rgba(255,255,255,.9);">Grade 6 · Riverbend Middle School · Profile updated this term</p>
+            <div class="chip-row">
+              <span class="chip-tag">🎂 Age 11</span>
+              <span class="chip-tag">📚 Reading: strength</span>
+              <span class="chip-tag">🤝 Collaborative</span>
+              <span class="chip-tag">🤖 Loves robotics</span>
+              <span class="chip-tag">🗓️ Attendance 96%</span>
+              <span class="chip-tag">🎯 3 active goals</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;margin-bottom:1.4rem;"><span class="ai-pill">ⓘ Illustrative</span> Every figure, quote, and record on this page is fictional and for demonstration only. Real profiles draw on verified school data and are reviewed by educators.</p>
+
+        <!-- Quick KPIs -->
+        <div class="kpi-grid" style="margin-bottom:1.6rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Reading (RIT, illustrative)</div>
+            <div class="sc-num" data-count="214">0</div>
+            <div class="sc-trend up">▲ +6 since fall</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Math (RIT, illustrative)</div>
+            <div class="sc-num" data-count="198">0</div>
+            <div class="sc-trend up">▲ +3 since fall</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Attendance</div>
+            <div class="sc-num"><span data-count="96">0</span>%</div>
+            <div class="sc-trend flat">— steady</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Engagement (self-report)</div>
+            <div class="sc-num"><span data-count="4">0</span>/5</div>
+            <div class="sc-trend up">▲ improving</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Academic history -->
+          <div class="card">
+            <h3>📈 Academic History</h3>
+            <p class="muted" style="font-size:.88rem;">Reading composite over the past six checkpoints (illustrative growth).</p>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="Reading composite trending upward from 196 to 214 over six checkpoints">
+              <path class="area" d="M0,46 L60,42 L120,38 L180,30 L240,24 L300,16 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,46 L60,42 L120,38 L180,30 L240,24 L300,16"></path>
+            </svg>
+            <div class="table-wrap">
+              <table>
+                <caption>Illustrative term-over-term scores</caption>
+                <thead><tr><th scope="col">Checkpoint</th><th scope="col">Reading</th><th scope="col">Math</th><th scope="col">Writing</th></tr></thead>
+                <tbody>
+                  <tr><td>Fall (prior yr)</td><td>196</td><td>189</td><td>Approaching</td></tr>
+                  <tr><td>Winter (prior yr)</td><td>201</td><td>192</td><td>Approaching</td></tr>
+                  <tr><td>Spring (prior yr)</td><td>205</td><td>194</td><td>Meeting</td></tr>
+                  <tr><td>Fall</td><td>208</td><td>195</td><td>Meeting</td></tr>
+                  <tr><td>Winter</td><td>211</td><td>197</td><td>Meeting</td></tr>
+                  <tr><td>Spring</td><td>214</td><td>198</td><td>Meeting</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Assessment history barlist -->
+          <div class="card">
+            <h3>📊 Assessment History</h3>
+            <p class="muted" style="font-size:.88rem;">Most recent results by measure (illustrative percentile).</p>
+            <div class="barlist">
+              <div class="row"><span>Reading diagnostic</span><div class="track"><div class="fill" data-pct="78"></div></div><span>78%</span></div>
+              <div class="row"><span>Math diagnostic</span><div class="track"><div class="fill" data-pct="52"></div></div><span>52%</span></div>
+              <div class="row"><span>Writing rubric</span><div class="track"><div class="fill" data-pct="64"></div></div><span>64%</span></div>
+              <div class="row"><span>Unit quizzes (avg)</span><div class="track"><div class="fill" data-pct="71"></div></div><span>71%</span></div>
+              <div class="row"><span>Performance task</span><div class="track"><div class="fill" data-pct="69"></div></div><span>69%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-3" style="margin-top:1.5rem;">
+          <!-- Strengths -->
+          <div class="card">
+            <h3>🌟 Strengths</h3>
+            <div class="chip-row" style="margin-bottom:.8rem;">
+              <span class="chip-tag">Verbal reasoning</span>
+              <span class="chip-tag">Creativity</span>
+              <span class="chip-tag">Collaboration</span>
+              <span class="chip-tag">Curiosity</span>
+              <span class="chip-tag">Persistence in projects</span>
+            </div>
+            <ul class="arrow-list">
+              <li>Reads above grade level and enjoys discussion.</li>
+              <li>Generates original ideas in hands-on, open-ended tasks.</li>
+              <li>Supports peers and takes natural leadership roles.</li>
+            </ul>
+          </div>
+
+          <!-- Areas for growth -->
+          <div class="card">
+            <h3>🌱 Areas for Growth</h3>
+            <ul class="arrow-list">
+              <li>Multi-step math problem solving.</li>
+              <li>Organizing and sustaining extended writing.</li>
+              <li>Task initiation and executive functioning.</li>
+              <li>Persistence when work feels difficult.</li>
+            </ul>
+            <p class="muted" style="font-size:.85rem;">Framed as next steps, not deficits — each is a focus for goals and supports.</p>
+          </div>
+
+          <!-- Learning preferences -->
+          <div class="card">
+            <h3>🧠 Learning Preferences</h3>
+            <ul class="arrow-list">
+              <li>Learns best with hands-on, visual models.</li>
+              <li>Prefers choice and a clear purpose for tasks.</li>
+              <li>Benefits from worked examples before independent work.</li>
+              <li>Likes collaborating, then time to work quietly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <!-- Interests + career interests -->
+          <div class="card">
+            <h3>💡 Interests &amp; Career Interests</h3>
+            <p class="muted" style="font-size:.88rem;margin-bottom:.4rem;">Personal interests</p>
+            <div class="chip-row" style="margin-bottom:.9rem;">
+              <span class="chip-tag">🤖 Robotics</span>
+              <span class="chip-tag">🐾 Animals</span>
+              <span class="chip-tag">🎮 Game design</span>
+              <span class="chip-tag">🏀 Basketball</span>
+              <span class="chip-tag">🎨 Drawing</span>
+            </div>
+            <p class="muted" style="font-size:.88rem;margin-bottom:.4rem;">Career interests (exploratory)</p>
+            <div class="chip-row">
+              <span class="chip-tag">🛠️ Engineer</span>
+              <span class="chip-tag">🐶 Veterinarian</span>
+              <span class="chip-tag">💻 Game developer</span>
+              <span class="chip-tag">🚀 Inventor</span>
+            </div>
+          </div>
+
+          <!-- Attendance -->
+          <div class="card">
+            <h3>🗓️ Attendance</h3>
+            <div class="kpi-grid">
+              <div class="scorecard green">
+                <div class="sc-label">Present</div>
+                <div class="sc-num"><span data-count="96">0</span>%</div>
+                <div class="sc-trend flat">— on track</div>
+              </div>
+              <div class="scorecard green">
+                <div class="sc-label">Days this term</div>
+                <div class="sc-num" data-count="82">0</div>
+                <div class="sc-trend up">▲ 4 tardies</div>
+              </div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.8rem;">Attendance is a strength and a protective factor — consistent presence supports goal progress.</p>
+          </div>
+        </div>
+
+        <!-- Behavior summary -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>🤝 Behavior Summary</h3>
+          <div class="kpi-grid">
+            <div class="scorecard green">
+              <div class="sc-label">Positive notes</div>
+              <div class="sc-num" data-count="18">0</div>
+              <div class="sc-trend up">▲ this term</div>
+            </div>
+            <div class="scorecard green">
+              <div class="sc-label">Concerns logged</div>
+              <div class="sc-num" data-count="2">0</div>
+              <div class="sc-trend down">▼ down from 5</div>
+            </div>
+            <div class="scorecard amber">
+              <div class="sc-label">Off-task flags</div>
+              <div class="sc-num" data-count="6">0</div>
+              <div class="sc-trend flat">— early in tasks</div>
+            </div>
+          </div>
+          <p class="muted" style="font-size:.88rem;margin-top:.8rem;">Patterns suggest off-task moments cluster at task initiation — addressed in the intervention plan with a quick-start routine.</p>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <!-- Intervention history -->
+          <div class="card">
+            <h3>🛠️ Intervention History</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Weeks 1–2 · last year</span><br><b>Reading screen + enrichment</b> — placed in book-club extension. <span class="tl-pill green">Met</span></li>
+              <li class="done"><span class="t-when">Weeks 3–8 · last year</span><br><b>Tier 2 math small-group</b>, 3×/week. Closed part of the gap. <span class="tl-pill green">Progress</span></li>
+              <li class="now"><span class="t-when">Weeks 1–6 · this term</span><br><b>Executive-functioning check-in</b> with visual schedule. <span class="tl-pill amber">In progress</span></li>
+              <li><span class="t-when">Planned · week 6</span><br><b>Team review</b> — continue, adjust, or change tier. <span class="tl-pill amber">Upcoming</span></li>
+            </ul>
+          </div>
+
+          <!-- Parent input + teacher observations -->
+          <div class="card">
+            <h3>🏠 Parent Input</h3>
+            <div class="insight">
+              <p style="margin:0;">"Jordan lights up talking about robots and animals. We see strong reading at home, but homework time can stall — a clear start routine really helps. We'd love help building independence." <b>— Jordan's family</b></p>
+            </div>
+            <h3 style="margin-top:1.2rem;">👩‍🏫 Teacher Observations</h3>
+            <ul class="arrow-list">
+              <li>Strong contributor in discussion; elevates group thinking.</li>
+              <li>Needs a concrete entry point to begin writing tasks.</li>
+              <li>Responds well to choice and interest-based contexts.</li>
+              <li>Math confidence grows quickly with worked examples.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Student reflections -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>💬 Student Reflections</h3>
+          <div class="insight">
+            <p style="margin:0;">"I'm really good at reading and coming up with ideas. Math word problems are hard because I don't always know where to start. I like it when we get to build things or pick our own topic. My goal is to get better at writing longer." <b>— Jordan M.</b></p>
+          </div>
+        </div>
+
+        <!-- Learning portfolio -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>🗂️ Learning Portfolio</h3>
+          <p class="muted" style="font-size:.88rem;">Selected work samples and artifacts (illustrative).</p>
+          <div class="grid grid-3">
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">🤖</span><div><b>Robotics build log</b><br><small class="muted">Project · Meeting+</small></div></div>
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">✍️</span><div><b>Opinion essay draft</b><br><small class="muted">Writing · Developing</small></div></div>
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">📖</span><div><b>Reading response journal</b><br><small class="muted">Reading · Exceeding</small></div></div>
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">🧮</span><div><b>Math problem-solving set</b><br><small class="muted">Math · Approaching</small></div></div>
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">🎨</span><div><b>Habitat poster</b><br><small class="muted">Science · Meeting</small></div></div>
+            <div class="student-card"><span style="font-size:1.6rem;" aria-hidden="true">🎤</span><div><b>Class presentation</b><br><small class="muted">Speaking · Exceeding</small></div></div>
+          </div>
+        </div>
+
+        <!-- AI summary -->
+        <div class="card exec-brief" style="margin-top:1.6rem;">
+          <h4>✨ AI-Generated Success Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Jordan is a curious, collaborative Grade 6 learner who reads above level and thrives in hands-on, choice-driven work. Reading and engagement are clear strengths, with steady upward growth across checkpoints. The most actionable growth areas are multi-step math problem solving and organizing extended writing, both linked to a pattern of stalled task initiation rather than ability.</p>
+          <p style="margin-bottom:0;"><b>Suggested planning focus:</b> pair interest-based contexts (robotics, animals) with worked examples and a quick-start routine; continue Tier 2 math small-group; build writing stamina with planning templates. <span class="muted">This summary is simulated from fictional data and is a draft for educator review and approval.</span></p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. This profile and summary are illustrative drafts that educators review, verify, and adapt. All data is fictional.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

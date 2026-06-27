@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Review — AI Individual Learning Plan Generator</title>
+  <meta name="description" content="Analyze diagnostic, formative, and summative assessments, performance tasks, portfolio evidence, observations, attendance, engagement, and growth — with a standards-mastery heatmap and AI evidence summary, as illustrative inputs for educator review.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Individual Learning Plan Generator" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LP</span><span class="brand-text"><span class="brand-title">AI Learning Plans</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learning-plan.html">Plan Generator</a></li>
+        <li><a href="student-profile.html">Profile</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="teacher-dashboard.html">Dashboard</a></li>
+        <li><a href="parent-portal.html">Parents</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LP</span><b>Learning Plan Studio</b></div>
+        <div class="rail-group">Learner</div>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <a class="rail-link" href="strengths.html"><span class="ico">🌟</span> Strengths &amp; Interests</a>
+        <a class="rail-link" href="assessment-review.html"><span class="ico">📊</span> Assessment Review</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="learning-plan.html"><span class="ico">✨</span> Learning Plan Generator</a>
+        <a class="rail-link" href="goals.html"><span class="ico">🎯</span> Learning Goals</a>
+        <a class="rail-link" href="pathways.html"><span class="ico">🛤️</span> Learning Pathways</a>
+        <a class="rail-link" href="ai-recommendations.html"><span class="ico">💡</span> AI Recommendations</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="supports.html"><span class="ico">🧩</span> Accommodations &amp; Supports</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="enrichment.html"><span class="ico">🚀</span> Enrichment Planner</a>
+        <a class="rail-link" href="career-connections.html"><span class="ico">🧭</span> Career Connections</a>
+        <div class="rail-group">People</div>
+        <a class="rail-link" href="parent-portal.html"><span class="ico">👨‍👩‍👧</span> Parent Portal</a>
+        <a class="rail-link" href="teacher-dashboard.html"><span class="ico">📋</span> Teacher Dashboard</a>
+        <a class="rail-link" href="progress.html"><span class="ico">📈</span> Progress Monitoring</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Learner / <b>Assessment Review</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Evidence Analysis</span>
+          <h1>Assessment Review</h1>
+          <p class="lead">Bring every signal together — diagnostic, formative, and summative assessments, performance tasks, portfolio evidence, observations, attendance, engagement, and growth — to understand where a learner is and what they need next. For <strong>Jordan M. · Grade 6</strong>. All data is fictional and illustrative.</p>
+        </div>
+
+        <!-- Scorecards by subject -->
+        <div class="kpi-grid" style="margin-bottom:1.6rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Reading</div>
+            <div class="sc-num">Exceeding</div>
+            <div class="sc-trend up">▲ +6 RIT this year</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Mathematics</div>
+            <div class="sc-num">Approaching</div>
+            <div class="sc-trend up">▲ closing the gap</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Writing</div>
+            <div class="sc-num">Meeting</div>
+            <div class="sc-trend flat">— organization lags</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Science</div>
+            <div class="sc-num">Meeting</div>
+            <div class="sc-trend up">▲ strong in inquiry</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Learning growth trendline -->
+          <div class="card">
+            <h3>📈 Learning Growth</h3>
+            <p class="muted" style="font-size:.88rem;">Composite achievement across six checkpoints (illustrative — reading leads, math accelerating).</p>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="Composite achievement rising steadily across six checkpoints">
+              <path class="area" d="M0,50 L60,46 L120,40 L180,33 L240,26 L300,18 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,50 L60,46 L120,40 L180,33 L240,26 L300,18"></path>
+            </svg>
+            <div class="stat-strip" style="margin-bottom:0;">
+              <div class="stat-tile"><div class="s-num" data-count="9">0</div><div class="s-label">RIT growth (reading)</div></div>
+              <div class="stat-tile"><div class="s-num" data-count="9">0</div><div class="s-label">RIT growth (math)</div></div>
+              <div class="stat-tile"><div class="s-num"><span data-count="112">0</span>%</div><div class="s-label">of growth target met</div></div>
+            </div>
+          </div>
+
+          <!-- Engagement + attendance -->
+          <div class="card">
+            <h3>🔆 Engagement &amp; Attendance</h3>
+            <p class="muted" style="font-size:.88rem;">Behavioral evidence that contextualizes results (illustrative).</p>
+            <div class="barlist">
+              <div class="row"><span>Work completion</span><div class="track"><div class="fill" data-pct="86"></div></div><span>86%</span></div>
+              <div class="row"><span>On-task time</span><div class="track"><div class="fill" data-pct="74"></div></div><span>74%</span></div>
+              <div class="row"><span>Class participation</span><div class="track"><div class="fill" data-pct="90"></div></div><span>90%</span></div>
+              <div class="row"><span>Attendance</span><div class="track"><div class="fill" data-pct="96"></div></div><span>96%</span></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.8rem;">High participation and attendance with a dip in sustained on-task time — consistent with the task-initiation pattern seen elsewhere.</p>
+          </div>
+        </div>
+
+        <!-- Standards mastery heatmap -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>🗺️ Standards Mastery</h3>
+          <p class="muted" style="font-size:.88rem;">Standard strand by subject — darker means stronger mastery (illustrative, 0–4 scale).</p>
+          <div class="heatmap" style="grid-template-columns: 150px repeat(4, 1fr);" role="table" aria-label="Standards mastery by strand and subject, scored 0 to 4">
+            <!-- header row -->
+            <div role="columnheader" style="font-weight:700;font-size:.78rem;align-self:center;">Strand</div>
+            <div class="hm-cell hm-0" role="columnheader" style="background:transparent;color:var(--ink);font-weight:700;">Reading</div>
+            <div class="hm-cell hm-0" role="columnheader" style="background:transparent;color:var(--ink);font-weight:700;">Writing</div>
+            <div class="hm-cell hm-0" role="columnheader" style="background:transparent;color:var(--ink);font-weight:700;">Math</div>
+            <div class="hm-cell hm-0" role="columnheader" style="background:transparent;color:var(--ink);font-weight:700;">Science</div>
+
+            <div role="rowheader" style="font-size:.82rem;align-self:center;">Key ideas / details</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Reading, key ideas: 4 of 4">4</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Writing, key ideas: 3 of 4">3</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Math, key ideas: 2 of 4">2</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science, key ideas: 3 of 4">3</div>
+
+            <div role="rowheader" style="font-size:.82rem;align-self:center;">Structure / organization</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Reading, structure: 4 of 4">4</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Writing, structure: 2 of 4">2</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math, structure: 1 of 4">1</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science, structure: 3 of 4">3</div>
+
+            <div role="rowheader" style="font-size:.82rem;align-self:center;">Reasoning / problem solving</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Reading, reasoning: 3 of 4">3</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Writing, reasoning: 3 of 4">3</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math, reasoning: 1 of 4">1</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science, reasoning: 3 of 4">3</div>
+
+            <div role="rowheader" style="font-size:.82rem;align-self:center;">Vocabulary / language</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Reading, vocabulary: 4 of 4">4</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Writing, vocabulary: 3 of 4">3</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Math, vocabulary: 2 of 4">2</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Science, vocabulary: 2 of 4">2</div>
+
+            <div role="rowheader" style="font-size:.82rem;align-self:center;">Application / transfer</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Reading, application: 3 of 4">3</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Writing, application: 2 of 4">2</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Math, application: 2 of 4">2</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science, application: 3 of 4">3</div>
+          </div>
+          <div class="legend">
+            <span><i class="hm-0" style="display:inline-block;"></i> 0 · Not yet</span>
+            <span><i class="hm-1" style="display:inline-block;"></i> 1 · Beginning</span>
+            <span><i class="hm-2" style="display:inline-block;"></i> 2 · Approaching</span>
+            <span><i class="hm-3" style="display:inline-block;"></i> 3 · Meeting</span>
+            <span><i class="hm-4" style="display:inline-block;"></i> 4 · Exceeding</span>
+          </div>
+        </div>
+
+        <!-- Assessment history table -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>📋 Assessment History</h3>
+          <p class="muted" style="font-size:.88rem;">All recorded measures this year, by type (illustrative).</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Diagnostic, formative, summative, and performance evidence</caption>
+              <thead><tr><th scope="col">Date</th><th scope="col">Assessment</th><th scope="col">Type</th><th scope="col">Subject</th><th scope="col">Result</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td>Sep 12</td><td>Beginning-of-year diagnostic</td><td>Diagnostic</td><td>Reading</td><td>78th %ile</td><td><span class="tl-pill green">Strong</span></td></tr>
+                <tr><td>Sep 12</td><td>Beginning-of-year diagnostic</td><td>Diagnostic</td><td>Math</td><td>41st %ile</td><td><span class="tl-pill amber">Watch</span></td></tr>
+                <tr><td>Oct 03</td><td>Unit 1 exit tickets (avg)</td><td>Formative</td><td>Math</td><td>62%</td><td><span class="tl-pill amber">Watch</span></td></tr>
+                <tr><td>Oct 24</td><td>Writing rubric — opinion essay</td><td>Performance task</td><td>Writing</td><td>Developing</td><td><span class="tl-pill amber">Watch</span></td></tr>
+                <tr><td>Nov 15</td><td>Unit 2 test</td><td>Summative</td><td>Math</td><td>71%</td><td><span class="tl-pill amber">Improving</span></td></tr>
+                <tr><td>Dec 06</td><td>Robotics build log</td><td>Portfolio evidence</td><td>Science</td><td>Meeting+</td><td><span class="tl-pill green">Strong</span></td></tr>
+                <tr><td>Jan 18</td><td>Mid-year diagnostic</td><td>Diagnostic</td><td>Reading</td><td>82nd %ile</td><td><span class="tl-pill green">Strong</span></td></tr>
+                <tr><td>Jan 18</td><td>Mid-year diagnostic</td><td>Diagnostic</td><td>Math</td><td>49th %ile</td><td><span class="tl-pill amber">Improving</span></td></tr>
+                <tr><td>Feb 28</td><td>Performance task — design pitch</td><td>Performance task</td><td>Writing</td><td>Meeting</td><td><span class="tl-pill green">Strong</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Drill-downs -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>🔎 Evidence Drill-Downs</h3>
+          <p class="muted" style="font-size:.88rem;">Tap a row to expand the detail behind the headline.</p>
+
+          <div class="drill-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="chev" aria-hidden="true">▸</span>
+            <span class="tl-pill green">Strengths</span>
+            <span style="flex:1;">Reading, language, and inquiry are clear assets</span>
+          </div>
+          <div class="drill-panel">
+            <ul class="arrow-list">
+              <li>Reading diagnostic at the 82nd percentile and rising; comprehension and vocabulary score 4/4.</li>
+              <li>Science inquiry and portfolio evidence (robotics build log) at Meeting+.</li>
+              <li>Class participation at 90% — verbal reasoning carries discussion.</li>
+            </ul>
+          </div>
+
+          <div class="drill-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="chev" aria-hidden="true">▸</span>
+            <span class="tl-pill amber">Trends</span>
+            <span style="flex:1;">Math is accelerating; writing organization is uneven</span>
+          </div>
+          <div class="drill-panel">
+            <ul class="arrow-list">
+              <li>Math moved from 41st → 49th percentile and unit tests 62% → 71% with Tier 2 support.</li>
+              <li>Writing is strongest on ideas and language but weak on structure (2/4) — organization is the lever.</li>
+              <li>On-task time (74%) dips at the start of tasks, not throughout.</li>
+            </ul>
+          </div>
+
+          <div class="drill-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="chev" aria-hidden="true">▸</span>
+            <span class="tl-pill red">Opportunities for Support</span>
+            <span style="flex:1;">Math reasoning &amp; writing structure need targeted help</span>
+          </div>
+          <div class="drill-panel">
+            <ul class="arrow-list">
+              <li>Math reasoning/problem solving at 1/4 — continue Tier 2 small-group with CRA sequence.</li>
+              <li>Writing structure at 2/4 — add planning templates and paragraph frames.</li>
+              <li>Task initiation — a quick-start routine to convert participation into sustained output.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Teacher observations -->
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>👩‍🏫 Teacher Observations</h3>
+          <div class="insight">
+            <p style="margin:0;">"The data matches what I see: Jordan understands the math once we begin, but getting started on multi-step problems and on writing is the hurdle. Strong thinker, needs a clear on-ramp." <b>— Classroom teacher</b></p>
+          </div>
+        </div>
+
+        <!-- AI Evidence Summary -->
+        <div class="card exec-brief" style="margin-top:1.6rem;">
+          <h4>✨ AI Evidence Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Across diagnostic, formative, summative, performance, and portfolio evidence, Jordan presents as a strong reader and inquirer with accelerating math and emerging writing organization. Growth targets are exceeded overall (112%), driven by reading; math gains are real but from a lower base, and writing structure is the clearest standards-level gap.</p>
+          <p style="margin-bottom:0;"><b>Evidence-based planning focus:</b> sustain reading enrichment; continue Tier 2 math with concrete-representational-abstract modeling for reasoning; target writing structure with templates; and add a quick-start routine to lift on-task time. <span class="muted">This summary is simulated from fictional data and is a draft for educator review and approval.</span></p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human-in-the-loop</span> The AI is a planning assistant. This evidence review is an illustrative draft that educators verify and interpret alongside professional judgment. All data is fictional.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Individual Learning Plan Generator</h4><p style="color:#c9d6e6;">Personalized learning pathways through responsible AI — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="goals.html">Goals</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="ai-recommendations.html">AI Recommendations</a></li><li><a href="progress.html">Progress</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side; data is fictional. Educators review and approve all plans.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
