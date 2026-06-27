@@ -94,14 +94,14 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     id: "bahamas-ai",
-    title: "Bahamian Curriculum — AI-Powered Personalized Learning",
-    subtitle: "AI integration at national scale",
-    pillar: "id",
-    grade: "Bahamas",
-    status: "planned",
-    url: "",
-    icon: "✨",
-    tags: ["AI", "Personalized Learning", "National Curriculum"],
-    summary: "Applies AI-driven personalization within the Bahamian curriculum to scale tailored instruction across a national system."
+    title: "Bahamas National AI Strategy for Education",
+    subtitle: "A national vision for responsible, equitable, transformative AI",
+    pillar: "il",
+    grade: "Bahamas · National",
+    status: "done",
+    url: "projects/ai-strategy/index.html",
+    icon: "🧠",
+    tags: ["AI Strategy", "Education Policy", "Governance", "Digital Transformation", "Educational Leadership", "Systems Design"],
+    summary: "A world-class national AI-in-education strategy: vision, 9 strategic pillars, a governance & ethics framework, digital infrastructure, teacher capacity, equity, an interactive implementation roadmap, funding, risk, and M&E — system-level transformation for The Bahamas."
   }
 ];
