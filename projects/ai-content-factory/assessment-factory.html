@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Factory — AI Educational Content Factory</title>
+  <meta name="description" content="Generate every assessment type — diagnostic, formative, summative, projects, performance tasks, question banks, exit tickets, and rubrics — complete with answer keys, standards reports, and Bloom's and DOK alignment.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Generators / <b>Assessment Factory</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧪 Every Assessment Type</span>
+          <h1>Assessment Factory</h1>
+          <p class="lead">Generate any assessment type — <strong>diagnostic, formative, summative, projects, performance tasks, question banks, exit tickets, and rubrics</strong> — each delivered with <strong>answer keys, standards-alignment reports, and Bloom's Taxonomy and Depth of Knowledge (DOK) tagging</strong>. All content is illustrative and requires human editorial review.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="assessment">
+            <h3>Describe your assessment</h3>
+            <div class="field"><label for="as-topic">Topic</label><input id="as-topic" name="topic" placeholder="e.g., Fractions" value="Fractions"></div>
+            <div class="field-row">
+              <div class="field"><label for="as-grade">Grade</label>
+                <select id="as-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option selected>Grade 5</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+              </div>
+              <div class="field"><label for="as-count">Number of questions</label><input id="as-count" name="count" type="number" min="1" max="50" value="5"></div>
+            </div>
+            <div class="field"><label>Question types</label>
+              <div class="chip-set" data-group="types"><button type="button" class="chip-toggle on">Multiple choice</button><button type="button" class="chip-toggle">Short answer</button><button type="button" class="chip-toggle">Essay</button><button type="button" class="chip-toggle">Performance task</button><button type="button" class="chip-toggle">Exit ticket</button></div>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="assessment">
+            <div class="out-toolbar">
+              <span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Editorial gate</span> Every generated asset is a draft that passes human editorial &amp; pedagogical review before publishing. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Package Builder — AI Educational Content Factory</title>
+  <meta name="description" content="The central AI production workspace: enter a single prompt (grade, subject, topic, model, language, format) and generate a complete instructional package.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>LMS Package Builder</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📦 Universal LMS Export</span>
+          <h1>LMS Package Builder</h1>
+          <p class="lead">Export complete courses to <strong>any learning management system</strong> your district or institution runs. Every package produced by the Factory bundles its lessons, media, assessments, and metadata into a standards-compliant container ready to import. Choose a destination below to prepare an export. All content is illustrative.</p>
+        </div>
+
+        <h2 style="margin-bottom:.9rem;">Choose an export destination</h2>
+        <div class="export-grid">
+          <div class="export-opt" data-fmt="Canvas" role="button" tabindex="0" aria-label="Export to Canvas">🎨 Canvas</div>
+          <div class="export-opt" data-fmt="Google Classroom" role="button" tabindex="0" aria-label="Export to Google Classroom">📗 Google Classroom</div>
+          <div class="export-opt" data-fmt="Moodle" role="button" tabindex="0" aria-label="Export to Moodle">🟠 Moodle</div>
+          <div class="export-opt" data-fmt="Blackboard" role="button" tabindex="0" aria-label="Export to Blackboard">⬛ Blackboard</div>
+          <div class="export-opt" data-fmt="Schoology" role="button" tabindex="0" aria-label="Export to Schoology">🔵 Schoology</div>
+          <div class="export-opt" data-fmt="Brightspace" role="button" tabindex="0" aria-label="Export to Brightspace">🟡 Brightspace</div>
+          <div class="export-opt" data-fmt="SCORM" role="button" tabindex="0" aria-label="Export as SCORM package">📦 SCORM</div>
+          <div class="export-opt" data-fmt="HTML Website" role="button" tabindex="0" aria-label="Export as HTML website">🌐 HTML Website</div>
+          <div class="export-opt" data-fmt="ZIP Package" role="button" tabindex="0" aria-label="Export as ZIP package">🗜️ ZIP Package</div>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;">
+          <h3>Package contents</h3>
+          <p class="muted">Each export is a complete, self-contained course package. A typical bundle includes:</p>
+          <ul>
+            <li><b>Course structure</b> — modules, units, and sequenced lessons with a table of contents.</li>
+            <li><b>Lesson pages</b> — formatted HTML lessons with embedded media and accessible markup.</li>
+            <li><b>Assessments &amp; quizzes</b> — QTI-formatted question banks with answer keys and scoring.</li>
+            <li><b>Media assets</b> — videos, images, captions/transcripts, and audio narration.</li>
+            <li><b>Interactive activities</b> — dependency-free HTML modules that run inside the LMS.</li>
+            <li><b>Gradebook mapping</b> — points, weights, and standards alignment metadata.</li>
+            <li><b>Manifest &amp; metadata</b> — IMS/SCORM manifest, learning objectives, and tags.</li>
+            <li><b>Instructor materials</b> — teacher guide, rubrics, and facilitation notes.</li>
+          </ul>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">🧪 Demonstration</span> Export is demonstrated client-side — selecting a destination prepares a sample package in-browser. No data leaves your device; production exports run through the editorial gate before release. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

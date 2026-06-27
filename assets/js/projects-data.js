@@ -163,5 +163,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🎯",
     tags: ["Personalized Learning", "Individual Learning Plans", "MTSS / UDL", "Explainable AI", "Differentiation", "Responsible AI"],
     summary: "An AI-powered personalized-learning platform that drafts Individual Learning Plans from learner evidence — 16 tools: student profile, strengths & interests, assessment review, learning-plan generator, SMART goals, pathways, AI recommendations (with rationale), accommodations & supports, intervention & enrichment planners, career connections, parent portal, teacher dashboard, progress monitoring, reports. The AI is a planning assistant; educators review and approve every plan. Command palette, dark mode. Part of the AI for Education Innovation Suite."
+  },
+  {
+    id: "ai-content-factory",
+    title: "AI Educational Content Factory",
+    subtitle: "Turn one prompt into a complete instructional package",
+    pillar: "id",
+    grade: "K–12 · Enterprise",
+    status: "done",
+    url: "projects/ai-content-factory/index.html",
+    icon: "🏭",
+    tags: ["AI Product", "Educational Publishing", "Workflow Automation", "Content Production", "Multimedia Learning", "Enterprise Software"],
+    summary: "An enterprise AI content-production platform that turns a single prompt into a complete instructional package (lesson, workbook, slides, video, assessment, rubric, interactive activity, teacher/student/parent guides, LMS package). 17 tools: content factory, wizard, lesson/assessment/video/interactive/presentation/workbook/teacher-guide/parent generators, LMS builder, publishing center, content library, an animated workflow-automation pipeline, analytics, and enterprise admin — with a human editorial gate. Command palette, dark mode. Part of the AI for Education Innovation Suite."
   }
 ];

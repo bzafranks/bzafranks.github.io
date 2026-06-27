@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings & QA — AI Educational Content Factory</title>
+  <meta name="description" content="Production defaults, appearance, responsible-AI governance, quality assurance, enterprise implementation guidance, and local-data controls for the AI Educational Content Factory.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operate / <b>Settings &amp; QA</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚙️ Governance &amp; Quality</span>
+          <h1>Settings &amp; Quality Assurance</h1>
+          <p class="lead">Configure production defaults, appearance, and accessibility — and review the <strong>responsible-AI, quality-assurance, and enterprise-implementation</strong> framework that governs every package the Factory produces. All settings are presentational for this demonstration; content is illustrative and requires human editorial review.</p>
+        </div>
+
+        <!-- ===== Appearance + Production defaults ===== -->
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>🎨 Appearance</h3>
+            <p class="muted">Choose how the workspace looks. Your preference is saved locally in this browser.</p>
+            <div class="field-row" style="align-items:center;grid-template-columns:1fr auto;">
+              <div>
+                <label style="font-weight:700;font-size:.9rem;display:block;">Dark mode</label>
+                <p class="muted" style="margin:.2rem 0 0;font-size:.85rem;">A low-glare theme for long authoring and review sessions.</p>
+              </div>
+              <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+            </div>
+            <p class="muted" style="margin-top:1rem;font-size:.85rem;"><span class="ai-pill">♿ Accessibility</span> A floating <strong>accessibility toolbar</strong> (high-contrast mode, larger text, and reduced motion) is available site-wide via the toolbar control. Every screen uses semantic HTML, skip links, and full keyboard navigation.</p>
+          </div>
+
+          <div class="card">
+            <h3>🏭 Production defaults</h3>
+            <p class="muted">Set the defaults the Factory and generators start from. Presentational only in this demonstration.</p>
+            <div class="field"><label for="set-grade">Default grade</label>
+              <select id="set-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option selected>Grade 5</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+            </div>
+            <div class="field"><label for="set-subject">Default subject</label>
+              <select id="set-subject" name="subject"><option selected>Mathematics</option><option>ELA</option><option>Science</option><option>Social Studies</option><option>Computer Science</option></select>
+            </div>
+            <div class="field"><label for="set-model">Default instructional model</label>
+              <select id="set-model" name="model"><option selected>Gradual Release</option><option>5E</option><option>Project-Based</option><option>Inquiry</option><option>UDL</option></select>
+            </div>
+            <div class="field"><label for="set-language">Default language</label>
+              <select id="set-language" name="language"><option selected>English</option><option>Spanish</option><option>French</option><option>Bilingual</option></select>
+            </div>
+            <div class="field"><label for="set-branding">Default branding profile</label>
+              <select id="set-branding" name="branding"><option selected>Enterprise (house style)</option><option>District / Ministry</option><option>Publisher imprint</option><option>Online school</option><option>Unbranded draft</option></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Future AI features ===== -->
+        <div class="card">
+          <h3>🚀 Future AI features</h3>
+          <p class="muted">On the platform roadmap. These capabilities are planned, not yet enabled in this demonstration.</p>
+          <ul class="check-list">
+            <li>Voice authoring <span class="soon">Soon</span> — draft and revise content hands-free by speaking to the Factory.</li>
+            <li>AI avatars <span class="soon">Soon</span> — generate presenter-led video with synthetic narrators and lip-sync.</li>
+            <li>Automatic translation <span class="soon">Soon</span> — one source package, many languages, with localization review.</li>
+            <li>Real-time collaboration <span class="soon">Soon</span> — co-authoring and live editorial review across teams.</li>
+            <li>API integrations <span class="soon">Soon</span> — push and pull content programmatically to LMS, SIS, and CMS systems.</li>
+            <li>Enterprise AI agents <span class="soon">Soon</span> — autonomous production agents that build full catalogs to spec.</li>
+            <li>Content quality scoring <span class="soon">Soon</span> — automated readability, alignment, and rigor diagnostics per asset.</li>
+            <li>Curriculum comparison <span class="soon">Soon</span> — gap analysis against standards, frameworks, and competitor catalogs.</li>
+            <li>Adaptive publishing <span class="soon">Soon</span> — content that re-renders by reading level, device, and learner profile.</li>
+            <li>Generative simulations <span class="soon">Soon</span> — interactive, dependency-free simulations produced from a prompt.</li>
+          </ul>
+        </div>
+
+        <!-- ===== Responsible AI & QA ===== -->
+        <div class="card" style="border-left:5px solid var(--cf-accent);">
+          <span class="tool-badge">🛡️ Required of every package</span>
+          <h3 style="margin-top:.6rem;">Responsible AI &amp; Quality Assurance</h3>
+          <p class="muted">AI produces at scale; <strong>editors guarantee quality.</strong> Every asset the Factory generates is a draft that passes through this framework before it can be published.</p>
+          <div class="grid grid-2">
+            <div>
+              <h4>👤 Human editorial review</h4>
+              <p class="muted">No asset publishes without a qualified editor reviewing, correcting, and approving it. The AI proposes; people decide and own the result.</p>
+              <h4>🎓 Pedagogical quality</h4>
+              <p class="muted">Content is checked for instructional soundness, standards alignment, age-appropriate rigor, and coherent learning progressions.</p>
+              <h4>⚖️ Bias monitoring</h4>
+              <p class="muted">Materials are reviewed for cultural responsiveness, representation, and fairness so content serves every learner equitably.</p>
+              <h4>♿ Accessibility review</h4>
+              <p class="muted">Alt text, reading level, captions, transcripts, color contrast, and keyboard access are verified against WCAG before release.</p>
+              <h4>©️ Copyright considerations</h4>
+              <p class="muted">Source attribution, licensing, and originality are confirmed; AI output is treated as a draft to be vetted, never blindly shipped.</p>
+            </div>
+            <div>
+              <h4>🔖 Version control</h4>
+              <p class="muted">Every asset is versioned with a full revision history, so changes are traceable and prior states are recoverable.</p>
+              <h4>✅ Content validation</h4>
+              <p class="muted">Factual accuracy, answer keys, rubrics, and standards tags are validated by subject-matter experts before publishing.</p>
+              <h4>🤖 Responsible AI use</h4>
+              <p class="muted">Clear policies define where and how AI assists, with safeguards against over-reliance and against presenting drafts as finished work.</p>
+              <h4>🔍 Transparency</h4>
+              <p class="muted">AI-generated drafts are clearly labeled, with visible provenance so reviewers and downstream users know what was machine-assisted.</p>
+              <h4>📈 Continuous improvement</h4>
+              <p class="muted">Editorial findings feed back into prompts, templates, and review checklists so quality compounds over time.</p>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:1rem;font-size:.85rem;"><span class="ai-pill">👤 Editorial gate</span> This framework is the non-negotiable gate between AI production and publishing. All AI is simulated client-side for demonstration; sample content is illustrative.</p>
+        </div>
+
+        <!-- ===== Implementation guide ===== -->
+        <div class="card">
+          <h3>🏢 Implementation guide</h3>
+          <p class="muted"><em>Presented as if to an educational publisher, edtech company, school district, ministry of education, or online school adopting the Factory at scale.</em></p>
+          <ol>
+            <li><strong>Implementation strategy</strong> — start with a focused pilot on one catalog or grade band against a baseline, prove time-to-production and quality, then expand title-by-title and team-by-team rather than all at once.</li>
+            <li><strong>Author training</strong> — coach authors and editors to write effective prompts, read AI output critically, and edit and approve with authority so the human stays firmly in command.</li>
+            <li><strong>AI governance</strong> — establish policy up front: where AI may assist, data handling and retention, provenance labeling, and accountability for published content.</li>
+            <li><strong>Quality assurance</strong> — operationalize the responsible-AI &amp; QA framework above as required review gates, with checklists, sign-off roles, and audit trails.</li>
+            <li><strong>Editorial workflow</strong> — define draft → review → revise → approve stages with clear ownership, so every asset moves through human review before it advances.</li>
+            <li><strong>Publishing workflow</strong> — standardize export targets (web, PDF, PPT, Word, eBook, online course, SCORM/LMS) and branding so output is consistent across formats.</li>
+            <li><strong>Scaling strategy</strong> — template the house style, reuse approved components, and grow capacity by adding teams and brands without re-solving production each time.</li>
+            <li><strong>Success metrics</strong> — track production time saved, assets shipped per editor, defect and rework rates, accessibility-pass rates, and standards-alignment coverage.</li>
+            <li><strong>Enterprise deployment</strong> — add role-based access, SSO, approval hierarchies, brand management, audit logging, and integration with existing LMS/SIS/CMS systems.</li>
+          </ol>
+        </div>
+
+        <!-- ===== Data ===== -->
+        <div class="card">
+          <h3>🗄️ Data</h3>
+          <p class="muted">This demonstration runs entirely in your browser. Nothing leaves this device; your saved content, history, and stats live only in this browser's <code>localStorage</code>.</p>
+          <button class="out-btn" onclick="if(confirm('Clear saved content, history and stats?')){localStorage.removeItem('cf:library');localStorage.removeItem('cf:hist');localStorage.removeItem('cf:stats');window.CF&&window.CF.toast('Local data cleared','ok');}">Clear local data</button>
+          <p class="muted" style="margin-top:1rem;font-size:.85rem;">Local keys used by this demonstration: <code>cf:theme</code> (appearance), <code>cf:library</code> (saved content), <code>cf:hist</code> (Factory chat history), and <code>cf:stats</code> (production counters). Clearing data above removes <code>cf:library</code>, <code>cf:hist</code>, and <code>cf:stats</code>; your <code>cf:theme</code> preference is kept.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

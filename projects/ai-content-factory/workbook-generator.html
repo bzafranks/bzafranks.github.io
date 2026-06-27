@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workbook Generator — AI Educational Content Factory</title>
+  <meta name="description" content="Generate complete student workbooks: practice pages, graphic organizers, vocabulary activities, reflection pages, interactive journals, study guides, and printable PDF.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Generators / <b>Workbook Generator</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📚 Student Workbook Production</span>
+          <h1>Workbook Generator</h1>
+          <p class="lead">Generate a complete <strong>student workbook</strong> from a single topic — practice pages, graphic organizers, vocabulary activities, reflection pages, an interactive journal, a study guide, and extension &amp; review activities — plus a print-ready PDF. Every page is a draft for editorial review. All content is illustrative.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="workbook">
+            <h3>Describe your workbook</h3>
+            <div class="field"><label for="wb-topic">Topic</label><input id="wb-topic" name="topic" placeholder="e.g., Fractions" value="Fractions"></div>
+            <div class="field"><label for="wb-grade">Grade</label>
+              <select id="wb-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option selected>Grade 5</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+            </div>
+            <button class="btn" type="submit">📚 Generate Workbook</button>
+          </form>
+
+          <div class="gen-output" data-output="workbook">
+            <div class="out-toolbar">
+              <span class="ai-pill">📚 Workbook Output</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">📚</div><p>Enter a topic and grade, then press <b>Generate Workbook</b>. Your complete student workbook will appear here.</p></div></div></div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Editorial gate</span> Every generated page is a draft that passes human editorial &amp; pedagogical review before publishing. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

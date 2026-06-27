@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publishing Center — AI Educational Content Factory</title>
+  <meta name="description" content="The central AI production workspace: enter a single prompt (grade, subject, topic, model, language, format) and generate a complete instructional package.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Publishing Center</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🚀 Publish Anywhere</span>
+          <h1>Publishing Center</h1>
+          <p class="lead">Publish your produced content in <strong>many formats</strong> — from a live website to a printable workbook — without rebuilding anything. Walk through the guided publishing flow, then choose one or more output formats. All content is illustrative.</p>
+        </div>
+
+        <h2 style="margin-bottom:.9rem;">Publishing flow</h2>
+        <div class="wizard" role="list" aria-label="Publishing steps">
+          <div class="wizard-step" role="listitem"><span class="n">1</span><span class="label">Select content</span></div>
+          <div class="wizard-step" role="listitem"><span class="n">2</span><span class="label">Choose format</span></div>
+          <div class="wizard-step" role="listitem"><span class="n">3</span><span class="label">Configure</span></div>
+          <div class="wizard-step" role="listitem"><span class="n">4</span><span class="label">Publish</span></div>
+        </div>
+        <button class="btn" type="button" data-wizard-next>Next step →</button>
+
+        <h2 style="margin:1.6rem 0 .9rem;">Choose an output format</h2>
+        <div class="export-grid">
+          <div class="export-opt" data-fmt="Website" role="button" tabindex="0" aria-label="Publish as a website">🌐 Website</div>
+          <div class="export-opt" data-fmt="PDF" role="button" tabindex="0" aria-label="Publish as PDF">📄 PDF</div>
+          <div class="export-opt" data-fmt="PowerPoint" role="button" tabindex="0" aria-label="Publish as PowerPoint">📊 PowerPoint</div>
+          <div class="export-opt" data-fmt="Word" role="button" tabindex="0" aria-label="Publish as Word document">📝 Word</div>
+          <div class="export-opt" data-fmt="eBook" role="button" tabindex="0" aria-label="Publish as eBook">📖 eBook</div>
+          <div class="export-opt" data-fmt="Interactive Web Lesson" role="button" tabindex="0" aria-label="Publish as interactive web lesson">🎮 Interactive Web Lesson</div>
+          <div class="export-opt" data-fmt="Online Course" role="button" tabindex="0" aria-label="Publish as online course">🎓 Online Course</div>
+          <div class="export-opt" data-fmt="Mobile Learning" role="button" tabindex="0" aria-label="Publish as mobile learning module">📱 Mobile Learning</div>
+          <div class="export-opt" data-fmt="Printable Workbook" role="button" tabindex="0" aria-label="Publish as printable workbook">📚 Printable Workbook</div>
+          <div class="export-opt" data-fmt="Teacher Resource Kit" role="button" tabindex="0" aria-label="Publish as teacher resource kit">🧑‍🏫 Teacher Resource Kit</div>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;">
+          <h3>What gets published</h3>
+          <p class="muted">Publishing renders your reviewed content into the chosen format with consistent branding and accessibility baked in. A published output includes:</p>
+          <ul>
+            <li><b>Formatted content</b> — lessons, units, or full courses laid out for the target medium.</li>
+            <li><b>Embedded media</b> — images, videos, captions, and transcripts where supported.</li>
+            <li><b>Navigation &amp; structure</b> — table of contents, sections, and page breaks.</li>
+            <li><b>Branding</b> — consistent typography, color, and identity across every format.</li>
+            <li><b>Accessibility</b> — alt text, reading-level checks, and semantic structure.</li>
+            <li><b>Distribution metadata</b> — title, authorship, version, and standards tags.</li>
+          </ul>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">🖨️ Print / PDF</span> Print-ready formats (PDF, Printable Workbook, Teacher Resource Kit) use your browser's <b>Print → Save as PDF</b> for true offline distribution. Publishing is demonstrated client-side; reviewed content passes the editorial gate before release. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

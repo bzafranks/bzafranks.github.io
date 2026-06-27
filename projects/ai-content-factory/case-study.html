@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — AI Educational Content Factory · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A consulting case study on designing the AI Educational Content Factory: the publishing challenge, needs analysis, platform architecture, single-prompt workflow automation, AI orchestration, instructional-design philosophy, UX and information architecture, responsible AI, enterprise implementation strategy, productivity impact, and reflection.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Consulting Case Study</p>
+        <h1>Designing the AI Educational Content Factory</h1>
+        <p class="lead">How a single prompt becomes a complete instructional package — and how an enterprise platform can <strong>orchestrate AI across an entire production pipeline</strong> while a human editorial gate guarantees that every published asset is sound, accessible, and worthy of a learner's time.</p>
+      </div>
+    </section>
+
+    <section class="section"><div class="container narrow">
+
+      <div class="lesson-block">
+        <h3>The Educational Publishing Challenge</h3>
+        <p>Educational organizations do not struggle to create a single good lesson — they struggle to <em>produce</em>. A publisher, district, or online school needs the same content rebuilt as a lesson plan, a workbook, a slide deck, a video, an assessment, a rubric, an interactive activity, and teacher, student, and parent guides — and then packaged for every LMS. Each format is recreated by hand, by a different specialist, on a timeline measured in weeks.</p>
+        <p>The result is predictable: production is slow, repetitive, and hard to scale; consistency in alignment, accessibility, and branding erodes across formats; and the cost of a complete, polished package keeps personalization and breadth out of reach. The opportunity was to design not another AI lesson generator, but an <strong>enterprise content production platform</strong> — a factory that turns one prompt into a complete, aligned, reviewable instructional package.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Needs Analysis</h3>
+        <p>I began with the organizations that would run the platform and the decisions each must make:</p>
+        <ul class="check-list">
+          <li><strong>Educational publishers</strong> need to ship complete, on-brand catalogs faster, with consistent quality and a defensible editorial process.</li>
+          <li><strong>Edtech companies</strong> need to generate content libraries at volume to fill products, with reuse and version control built in.</li>
+          <li><strong>School districts &amp; ministries</strong> need standards-aligned, accessible materials produced equitably across grades, subjects, and languages.</li>
+          <li><strong>Online schools</strong> need full course packages — every asset and every format — produced and republished as curriculum evolves.</li>
+          <li><strong>Authors &amp; editors</strong> need the blank-page and reformatting work removed so their scarce expertise is spent on review and judgment, not assembly.</li>
+        </ul>
+        <p>The shared requirement: collapse weeks of coordinated specialist effort into minutes of generation plus focused human review — without surrendering quality, alignment, or accountability.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Platform Architecture</h3>
+        <p>The platform is built as a true production line rather than a set of disconnected tools. An <strong>application shell</strong> — persistent tool rail, command palette, autosave, and dark mode — hosts every workspace, so the experience stays consistent as the catalog of tools grows. A single shared <strong>tool registry</strong> powers navigation, the command palette, and the rail from one source of truth. Production flows through four stages — <em>Produce → Generators → Deliver → Operate</em> — mapping the real path from prompt to published, governed catalog. Everything runs client-side for this demonstration, with state in <code>localStorage</code>, so the architecture can be explored end-to-end without a backend.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>Workflow Automation Strategy</h3>
+        <p>The core design move is the <strong>single-prompt → full-package pipeline.</strong> An author describes what they need once — grade, subject, topic, instructional model, language, and format — and the Factory orchestrates the full production run:</p>
+        <ul class="check-list">
+          <li><strong>One input, a whole package</strong> — a single prompt fans out into thirteen aligned assets, from lesson plan to LMS package, instead of thirteen separate jobs.</li>
+          <li><strong>Visible pipeline</strong> — an animated production pipeline shows each stage queue, run, and complete, so automation is transparent rather than a black box.</li>
+          <li><strong>Consistency by construction</strong> — every asset inherits the same standards, branding, and accessibility settings, so the package is coherent across formats.</li>
+          <li><strong>Draft, not done</strong> — the pipeline produces a complete first draft and then hands off to the editorial gate; automation accelerates, humans approve.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>AI Orchestration</h3>
+        <p>The defining principle is that <strong>the AI is a production assistant, not a publisher.</strong></p>
+        <ul class="check-list">
+          <li><strong>Many specialized generators, one conductor</strong> — lesson, assessment, video, interactive, presentation, workbook, teacher, and parent generators are orchestrated together so a single intent produces a coordinated suite.</li>
+          <li><strong>Shared context</strong> — grade, subject, model, and branding flow through every generator, so assets reinforce one another instead of drifting apart.</li>
+          <li><strong>Human approval</strong> — nothing publishes until an editor reviews and approves it; the AI proposes a complete draft and people own the outcome.</li>
+        </ul>
+        <p>This is non-negotiable when the output teaches children: an opaque system that published unreviewed AI content would undermine the editorial trust that publishing depends on.</p>
+      </div>
+
+      <div class="lesson-block leaf">
+        <h3>Instructional Design Philosophy</h3>
+        <p>The Factory is opinionated about pedagogy, not just output. Generated packages are structured around recognized instructional models — Gradual Release, 5E, Project-Based, Inquiry, and UDL — so content has a coherent learning arc rather than a pile of activities. Assessments carry Bloom's and DOK alignment; lessons carry objectives, success criteria, and exit tickets; accessibility is treated as a design requirement, not a cleanup step. The premise is that producing <em>at scale</em> must never mean producing shallow: speed earns its place only when the underlying instruction is sound.</p>
+      </div>
+
+      <div class="lesson-block">
+        <h3>User Experience Decisions</h3>
+        <p>The experience is built for professional content teams working under deadline:</p>
+        <ul class="check-list">
+          <li><strong>Application-shell workspace</strong> — a persistent tool rail and breadcrumb keep authors oriented across a large toolset.</li>
+          <li><strong>Single-prompt entry</strong> — describe the package once; the Factory does the assembly, with sensible production defaults pre-set.</li>
+          <li><strong>Command palette (⌘/Ctrl + K)</strong> — jump to any tool or describe content to produce from anywhere.</li>
+          <li><strong>Autosave &amp; dark mode</strong> — work is never lost, and a low-glare theme supports long authoring and review sessions.</li>
+          <li><strong>Accessibility</strong> — semantic HTML, skip links, a floating accessibility toolbar, and full keyboard navigation throughout.</li>
+          <li><strong>Trust cues</strong> — simulated-AI labels, "review before publishing" reminders, and clearly marked illustrative content everywhere.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Information Architecture</h3>
+        <p>The platform is organized into <strong>17 production tools</strong>, grouped by the stage of work they serve and tied together by the command palette:</p>
+        <ul class="check-list">
+          <li><strong>Produce</strong> — Content Factory (single-prompt production) and the guided Content Wizard.</li>
+          <li><strong>Generators</strong> — Lesson Generator, Assessment Factory, AI Video Studio, Interactive Generator, Presentation Generator, Workbook Generator, Teacher Guide Generator, and Parent Resources.</li>
+          <li><strong>Deliver</strong> — LMS Package Builder, Publishing Center, and Content Library.</li>
+          <li><strong>Operate</strong> — Workflow Automation, Analytics, Enterprise Admin, and Settings &amp; QA.</li>
+        </ul>
+        <p>Across every screen, a <strong>command palette (⌘/Ctrl + K)</strong> routes instantly to any tool, and a built-in <strong>dark mode</strong> supports long sessions. One shared tool registry powers the rail, the palette, and navigation, so the experience stays consistent as the platform grows.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>Responsible AI &amp; Quality Assurance</h3>
+        <p>Because the Factory produces content that teaches, a human editorial gate is designed in from the first screen — not bolted on afterward.</p>
+        <ul class="check-list">
+          <li><strong>Editorial review</strong> — every generated asset is a draft; a qualified editor reviews, corrects, and approves before anything publishes.</li>
+          <li><strong>Bias monitoring</strong> — materials are reviewed for representation, cultural responsiveness, and fairness so content serves every learner.</li>
+          <li><strong>Accessibility</strong> — alt text, reading level, captions, transcripts, contrast, and keyboard access are verified against WCAG.</li>
+          <li><strong>Copyright</strong> — attribution, licensing, and originality are confirmed; AI output is vetted, never blindly shipped.</li>
+          <li><strong>Version control</strong> — every asset is versioned with full revision history, so changes are traceable and recoverable.</li>
+        </ul>
+        <p>The principle is constant: AI produces at scale; editors guarantee quality. The full governance and QA framework lives in <a href="settings.html">Settings &amp; QA →</a>.</p>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Implementation Strategy</h3>
+        <p><em>Presented as if to an educational publisher, edtech company, school district, ministry of education, or online school.</em> Adoption succeeds when teams trust the draft and see production time fall without quality slipping. I recommend a deliberately paced rollout:</p>
+        <ul class="check-list">
+          <li><strong>Author training:</strong> coach authors and editors to prompt effectively, read AI output critically, and edit and approve with authority.</li>
+          <li><strong>Governance first:</strong> define AI-use policy, data handling, provenance labeling, and accountability before scaling.</li>
+          <li><strong>Editorial &amp; publishing workflow:</strong> operationalize draft → review → approve → publish gates, standardize export targets, and lock in branding.</li>
+          <li><strong>Pilot → scale:</strong> prove time-to-production and quality on one catalog against a baseline, then expand title-by-title and team-by-team.</li>
+          <li><strong>Success metrics:</strong> production time saved, assets shipped per editor, rework and defect rates, accessibility-pass rates, and alignment coverage.</li>
+          <li><strong>Enterprise deployment:</strong> role-based access, SSO, approval hierarchies, brand management, audit logging, and LMS/SIS/CMS integration.</li>
+        </ul>
+        <p>Editorial trust is the real bottleneck — so the strategy invests in training and governance first and lets evidence, not mandate, drive expansion.</p>
+      </div>
+
+      <div class="lesson-block leaf">
+        <h3>Productivity Improvements</h3>
+        <p><em>Illustrative for demonstration.</em> By collapsing assembly into generation plus review, the platform is designed to move the numbers that decide whether a catalog ships:</p>
+        <ul class="check-list">
+          <li><strong>Weeks to minutes</strong> — a complete package that took a coordinated team weeks is drafted in minutes, then reviewed by an editor.</li>
+          <li><strong>One prompt, thirteen aligned assets</strong> — reformatting work disappears; the same source produces every format consistently.</li>
+          <li><strong>Higher throughput per editor</strong> — expert time shifts from building to reviewing, multiplying how much each editor can ship.</li>
+          <li><strong>Consistent quality at scale</strong> — shared standards, branding, and accessibility hold across the whole catalog, not just the flagship titles.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Future Enhancements</h3>
+        <ul class="check-list">
+          <li><strong>Voice authoring</strong> — draft and revise content hands-free by speaking to the Factory.</li>
+          <li><strong>AI avatars</strong> — presenter-led video with synthetic narrators and lip-sync.</li>
+          <li><strong>Automatic translation</strong> — one source package localized into many languages, with review.</li>
+          <li><strong>Real-time collaboration</strong> — co-authoring and live editorial review across teams.</li>
+          <li><strong>API integrations &amp; enterprise agents</strong> — programmatic production and autonomous agents that build full catalogs to spec.</li>
+          <li><strong>Content quality scoring &amp; adaptive publishing</strong> — automated rigor diagnostics, and content that re-renders by reading level, device, and learner profile.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Professional Reflection</h3>
+        <p>Building this product reinforced that the scalable instructional-design problem is not writing one good lesson — it is <em>producing</em> complete, consistent, accessible content fast enough to matter, without letting speed erode quality. The full first-person <a href="reflection.html">reflection →</a> explores why content production is the real bottleneck, what it takes to orchestrate AI across a pipeline responsibly, and what this build demonstrates about commercially viable AI publishing platforms for education.</p>
+        <div class="btn-row" style="margin-top:1rem;">
+          <a class="btn" href="content-factory.html">Open the Content Factory</a>
+          <a class="btn ghost" href="../../index.html#case-studies">All Case Studies</a>
+        </div>
+      </div>
+
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">An enterprise AI platform for automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' Curriculum Innovation &amp; Instructional Design Portfolio and the AI for Education Innovation Suite.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="content-factory.html">Content Factory</a></li><li><a href="workflow.html">Workflow Automation</a></li><li><a href="lesson-generator.html">Generators</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="library.html">Content Library</a></li><li><a href="admin.html">Enterprise Admin</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Portfolio Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Built on the shared portfolio design system · All AI is simulated client-side for demonstration; sample content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Video Studio — AI Educational Content Factory</title>
+  <meta name="description" content="Generate narration scripts, storyboards, animated slides, presenter notes, image prompts, voice recommendations, captions, transcripts, reflection questions, student activities, and a teacher guide from one prompt.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Generators / <b>AI Video Studio</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎬 AI Video Production</span>
+          <h1>AI Video Studio</h1>
+          <p class="lead">From a single topic, the studio drafts a complete video production kit: <strong>narration script, storyboard, animated slides, presenter notes, image prompts, voice recommendations, captions, transcript, reflection questions, student activities, and a teacher guide.</strong> Every asset is a draft for editorial review. All content is illustrative.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="video">
+            <h3>Describe your video</h3>
+            <div class="field"><label for="vs-topic">Topic</label><input id="vs-topic" name="topic" placeholder="e.g., The Water Cycle" value="The Water Cycle"></div>
+            <div class="field"><label for="vs-grade">Grade</label>
+              <select id="vs-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option selected>Grade 5</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+            </div>
+            <p class="field hint">The studio produces narration, storyboard, slides, presenter notes, image prompts, a voice recommendation, captions, transcript, reflection questions, student activities, and a teacher guide.</p>
+            <button class="btn" type="submit">🎬 Generate Video Kit</button>
+          </form>
+
+          <div class="gen-output" data-output="video">
+            <div class="out-toolbar">
+              <span class="ai-pill">🎬 Video Output</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">🎬</div><p>Enter a topic and press <b>Generate Video Kit</b>. The studio will draft the script, storyboard, and production notes here.</p></div></div></div>
+          </div>
+        </div>
+
+        <section class="tool-head" style="margin-top:2.4rem;">
+          <span class="tool-badge">🎞️ Production workflow</span>
+          <h2>From script to publish</h2>
+          <p class="lead">Each AI draft flows through a human-in-the-loop production pipeline before it reaches students. Tools named are illustrative.</p>
+        </section>
+        <div class="pipeline">
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">📝</div>
+            <h4>Script</h4>
+            <p>AI narration script, presenter notes, reflection questions, and image prompts.</p>
+            <span class="p-state">Draft</span>
+          </div>
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">📊</div>
+            <h4>Slides</h4>
+            <p>Animated slide deck generated and refined in Gamma / Canva.</p>
+            <span class="p-state">Build</span>
+          </div>
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">🧑‍💻</div>
+            <h4>Avatar &amp; Voice</h4>
+            <p>Presenter avatar and narration rendered with Synthesia / HeyGen.</p>
+            <span class="p-state">Render</span>
+          </div>
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">💬</div>
+            <h4>Captions / Transcript</h4>
+            <p>Accessible captions and a full transcript for every learner.</p>
+            <span class="p-state">A11y</span>
+          </div>
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">👤</div>
+            <h4>Editorial Review</h4>
+            <p>Human editorial &amp; pedagogical review of every asset.</p>
+            <span class="p-state">Gate</span>
+          </div>
+          <div class="pipe-step">
+            <div class="p-ico" aria-hidden="true">🚀</div>
+            <h4>Publish</h4>
+            <p>Deliver to the LMS, library, and publishing center.</p>
+            <span class="p-state">Ship</span>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Editorial gate</span> Every generated asset is a draft that passes human editorial &amp; pedagogical review before publishing. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

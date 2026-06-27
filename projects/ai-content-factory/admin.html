@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Administration — AI Educational Content Factory</title>
+  <meta name="description" content="Enterprise administration for the AI Educational Content Factory: user and role management, teams, workflow approvals, version history, brand governance, and usage reporting.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operate / <b>Enterprise Admin</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🏢 Governance &amp; Control</span>
+          <h1>Enterprise Administration</h1>
+          <p class="lead">Org-level control over users, roles, teams, approval workflows, versioning, and brand governance. All people, teams, and figures below are <strong>fictional and illustrative</strong> for demonstration.</p>
+        </div>
+
+        <!-- Org KPIs -->
+        <section aria-labelledby="ad-kpi">
+          <h2 id="ad-kpi" class="section-title">Organization overview</h2>
+          <div class="kpi-grid">
+            <div class="scorecard">
+              <div class="sc-label">Active users</div>
+              <div class="sc-num"><span data-count="148">0</span></div>
+              <div class="sc-trend">▲ 12 this quarter</div>
+            </div>
+            <div class="scorecard">
+              <div class="sc-label">Teams</div>
+              <div class="sc-num"><span data-count="9">0</span></div>
+              <div class="sc-trend">Across 4 departments</div>
+            </div>
+            <div class="scorecard">
+              <div class="sc-label">Pending approvals</div>
+              <div class="sc-num"><span data-count="7">0</span></div>
+              <div class="sc-trend">Avg. 1.4 days to clear</div>
+            </div>
+            <div class="scorecard">
+              <div class="sc-label">Seat utilization</div>
+              <div class="sc-num"><span data-count="92" data-suffix="%">0</span></div>
+              <div class="sc-trend">148 of 160 seats</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- User management -->
+        <section aria-labelledby="ad-users" style="margin-top:1.6rem;">
+          <h2 id="ad-users" class="section-title">User management</h2>
+          <p class="muted">Illustrative directory of factory users.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Fictional sample users.</caption>
+              <thead>
+                <tr><th scope="col">Name</th><th scope="col">Role</th><th scope="col">Team</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Dr. Barbara Z. Franks</td><td>Admin</td><td>Curriculum Leadership</td><td><span class="tl-pill green">Active</span></td></tr>
+                <tr><td>Marcus Hale</td><td>Editor</td><td>Mathematics</td><td><span class="tl-pill green">Active</span></td></tr>
+                <tr><td>Priya Anand</td><td>Author</td><td>ELA</td><td><span class="tl-pill green">Active</span></td></tr>
+                <tr><td>Sofia Reyes</td><td>Reviewer</td><td>Quality &amp; Standards</td><td><span class="tl-pill amber">Invited</span></td></tr>
+                <tr><td>James Okafor</td><td>Author</td><td>Science</td><td><span class="tl-pill green">Active</span></td></tr>
+                <tr><td>Lena Vogel</td><td>Editor</td><td>Social Studies</td><td><span class="tl-pill red">Suspended</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Roles & permissions -->
+        <section aria-labelledby="ad-roles" style="margin-top:1.6rem;">
+          <h2 id="ad-roles" class="section-title">Permissions &amp; roles</h2>
+          <p class="muted">Role-based access control. Illustrative.</p>
+          <div class="grid grid-4">
+            <div class="card compact">
+              <h3>Admin</h3>
+              <p class="muted">Full control</p>
+              <ul class="arrow-list">
+                <li>Manage users &amp; teams</li>
+                <li>Configure roles &amp; brand</li>
+                <li>Approve &amp; publish</li>
+                <li>View all reports</li>
+              </ul>
+            </div>
+            <div class="card compact">
+              <h3>Editor</h3>
+              <p class="muted">Produce &amp; refine</p>
+              <ul class="arrow-list">
+                <li>Create &amp; edit content</li>
+                <li>Submit for approval</li>
+                <li>Manage team library</li>
+                <li>Cannot manage users</li>
+              </ul>
+            </div>
+            <div class="card compact">
+              <h3>Author</h3>
+              <p class="muted">Create drafts</p>
+              <ul class="arrow-list">
+                <li>Run generators</li>
+                <li>Edit own drafts</li>
+                <li>Submit for review</li>
+                <li>No publishing rights</li>
+              </ul>
+            </div>
+            <div class="card compact">
+              <h3>Reviewer</h3>
+              <p class="muted">Quality gate</p>
+              <ul class="arrow-list">
+                <li>Review submissions</li>
+                <li>Approve or return</li>
+                <li>Add review notes</li>
+                <li>No editing rights</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Teams -->
+        <section aria-labelledby="ad-teams" style="margin-top:1.6rem;">
+          <h2 id="ad-teams" class="section-title">Teams</h2>
+          <p class="muted">Illustrative team structure.</p>
+          <div class="grid grid-3">
+            <div class="card compact"><h4>Mathematics</h4><p class="muted">28 members · 3 editors</p><span class="tl-pill green">Active</span></div>
+            <div class="card compact"><h4>ELA</h4><p class="muted">34 members · 4 editors</p><span class="tl-pill green">Active</span></div>
+            <div class="card compact"><h4>Science</h4><p class="muted">22 members · 2 editors</p><span class="tl-pill green">Active</span></div>
+            <div class="card compact"><h4>Social Studies</h4><p class="muted">19 members · 2 editors</p><span class="tl-pill green">Active</span></div>
+            <div class="card compact"><h4>Quality &amp; Standards</h4><p class="muted">11 reviewers</p><span class="tl-pill amber">Onboarding</span></div>
+            <div class="card compact"><h4>Curriculum Leadership</h4><p class="muted">6 admins</p><span class="tl-pill green">Active</span></div>
+          </div>
+        </section>
+
+        <!-- Workflow approvals (drill rows) -->
+        <section aria-labelledby="ad-approvals" style="margin-top:1.6rem;">
+          <h2 id="ad-approvals" class="section-title">Workflow approvals</h2>
+          <p class="muted">Items awaiting sign-off. Select a row to expand. Illustrative.</p>
+          <div class="card">
+            <div class="drill-row"><span class="chev" aria-hidden="true">▸</span><div style="flex:1;"><b>Grade 5 · Fractions Unit</b><div class="muted" style="font-size:.85rem;">Stage: Editorial review · Approver: Marcus Hale</div></div><span class="tl-pill amber">Pending</span></div>
+            <div class="drill-panel"><p class="muted">Submitted by Priya Anand · 13 assets · standards coverage 100%. Awaiting editorial sign-off before publishing approval.</p></div>
+
+            <div class="drill-row"><span class="chev" aria-hidden="true">▸</span><div style="flex:1;"><b>Grade 8 · Verb Voice &amp; Mood</b><div class="muted" style="font-size:.85rem;">Stage: Quality review · Approver: Sofia Reyes</div></div><span class="tl-pill amber">Pending</span></div>
+            <div class="drill-panel"><p class="muted">Submitted by Lena Vogel · 13 assets · flagged for accessibility recheck on the video captions.</p></div>
+
+            <div class="drill-row"><span class="chev" aria-hidden="true">▸</span><div style="flex:1;"><b>Grade 6 · Cell Structures</b><div class="muted" style="font-size:.85rem;">Stage: Publishing approval · Approver: Dr. B. Franks</div></div><span class="tl-pill green">Approved</span></div>
+            <div class="drill-panel"><p class="muted">Cleared editorial and quality review. Approved for LMS publishing on 2026-06-24.</p></div>
+
+            <div class="drill-row"><span class="chev" aria-hidden="true">▸</span><div style="flex:1;"><b>Grade 7 · Allusions in Context</b><div class="muted" style="font-size:.85rem;">Stage: Editorial review · Approver: Marcus Hale</div></div><span class="tl-pill red">Returned</span></div>
+            <div class="drill-panel"><p class="muted">Returned to author — standards coverage at 74%. Requested additional DOK-3 items before resubmission.</p></div>
+          </div>
+        </section>
+
+        <!-- Publishing approvals & content review -->
+        <section aria-labelledby="ad-publishing" style="margin-top:1.6rem;">
+          <h2 id="ad-publishing" class="section-title">Publishing &amp; content review</h2>
+          <div class="grid grid-2">
+            <div class="card">
+              <h3>Publishing approvals</h3>
+              <p class="muted">Final gate before content is released to any channel.</p>
+              <div class="table-wrap">
+                <table>
+                  <caption>Illustrative publishing queue.</caption>
+                  <thead><tr><th scope="col">Item</th><th scope="col">Channel</th><th scope="col">Status</th></tr></thead>
+                  <tbody>
+                    <tr><td>Fractions Unit</td><td>LMS (SCORM)</td><td><span class="tl-pill green">Cleared</span></td></tr>
+                    <tr><td>Opinion Writing</td><td>Web + PDF</td><td><span class="tl-pill green">Cleared</span></td></tr>
+                    <tr><td>Verb Voice &amp; Mood</td><td>LMS (SCORM)</td><td><span class="tl-pill amber">Hold</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Content review</h3>
+              <p class="muted">Editorial &amp; pedagogical checks every asset passes.</p>
+              <ul class="arrow-list">
+                <li>Standards alignment verification</li>
+                <li>Reading-level &amp; accessibility check</li>
+                <li>Pedagogical accuracy review</li>
+                <li>Brand &amp; tone consistency</li>
+                <li>Human editorial sign-off (required)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Version history -->
+        <section aria-labelledby="ad-versions" style="margin-top:1.6rem;">
+          <h2 id="ad-versions" class="section-title">Version history</h2>
+          <p class="muted">Audit trail for the "Grade 5 · Fractions Unit" package. Illustrative.</p>
+          <div class="card">
+            <ul class="timeline">
+              <li class="done"><span class="t-when">2026-05-30</span><br><b>v1.0</b> — Initial package produced from prompt "Grade 5 Fractions" (13 assets).</li>
+              <li class="done"><span class="t-when">2026-06-08</span><br><b>v1.1</b> — Editorial revisions: reworked exit ticket, added two DOK-3 assessment items.</li>
+              <li class="now"><span class="t-when">2026-06-22</span><br><b>v2.0</b> — Major update: new video storyboard, refreshed branding, accessibility recheck. Current published version.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Brand management & usage reports -->
+        <section aria-labelledby="ad-brand" style="margin-top:1.6rem;">
+          <h2 id="ad-brand" class="section-title">Brand management &amp; usage</h2>
+          <div class="grid grid-2">
+            <div class="card feature">
+              <h3>Brand management</h3>
+              <p class="muted">Org-wide identity applied automatically to every produced asset.</p>
+              <ul class="arrow-list">
+                <li>Primary palette &amp; logo lockups</li>
+                <li>Heading &amp; body typography</li>
+                <li>Voice &amp; tone guidelines</li>
+                <li>Accessibility &amp; contrast rules</li>
+                <li>Template &amp; cover-page library</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Usage reports</h3>
+              <p class="muted">Assets produced per team (last 90 days, illustrative).</p>
+              <div class="barlist">
+                <div class="row"><span>ELA</span><span class="track"><span class="fill" data-pct="92"></span></span><span>412</span></div>
+                <div class="row"><span>Mathematics</span><span class="track"><span class="fill" data-pct="78"></span></span><span>348</span></div>
+                <div class="row"><span>Science</span><span class="track"><span class="fill" data-pct="54"></span></span><span>241</span></div>
+                <div class="row"><span>Social Studies</span><span class="track"><span class="fill" data-pct="41"></span></span><span>183</span></div>
+                <div class="row"><span>Leadership</span><span class="track"><span class="fill" data-pct="18"></span></span><span>56</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;"><span class="ai-pill">🏢 Illustrative admin</span> All users, teams, approvals, and metrics on this page are fictional sample data for demonstration. Produced content always passes human editorial &amp; pedagogical review before publishing.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

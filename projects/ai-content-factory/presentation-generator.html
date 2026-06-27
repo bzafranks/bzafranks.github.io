@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Generator — AI Educational Content Factory</title>
+  <meta name="description" content="Create PowerPoint, Google Slides, interactive presentations, teacher/student/conference presentations, PD decks, and visual infographics from a single prompt.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Generators / <b>Presentation Generator</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Presentation Production</span>
+          <h1>Presentation Generator</h1>
+          <p class="lead">Create <strong>PowerPoint, Google Slides, interactive presentations, teacher/student/conference presentations, PD decks, and visual infographics</strong> from a single prompt. Each deck arrives with presenter notes and visuals, ready for editorial review. All content is illustrative.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="presentation">
+            <h3>Describe your presentation</h3>
+            <div class="field"><label for="pg-topic">Topic</label><input id="pg-topic" name="topic" placeholder="e.g., Photosynthesis" value="Photosynthesis"></div>
+            <div class="field"><label for="pg-grade">Grade</label>
+              <select id="pg-grade" name="grade"><option>Kindergarten</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option selected>Grade 5</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select>
+            </div>
+            <p class="field hint">Generates teacher, student, and conference variants plus a visual infographic — exportable to PowerPoint and Google Slides.</p>
+            <button class="btn" type="submit">📊 Generate Presentation</button>
+          </form>
+
+          <div class="gen-output" data-output="presentation">
+            <div class="out-toolbar">
+              <span class="ai-pill">📊 Presentation Output</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+              <button class="out-btn" data-act="save">💾 Save</button>
+            </div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">📊</div><p>Enter a topic and press <b>Generate Presentation</b>. The slide deck and presenter notes will be drafted here.</p></div></div></div>
+          </div>
+        </div>
+
+        <section class="tool-head" style="margin-top:2.4rem;">
+          <span class="tool-badge">🗂️ Slide outline preview</span>
+          <h2>Slide outline preview</h2>
+          <p class="lead">An illustrative outline of the slide titles the generator produces for a typical lesson deck.</p>
+        </section>
+        <div class="card" style="padding:1.4rem;">
+          <ol class="ws-list" style="counter-reset:none;">
+            <li>1. Title &amp; learning objectives</li>
+            <li>2. Hook — essential question</li>
+            <li>3. Key vocabulary</li>
+            <li>4. Core concept with visuals</li>
+            <li>5. Worked example</li>
+            <li>6. Guided practice prompt</li>
+            <li>7. Independent practice / discussion</li>
+            <li>8. Visual infographic summary</li>
+            <li>9. Recap &amp; exit question</li>
+          </ol>
+          <p class="muted" style="margin-top:1rem;font-size:.85rem;"><span class="ai-pill">📦 Export</span> Exportable to <strong>PowerPoint</strong> and <strong>Google Slides</strong>, with teacher, student, and conference variants. Export targets and slide titles shown here are illustrative.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Editorial gate</span> Every generated deck is a draft that passes human editorial &amp; pedagogical review before publishing. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

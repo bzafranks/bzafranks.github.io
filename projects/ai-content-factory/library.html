@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Library — AI Educational Content Factory</title>
+  <meta name="description" content="The central AI production workspace: enter a single prompt (grade, subject, topic, model, language, format) and generate a complete instructional package.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Content Library</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗂️ Single Source of Truth</span>
+          <h1>Content Library</h1>
+          <p class="lead">A <strong>searchable, filterable, version-controlled</strong> store of everything your team produces. Every lesson, unit, course, assessment, and media asset lands here — ready to find, reuse, revise, and republish. All content is illustrative.</p>
+        </div>
+
+        <h2 style="margin-bottom:.9rem;">Your produced content</h2>
+        <label for="lib-search" class="visually-hidden">Search content</label>
+        <input id="lib-search" data-library-search type="search" placeholder="🔍 Search content…" aria-label="Search content" style="width:100%;max-width:340px;padding:.6rem .9rem;border:1.5px solid var(--border);border-radius:999px;margin-bottom:1rem;">
+        <div data-library aria-live="polite"></div>
+
+        <h2 style="margin:2rem 0 .9rem;">Content types</h2>
+        <div class="tool-grid">
+          <div class="card"><h3>📝 Lessons</h3><p class="muted">Standalone lesson plans with objectives, activities, and exit tickets.</p></div>
+          <div class="card"><h3>🗂️ Units</h3><p class="muted">Sequenced collections of lessons mapped to a standards strand.</p></div>
+          <div class="card"><h3>🎓 Courses</h3><p class="muted">Full multi-unit courses with pacing, media, and assessments.</p></div>
+          <div class="card"><h3>🧪 Assessments</h3><p class="muted">Quizzes, tests, and constructed responses with answer keys.</p></div>
+          <div class="card"><h3>🎬 Videos</h3><p class="muted">Narration scripts, storyboards, and rendered AI video assets.</p></div>
+          <div class="card"><h3>📊 Presentations</h3><p class="muted">Slide decks with presenter notes for teacher or student use.</p></div>
+          <div class="card"><h3>🎮 Interactive Activities</h3><p class="muted">Dependency-free HTML modules with feedback and self-checks.</p></div>
+          <div class="card"><h3>📋 Rubrics</h3><p class="muted">Scoring guides aligned to objectives and Bloom's/DOK levels.</p></div>
+          <div class="card"><h3>🧩 Templates</h3><p class="muted">Reusable starting points for lessons, units, and assessments.</p></div>
+          <div class="card"><h3>🖼️ Media</h3><p class="muted">Images, audio narration, captions, and transcripts.</p></div>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;">
+          <h3>Version control</h3>
+          <p class="muted">Every item in the library carries a full version history, so nothing is ever lost and every change is traceable:</p>
+          <ul>
+            <li><b>Drafts</b> — new or in-progress content that is editable and not yet live. Each save creates a restorable revision.</li>
+            <li><b>In review</b> — drafts submitted to the editorial gate for pedagogical and accessibility review before approval.</li>
+            <li><b>Published</b> — approved, locked versions distributed to LMS, web, or print. Republishing supersedes the prior published version.</li>
+            <li><b>Archived</b> — retired versions kept for audit and rollback; restorable to a draft at any time.</li>
+          </ul>
+          <p class="muted">Versions are numbered (v1, v2, …); you can compare revisions, roll back to any prior state, and see who changed what and when.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">🧪 Demonstration</span> The library above is populated from your browser's local storage — produce content with the Factory or a generator and press <b>Save</b> to see it appear here. All content is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard — AI Educational Content Factory</title>
+  <meta name="description" content="Production analytics for the AI Educational Content Factory: assets produced, time saved, publishing throughput, and quality-review pass rates.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Educational Content Factory" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CF</span><span class="brand-text"><span class="brand-title">AI Content Factory</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content-factory.html">Factory</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="lesson-generator.html">Generators</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every factory page) ===== -->
+      <aside class="app-rail" aria-label="Factory tools">
+        <div class="rail-brand"><span class="mark">CF</span><b>Content Factory</b></div>
+        <div class="rail-group">Produce</div>
+        <a class="rail-link" href="content-factory.html"><span class="ico">🏭</span> Content Factory</a>
+        <a class="rail-link" href="wizard.html"><span class="ico">🪄</span> Content Wizard</a>
+        <div class="rail-group">Generators</div>
+        <a class="rail-link" href="lesson-generator.html"><span class="ico">📝</span> Lesson Generator</a>
+        <a class="rail-link" href="assessment-factory.html"><span class="ico">🧪</span> Assessment Factory</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="interactive-generator.html"><span class="ico">🎮</span> Interactive Generator</a>
+        <a class="rail-link" href="presentation-generator.html"><span class="ico">📊</span> Presentation Generator</a>
+        <a class="rail-link" href="workbook-generator.html"><span class="ico">📚</span> Workbook Generator</a>
+        <a class="rail-link" href="teacher-guide.html"><span class="ico">🧑‍🏫</span> Teacher Guide Generator</a>
+        <a class="rail-link" href="parent-resources.html"><span class="ico">👨‍👩‍👧</span> Parent Resources</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="lms-builder.html"><span class="ico">📦</span> LMS Package Builder</a>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="library.html"><span class="ico">🗂️</span> Content Library</a>
+        <div class="rail-group">Operate</div>
+        <a class="rail-link" href="workflow.html"><span class="ico">⚙️</span> Workflow Automation</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="admin.html"><span class="ico">🏢</span> Enterprise Admin</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; QA</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operate / <b>Analytics</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Production Intelligence</span>
+          <h1>Analytics Dashboard</h1>
+          <p class="lead">Production metrics across the factory — assets produced, time saved, publishing throughput, and quality. The live tiles reflect activity in this session; all other figures are <strong>illustrative</strong>.</p>
+        </div>
+
+        <!-- Live session tiles (driven by the engine) -->
+        <section class="stat-strip" aria-label="Live session metrics">
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="generated">0</span></div>
+            <div class="s-label">Production runs (this session)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="assets">0</span></div>
+            <div class="s-label">Assets produced (this session)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-stat="minutes">0</span> min</div>
+            <div class="s-label">Time saved (this session)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-count="1240" data-suffix="">0</span></div>
+            <div class="s-label">Assets produced (all time, illustrative)</div>
+          </div>
+        </section>
+
+        <!-- Headline metric cards -->
+        <section aria-labelledby="an-metrics">
+          <h2 id="an-metrics" class="section-title">Production at a glance</h2>
+          <p class="muted">Illustrative figures across the last 90 days.</p>
+          <div class="dash-grid">
+            <div class="metric">
+              <div class="m-label">Content produced</div>
+              <div class="m-num"><span data-count="1240">0</span></div>
+              <div class="m-trend up">▲ 18% vs. prior period</div>
+            </div>
+            <div class="metric teal">
+              <div class="m-label">Time saved</div>
+              <div class="m-num"><span data-count="3.6" data-suffix="k">0</span> hrs</div>
+              <div class="m-trend up">▲ 22% vs. prior period</div>
+            </div>
+            <div class="metric plum">
+              <div class="m-label">Items published</div>
+              <div class="m-num"><span data-count="884">0</span></div>
+              <div class="m-trend up">▲ 14% vs. prior period</div>
+            </div>
+            <div class="metric leaf">
+              <div class="m-label">Quality-review pass rate</div>
+              <div class="m-num"><span data-count="96.4" data-suffix="%">0</span></div>
+              <div class="m-trend up">▲ 2.1 pts vs. prior period</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bar chart: assets by type -->
+        <section class="chart-card" style="margin-top:1.6rem;" aria-labelledby="an-bars">
+          <h4 id="an-bars">Assets by type</h4>
+          <p class="muted">Share of total assets produced, by content type (illustrative).</p>
+          <div class="barchart" role="img" aria-label="Bar chart of assets by type: Lessons 86 percent, Assessments 64 percent, Videos 48 percent, Interactive 38 percent, Workbooks 72 percent.">
+            <div class="bar-col"><div class="bar" data-h="86" style="height:86%"><span class="bv">412</span></div><span class="bar-label">Lessons</span></div>
+            <div class="bar-col"><div class="bar" data-h="64" style="height:64%"><span class="bv">308</span></div><span class="bar-label">Assessments</span></div>
+            <div class="bar-col"><div class="bar" data-h="48" style="height:48%"><span class="bv">196</span></div><span class="bar-label">Videos</span></div>
+            <div class="bar-col"><div class="bar" data-h="38" style="height:38%"><span class="bv">142</span></div><span class="bar-label">Interactive</span></div>
+            <div class="bar-col"><div class="bar" data-h="72" style="height:72%"><span class="bv">182</span></div><span class="bar-label">Workbooks</span></div>
+          </div>
+        </section>
+
+        <!-- Trendline: production over time -->
+        <section class="chart-card" style="margin-top:1.6rem;" aria-labelledby="an-trend">
+          <h4 id="an-trend">Production over time</h4>
+          <p class="muted">Weekly assets produced over the last 12 weeks (illustrative).</p>
+          <svg class="trendline" viewBox="0 0 600 64" preserveAspectRatio="none" role="img" aria-label="Upward production trend over twelve weeks.">
+            <path class="area" d="M0,52 L50,48 L100,50 L150,42 L200,38 L250,40 L300,32 L350,28 L400,30 L450,22 L500,18 L550,14 L600,10 L600,64 L0,64 Z"></path>
+            <path class="line" d="M0,52 L50,48 L100,50 L150,42 L200,38 L250,40 L300,32 L350,28 L400,30 L450,22 L500,18 L550,14 L600,10"></path>
+          </svg>
+        </section>
+
+        <!-- Recent projects table -->
+        <section aria-labelledby="an-recent" style="margin-top:1.6rem;">
+          <h2 id="an-recent" class="section-title">Recent projects</h2>
+          <div class="table-wrap">
+            <table>
+              <caption>Illustrative sample of recent production runs.</caption>
+              <thead>
+                <tr><th scope="col">Project</th><th scope="col">Assets</th><th scope="col">Status</th><th scope="col">Standards coverage</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Grade 5 · Fractions Unit</td><td>13</td><td><span class="tl-pill green">Published</span></td><td>CCSS 5.NF · 100%</td></tr>
+                <tr><td>Grade 3 · Opinion Writing</td><td>11</td><td><span class="tl-pill green">Published</span></td><td>CCSS W.3.1 · 96%</td></tr>
+                <tr><td>Grade 8 · Verb Voice &amp; Mood</td><td>13</td><td><span class="tl-pill amber">In review</span></td><td>CCSS L.8.1 · 92%</td></tr>
+                <tr><td>Grade 6 · Cell Structures</td><td>9</td><td><span class="tl-pill amber">In review</span></td><td>NGSS MS-LS1 · 88%</td></tr>
+                <tr><td>Grade 4 · Multi-Digit Multiplication</td><td>12</td><td><span class="tl-pill green">Published</span></td><td>CCSS 4.NBT · 100%</td></tr>
+                <tr><td>Grade 7 · Allusions in Context</td><td>10</td><td><span class="tl-pill red">Revision needed</span></td><td>CCSS L.7.5 · 74%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;"><span class="ai-pill">📈 Illustrative data</span> All figures except the live session tiles are sample data for demonstration. Production assets are drafts that require editorial &amp; pedagogical review before publishing.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Educational Content Factory</h4><p style="color:#c9d6e6;">Automated curriculum &amp; learning-content production — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Produce</h4><ul><li><a href="lesson-generator.html">Lesson Generator</a></li><li><a href="video-studio.html">Video Studio</a></li><li><a href="assessment-factory.html">Assessment Factory</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="workflow.html">Workflow</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; content is illustrative and requires human editorial review.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
