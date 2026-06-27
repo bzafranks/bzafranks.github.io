@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministry Dashboard — Bahamas Edu·Intelligence · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A national executive decision-support dashboard: island-by-island performance, curriculum coverage, equity metrics, teacher shortages, early warnings, and resource allocation.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Bahamas Educational Intelligence Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Bahamas Edu·Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="principal-dashboard.html">Principal</a></li><li><a href="district-dashboard.html">District</a></li><li><a href="ministry-dashboard.html">Ministry</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="ai-engine.html">AI Engine</a></li><li><a href="curriculum-monitoring.html">Curriculum</a></li><li><a href="assessment-intelligence.html">Assessment</a></li><li><a href="school-improvement.html">Improvement</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow"><span class="live-dot" style="background:var(--gold)"></span>Ministry Executive Dashboard · sample data</p>
+        <h1>National Education Snapshot</h1>
+        <p class="lead">A ministerial decision-support view of the Bahamian education system — performance, equity, and early warnings at a glance.</p>
+      </div>
+    </section>
+
+    <section class="section"><div class="container">
+      <div class="dash-grid">
+        <div class="metric"><div class="m-label">National Achievement</div><div class="m-num" data-count="71" data-suffix="%">0</div><div class="m-trend up">▲ 2%</div></div>
+        <div class="metric teal"><div class="m-label">Curriculum Coverage</div><div class="m-num" data-count="82" data-suffix="%">0</div><div class="m-trend up">▲ 4%</div></div>
+        <div class="metric plum"><div class="m-label">Assessment Readiness</div><div class="m-num" data-count="68" data-suffix="%">0</div><div class="m-trend">uneven</div></div>
+        <div class="metric"><div class="m-label">Teacher-Shortage Districts</div><div class="m-num" data-count="3">0</div><div class="m-trend down">flagged</div></div>
+        <div class="metric leaf"><div class="m-label">Attendance</div><div class="m-num" data-count="89" data-suffix="%">0</div><div class="m-trend up">▲ 1%</div></div>
+        <div class="metric"><div class="m-label">Equity Gap</div><div class="m-num" data-count="14" data-suffix=" pts">0</div><div class="m-trend down">high vs low resource</div></div>
+      </div>
+    </div></section>
+
+    <!-- ISLAND HEATMAP -->
+    <section class="section section-alt"><div class="container">
+      <div class="section-head"><p class="eyebrow">Island-by-Island Performance</p><h2>Where to Focus Nationally</h2></div>
+      <div class="chart-card">
+        <div class="table-wrap"><div class="heatmap" style="grid-template-columns:150px repeat(4,1fr);min-width:600px;">
+          <div></div><div class="hm-cell hm-0">Achievement</div><div class="hm-cell hm-0">Coverage</div><div class="hm-cell hm-0">Attendance</div><div class="hm-cell hm-0">Readiness</div>
+          <div class="spec-label" style="align-self:center;">New Providence</div><div class="hm-cell hm-3">75</div><div class="hm-cell hm-4">88</div><div class="hm-cell hm-3">91</div><div class="hm-cell hm-3">74</div>
+          <div class="spec-label" style="align-self:center;">Grand Bahama</div><div class="hm-cell hm-3">72</div><div class="hm-cell hm-3">84</div><div class="hm-cell hm-3">89</div><div class="hm-cell hm-2">68</div>
+          <div class="spec-label" style="align-self:center;">Abaco</div><div class="hm-cell hm-2">66</div><div class="hm-cell hm-2">76</div><div class="hm-cell hm-2">85</div><div class="hm-cell hm-2">63</div>
+          <div class="spec-label" style="align-self:center;">Eleuthera</div><div class="hm-cell hm-2">64</div><div class="hm-cell hm-2">74</div><div class="hm-cell hm-3">87</div><div class="hm-cell hm-1">59</div>
+          <div class="spec-label" style="align-self:center;">Andros</div><div class="hm-cell hm-1">59</div><div class="hm-cell hm-1">70</div><div class="hm-cell hm-2">83</div><div class="hm-cell hm-1">55</div>
+          <div class="spec-label" style="align-self:center;">Inagua &amp; South</div><div class="hm-cell hm-1">57</div><div class="hm-cell hm-1">68</div><div class="hm-cell hm-2">82</div><div class="hm-cell hm-1">54</div>
+        </div></div>
+        <div class="legend"><span><i class="hm-1"></i> &lt;60 priority</span><span><i class="hm-2"></i> 60–74</span><span><i class="hm-3"></i> 75–89</span><span><i class="hm-4"></i> 90+</span></div>
+        <p class="muted" style="margin-top:0.6rem;">Clear pattern: <strong>Family Islands trail central islands by ~7 points</strong> — an equity priority.</p>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="grid grid-2">
+        <div class="chart-card"><h4>National Achievement Trend (3 yrs)</h4>
+          <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true"><polyline class="area" points="0,64 0,48 75,46 150,42 225,38 300,34 300,64"/><polyline class="line" points="0,48 75,46 150,42 225,38 300,34"/></svg>
+          <p class="muted">Steady improvement; continuity initiatives reduced lost instructional days.</p>
+        </div>
+        <div class="chart-card"><h4>🚨 National Early-Warning Indicators</h4>
+          <div class="alert-row"><span class="sev high"></span><div><strong>Equity gap 14 pts</strong> — high- vs low-resource schools</div></div>
+          <div class="alert-row"><span class="sev high"></span><div><strong>3 districts</strong> with teacher shortages affecting pacing</div></div>
+          <div class="alert-row"><span class="sev med"></span><div><strong>Assessment readiness 68%</strong> — uneven across islands</div></div>
+          <div class="alert-row"><span class="sev low"></span><div><strong>Attendance ▲</strong> nationally (+1%)</div></div>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section section-warm"><div class="container">
+      <div class="grid grid-2">
+        <div class="chart-card"><h4>⚖️ Recommended Resource Allocation</h4>
+          <div class="rec"><span class="rec-ico">🧑‍🏫</span><div class="rec-body"><b>Staffing support → 3 flagged districts</b><div class="rec-why">Teacher shortages + pacing delays cluster here.</div></div></div>
+          <div class="rec"><span class="rec-ico">📚</span><div class="rec-body"><b>Continuity curriculum → Family Islands</b><div class="rec-why">Coverage &amp; readiness lag; continuity model proven elsewhere.</div></div></div>
+          <div class="rec"><span class="rec-ico">📶</span><div class="rec-body"><b>Connectivity &amp; devices → low-resource schools</b><div class="rec-why">Largest equity gap driver.</div></div></div>
+        </div>
+        <div class="chart-card"><h4>📐 Educational Equity Metrics</h4>
+          <p style="margin:0.2rem 0;">Access to technology</p><div class="progress-bar"><div class="progress-fill" style="width:71%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">Qualified-teacher coverage</p><div class="progress-bar"><div class="progress-fill" style="width:84%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">Curriculum coverage parity</p><div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+          <p style="margin:0.6rem 0 0.2rem;">Assessment readiness parity</p><div class="progress-bar"><div class="progress-fill" style="width:63%"></div></div>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container narrow">
+      <div class="callout exec-brief"><h4>📋 AI Executive Briefing · National</h4>
+        <p><strong>Key insight:</strong> national achievement is up 2% with steady multi-year gains, but a 14-point equity gap and three teacher-shortage districts threaten progress. <strong>Successes:</strong> continuity initiatives reduced lost instructional days. <strong>Recommended actions:</strong> direct staffing and connectivity to the flagged districts and Family Islands; expand the continuity curriculum to lagging islands. <strong>Next step:</strong> commission a Q3 equity review.</p>
+        <a class="btn small" href="ai-engine.html">Generate role-specific briefings →</a>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Bahamas Educational Intelligence Platform</h4><p style="color:#c9d6e6;">A data-driven instruction &amp; school improvement system.</p></div>
+        <div><h4>Dashboards</h4><ul><li><a href="district-dashboard.html">District</a></li><li><a href="principal-dashboard.html">Principal</a></li><li><a href="teacher-dashboard.html">Teacher</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="analytics.html">Analytics</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="eip.js"></script>
+</body>
+</html>

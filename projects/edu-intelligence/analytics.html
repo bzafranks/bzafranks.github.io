@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Analytics — Bahamas Edu·Intelligence · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="Interactive learning analytics: standards mastery heat maps, growth charts, cohort trends, an early-warning system, and attendance & engagement analytics.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Bahamas Educational Intelligence Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Bahamas Edu·Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="principal-dashboard.html">Principal</a></li><li><a href="district-dashboard.html">District</a></li><li><a href="ministry-dashboard.html">Ministry</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="ai-engine.html">AI Engine</a></li><li><a href="curriculum-monitoring.html">Curriculum</a></li><li><a href="assessment-intelligence.html">Assessment</a></li><li><a href="school-improvement.html">Improvement</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container"><p class="eyebrow">Learning Analytics</p><h1>See the Whole Picture — Then Filter to the Detail</h1><p class="lead">Interactive visualizations turn assessment, growth, and engagement data into insight you can act on.</p></div>
+    </section>
+
+    <!-- FILTERS + TABLE -->
+    <section class="section"><div class="container">
+      <div class="section-head left"><p class="eyebrow">Interactive Filters</p><h2>Mastery by Cohort</h2></div>
+      <div class="filter-bar" data-filter-group data-filter-target="[data-tag]">
+        <button class="chip-filter active" data-filter="all">All</button>
+        <button class="chip-filter" data-filter="g4">Grade 4</button>
+        <button class="chip-filter" data-filter="g6">Grade 6</button>
+        <button class="chip-filter" data-filter="reading">Reading</button>
+        <button class="chip-filter" data-filter="math">Math</button>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Cohort</th><th>Standard</th><th>Mastery</th><th>Growth</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr data-tag="g4 reading"><td>Grade 4</td><td>Reading: Inference</td><td>61%</td><td>+4</td><td><span class="status-dot progress"></span>Watch</td></tr>
+          <tr data-tag="g4 math"><td>Grade 4</td><td>Math: Fractions</td><td>58%</td><td>+2</td><td><span class="status-dot planned"></span>Support</td></tr>
+          <tr data-tag="g6 reading"><td>Grade 6</td><td>Reading: Theme</td><td>74%</td><td>+6</td><td><span class="status-dot done"></span>On track</td></tr>
+          <tr data-tag="g6 reading"><td>Grade 6</td><td>Reading: Vocabulary</td><td>90%</td><td>+8</td><td><span class="status-dot done"></span>Strong</td></tr>
+          <tr data-tag="g6 math"><td>Grade 6</td><td>Math: Ratios</td><td>69%</td><td>+3</td><td><span class="status-dot progress"></span>Watch</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted"><small>Filter the table by grade or subject. (Demo filters run client-side.)</small></p>
+    </div></section>
+
+    <!-- HEATMAP + GROWTH -->
+    <section class="section section-alt"><div class="container">
+      <div class="grid grid-2">
+        <div class="chart-card"><h4>Standards Mastery Heat Map</h4>
+          <div class="heatmap" style="grid-template-columns:90px repeat(4,1fr);min-width:420px;">
+            <div></div><div class="hm-cell hm-0">Q1</div><div class="hm-cell hm-0">Q2</div><div class="hm-cell hm-0">Q3</div><div class="hm-cell hm-0">Q4</div>
+            <div class="spec-label" style="align-self:center;">Reading</div><div class="hm-cell hm-2">66</div><div class="hm-cell hm-3">74</div><div class="hm-cell hm-3">80</div><div class="hm-cell hm-4">86</div>
+            <div class="spec-label" style="align-self:center;">Writing</div><div class="hm-cell hm-2">62</div><div class="hm-cell hm-2">68</div><div class="hm-cell hm-3">76</div><div class="hm-cell hm-3">79</div>
+            <div class="spec-label" style="align-self:center;">Math</div><div class="hm-cell hm-1">58</div><div class="hm-cell hm-2">63</div><div class="hm-cell hm-2">69</div><div class="hm-cell hm-3">75</div>
+          </div>
+          <div class="legend"><span><i class="hm-1"></i>&lt;60</span><span><i class="hm-2"></i>60–74</span><span><i class="hm-3"></i>75–89</span><span><i class="hm-4"></i>90+</span></div>
+        </div>
+        <div class="chart-card"><h4>Cohort Growth (longitudinal)</h4>
+          <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true"><polyline class="area" points="0,64 0,50 75,44 150,40 225,32 300,26 300,64"/><polyline class="line" points="0,50 75,44 150,40 225,32 300,26"/></svg>
+          <div class="report-row"><span class="muted">Benchmark 1</span><span class="muted">+18 pts over year</span><span class="muted">Benchmark 4</span></div>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- EARLY WARNING -->
+    <section class="section" id="early-warning"><div class="container">
+      <div class="section-head left"><p class="eyebrow">🚨 Early Warning System</p><h2>Catch Risk Before It Becomes Failure</h2></div>
+      <div class="grid grid-3">
+        <div class="metric"><div class="m-label">Students Flagged</div><div class="m-num" data-count="146">0</div><div class="m-trend down">across district</div></div>
+        <div class="metric plum"><div class="m-label">Risk Factors Tracked</div><div class="m-num" data-count="6">0</div><div class="m-trend">grades · attendance · engagement…</div></div>
+        <div class="metric leaf"><div class="m-label">Recovered (this term)</div><div class="m-num" data-count="58">0</div><div class="m-trend up">after intervention</div></div>
+      </div>
+      <div class="chart-card" style="margin-top:1.2rem;"><h4>Risk Composition</h4>
+        <div class="alert-row"><span class="sev high"></span><div><strong>High risk (32)</strong> — multiple factors: low grades + chronic absence + low engagement</div></div>
+        <div class="alert-row"><span class="sev med"></span><div><strong>Medium risk (61)</strong> — one or two emerging factors</div></div>
+        <div class="alert-row"><span class="sev low"></span><div><strong>Monitor (53)</strong> — early signals, watch only</div></div>
+      </div>
+    </div></section>
+
+    <!-- ATTENDANCE -->
+    <section class="section section-warm" id="attendance"><div class="container">
+      <div class="section-head left"><p class="eyebrow">📅 Attendance &amp; Engagement</p><h2>Presence Predicts Performance</h2></div>
+      <div class="grid grid-2">
+        <div class="chart-card"><h4>Attendance Trend</h4><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true"><polyline class="area" points="0,64 0,24 75,26 150,30 225,28 300,22 300,64"/><polyline class="line" points="0,24 75,26 150,30 225,28 300,22"/></svg><p class="muted">Chronic absenteeism: <strong>9%</strong> (▼ from 12%).</p></div>
+        <div class="chart-card"><h4>Engagement vs. Achievement</h4>
+          <div class="barchart">
+            <div class="bar-col"><div class="bar" style="height:90%"><span class="bv">High</span></div><div class="bar-label">86% mastery</div></div>
+            <div class="bar-col"><div class="bar" style="height:66%"><span class="bv">Med</span></div><div class="bar-label">71% mastery</div></div>
+            <div class="bar-col"><div class="bar" style="height:42%;background:linear-gradient(var(--coral),#b14a30)"><span class="bv">Low</span></div><div class="bar-label">54% mastery</div></div>
+          </div>
+          <p class="muted">Engagement strongly correlates with mastery.</p>
+        </div>
+      </div>
+      <div class="btn-row center" style="margin-top:1.5rem;"><a class="btn" href="ai-engine.html">Turn Analytics into Action →</a></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Bahamas Educational Intelligence Platform</h4><p style="color:#c9d6e6;">A data-driven instruction &amp; school improvement system.</p></div>
+        <div><h4>Explore</h4><ul><li><a href="ai-engine.html">AI Engine</a></li><li><a href="assessment-intelligence.html">Assessment</a></li><li><a href="curriculum-monitoring.html">Curriculum</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="ministry-dashboard.html">Ministry</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="eip.js"></script>
+</body>
+</html>

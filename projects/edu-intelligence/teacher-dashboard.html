@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard — Bahamas Edu·Intelligence · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A teacher analytics dashboard: student mastery by standard, learning gaps, intervention groups, engagement, growth, and AI instructional recommendations.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Bahamas Educational Intelligence Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Bahamas Edu·Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="principal-dashboard.html">Principal</a></li><li><a href="district-dashboard.html">District</a></li><li><a href="ministry-dashboard.html">Ministry</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="ai-engine.html">AI Engine</a></li><li><a href="curriculum-monitoring.html">Curriculum</a></li><li><a href="assessment-intelligence.html">Assessment</a></li><li><a href="school-improvement.html">Improvement</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow"><span class="live-dot"></span>Teacher Dashboard · sample data</p>
+        <h1>Ms. Rolle · Grade 6 ELA</h1>
+        <p class="lead">Your class at a glance — mastery, gaps, groups, and AI-suggested next moves.</p>
+
+        <div class="dash-grid" style="margin:1.5rem 0;">
+          <div class="metric"><div class="m-label">Class Mastery</div><div class="m-num" data-count="78" data-suffix="%">0</div><div class="m-trend up">▲ 4% this month</div></div>
+          <div class="metric teal"><div class="m-label">Assignments Complete</div><div class="m-num" data-count="86" data-suffix="%">0</div><div class="m-trend up">▲ 3%</div></div>
+          <div class="metric plum"><div class="m-label">Engagement</div><div class="m-num" data-count="82" data-suffix="%">0</div><div class="m-trend">steady</div></div>
+          <div class="metric leaf"><div class="m-label">Need Intervention</div><div class="m-num" data-count="5">0</div><div class="m-trend down">flagged</div></div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="chart-card"><h4>Mastery by Standard</h4>
+            <div class="barchart">
+              <div class="bar-col"><div class="bar" style="height:61%"><span class="bv">61</span></div><div class="bar-label">Inference</div></div>
+              <div class="bar-col"><div class="bar" style="height:74%"><span class="bv">74</span></div><div class="bar-label">Theme</div></div>
+              <div class="bar-col"><div class="bar" style="height:80%"><span class="bv">80</span></div><div class="bar-label">Argument</div></div>
+              <div class="bar-col"><div class="bar" style="height:90%"><span class="bv">90</span></div><div class="bar-label">Vocab</div></div>
+              <div class="bar-col"><div class="bar" style="height:70%"><span class="bv">70</span></div><div class="bar-label">Grammar</div></div>
+            </div>
+          </div>
+          <div class="chart-card"><h4>Class Mastery Over Time</h4>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true"><polyline class="area" points="0,64 0,48 50,46 100,40 150,38 200,32 250,30 300,24 300,64"/><polyline class="line" points="0,48 50,46 100,40 150,38 200,32 250,30 300,24"/></svg>
+            <div class="report-row"><span class="muted">Sep</span><span class="muted">Trending ▲ +12 pts</span><span class="muted">Now</span></div>
+          </div>
+        </div>
+
+        <!-- INTERVENTION GROUPS + AI RECS -->
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <div class="chart-card"><h4>🚨 Students to Watch (Inference)</h4>
+            <div class="alert-row"><span class="sev high"></span><div><strong>J. Rivera</strong> — 54% · 2 low benchmarks <span class="muted">· trending flat</span></div></div>
+            <div class="alert-row"><span class="sev high"></span><div><strong>T. Brooks</strong> — 56% · engagement ▼</div></div>
+            <div class="alert-row"><span class="sev med"></span><div><strong>S. Patel</strong> — 58% · improving slowly</div></div>
+            <div class="alert-row"><span class="sev med"></span><div><strong>M. Lin</strong> — 59% · attendance dip</div></div>
+          </div>
+          <div class="chart-card"><h4>🤖 AI Instructional Recommendations</h4>
+            <div class="rec"><span class="rec-ico">👥</span><div class="rec-body"><b>Small group: Inference re-teach (4 students)</b><div class="rec-why">Cluster below 60% on RL.6.1; shared misconception on evidence.</div></div></div>
+            <div class="rec"><span class="rec-ico">🚀</span><div class="rec-body"><b>Enrichment for 3 students</b><div class="rec-why">≥90% mastery on recent vocabulary &amp; argument tasks.</div></div></div>
+            <div class="rec"><span class="rec-ico">📅</span><div class="rec-body"><b>Next curriculum priority: Theme</b><div class="rec-why">Upcoming unit; current mastery 74%.</div></div></div>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="chart-card" style="margin-top:1.5rem;">
+          <h4>Class Roster (sample)</h4>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Student</th><th>Mastery</th><th>Engagement</th><th>Trend</th><th>Group</th></tr></thead>
+            <tbody>
+              <tr><td>A. Knowles</td><td>92%</td><td>High</td><td>▲</td><td>Enrichment</td></tr>
+              <tr><td>J. Rivera</td><td>54%</td><td>Med</td><td>▶</td><td>Intervention</td></tr>
+              <tr><td>D. Sands</td><td>79%</td><td>High</td><td>▲</td><td>Core</td></tr>
+              <tr><td>M. Lin</td><td>59%</td><td>Low</td><td>▼</td><td>Intervention</td></tr>
+              <tr><td>K. Ferguson</td><td>95%</td><td>High</td><td>▲</td><td>Enrichment</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div class="callout exec-brief" style="margin-top:1.5rem;"><h4>📋 AI Executive Briefing</h4><p>Class mastery is up 4% to 78%. <strong>Priority:</strong> a 4-student inference group needs re-teaching this week; 3 students are ready for enrichment. Theme is the next unit — pre-teach key vocabulary. <a href="ai-engine.html">Generate full briefing →</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Bahamas Educational Intelligence Platform</h4><p style="color:#c9d6e6;">A data-driven instruction &amp; school improvement system.</p></div>
+        <div><h4>Dashboards</h4><ul><li><a href="principal-dashboard.html">Principal</a></li><li><a href="student-dashboard.html">Student</a></li><li><a href="parent-dashboard.html">Parent</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="ai-engine.html">AI Engine</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="eip.js"></script>
+</body>
+</html>

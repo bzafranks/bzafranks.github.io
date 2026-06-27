@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal Dashboard — Bahamas Edu·Intelligence · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A principal analytics dashboard: school-wide achievement, curriculum pacing, attendance, at-risk students, intervention effectiveness, and PD needs.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+</head>
+<body data-project="Bahamas Educational Intelligence Platform" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Project navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">BF</span><span class="brand-text"><span class="brand-title">Bahamas Edu·Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="principal-dashboard.html">Principal</a></li><li><a href="district-dashboard.html">District</a></li><li><a href="ministry-dashboard.html">Ministry</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="ai-engine.html">AI Engine</a></li><li><a href="curriculum-monitoring.html">Curriculum</a></li><li><a href="assessment-intelligence.html">Assessment</a></li><li><a href="school-improvement.html">Improvement</a></li><li><a href="implementation.html">Implementation</a></li><li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow"><span class="live-dot"></span>Principal Dashboard · sample data</p>
+        <h1>Sunrise Primary · School Overview</h1>
+        <p class="lead">School-wide achievement, pacing, attendance, and where to focus support.</p>
+
+        <div class="dash-grid" style="margin:1.5rem 0;">
+          <div class="metric"><div class="m-label">School Achievement</div><div class="m-num" data-count="74" data-suffix="%">0</div><div class="m-trend up">▲ 3%</div></div>
+          <div class="metric teal"><div class="m-label">Curriculum On-Pace</div><div class="m-num" data-count="83" data-suffix="%">0</div><div class="m-trend down">2 classes behind</div></div>
+          <div class="metric plum"><div class="m-label">Attendance</div><div class="m-num" data-count="88" data-suffix="%">0</div><div class="m-trend down">chronic 12%</div></div>
+          <div class="metric leaf"><div class="m-label">At-Risk Students</div><div class="m-num" data-count="37">0</div><div class="m-trend">monitored</div></div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="chart-card"><h4>Achievement by Grade</h4>
+            <div class="barchart">
+              <div class="bar-col"><div class="bar" style="height:80%"><span class="bv">80</span></div><div class="bar-label">G1</div></div>
+              <div class="bar-col"><div class="bar" style="height:77%"><span class="bv">77</span></div><div class="bar-label">G2</div></div>
+              <div class="bar-col"><div class="bar" style="height:72%"><span class="bv">72</span></div><div class="bar-label">G3</div></div>
+              <div class="bar-col"><div class="bar" style="height:66%;background:linear-gradient(var(--coral),#b14a30)"><span class="bv">66</span></div><div class="bar-label">G4</div></div>
+              <div class="bar-col"><div class="bar" style="height:75%"><span class="bv">75</span></div><div class="bar-label">G5</div></div>
+              <div class="bar-col"><div class="bar" style="height:78%"><span class="bv">78</span></div><div class="bar-label">G6</div></div>
+            </div>
+          </div>
+          <div class="chart-card"><h4>Department Performance (heatmap)</h4>
+            <div class="heatmap" style="grid-template-columns:110px repeat(3,1fr);min-width:420px;">
+              <div></div><div class="hm-cell hm-0">Mastery</div><div class="hm-cell hm-0">Growth</div><div class="hm-cell hm-0">Engage</div>
+              <div class="spec-label" style="align-self:center;">Language</div><div class="hm-cell hm-3">78</div><div class="hm-cell hm-4">+9</div><div class="hm-cell hm-3">82</div>
+              <div class="spec-label" style="align-self:center;">Math</div><div class="hm-cell hm-2">66</div><div class="hm-cell hm-2">+3</div><div class="hm-cell hm-2">71</div>
+              <div class="spec-label" style="align-self:center;">Science</div><div class="hm-cell hm-3">75</div><div class="hm-cell hm-3">+6</div><div class="hm-cell hm-3">79</div>
+              <div class="spec-label" style="align-self:center;">Social St.</div><div class="hm-cell hm-3">80</div><div class="hm-cell hm-3">+5</div><div class="hm-cell hm-4">85</div>
+            </div>
+            <div class="legend"><span><i class="hm-2"></i> lower</span><span><i class="hm-3"></i> good</span><span><i class="hm-4"></i> strong</span></div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:1.5rem;">
+          <div class="chart-card"><h4>🚨 At-Risk &amp; Alerts</h4>
+            <div class="alert-row"><span class="sev high"></span><div><strong>Grade 4 cohort</strong> — lowest achievement (66%) &amp; pacing behind</div></div>
+            <div class="alert-row"><span class="sev high"></span><div><strong>Chronic absenteeism 12%</strong> — concentrated in 2 classes</div></div>
+            <div class="alert-row"><span class="sev med"></span><div><strong>Math interventions</strong> — limited effect so far</div></div>
+            <div class="alert-row"><span class="sev low"></span><div><strong>Reading interventions</strong> — +9 pts for target group ✅</div></div>
+          </div>
+          <div class="chart-card"><h4>🤖 Recommended Focus</h4>
+            <div class="rec"><span class="rec-ico">🍎</span><div class="rec-body"><b>PD: math intervention fidelity</b><div class="rec-why">Low effect correlates with inconsistent implementation.</div></div></div>
+            <div class="rec"><span class="rec-ico">📅</span><div class="rec-body"><b>Attendance outreach plan</b><div class="rec-why">Target the 12% chronic-absence group.</div></div></div>
+            <div class="rec"><span class="rec-ico">📋</span><div class="rec-body"><b>Grade 4 pacing review</b><div class="rec-why">Behind schedule + lowest achievement.</div></div></div>
+          </div>
+        </div>
+
+        <div class="callout exec-brief" style="margin-top:1.5rem;"><h4>📋 AI Executive Briefing</h4><p>Achievement is up 3% to 74%, but Grade 4 and attendance need attention. Reading interventions are working (+9); math interventions are not — target PD there. <a href="ai-engine.html">Generate full briefing →</a> · <a href="school-improvement.html">Open improvement plan →</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Bahamas Educational Intelligence Platform</h4><p style="color:#c9d6e6;">A data-driven instruction &amp; school improvement system.</p></div>
+        <div><h4>Dashboards</h4><ul><li><a href="teacher-dashboard.html">Teacher</a></li><li><a href="district-dashboard.html">District</a></li><li><a href="ministry-dashboard.html">Ministry</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="school-improvement.html">Improvement</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="eip.js"></script>
+</body>
+</html>

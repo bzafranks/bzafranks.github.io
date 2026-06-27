@@ -486,6 +486,23 @@ details.acc[open] > summary::after, details.module[open] > summary::after { tran
 /* AI badge */
 .ai-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: linear-gradient(135deg, var(--plum), #5b4080); color: #fff; padding: 0.25rem 0.8rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700; }
 
+/* ============ 6c. EDUCATIONAL-INTELLIGENCE / SaaS EXTRAS (reusable) ============ */
+.segmented { display: inline-flex; flex-wrap: wrap; gap: 0.25rem; background: var(--surface-alt); border: 1px solid var(--border); border-radius: 999px; padding: 0.25rem; }
+.segmented button { border: none; background: transparent; padding: 0.45rem 1.05rem; border-radius: 999px; font: inherit; font-weight: 700; color: var(--ink-soft); cursor: pointer; }
+.segmented button.active { background: var(--navy); color: #fff; }
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--success); margin-right: 0.35rem; vertical-align: middle; box-shadow: 0 0 0 0 rgba(76,154,110,0.6); animation: pulse 2s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(76,154,110,0.5); } 70% { box-shadow: 0 0 0 8px rgba(76,154,110,0); } 100% { box-shadow: 0 0 0 0 rgba(76,154,110,0); } }
+.trendline { width: 100%; height: 64px; display: block; }
+.trendline .area { fill: rgba(47,143,138,0.12); } .trendline .line { fill: none; stroke: var(--teal); stroke-width: 2.5; }
+.exec-brief { border-left: 5px solid var(--teal); background: #eef6f5; }
+.exec-brief h4 { margin-top: 0; }
+.alert-row { display: flex; gap: 0.8rem; align-items: flex-start; padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+.alert-row:last-child { border-bottom: none; }
+.alert-row .sev { width: 11px; height: 11px; border-radius: 50%; margin-top: 0.35rem; flex: 0 0 auto; }
+.sev.high { background: var(--danger); } .sev.med { background: var(--warning); } .sev.low { background: var(--success); }
+.report-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+.report-row:last-child { border-bottom: none; }
+
 /* ============ 7. STYLE-GUIDE HELPERS ============ */
 .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; }
 .swatch { border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border); }

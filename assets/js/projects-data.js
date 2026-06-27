@@ -70,15 +70,15 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     id: "bahamas-data",
-    title: "Bahamian Curriculum — Data-Driven Instruction",
-    subtitle: "Analytics that guide teaching",
+    title: "Bahamas Educational Intelligence Platform",
+    subtitle: "A data-driven instruction & school improvement system",
     pillar: "il",
-    grade: "Bahamas",
-    status: "planned",
-    url: "",
+    grade: "Bahamas · System",
+    status: "done",
+    url: "projects/edu-intelligence/index.html",
     icon: "📊",
-    tags: ["Learning Analytics", "Data-Driven", "Leadership"],
-    summary: "A learning-analytics and instructional decision-making system that turns student data into timely, actionable teaching moves and leadership insight."
+    tags: ["Learning Analytics", "Data-Driven", "Dashboards", "AI Decision Support", "Educational Leadership"],
+    summary: "A commercial-grade educational intelligence platform: role-based dashboards (teacher → ministry), learning analytics, an AI recommendation engine, curriculum monitoring, and AI executive briefings — turning Bahamian education data into action."
   },
   {
     id: "bahamas-career",
