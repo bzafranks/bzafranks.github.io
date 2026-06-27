@@ -223,6 +223,9 @@ pre code { background: none; padding: 0; }
 .card.feature { border-top: 4px solid var(--gold); }
 .card.card-top-accent { border-top: 5px solid var(--gold); }
 .card.compact { padding: 1.2rem; }
+a.card { text-decoration: none; color: inherit; display: block; }
+.link-more { display: inline-block; margin-top: 0.6rem; color: var(--gold-dark); font-weight: 700; font-size: 0.92rem; }
+a.card:hover .link-more { text-decoration: underline; }
 
 /* Tags / pills / badges */
 .pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
