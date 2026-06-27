@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — AI School Leadership Dashboard · Dr. Barbara Z. Franks</title>
+  <meta name="description" content="A consulting case study on designing an AI School Leadership Dashboard: the leadership challenge, needs assessment, dashboard and AI design, data architecture, responsible-AI governance, implementation strategy, outcomes, and reflection.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Consulting Case Study</p>
+        <h1>Designing an AI School Leadership Dashboard</h1>
+        <p class="lead">How fragmented, after-the-fact school data becomes a single, explainable decision-support system — one that helps leaders see what matters now, act sooner, and stay firmly in control of every high-stakes call.</p>
+      </div>
+    </section>
+
+    <section class="section"><div class="container narrow">
+
+      <div class="lesson-block">
+        <h3>The Leadership Challenge</h3>
+        <p>School and district leaders make hundreds of consequential decisions a week — about instruction, staffing, attendance, behavior, and budget — yet the information they need is scattered across a half-dozen systems that rarely talk to each other. Insight arrives late, in static reports compiled after the window to act has closed. The result is reactive leadership: attention chases whichever crisis is loudest rather than the issue that will move the most outcomes.</p>
+        <p>The opportunity was to design more than another reporting tool. The goal was an <strong>executive decision-support system</strong>: a command center that unifies the whole school, surfaces risk in real time, and layers AI that explains its reasoning and recommends action — while leaving the final judgment to the human leader.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>Needs Assessment</h3>
+        <p>I started from the personas who would actually use the platform and the decisions each must make:</p>
+        <ul class="check-list">
+          <li><strong>Principals</strong> need a daily, at-a-glance read on school health and the one or two issues that need them today.</li>
+          <li><strong>Leadership teams</strong> need to drill from a headline indicator into the underlying classrooms, sections, and students.</li>
+          <li><strong>Superintendents &amp; district leaders</strong> need comparable, roll-up views and board-ready summaries on demand.</li>
+          <li><strong>Ministries / system leaders</strong> need confidence that adoption is governed, private, and equitable.</li>
+        </ul>
+        <p>The shared requirement: turn data into a <strong>prioritized, explainable recommendation</strong> a busy leader can trust and act on in minutes — not a wall of charts.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Dashboard Design Process</h3>
+        <p>I worked top-down, mirroring how an executive reads a situation. A single <strong>School Performance Index</strong> and a tight set of KPI scorecards establish the headline; trends and department breakdowns give context; a ranked <strong>risk-indicator</strong> list with drill-downs answers "what needs me now?" Every screen leads with the conclusion, then lets the leader expand into evidence — the inverse of a traditional report that buries the signal in detail.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>AI Integration Strategy</h3>
+        <p>AI is positioned as an <strong>explainable analyst</strong>, not an oracle. The AI Executive Assistant accepts natural-language leadership questions ("Why are Grade 8 math scores declining?") and answers in a consistent structure: a headline <em>insight</em>, the <em>evidence</em> behind it, and <em>recommended actions</em> — always closing with a visible reminder that the leader decides. The same engine drafts board and district reports. Framing AI this way builds trust: leaders can see the reasoning, challenge it, and own the outcome.</p>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Data Architecture</h3>
+        <p>The platform is designed to sit on top of a school's existing systems rather than replace them. In production, governed read-only feeds from the SIS, assessment platform, LMS, attendance, HR/staffing, and finance flow into a unified model, normalized so a single indicator can be traced back to its source records. For this demonstration, that model is represented by realistic fictional sample data held entirely client-side — proving the experience end to end with no real student information and nothing leaving the browser.</p>
+      </div>
+
+      <div class="lesson-block leaf">
+        <h3>UX Design Decisions</h3>
+        <p>The experience is built for leaders who have minutes, not hours:</p>
+        <ul class="check-list">
+          <li><strong>Command palette (⌘/Ctrl + K)</strong> — jump to any dashboard or the AI assistant from anywhere.</li>
+          <li><strong>Persistent side rail</strong> — every dashboard one click away, grouped by leadership function.</li>
+          <li><strong>Conclusion-first layout</strong> — index, KPIs, and ranked risks before the detail; drill-downs on demand.</li>
+          <li><strong>Calm, premium visual system</strong> — a navy command-center aesthetic, animated gauges and counters, and a built-in dark mode.</li>
+          <li><strong>Accessibility</strong> — semantic HTML, skip links, a floating accessibility toolbar, and keyboard navigation throughout.</li>
+          <li><strong>Trust cues</strong> — simulated-AI labels, "you decide" notes, and clearly marked fictional data.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block">
+        <h3>Information Architecture</h3>
+        <p>The platform is organized into <strong>14 dashboards</strong> grouped by leadership function, tied together by a persistent rail and the command palette:</p>
+        <ul class="check-list">
+          <li><strong>Overview</strong> — Executive Dashboard, School Health.</li>
+          <li><strong>Instruction</strong> — Instructional Leadership, Curriculum, Teacher Performance.</li>
+          <li><strong>Students</strong> — Student Achievement, Attendance &amp; Engagement, Behavior &amp; Climate.</li>
+          <li><strong>Operations</strong> — Staffing &amp; Human Capital, Professional Development, School Improvement.</li>
+          <li><strong>Intelligence</strong> — AI Executive Assistant, Reports, Settings.</li>
+        </ul>
+        <p>Above the dashboards sit the <strong>AI Executive Assistant</strong> for explainable Q&amp;A, a <strong>Reports</strong> generator for board- and district-ready drafts, and a <strong>command palette</strong> that routes to any destination. A single tool registry powers the rail, the palette, and the assistant, so navigation stays consistent everywhere.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Responsible AI, Governance &amp; Privacy</h3>
+        <p>Responsible use is designed in, not added afterward.</p>
+        <ul class="check-list">
+          <li><strong>Explainable by default</strong> — every AI insight shows its supporting evidence; nothing is a black box.</li>
+          <li><strong>Human-in-the-loop</strong> — AI recommends; leaders decide. High-stakes actions require explicit human approval.</li>
+          <li><strong>Privacy by design</strong> — the demonstration is fully client-side with fictional data; production adds role-based access, audit logging, and data-residency controls.</li>
+          <li><strong>FERPA / GDPR alignment</strong> — privacy controls calibrated to local regulation before any live data is connected.</li>
+          <li><strong>Bias monitoring</strong> — recommendations reviewed for fairness across subgroups.</li>
+          <li><strong>Transparency</strong> — AI-generated content and sample data are clearly labeled throughout.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>Implementation Strategy</h3>
+        <p><em>Presented as if to a school board, superintendent, or Ministry of Education.</em> Adoption succeeds when leaders trust the insight and the system can demonstrate it working. I recommend a deliberately paced rollout:</p>
+        <ul class="check-list">
+          <li><strong>Onboarding:</strong> stand up the executive dashboard and AI assistant first; configure governance, access, and privacy policies before connecting live data.</li>
+          <li><strong>Professional development:</strong> train leadership teams to read indicators, ask the AI explainable questions, and act while retaining decision authority.</li>
+          <li><strong>Pilot → scale:</strong> run a focused pilot at one or two schools against a baseline, iterate on feedback, then expand school-by-school and district-wide.</li>
+          <li><strong>Change management:</strong> name executive sponsors, communicate the "why," celebrate early wins, and sustain support past launch.</li>
+          <li><strong>Success metrics:</strong> decision speed, intervention timeliness, attendance and achievement movement, leader-reported confidence, and responsible-use compliance.</li>
+        </ul>
+        <p>Leader trust is the real bottleneck — so the strategy invests there first and lets evidence, not mandate, drive expansion.</p>
+      </div>
+
+      <div class="lesson-block gold">
+        <h3>School Improvement Outcomes</h3>
+        <p><em>Illustrative figures for demonstration.</em> By making risk visible early and recommendations explainable, the platform is designed to move the indicators that matter:</p>
+        <ul class="check-list">
+          <li><strong>Faster intervention</strong> — risks surfaced in real time rather than in a post-mortem report.</li>
+          <li><strong>Targeted coaching</strong> — the highest-leverage teachers and sections identified with evidence.</li>
+          <li><strong>Attendance recovery</strong> — early-warning watchlists and positive outreach before absences compound.</li>
+          <li><strong>Aligned improvement planning</strong> — goals, owners, and three-week check-ins tied to live data.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-block coral">
+        <h3>Leadership Impact</h3>
+        <p>The deepest value is a shift from reactive to proactive leadership. Instead of chasing the loudest problem, leaders open one command center, read the headline, and know within minutes where their attention will do the most good — backed by evidence they can defend to a board or community. Time spent assembling reports is returned to coaching, instruction, and the relationships that actually improve schools.</p>
+      </div>
+
+      <div class="lesson-block teal">
+        <h3>Future Enhancements</h3>
+        <ul class="check-list">
+          <li><strong>Predictive enrollment</strong> — anticipate enrollment shifts to plan staffing and space.</li>
+          <li><strong>Budget forecasting</strong> — model spending scenarios against outcomes.</li>
+          <li><strong>Retention prediction</strong> — flag attrition risk early to protect instructional continuity.</li>
+          <li><strong>Voice queries</strong> — ask the assistant hands-free between meetings.</li>
+          <li><strong>Natural-language reporting</strong> — generate a board narrative from a plain-language request.</li>
+          <li><strong>Scenario planning</strong> — test strategic "what-ifs" before committing resources.</li>
+          <li><strong>Regional &amp; national benchmarking</strong> — situate a school's performance against comparable peers.</li>
+        </ul>
+      </div>
+
+      <div class="callout note">
+        <h3>A product that connects to the practice</h3>
+        <p>This platform operationalizes the same instructional-leadership rigor found across this portfolio — evidence-based decision-making, equity, and transparency — and packages it as a commercially viable, enterprise edtech product that a school, district, or ministry could adopt.</p>
+      </div>
+
+      <div class="lesson-block plum">
+        <h3>Professional Reflection</h3>
+        <p>Building this product reinforced that the hardest part of AI in school leadership is not the analytics — it is trust, explainability, and the discipline to keep humans in command of high-stakes decisions. The full first-person <a href="reflection.html">reflection →</a> explores what this build demonstrates about leading digital transformation in education.</p>
+        <div class="btn-row" style="margin-top:1rem;">
+          <a class="btn" href="executive-dashboard.html">Open the Executive Dashboard</a>
+          <a class="btn ghost" href="../../index.html#case-studies">All Case Studies</a>
+        </div>
+      </div>
+
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="executive-dashboard.html">Executive Dashboard</a></li><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="school-improvement.html">School Improvement</a></li><li><a href="settings.html">Settings</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is realistic fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

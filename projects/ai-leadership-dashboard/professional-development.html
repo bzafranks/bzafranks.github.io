@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Development — AI School Leadership Dashboard</title>
+  <meta name="description" content="Professional learning hours, certification progress, coaching cycles, PLC participation, micro-credentials, and AI-generated PD pathways — all fictional sample data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operations / <b>Professional Development</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> data gap — targeted PD pathway recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>4 teachers</b> behind on required certification hours.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Science PLC</b> participation below 75% this quarter.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🌱 Professional Learning</span>
+          <h1>Professional Development</h1>
+          <p class="lead">Professional learning hours, certification progress, coaching cycles, PLCs, micro-credentials, and AI-generated learning pathways tied to data gaps. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label>School</label>
+          <select><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option></select>
+          <label>Department</label>
+          <select><option>All departments</option><option>Mathematics</option><option>ELA</option><option>Science</option><option>Social Studies</option></select>
+          <label>Term</label>
+          <select><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">PD Completion</div><div class="sc-num"><span data-count="91" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4% vs. prior term</div></div>
+          <div class="scorecard green"><div class="sc-label">Avg. PD Hours / Teacher</div><div class="sc-num"><span data-count="34">0</span></div><div class="sc-trend up">▲ of 40 target</div></div>
+          <div class="scorecard green"><div class="sc-label">Coaching Cycles Closed</div><div class="sc-num"><span data-count="27">0</span></div><div class="sc-trend up">▲ measurable gains</div></div>
+          <div class="scorecard amber"><div class="sc-label">PLC Participation</div><div class="sc-num"><span data-count="82" data-suffix="%">0</span></div><div class="sc-trend down">▼ Science below target</div></div>
+          <div class="scorecard green"><div class="sc-label">Micro-credentials Earned</div><div class="sc-num"><span data-count="48">0</span></div><div class="sc-trend up">▲ 12 this term</div></div>
+          <div class="scorecard amber"><div class="sc-label">Certification On-track</div><div class="sc-num"><span data-count="89" data-suffix="%">0</span></div><div class="sc-trend flat">4 teachers behind</div></div>
+        </div>
+
+        <!-- PD gauges -->
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="85" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Annual PD hours met</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="91" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>PD plan completion</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="76" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>PD → practice transfer</small></div></div></div>
+        </div>
+
+        <!-- AI-generated PD pathways -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI-Generated PD Pathways <span class="ai-pill">Simulated</span></h4>
+          <p>Triangulating achievement, observation, and coaching data, three learning pathways will close the highest-leverage gaps this term. Each is tied to a specific data signal so PD time targets where it matters most.</p>
+          <div class="insight"><b>Pathway 1 — Proportional Reasoning Instruction (Grade 8 Math).</b> Tied to the ▼6-pt math dip in two sections. 3 modules + 2 coaching cycles + a peer-observation round. Audience: Grade 8 math team and the first-year teacher.</div>
+          <div class="insight"><b>Pathway 2 — Belonging &amp; Restorative Practices (Grade 8).</b> Tied to the dip in climate-survey belonging. 2 modules + advisory-curriculum norming + facilitator training to clear the restorative-circle backlog.</div>
+          <div class="insight"><b>Pathway 3 — Checks for Understanding &amp; Formative Assessment (Science PLC).</b> Tied to below-target PLC participation and formative-accuracy gaps. PLC-embedded micro-learning + a shared assessment bank.</div>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 You decide</span> AI-suggested on fictional sample data — pathways support, not replace, your professional judgment. <a href="ai-assistant.html">Ask the assistant to expand any pathway →</a></p>
+        </div>
+
+        <!-- micro-credentials + coaching cycles -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>🏅 Micro-credential Progress</h3>
+            <div class="barlist">
+              <div class="row"><span>Data Literacy</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+              <div class="row"><span>Differentiation</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+              <div class="row"><span>Restorative Practices</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+              <div class="row"><span>AI in the Classroom</span><span class="track"><span class="fill" data-pct="55"></span></span><b>55%</b></div>
+              <div class="row"><span>Family Engagement</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Cohort completion toward each stackable micro-credential.</p>
+          </div>
+          <div class="card">
+            <h3>🔁 Coaching Cycles</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Coaching cycles completed by month trend line">
+              <path class="area" d="M0,50 L50,46 L100,40 L150,34 L200,28 L250,22 L300,16 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,50 L50,46 L100,40 L150,34 L200,28 L250,22 L300,16"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Cumulative coaching cycles closed (Sep → Mar) — 27 completed, ▲ trending up.</p>
+            <div class="barlist" style="margin-top:.8rem;">
+              <div class="row"><span>Open now</span><span class="track"><span class="fill" data-pct="35"></span></span><b>7</b></div>
+              <div class="row"><span>Goal met</span><span class="track"><span class="fill" data-pct="85"></span></span><b>23</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PD by department table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>📚 Professional Development by Department</h3>
+          <div class="table-wrap">
+            <table>
+              <caption>Fictional sample PD summary by department, year to date.</caption>
+              <thead><tr><th scope="col">Department</th><th scope="col">Avg. hours</th><th scope="col">Completion</th><th scope="col">PLC participation</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td>Mathematics</td><td>36</td><td>93%</td><td>90%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>ELA</td><td>38</td><td>96%</td><td>94%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>Science</td><td>29</td><td>84%</td><td>71%</td><td><span class="tl-pill amber">Below target</span></td></tr>
+                <tr><td>Social Studies</td><td>33</td><td>90%</td><td>88%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>SPED</td><td>31</td><td>86%</td><td>79%</td><td><span class="tl-pill amber">Monitor</span></td></tr>
+                <tr><td>Electives</td><td>34</td><td>92%</td><td>85%</td><td><span class="tl-pill green">On track</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- teacher reflections + recommended learning drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>📝 Teacher Reflections &amp; Recommended Learning <span class="muted" style="font-size:.85rem;font-weight:400;">— click a row to drill down</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 Math team</b> — reflection theme: pacing &amp; reteach</span><span class="tl-pill red">High priority</span></div>
+          <div class="drill-panel"><p class="muted">Teachers report needing stronger reteach routines for proportional reasoning. <b>Recommended:</b> Pathway 1 (Proportional Reasoning Instruction) + a peer-observation round with the department mentor.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Science PLC</b> — reflection theme: formative assessment</span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Reflections cite inconsistent checks for understanding. <b>Recommended:</b> Pathway 3 (CFU &amp; Formative Assessment) with a shared assessment bank embedded in PLC time.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Advisory teachers</b> — reflection theme: belonging</span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Mixed comfort delivering the advisory curriculum in Grade 8. <b>Recommended:</b> Pathway 2 (Belonging &amp; Restorative Practices) + curriculum norming.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>ELA team</b> — reflection theme: sustaining gains</span><span class="tl-pill green">On track</span></div>
+          <div class="drill-panel"><p class="muted">Strong reflections on literacy-block routines. <b>Recommended:</b> optional Differentiation micro-credential and peer-mentoring rotation.</p></div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="reports.html">📄 Generate PD Report</a>
+          <a class="btn ghost" href="staffing.html">🧑‍💼 Staffing &amp; Human Capital</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

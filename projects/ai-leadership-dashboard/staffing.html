@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staffing &amp; Human Capital — AI School Leadership Dashboard</title>
+  <meta name="description" content="Teacher vacancies, certification, retention, hiring pipeline, workload, and AI staffing priorities — all fictional sample data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operations / <b>Staffing &amp; Human Capital</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity in tested areas.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>3 teachers</b> flagged at elevated attrition risk.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>SPED caseload</b> compliance at risk until vacancy is filled.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧑‍💼 Human Capital</span>
+          <h1>Staffing &amp; Human Capital</h1>
+          <p class="lead">Vacancies, certification, retention, hiring pipeline, workload, and leadership development — with AI-prioritized staffing actions. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label>School</label>
+          <select><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option></select>
+          <label>Department</label>
+          <select><option>All departments</option><option>Mathematics</option><option>ELA</option><option>Science</option><option>SPED</option></select>
+          <label>Role</label>
+          <select><option>All roles</option><option>Classroom teacher</option><option>SPED</option><option>Specialist</option><option>Leadership</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard red"><div class="sc-label">Open Vacancies</div><div class="sc-num"><span data-count="2">0</span></div><div class="sc-trend down">Math &amp; SPED</div></div>
+          <div class="scorecard green"><div class="sc-label">Teacher Retention</div><div class="sc-num"><span data-count="91" data-suffix="%">0</span></div><div class="sc-trend up">▲ 3 pts vs. last year</div></div>
+          <div class="scorecard green"><div class="sc-label">Fully Certified</div><div class="sc-num"><span data-count="94" data-suffix="%">0</span></div><div class="sc-trend flat">on track</div></div>
+          <div class="scorecard amber"><div class="sc-label">Attrition Risk</div><div class="sc-num"><span data-count="3">0</span></div><div class="sc-trend down">teachers flagged</div></div>
+          <div class="scorecard green"><div class="sc-label">Staff Attendance</div><div class="sc-num"><span data-count="96" data-suffix="%">0</span></div><div class="sc-trend up">▲ 1%</div></div>
+          <div class="scorecard green"><div class="sc-label">Avg. Experience</div><div class="sc-num"><span data-count="8.6" data-suffix=" yrs">0</span></div><div class="sc-trend up">▲ steady</div></div>
+        </div>
+
+        <!-- retention gauges -->
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="91" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>3-year retention</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="94" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Certification compliance</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="88" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Positions filled</small></div></div></div>
+        </div>
+
+        <!-- AI staffing priorities -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Staffing Priorities <span class="ai-pill">Simulated</span></h4>
+          <p>Human-capital health is solid (91% retention, 94% certified), but <b>two vacancies</b> threaten continuity in tested areas. The <b>Math vacancy</b> is currently covered by a long-term substitute and correlates with the Grade 8 math dip; the <b>SPED vacancy</b> raises caseload-compliance risk. Three teachers show elevated attrition risk, citing workload and limited growth pathways. Recommended sequence: fast-track the Math and SPED hires, activate the substitute-to-mentor support plan, and open stay-conversations with the three flagged teachers. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- experience distribution + certification -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>📊 Years of Experience Distribution</h3>
+            <div class="barchart" aria-label="Teacher count by years of experience">
+              <div class="bar-col"><div class="bar" data-h="45"><span class="bv">9</span></div><div class="bar-label">0–2 yrs</div></div>
+              <div class="bar-col"><div class="bar" data-h="80"><span class="bv">16</span></div><div class="bar-label">3–5 yrs</div></div>
+              <div class="bar-col"><div class="bar" data-h="100"><span class="bv">20</span></div><div class="bar-label">6–10 yrs</div></div>
+              <div class="bar-col"><div class="bar" data-h="65"><span class="bv">13</span></div><div class="bar-label">11–20 yrs</div></div>
+              <div class="bar-col"><div class="bar" data-h="35"><span class="bv">7</span></div><div class="bar-label">20+ yrs</div></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Teacher headcount by experience band (65 certificated staff).</p>
+          </div>
+          <div class="card">
+            <h3>🎓 Certification Status</h3>
+            <div class="barlist">
+              <div class="row"><span>Fully certified</span><span class="track"><span class="fill" data-pct="94"></span></span><b>94%</b></div>
+              <div class="row"><span>Highly qualified</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+              <div class="row"><span>In-field placement</span><span class="track"><span class="fill" data-pct="91"></span></span><b>91%</b></div>
+              <div class="row"><span>ESL endorsement</span><span class="track"><span class="fill" data-pct="62"></span></span><b>62%</b></div>
+              <div class="row"><span>SPED credential</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Endorsement coverage across the certificated team.</p>
+          </div>
+        </div>
+
+        <!-- hiring pipeline timeline -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>🪜 Hiring Pipeline — Stages</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Stage 1 · complete</span><br><b>Requisitions posted</b> — 2 roles (Math, SPED) live on district board.</li>
+              <li class="done"><span class="t-when">Stage 2 · complete</span><br><b>Applications screened</b> — 31 applicants, 11 advanced.</li>
+              <li class="now"><span class="t-when">Stage 3 · in progress</span><br><b>Interviews</b> — 6 candidates scheduled this week (4 Math, 2 SPED).</li>
+              <li><span class="t-when">Stage 4 · upcoming</span><br><b>Demo lessons &amp; references</b> — finalists invited.</li>
+              <li><span class="t-when">Stage 5 · upcoming</span><br><b>Offers &amp; onboarding</b> — target start before next quarter.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>📋 Recruitment Analytics</h3>
+            <div class="table-wrap">
+              <table>
+                <caption>Fictional sample pipeline metrics, current cycle.</caption>
+                <thead><tr><th scope="col">Role</th><th scope="col">Applicants</th><th scope="col">In process</th><th scope="col">Status</th></tr></thead>
+                <tbody>
+                  <tr><td>Math (Grade 8)</td><td>19</td><td>4</td><td><span class="tl-pill amber">Interviewing</span></td></tr>
+                  <tr><td>SPED Resource</td><td>12</td><td>2</td><td><span class="tl-pill red">Hard to fill</span></td></tr>
+                  <tr><td>Science (pool)</td><td>23</td><td>—</td><td><span class="tl-pill green">Bench ready</span></td></tr>
+                  <tr><td>ELA (pool)</td><td>27</td><td>—</td><td><span class="tl-pill green">Bench ready</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Avg. time-to-fill this year: 38 days (▼ 9 days vs. last year).</p>
+          </div>
+        </div>
+
+        <!-- workload + leadership development -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>⚖️ Teacher Workload</h3>
+            <div class="barlist">
+              <div class="row"><span>Mathematics</span><span class="track"><span class="fill" data-pct="92"></span></span><b>High</b></div>
+              <div class="row"><span>SPED</span><span class="track"><span class="fill" data-pct="96"></span></span><b>High</b></div>
+              <div class="row"><span>ELA</span><span class="track"><span class="fill" data-pct="74"></span></span><b>Mod</b></div>
+              <div class="row"><span>Science</span><span class="track"><span class="fill" data-pct="68"></span></span><b>Mod</b></div>
+              <div class="row"><span>Electives</span><span class="track"><span class="fill" data-pct="61"></span></span><b>OK</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Relative load (sections, caseload, duties). Vacancies inflate Math &amp; SPED.</p>
+          </div>
+          <div class="card">
+            <h3>🌱 Leadership Development &amp; Succession</h3>
+            <div class="barlist">
+              <div class="row"><span>Aspiring leaders</span><span class="track"><span class="fill" data-pct="65"></span></span><b>6</b></div>
+              <div class="row"><span>In leadership PD</span><span class="track"><span class="fill" data-pct="50"></span></span><b>4</b></div>
+              <div class="row"><span>Dept-chair ready</span><span class="track"><span class="fill" data-pct="38"></span></span><b>3</b></div>
+              <div class="row"><span>AP / principal track</span><span class="track"><span class="fill" data-pct="25"></span></span><b>2</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Succession bench: 2 of 4 key roles have a named, ready successor.</p>
+          </div>
+        </div>
+
+        <!-- at-risk attrition drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🚦 At-Risk-of-Attrition Roles <span class="muted" style="font-size:.85rem;font-weight:400;">— click a row to drill down</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 Math Teacher</b></span><span class="tl-pill red">High risk</span></div>
+          <div class="drill-panel"><p class="muted">First-year teacher carrying an inflated load due to the Math vacancy; engagement and confidence trending down. <b>Recommended:</b> reduce duty load, assign a math mentor, and offer a defined growth pathway.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>SPED Resource Specialist</b></span><span class="tl-pill red">High risk</span></div>
+          <div class="drill-panel"><p class="muted">Caseload above target while the SPED vacancy is open; cites paperwork burden. <b>Recommended:</b> fast-track the SPED hire and add compliance/clerical support now.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Veteran Science Lead</b></span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Strong performer signaling limited growth pathway. <b>Recommended:</b> stay-conversation + a department-chair or instructional-coach track.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>ELA Team</b></span><span class="tl-pill green">Stable</span></div>
+          <div class="drill-panel"><p class="muted">Balanced workload and high engagement; retention strong. Sustain current supports and mentoring rotation.</p></div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Staffing Report</a>
+          <a class="btn ghost" href="professional-development.html">🌱 Professional Development</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

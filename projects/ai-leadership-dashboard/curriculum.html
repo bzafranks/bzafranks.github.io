@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Implementation — AI School Leadership Dashboard</title>
+  <meta name="description" content="Monitor standards coverage, curriculum pacing, unit completion, assessment alignment, resource usage, department comparisons, grade-level implementation, and curriculum gaps with AI recommendations.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Instruction / <b>Curriculum</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📚 Curriculum Implementation</span>
+          <h1>Curriculum Implementation</h1>
+          <p class="lead">Is the curriculum being taught as designed? Monitor standards coverage, pacing, unit completion, assessment alignment, resource usage, and implementation consistency across departments and grade levels — with AI recommendations. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label for="cu-subject">Subject</label>
+          <select id="cu-subject"><option>All subjects</option><option>ELA</option><option>Mathematics</option><option>Science</option><option>Social Studies</option></select>
+          <label for="cu-term">Term</label>
+          <select id="cu-term"><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+          <label for="cu-band">Grade band</label>
+          <select id="cu-band"><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- standards coverage gauges + consistency -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;align-items:stretch;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="87" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Standards coverage</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="82" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>On-pace overall</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="79" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Implementation consistency</small></div></div></div>
+        </div>
+
+        <!-- KPI scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Standards Coverage</div><div class="sc-num"><span data-count="87" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4%</div></div>
+          <div class="scorecard green"><div class="sc-label">Unit Completion</div><div class="sc-num"><span data-count="78" data-suffix="%">0</span></div><div class="sc-trend up">▲ 6%</div></div>
+          <div class="scorecard amber"><div class="sc-label">Assessment Alignment</div><div class="sc-num"><span data-count="73" data-suffix="%">0</span></div><div class="sc-trend flat">flat</div></div>
+          <div class="scorecard green"><div class="sc-label">Resource Usage</div><div class="sc-num"><span data-count="84" data-suffix="%">0</span></div><div class="sc-trend up">▲ 7%</div></div>
+          <div class="scorecard amber"><div class="sc-label">Implementation Consistency</div><div class="sc-num"><span data-count="79" data-suffix="%">0</span></div><div class="sc-trend down">▼ 2%</div></div>
+          <div class="scorecard red"><div class="sc-label">Math Pacing Variance</div><div class="sc-num"><span data-count="3" data-suffix=" wks">0</span></div><div class="sc-trend down">▼ behind</div></div>
+        </div>
+
+        <!-- AI exec brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Curriculum Recommendations <span class="ai-pill">Simulated</span></h4>
+          <p>Curriculum is being implemented with strong fidelity overall (coverage 87%, consistency 79%). Two patterns warrant action: <b>Grade 8 mathematics is ~3 weeks behind pace</b> in two sections, and <b>assessment alignment</b> (73%) trails coverage — meaning some taught standards aren't being assessed as designed. Three focused moves:</p>
+          <ol>
+            <li><b>Re-sequence Grade 8 math pacing.</b> Insert a one-week reteach block on ratios &amp; proportions and a common re-assessment to recover the 3-week gap.</li>
+            <li><b>Close the assessment-alignment gap.</b> Map common assessments back to priority standards in ELA and Science, where alignment is weakest, before the next assessment window.</li>
+            <li><b>Spread strong resource practice.</b> The 84% resource-usage rate hides variation — have high-fidelity teams model their unit-resource routines for the two lagging departments.</li>
+          </ol>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 You decide</span> AI-generated analysis on fictional sample data. Recommendations support — not replace — your professional judgment. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- pacing by subject + unit completion -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>⏱️ Curriculum Pacing <span class="muted" style="font-size:.85rem;font-weight:400;">— % of classes on pace</span></h3>
+            <div class="barlist">
+              <div class="row"><span>ELA</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+              <div class="row"><span>Mathematics</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+              <div class="row"><span>Science</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+              <div class="row"><span>Social Studies</span><span class="track"><span class="fill" data-pct="90"></span></span><b>90%</b></div>
+              <div class="row"><span>World Languages</span><span class="track"><span class="fill" data-pct="85"></span></span><b>85%</b></div>
+            </div>
+            <div class="insight"><b>Insight:</b> Mathematics is the outlier — two Grade 8 sections drive the 64% on-pace rate.</div>
+          </div>
+          <div class="card">
+            <h3>📦 Unit Completion <span class="muted" style="font-size:.85rem;font-weight:400;">— % of planned units finished</span></h3>
+            <div class="barlist">
+              <div class="row"><span>ELA</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+              <div class="row"><span>Mathematics</span><span class="track"><span class="fill" data-pct="68"></span></span><b>68%</b></div>
+              <div class="row"><span>Science</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+              <div class="row"><span>Social Studies</span><span class="track"><span class="fill" data-pct="84"></span></span><b>84%</b></div>
+              <div class="row"><span>World Languages</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Department comparison table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>📊 Department Comparisons <span class="muted" style="font-size:.85rem;font-weight:400;">(sample)</span></h3>
+          <div class="table-wrap">
+            <table>
+              <caption class="muted" style="text-align:left;font-size:.85rem;margin-bottom:.4rem;">Fictional sample implementation metrics by department.</caption>
+              <thead>
+                <tr><th scope="col">Department</th><th scope="col">Coverage</th><th scope="col">On pace</th><th scope="col">Assessment alignment</th><th scope="col">Resource usage</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">ELA</th><td>90%</td><td>88%</td><td>69%</td><td>86%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><th scope="row">Mathematics</th><td>83%</td><td>64%</td><td>78%</td><td>80%</td><td><span class="tl-pill red">Behind</span></td></tr>
+                <tr><th scope="row">Science</th><td>85%</td><td>81%</td><td>67%</td><td>82%</td><td><span class="tl-pill amber">Watch</span></td></tr>
+                <tr><th scope="row">Social Studies</th><td>92%</td><td>90%</td><td>80%</td><td>88%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><th scope="row">World Languages</th><td>88%</td><td>85%</td><td>75%</td><td>84%</td><td><span class="tl-pill green">On track</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Grade-level implementation heatmap (grade x subject) -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🗺️ Grade-Level Implementation <span class="muted" style="font-size:.85rem;font-weight:400;">— grade × subject, darker = stronger fidelity (sample)</span></h3>
+          <div class="table-wrap">
+            <div class="heatmap" style="grid-template-columns:90px repeat(4, 1fr);align-items:center;" role="table" aria-label="Implementation fidelity by grade and subject (fictional sample)">
+              <span></span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">ELA</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Math</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Science</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Soc. St.</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Grade 5</span>
+              <span class="hm-cell hm-4">4</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Grade 6</span>
+              <span class="hm-cell hm-4">4</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Grade 7</span>
+              <span class="hm-cell hm-3">3</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Grade 8</span>
+              <span class="hm-cell hm-3">3</span><span class="hm-cell hm-0">0</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Grade 9</span>
+              <span class="hm-cell hm-4">4</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span>
+            </div>
+          </div>
+          <div class="legend"><span><i style="background:#e9eef3;"></i> Off track</span><span><i style="background:#cfe3d6;"></i></span><span><i style="background:#8fcca7;"></i></span><span><i style="background:#4c9a6e;"></i></span><span><i style="background:#2f7a52;"></i> Strong fidelity</span></div>
+        </div>
+
+        <!-- Curriculum gaps drill-downs -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🔍 Curriculum Gaps <span class="muted" style="font-size:.85rem;font-weight:400;">— click a gap to drill down</span></h3>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 Math — ratios &amp; proportions</b></span><span class="tl-pill red">Critical</span></div>
+          <div class="drill-panel"><p class="muted">Two sections ~3 weeks behind; the unit is partially untaught heading into the assessment window. <b>Recommended:</b> reteach block + common re-assessment; re-sequence remaining units.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Science — assessment alignment</b></span><span class="tl-pill amber">Gap</span></div>
+          <div class="drill-panel"><p class="muted">67% of taught priority standards have an aligned common assessment. <b>Recommended:</b> map assessments to priority standards before the next unit.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>ELA — writing standards coverage</b></span><span class="tl-pill amber">Gap</span></div>
+          <div class="drill-panel"><p class="muted">Reading standards are well covered, but argumentative-writing standards lag by one unit. <b>Recommended:</b> protect the writing block; add a shared writing task.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Cross-subject — vocabulary spiral</b></span><span class="tl-pill green">Minor</span></div>
+          <div class="drill-panel"><p class="muted">Academic vocabulary is introduced but not consistently revisited across units. <b>Recommended:</b> add spaced-review routines; low effort, broad reach.</p></div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="instructional-leadership.html">🧭 Instructional Leadership</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

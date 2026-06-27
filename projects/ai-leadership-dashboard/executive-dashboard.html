@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Dashboard — AI School Leadership Dashboard</title>
+  <meta name="description" content="A high-level executive command center: overall school-performance score, KPIs, trends, risk indicators, and an AI-generated executive summary.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Executive Dashboard</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Command Center</span>
+          <h1>Executive Dashboard</h1>
+          <p class="lead">A whole-school snapshot for leadership decisions — performance, trends, and risk in one view, with an AI-generated executive summary. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label>School</label>
+          <select><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option></select>
+          <label>Term</label>
+          <select><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+          <label>Grade band</label>
+          <select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall score + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;align-items:stretch;margin-bottom:1.2rem;">
+          <div class="overall">
+            <div><div class="big-score"><span data-count="82">0</span></div><div class="muted" style="color:#cfe0f0;">School Performance Index</div></div>
+            <div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Grade B+</span><span class="sc-trend up" style="color:#8ce0a8;">▲ 3 pts vs. last term</span></div>
+          </div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="93.4" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Avg daily attendance</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="87" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Curriculum fidelity</small></div></div></div>
+        </div>
+
+        <!-- KPI scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Academic Growth</div><div class="sc-num"><span data-count="4" data-prefix="+" data-suffix="%">0</span></div><div class="sc-trend up">▲ vs. prior term</div></div>
+          <div class="scorecard amber"><div class="sc-label">Chronic Absenteeism</div><div class="sc-num"><span data-count="18" data-suffix="%">0</span></div><div class="sc-trend down">▲ 2% — watch</div></div>
+          <div class="scorecard green"><div class="sc-label">Teacher Effectiveness</div><div class="sc-num"><span data-count="88" data-suffix="%">0</span></div><div class="sc-trend up">▲ 3%</div></div>
+          <div class="scorecard green"><div class="sc-label">PD Completion</div><div class="sc-num"><span data-count="91" data-suffix="%">0</span></div><div class="sc-trend flat">on track</div></div>
+          <div class="scorecard red"><div class="sc-label">Grade 8 Math</div><div class="sc-num"><span data-count="66" data-suffix="%">0</span></div><div class="sc-trend down">▼ 6 pts</div></div>
+          <div class="scorecard green"><div class="sc-label">Family Engagement</div><div class="sc-num"><span data-count="76" data-suffix="%">0</span></div><div class="sc-trend up">▲ 22% contacts</div></div>
+        </div>
+
+        <!-- AI executive summary -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Executive Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Overall performance is strong and improving (index 82, ▲3). <b>ELA growth</b> and <b>family engagement</b> are bright spots. Two areas need attention: <b>Grade 8 mathematics</b> (▼6 pts, concentrated in two sections) and <b>chronic absenteeism</b> (18%, clustered Mon/Fri in Grade 8). Recommended focus: a math instructional-improvement cycle and a tiered attendance initiative. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- trends + drilldowns -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>📈 Academic Growth Trend</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Academic growth trend line">
+              <path class="area" d="M0,46 L50,42 L100,44 L150,36 L200,30 L250,26 L300,20 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,46 L50,42 L100,44 L150,36 L200,30 L250,26 L300,20"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Proficiency index by month — steady upward trend (Sep → Mar).</p>
+          </div>
+          <div class="card">
+            <h3>🏫 Performance by Department</h3>
+            <div class="barlist">
+              <div class="row"><span>ELA</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+              <div class="row"><span>Mathematics</span><span class="track"><span class="fill" data-pct="69"></span></span><b>69%</b></div>
+              <div class="row"><span>Science</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+              <div class="row"><span>Social Studies</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+              <div class="row"><span>Electives</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- risk indicators with drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🚦 Risk Indicators <span class="muted" style="font-size:.85rem;font-weight:400;">— click a row to drill down</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 Mathematics</b></span><span class="tl-pill red">High</span></div>
+          <div class="drill-panel"><p class="muted">66% proficiency (▼6 pts). Two sections 3 weeks behind pace; first-year teacher with 1 coaching cycle. <b>Recommended:</b> coaching cycle + reteach block + mentor pairing.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Chronic Absenteeism</b></span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">18% chronically absent, clustered Mon/Fri in Grade 8. <b>Recommended:</b> early-warning watchlist + positive family outreach.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Staffing — Math &amp; SPED vacancies</b></span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">2 vacancies affecting continuity in tested areas. <b>Recommended:</b> fast-track hiring + substitute-to-mentor support.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>ELA Growth</b></span><span class="tl-pill green">On Track</span></div>
+          <div class="drill-panel"><p class="muted">78% proficiency (▲5). Sustain current literacy block and coaching focus.</p></div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Board Report</a>
+          <a class="btn ghost" href="school-improvement.html">🎯 School Improvement Plan</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports &amp; Presentations — AI School Leadership Dashboard</title>
+  <meta name="description" content="Generate board-ready executive reports: board, principal, district, school-improvement, attendance, and assessment reports — drafted by AI on fictional sample data, ready to print or export to PDF.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Reports</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📄 Reports &amp; Presentations</span>
+          <h1>Reports &amp; Presentations</h1>
+          <p class="lead">Generate board-ready executive reports in seconds — Board, Principal, District, School Improvement, Attendance, and Assessment reports, each drafted with an executive summary, KPIs, highlights, and recommendations. Export to PDF, PowerPoint, Excel, or a printable dashboard. <span class="muted">(Export-format buttons are illustrative; the working action is Print / PDF via your browser.)</span></p>
+        </div>
+
+        <div class="gen-layout">
+          <!-- LEFT: form -->
+          <form class="gen-form" data-generator="report">
+            <h3>Generate a report</h3>
+            <div class="field">
+              <label for="rpt-type">Report type</label>
+              <select id="rpt-type" name="type">
+                <option>Board Report</option>
+                <option>Principal Report</option>
+                <option>District Report</option>
+                <option>School Improvement Report</option>
+                <option>Attendance Report</option>
+                <option>Assessment Report</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="rpt-school">School</label><input id="rpt-school" name="school" value="Sample K–12 School"></div>
+              <div class="field"><label for="rpt-term">Term</label><select id="rpt-term" name="term"><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select></div>
+            </div>
+            <button class="btn" type="submit">✨ Generate report</button>
+          </form>
+
+          <!-- RIGHT: output -->
+          <div class="gen-output" data-output="report">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print / PDF</button>
+              <button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">📄</div><p>Choose a report type and press Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- Report library -->
+        <h2 style="margin:2rem 0 .8rem;">📚 Report Library</h2>
+        <p class="muted" style="margin-bottom:1rem;">Example report types the platform can produce. Generated reports are board- and presentation-ready — formatted with an executive summary, key indicators, highlights, and prioritized recommendations.</p>
+        <div class="tool-grid">
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">🏛️</div>
+            <h4>Board Report</h4>
+            <p>High-level performance, risks, and priorities prepared for the Board of Education.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">🧭</div>
+            <h4>Principal Report</h4>
+            <p>Leadership review of school health, instruction, and operational indicators.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">🏢</div>
+            <h4>District Report</h4>
+            <p>Summary for the district office and superintendent with accountability metrics.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">👩‍🏫</div>
+            <h4>Teacher Summary</h4>
+            <p>Coaching, growth, and observation highlights across the instructional staff.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">🎯</div>
+            <h4>School Improvement (SIP)</h4>
+            <p>Goals, milestones, and progress against the school-improvement plan.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">🌱</div>
+            <h4>Professional Development</h4>
+            <p>PD completion, pathways, and recommended next learning for staff.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">📅</div>
+            <h4>Attendance Report</h4>
+            <p>Daily attendance, chronic-absenteeism trends, and engagement risk.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">📈</div>
+            <h4>Assessment Report</h4>
+            <p>Achievement, growth, and mastery summarized by grade and subject.</p>
+          </div>
+          <div class="tool-card" style="cursor:default;">
+            <div class="t-ico">📚</div>
+            <h4>Curriculum Report</h4>
+            <p>Pacing, standards coverage, and implementation fidelity by department.</p>
+          </div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="school-improvement.html">🎯 School Improvement Plan</a>
+          <a class="btn ghost" href="executive-dashboard.html">📊 Back to Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All reports are AI-drafted from realistic fictional sample data for demonstration — verify figures before distribution.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance &amp; Engagement — AI School Leadership Dashboard</title>
+  <meta name="description" content="Attendance and engagement monitoring: daily attendance, chronic absenteeism, engagement trends, course and assignment completion, participation, family contact, and AI risk alerts.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Students / <b>Attendance &amp; Engagement</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Attendance Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Chronic absenteeism</b> rose to 18% — clustered in Grade 8.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Mon/Fri</b> absences are driving the trend.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>40%</b> of flagged families have had no positive contact this term.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📅 Attendance &amp; Engagement</span>
+          <h1>Attendance &amp; Engagement</h1>
+          <p class="lead">Daily attendance, chronic absenteeism, engagement, and completion in one view — with AI risk alerts and a tiered watchlist to act before absences accumulate. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label>Grade band</label>
+          <select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <label>Term</label>
+          <select><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+          <label>Day</label>
+          <select><option>All days</option><option>Mondays</option><option>Fridays</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- gauge + scorecards -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.4rem;align-items:stretch;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="93.4" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Avg daily attendance</small></div></div></div>
+          <div class="kpi-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="scorecard amber"><div class="sc-label">Chronic Absenteeism</div><div class="sc-num"><span data-count="18" data-suffix="%">0</span></div><div class="sc-trend down">▲ 2% — watch</div></div>
+            <div class="scorecard green"><div class="sc-label">Course Completion</div><div class="sc-num"><span data-count="89" data-suffix="%">0</span></div><div class="sc-trend up">▲ 3%</div></div>
+            <div class="scorecard amber"><div class="sc-label">Assignment Completion</div><div class="sc-num"><span data-count="81" data-suffix="%">0</span></div><div class="sc-trend down">▼ 2%</div></div>
+            <div class="scorecard green"><div class="sc-label">Active Participation</div><div class="sc-num"><span data-count="77" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4%</div></div>
+          </div>
+        </div>
+
+        <!-- AI exec brief: risk alerts -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Attendance Risk Alerts <span class="ai-pill">Simulated</span></h4>
+          <p>Three patterns warrant immediate attention:</p>
+          <div class="insight"><b>Mon/Fri clustering:</b> 70% of chronically absent students have 3+ unexcused absences concentrated on Mondays and Fridays — suggests a scheduling or engagement driver.</div>
+          <div class="insight"><b>Grade 8 cohort:</b> Chronic absenteeism in Grade 8 (24%) runs well above the school average (18%) and correlates with the math achievement dip.</div>
+          <div class="insight"><b>No-contact families:</b> 40% of flagged students' families have had no positive contact this term — outreach gap to close first.</div>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 You decide</span> AI-generated analysis on fictional sample data. Recommendations support — not replace — your professional judgment. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- Engagement trend + completion barlist -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>📉 Engagement Trend</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Engagement trend line">
+              <path class="area" d="M0,26 L50,28 L100,30 L150,34 L200,32 L250,38 L300,40 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,26 L50,28 L100,30 L150,34 L200,32 L250,38 L300,40"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Composite engagement index by month, Sep → Mar — a gentle decline to monitor.</p>
+          </div>
+          <div class="card">
+            <h3>✅ Completion &amp; Participation</h3>
+            <div class="barlist">
+              <div class="row"><span>Course completion</span><span class="track"><span class="fill" data-pct="89"></span></span><b>89%</b></div>
+              <div class="row"><span>Assignment completion</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+              <div class="row"><span>On-time submission</span><span class="track"><span class="fill" data-pct="73"></span></span><b>73%</b></div>
+              <div class="row"><span>Class participation</span><span class="track"><span class="fill" data-pct="77"></span></span><b>77%</b></div>
+              <div class="row"><span>Extracurricular</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attendance heatmap: grade x month -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🗓️ Attendance by Grade × Month <span class="muted" style="font-size:.85rem;font-weight:400;">— darker = higher attendance</span></h3>
+          <div class="heatmap" role="img" aria-label="Heatmap of attendance rate by grade and month, where darker cells indicate higher attendance" style="grid-template-columns:90px repeat(6,1fr);max-width:680px;">
+            <div class="hm-cell hm-0">Grade</div>
+            <div class="hm-cell hm-0">Sep</div><div class="hm-cell hm-0">Oct</div><div class="hm-cell hm-0">Nov</div><div class="hm-cell hm-0">Dec</div><div class="hm-cell hm-0">Jan</div><div class="hm-cell hm-0">Feb</div>
+
+            <div class="hm-cell hm-0">Grade 5</div>
+            <div class="hm-cell hm-4">96</div><div class="hm-cell hm-4">95</div><div class="hm-cell hm-3">94</div><div class="hm-cell hm-3">92</div><div class="hm-cell hm-4">95</div><div class="hm-cell hm-4">96</div>
+
+            <div class="hm-cell hm-0">Grade 6</div>
+            <div class="hm-cell hm-4">95</div><div class="hm-cell hm-3">93</div><div class="hm-cell hm-3">93</div><div class="hm-cell hm-2">90</div><div class="hm-cell hm-3">93</div><div class="hm-cell hm-3">94</div>
+
+            <div class="hm-cell hm-0">Grade 7</div>
+            <div class="hm-cell hm-3">93</div><div class="hm-cell hm-3">92</div><div class="hm-cell hm-2">90</div><div class="hm-cell hm-2">89</div><div class="hm-cell hm-2">91</div><div class="hm-cell hm-3">92</div>
+
+            <div class="hm-cell hm-0">Grade 8</div>
+            <div class="hm-cell hm-2">91</div><div class="hm-cell hm-1">88</div><div class="hm-cell hm-1">87</div><div class="hm-cell hm-1">85</div><div class="hm-cell hm-1">86</div><div class="hm-cell hm-2">89</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.8rem;">Grade 8 attendance runs lowest and dips through winter — the clearest area for intervention.</p>
+        </div>
+
+        <!-- Risk tiers drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🚦 Risk Tiers <span class="muted" style="font-size:.85rem;font-weight:400;">— click a row to drill down</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 3 — Chronic (18%+ absent)</b></span><span class="tl-pill red">62 students</span></div>
+          <div class="drill-panel"><p class="muted">Already chronically absent; many concentrated in Grade 8 and on Mon/Fri. <b>Recommended:</b> named case manager, daily check-in adult, and family conference.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 2 — Emerging (10–17% absent)</b></span><span class="tl-pill amber">88 students</span></div>
+          <div class="drill-panel"><p class="muted">At risk of becoming chronic. <b>Recommended:</b> early-warning watchlist, attendance goal-setting, and positive outreach.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 1 — Universal (under 10%)</b></span><span class="tl-pill green">Majority</span></div>
+          <div class="drill-panel"><p class="muted">On track. <b>Recommended:</b> sustain positive school-wide attendance culture and recognition.</p></div>
+        </div>
+
+        <!-- Family contact history -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>📞 Family Contact History</h3>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Mar 14 · Grade 8 cohort</span><div>Positive outreach calls to 12 Tier 2 families — 9 reached.</div></li>
+            <li class="done"><span class="t-when">Mar 9 · Student (Tier 3)</span><div>Attendance conference; support plan and check-in adult assigned.</div></li>
+            <li class="now"><span class="t-when">Mar 7 · now</span><div>Automated Mon/Fri absence texts launched for flagged students.</div></li>
+            <li><span class="t-when">Upcoming</span><div>Family engagement night focused on attendance and belonging.</div></li>
+          </ul>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="behavior.html">🤝 Review Climate &amp; Belonging</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Attendance Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

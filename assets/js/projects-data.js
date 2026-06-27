@@ -115,5 +115,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "✨",
     tags: ["AI Product", "Teacher Productivity", "Human-Centered AI", "SaaS Design", "Prompt Engineering", "EdTech"],
     summary: "A commercial-grade AI productivity platform for teachers — an AI workspace plus 14 tools (lesson planner, assessment & rubric generators, differentiation, parent communication, feedback, behavior docs, classroom management, PD coach, prompt & resource libraries, dashboard) with a command palette, dark mode, and human-in-the-loop design. First product in the AI for Education Innovation Suite."
+  },
+  {
+    id: "ai-leadership-dashboard",
+    title: "AI School Leadership Dashboard",
+    subtitle: "An AI-powered decision intelligence platform for school leaders",
+    pillar: "il",
+    grade: "K–12 · Enterprise",
+    status: "done",
+    url: "projects/ai-leadership-dashboard/index.html",
+    icon: "📊",
+    tags: ["AI Decision Support", "Educational Leadership", "Learning Analytics", "Executive Dashboards", "Explainable AI", "School Improvement"],
+    summary: "An enterprise executive decision-support platform for principals, leadership teams, and district administrators — 14 dashboards (executive, school health, instructional leadership, curriculum, teacher coaching, achievement, attendance, behavior, staffing, PD, improvement planning), an explainable AI executive assistant, and a board-ready report generator, with command palette, notification center, and dark mode. Part of the AI for Education Innovation Suite."
   }
 ];

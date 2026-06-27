@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavior &amp; School Climate — AI School Leadership Dashboard</title>
+  <meta name="description" content="Behavior incidents, restorative practices, school-climate survey results, wellness indicators, and AI climate insights — all fictional sample data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Students / <b>Behavior &amp; Climate</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 belonging</b> dipped on the climate survey — advisory recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Bullying reports</b> rose 4% in common areas this month.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Restorative circles</b> backlog — 6 referrals awaiting facilitation.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🤝 Climate &amp; Culture</span>
+          <h1>Behavior &amp; School Climate</h1>
+          <p class="lead">Behavior incidents, restorative practices, climate-survey results, wellness indicators, and intervention outcomes — with an AI-generated climate read. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label>School</label>
+          <select><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option></select>
+          <label>Term</label>
+          <select><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+          <label>Grade band</label>
+          <select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Behavior Referrals</div><div class="sc-num"><span data-count="318">0</span></div><div class="sc-trend down">▼ 12% vs. prior term</div></div>
+          <div class="scorecard green"><div class="sc-label">Positive Recognitions</div><div class="sc-num"><span data-count="2140">0</span></div><div class="sc-trend up">▲ 19%</div></div>
+          <div class="scorecard green"><div class="sc-label">Suspensions</div><div class="sc-num"><span data-count="14">0</span></div><div class="sc-trend down">▼ 5 vs. prior term</div></div>
+          <div class="scorecard amber"><div class="sc-label">Bullying Reports</div><div class="sc-num"><span data-count="23">0</span></div><div class="sc-trend up">▲ 4% — watch</div></div>
+          <div class="scorecard green"><div class="sc-label">Restorative Resolutions</div><div class="sc-num"><span data-count="86" data-suffix="%">0</span></div><div class="sc-trend up">▲ 7%</div></div>
+          <div class="scorecard amber"><div class="sc-label">Sense of Belonging</div><div class="sc-num"><span data-count="71" data-suffix="%">0</span></div><div class="sc-trend down">▼ 3 pts (Gr 8)</div></div>
+        </div>
+
+        <!-- wellness gauges -->
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="78" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Student wellness index</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="84" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>SEL competency on-track</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="69" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Connected to a trusted adult</small></div></div></div>
+        </div>
+
+        <!-- AI climate insights -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Climate Insights <span class="ai-pill">Simulated</span></h4>
+          <p>School climate is improving overall: <b>referrals are down 12%</b> and positive recognitions are up 19% since the rollout of school-wide PBIS. Two signals warrant attention: <b>Grade 8 sense of belonging</b> dipped 3 points and correlates with a small rise in <b>bullying reports</b> in unstructured common areas (cafeteria, hallway transitions). Restorative practices show strong resolution rates (86%) but a facilitation backlog is forming. Recommended focus: targeted Grade 8 advisory/belonging work and additional restorative-circle capacity. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- trends + climate domains -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>📉 Behavior Incidents Trend</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Behavior incidents trend line, declining">
+              <path class="area" d="M0,18 L50,22 L100,26 L150,30 L200,34 L250,40 L300,46 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,18 L50,22 L100,26 L150,30 L200,34 L250,40 L300,46"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Monthly office referrals (Sep → Mar) — a steady <b>▼ downward trend</b> as PBIS matures.</p>
+          </div>
+          <div class="card">
+            <h3>🏫 Climate Survey by Domain</h3>
+            <div class="barlist">
+              <div class="row"><span>Safety</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+              <div class="row"><span>Belonging</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+              <div class="row"><span>Relationships</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+              <div class="row"><span>Engagement</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+              <div class="row"><span>Fairness</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+              <div class="row"><span>Adult Support</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Percent of students responding favorably, all grades.</p>
+          </div>
+        </div>
+
+        <!-- heatmap: incidents by type x month -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🔥 Incidents by Type × Month</h3>
+          <div class="heatmap" style="grid-template-columns:140px repeat(6,1fr);" role="img" aria-label="Heatmap of behavior incident counts by type across six months">
+            <div></div>
+            <div class="hm-cell hm-0">Oct</div><div class="hm-cell hm-0">Nov</div><div class="hm-cell hm-0">Dec</div><div class="hm-cell hm-0">Jan</div><div class="hm-cell hm-0">Feb</div><div class="hm-cell hm-0">Mar</div>
+            <div style="display:grid;place-items:center start;font-size:.82rem;font-weight:700;">Disruption</div>
+            <div class="hm-cell hm-4">28</div><div class="hm-cell hm-3">21</div><div class="hm-cell hm-3">19</div><div class="hm-cell hm-2">14</div><div class="hm-cell hm-2">12</div><div class="hm-cell hm-1">9</div>
+            <div style="display:grid;place-items:center start;font-size:.82rem;font-weight:700;">Defiance</div>
+            <div class="hm-cell hm-3">17</div><div class="hm-cell hm-3">16</div><div class="hm-cell hm-2">13</div><div class="hm-cell hm-2">11</div><div class="hm-cell hm-1">8</div><div class="hm-cell hm-1">7</div>
+            <div style="display:grid;place-items:center start;font-size:.82rem;font-weight:700;">Conflict</div>
+            <div class="hm-cell hm-2">12</div><div class="hm-cell hm-2">10</div><div class="hm-cell hm-1">8</div><div class="hm-cell hm-2">11</div><div class="hm-cell hm-1">7</div><div class="hm-cell hm-1">6</div>
+            <div style="display:grid;place-items:center start;font-size:.82rem;font-weight:700;">Bullying</div>
+            <div class="hm-cell hm-1">4</div><div class="hm-cell hm-1">5</div><div class="hm-cell hm-1">3</div><div class="hm-cell hm-2">6</div><div class="hm-cell hm-1">5</div><div class="hm-cell hm-1">4</div>
+            <div style="display:grid;place-items:center start;font-size:.82rem;font-weight:700;">Attendance</div>
+            <div class="hm-cell hm-3">19</div><div class="hm-cell hm-3">18</div><div class="hm-cell hm-4">24</div><div class="hm-cell hm-3">20</div><div class="hm-cell hm-2">15</div><div class="hm-cell hm-2">13</div>
+          </div>
+          <div class="legend"><span><span class="hm-cell hm-0" style="width:16px;height:16px;"></span> Fewer</span><span><span class="hm-cell hm-2" style="width:16px;height:16px;"></span> Some</span><span><span class="hm-cell hm-4" style="width:16px;height:16px;"></span> More</span></div>
+        </div>
+
+        <!-- intervention outcomes drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🧩 Behavior Intervention Outcomes <span class="muted" style="font-size:.85rem;font-weight:400;">— click a row to see what worked</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Restorative Circles</b></span><span class="tl-pill green">High impact</span></div>
+          <div class="drill-panel"><p class="muted">86% of facilitated cases resolved without recurrence within 30 days; repeat referrals down 41% for participants. <b>What worked:</b> trained facilitators + same-day scheduling. <b>Next:</b> add capacity to clear the 6-case backlog.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Check-In / Check-Out (Tier 2)</b></span><span class="tl-pill green">High impact</span></div>
+          <div class="drill-panel"><p class="muted">Daily point-card students improved on-task behavior by 28%; 19 of 26 met exit criteria this term. <b>What worked:</b> consistent adult mentor + family communication loop.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>SEL Advisory Block</b></span><span class="tl-pill amber">Mixed</span></div>
+          <div class="drill-panel"><p class="muted">Belonging gains in Grades 6–7, but flat in Grade 8 where fidelity varied by section. <b>Recommended:</b> standardize the advisory curriculum and coach the lowest-fidelity sections.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>In-School Suspension Reset Room</b></span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Reduced out-of-school suspensions, but 30% of students returned within two weeks. <b>Recommended:</b> pair the reset room with a re-entry plan and a restorative conversation.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Lunch &amp; Transition Supervision</b></span><span class="tl-pill green">On track</span></div>
+          <div class="drill-panel"><p class="muted">Targeted adult presence in common areas cut transition-time incidents by 22%. Sustain current zone coverage.</p></div>
+        </div>
+
+        <!-- positive behavior + wellness table -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>🌟 Positive Behavior Recognition</h3>
+            <div class="barlist">
+              <div class="row"><span>Respect</span><span class="track"><span class="fill" data-pct="92"></span></span><b>92%</b></div>
+              <div class="row"><span>Responsibility</span><span class="track"><span class="fill" data-pct="85"></span></span><b>85%</b></div>
+              <div class="row"><span>Kindness</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+              <div class="row"><span>Perseverance</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;">Share of recognitions awarded by school value (PBIS matrix).</p>
+          </div>
+          <div class="card">
+            <h3>💛 Student Wellness Indicators</h3>
+            <div class="table-wrap">
+              <table>
+                <caption>Fictional sample wellness screening summary.</caption>
+                <thead><tr><th scope="col">Indicator</th><th scope="col">On-track</th><th scope="col">Monitor</th><th scope="col">Support</th></tr></thead>
+                <tbody>
+                  <tr><td>Emotional regulation</td><td>74%</td><td>18%</td><td>8%</td></tr>
+                  <tr><td>Peer relationships</td><td>81%</td><td>13%</td><td>6%</td></tr>
+                  <tr><td>School connectedness</td><td>69%</td><td>22%</td><td>9%</td></tr>
+                  <tr><td>Coping &amp; resilience</td><td>77%</td><td>16%</td><td>7%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Climate Report</a>
+          <a class="btn ghost" href="school-improvement.html">🎯 School Improvement Plan</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

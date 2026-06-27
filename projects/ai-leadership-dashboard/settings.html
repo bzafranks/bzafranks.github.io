@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — AI School Leadership Dashboard</title>
+  <meta name="description" content="Preferences, data-integration roadmap, future AI features, responsible-AI governance, and an implementation guide for the AI School Leadership Dashboard.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Settings</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚙️ Preferences &amp; Governance</span>
+          <h1>Settings</h1>
+          <p class="lead">Personalize the command center, preview the integration and AI roadmap, and review the responsible-AI commitments behind the platform. All data is fictional sample data and all AI is simulated client-side.</p>
+        </div>
+
+        <!-- 1. Appearance + 2. Default View -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>🎨 Appearance</h3>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px solid var(--border);">
+              <div><b>Dark mode</b><br><span class="muted" style="font-size:.85rem;">Switch between light and dark themes. Your choice is remembered on this device.</span></div>
+              <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.8rem;">A floating <strong>accessibility toolbar</strong> is available on every page for larger text, high-contrast mode, and reduced motion — look for the control in the corner of the screen.</p>
+          </div>
+
+          <div class="card">
+            <h3>🧭 Default View</h3>
+            <p class="muted" style="font-size:.88rem;">Choose what loads first when you open the command center.</p>
+            <div class="filter-strip" data-filters style="margin-top:.6rem;">
+              <label for="def-school">Default school</label>
+              <select id="def-school"><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option><option>District (all schools)</option></select>
+              <label for="def-term">Default term</label>
+              <select id="def-term"><option>This Semester</option><option>Last Semester</option><option>Year to Date</option></select>
+              <label for="def-band">Default grade band</label>
+              <select id="def-band"><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+              <label for="def-land">Landing dashboard</label>
+              <select id="def-land"><option>Executive Dashboard</option><option>School Health Overview</option><option>Student Achievement</option><option>AI Executive Assistant</option></select>
+            </div>
+            <p class="muted" style="font-size:.8rem;margin-top:.6rem;">Presentational only in this demonstration — selections are not persisted.</p>
+          </div>
+        </div>
+
+        <!-- 3. Data Integration + 4. Future AI Features -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;align-items:start;">
+          <div class="card">
+            <h3>🔌 Data Integration</h3>
+            <p class="muted" style="font-size:.88rem;">In production, the platform connects directly to your existing systems for a live, unified picture.</p>
+            <ul class="check-list">
+              <li>Student Information System (SIS) <span class="soon">Soon</span></li>
+              <li>Assessment platform <span class="soon">Soon</span></li>
+              <li>Learning Management System (Canvas / Schoology) <span class="soon">Soon</span></li>
+              <li>Attendance system <span class="soon">Soon</span></li>
+              <li>HR / Staffing <span class="soon">Soon</span></li>
+              <li>Finance / Budget <span class="soon">Soon</span></li>
+              <li>Single sign-on (SSO) <span class="soon">Soon</span></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>🔮 Future AI Features</h3>
+            <p class="muted" style="font-size:.88rem;">The intelligence roadmap extends decision support into foresight and natural-language interaction.</p>
+            <ul class="check-list">
+              <li>Predictive enrollment <span class="soon">Soon</span></li>
+              <li>Budget forecasting <span class="soon">Soon</span></li>
+              <li>Teacher-retention prediction <span class="soon">Soon</span></li>
+              <li>Facility utilization <span class="soon">Soon</span></li>
+              <li>AI meeting assistant <span class="soon">Soon</span></li>
+              <li>Voice queries <span class="soon">Soon</span></li>
+              <li>Natural-language reporting <span class="soon">Soon</span></li>
+              <li>Strategic scenario planning <span class="soon">Soon</span></li>
+              <li>Regional comparisons <span class="soon">Soon</span></li>
+              <li>National benchmarking <span class="soon">Soon</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. Responsible AI Governance -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🛡️ Responsible AI Governance &amp; Data Privacy</h3>
+          <p>Trust is a design requirement, not an afterthought. This demonstration is built to make the platform's commitments explicit:</p>
+          <ul class="check-list">
+            <li><strong>Fictional sample data</strong> — every figure shown is realistic but invented for demonstration; no real student, staff, or school information is used.</li>
+            <li><strong>Simulated, client-side AI</strong> — all "AI" analysis is generated in your browser. Nothing you type or view is transmitted, stored on a server, or shared.</li>
+            <li><strong>Explainable decision support</strong> — AI output shows the evidence behind every insight and is framed as decision support, never an autopilot.</li>
+            <li><strong>Humans decide</strong> — final decisions about students, staff, and resources always rest with school leaders.</li>
+          </ul>
+          <p>In a production deployment, the following safeguards apply on top of the above:</p>
+          <ul class="check-list">
+            <li><strong>Data governance</strong> — clear ownership, retention, and data-residency policies agreed before any live use.</li>
+            <li><strong>FERPA / GDPR alignment</strong> — privacy-by-design controls calibrated to local regulation.</li>
+            <li><strong>Role-based access</strong> — leaders, coaches, and staff see only what their role permits.</li>
+            <li><strong>Audit logs</strong> — every access and AI query is recorded for accountability.</li>
+            <li><strong>Bias monitoring</strong> — recommendations are reviewed for fairness across subgroups.</li>
+            <li><strong>Human-oversight gates</strong> — high-stakes actions require explicit human review and approval.</li>
+          </ul>
+        </div>
+
+        <!-- 6. Implementation Guide -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🚀 Implementation Guide</h3>
+          <p class="muted" style="font-size:.9rem;">Written for school boards, principals, superintendents, and Ministry of Education leaders evaluating adoption.</p>
+          <ol style="line-height:1.7;">
+            <li><strong>Implementation strategy</strong> — adopt in deliberate phases, leading with the executive dashboard and AI assistant so leaders see value before scope expands; let evidence, not mandate, drive each step.</li>
+            <li><strong>Technology requirements</strong> — a modern browser is all that is needed for the demonstration; a production build runs as a secure web application with SSO, requiring no new hardware for end users.</li>
+            <li><strong>Data integration</strong> — connect SIS, assessment, LMS, attendance, HR/staffing, and finance sources through governed, read-only feeds so the picture is unified and current.</li>
+            <li><strong>Professional development</strong> — train leadership teams on interpreting indicators, asking the AI explainable questions, and acting on recommendations while retaining decision authority.</li>
+            <li><strong>Responsible-AI governance</strong> — ratify data-governance, privacy, access, audit, bias-monitoring, and human-oversight policies before live data is connected.</li>
+            <li><strong>Pilot implementation</strong> — run a focused pilot at one or two schools against a baseline, iterating rapidly on leader feedback.</li>
+            <li><strong>Scaling roadmap</strong> — expand school-by-school, then district- and region-wide, adding predictive and benchmarking features as data maturity grows.</li>
+            <li><strong>Success metrics</strong> — track decision speed, intervention timeliness, attendance and achievement movement, leader-reported confidence, and responsible-use compliance.</li>
+            <li><strong>Change management</strong> — name executive sponsors, communicate the "why," celebrate early wins, and provide continuous support so adoption sustains beyond launch.</li>
+          </ol>
+        </div>
+
+        <!-- 7. Data -->
+        <div class="card">
+          <h3>🗄️ Data</h3>
+          <p class="muted" style="font-size:.88rem;">This demonstration saves a few preferences and your AI/report history locally in your browser. You can clear them at any time.</p>
+          <p style="margin:.8rem 0;">
+            <button class="out-btn" onclick="if(confirm('Clear saved reports, history and stats?')){localStorage.removeItem('sld:reports');localStorage.removeItem('sld:hist');localStorage.removeItem('sld:stats');window.SLD&&window.SLD.toast('Local data cleared','ok');}">Clear local data</button>
+          </p>
+          <p class="muted" style="font-size:.82rem;">Local keys used on this device: <code>sld:theme</code>, <code>sld:reports</code>, <code>sld:hist</code>, <code>sld:stats</code>. Nothing leaves your browser.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

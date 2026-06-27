@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructional Leadership — AI School Leadership Dashboard</title>
+  <meta name="description" content="Classroom observation trends, instructional-strategy use, engagement and differentiation, teacher growth, coaching priorities, and AI instructional recommendations.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Instruction / <b>Instructional Leadership</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧭 Instructional Leadership</span>
+          <h1>Instructional Leadership</h1>
+          <p class="lead">What's happening in classrooms — observation trends, instructional strategies, engagement, differentiation, and teacher growth — with AI recommendations to focus coaching where it matters most. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- filters -->
+        <div class="filter-strip" data-filters>
+          <label for="il-dept">Department</label>
+          <select id="il-dept"><option>All departments</option><option>ELA</option><option>Mathematics</option><option>Science</option><option>Social Studies</option></select>
+          <label for="il-term">Window</label>
+          <select id="il-term"><option>Last 6 weeks</option><option>This Semester</option><option>Year to Date</option></select>
+          <label for="il-band">Grade band</label>
+          <select id="il-band"><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI scorecards: lesson quality, engagement, differentiation, assessment quality -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Lesson Quality</div><div class="sc-num"><span data-count="82" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4%</div></div>
+          <div class="scorecard green"><div class="sc-label">Student Engagement</div><div class="sc-num"><span data-count="79" data-suffix="%">0</span></div><div class="sc-trend up">▲ 3%</div></div>
+          <div class="scorecard amber"><div class="sc-label">Differentiation</div><div class="sc-num"><span data-count="68" data-suffix="%">0</span></div><div class="sc-trend flat">flat</div></div>
+          <div class="scorecard green"><div class="sc-label">Assessment Quality</div><div class="sc-num"><span data-count="74" data-suffix="%">0</span></div><div class="sc-trend up">▲ 5%</div></div>
+          <div class="scorecard green"><div class="sc-label">Walkthroughs Logged</div><div class="sc-num"><span data-count="142">0</span></div><div class="sc-trend up">▲ 18 this window</div></div>
+          <div class="scorecard amber"><div class="sc-label">Feedback Within 48h</div><div class="sc-num"><span data-count="71" data-suffix="%">0</span></div><div class="sc-trend down">▼ 6%</div></div>
+        </div>
+
+        <!-- observation trend + strategies -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>📈 Classroom Observation Trend</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Observation quality-score trend line">
+              <path class="area" d="M0,48 L50,46 L100,40 L150,38 L200,32 L250,30 L300,26 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,48 L50,46 L100,40 L150,38 L200,32 L250,30 L300,26"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Average walkthrough quality score by week — rising as feedback cycles take hold.</p>
+          </div>
+          <div class="card">
+            <h3>🧱 Instructional Strategies Observed</h3>
+            <p class="muted" style="font-size:.85rem;">Share of walkthroughs where each strategy was evident.</p>
+            <div class="barlist">
+              <div class="row"><span>Clear objectives</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+              <div class="row"><span>Checks for understanding</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+              <div class="row"><span>Higher-order questioning</span><span class="track"><span class="fill" data-pct="61"></span></span><b>61%</b></div>
+              <div class="row"><span>Student discourse</span><span class="track"><span class="fill" data-pct="57"></span></span><b>57%</b></div>
+              <div class="row"><span>Differentiation</span><span class="track"><span class="fill" data-pct="49"></span></span><b>49%</b></div>
+              <div class="row"><span>Formative feedback</span><span class="track"><span class="fill" data-pct="66"></span></span><b>66%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI exec brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Instructional Recommendations <span class="ai-pill">Simulated</span></h4>
+          <p>Observation quality is climbing and engagement is strong, but two look-fors lag: <b>higher-order questioning</b> (61%) and <b>differentiation</b> (49%). Feedback timeliness slipped to 71% within 48 hours. Three focused moves will raise the most classrooms at once:</p>
+          <ol>
+            <li><b>Launch a questioning micro-cycle.</b> Model and co-plan higher-order question stems with the Math and Science teams, where the look-for trails most; re-observe in three weeks.</li>
+            <li><b>Make differentiation visible.</b> Add a single differentiation look-for to every walkthrough and pair the four lowest-scoring teachers with strong models for a learning walk.</li>
+            <li><b>Protect 48-hour feedback.</b> Block two short feedback windows weekly so observation notes reach teachers before the next lesson cycle.</li>
+          </ol>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 You decide</span> AI-generated analysis on fictional sample data. Recommendations support — not replace — your professional judgment. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- Look-for heatmap -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🗓️ Look-for Trends by Walkthrough Week <span class="muted" style="font-size:.85rem;font-weight:400;">— darker = more frequently observed (sample)</span></h3>
+          <div class="table-wrap">
+            <div class="heatmap" style="grid-template-columns:150px repeat(6, 1fr);align-items:center;" role="table" aria-label="Look-for frequency by walkthrough week (fictional sample)">
+              <span></span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 1</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 2</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 3</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 4</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 5</span>
+              <span class="muted" style="text-align:center;font-size:.72rem;font-weight:700;" role="columnheader">Wk 6</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Clear objectives</span>
+              <span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span><span class="hm-cell hm-4">4</span><span class="hm-cell hm-4">4</span><span class="hm-cell hm-4">4</span><span class="hm-cell hm-4">4</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Checks for understanding</span>
+              <span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span><span class="hm-cell hm-3">3</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Higher-order questioning</span>
+              <span class="hm-cell hm-1">1</span><span class="hm-cell hm-1">1</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Student discourse</span>
+              <span class="hm-cell hm-1">1</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Differentiation</span>
+              <span class="hm-cell hm-0">0</span><span class="hm-cell hm-1">1</span><span class="hm-cell hm-1">1</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span>
+
+              <span style="font-size:.82rem;font-weight:700;" role="rowheader">Formative feedback</span>
+              <span class="hm-cell hm-2">2</span><span class="hm-cell hm-2">2</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-3">3</span><span class="hm-cell hm-4">4</span>
+            </div>
+          </div>
+          <div class="legend"><span><i style="background:#e9eef3;"></i> 0</span><span><i style="background:#cfe3d6;"></i> 1</span><span><i style="background:#8fcca7;"></i> 2</span><span><i style="background:#4c9a6e;"></i> 3</span><span><i style="background:#2f7a52;"></i> 4 — most frequent</span></div>
+        </div>
+
+        <!-- Teacher growth + coaching priorities -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3>🌱 Teacher Growth Over Time</h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Aggregate teacher growth trend line">
+              <path class="area" d="M0,50 L50,47 L100,44 L150,39 L200,34 L250,29 L300,22 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,50 L50,47 L100,44 L150,39 L200,34 L250,29 L300,22"></path>
+            </svg>
+            <p class="muted" style="font-size:.85rem;">Average effectiveness rubric score across all teachers, Sep → Mar.</p>
+            <div class="insight"><b>Insight:</b> Early-career teachers account for most of the gain after their first coaching cycle.</div>
+          </div>
+          <div class="card">
+            <h3>📊 Growth by Cohort</h3>
+            <p class="muted" style="font-size:.85rem;">Average rubric gain this year by teacher cohort.</p>
+            <div class="barlist">
+              <div class="row"><span>1st-year</span><span class="track"><span class="fill" data-pct="84"></span></span><b>+0.9</b></div>
+              <div class="row"><span>2–3 years</span><span class="track"><span class="fill" data-pct="62"></span></span><b>+0.6</b></div>
+              <div class="row"><span>4–10 years</span><span class="track"><span class="fill" data-pct="40"></span></span><b>+0.3</b></div>
+              <div class="row"><span>Veteran</span><span class="track"><span class="fill" data-pct="28"></span></span><b>+0.2</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coaching priorities -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🎯 Coaching Priorities <span class="muted" style="font-size:.85rem;font-weight:400;">— click a teacher to drill down (names are fictional)</span></h3>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>A. Rivera</b> · Grade 8 Math · 1st-year</span><span class="tl-pill red">High priority</span></div>
+          <div class="drill-panel"><p class="muted">Classes &gt;1 unit behind pace; formative accuracy 54%. One coaching cycle this term. <b>Recommended:</b> open a pacing + checks-for-understanding cycle this week; pair with the department's strongest mentor for four weeks.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>J. Okafor</b> · Grade 7 Science · 2nd-year</span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Higher-order questioning observed in 1 of 4 walkthroughs. <b>Recommended:</b> co-plan question stems; model a discussion-based lesson.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>M. Sterling</b> · Grade 6 ELA · Veteran</span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Engagement scores slipped from green to amber over two cycles. <b>Recommended:</b> supportive, non-evaluative check-in on engagement strategies; re-observe in three weeks.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>K. Nguyen</b> · Grade 5 Math · 4th-year</span><span class="tl-pill green">On track</span></div>
+          <div class="drill-panel"><p class="muted">Strong, consistent practice; differentiation evident. <b>Recommended:</b> invite to model differentiation on a learning walk for peers.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>L. Brooks</b> · Grade 9 ELA · 8th-year</span><span class="tl-pill green">On track</span></div>
+          <div class="drill-panel"><p class="muted">High lesson quality and student discourse. <b>Recommended:</b> recruit as a peer-coaching lead for the questioning micro-cycle.</p></div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="teacher-performance.html">👩‍🏫 Teacher Performance</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

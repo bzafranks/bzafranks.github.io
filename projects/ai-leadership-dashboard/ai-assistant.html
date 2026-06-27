@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Executive Assistant — AI School Leadership Dashboard</title>
+  <meta name="description" content="An explainable AI executive assistant for school leaders: ask leadership questions and get reasoning, evidence, and recommended actions — while you make the decisions.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>AI Executive Assistant</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">✨ AI Executive Assistant</span>
+          <h1>AI Executive Assistant</h1>
+          <p class="lead">Ask a leadership question in plain language and get a clear answer — an insight, the evidence behind it, and recommended next steps. The assistant always explains its reasoning and leaves the decisions to you. All responses are simulated client-side on fictional sample data; nothing leaves your browser.</p>
+        </div>
+
+        <div class="ws-grid">
+          <!-- LEFT: chat -->
+          <div class="chat">
+            <div class="chat-head"><span class="bot">✨</span> AI Executive Assistant <span class="ai-pill" style="margin-left:auto;">Simulated · client-side</span></div>
+            <div class="chat-log" data-ai-log></div>
+            <div class="chat-suggest">
+              <button class="chat-chip" data-ai-suggest>Why are Grade 8 math scores declining?</button>
+              <button class="chat-chip" data-ai-suggest>Which teachers should receive coaching first?</button>
+              <button class="chat-chip" data-ai-suggest>What should be our top three school improvement priorities?</button>
+              <button class="chat-chip" data-ai-suggest>Summarize attendance trends this semester.</button>
+              <button class="chat-chip" data-ai-suggest>Which students are most at risk?</button>
+            </div>
+            <form class="composer" data-ai-form><input type="text" placeholder="Ask a leadership question…" aria-label="Ask the assistant"><button type="submit">Ask</button></form>
+          </div>
+
+          <!-- RIGHT: side panels -->
+          <div class="ws-side">
+            <div class="panel">
+              <h4>What I can do</h4>
+              <ul class="ws-list">
+                <li>Generate executive summaries</li>
+                <li>Analyze achievement, attendance &amp; climate trends</li>
+                <li>Recommend targeted interventions</li>
+                <li>Prepare board presentations</li>
+                <li>Identify at-risk students</li>
+                <li>Recommend staffing &amp; coaching priorities</li>
+                <li>Summarize classroom observations</li>
+                <li>Suggest professional development</li>
+                <li>Draft parent &amp; family communications</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h4>Capabilities</h4>
+              <ul class="ws-list">
+                <li><a href="reports.html">📄 Generate board-ready reports →</a></li>
+                <li><a href="student-achievement.html">🎓 Explore student achievement →</a></li>
+                <li><a href="attendance.html">📅 Review attendance &amp; engagement →</a></li>
+                <li><a href="instructional-leadership.html">🧭 Instructional leadership →</a></li>
+                <li><a href="school-improvement.html">🎯 School improvement plan →</a></li>
+                <li><a href="staffing.html">🧑‍💼 Staffing &amp; human capital →</a></li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h4>🛡️ Human-in-the-loop</h4>
+              <p class="muted" style="font-size:.88rem;margin:0;">This assistant supports — it does not replace — your professional judgment. Every analysis shows its reasoning and evidence so you can verify it. Decisions, communications, and interventions remain yours. All data is fictional and AI is simulated for demonstration.</p>
+            </div>
+
+            <div class="panel">
+              <h4>Conversation</h4>
+              <p class="muted" style="font-size:.88rem;margin:0 0 .7rem;">Your conversation is stored only in this browser. Clear it anytime.</p>
+              <button class="out-btn" data-ai-clear>Clear conversation</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. AI responses are generated client-side.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

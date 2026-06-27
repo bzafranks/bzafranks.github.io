@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Improvement Planning — AI School Leadership Dashboard</title>
+  <meta name="description" content="A digital school-improvement-planning module: strategic goals, action plans, milestones, budget, success indicators, and a continuous-improvement cycle with an AI executive brief.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI School Leadership Dashboard" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LD</span><span class="brand-text"><span class="brand-title">AI Leadership Dashboard</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="instructional-leadership.html">Instruction</a></li>
+        <li><a href="student-achievement.html">Students</a></li>
+        <li><a href="ai-assistant.html">AI Assistant</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every dashboard page) ===== -->
+      <aside class="app-rail" aria-label="Dashboards">
+        <div class="rail-brand"><span class="mark">LD</span><b>Leadership Command Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health</a>
+        <div class="rail-group">Instruction</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">🧭</span> Instructional Leadership</a>
+        <a class="rail-link" href="curriculum.html"><span class="ico">📚</span> Curriculum</a>
+        <a class="rail-link" href="teacher-performance.html"><span class="ico">👩‍🏫</span> Teacher Performance</a>
+        <div class="rail-group">Students</div>
+        <a class="rail-link" href="student-achievement.html"><span class="ico">🎓</span> Student Achievement</a>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance &amp; Engagement</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior &amp; Climate</a>
+        <div class="rail-group">Operations</div>
+        <a class="rail-link" href="staffing.html"><span class="ico">🧑‍💼</span> Staffing &amp; Human Capital</a>
+        <a class="rail-link" href="professional-development.html"><span class="ico">🌱</span> Professional Development</a>
+        <a class="rail-link" href="school-improvement.html"><span class="ico">🎯</span> School Improvement</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-assistant.html"><span class="ico">✨</span> AI Executive Assistant</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Operations / <b>School Improvement</b></div>
+          <div class="app-actions">
+            <!-- notification center (shared) -->
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Risk Alerts</h4>
+                <div class="notif-item"><span class="sev dot red" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> proficiency down 6 pts — coaching recommended.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Chronic absenteeism</b> rose to 18% this semester.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 vacancies</b> (Math, SPED) affecting continuity.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-assistant.html">Ask the AI about these →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎯 School Improvement Planning</span>
+          <h1>School Improvement Planning</h1>
+          <p class="lead">A digital improvement-planning module that turns strategy into action: three strategic goals, each with action plans, milestones, budget, responsible teams, and live progress tracking — anchored to a continuous Plan→Do→Study→Act cycle. All figures are fictional sample data.</p>
+        </div>
+
+        <!-- AI exec brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Improvement Brief <span class="ai-pill">Simulated</span></h4>
+          <p>The improvement plan is <b>on pace overall (68% of milestones complete)</b>. <b>Goal 1 (Mathematics)</b> is the lagging priority at 52% — two action steps are behind on the reteach cycle and warrant a budget reallocation. <b>Goal 2 (Attendance)</b> is trending up after the early-warning watchlist launch, and <b>Goal 3 (Belonging &amp; Climate)</b> is ahead of schedule. Recommended focus this month: accelerate the math coaching cycle and lock the spring re-assessment date. <a href="ai-assistant.html">Ask the assistant for the full analysis →</a></p>
+        </div>
+
+        <!-- progress scorecards per goal -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard red"><div class="sc-label">Goal 1 · Mathematics Achievement</div><div class="sc-num"><span data-count="52" data-suffix="%">0</span></div><div class="sc-trend down">behind pace — watch</div></div>
+          <div class="scorecard amber"><div class="sc-label">Goal 2 · Attendance &amp; Engagement</div><div class="sc-num"><span data-count="71" data-suffix="%">0</span></div><div class="sc-trend up">▲ improving</div></div>
+          <div class="scorecard green"><div class="sc-label">Goal 3 · Belonging &amp; Climate</div><div class="sc-num"><span data-count="83" data-suffix="%">0</span></div><div class="sc-trend up">ahead of schedule</div></div>
+        </div>
+
+        <!-- overall progress barlist -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>📊 Goal Progress at a Glance</h3>
+          <div class="barlist">
+            <div class="row"><span>Goal 1 — Math</span><span class="track"><span class="fill" data-pct="52"></span></span><b>52%</b></div>
+            <div class="row"><span>Goal 2 — Attendance</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+            <div class="row"><span>Goal 3 — Belonging</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.8rem;">Percent of planned milestones completed this school year (fictional sample data).</p>
+        </div>
+
+        <!-- ===== Strategic Goals (expandable) ===== -->
+        <h2 style="margin:0 0 .8rem;">🎯 Strategic Goals <span class="muted" style="font-size:.9rem;font-weight:400;">— click a goal to expand its full plan</span></h2>
+
+        <!-- GOAL 1 -->
+        <div class="card" style="margin-bottom:1.2rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Goal 1 — Raise Grade 8 mathematics proficiency from 66% to 78% by June.</b></span><span class="tl-pill red">52% · Watch</span></div>
+          <div class="drill-panel">
+            <h4>Action Plan</h4>
+            <ul>
+              <li>Run a focused coaching cycle on proportional-reasoning instruction for the two affected sections.</li>
+              <li>Insert a one-week reteach block with a common re-assessment.</li>
+              <li>Pair the first-year teacher with the strongest math mentor for four weeks.</li>
+              <li>Adopt weekly common formative assessments with data-team review.</li>
+            </ul>
+
+            <h4>Milestones</h4>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">September</span><h4>Diagnostic &amp; baseline set</h4>Benchmark administered; two priority sections identified.</li>
+              <li class="done"><span class="t-when">November</span><h4>Coaching cycle 1 complete</h4>First coaching cycle closed; pacing realigned.</li>
+              <li class="now"><span class="t-when">February — in progress</span><h4>Reteach block + re-assessment</h4>Reteach underway; common re-assessment date being finalized.</li>
+              <li><span class="t-when">April</span><h4>Coaching cycle 2</h4>Second cycle with mentor pairing and learning walks.</li>
+              <li><span class="t-when">June</span><h4>End-of-year benchmark</h4>Target: 78% proficiency.</li>
+            </ul>
+
+            <h4>Evidence of Progress</h4>
+            <ul>
+              <li>Proportional-reasoning formative accuracy improved from 54% to 63%.</li>
+              <li>Pacing gap reduced from 3 weeks to 1 week behind.</li>
+              <li>Two learning walks documented with actionable feedback.</li>
+            </ul>
+
+            <h4>Success Indicators</h4>
+            <ul>
+              <li><b>Lead:</b> ≥70% accuracy on common formative assessments by April.</li>
+              <li><b>Lag:</b> Grade 8 math proficiency reaches 78% on the June benchmark.</li>
+            </ul>
+
+            <p><b>Responsible team:</b> Math Department Chair (owner), Instructional Coach, Grade 8 math teachers, Data Team.</p>
+          </div>
+        </div>
+
+        <!-- GOAL 2 -->
+        <div class="card" style="margin-bottom:1.2rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Goal 2 — Reduce chronic absenteeism from 18% to 10% through tiered attendance supports.</b></span><span class="tl-pill amber">71% · On Pace</span></div>
+          <div class="drill-panel">
+            <h4>Action Plan</h4>
+            <ul>
+              <li>Deploy an early-warning watchlist and assign each flagged student a check-in adult.</li>
+              <li>Launch positive family outreach (calls/texts) before absences accumulate.</li>
+              <li>Analyze Monday/Friday absence clusters for scheduling or engagement causes.</li>
+              <li>Recognize attendance gains with a tiered incentive program.</li>
+            </ul>
+
+            <h4>Milestones</h4>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">September</span><h4>Watchlist launched</h4>62 chronically absent students identified and assigned mentors.</li>
+              <li class="done"><span class="t-when">November</span><h4>Family-outreach protocol live</h4>Positive-contact scripts and cadence in place.</li>
+              <li class="now"><span class="t-when">January — in progress</span><h4>Mid-year review</h4>Mon/Fri pattern analysis underway; tiered incentives launched.</li>
+              <li><span class="t-when">March</span><h4>Tier-2 home visits</h4>Targeted home visits for students with 3+ unexcused absences.</li>
+              <li><span class="t-when">June</span><h4>Year-end target</h4>Target: chronic absenteeism at 10%.</li>
+            </ul>
+
+            <h4>Evidence of Progress</h4>
+            <ul>
+              <li>Average daily attendance up 0.6 points since the watchlist launch.</li>
+              <li>Positive family contacts up 22% term over term.</li>
+              <li>Chronic absenteeism eased from 18% to 15%.</li>
+            </ul>
+
+            <h4>Success Indicators</h4>
+            <ul>
+              <li><b>Lead:</b> 90% of watchlist students receive a weekly check-in.</li>
+              <li><b>Lag:</b> Chronic absenteeism falls to 10% by June.</li>
+            </ul>
+
+            <p><b>Responsible team:</b> Assistant Principal (owner), Attendance Clerk, Counselors, Family-Engagement Liaison.</p>
+          </div>
+        </div>
+
+        <!-- GOAL 3 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Goal 3 — Strengthen Grade 8 belonging and climate to reduce behavior referrals 20%.</b></span><span class="tl-pill green">83% · On Track</span></div>
+          <div class="drill-panel">
+            <h4>Action Plan</h4>
+            <ul>
+              <li>Launch a daily Grade 8 advisory focused on connection and goal-setting.</li>
+              <li>Implement restorative practices in place of exclusionary discipline.</li>
+              <li>Administer and act on a quarterly belonging survey.</li>
+              <li>Train staff on relationship-centered classroom routines.</li>
+            </ul>
+
+            <h4>Milestones</h4>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">August</span><h4>Advisory rollout</h4>Advisory schedule and curriculum launched school-wide.</li>
+              <li class="done"><span class="t-when">October</span><h4>Restorative-practices training</h4>All Grade 8 staff trained; circles in use.</li>
+              <li class="done"><span class="t-when">December</span><h4>Belonging survey 1</h4>Baseline captured; action steps identified.</li>
+              <li class="now"><span class="t-when">February — in progress</span><h4>Survey 2 &amp; adjust</h4>Second survey administered; routines being refined.</li>
+              <li><span class="t-when">May</span><h4>Year-end climate review</h4>Target: behavior referrals down 20%.</li>
+            </ul>
+
+            <h4>Evidence of Progress</h4>
+            <ul>
+              <li>Behavior referrals down 12% year to date.</li>
+              <li>"Sense of belonging" survey item up 7 points in Grade 8.</li>
+              <li>Exclusionary suspensions reduced by one-third.</li>
+            </ul>
+
+            <h4>Success Indicators</h4>
+            <ul>
+              <li><b>Lead:</b> 100% of Grade 8 students in a daily advisory with a named adult.</li>
+              <li><b>Lag:</b> Behavior referrals decrease 20% by May.</li>
+            </ul>
+
+            <p><b>Responsible team:</b> Dean of Students (owner), SEL Coordinator, Grade 8 advisory teachers, Counselors.</p>
+          </div>
+        </div>
+
+        <!-- Budget allocation -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>💰 Budget Allocation</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Goal / Initiative</th><th>Funding Source</th><th>Allocated</th><th>Spent to Date</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Goal 1 — Math coaching &amp; materials</td><td>Title I</td><td>$48,000</td><td>$21,500</td><td><span class="tl-pill amber">45% used</span></td></tr>
+                <tr><td>Goal 2 — Attendance &amp; family outreach</td><td>Title I / SIP</td><td>$22,000</td><td>$14,300</td><td><span class="tl-pill green">65% used</span></td></tr>
+                <tr><td>Goal 3 — Advisory &amp; restorative practices</td><td>SEL Grant</td><td>$18,500</td><td>$15,800</td><td><span class="tl-pill green">85% used</span></td></tr>
+                <tr><td>Cross-goal — Data &amp; assessment tools</td><td>General Fund</td><td>$11,500</td><td>$6,200</td><td><span class="tl-pill amber">54% used</span></td></tr>
+                <tr><td><b>Total</b></td><td>—</td><td><b>$100,000</b></td><td><b>$57,800</b></td><td><span class="tl-pill green">58% used</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.6rem;">Fictional sample budget for demonstration.</p>
+        </div>
+
+        <!-- Continuous-improvement cycle -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🔄 Continuous-Improvement Cycle (PDSA)</h3>
+          <p class="muted" style="margin-bottom:1rem;">Every goal runs on a repeating Plan→Do→Study→Act cycle so the plan stays a living document, not a binder on a shelf.</p>
+          <div class="tool-grid">
+            <div class="tool-card" style="cursor:default;">
+              <div class="t-ico">📝</div>
+              <h4>1 · Plan</h4>
+              <p>Set the measurable goal, define action steps and owners, and decide what evidence will signal progress.</p>
+            </div>
+            <div class="tool-card" style="cursor:default;">
+              <div class="t-ico">🚀</div>
+              <h4>2 · Do</h4>
+              <p>Implement the action steps at small scale — coaching cycles, reteach blocks, outreach, advisory routines.</p>
+            </div>
+            <div class="tool-card" style="cursor:default;">
+              <div class="t-ico">🔬</div>
+              <h4>3 · Study</h4>
+              <p>Review lead and lag indicators against targets; surface what's working and where the plan is stalling.</p>
+            </div>
+            <div class="tool-card" style="cursor:default;">
+              <div class="t-ico">🔁</div>
+              <h4>4 · Act</h4>
+              <p>Adjust, scale what works, reallocate budget, and re-enter the cycle with refined action steps.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- quick actions -->
+        <div class="btn-row">
+          <a class="btn" href="ai-assistant.html">✨ Ask the AI Assistant</a>
+          <a class="btn ghost" href="reports.html">📄 Generate School Improvement Report</a>
+          <a class="btn ghost" href="executive-dashboard.html">📊 Back to Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI School Leadership Dashboard</h4><p style="color:#c9d6e6;">Decision intelligence for school leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="instructional-leadership.html">Instructional Leadership</a></li><li><a href="student-achievement.html">Student Achievement</a></li><li><a href="ai-assistant.html">AI Assistant</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated client-side for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
