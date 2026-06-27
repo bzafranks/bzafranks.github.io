@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standards Alignment Studio — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Map standards to units and assessments, visualize coverage with a heatmap, flag gaps, and crosswalk between curriculum frameworks in demonstration mode.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Design / <b>Standards Alignment</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎯 Design</span>
+          <h1>Standards Alignment Studio</h1>
+          <p class="lead">Map every standard to the units and assessments that address it, visualize coverage with a heatmap, surface gaps and over-coverage, and crosswalk between frameworks. Supports multiple curriculum frameworks in demonstration mode.</p>
+        </div>
+
+        <!-- Search / import bar -->
+        <form class="gen-form" style="margin-bottom:1.6rem;" aria-label="Search and import standards" onsubmit="return false;">
+          <div class="field" style="margin-bottom:.8rem;">
+            <label for="std-search">Search or import standards</label>
+            <input id="std-search" type="search" placeholder="Search a standard code or description (demo)…" aria-label="Search standards" disabled>
+            <p class="hint">Connected framework: Common Core ELA · Grade 5 — demonstration data, search disabled in this preview.</p>
+          </div>
+          <div class="pill-row" style="gap:.5rem;">
+            <button class="out-btn" type="button" disabled>⬆ Import framework</button>
+            <button class="out-btn" type="button" disabled>🔗 Connect LMS</button>
+            <button class="out-btn" type="button" disabled>↻ Re-scan coverage</button>
+          </div>
+        </form>
+
+        <!-- Standards Map table -->
+        <section aria-labelledby="std-map-h" style="margin-bottom:2.2rem;">
+          <h2 id="std-map-h">Standards Map</h2>
+          <p class="muted">Each standard mapped to the units that teach it and the assessments that measure it.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Illustrative coverage for Grade 5 ELA (Common Core).</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Standard</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Units covering</th>
+                  <th scope="col">Assessments</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>RI.5.1</b></td>
+                  <td>Quote accurately when explaining a text and drawing inferences.</td>
+                  <td>Units 1, 2, 5</td>
+                  <td>3 formative · 1 summative</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">● Covered</span></td>
+                </tr>
+                <tr>
+                  <td><b>RI.5.2</b></td>
+                  <td>Determine two or more main ideas and explain support.</td>
+                  <td>Unit 1</td>
+                  <td>2 formative</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">● Covered</span></td>
+                </tr>
+                <tr>
+                  <td><b>RI.5.3</b></td>
+                  <td>Explain relationships between individuals, events, and ideas.</td>
+                  <td>Unit 1</td>
+                  <td>1 formative</td>
+                  <td><span class="pill" style="background:#fdf0db;color:#b56a00;">● Light</span></td>
+                </tr>
+                <tr>
+                  <td><b>W.5.1</b></td>
+                  <td>Write opinion pieces supporting a point of view with reasons.</td>
+                  <td>Units 3, 4</td>
+                  <td>2 formative · 1 performance task</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">● Covered</span></td>
+                </tr>
+                <tr>
+                  <td><b>W.5.7</b></td>
+                  <td>Conduct short research projects using several sources.</td>
+                  <td>Unit 5</td>
+                  <td>1 performance task</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">● Covered</span></td>
+                </tr>
+                <tr>
+                  <td><b>L.5.4</b></td>
+                  <td>Determine meaning of unknown words using context and roots.</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td><span class="pill" style="background:#fbe4e4;color:#a61b1b;">● Gap</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Coverage Heatmap -->
+        <section aria-labelledby="std-hm-h" style="margin-bottom:2.2rem;">
+          <h2 id="std-hm-h">Coverage Heatmap</h2>
+          <p class="muted">Depth of coverage for each standard across units — darker means more lessons and assessments touch that standard.</p>
+          <div class="heatmap" style="grid-template-columns:120px repeat(6,1fr);max-width:760px;" role="table" aria-label="Standards coverage heatmap by unit">
+            <!-- header row -->
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader"></div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U1</div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U2</div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U3</div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U4</div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U5</div>
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);" role="columnheader">U6</div>
+
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);justify-content:start;" role="rowheader">RI.5.1</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="RI.5.1 Unit 1: heavy">4</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="RI.5.1 Unit 2: strong">3</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="RI.5.1 Unit 3: none">0</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="RI.5.1 Unit 4: light">1</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="RI.5.1 Unit 5: strong">3</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="RI.5.1 Unit 6: light">1</div>
+
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);justify-content:start;" role="rowheader">RI.5.2</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="RI.5.2 Unit 1: heavy">4</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="RI.5.2 Unit 2: light">1</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="RI.5.2 Unit 3: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="RI.5.2 Unit 4: none">0</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="RI.5.2 Unit 5: moderate">2</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="RI.5.2 Unit 6: none">0</div>
+
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);justify-content:start;" role="rowheader">W.5.1</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="W.5.1 Unit 1: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="W.5.1 Unit 2: none">0</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="W.5.1 Unit 3: heavy">4</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="W.5.1 Unit 4: strong">3</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="W.5.1 Unit 5: light">1</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="W.5.1 Unit 6: moderate">2</div>
+
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);justify-content:start;" role="rowheader">W.5.7</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="W.5.7 Unit 1: none">0</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="W.5.7 Unit 2: light">1</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="W.5.7 Unit 3: light">1</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="W.5.7 Unit 4: none">0</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="W.5.7 Unit 5: heavy">4</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="W.5.7 Unit 6: light">1</div>
+
+            <div class="hm-cell" style="background:transparent;color:var(--ink-soft);justify-content:start;" role="rowheader">L.5.4</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 1: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 2: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 3: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 4: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 5: none">0</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="L.5.4 Unit 6: none">0</div>
+          </div>
+          <div class="legend" aria-hidden="true">
+            <span><i class="hm-0" style="background:#e9eef3;"></i> None</span>
+            <span><i class="hm-1" style="background:#cfe3d6;"></i> Light</span>
+            <span><i class="hm-2" style="background:#8fcca7;"></i> Moderate</span>
+            <span><i class="hm-3" style="background:#4c9a6e;"></i> Strong</span>
+            <span><i class="hm-4" style="background:#2f7a52;"></i> Heavy</span>
+          </div>
+        </section>
+
+        <!-- Gap Analysis -->
+        <section aria-labelledby="std-gap-h" style="margin-bottom:2.2rem;">
+          <h2 id="std-gap-h">Gap Analysis</h2>
+          <p class="muted">Standards flagged for action — uncovered standards and standards taught more than the framework requires.</p>
+          <div class="tool-grid">
+            <div class="card" style="border-left:4px solid #a61b1b;">
+              <span class="pill" style="background:#fbe4e4;color:#a61b1b;">⚠ Uncovered</span>
+              <h4 style="margin:.6rem 0 .3rem;">L.5.4 — Word meaning from context</h4>
+              <p class="muted">Not addressed in any unit or assessment. Recommend a vocabulary strand in Units 2 and 5.</p>
+            </div>
+            <div class="card" style="border-left:4px solid #b56a00;">
+              <span class="pill" style="background:#fdf0db;color:#b56a00;">▲ Light coverage</span>
+              <h4 style="margin:.6rem 0 .3rem;">RI.5.3 — Relationships in a text</h4>
+              <p class="muted">Touched in Unit 1 only, with a single formative check. Consider a summative item.</p>
+            </div>
+            <div class="card" style="border-left:4px solid #5a35c9;">
+              <span class="pill" style="background:#ede8fb;color:#5a35c9;">⬆ Over-covered</span>
+              <h4 style="margin:.6rem 0 .3rem;">RI.5.1 — Quoting &amp; inference</h4>
+              <p class="muted">Addressed across five units. Healthy spiral, but consolidate assessments to reduce redundancy.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Crosswalk -->
+        <section aria-labelledby="std-cw-h" style="margin-bottom:2.2rem;">
+          <h2 id="std-cw-h">Framework Crosswalk</h2>
+          <p class="muted">Compare how the same skills are coded across two frameworks — demonstration mode.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Illustrative crosswalk: Common Core ELA ↔ TEKS (Texas). Demonstration mapping only.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Common Core (ELA G5)</th>
+                  <th scope="col">TEKS (Grade 5)</th>
+                  <th scope="col">Shared skill</th>
+                  <th scope="col">Match</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>RI.5.1</b></td>
+                  <td>5.6.G / 5.7.C</td>
+                  <td>Cite textual evidence; draw inferences</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">Strong</span></td>
+                </tr>
+                <tr>
+                  <td><b>RI.5.2</b></td>
+                  <td>5.7.D</td>
+                  <td>Determine main / central ideas</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">Strong</span></td>
+                </tr>
+                <tr>
+                  <td><b>W.5.1</b></td>
+                  <td>5.11.B</td>
+                  <td>Write opinion / argument with reasons</td>
+                  <td><span class="pill" style="background:#fdf0db;color:#b56a00;">Partial</span></td>
+                </tr>
+                <tr>
+                  <td><b>L.5.4</b></td>
+                  <td>5.3.B / 5.3.C</td>
+                  <td>Use context &amp; roots for word meaning</td>
+                  <td><span class="pill" style="background:#e6f5ea;color:#1f7a34;">Strong</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted" style="font-size:.85rem;">Supports multiple curriculum frameworks (Common Core, TEKS, NGSS, state standards) in demonstration mode.</p>
+        </section>
+
+        <!-- AI Alignment Summary -->
+        <div class="card exec-brief" aria-labelledby="std-ai-h">
+          <h4 id="std-ai-h"><span class="ai-pill">✨ AI Alignment Summary</span> <span class="ai-pill" style="margin-left:.4rem;">Simulated</span></h4>
+          <p>This Grade 5 ELA curriculum covers <b>5 of 6</b> sampled priority standards. Coverage is strongest for <b>RI.5.1</b> (spiraled across five units) and <b>W.5.1</b> (Units 3–4 with a performance task). One <b>gap</b> stands out: <b>L.5.4</b> (word meaning from context) is not yet addressed — recommend embedding a vocabulary strand in Units 2 and 5. <b>RI.5.3</b> is lightly covered and would benefit from a summative item. The Common Core ↔ TEKS crosswalk shows strong alignment on reading standards and partial alignment on opinion writing.</p>
+          <p class="muted" style="font-size:.85rem;margin-bottom:0;"><span class="ai-pill">👤 Human review</span> AI-generated summary — a curriculum expert reviews all alignment decisions before publishing.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

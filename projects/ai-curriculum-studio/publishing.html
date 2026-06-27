@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publishing Center — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Export finished curriculum to many formats — HTML, PDF, Word, PowerPoint, Canvas, Google Classroom, Moodle, Blackboard, SCORM, ZIP, website, and print-ready packages — through a guided publishing wizard.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Publishing Center</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🚀 Publishing Center</span>
+          <h1>Publishing Center</h1>
+          <p class="lead">Take finished, reviewed curriculum from the studio and export it to wherever your teachers and students learn. Publish to many formats and platforms — web, document, slide deck, LMS package, or print — from one guided wizard.</p>
+        </div>
+
+        <h2>Publishing wizard</h2>
+        <div class="wizard" role="list" aria-label="Publishing steps">
+          <div class="wizard-step" role="listitem"><span class="n">1</span> Select content</div>
+          <div class="wizard-step" role="listitem"><span class="n">2</span> Choose format</div>
+          <div class="wizard-step" role="listitem"><span class="n">3</span> Configure</div>
+          <div class="wizard-step" role="listitem"><span class="n">4</span> Publish</div>
+        </div>
+
+        <h2>Export formats</h2>
+        <div class="export-grid" aria-label="Export formats">
+          <div class="export-opt" data-fmt="HTML" role="button" tabindex="0">📄 HTML</div>
+          <div class="export-opt" data-fmt="PDF" role="button" tabindex="0">📕 PDF</div>
+          <div class="export-opt" data-fmt="Word" role="button" tabindex="0">📝 Word</div>
+          <div class="export-opt" data-fmt="PowerPoint" role="button" tabindex="0">📊 PowerPoint</div>
+          <div class="export-opt" data-fmt="Canvas" role="button" tabindex="0">🎨 Canvas</div>
+          <div class="export-opt" data-fmt="Google Classroom" role="button" tabindex="0">🏫 Google Classroom</div>
+          <div class="export-opt" data-fmt="Moodle" role="button" tabindex="0">🎓 Moodle</div>
+          <div class="export-opt" data-fmt="Blackboard" role="button" tabindex="0">⬛ Blackboard</div>
+          <div class="export-opt" data-fmt="SCORM" role="button" tabindex="0">📦 SCORM</div>
+          <div class="export-opt" data-fmt="ZIP" role="button" tabindex="0">🗜️ ZIP</div>
+          <div class="export-opt" data-fmt="Website" role="button" tabindex="0">🌐 Website</div>
+          <div class="export-opt" data-fmt="Print-ready" role="button" tabindex="0">🖨️ Print-ready</div>
+        </div>
+
+        <p style="margin-top:1.4rem;">
+          <button class="btn" type="button" data-wizard-next>Next step →</button>
+        </p>
+
+        <p class="muted" style="font-size:.88rem;">All exports are demonstrated client-side for this portfolio build. <b>Print</b> and <b>PDF</b> work right now through your browser's print dialog (File → Print, then choose “Save as PDF”). The remaining LMS and document targets are simulated to illustrate the publishing workflow.</p>
+
+        <div class="card">
+          <h3>What gets packaged</h3>
+          <p class="muted">Every publish bundles the full curriculum artifact set into the chosen format, with structure and accessibility preserved:</p>
+          <ul>
+            <li>Course, unit, and lesson content with headings, navigation, and metadata</li>
+            <li>Assessments, rubrics, and answer keys</li>
+            <li>Teacher guides, student workbooks, and parent / family resources</li>
+            <li>Graphic organizers, vocabulary lists, and reference sheets</li>
+            <li>Standards alignment and a coverage manifest</li>
+            <li>Accessibility scaffolding — semantic headings, alt-text guidance, and a print-ready stylesheet</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

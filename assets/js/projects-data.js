@@ -127,5 +127,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "📊",
     tags: ["AI Decision Support", "Educational Leadership", "Learning Analytics", "Executive Dashboards", "Explainable AI", "School Improvement"],
     summary: "An enterprise executive decision-support platform for principals, leadership teams, and district administrators — 14 dashboards (executive, school health, instructional leadership, curriculum, teacher coaching, achievement, attendance, behavior, staffing, PD, improvement planning), an explainable AI executive assistant, and a board-ready report generator, with command palette, notification center, and dark mode. Part of the AI for Education Innovation Suite."
+  },
+  {
+    id: "ai-curriculum-studio",
+    title: "AI Curriculum Authoring Studio",
+    subtitle: "Design curriculum, learning experiences & digital instruction with AI",
+    pillar: "id",
+    grade: "K–12 · Enterprise",
+    status: "done",
+    url: "projects/ai-curriculum-studio/index.html",
+    icon: "🏗️",
+    tags: ["AI Product", "Curriculum Development", "Learning Experience Design", "Authoring Platform", "Workflow Automation", "EdTech"],
+    summary: "A complete concept-to-publication curriculum authoring platform — 16 tools (workspace, curriculum builder, scope & sequence, standards alignment, unit & lesson builders, assessment & rubric studios, interactive-learning & AI-video studios, resource generator, publishing center, collaboration hub, templates, analytics) with drag-and-drop building, a publishing wizard, command palette, and dark mode. Part of the AI for Education Innovation Suite."
   }
 ];

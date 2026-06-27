@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Learning Builder — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Generate HTML/CSS/JS learning experiences: interactive lessons, vocab games, drag-and-drop, flashcards, simulations, timelines, matching, and knowledge checks with a live preview.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Author / <b>Interactive Learning</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎮 Interactive Learning</span>
+          <h1>Interactive Learning Builder</h1>
+          <p class="lead">Generate self-contained HTML/CSS/JS learning experiences — interactive lessons, vocabulary games, drag-and-drop matching, flashcards, simulations, timelines, matching tasks, knowledge checks, interactive notebooks, dashboards, and progress tracking — each accessible, embeddable in any LMS, and ready to preview before you publish.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="interactive">
+            <h3>Build an interactive activity</h3>
+            <div class="field">
+              <label for="int-kind">Activity type</label>
+              <select id="int-kind" name="kind">
+                <option>Drag-and-Drop Matching</option>
+                <option>Vocabulary Game</option>
+                <option>Flashcards</option>
+                <option>Knowledge Check</option>
+                <option>Interactive Timeline</option>
+                <option>Simulation</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="int-topic">Topic</label>
+              <input type="text" id="int-topic" name="topic" placeholder="e.g., Parts of speech">
+              <p class="hint">The skill or content the activity should teach and check.</p>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="interactive">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button><button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button><button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- ===== Live component preview ===== -->
+        <section class="card" style="margin-top:1.6rem;" aria-labelledby="preview-head">
+          <h3 id="preview-head">Live component preview</h3>
+          <p class="muted">A real, working knowledge-check built on the shared portfolio quiz component (<code>[data-quiz]</code>). Choose an answer to see immediate feedback and scoring — exactly how a generated interactive renders for students. Sample content is illustrative.</p>
+          <div data-quiz>
+            <div class="quiz-q" data-answer="1" data-why="A noun names a person, place, thing, or idea — here, “forest” names a place.">
+              <p class="q-text">Which word in this sentence is a <strong>noun</strong>? &nbsp; <em>“The curious fox explored the quiet forest.”</em></p>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option">curious</button>
+                <button type="button" class="quiz-option" data-correct>forest</button>
+                <button type="button" class="quiz-option">quiet</button>
+              </div>
+              <p class="quiz-feedback" role="status"></p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scope &amp; Sequence Designer — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Design annual maps, semester and quarter plans, weekly pacing, progressions, concept maps, standards coverage, cross-curricular connections, and calendars.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Design / <b>Scope &amp; Sequence</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗓️ Design</span>
+          <h1>Scope &amp; Sequence Designer</h1>
+          <p class="lead">Build annual maps, semester and quarter plans, weekly pacing, progressions, concept maps, standards coverage, cross-curricular connections, and instructional calendars. The AI drafts a pacing plan; you adjust units, flex days, and benchmarks to fit your calendar.</p>
+        </div>
+
+        <!-- (a) Generator -->
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="scope">
+            <h3>✨ Draft a Scope &amp; Sequence</h3>
+            <div class="field">
+              <label for="ss-subject">Subject</label>
+              <input id="ss-subject" name="subject" type="text" placeholder="e.g., ELA" value="ELA">
+            </div>
+            <div class="field">
+              <label for="ss-grade">Grade level</label>
+              <select id="ss-grade" name="grade">
+                <option>Kindergarten</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option selected>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="scope">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button><button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button><button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- (b) Visual year map -->
+        <section aria-labelledby="ss-map-h" style="margin-top:2.4rem;">
+          <h2 id="ss-map-h">Annual Map — Grade 5 ELA</h2>
+          <p class="muted">A full-year view of how units flow across quarters, with a Flex column for reteach, enrichment, and assessment windows.</p>
+          <div class="ss-wrap">
+            <div class="ss-grid" style="grid-template-columns:repeat(5,1fr)" role="table" aria-label="Grade 5 ELA annual scope and sequence map">
+              <div class="ss-cell head" role="columnheader">Q1</div>
+              <div class="ss-cell head" role="columnheader">Q2</div>
+              <div class="ss-cell head" role="columnheader">Q3</div>
+              <div class="ss-cell head" role="columnheader">Q4</div>
+              <div class="ss-cell head" role="columnheader">Flex</div>
+
+              <div class="ss-cell unit" role="cell"><b>Unit 1</b> · Informational Reading <small>(RI.5.1–RI.5.3)</small></div>
+              <div class="ss-cell unit" role="cell"><b>Unit 3</b> · Opinion &amp; Argument Writing <small>(W.5.1)</small></div>
+              <div class="ss-cell unit" role="cell"><b>Unit 5</b> · Research &amp; Synthesis <small>(W.5.7–W.5.9)</small></div>
+              <div class="ss-cell unit" role="cell"><b>Unit 6</b> · Narrative Craft &amp; Review <small>(W.5.3)</small></div>
+              <div class="ss-cell" role="cell">Diagnostic &amp; onboarding week</div>
+
+              <div class="ss-cell unit" role="cell"><b>Unit 2</b> · Citing Text Evidence <small>(RI.5.1)</small></div>
+              <div class="ss-cell unit" role="cell"><b>Unit 4</b> · Literary Analysis <small>(RL.5.2–RL.5.5)</small></div>
+              <div class="ss-cell" role="cell">Mid-year benchmark + conferring</div>
+              <div class="ss-cell" role="cell">Summative performance task</div>
+              <div class="ss-cell" role="cell">Reteach / enrichment days</div>
+
+              <div class="ss-cell" role="cell">2 formative checkpoints</div>
+              <div class="ss-cell" role="cell">Cross-curricular: Science texts</div>
+              <div class="ss-cell" role="cell">Cross-curricular: Social Studies</div>
+              <div class="ss-cell" role="cell">Portfolio reflection</div>
+              <div class="ss-cell" role="cell">State-test prep window</div>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:.7rem;font-size:.85rem;">Illustrative annual map (~36 instructional weeks). Sample pacing is for demonstration only.</p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

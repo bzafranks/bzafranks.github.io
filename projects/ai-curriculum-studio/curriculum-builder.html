@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Builder — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Build courses, programs, subjects, units, modules, lessons, pathways, and frameworks with vertical and horizontal alignment via drag-and-drop.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Design / <b>Curriculum Builder</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🏗️ Design</span>
+          <h1>Curriculum Builder</h1>
+          <p class="lead">Build courses, programs, subjects, units, modules, lessons, pathways, and frameworks — with vertical and horizontal alignment preserved through drag-and-drop. Describe what you need and the AI drafts a structured outline; then reorder and refine it visually.</p>
+        </div>
+
+        <!-- (a) Generator -->
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="curriculum">
+            <h3>✨ Draft a Curriculum Map</h3>
+            <div class="field">
+              <label for="cb-subject">Subject</label>
+              <input id="cb-subject" name="subject" type="text" placeholder="e.g., ELA" value="ELA">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cb-grade">Grade level</label>
+                <select id="cb-grade" name="grade">
+                  <option>Kindergarten</option>
+                  <option>Grade 1</option>
+                  <option>Grade 2</option>
+                  <option>Grade 3</option>
+                  <option>Grade 4</option>
+                  <option selected>Grade 5</option>
+                  <option>Grade 6</option>
+                  <option>Grade 7</option>
+                  <option>Grade 8</option>
+                  <option>Grade 9</option>
+                  <option>Grade 10</option>
+                  <option>Grade 11</option>
+                  <option>Grade 12</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cb-units">Number of units</label>
+                <input id="cb-units" name="units" type="number" min="1" max="12" value="6">
+              </div>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+
+          <div class="gen-output" data-output="curriculum">
+            <div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button><button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button><button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">✨</div><p>Fill in the form, then Generate.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- (b) Drag-and-drop builder demo -->
+        <section aria-labelledby="cb-tree-h" style="margin-top:2.4rem;">
+          <h2 id="cb-tree-h">Visual Curriculum Builder</h2>
+          <p class="muted">Reorder courses, units, and lessons directly. Try dragging a card — the studio keeps vertical and horizontal alignment intact as you move things.</p>
+          <div class="builder-tree" data-builder-tree role="list" aria-label="Curriculum structure — drag to reorder">
+            <div class="tree-node lvl-course" role="listitem">
+              <b>📚 Grade 5 ELA — Reading &amp; Writing</b>
+              <div class="t-meta">Course · 6 units · 48 lessons · vertically aligned K–8</div>
+            </div>
+            <div class="tree-node lvl-unit" role="listitem">
+              <b>📦 Unit 1 — Informational Reading</b>
+              <div class="t-meta">Unit · 8 lessons · anchor standards RI.5.1–RI.5.3</div>
+            </div>
+            <div class="tree-node lvl-lesson" role="listitem">
+              <b>📝 Lesson 1.1 — Main Idea &amp; Key Details</b>
+              <div class="t-meta">Lesson · 45 min · formative exit ticket</div>
+            </div>
+            <div class="tree-node lvl-lesson" role="listitem">
+              <b>📝 Lesson 1.2 — Analyzing Text Structure</b>
+              <div class="t-meta">Lesson · 45 min · structure sort activity</div>
+            </div>
+            <div class="tree-node lvl-unit" role="listitem">
+              <b>📦 Unit 2 — Citing Evidence</b>
+              <div class="t-meta">Unit · 7 lessons · builds on Unit 1 · RI.5.1</div>
+            </div>
+            <div class="tree-node lvl-lesson" role="listitem">
+              <b>📝 Lesson 2.1 — Evidence Chains</b>
+              <div class="t-meta">Lesson · 50 min · guided + collaborative practice</div>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:.7rem;font-size:.85rem;">Drag to reorder — vertical &amp; horizontal alignment preserved. Sample curriculum is illustrative.</p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

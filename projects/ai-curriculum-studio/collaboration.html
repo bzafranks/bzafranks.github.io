@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaboration Hub — AI Curriculum Authoring Studio</title>
+  <meta name="description" content="Coordinate curriculum work — comments, review workflow, task assignments, an approval process, SME review, version comparison, activity history, notifications, shared editing, and a publishing workflow.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Curriculum Authoring Studio" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CS</span><span class="brand-text"><span class="brand-title">AI Curriculum Studio</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workspace.html">Workspace</a></li>
+        <li><a href="curriculum-builder.html">Builder</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+        <li><a href="publishing.html">Publishing</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every studio page) ===== -->
+      <aside class="app-rail" aria-label="Studio tools">
+        <div class="rail-brand"><span class="mark">CS</span><b>Curriculum Studio</b></div>
+        <div class="rail-group">Workspace</div>
+        <a class="rail-link" href="workspace.html"><span class="ico">🗂️</span> Curriculum Workspace</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="curriculum-builder.html"><span class="ico">🏗️</span> Curriculum Builder</a>
+        <a class="rail-link" href="scope-sequence.html"><span class="ico">🗓️</span> Scope &amp; Sequence</a>
+        <a class="rail-link" href="standards.html"><span class="ico">🎯</span> Standards Alignment</a>
+        <div class="rail-group">Author</div>
+        <a class="rail-link" href="units.html"><span class="ico">📦</span> Unit Planner</a>
+        <a class="rail-link" href="lessons.html"><span class="ico">📝</span> Lesson Builder</a>
+        <a class="rail-link" href="assessment.html"><span class="ico">🧪</span> Assessment Studio</a>
+        <a class="rail-link" href="rubrics.html"><span class="ico">📊</span> Rubric Generator</a>
+        <a class="rail-link" href="interactive-builder.html"><span class="ico">🎮</span> Interactive Learning</a>
+        <a class="rail-link" href="video-studio.html"><span class="ico">🎬</span> AI Video Studio</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📄</span> Resource Generator</a>
+        <div class="rail-group">Deliver</div>
+        <a class="rail-link" href="publishing.html"><span class="ico">🚀</span> Publishing Center</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration Hub</a>
+        <a class="rail-link" href="templates.html"><span class="ico">🧩</span> Template Library</a>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Analytics</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Deliver / <b>Collaboration Hub</b></div>
+          <div class="app-actions">
+            <span class="autosave"><span class="d"></span> Autosaved</span>
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Command Palette</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">👥 Collaboration Hub</span>
+          <h1>Collaboration Hub</h1>
+          <p class="lead">Bring your authoring team together. Track comments, a review workflow, task assignments, and an approval process with subject-matter-expert (SME) review — plus version comparison, activity history, notifications, shared editing, and a publishing workflow that gates release behind sign-off.</p>
+        </div>
+
+        <h2>Review board</h2>
+        <p>Each card is a curriculum artifact moving from drafting to approval. Sample names and dates below are <b>illustrative</b>.</p>
+        <div class="kanban" aria-label="Review board">
+          <div class="kanban-col">
+            <h4>To Do</h4>
+            <div class="kanban-card">Grade 5 ELA · Unit 4 lessons<div class="who">Assigned to Maya Ellison</div></div>
+            <div class="kanban-card">Grade 7 Math · End-of-unit assessment<div class="who">Assigned to Devon Park</div></div>
+            <div class="kanban-card">Grade 4 Science · Parent guide<div class="who">Unassigned</div></div>
+          </div>
+          <div class="kanban-col">
+            <h4>In Progress</h4>
+            <div class="kanban-card">Grade 5 ELA · Unit 3 rubric<div class="who">Maya Ellison · editing</div></div>
+            <div class="kanban-card">Grade 7 Math · Scope &amp; sequence<div class="who">Devon Park · drafting</div></div>
+          </div>
+          <div class="kanban-col">
+            <h4>SME Review</h4>
+            <div class="kanban-card">Grade 4 Science · Ecosystems unit<div class="who">Dr. Aisha Rahman · reviewing</div></div>
+            <div class="kanban-card">Grade 5 ELA · Unit 2 reading passages<div class="who">Dr. Aisha Rahman · queued</div></div>
+          </div>
+          <div class="kanban-col">
+            <h4>Approved</h4>
+            <div class="kanban-card">Grade 5 ELA · Unit 1 complete<div class="who">Signed off by Carlos Mendez</div></div>
+            <div class="kanban-card">Grade 7 Math · Unit 1 assessment<div class="who">Signed off by Carlos Mendez</div></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;">
+          <h3>Review &amp; comments</h3>
+          <p class="muted">Threaded feedback on the artifact under review — Grade 4 Science · Ecosystems unit (illustrative).</p>
+
+          <div class="version-row">
+            <span class="v-tag">💬</span>
+            <div class="v-body">
+              <b>Dr. Aisha Rahman</b> — SME Review<br>
+              The food-web diagram in Lesson 3 should label producers and consumers explicitly for grade-level accessibility.
+              <small><br>Jun 18, 2026 · 9:42 AM</small>
+            </div>
+          </div>
+          <div class="version-row" style="margin-left:2rem;">
+            <span class="v-tag">↳</span>
+            <div class="v-body">
+              <b>Maya Ellison</b> — Author<br>
+              Good catch — added labels and a short legend. Re-submitting for review.
+              <small><br>Jun 18, 2026 · 2:15 PM</small>
+            </div>
+          </div>
+          <div class="version-row">
+            <span class="v-tag">💬</span>
+            <div class="v-body">
+              <b>Carlos Mendez</b> — Curriculum Lead<br>
+              Essential question for Unit 4 reads a little broad — can we tie it to the performance task?
+              <small><br>Jun 20, 2026 · 11:03 AM</small>
+            </div>
+          </div>
+          <div class="version-row" style="margin-left:2rem;">
+            <span class="v-tag">↳</span>
+            <div class="v-body">
+              <b>Devon Park</b> — Author<br>
+              Reworded to focus on the synthesis task. Resolved.
+              <small><br>Jun 20, 2026 · 4:48 PM</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:1.4rem;">
+          <h3>Approval workflow</h3>
+          <ol>
+            <li><b>Draft</b> — author creates and self-checks the artifact.</li>
+            <li><b>Peer review</b> — a second author leaves comments and suggested edits.</li>
+            <li><b>SME review</b> — a subject-matter expert verifies accuracy and standards fit.</li>
+            <li><b>Lead sign-off</b> — the curriculum lead approves for release.</li>
+            <li><b>Publish</b> — the approved version is handed to the Publishing Center.</li>
+          </ol>
+        </div>
+
+        <h2 style="margin-top:1.6rem;">Version history</h2>
+        <p class="muted">Compare revisions and restore any prior version. Sample history (illustrative).</p>
+        <div class="card">
+          <div class="version-row">
+            <span class="v-tag">v2.0</span>
+            <div class="v-body">
+              <b>Carlos Mendez</b> — Approved for publishing; merged SME edits and finalized Unit 4 essential question.
+              <small><br>Jun 21, 2026</small>
+            </div>
+          </div>
+          <div class="version-row">
+            <span class="v-tag">v1.2</span>
+            <div class="v-body">
+              <b>Devon Park</b> — Reworded essential question to align with the synthesis performance task.
+              <small><br>Jun 20, 2026</small>
+            </div>
+          </div>
+          <div class="version-row">
+            <span class="v-tag">v1.1</span>
+            <div class="v-body">
+              <b>Maya Ellison</b> — Added labeled food-web diagram and vocabulary legend to Lesson 3.
+              <small><br>Jun 18, 2026</small>
+            </div>
+          </div>
+          <div class="version-row">
+            <span class="v-tag">v1.0</span>
+            <div class="v-body">
+              <b>Maya Ellison</b> — Initial AI-assisted draft of the Ecosystems unit submitted for review.
+              <small><br>Jun 16, 2026</small>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.85rem;"><span class="ai-pill">👤 Human review</span> Names, comments, dates, and versions are fictional and illustrative for this portfolio demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Curriculum Authoring Studio</h4><p style="color:#c9d6e6;">Concept-to-publication curriculum authoring — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="curriculum-builder.html">Builder</a></li><li><a href="units.html">Units</a></li><li><a href="assessment.html">Assessment</a></li><li><a href="publishing.html">Publishing</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All AI is simulated client-side for demonstration; sample curriculum is illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
