@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Analytics — AI Student Success Early Warning System</title>
+  <meta name="description" content="Attendance analytics: daily attendance, chronic absenteeism, trends and patterns, predictive forecasting, intervention effectiveness, family communication, and AI-generated attendance risk alerts.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Analytics / <b>Attendance Analytics</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📅 Attendance Analytics</span>
+          <h1>Attendance Analytics</h1>
+          <p class="lead">Daily attendance, chronic absenteeism, trend and pattern detection, predictive forecasting, intervention effectiveness, and family communication — with AI-generated attendance risk alerts. All figures are fictional sample data created for demonstration.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>Sample K–12 School</option><option>North Campus</option></select>
+          <label>Term</label><select><option>This Semester</option><option>Year to Date</option></select>
+          <label>Grade</label><select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPIs -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Average Daily Attendance</div><div class="sc-num"><span data-count="93" data-suffix="%">0</span></div><div class="sc-trend up">▲ 1% vs. last month</div></div>
+          <div class="scorecard amber"><div class="sc-label">Chronic Absenteeism</div><div class="sc-num"><span data-count="16" data-suffix="%">0</span></div><div class="sc-trend down">▲ 2% — watch</div></div>
+          <div class="scorecard amber"><div class="sc-label">Students Below 90%</div><div class="sc-num"><span data-count="58">0</span></div><div class="sc-trend down">▲ 7 this term</div></div>
+          <div class="scorecard green"><div class="sc-label">Attendance Plans Working</div><div class="sc-num"><span data-count="68" data-suffix="%">0</span></div><div class="sc-trend up">▲ 5% met goals</div></div>
+        </div>
+
+        <!-- daily gauge + trends + patterns -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Daily Attendance</h3><div class="gauge" data-gauge="93" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Present today</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Present 93% · Tardy 3% · Absent 4%</p></div>
+          <div class="card"><h3 style="margin-top:0;">Attendance Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Attendance trend over the term"><path class="area" d="M0,20 L50,22 L100,26 L150,24 L200,30 L250,28 L300,34 L300,64 L0,64 Z"></path><path class="line" d="M0,20 L50,22 L100,26 L150,24 L200,30 L250,28 L300,34"></path></svg><p class="muted" style="font-size:.84rem;">Slight decline — monitor Grade 8.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Weekly Pattern</h3><div class="barlist">
+            <div class="row"><span>Monday</span><div class="track"><span class="fill" data-pct="88"></span></div><span>88%</span></div>
+            <div class="row"><span>Tuesday</span><div class="track"><span class="fill" data-pct="95"></span></div><span>95%</span></div>
+            <div class="row"><span>Wednesday</span><div class="track"><span class="fill" data-pct="96"></span></div><span>96%</span></div>
+            <div class="row"><span>Thursday</span><div class="track"><span class="fill" data-pct="94"></span></div><span>94%</span></div>
+            <div class="row"><span>Friday</span><div class="track"><span class="fill" data-pct="86"></span></div><span>86%</span></div>
+          </div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Clear Monday/Friday clustering of absences.</p></div>
+        </div>
+
+        <!-- AI briefing -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Attendance Risk Alerts <span class="ai-pill">Simulated</span></h4>
+          <p>Three attendance patterns warrant attention in this fictional sample:</p>
+          <div class="insight"><b>Pattern 1 — Monday/Friday clustering.</b> 62% of all absences fall on Mondays and Fridays, concentrated in Grade 8. Recommend a positive Monday check-in and proactive family outreach before long-weekend absences accumulate.</div>
+          <div class="insight"><b>Pattern 2 — Early chronic-risk signal.</b> 58 students are tracking below 90% attendance; 21 are on pace to become chronically absent if the current trend holds. Adding them to an early-warning watchlist now creates a key window to act.</div>
+          <div class="insight"><b>Pattern 3 — Communication gap.</b> 40% of flagged students' families have had no positive contact this term, correlating with slower attendance recovery. Recommend proactive, strengths-based outreach.</div>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 Educator decides</span> AI analysis on fictional sample data — transparent decision-support, reviewed by educators before any action. <a href="ai-risk-engine.html">Open the AI Risk Engine →</a></p>
+        </div>
+
+        <!-- forecasting + intervention effectiveness -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Attendance Forecasting <span class="tl-pill amber">Predictive — illustrative</span></h3>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Projected attendance trend"><path class="area" d="M0,24 L60,26 L120,28 L180,30 L240,33 L300,36 L300,64 L0,64 Z"></path><path class="line" d="M0,24 L60,26 L120,28 L180,30 L240,33 L300,36"></path></svg>
+            <p class="muted" style="font-size:.84rem;">Projected average daily attendance drifts toward ~91% over the next 6 weeks without intervention. Forecast is an illustrative model on fictional data, not a guarantee.</p>
+            <ul style="font-size:.9rem;">
+              <li>21 students projected to cross the chronic-absence threshold (illustrative).</li>
+              <li>Grade 8 projected to fall furthest; K–5 projected stable.</li>
+            </ul>
+          </div>
+          <div class="card"><h3 style="margin-top:0;">Intervention Effectiveness</h3>
+            <div class="barlist">
+              <div class="row"><span>Mentor check-in</span><div class="track"><span class="fill" data-pct="74"></span></div><span>74%</span></div>
+              <div class="row"><span>Family outreach</span><div class="track"><span class="fill" data-pct="69"></span></div><span>69%</span></div>
+              <div class="row"><span>Incentive program</span><div class="track"><span class="fill" data-pct="61"></span></div><span>61%</span></div>
+              <div class="row"><span>Schedule change</span><div class="track"><span class="fill" data-pct="55"></span></div><span>55%</span></div>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.6rem;">% of students improving attendance after each support type (fictional sample).</p>
+          </div>
+        </div>
+
+        <!-- attendance-risk tiers (drill) -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🪜 Attendance-Risk Tiers <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 1 — Universal (≥ 95% attendance)</b></span><span class="tl-pill green">Stable</span></div>
+          <div class="drill-panel"><p class="muted">Approximately 71% of students. Maintain a positive school-wide attendance culture, clear daily routines, and timely first-absence acknowledgements. No individual plan needed.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 2 — Targeted (90–94% attendance)</b></span><span class="tl-pill amber">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Approximately 23% of students. Add to early-warning watchlist; assign a named check-in adult; begin positive family outreach. Review attendance every 3 weeks.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 3 — Intensive (&lt; 90% / chronic)</b></span><span class="tl-pill red">Act now</span></div>
+          <div class="drill-panel"><p class="muted">Approximately 6% of students. Convene the student-support team; assign a case-manager; develop an individualized attendance plan with explicit goals, family partnership, and weekly monitoring.</p></div>
+        </div>
+
+        <!-- family communication timeline -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Family Communication Log</h3>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">This week</span><br>Positive outreach call to 18 Tier 2 families — strengths-based check-in.</li>
+            <li class="now"><span class="t-when">In progress</span><br>Attendance-plan conference scheduled for 6 Tier 3 students.</li>
+            <li><span class="t-when">Planned</span><br>Translated attendance reminders to be sent to multilingual families.</li>
+            <li><span class="t-when">Planned</span><br>Monday check-in text campaign for Grade 8 watchlist.</li>
+          </ul>
+          <p class="muted" style="font-size:.85rem;">Fictional sample communication log.</p>
+        </div>
+
+        <!-- heatmap: grade x month -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Attendance by Grade × Month</h3>
+          <p class="muted" style="font-size:.85rem;">Darker = stronger attendance. Fictional sample data (band 0–4).</p>
+          <div class="heatmap" role="table" aria-label="Attendance rate by grade and month" style="grid-template-columns:repeat(7, 1fr);">
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Grade</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Sep</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Oct</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Nov</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Dec</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Jan</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Feb</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;">K–2</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="K-2 September 97%">97</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="K-2 October 96%">96</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="K-2 November 95%">95</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="K-2 December 94%">94</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="K-2 January 96%">96</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="K-2 February 97%">97</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;">3–5</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="3-5 September 96%">96</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="3-5 October 95%">95</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="3-5 November 94%">94</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="3-5 December 92%">92</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="3-5 January 94%">94</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="3-5 February 95%">95</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;">6–8</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="6-8 September 94%">94</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="6-8 October 92%">92</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="6-8 November 90%">90</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="6-8 December 89%">89</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="6-8 January 87%">87</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="6-8 February 90%">90</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;">9–12</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="9-12 September 95%">95</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="9-12 October 94%">94</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="9-12 November 92%">92</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="9-12 December 91%">91</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="9-12 January 92%">92</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="9-12 February 94%">94</div>
+          </div>
+          <div class="legend"><span><i style="background:#e9eef3;"></i> Lower</span><span><i style="background:#8fcca7;"></i> Mid</span><span><i style="background:#2f7a52;"></i> Higher</span></div>
+        </div>
+
+        <!-- attendance table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Grade-Level Attendance Summary</h3>
+          <div class="table-wrap">
+            <table>
+              <caption>Fictional sample attendance summary by grade band.</caption>
+              <thead><tr><th scope="col">Grade band</th><th scope="col">Avg daily</th><th scope="col">Chronic absentee %</th><th scope="col">Students &lt; 90%</th><th scope="col">Trend</th></tr></thead>
+              <tbody>
+                <tr><td>K–2</td><td>96%</td><td>7%</td><td>8</td><td><span class="rag"><span class="dot green"></span> Stable</span></td></tr>
+                <tr><td>3–5</td><td>94%</td><td>12%</td><td>13</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                <tr><td>6–8</td><td>90%</td><td>24%</td><td>26</td><td><span class="rag"><span class="dot red"></span> Declining</span></td></tr>
+                <tr><td>9–12</td><td>92%</td><td>18%</td><td>11</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="interventions.html">🛠️ Plan an Attendance Intervention</a>
+          <a class="btn ghost" href="family-engagement.html">👨‍👩‍👧 Family Engagement</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

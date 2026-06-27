@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Analytics — AI Student Success Early Warning System</title>
+  <meta name="description" content="Academic analytics: course performance, assessment trends, standards mastery, growth, missing assignments, learning progression, predicted achievement, benchmark comparisons, achievement-gap analysis, and AI-generated academic insights.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Analytics / <b>Academic Analytics</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎓 Academic Analytics</span>
+          <h1>Academic Analytics</h1>
+          <p class="lead">Course performance, assessment trends, standards mastery, growth, missing assignments, learning progression, predicted achievement, and benchmark comparisons — with achievement-gap analysis and AI-generated academic insights. All figures are fictional sample data created for demonstration.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>Sample K–12 School</option><option>North Campus</option></select>
+          <label>Subject</label><select><option>All subjects</option><option>ELA</option><option>Math</option><option>Science</option></select>
+          <label>Grade</label><select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPIs: course performance -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Students Meeting Standard</div><div class="sc-num"><span data-count="74" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4% vs. fall</div></div>
+          <div class="scorecard amber"><div class="sc-label">Math Proficiency</div><div class="sc-num"><span data-count="61" data-suffix="%">0</span></div><div class="sc-trend up">▲ 2% — watch</div></div>
+          <div class="scorecard red"><div class="sc-label">Course Failures</div><div class="sc-num"><span data-count="38">0</span></div><div class="sc-trend down">▲ 6 this term</div></div>
+          <div class="scorecard green"><div class="sc-label">Median Growth Percentile</div><div class="sc-num"><span data-count="58">0</span></div><div class="sc-trend up">▲ 3 points</div></div>
+        </div>
+
+        <!-- assessment trends + growth -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Assessment Trend (ELA)</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="ELA assessment trend"><path class="area" d="M0,40 L50,38 L100,34 L150,30 L200,28 L250,24 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,40 L50,38 L100,34 L150,30 L200,28 L250,24 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Steady upward trend across benchmarks.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Assessment Trend (Math)</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Math assessment trend"><path class="area" d="M0,34 L50,33 L100,35 L150,34 L200,32 L250,31 L300,30 L300,64 L0,64 Z"></path><path class="line" d="M0,34 L50,33 L100,35 L150,34 L200,32 L250,31 L300,30"></path></svg><p class="muted" style="font-size:.84rem;">Flat to slightly up — growth focus area.</p></div>
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">On-Track Rate</h3><div class="gauge" data-gauge="74" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Meeting standard</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Meeting 74% · Approaching 18% · Below 8%</p></div>
+        </div>
+
+        <!-- standards mastery heatmap: standard x grade -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Standards Mastery — Standard × Grade</h3>
+          <p class="muted" style="font-size:.85rem;">Darker = higher mastery. Fictional sample data (band 0–4).</p>
+          <div class="heatmap" role="table" aria-label="Standards mastery by standard and grade" style="grid-template-columns:1.4fr repeat(5, 1fr);">
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Standard</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Gr 4</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Gr 5</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Gr 6</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Gr 7</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Gr 8</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Reading: Key Ideas</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Reading Key Ideas Grade 4 89%">89</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Reading Key Ideas Grade 5 81%">81</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Reading Key Ideas Grade 6 78%">78</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Reading Key Ideas Grade 7 72%">72</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Reading Key Ideas Grade 8 70%">70</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Writing: Argument</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Writing Argument Grade 4 76%">76</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Writing Argument Grade 5 74%">74</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Writing Argument Grade 6 69%">69</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Writing Argument Grade 7 67%">67</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Writing Argument Grade 8 65%">65</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Math: Operations</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Math Operations Grade 4 79%">79</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Math Operations Grade 5 71%">71</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math Operations Grade 6 63%">63</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math Operations Grade 7 60%">60</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Math Operations Grade 8 56%">56</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Math: Fractions</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Math Fractions Grade 4 70%">70</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math Fractions Grade 5 62%">62</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Math Fractions Grade 6 59%">59</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Math Fractions Grade 7 54%">54</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Math Fractions Grade 8 52%">52</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Science: Inquiry</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science Inquiry Grade 4 77%">77</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Science Inquiry Grade 5 75%">75</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Science Inquiry Grade 6 71%">71</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Science Inquiry Grade 7 68%">68</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Science Inquiry Grade 8 66%">66</div>
+          </div>
+          <div class="legend"><span><i style="background:#e9eef3;"></i> Lower mastery</span><span><i style="background:#8fcca7;"></i> Mid</span><span><i style="background:#2f7a52;"></i> Higher mastery</span></div>
+        </div>
+
+        <!-- missing assignments + learning progression -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Missing Assignments by Subject</h3>
+            <div class="barlist">
+              <div class="row"><span>Math</span><div class="track"><span class="fill" data-pct="34"></span></div><span>34%</span></div>
+              <div class="row"><span>Science</span><div class="track"><span class="fill" data-pct="22"></span></div><span>22%</span></div>
+              <div class="row"><span>Social Studies</span><div class="track"><span class="fill" data-pct="17"></span></div><span>17%</span></div>
+              <div class="row"><span>ELA</span><div class="track"><span class="fill" data-pct="12"></span></div><span>12%</span></div>
+              <div class="row"><span>Electives</span><div class="track"><span class="fill" data-pct="8"></span></div><span>8%</span></div>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.6rem;">% of assignments missing per subject (fictional sample). Math is the largest driver.</p>
+          </div>
+          <div class="card"><h3 style="margin-top:0;">Learning Progression</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Quarter 1</span><br>Foundational skills assessed; baseline benchmarks set.</li>
+              <li class="done"><span class="t-when">Quarter 2</span><br>Reading comprehension on grade level for 74% of students.</li>
+              <li class="now"><span class="t-when">Quarter 3 — current</span><br>Math operations &amp; fractions targeted for reteach in Grades 6–8.</li>
+              <li><span class="t-when">Quarter 4 — planned</span><br>End-of-year mastery checks &amp; growth review.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- predicted achievement -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Predicted Year-End Achievement <span class="tl-pill amber">Predictive — illustrative</span></h3>
+          <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Predicted achievement trend"><path class="area" d="M0,42 L60,38 L120,34 L180,30 L240,27 L300,25 L300,64 L0,64 Z"></path><path class="line" d="M0,42 L60,38 L120,34 L180,30 L240,27 L300,25"></path></svg>
+          <p style="margin:.6rem 0;">Projected band of students meeting standard at year end:
+            <span class="tl-pill green">Likely 72–80%</span></p>
+          <p class="muted" style="font-size:.84rem;">Illustrative model on fictional data with a confidence band — not a guarantee. Predictions are decision-support and should be reviewed by educators, never used to limit opportunity.</p>
+        </div>
+
+        <!-- AI insights brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Academic Insights <span class="ai-pill">Simulated</span></h4>
+          <p>In this fictional sample, 74% of students are meeting standard and trending up. The strongest academic risk signal is <b>middle-grades math</b> — operations and fractions mastery falls below 60% by Grade 8, and Math accounts for 34% of all missing assignments. ELA and Science are steadier. Recommended priorities: targeted small-group reteach for math operations/fractions in Grades 6–8, an assignment-completion routine for the highest-missing students, and continued growth monitoring.</p>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 Educator decides</span> AI analysis on fictional sample data — transparent decision-support, reviewed by educators before any action. <a href="ai-risk-engine.html">Open the AI Risk Engine →</a></p>
+        </div>
+
+        <!-- benchmark comparisons table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Benchmark Comparisons</h3>
+          <div class="table-wrap">
+            <table>
+              <caption>Fictional sample: % meeting standard — subgroup vs. school vs. district.</caption>
+              <thead><tr><th scope="col">Subgroup</th><th scope="col">Subgroup</th><th scope="col">School</th><th scope="col">District</th><th scope="col">vs. District</th></tr></thead>
+              <tbody>
+                <tr><td>All students</td><td>74%</td><td>74%</td><td>69%</td><td><span class="tl-pill green">▲ +5</span></td></tr>
+                <tr><td>Multilingual learners</td><td>61%</td><td>74%</td><td>58%</td><td><span class="tl-pill green">▲ +3</span></td></tr>
+                <tr><td>Students with IEPs</td><td>54%</td><td>74%</td><td>52%</td><td><span class="tl-pill amber">▲ +2</span></td></tr>
+                <tr><td>Economically disadvantaged</td><td>66%</td><td>74%</td><td>63%</td><td><span class="tl-pill green">▲ +3</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- subgroup achievement-gap table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Subgroup Achievement-Gap Analysis</h3>
+          <p class="muted" style="font-size:.85rem;">Gap = subgroup % meeting standard minus all-student rate (74%). Negative = opportunity gap to close. Fictional sample data, presented to inform equitable support — never to label students.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Fictional sample achievement-gap analysis by subgroup.</caption>
+              <thead><tr><th scope="col">Subgroup</th><th scope="col">Meeting standard</th><th scope="col">Gap vs. all</th><th scope="col">Growth trend</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td>Multilingual learners</td><td>61%</td><td>−13</td><td>▲ closing</td><td><span class="rag"><span class="dot amber"></span> Narrowing</span></td></tr>
+                <tr><td>Students with IEPs</td><td>54%</td><td>−20</td><td>▲ slight</td><td><span class="rag"><span class="dot red"></span> Priority</span></td></tr>
+                <tr><td>Economically disadvantaged</td><td>66%</td><td>−8</td><td>▲ closing</td><td><span class="rag"><span class="dot amber"></span> Narrowing</span></td></tr>
+                <tr><td>Female</td><td>76%</td><td>+2</td><td>▲ steady</td><td><span class="rag"><span class="dot green"></span> On track</span></td></tr>
+                <tr><td>Male</td><td>72%</td><td>−2</td><td>▲ steady</td><td><span class="rag"><span class="dot green"></span> On track</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="interventions.html">🛠️ Plan an Academic Intervention</a>
+          <a class="btn ghost" href="reports.html">📄 Academic Progress Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

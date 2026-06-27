@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Dashboard — AI Student Success Early Warning System</title>
+  <meta name="description" content="A leadership overview of student success: students requiring attention, risk distribution, attendance/academic/behavior trends, intervention effectiveness, and an AI-generated executive briefing.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Executive Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Leadership Overview</span>
+          <h1>Executive Dashboard</h1>
+          <p class="lead">A whole-school view of student success: who needs attention now, how risk is distributed, where trends are moving, and what's working — with an AI-generated briefing. All figures are fictional sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>Sample K–12 School</option><option>North Campus</option></select>
+          <label>Term</label><select><option>This Semester</option><option>Year to Date</option></select>
+          <label>Grade</label><select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPIs -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard red"><div class="sc-label">Students Needing Attention</div><div class="sc-num"><span data-count="47">0</span></div><div class="sc-trend down">12 high-priority</div></div>
+          <div class="scorecard amber"><div class="sc-label">Chronic Absenteeism</div><div class="sc-num"><span data-count="16" data-suffix="%">0</span></div><div class="sc-trend down">▲ 2% — watch</div></div>
+          <div class="scorecard green"><div class="sc-label">Intervention Effectiveness</div><div class="sc-num"><span data-count="71" data-suffix="%">0</span></div><div class="sc-trend up">▲ 6% met goals</div></div>
+          <div class="scorecard green"><div class="sc-label">Students On Track</div><div class="sc-num"><span data-count="83" data-suffix="%">0</span></div><div class="sc-trend up">▲ 3%</div></div>
+        </div>
+
+        <!-- risk distribution + trends -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Risk Distribution</h3><div class="gauge" data-gauge="83" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>On track</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Low 83% · Medium 11% · High 6%</p></div>
+          <div class="card"><h3 style="margin-top:0;">Attendance Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Attendance trend"><path class="area" d="M0,20 L50,22 L100,26 L150,24 L200,30 L250,28 L300,34 L300,64 L0,64 Z"></path><path class="line" d="M0,20 L50,22 L100,26 L150,24 L200,30 L250,28 L300,34"></path></svg><p class="muted" style="font-size:.84rem;">Slight decline — monitor Grade 8.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Academic Growth</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Academic growth trend"><path class="area" d="M0,44 L50,40 L100,38 L150,32 L200,30 L250,24 L300,20 L300,64 L0,64 Z"></path><path class="line" d="M0,44 L50,40 L100,38 L150,32 L200,30 L250,24 L300,20"></path></svg><p class="muted" style="font-size:.84rem;">Steady upward trend.</p></div>
+        </div>
+
+        <!-- AI briefing -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Executive Briefing <span class="ai-pill">Simulated</span></h4>
+          <p>83% of students are on track and improving. Attention is concentrated in <b>47 students</b> with 2+ early-warning indicators — <b>12 high-priority</b>, mostly in Grade 8, driven by <b>attendance</b> and <b>math performance</b>. Interventions are working (71% goal attainment, ▲6%). Recommended priorities: open coordinated plans for the 12 highest-risk students, and launch a tiered attendance response for Mon/Fri patterns. <a href="ai-risk-engine.html">Open the AI Risk Engine for student-level analysis →</a></p>
+        </div>
+
+        <!-- priority action items (drill) -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🎯 Priority Action Items <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>4 students meet all 3 indicators</b></span><span class="tl-pill red">Now</span></div>
+          <div class="drill-panel"><p class="muted">Convene the student-support team this week; assign a case-manager per student; open Tier 2/3 plans with explicit goals and review dates.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 attendance (Mon/Fri)</b></span><span class="tl-pill amber">This week</span></div>
+          <div class="drill-panel"><p class="muted">Launch positive family outreach and an early-warning watchlist; analyze scheduling/engagement causes.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>6 interventions due for review</b></span><span class="tl-pill amber">This week</span></div>
+          <div class="drill-panel"><p class="muted">Review progress-monitoring data; continue, adjust, or change tier based on evidence.</p></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="risk-dashboard.html">🚦 Risk Dashboard</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Leadership Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

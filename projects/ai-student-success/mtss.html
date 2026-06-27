@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTSS Framework — AI Student Success Early Warning System</title>
+  <meta name="description" content="A complete Multi-Tiered System of Supports interface: Tier 1 universal, Tier 2 targeted, and Tier 3 intensive supports, student placement, intervention history, progress, review dates, movement between tiers, team recommendations, and AI MTSS insights.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Support / <b>MTSS Framework</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🪜 Multi-Tiered System of Supports</span>
+          <h1>MTSS Framework</h1>
+          <p class="lead">A complete view of the school's tiered supports: who is in each tier, what supports they receive, how they are progressing, when they are due for review, and how students move between tiers based on evidence. All figures are fictional sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="f-tier">Tier</label>
+          <select id="f-tier"><option>All tiers</option><option>Tier 1 — Universal</option><option>Tier 2 — Targeted</option><option>Tier 3 — Intensive</option></select>
+          <label for="f-area">Area</label>
+          <select id="f-area"><option>All areas</option><option>Attendance</option><option>Academics</option><option>Behavior</option><option>SEL / Well-being</option></select>
+          <label for="f-grade">Grade</label>
+          <select id="f-grade"><option>All grades</option><option>Grade 6</option><option>Grade 7</option><option selected>Grade 8</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- tier grid -->
+        <div class="tier-grid" style="margin-bottom:1.4rem;">
+          <div class="tier t1">
+            <h3>Tier 1 — Universal</h3>
+            <div class="t-pct" data-count="83" data-suffix="%">0%</div>
+            <p class="muted" style="font-size:.84rem;margin-top:0;">≈ 412 students · high-quality core for all</p>
+            <ul class="ws-list">
+              <li>Strong core instruction &amp; SEL</li>
+              <li>School-wide attendance routines</li>
+              <li>Universal screening 3×/year</li>
+              <li>Positive behavior supports</li>
+            </ul>
+          </div>
+          <div class="tier t2">
+            <h3>Tier 2 — Targeted</h3>
+            <div class="t-pct" data-count="11" data-suffix="%">0%</div>
+            <p class="muted" style="font-size:.84rem;margin-top:0;">≈ 55 students · small-group supports</p>
+            <ul class="ws-list">
+              <li>Small-group reteach 3×/week</li>
+              <li>Mentor attendance check-ins</li>
+              <li>Targeted skill practice</li>
+              <li>Progress monitoring every 1–2 weeks</li>
+            </ul>
+          </div>
+          <div class="tier t3">
+            <h3>Tier 3 — Intensive</h3>
+            <div class="t-pct" data-count="6" data-suffix="%">0%</div>
+            <p class="muted" style="font-size:.84rem;margin-top:0;">≈ 30 students · individualized plans</p>
+            <ul class="ws-list">
+              <li>Individualized, frequent intervention</li>
+              <li>Named case-manager per student</li>
+              <li>Coordinated family &amp; team plan</li>
+              <li>Weekly progress monitoring</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AI exec brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI MTSS Insights <span class="ai-pill">Simulated</span></h4>
+          <p>Tier distribution (83% / 11% / 6%) is within a healthy MTSS range — most students are well-served by strong Tier 1 instruction. Tier 2 is carrying the most movement this term, concentrated in <b>Grade 8 attendance and math</b>. Two patterns stand out: <b>6 plans are due for review</b> (decide continue / adjust / change tier on the evidence), and several Tier 2 students show enough progress to <b>fade toward Tier 1</b>. Recommended: prioritize the overdue reviews this week and reserve Tier 3 escalation for team decisions backed by progress-monitoring data. <span class="ai-pill">👤 Educator decides</span> AI analysis of fictional sample data — decision-support reviewed by the MTSS team.</p>
+        </div>
+
+        <!-- placement table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Student Placement</h3>
+          <div class="table-wrap">
+            <table>
+              <caption>Current tier placement and review status (illustrative fictional data).</caption>
+              <thead>
+                <tr><th scope="col">Student</th><th scope="col">Tier</th><th scope="col">Area</th><th scope="col">Weeks</th><th scope="col">Next review</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Student A · Gr 8</th><td>Tier 2</td><td>Attendance, Math</td><td>7</td><td>Jun 30</td><td><span class="tl-pill amber">Due soon</span></td></tr>
+                <tr><th scope="row">Student B · Gr 8</th><td>Tier 3</td><td>Behavior, Academics</td><td>5</td><td>Jun 27</td><td><span class="tl-pill red">Overdue</span></td></tr>
+                <tr><th scope="row">Student C · Gr 7</th><td>Tier 2</td><td>Math</td><td>3</td><td>Jul 10</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><th scope="row">Student D · Gr 9</th><td>Tier 2</td><td>SEL / Engagement</td><td>4</td><td>Jul 03</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><th scope="row">Student E · Gr 8</th><td>Tier 3</td><td>Attendance</td><td>9</td><td>Jun 28</td><td><span class="tl-pill amber">Due soon</span></td></tr>
+                <tr><th scope="row">Student F · Gr 6</th><td>Tier 1</td><td>Reading (watch)</td><td>—</td><td>Aug 15</td><td><span class="tl-pill green">Monitor</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- intervention history + progress -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Intervention History &amp; Review Dates</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Week 1 · Tier 2 opened</span><div>Mentor check-in + math small group assigned; baseline set.</div></li>
+              <li class="done"><span class="t-when">Week 3 · Review</span><div>Attendance ▲ 2 pts; continue plan, add family text updates.</div></li>
+              <li class="done"><span class="t-when">Week 5 · Review</span><div>Math completion ▲; ELA strong. Continue.</div></li>
+              <li class="now"><span class="t-when">Week 7 · Review due</span><div>Decide continue / adjust / fade based on monitoring data.</div></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Progress Toward Goals <span class="muted" style="font-size:.82rem;font-weight:400;">— % of goal met</span></h3>
+            <div class="barlist">
+              <div class="row"><span>Attendance goal</span><span class="track"><span class="fill" data-pct="64"></span></span><span>64%</span></div>
+              <div class="row"><span>Math completion</span><span class="track"><span class="fill" data-pct="58"></span></span><span>58%</span></div>
+              <div class="row"><span>Science grade</span><span class="track"><span class="fill" data-pct="47"></span></span><span>47%</span></div>
+              <div class="row"><span>Engagement (SEL)</span><span class="track"><span class="fill" data-pct="71"></span></span><span>71%</span></div>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.7rem;">71% of all active plans are meeting their progress goals school-wide (▲ 6%).</p>
+          </div>
+        </div>
+
+        <!-- movement between tiers (drill) -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Movement Between Tiers <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand decision rules</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 1 → Tier 2 (intensify)</b> · 9 students this term</span><span class="tl-pill amber">Targeted</span></div>
+          <div class="drill-panel"><p class="muted">Triggered when universal screening or two consecutive progress checks show the student below benchmark. Action: add small-group support and set a 6-week monitoring window with explicit goals and a named owner.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 2 → Tier 3 (escalate)</b> · 3 students this term</span><span class="tl-pill red">Intensive</span></div>
+          <div class="drill-panel"><p class="muted">Reserved for insufficient response to Tier 2 over 6+ weeks, confirmed by the MTSS team and progress-monitoring data. Action: assign a case-manager, build an individualized coordinated plan, and increase monitoring to weekly.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 2 → Tier 1 (fade)</b> · 7 students this term</span><span class="tl-pill green">Fading</span></div>
+          <div class="drill-panel"><p class="muted">Triggered when the student meets goals across 3+ consecutive checks. Action: gradually fade supports while monitoring for maintenance; keep a light-touch watch flag for one term.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tier 3 → Tier 2 (de-intensify)</b> · 2 students this term</span><span class="tl-pill amber">Targeted</span></div>
+          <div class="drill-panel"><p class="muted">When intensive intervention produces sustained gains, step supports down to targeted small-group with continued monitoring — always a team decision.</p></div>
+        </div>
+
+        <!-- team recommendations -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Team Recommendations</h3>
+          <ul class="ws-list">
+            <li><span class="rag"><span class="dot red"></span> Complete the 2 overdue Tier 3 reviews (Student B, Student E) before this week's meeting.</span></li>
+            <li><span class="rag"><span class="dot amber"></span> Prepare 4 Tier 2 reviews due in the next 7 days; bring progress-monitoring data.</span></li>
+            <li><span class="rag"><span class="dot green"></span> Begin fading supports for the 7 Tier 2 students meeting goals; set maintenance watch.</span></li>
+            <li><span class="rag"><span class="dot amber"></span> Launch a tiered Grade 8 attendance response targeting Mon/Fri patterns.</span></li>
+          </ul>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="interventions.html">🛠️ Intervention Planner</a>
+          <a class="btn ghost" href="reports.html">📄 Generate MTSS Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

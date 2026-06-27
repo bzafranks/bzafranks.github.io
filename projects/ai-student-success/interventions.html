@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervention Planner — AI Student Success Early Warning System</title>
+  <meta name="description" content="Plan, monitor, and case-manage student interventions: build plans with goals and review dates, track active interventions and fidelity, monitor goal attainment, and read AI progress summaries with recommended adjustments.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Support / <b>Intervention Planner</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🛠️ Plan · Monitor · Manage</span>
+          <h1>Intervention Planner</h1>
+          <p class="lead">A single workspace for the intervention lifecycle: <b>build a plan</b> with clear goals and review dates, track <b>active interventions</b> and implementation fidelity, <b>monitor progress</b> toward goal attainment, manage the <b>case timeline</b>, and read an <b>AI progress summary</b> with recommended adjustments. All data shown is realistic fictional sample data.</p>
+        </div>
+
+        <!-- ===== Intervention plan builder ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🧩 Build an intervention plan <span class="muted" style="font-size:.85rem;font-weight:400;">— demonstration form</span></h3>
+          <div class="field-row" style="margin-bottom:0;">
+            <div class="field"><label for="iv-area">Area of need</label>
+              <select id="iv-area"><option>Attendance</option><option>Mathematics</option><option>Reading / ELA</option><option>Behavior &amp; engagement</option><option>Social-emotional / well-being</option><option>Executive functioning</option></select></div>
+            <div class="field"><label for="iv-goal">Goal</label>
+              <input id="iv-goal" type="text" value="Raise attendance to ≥ 92% over 6 weeks"></div>
+          </div>
+          <div class="field-row" style="margin-bottom:0;">
+            <div class="field"><label for="iv-strategy">Strategy</label>
+              <select id="iv-strategy"><option>Daily mentor check-in (Check-In/Check-Out)</option><option>Small-group targeted reteach</option><option>Positive family outreach plan</option><option>Self-monitoring &amp; goal-setting</option><option>Skills group (SEL)</option></select></div>
+            <div class="field"><label for="iv-staff">Responsible staff</label>
+              <input id="iv-staff" type="text" value="Ms. Rivera · School Counselor"></div>
+          </div>
+          <div class="field-row" style="margin-bottom:0;">
+            <div class="field"><label for="iv-freq">Frequency</label>
+              <select id="iv-freq"><option>Daily</option><option>3× per week</option><option>2× per week</option><option>Weekly</option></select></div>
+            <div class="field"><label for="iv-duration">Duration</label>
+              <select id="iv-duration"><option>6 weeks</option><option>8 weeks</option><option>One grading period</option><option>One semester</option></select></div>
+          </div>
+          <div class="field" style="max-width:280px;margin-bottom:1rem;"><label for="iv-review">Review date</label>
+            <input id="iv-review" type="date" value="2026-08-10"></div>
+          <button class="btn" type="button" onclick="window.ESS &amp;&amp; window.ESS.toast('🛠️ Intervention added (demo) — review date set, owner assigned', 'ok')">➕ Add intervention (demo)</button>
+          <p class="muted" style="font-size:.82rem;margin-top:.9rem;">Demonstration only — inputs are presentational. Tier and intensity follow MTSS team review; the least-intensive effective support is selected first.</p>
+        </div>
+
+        <!-- ===== Active interventions ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📋 Active interventions <span class="muted" style="font-size:.85rem;font-weight:400;">— illustrative sample</span></h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Student</th><th scope="col">Area</th><th scope="col">Strategy</th><th scope="col">Tier</th><th scope="col">Fidelity</th><th scope="col">Next review</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Student A · Gr 8</td><td>Attendance</td><td>Mentor check-in (CICO)</td><td>Tier 2</td><td><span class="tl-pill green">94%</span></td><td>Aug 10</td></tr>
+                <tr><td>Student A · Gr 8</td><td>Mathematics</td><td>Small-group reteach 3×/wk</td><td>Tier 2</td><td><span class="tl-pill amber">78%</span></td><td>Aug 12</td></tr>
+                <tr><td>Student B · Gr 7</td><td>Reading / ELA</td><td>Fluency + comprehension group</td><td>Tier 2</td><td><span class="tl-pill green">91%</span></td><td>Aug 15</td></tr>
+                <tr><td>Student C · Gr 8</td><td>Behavior</td><td>Self-monitoring &amp; CICO</td><td>Tier 3</td><td><span class="tl-pill red">62%</span></td><td>Aug 08</td></tr>
+                <tr><td>Student D · Gr 6</td><td>Well-being</td><td>SEL skills group</td><td>Tier 2</td><td><span class="tl-pill green">88%</span></td><td>Aug 18</td></tr>
+                <tr><td>Student E · Gr 8</td><td>Executive function</td><td>Organization coaching</td><td>Tier 2</td><td><span class="tl-pill amber">74%</span></td><td>Aug 11</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted" style="font-size:.82rem;margin-top:.6rem;">Fidelity = how consistently the plan is being delivered as designed. Low fidelity is reviewed before judging whether a strategy is working.</p>
+        </div>
+
+        <!-- ===== Progress monitoring ===== -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">🎯 Goal attainment</h3>
+            <p class="muted" style="font-size:.85rem;margin-top:0;">Progress toward each intervention goal (illustrative).</p>
+            <div class="barlist">
+              <div class="row"><span>Attendance ≥ 92%</span><span class="track"><span class="fill" data-pct="86"></span></span><span>86%</span></div>
+              <div class="row"><span>Math accuracy</span><span class="track"><span class="fill" data-pct="71"></span></span><span>71%</span></div>
+              <div class="row"><span>ELA fluency (WPM)</span><span class="track"><span class="fill" data-pct="80"></span></span><span>80%</span></div>
+              <div class="row"><span>Behavior points</span><span class="track"><span class="fill" data-pct="58"></span></span><span>58%</span></div>
+              <div class="row"><span>Assignment completion</span><span class="track"><span class="fill" data-pct="64"></span></span><span>64%</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">📈 Progress trend</h3>
+            <p class="muted" style="font-size:.85rem;margin-top:0;">Attendance over the last 7 progress checks (illustrative).</p>
+            <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Attendance progress trend, rising">
+              <path class="area" d="M0,46 L50,44 L100,40 L150,36 L200,30 L250,26 L300,20 L300,64 L0,64 Z"></path>
+              <path class="line" d="M0,46 L50,44 L100,40 L150,36 L200,30 L250,26 L300,20"></path>
+            </svg>
+            <p class="muted" style="font-size:.84rem;">Attendance up 4 points over 3 weeks — plan is on track; continue and review at the next MTSS meeting.</p>
+          </div>
+        </div>
+
+        <!-- ===== Case management timeline ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🗂️ Case management — Student A · Grade 8 <span class="muted" style="font-size:.85rem;font-weight:400;">— illustrative case log</span></h3>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Jun 02</span><h4 style="margin:.1rem 0;">Referral &amp; screening</h4><p class="muted" style="margin:0;">Flagged by early-warning indicators (attendance + math). Case-manager assigned: Ms. Rivera.</p></li>
+            <li class="done"><span class="t-when">Jun 09</span><h4 style="margin:.1rem 0;">MTSS team meeting</h4><p class="muted" style="margin:0;">Opened Tier 2 plan: mentor check-in + math small-group reteach. Goals and review dates set.</p></li>
+            <li class="done"><span class="t-when">Jun 16</span><h4 style="margin:.1rem 0;">Family outreach</h4><p class="muted" style="margin:0;">Positive call home; family partnership plan agreed for Mon/Fri attendance.</p></li>
+            <li class="now"><span class="t-when">Jun 23 — now</span><h4 style="margin:.1rem 0;">Progress review</h4><p class="muted" style="margin:0;">Attendance ▲4 pts; math fidelity at 78% — note to increase consistency before changing strategy.</p></li>
+            <li><span class="t-when">Jun 30 — next step</span><h4 style="margin:.1rem 0;">6-week decision point</h4><p class="muted" style="margin:0;">Team to continue, adjust, or change tier based on progress-monitoring evidence.</p></li>
+          </ul>
+        </div>
+
+        <!-- ===== AI exec brief ===== -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Progress Summaries &amp; Recommended Adjustments <span class="ai-pill">Simulated</span></h4>
+          <p><b>Student A</b> is responding: attendance is up 4 points and ELA fluency is near target. <b>Math</b> progress lags (71% of goal) — but implementation fidelity sits at <b>78%</b>, so the recommendation is to <b>increase consistency before changing the strategy</b>. <b>Behavior points</b> (58%) are the weakest area; consider tightening the self-monitoring routine and adding a midday check-in. Across the caseload, <b>fidelity below 70% is the strongest predictor of stalled progress</b> in this sample — prioritize coaching for Student C's Tier 3 plan. <a href="ai-risk-engine.html">Open the AI Risk Engine for student-level analysis →</a></p>
+          <p class="muted" style="font-size:.85rem;margin:.4rem 0 0;"><span class="ai-pill">👤 Educator decides</span> AI summaries are decision-support only, drafted from fictional sample data and reviewed by the team before any change.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="mtss.html">🪜 MTSS Framework</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Intervention Summary</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. AI is simulated and decision-support only.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

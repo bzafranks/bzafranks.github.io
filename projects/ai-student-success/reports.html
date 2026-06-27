@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports — AI Student Success Early Warning System</title>
+  <meta name="description" content="Generate AI-drafted student success, MTSS, attendance, behavior, academic, intervention, parent-meeting, leadership, and district reports — with export to PDF, PowerPoint, Excel, and print.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Reports</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📄 AI-Drafted Reporting</span>
+          <h1>Reports</h1>
+          <p class="lead">Generate AI-drafted reports for students, families, and leadership: <b>Student Success</b>, <b>MTSS</b>, <b>Attendance</b>, <b>Behavior</b>, <b>Academic Progress</b>, <b>Intervention Summary</b>, <b>Parent Meeting Summary</b>, <b>School Leadership</b>, and <b>District Summary</b>. Export to <b>PDF</b>, <b>PowerPoint</b>, <b>Excel</b>, or a printable handout. Exports are illustrative; <b>Print / PDF works via your browser</b>. All content is realistic fictional sample data — review every AI draft before sharing.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="report"><h3>Generate a report</h3>
+            <div class="field"><label for="r-type">Report type</label><select id="r-type" name="type">
+              <option>Student Success Report</option>
+              <option>MTSS Report</option>
+              <option>Attendance Report</option>
+              <option>Behavior Report</option>
+              <option>Academic Progress Report</option>
+              <option>Intervention Summary</option>
+              <option>Parent Meeting Summary</option>
+              <option>School Leadership Report</option>
+              <option>District Summary</option>
+            </select></div>
+            <div class="field-row"><div class="field"><label for="r-scope">Scope (student/school)</label><input id="r-scope" name="scope" value="Student A · Grade 8"></div><div class="field"><label for="r-term">Term</label><select id="r-term" name="term"><option>This Semester</option><option>Year to Date</option></select></div></div>
+            <button class="btn" type="submit">✨ Generate report</button>
+            <p class="muted" style="font-size:.82rem;margin-top:.9rem;">AI-drafted from fictional sample data — verify before sharing.</p>
+          </form>
+          <div class="gen-output" data-output="report"><div class="out-toolbar"><span class="ai-pill">✨ AI Draft</span>
+            <button class="out-btn" data-act="regen">↻ Regenerate</button><button class="out-btn" data-act="copy">📋 Copy</button>
+            <button class="out-btn" data-act="print">🖨️ Print / PDF</button><button class="out-btn" data-act="save">💾 Save</button></div>
+            <div class="out-body"><div class="out-empty"><div><div class="big">📄</div><p>Choose a report type and Generate.</p></div></div></div></div>
+        </div>
+
+        <div class="tool-head" style="margin-top:2.4rem;">
+          <h2 style="margin:0;">Report Library</h2>
+          <p class="muted" style="margin:.3rem 0 0;">Nine report types — choose one above and generate an AI draft. Each supports PDF, PowerPoint, Excel, and printable export (exports illustrative; Print/PDF works via the browser).</p>
+        </div>
+        <div class="tool-grid" style="margin-top:1.2rem;">
+          <div class="tool-card"><div class="t-ico">🧒</div><h4>Student Success Report</h4><p>Whole-child picture and plan — strengths, indicators, supports, and next steps for one student.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🪜</div><h4>MTSS Report</h4><p>Tier placement, active interventions, fidelity, and progress toward goals.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">📅</div><h4>Attendance Report</h4><p>Attendance and engagement patterns, chronic-absence flags, and outreach status.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🤝</div><h4>Behavior Report</h4><p>Behavior and SEL summary — incidents, disengagement flags, and supports.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🎓</div><h4>Academic Progress Report</h4><p>Growth and mastery by subject, with gaps and progress-monitoring detail.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🛠️</div><h4>Intervention Summary</h4><p>Plans, implementation fidelity, and outcomes across active interventions.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">👨‍👩‍👧</div><h4>Parent Meeting Summary</h4><p>A family-friendly conference brief — what's going well, concerns, and the plan.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🏫</div><h4>School Leadership Report</h4><p>Whole-school view for leadership — risk distribution, trends, and priorities.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+          <div class="tool-card"><div class="t-ico">🌐</div><h4>District Summary</h4><p>Roll-up for district student-support services across schools and grades.</p><span class="t-go">PDF · PPT · Excel · Print</span></div>
+        </div>
+
+        <p class="muted" style="margin-top:1.6rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. AI drafts are decision-support only — review before sharing. PowerPoint and Excel export buttons are illustrative; Print / PDF works through your browser.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

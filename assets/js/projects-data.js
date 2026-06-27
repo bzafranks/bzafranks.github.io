@@ -139,5 +139,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🏗️",
     tags: ["AI Product", "Curriculum Development", "Learning Experience Design", "Authoring Platform", "Workflow Automation", "EdTech"],
     summary: "A complete concept-to-publication curriculum authoring platform — 16 tools (workspace, curriculum builder, scope & sequence, standards alignment, unit & lesson builders, assessment & rubric studios, interactive-learning & AI-video studios, resource generator, publishing center, collaboration hub, templates, analytics) with drag-and-drop building, a publishing wizard, command palette, and dark mode. Part of the AI for Education Innovation Suite."
+  },
+  {
+    id: "ai-student-success",
+    title: "AI Student Success Early Warning System",
+    subtitle: "Responsible predictive analytics & intervention for K–12",
+    pillar: "il",
+    grade: "K–12 · Enterprise",
+    status: "done",
+    url: "projects/ai-student-success/index.html",
+    icon: "🚦",
+    tags: ["Predictive Analytics", "MTSS / RTI", "Explainable AI", "Student Success", "Learning Analytics", "Responsible AI"],
+    summary: "An enterprise early-warning & intervention platform that helps educators identify students needing support earlier and coordinate MTSS interventions — executive & risk dashboards, whole-child student profiles, an explainable AI risk engine, MTSS tiers, intervention planning & monitoring, attendance/academic/behavior/well-being analytics, family engagement, and a report generator, with command palette, notification center, and dark mode. Responsible, educator-led, human-in-the-loop. Part of the AI for Education Innovation Suite."
   }
 ];

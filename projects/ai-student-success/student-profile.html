@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Success Profile — AI Student Success Early Warning System</title>
+  <meta name="description" content="A comprehensive whole-child success profile: academic history, attendance, behavior, strengths, areas for growth, learning preferences, interests, assessment trends, intervention history, reflections, parent and teacher input, learning portfolio, and an AI-generated success summary.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Student Profile</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧑‍🎓 Whole-Child View</span>
+          <h1>Student Success Profile</h1>
+          <p class="lead">A comprehensive, strengths-first picture of one student — academics, attendance, behavior, well-being, interests, and the supports in place. Designed to keep the whole child in view, not just the risk flags. All details are illustrative fictional sample data.</p>
+        </div>
+
+        <!-- profile head -->
+        <div class="profile-head" style="margin-bottom:1.4rem;">
+          <span class="avatar" aria-hidden="true">SA</span>
+          <div style="flex:1;min-width:200px;">
+            <h2>Student A <span style="font-weight:400;opacity:.85;font-size:1rem;">· Grade 8</span></h2>
+            <div class="chip-row" style="margin-top:.5rem;">
+              <span class="chip-tag">Age 13</span>
+              <span class="chip-tag">Homeroom 8-B</span>
+              <span class="chip-tag">Mentor: Ms. Rivera</span>
+              <span class="chip-tag">Multilingual learner</span>
+              <span class="chip-tag">Tier 2 plan active</span>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:.78rem;opacity:.85;margin-bottom:.3rem;">Current risk level</div>
+            <span class="risk-band high">High</span>
+          </div>
+        </div>
+
+        <!-- AI success summary -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI-Generated Success Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Student A is a <b>collaborative, verbally strong</b> learner who thrives in discussion and hands-on tasks. Current risk is driven primarily by <b>attendance</b> (81%, clustered Mon/Fri) and <b>math &amp; science performance</b>, while ELA remains on track. A Tier 2 plan with a named mentor and small-group reteach is in place, and attendance has improved 4 points over three weeks. Build on strengths in collaboration and curiosity (interest in marine biology and game design) to re-engage in flagged subjects. <span class="ai-pill">👤 Educator decides</span> This summary is AI-drafted from fictional sample data and reviewed by educators before any action.</p>
+        </div>
+
+        <!-- academic history -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Academic History</h3>
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;align-items:center;">
+            <div>
+              <svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="GPA trend over four terms"><path class="area" d="M0,18 L75,22 L150,30 L225,38 L300,40 L300,64 L0,64 Z"></path><path class="line" d="M0,18 L75,22 L150,30 L225,38 L300,40"></path></svg>
+              <p class="muted" style="font-size:.84rem;">GPA softening over the last two terms — concentrated in math and science.</p>
+            </div>
+            <div class="table-wrap" style="margin:0;">
+              <table>
+                <caption>Course grades, current term (illustrative).</caption>
+                <thead><tr><th scope="col">Course</th><th scope="col">Grade</th><th scope="col">Status</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">English/ELA</th><td>B+</td><td><span class="rag"><span class="dot green"></span> On track</span></td></tr>
+                  <tr><th scope="row">Mathematics</th><td>F</td><td><span class="rag"><span class="dot red"></span> At risk</span></td></tr>
+                  <tr><th scope="row">Science</th><td>D−</td><td><span class="rag"><span class="dot red"></span> At risk</span></td></tr>
+                  <tr><th scope="row">Social Studies</th><td>B</td><td><span class="rag"><span class="dot green"></span> On track</span></td></tr>
+                  <tr><th scope="row">Art</th><td>A</td><td><span class="rag"><span class="dot green"></span> Strength</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- attendance + behavior -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Attendance</h3>
+            <div class="kpi-grid" style="grid-template-columns:1fr 1fr;">
+              <div class="scorecard red"><div class="sc-label">Attendance Rate</div><div class="sc-num"><span data-count="81" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4% (3 wks)</div></div>
+              <div class="scorecard amber"><div class="sc-label">Absences (term)</div><div class="sc-num"><span data-count="9">0</span></div><div class="sc-trend down">clustered Mon/Fri</div></div>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.7rem;">Chronic absenteeism threshold is 90%. Pattern is recurring, not random — flagged for proactive outreach.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Behavior Summary</h3>
+            <ul class="ws-list">
+              <li><span class="rag"><span class="dot green"></span> No major disciplinary incidents</span></li>
+              <li><span class="rag"><span class="dot amber"></span> 2 teacher disengagement flags (math)</span></li>
+              <li><span class="rag"><span class="dot green"></span> Positive peer relationships noted</span></li>
+              <li><span class="rag"><span class="dot green"></span> Responds well to 1:1 check-ins</span></li>
+            </ul>
+            <p class="muted" style="font-size:.84rem;">Behavior is a relative strength; flags are engagement-related, not conduct-related.</p>
+          </div>
+        </div>
+
+        <!-- strengths / growth / preferences -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Learning Strengths</h3>
+            <div class="chip-row">
+              <span class="chip-tag">Collaboration</span>
+              <span class="chip-tag">Verbal reasoning</span>
+              <span class="chip-tag">Creativity</span>
+              <span class="chip-tag">Hands-on tasks</span>
+              <span class="chip-tag">Curiosity</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Areas for Growth</h3>
+            <div class="chip-row">
+              <span class="chip-tag">Math fluency</span>
+              <span class="chip-tag">Task persistence</span>
+              <span class="chip-tag">Organization</span>
+              <span class="chip-tag">Consistent attendance</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Learning Preferences</h3>
+            <ul class="ws-list">
+              <li>Visual + hands-on models</li>
+              <li>Small groups over whole class</li>
+              <li>Choice in topics</li>
+              <li>Frequent, specific feedback</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- interests + assessment trends -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Interests &amp; Career Interests</h3>
+            <div class="chip-row">
+              <span class="chip-tag">Marine biology</span>
+              <span class="chip-tag">Video game design</span>
+              <span class="chip-tag">Basketball</span>
+              <span class="chip-tag">Digital art</span>
+              <span class="chip-tag">Coding club</span>
+              <span class="chip-tag">Veterinary science</span>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.7rem;">Interests offer authentic hooks to re-engage in math and science.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Assessment Trends <span class="muted" style="font-size:.82rem;font-weight:400;">— percentile</span></h3>
+            <div class="barlist">
+              <div class="row"><span>Reading (MAP)</span><span class="track"><span class="fill" data-pct="68"></span></span><span>68</span></div>
+              <div class="row"><span>Math (MAP)</span><span class="track"><span class="fill" data-pct="34"></span></span><span>34</span></div>
+              <div class="row"><span>Science (unit)</span><span class="track"><span class="fill" data-pct="41"></span></span><span>41</span></div>
+              <div class="row"><span>Writing (rubric)</span><span class="track"><span class="fill" data-pct="72"></span></span><span>72</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- intervention history timeline -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Intervention History</h3>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Sept · Tier 1</span><div>Universal supports; teacher noticed early attendance dip and logged a watch flag.</div></li>
+            <li class="done"><span class="t-when">Oct · Tier 2 opened</span><div>Assigned mentor (Ms. Rivera) for weekly attendance check-in; positive family outreach initiated.</div></li>
+            <li class="done"><span class="t-when">Nov · Academic support added</span><div>Math &amp; science small-group reteach 3×/week added to the plan.</div></li>
+            <li class="now"><span class="t-when">Now · Progress monitoring</span><div>Weekly monitoring of attendance, grades, and completion; next MTSS review scheduled.</div></li>
+          </ul>
+        </div>
+
+        <!-- student reflection (quote) -->
+        <div class="card insight" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Student Reflection</h3>
+          <blockquote style="margin:0;font-style:italic;font-size:1.05rem;">"I like science when we get to do experiments, but the math homework feels like too much at once. Mornings are hard for me on Mondays."</blockquote>
+          <p class="muted" style="font-size:.84rem;margin-top:.6rem;">— Student A, self-reflection check-in (illustrative)</p>
+        </div>
+
+        <!-- parent + teacher input -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Parent Input</h3>
+            <p>Family reports the student is motivated by hands-on projects and worried about "falling behind" in math. Requests homework broken into smaller steps and earlier notice of missing work. Prefers text-message updates.</p>
+            <p class="muted" style="font-size:.84rem;">Last positive contact: 6 days ago.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Teacher Observations</h3>
+            <ul class="ws-list">
+              <li>"Lights up in lab work and discussions." — Science</li>
+              <li>"Strong writer; just needs consistency." — ELA</li>
+              <li>"Shuts down when problems stack up." — Math</li>
+              <li>"Reliable, kind teammate." — PE</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- learning portfolio -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Learning Portfolio</h3>
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+            <div class="student-card"><span class="avatar" aria-hidden="true">📝</span><div><b>Persuasive Essay</b><div class="muted" style="font-size:.82rem;">ELA · Exceeds standard</div></div></div>
+            <div class="student-card"><span class="avatar" aria-hidden="true">🔬</span><div><b>Ecosystem Model</b><div class="muted" style="font-size:.82rem;">Science · Meets standard</div></div></div>
+            <div class="student-card"><span class="avatar" aria-hidden="true">🎨</span><div><b>Digital Art Series</b><div class="muted" style="font-size:.82rem;">Art · Exemplary</div></div></div>
+            <div class="student-card"><span class="avatar" aria-hidden="true">🎮</span><div><b>Game Prototype</b><div class="muted" style="font-size:.82rem;">Coding club · In progress</div></div></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ Analyze in AI Risk Engine</a>
+          <a class="btn ghost" href="risk-dashboard.html">🚦 Back to Risk Dashboard</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Student Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All details on this profile are illustrative fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

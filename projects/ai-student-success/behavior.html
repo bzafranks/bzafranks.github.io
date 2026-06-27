@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavior Analytics — AI Student Success Early Warning System</title>
+  <meta name="description" content="Behavior analytics: incidents, positive behavior, restorative practices, behavior interventions and outcomes, trends, classroom referrals, student reflections, well-being indicators, and AI-generated behavior insights — handled supportively (PBIS/restorative).">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Analytics / <b>Behavior Analytics</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🤝 Behavior Analytics</span>
+          <h1>Behavior Analytics</h1>
+          <p class="lead">Behavior incidents, positive behavior, restorative practices, interventions and outcomes, trends, classroom referrals, student reflections, and well-being indicators — with AI-generated behavior insights. All figures are fictional sample data created for demonstration.</p>
+        </div>
+
+        <div class="card insight" style="margin-bottom:1.2rem;">
+          <b>A supportive lens.</b> Behavior data here is used to understand needs and offer support, not to punish or label. This dashboard follows a <b>PBIS and restorative-practices</b> framework — emphasizing teaching expectations, repairing harm, and connecting students to the right supports.
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>Sample K–12 School</option><option>North Campus</option></select>
+          <label>Term</label><select><option>This Semester</option><option>Year to Date</option></select>
+          <label>Grade</label><select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPIs -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Office Referrals</div><div class="sc-num"><span data-count="42">0</span></div><div class="sc-trend up">▼ 19% vs. last term</div></div>
+          <div class="scorecard green"><div class="sc-label">Suspensions</div><div class="sc-num"><span data-count="6">0</span></div><div class="sc-trend up">▼ 33% vs. last term</div></div>
+          <div class="scorecard green"><div class="sc-label">Positive Recognitions</div><div class="sc-num"><span data-count="1240">0</span></div><div class="sc-trend up">▲ 22% this term</div></div>
+          <div class="scorecard green"><div class="sc-label">Restorative Resolutions</div><div class="sc-num"><span data-count="88" data-suffix="%">0</span></div><div class="sc-trend up">▲ 9% resolved</div></div>
+        </div>
+
+        <!-- incidents trend + positive behavior + restorative -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Behavior Incidents <span class="tl-pill green">▼ Trending down</span></h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Behavior incidents trend, declining"><path class="area" d="M0,18 L50,22 L100,26 L150,30 L200,34 L250,38 L300,44 L300,64 L0,64 Z"></path><path class="line" d="M0,18 L50,22 L100,26 L150,30 L200,34 L250,38 L300,44"></path></svg><p class="muted" style="font-size:.84rem;">Incidents declining as positive supports scale up.</p></div>
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Positive Behavior</h3><div class="gauge" data-gauge="91" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Met expectations</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">91% of students met PBIS expectations this week.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Restorative Practices</h3>
+            <div class="barlist">
+              <div class="row"><span>Restorative chat</span><div class="track"><span class="fill" data-pct="84"></span></div><span>84%</span></div>
+              <div class="row"><span>Peer mediation</span><div class="track"><span class="fill" data-pct="79"></span></div><span>79%</span></div>
+              <div class="row"><span>Circle process</span><div class="track"><span class="fill" data-pct="72"></span></div><span>72%</span></div>
+              <div class="row"><span>Re-entry plan</span><div class="track"><span class="fill" data-pct="68"></span></div><span>68%</span></div>
+            </div>
+            <p class="muted" style="font-size:.84rem;margin-top:.6rem;">% of cases resolved without recurrence (fictional sample).</p>
+          </div>
+        </div>
+
+        <!-- classroom referrals heatmap: type x month -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Classroom Referrals — Type × Month</h3>
+          <p class="muted" style="font-size:.85rem;">Darker = more referrals (an area to support, not to penalize). Fictional sample data (band 0–4).</p>
+          <div class="heatmap" role="table" aria-label="Classroom referrals by type and month" style="grid-template-columns:1.6fr repeat(6, 1fr);">
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Referral type</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Sep</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Oct</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Nov</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Dec</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Jan</div>
+            <div role="columnheader" style="font-size:.72rem;font-weight:700;color:var(--ink-soft);display:grid;place-items:center;">Feb</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Disruption</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Disruption September high">14</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Disruption October">11</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Disruption November">9</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Disruption December">7</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Disruption January">6</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Disruption February low">4</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Off-task</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Off-task September">10</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Off-task October">9</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Off-task November">7</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Off-task December">6</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Off-task January">4</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Off-task February">3</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Conflict</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Conflict September">6</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Conflict October">5</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Conflict November">5</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Conflict December">3</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Conflict January">3</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Conflict February low">2</div>
+
+            <div role="rowheader" style="font-size:.72rem;font-weight:700;display:grid;place-items:center;padding:0 .3rem;text-align:center;">Tardy/transition</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Tardy September">9</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Tardy October">7</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Tardy November">6</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Tardy December">5</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Tardy January">4</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Tardy February">3</div>
+          </div>
+          <div class="legend"><span><i style="background:#e9eef3;"></i> Fewer</span><span><i style="background:#8fcca7;"></i> Mid</span><span><i style="background:#2f7a52;"></i> More</span></div>
+        </div>
+
+        <!-- behavior interventions drill -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3>🛠️ Behavior Intervention Outcomes <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Check-in / Check-out (CICO)</b> — 24 students</span><span class="tl-pill green">81% improving</span></div>
+          <div class="drill-panel"><p class="muted">Daily point card with a named mentor and family communication. 81% of students reduced referrals within 6 weeks; 3 students transitioned back to Tier 1. Continue and fade support gradually.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Social-emotional skills group</b> — 16 students</span><span class="tl-pill green">74% improving</span></div>
+          <div class="drill-panel"><p class="muted">Small-group lessons on self-regulation and conflict resolution. 74% showed fewer classroom incidents; reflection quality improved. Pair with classroom reinforcement.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Restorative re-entry plans</b> — 9 students</span><span class="tl-pill amber">68% resolved</span></div>
+          <div class="drill-panel"><p class="muted">Structured re-entry after time away, repairing relationships and clarifying expectations. 68% had no recurrence; remaining students moved to a coordinated Tier 3 support plan with the team.</p></div>
+        </div>
+
+        <!-- behavior trends + student reflections -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Behavior Trends</h3>
+            <div class="table-wrap">
+              <table>
+                <caption>Fictional sample behavior trends by grade band.</caption>
+                <thead><tr><th scope="col">Grade band</th><th scope="col">Referrals (term)</th><th scope="col">Positive : referral</th><th scope="col">Trend</th></tr></thead>
+                <tbody>
+                  <tr><td>K–5</td><td>9</td><td>38 : 1</td><td><span class="rag"><span class="dot green"></span> Improving</span></td></tr>
+                  <tr><td>6–8</td><td>21</td><td>14 : 1</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                  <tr><td>9–12</td><td>12</td><td>22 : 1</td><td><span class="rag"><span class="dot green"></span> Improving</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="muted" style="font-size:.84rem;">Positive-to-referral ratio is a healthier signal than raw counts.</p>
+          </div>
+          <div class="card"><h3 style="margin-top:0;">Student Reflections</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">This week</span><br>32 restorative reflections completed; common theme: needing a calm space to reset.</li>
+              <li class="now"><span class="t-when">In progress</span><br>Goal-setting check-ins with CICO students.</li>
+              <li><span class="t-when">Planned</span><br>Student-voice survey on classroom climate.</li>
+            </ul>
+            <p class="muted" style="font-size:.84rem;">Reflections are growth tools, kept private and used supportively.</p>
+          </div>
+        </div>
+
+        <!-- well-being indicators -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Well-Being Indicators</h3>
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;">
+            <div class="stat-tile"><div class="s-num">82%</div><div class="s-label">Sense of belonging</div></div>
+            <div class="stat-tile"><div class="s-num">88%</div><div class="s-label">Has a trusted adult</div></div>
+            <div class="stat-tile"><div class="s-num">3.9<span style="font-size:1rem;">/5</span></div><div class="s-label">Self-reported well-being</div></div>
+            <div class="stat-tile"><div class="s-num">▲ 6%</div><div class="s-label">Connectedness trend</div></div>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.8rem;">Behavior and well-being are connected. For the full picture, visit the <a href="wellbeing.html">Well-Being Dashboard →</a></p>
+        </div>
+
+        <!-- AI insights brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Behavior Insights <span class="ai-pill">Simulated</span></h4>
+          <p>In this fictional sample, behavior incidents are <b>down 19%</b> and suspensions <b>down 33%</b> as positive recognitions (<b>▲22%</b>) and restorative practices scale. The strongest remaining signal is <b>Grade 6–8 classroom disruption</b>, concentrated early in the day and during transitions — and most disruption-flagged students also appear on the attendance watchlist, suggesting a shared root cause. Recommended priorities: continue CICO (81% improving), strengthen morning and transition routines in middle grades, and coordinate behavior plans with attendance and well-being supports.</p>
+          <p class="muted" style="font-size:.85rem;"><span class="ai-pill">👤 Educator decides</span> AI analysis on fictional sample data — transparent, strengths-based decision-support reviewed by educators. Behavior data is handled supportively (PBIS/restorative), never to punish or label. <a href="ai-risk-engine.html">Open the AI Risk Engine →</a></p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="interventions.html">🛠️ Plan a Behavior Support</a>
+          <a class="btn ghost" href="wellbeing.html">💛 Well-Being Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. Behavior data is presented supportively within a PBIS / restorative-practices framework.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

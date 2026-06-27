@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings &amp; Responsible AI — AI Student Success Early Warning System</title>
+  <meta name="description" content="Configure appearance and default views, view planned data integrations and future AI features, and review the platform's Responsible AI and ethics commitments and an implementation guide for districts and leadership teams.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Settings &amp; Ethics</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚙️ Settings &amp; Responsible AI</span>
+          <h1>Settings &amp; Responsible AI</h1>
+          <p class="lead">Configure your experience, preview what's on the roadmap, and review the commitments that keep this platform trustworthy: human oversight, transparency, privacy, and ethical use of predictive analytics. All data is fictional sample data; AI is simulated and decision-support only.</p>
+        </div>
+
+        <!-- 1 + 2: Appearance & Default View -->
+        <div class="grid grid-2" style="margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">🎨 Appearance</h3>
+            <div class="drill-row" style="cursor:default;border-bottom:1px solid var(--border);">
+              <span style="flex:1;"><b>Dark mode</b><br><span class="muted" style="font-size:.85rem;">Easier on the eyes in low light. Saved to this device.</span></span>
+              <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.8rem;">An accessibility toolbar is available on every page (text size, contrast, spacing, and more) via the floating accessibility controls — supporting readable, inclusive access for all staff.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">🧭 Default View</h3>
+            <p class="muted" style="font-size:.85rem;">Presentational preferences for how the platform opens (demonstration only).</p>
+            <div class="field"><label for="def-school">Default school</label><select id="def-school"><option>Sample K–12 School</option><option>North Campus</option><option>South Campus</option></select></div>
+            <div class="field-row">
+              <div class="field"><label for="def-term">Default term</label><select id="def-term"><option>This Semester</option><option>Year to Date</option><option>Full Year</option></select></div>
+              <div class="field"><label for="def-grade">Grade band</label><select id="def-grade"><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select></div>
+            </div>
+            <div class="field"><label for="def-land">Landing dashboard</label><select id="def-land"><option>Executive Dashboard</option><option>Student Risk Dashboard</option><option>MTSS Framework</option><option>Well-Being Dashboard</option></select></div>
+          </div>
+        </div>
+
+        <!-- 3 + 4: Data Integration & Future AI -->
+        <div class="grid grid-2" style="margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">🔌 Data Integration</h3>
+            <p class="muted" style="font-size:.85rem;">Planned secure, consent-aware connectors. None are active in this demonstration.</p>
+            <ul class="ws-list">
+              <li>Student Information System (SIS) <span class="soon">Soon</span></li>
+              <li>Assessment platform <span class="soon">Soon</span></li>
+              <li>Learning Management System (LMS) <span class="soon">Soon</span></li>
+              <li>Attendance system <span class="soon">Soon</span></li>
+              <li>Behavior / PBIS system <span class="soon">Soon</span></li>
+              <li>Counseling / wellness platform <span class="soon">Soon</span></li>
+              <li>Single Sign-On (SSO) <span class="soon">Soon</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">✨ Future AI Features</h3>
+            <p class="muted" style="font-size:.85rem;">On the roadmap — each will ship with the same responsible-AI guardrails described below.</p>
+            <ul class="ws-list">
+              <li>Predictive graduation pathways <span class="soon">Soon</span></li>
+              <li>AI attendance assistant <span class="soon">Soon</span></li>
+              <li>Natural language reporting <span class="soon">Soon</span></li>
+              <li>Voice assistant <span class="soon">Soon</span></li>
+              <li>Regional benchmarking <span class="soon">Soon</span></li>
+              <li>District analytics <span class="soon">Soon</span></li>
+              <li>Mobile notifications <span class="soon">Soon</span></li>
+              <li>Community agency referrals <span class="soon">Soon</span></li>
+              <li>API integrations <span class="soon">Soon</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5: RESPONSIBLE AI & ETHICS (prominent) -->
+        <div class="card insight" style="margin-bottom:1.4rem;border-left-width:6px;">
+          <h2 style="margin-top:0;">⚖️ Responsible AI &amp; Ethics</h2>
+          <p>This platform treats AI as <b>decision-support, never a decision-maker</b>. Predictive analytics surface students who may benefit from earlier support — they do not judge, label, or determine outcomes. These commitments are built into every feature.</p>
+          <div class="grid grid-2">
+            <div>
+              <h4>👤 Human oversight</h4>
+              <p class="muted" style="font-size:.9rem;">A qualified educator or counselor reviews every AI suggestion and makes all decisions about students. AI cannot place, refer, or act on its own.</p>
+              <h4>🔍 Transparency</h4>
+              <p class="muted" style="font-size:.9rem;">AI output is clearly labeled as simulated/decision-support, with sources and limitations stated. Users always know when they are seeing AI-generated content.</p>
+              <h4>🧠 Explainability</h4>
+              <p class="muted" style="font-size:.9rem;">Every risk indication shows its contributing factors and a confidence level, so educators can question, validate, or override it.</p>
+              <h4>🔐 Privacy &amp; student data protection</h4>
+              <p class="muted" style="font-size:.9rem;">Data minimization, role-based access, and alignment with student-privacy law (e.g., FERPA-style protections). In this demo, nothing leaves the browser.</p>
+              <h4>⚖️ Bias monitoring</h4>
+              <p class="muted" style="font-size:.9rem;">Models and indicators are reviewed for disparate impact across student groups, with ongoing fairness checks and correction.</p>
+            </div>
+            <div>
+              <h4>🛡️ Data security</h4>
+              <p class="muted" style="font-size:.9rem;">Encryption in transit and at rest, least-privilege access, audit logging, and secure integrations are required for any production deployment.</p>
+              <h4>✅ Consent considerations</h4>
+              <p class="muted" style="font-size:.9rem;">Sensitive data (e.g., well-being) is collected voluntarily where appropriate, with informed consent and assent, and used only for the stated supportive purpose.</p>
+              <h4>📈 Appropriate use of predictive analytics</h4>
+              <p class="muted" style="font-size:.9rem;">Predictions open doors to support — never close them. They are not used for punitive tracking, ranking, or denying opportunity.</p>
+              <h4>🤝 Ethical decision-making</h4>
+              <p class="muted" style="font-size:.9rem;">Decisions center the student's best interest, dignity, and growth, guided by professional judgment and clear policy.</p>
+              <h4>🚦 Safeguards against over-reliance on AI</h4>
+              <p class="muted" style="font-size:.9rem;">Training, "educator decides" prompts, confidence disclosures, and review steps keep humans firmly in the loop and prevent automation bias.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6: Implementation Guide -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h2 style="margin-top:0;">🗺️ Implementation Guide</h2>
+          <p class="muted">Written for districts, ministries, leadership teams, and student-support services planning a responsible rollout.</p>
+          <ol class="stack">
+            <li><b>Implementation roadmap.</b> Begin with readiness and goal-setting, sequence integrations, and phase features so support capacity grows alongside the data.</li>
+            <li><b>Data governance.</b> Establish a governance team, data dictionary, retention schedule, and clear ownership and access policies before connecting any system.</li>
+            <li><b>Privacy.</b> Complete a privacy impact assessment, align to applicable student-privacy law, and define consent, minimization, and de-identification practices.</li>
+            <li><b>Responsible-AI framework.</b> Adopt the human-oversight, transparency, explainability, and bias-monitoring commitments above as binding policy with named accountable owners.</li>
+            <li><b>Professional development (PD).</b> Train staff to interpret indicators, question AI, protect privacy, and respond with supportive, evidence-based interventions.</li>
+            <li><b>Technology integration.</b> Connect SIS, assessment, LMS, attendance, behavior, and wellness sources via secure SSO; validate data quality before going live.</li>
+            <li><b>Pilot.</b> Run a small, well-supported pilot (a few grades or a campus), gather educator and family feedback, and refine indicators and workflows.</li>
+            <li><b>Scaling.</b> Expand in waves with shared playbooks, coaching, and capacity checks so each new site is ready to act on what the data surfaces.</li>
+            <li><b>Success metrics.</b> Track student outcomes (attendance, on-track, well-being, equity gaps) plus process metrics (timely interventions, family engagement) — not just usage.</li>
+            <li><b>Continuous improvement.</b> Review fairness, accuracy, and impact on a regular cadence; retire or adjust what isn't helping students.</li>
+          </ol>
+        </div>
+
+        <!-- 7: Data -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🗃️ Data</h3>
+          <p class="muted" style="font-size:.9rem;">This demonstration stores nothing on a server. Your theme choice, AI Risk Engine history, and usage counts live only in this browser's local storage.</p>
+          <div class="btn-row">
+            <button class="out-btn" onclick="if(confirm('Clear AI history and stats?')){localStorage.removeItem('ess:hist');localStorage.removeItem('ess:stats');window.ESS&&window.ESS.toast('Local data cleared','ok');}">Clear local data</button>
+          </div>
+          <p class="muted" style="font-size:.82rem;margin-top:.8rem;">Local keys used on this device: <span class="kbd">ess:theme</span> <span class="kbd">ess:hist</span> <span class="kbd">ess:stats</span>. Clearing removes <span class="kbd">ess:hist</span> and <span class="kbd">ess:stats</span>; your theme preference stays until you toggle it.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. AI is simulated client-side and is decision-support only — educators make every decision.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Risk Dashboard — AI Student Success Early Warning System</title>
+  <meta name="description" content="Student risk levels, distribution by grade, class and subgroup, risk over time, emerging trends, a grade-by-indicator risk heatmap, drill-down cohorts, traffic-light indicators, flagged students, and an AI risk summary.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Student Risk Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🚦 Early-Warning Analytics</span>
+          <h1>Student Risk Dashboard</h1>
+          <p class="lead">A real-time view of student risk across the school: how risk is distributed, where it is concentrated, how it is moving over time, and which students need attention now. All figures are fictional sample data for demonstration.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="f-grade">Grade</label>
+          <select id="f-grade"><option>All grades</option><option>Grade 6</option><option>Grade 7</option><option selected>Grade 8</option><option>Grade 9–12</option></select>
+          <label for="f-ind">Indicator</label>
+          <select id="f-ind"><option>All indicators</option><option>Attendance</option><option>Academics</option><option>Behavior</option><option>Engagement</option></select>
+          <label for="f-term">Term</label>
+          <select id="f-term"><option>This Semester</option><option>Year to Date</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- Overall risk levels -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Low Risk</div><div class="sc-num"><span data-count="412">0</span></div><div class="sc-trend up">83% · ▲ 3%</div></div>
+          <div class="scorecard amber"><div class="sc-label">Medium Risk</div><div class="sc-num"><span data-count="55">0</span></div><div class="sc-trend flat">11% · steady</div></div>
+          <div class="scorecard red"><div class="sc-label">High Risk</div><div class="sc-num"><span data-count="30">0</span></div><div class="sc-trend down">6% · ▲ 1% — watch</div></div>
+          <div class="scorecard red"><div class="sc-label">Meet 2+ Indicators</div><div class="sc-num"><span data-count="47">0</span></div><div class="sc-trend down">12 high-priority</div></div>
+        </div>
+
+        <!-- distribution gauge + risk over time -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Risk Distribution</h3><div class="gauge" data-gauge="83" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>On track</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Low 83% · Medium 11% · High 6%</p></div>
+          <div class="card"><h3 style="margin-top:0;">Risk Over Time</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Share of students at medium or high risk over time"><path class="area" d="M0,42 L50,40 L100,38 L150,36 L200,30 L250,28 L300,26 L300,64 L0,64 Z"></path><path class="line" d="M0,42 L50,40 L100,38 L150,36 L200,30 L250,28 L300,26"></path></svg><p class="muted" style="font-size:.84rem;">Medium+high risk drifting up — driven by Grade 8.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Emerging Trends</h3><ul class="ws-list" style="margin-top:.2rem;"><li><span class="rag"><span class="dot red"></span> Grade 8 attendance (Mon/Fri)</span></li><li><span class="rag"><span class="dot amber"></span> Math course failure rising</span></li><li><span class="rag"><span class="dot amber"></span> Assignment completion ▼</span></li><li><span class="rag"><span class="dot green"></span> Behavior incidents ▼</span></li></ul></div>
+        </div>
+
+        <!-- AI exec brief -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Risk Summary <span class="ai-pill">Simulated</span></h4>
+          <p>Of <b>497 students</b>, 83% are low risk, 11% medium, and 6% high. Risk is concentrated in <b>Grade 8</b>, where the strongest contributing indicators are <b>attendance</b> (clustered Mon/Fri) and <b>math performance</b>. <b>47 students</b> meet two or more early-warning indicators and <b>12 are high-priority</b>; notably, several show recent downward trends rather than chronic low performance — a key window to intervene. Recommended next step: open coordinated Tier 2 plans for the highest-risk cohort and launch a tiered attendance response. <a href="ai-risk-engine.html">Open the AI Risk Engine for student-level analysis →</a></p>
+        </div>
+
+        <!-- risk by grade + by class -->
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Risk by Grade <span class="muted" style="font-size:.82rem;font-weight:400;">— % medium or high</span></h3>
+            <div class="barlist">
+              <div class="row"><span>Grade 6</span><span class="track"><span class="fill" data-pct="12"></span></span><span>12%</span></div>
+              <div class="row"><span>Grade 7</span><span class="track"><span class="fill" data-pct="15"></span></span><span>15%</span></div>
+              <div class="row"><span>Grade 8</span><span class="track"><span class="fill" data-pct="28"></span></span><span>28%</span></div>
+              <div class="row"><span>Grade 9</span><span class="track"><span class="fill" data-pct="18"></span></span><span>18%</span></div>
+              <div class="row"><span>Grade 10</span><span class="track"><span class="fill" data-pct="14"></span></span><span>14%</span></div>
+              <div class="row"><span>Grade 11</span><span class="track"><span class="fill" data-pct="9"></span></span><span>9%</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Risk by Class <span class="muted" style="font-size:.82rem;font-weight:400;">— flagged students</span></h3>
+            <div class="barlist">
+              <div class="row"><span>Math 8 · Pd 3</span><span class="track"><span class="fill" data-pct="74"></span></span><span>11</span></div>
+              <div class="row"><span>Science 8 · Pd 2</span><span class="track"><span class="fill" data-pct="60"></span></span><span>9</span></div>
+              <div class="row"><span>ELA 8 · Pd 5</span><span class="track"><span class="fill" data-pct="40"></span></span><span>6</span></div>
+              <div class="row"><span>Math 7 · Pd 1</span><span class="track"><span class="fill" data-pct="33"></span></span><span>5</span></div>
+              <div class="row"><span>Social St 9 · Pd 4</span><span class="track"><span class="fill" data-pct="27"></span></span><span>4</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- risk by subgroup table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Risk by Subgroup</h3>
+          <p class="muted" style="font-size:.85rem;">Reviewed for equity. Subgroups are reported only where group size is large enough to protect privacy. Fictional sample data.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Share of students at medium or high risk, by reporting subgroup (illustrative).</caption>
+              <thead>
+                <tr><th scope="col">Subgroup</th><th scope="col">Students</th><th scope="col">Medium+High Risk</th><th scope="col">Trend</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">All students</th><td>497</td><td>17%</td><td>▲ 1%</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                <tr><th scope="row">Multilingual learners</th><td>86</td><td>23%</td><td>▲ 2%</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                <tr><th scope="row">Students with IEPs</th><td>71</td><td>26%</td><td>flat</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                <tr><th scope="row">Economically disadvantaged</th><td>208</td><td>21%</td><td>▲ 1%</td><td><span class="rag"><span class="dot amber"></span> Watch</span></td></tr>
+                <tr><th scope="row">New to school (&lt;1 yr)</th><td>54</td><td>19%</td><td>▼ 2%</td><td><span class="rag"><span class="dot green"></span> Improving</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- risk heatmap: grade x indicator -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Risk Heatmap <span class="muted" style="font-size:.82rem;font-weight:400;">— grade × early-warning indicator</span></h3>
+          <p class="muted" style="font-size:.85rem;">Darker cells indicate a higher share of students flagged on that indicator. Fictional sample data.</p>
+          <div class="heatmap" role="table" aria-label="Risk by grade and indicator" style="grid-template-columns:120px repeat(4, 1fr);max-width:640px;">
+            <div role="columnheader" style="font-size:.78rem;font-weight:700;color:var(--ink-soft);display:grid;align-items:center;"></div>
+            <div role="columnheader" style="font-size:.78rem;font-weight:700;color:var(--ink-soft);text-align:center;">Attendance</div>
+            <div role="columnheader" style="font-size:.78rem;font-weight:700;color:var(--ink-soft);text-align:center;">Academics</div>
+            <div role="columnheader" style="font-size:.78rem;font-weight:700;color:var(--ink-soft);text-align:center;">Behavior</div>
+            <div role="columnheader" style="font-size:.78rem;font-weight:700;color:var(--ink-soft);text-align:center;">Engagement</div>
+
+            <div role="rowheader" style="font-size:.82rem;font-weight:700;display:grid;align-items:center;">Grade 6</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 6 attendance: low">7</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 6 academics: low">9</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Grade 6 behavior: very low">4</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 6 engagement: low">8</div>
+
+            <div role="rowheader" style="font-size:.82rem;font-weight:700;display:grid;align-items:center;">Grade 7</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Grade 7 attendance: moderate">12</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 7 academics: low">10</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 7 behavior: low">6</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Grade 7 engagement: moderate">11</div>
+
+            <div role="rowheader" style="font-size:.82rem;font-weight:700;display:grid;align-items:center;">Grade 8</div>
+            <div class="hm-cell hm-4" role="cell" aria-label="Grade 8 attendance: high">21</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Grade 8 academics: elevated">18</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Grade 8 behavior: moderate">9</div>
+            <div class="hm-cell hm-3" role="cell" aria-label="Grade 8 engagement: elevated">16</div>
+
+            <div role="rowheader" style="font-size:.82rem;font-weight:700;display:grid;align-items:center;">Grade 9</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Grade 9 attendance: moderate">13</div>
+            <div class="hm-cell hm-2" role="cell" aria-label="Grade 9 academics: moderate">12</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 9 behavior: low">7</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 9 engagement: low">8</div>
+
+            <div role="rowheader" style="font-size:.82rem;font-weight:700;display:grid;align-items:center;">Grade 10</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 10 attendance: low">9</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 10 academics: low">8</div>
+            <div class="hm-cell hm-0" role="cell" aria-label="Grade 10 behavior: very low">3</div>
+            <div class="hm-cell hm-1" role="cell" aria-label="Grade 10 engagement: low">6</div>
+          </div>
+          <div class="legend">
+            <span><i style="background:#e9eef3;"></i> Very low</span>
+            <span><i style="background:#cfe3d6;"></i> Low</span>
+            <span><i style="background:#8fcca7;"></i> Moderate</span>
+            <span><i style="background:#4c9a6e;"></i> Elevated</span>
+            <span><i style="background:#2f7a52;"></i> High</span>
+          </div>
+        </div>
+
+        <!-- drill-down risk cohorts -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Risk Cohorts <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Meet all 3 indicators</b> · 4 students</span><span class="tl-pill red">High</span></div>
+          <div class="drill-panel"><p class="muted">All four are Grade 8, flagged on attendance, course performance, and engagement. None has an active coordinated plan. Recommended: convene the support team this week and assign a case-manager per student.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Attendance + academics</b> · 19 students</span><span class="tl-pill amber">Medium</span></div>
+          <div class="drill-panel"><p class="muted">Chronic or emerging absenteeism combined with falling grades. Recommended: Tier 2 attendance check-ins plus targeted small-group reteach in the affected subject.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Recent downward trend (no chronic flag)</b> · 24 students</span><span class="tl-pill amber">Emerging</span></div>
+          <div class="drill-panel"><p class="muted">Stable-to-strong history with a sharp 3–4 week decline. High-value window: light-touch outreach and progress monitoring often prevents escalation.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Single-indicator watchlist</b> · 31 students</span><span class="tl-pill green">Monitor</span></div>
+          <div class="drill-panel"><p class="muted">One indicator flagged. Continue universal Tier 1 supports and re-check in 3 weeks before escalating.</p></div>
+        </div>
+
+        <!-- flagged students -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Flagged Students <span class="muted" style="font-size:.85rem;font-weight:400;">— highest priority this week</span></h3>
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="risk-card high">
+              <div class="r-top"><b>Student A — Grade 8</b><span class="risk-band high">High</span></div>
+              <ul style="margin:.5rem 0 .4rem;font-size:.9rem;"><li>Attendance 81% (chronic, Mon/Fri)</li><li>Failing Math &amp; Science</li></ul>
+              <a href="student-profile.html" style="font-weight:700;font-size:.88rem;">View success profile →</a>
+            </div>
+            <div class="risk-card high">
+              <div class="r-top"><b>Student B — Grade 8</b><span class="risk-band high">High</span></div>
+              <ul style="margin:.5rem 0 .4rem;font-size:.9rem;"><li>3 behavior referrals this month</li><li>Assignment completion 49% (▼)</li></ul>
+              <a href="student-profile.html" style="font-weight:700;font-size:.88rem;">View success profile →</a>
+            </div>
+            <div class="risk-card med">
+              <div class="r-top"><b>Student C — Grade 7</b><span class="risk-band med">Medium</span></div>
+              <ul style="margin:.5rem 0 .4rem;font-size:.9rem;"><li>Attendance 88% (emerging)</li><li>Math grade dropped one letter</li></ul>
+              <a href="student-profile.html" style="font-weight:700;font-size:.88rem;">View success profile →</a>
+            </div>
+            <div class="risk-card med">
+              <div class="r-top"><b>Student D — Grade 9</b><span class="risk-band med">Medium</span></div>
+              <ul style="margin:.5rem 0 .4rem;font-size:.9rem;"><li>2 disengagement flags</li><li>Belonging "amber" on last check-in</li></ul>
+              <a href="student-profile.html" style="font-weight:700;font-size:.88rem;">View success profile →</a>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:.8rem;font-size:.82rem;">Student names are fictional placeholders for demonstration only.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="mtss.html">🪜 MTSS Framework</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Risk Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

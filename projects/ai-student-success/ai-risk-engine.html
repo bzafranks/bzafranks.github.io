@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Risk Engine — AI Student Success Early Warning System</title>
+  <meta name="description" content="An explainable AI risk engine that analyzes fictional early-warning indicators to produce a risk level, contributing factors, confidence, recommended supports, and a monitoring schedule — explaining why, while educators make every decision.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>AI Risk Engine</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">✨ Explainable Intelligence</span>
+          <h1>AI Risk Engine</h1>
+          <p class="lead">An <b>explainable</b> recommendation system that analyzes fictional early-warning indicators — attendance, assessment trends, assignment completion, engagement, behavior, course performance, and intervention history — to produce a <b>risk level</b>, the <b>contributing factors</b>, a <b>confidence level</b>, <b>recommended supports</b>, and a <b>monitoring schedule</b>. It always explains <i>why</i> a student is flagged and <b>never makes a final decision</b> — educators do. All data shown is realistic fictional sample data.</p>
+        </div>
+
+        <div class="ws-grid">
+          <!-- LEFT: explainable AI chat -->
+          <div class="chat"><div class="chat-head"><span class="bot">✨</span> AI Risk Engine <span class="ai-pill" style="margin-left:auto;">Simulated · explainable</span></div>
+          <div class="chat-log" data-ai-log></div>
+          <div class="chat-suggest">
+            <button class="chat-chip" data-ai-suggest>Why is Student A flagged?</button>
+            <button class="chat-chip" data-ai-suggest>Which students are highest risk?</button>
+            <button class="chat-chip" data-ai-suggest>Analyze attendance-risk patterns</button>
+          </div>
+          <form class="composer" data-ai-form><input type="text" placeholder="Ask about a student or pattern…" aria-label="Ask the risk engine"><button type="submit">Analyze</button></form></div>
+
+          <!-- RIGHT: explanation + responsible AI -->
+          <div class="ws-side">
+            <div class="panel">
+              <h4>How it works</h4>
+              <ul class="ws-list">
+                <li>📥 <b>Analyzes indicators</b> — attendance, assessment trends, completion, engagement, behavior, course performance, and intervention history.</li>
+                <li>📈 <b>Weights recent trends</b> — a downward turn this month counts more than a stable long-term pattern, so help arrives in time.</li>
+                <li>🔍 <b>Explains the factors</b> — every flag lists the contributing factors and a confidence level in plain language.</li>
+                <li>🪜 <b>Suggests supports</b> — recommends the least-intensive effective tier plus a monitoring schedule for review.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h4>Responsible AI</h4>
+              <ul class="ws-list">
+                <li>🔎 <b>Transparent</b> — no black box; the reasoning is shown every time.</li>
+                <li>🧠 <b>Explainable</b> — factors and confidence are always stated.</li>
+                <li>👤 <b>Educator decides</b> — the engine recommends; people make every final decision.</li>
+                <li>🔒 <b>Privacy-first</b> — fictional data; nothing leaves your browser.</li>
+                <li>⚖️ <b>Guards against over-reliance</b> — a starting point for professional judgment, not a verdict.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h4>This engine never decides</h4>
+              <p class="muted" style="font-size:.88rem;margin:.2rem 0 .8rem;">The AI Risk Engine produces decision-support only. Risk levels and recommendations are reviewed by educators before any action is taken on behalf of a student.</p>
+              <button class="out-btn" data-ai-clear>Clear conversation</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. AI analysis is simulated client-side and is decision-support only — educators make every decision.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

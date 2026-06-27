@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Well-Being Dashboard — AI Student Success Early Warning System</title>
+  <meta name="description" content="A supportive view of student well-being: voluntary check-ins, sense of belonging, engagement, self-reported stress, counselor referrals, and support services — collected ethically with privacy safeguards. All data is illustrative fictional sample data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="AI Student Success Early Warning System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SS</span><span class="brand-text"><span class="brand-title">AI Student Success</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-dashboard.html">Dashboard</a></li>
+        <li><a href="risk-dashboard.html">Risk</a></li>
+        <li><a href="ai-risk-engine.html">AI Engine</a></li>
+        <li><a href="mtss.html">MTSS</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">SS</span><b>Student Success Center</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="executive-dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <a class="rail-link" href="risk-dashboard.html"><span class="ico">🚦</span> Student Risk Dashboard</a>
+        <a class="rail-link" href="student-profile.html"><span class="ico">🧑‍🎓</span> Student Profile</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="ai-risk-engine.html"><span class="ico">✨</span> AI Risk Engine</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports</a>
+        <div class="rail-group">Support</div>
+        <a class="rail-link" href="mtss.html"><span class="ico">🪜</span> MTSS Framework</a>
+        <a class="rail-link" href="interventions.html"><span class="ico">🛠️</span> Intervention Planner</a>
+        <a class="rail-link" href="family-engagement.html"><span class="ico">👨‍👩‍👧</span> Family Engagement</a>
+        <div class="rail-group">Analytics</div>
+        <a class="rail-link" href="attendance.html"><span class="ico">📅</span> Attendance Analytics</a>
+        <a class="rail-link" href="academics.html"><span class="ico">🎓</span> Academic Analytics</a>
+        <a class="rail-link" href="behavior.html"><span class="ico">🤝</span> Behavior Analytics</a>
+        <a class="rail-link" href="wellbeing.html"><span class="ico">💛</span> Well-Being Dashboard</a>
+        <a class="rail-link" href="settings.html"><span class="ico">⚙️</span> Settings &amp; Ethics</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Analytics / <b>Well-Being Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Priority Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>4 students</b> now meet all 3 early-warning indicators.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Grade 8 attendance</b> trending down (Mon/Fri).</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>6 interventions</b> due for progress review.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-risk-engine.html">Ask the AI Risk Engine →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">💛 Whole-Child Well-Being</span>
+          <h1>Well-Being Dashboard</h1>
+          <p class="lead">A supportive, strengths-based view of how students are doing beyond academics — voluntary check-ins, sense of belonging, engagement, self-reported stress, and the support services connecting students to caring adults. All figures are illustrative fictional sample data.</p>
+        </div>
+
+        <!-- Ethics / consent guardrail -->
+        <div class="card insight" style="margin-bottom:1.4rem;">
+          <p style="margin:0;"><b>⚖️ Collected ethically — and illustrative only.</b> Well-being data must be gathered <b>voluntarily where appropriate</b>, with clear purpose, informed consent (and assent for minors), strict privacy safeguards, and access limited to the caring adults who support each student. It is intended to <b>open conversations and connect students to help</b> — never to label, rank, or penalize. Every number on this page is fictional sample data created for demonstration, and a human educator or counselor reviews context before any action.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>Sample K–12 School</option><option>North Campus</option></select>
+          <label>Term</label><select><option>This Semester</option><option>Year to Date</option></select>
+          <label>Grade</label><select><option>All grades</option><option>K–5</option><option>6–8</option><option>9–12</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- Scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="scorecard green"><div class="sc-label">Voluntary Check-Ins (This Week)</div><div class="sc-num"><span data-count="612">0</span></div><div class="sc-trend up">▲ 88% participation</div></div>
+          <div class="scorecard green"><div class="sc-label">Sense of Belonging</div><div class="sc-num"><span data-count="78" data-suffix="%">0</span></div><div class="sc-trend up">▲ 4% feel connected</div></div>
+          <div class="scorecard amber"><div class="sc-label">Self-Reported Stress (Elevated)</div><div class="sc-num"><span data-count="19" data-suffix="%">0</span></div><div class="sc-trend down">▲ 3% — check in</div></div>
+          <div class="scorecard green"><div class="sc-label">Connected to a Caring Adult</div><div class="sc-num"><span data-count="91" data-suffix="%">0</span></div><div class="sc-trend up">▲ 5%</div></div>
+        </div>
+
+        <!-- Belonging gauge + engagement + wellness trend -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Sense of Belonging</h3><div class="gauge" data-gauge="78" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Feel they belong</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Strong 78% · Mixed 15% · Low 7%</p></div>
+          <div class="card"><h3 style="margin-top:0;">Engagement Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Engagement trend"><path class="area" d="M0,40 L50,36 L100,34 L150,30 L200,28 L250,24 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,40 L50,36 L100,34 L150,30 L200,28 L250,24 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Engagement rising as clubs reopen.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Wellness Index Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Wellness index trend"><path class="area" d="M0,30 L50,28 L100,32 L150,26 L200,24 L250,26 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,30 L50,28 L100,32 L150,26 L200,24 L250,26 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Gentle improvement this term.</p></div>
+        </div>
+
+        <!-- Belonging & engagement by grade -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Belonging &amp; Engagement by Grade</h3>
+          <p class="muted" style="font-size:.85rem;">Share of students reporting a strong sense of belonging on the most recent voluntary check-in (illustrative).</p>
+          <div class="barlist">
+            <div class="row"><span>Grade 5</span><span class="track"><span class="fill" data-pct="84" style="width:0%"></span></span><span>84%</span></div>
+            <div class="row"><span>Grade 6</span><span class="track"><span class="fill" data-pct="80" style="width:0%"></span></span><span>80%</span></div>
+            <div class="row"><span>Grade 7</span><span class="track"><span class="fill" data-pct="74" style="width:0%"></span></span><span>74%</span></div>
+            <div class="row"><span>Grade 8</span><span class="track"><span class="fill" data-pct="69" style="width:0%"></span></span><span>69%</span></div>
+            <div class="row"><span>Grade 9</span><span class="track"><span class="fill" data-pct="77" style="width:0%"></span></span><span>77%</span></div>
+            <div class="row"><span>Grade 10</span><span class="track"><span class="fill" data-pct="81" style="width:0%"></span></span><span>81%</span></div>
+          </div>
+        </div>
+
+        <!-- Stress examples + support services -->
+        <div class="grid grid-2" style="margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Self-Reported Stress — Themes</h3>
+            <p class="muted" style="font-size:.85rem;">Common themes students chose to share on optional, anonymous-where-possible check-ins (illustrative examples).</p>
+            <ul>
+              <li><span class="rag"><span class="dot amber"></span></span> Worry about upcoming assessments and grades</li>
+              <li><span class="rag"><span class="dot amber"></span></span> Sleep and tiredness during the school week</li>
+              <li><span class="rag"><span class="dot green"></span></span> Friendships and feeling included at lunch/recess</li>
+              <li><span class="rag"><span class="dot amber"></span></span> Balancing activities, jobs, and family responsibilities</li>
+              <li><span class="rag"><span class="dot green"></span></span> Excitement about clubs, arts, and athletics</li>
+            </ul>
+            <p class="muted" style="font-size:.82rem;">Themes guide universal supports (Tier 1) — they are not used to single out individuals.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Support Services — At a Glance</h3>
+            <div class="stat-strip" style="margin:.4rem 0 0;">
+              <div class="stat-tile"><div class="s-num"><span data-count="6">0</span></div><div class="s-label">Counselors &amp; social workers</div></div>
+              <div class="stat-tile"><div class="s-num"><span data-count="42">0</span></div><div class="s-label">Students in active support</div></div>
+              <div class="stat-tile"><div class="s-num"><span data-count="9">0</span></div><div class="s-label">Peer-support / mentor groups</div></div>
+              <div class="stat-tile"><div class="s-num"><span data-count="3">0</span></div><div class="s-label">Community agency partners</div></div>
+            </div>
+            <p class="muted" style="font-size:.82rem;margin-top:.8rem;">Available services: counseling check-ins, restorative circles, mentoring, mindfulness groups, and family/community referrals.</p>
+          </div>
+        </div>
+
+        <!-- AI exec brief (supportive) -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>✨ AI Well-Being Insights <span class="ai-pill">Simulated</span></h4>
+          <p>Most students report feeling connected — <b>78% express a strong sense of belonging</b> and <b>91% can name a caring adult</b> at school, both trending up. Belonging dips modestly in <b>Grade 8 (69%)</b>, where stress themes cluster around assessments and sleep. A supportive, strengths-based response is suggested: protect advisory/check-in time, expand peer-mentor and club opportunities in Grade 8, and share universal stress-management and sleep resources with families. These are gentle, opt-in supports — counselors review context, honor consent, and decide next steps. <a href="ai-risk-engine.html">Discuss with the AI Risk Engine →</a></p>
+        </div>
+
+        <!-- Support-service referral drill-down -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🤝 Support-Service Referrals <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <p class="muted" style="font-size:.85rem;">All referrals are voluntary and confidential; figures are illustrative.</p>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Counseling check-ins</b> — 24 students connected</span><span class="tl-pill green">Active</span></div>
+          <div class="drill-panel"><p class="muted">Self-referrals and staff referrals (with consent) for brief, solution-focused check-ins. Most resolve in 2–4 sessions; counselors track only what is needed to support the student.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Peer mentoring &amp; belonging groups</b> — 11 students</span><span class="tl-pill green">Active</span></div>
+          <div class="drill-panel"><p class="muted">Optional small groups that build connection and inclusion, often paired with a trusted adult mentor and a club or activity.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Mindfulness &amp; stress-management</b> — 5 students</span><span class="tl-pill amber">Forming</span></div>
+          <div class="drill-panel"><p class="muted">Skills-based group responding to assessment- and sleep-related stress themes; open enrollment with family awareness.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Community agency referral</b> — 2 students</span><span class="tl-pill amber">In progress</span></div>
+          <div class="drill-panel"><p class="muted">Connection to outside counseling/health partners, made with explicit family consent and handled by qualified staff with strict privacy safeguards.</p></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="ai-risk-engine.html">✨ AI Risk Engine</a>
+          <a class="btn ghost" href="family-engagement.html">👨‍👩‍👧 Family Engagement</a>
+          <a class="btn ghost" href="mtss.html">🪜 MTSS Framework</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is realistic fictional sample data created for demonstration. Well-being information is illustrative only and would be handled with consent, privacy safeguards, and human oversight.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>AI Student Success Early Warning System</h4><p style="color:#c9d6e6;">Responsible predictive analytics &amp; intervention for K–12 — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="risk-dashboard.html">Risk Dashboard</a></li><li><a href="mtss.html">MTSS</a></li><li><a href="interventions.html">Interventions</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is fictional sample data; AI is simulated and decision-support only.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
