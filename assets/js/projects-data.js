@@ -235,5 +235,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🩺",
     tags: ["School Improvement", "Continuous Improvement", "Strategic Planning", "Systems Thinking", "Quality Assurance", "Organizational Development"],
     summary: "An enterprise operating system for continuous school improvement: a six-domain framework + PDSA cycle, a scored School Diagnostic that generates a School Health Index, a strategic-planning suite (interactive SWOT builder, SMART goals, balanced scorecard), performance dashboards, a saved action planner + improvement-plan generator, monitoring & evaluation with a quarterly-review generator, and an executive leadership dashboard. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "leading-change",
+    title: "Leading Change",
+    subtitle: "A framework for leading sustainable school transformation",
+    pillar: "il",
+    grade: "Leadership · Framework",
+    status: "done",
+    url: "projects/leading-change/index.html",
+    icon: "🧭",
+    tags: ["Change Management", "School Transformation", "Transformational Leadership", "Stakeholder Engagement", "Organizational Development", "Research-Based"],
+    summary: "A comprehensive educational change-leadership framework: six phases of transformation (Vision, Capacity, Engage, Implement, Monitor, Sustain), a scored 8-dimension Change Readiness Assessment, a transformation roadmap planner + change-action generator, a stakeholder influence/interest map, a communication strategy planner + message generator, an implementation toolkit, a culture & sustainability module, and a leadership dashboard. Grounded in Kotter & ADKAR. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

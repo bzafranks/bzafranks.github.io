@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Dashboard — Leading Change</title>
+  <meta name="description" content="Executive transformation dashboard — change readiness, implementation progress, stakeholder engagement, communication effectiveness, professional learning, milestones, risk indicators, and leadership actions.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leading Change" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LC</span><span class="brand-text"><span class="brand-title">Leading Change</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="change-framework.html">Framework</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Change framework">
+        <div class="rail-brand"><span class="mark">LC</span><b>Leading Change</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="change-framework.html"><span class="ico">🧭</span> Change Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Transformation Roadmap</a>
+        <a class="rail-link" href="stakeholders.html"><span class="ico">👥</span> Stakeholder Engagement</a>
+        <a class="rail-link" href="communication.html"><span class="ico">💬</span> Communication Strategy</a>
+        <div class="rail-group">Implement</div>
+        <a class="rail-link" href="implementation.html"><span class="ico">🧰</span> Implementation Toolkit</a>
+        <a class="rail-link" href="culture.html"><span class="ico">🌱</span> Culture &amp; Sustainability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Insight / <b>Leadership Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Executive View</span>
+          <h1>Leadership Dashboard</h1>
+          <p class="lead">A single-pane view of the transformation: change readiness, implementation progress, stakeholder engagement, communication effectiveness, professional learning, milestones, and risk. Use it to lead with evidence — and adapt without losing focus.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Illustrative Dashboard</span>
+          <p class="muted" style="margin:.3rem 0 0;">All figures below are <em>sample data</em> for a fictional transformation, shown to demonstrate how leaders might monitor the human and operational sides of change. Replace with your own evidence in practice.</p>
+        </div>
+
+        <!-- ===== Hero gauges ===== -->
+        <section aria-labelledby="health-heading">
+          <h2 id="health-heading" style="margin-top:0;">Organizational health at a glance</h2>
+          <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:center;justify-content:center;margin:1rem 0 1.8rem;">
+            <div style="text-align:center;">
+              <div class="gauge" data-gauge="78" data-gauge-suffix="%" role="img" aria-label="Change readiness: 78 percent">
+                <div class="hole"><b data-gauge-num>0%</b><small>Change readiness</small></div>
+              </div>
+            </div>
+            <div style="text-align:center;">
+              <div class="gauge" data-gauge="64" data-gauge-suffix="%" role="img" aria-label="Implementation progress: 64 percent">
+                <div class="hole"><b data-gauge-num>0%</b><small>Implementation progress</small></div>
+              </div>
+            </div>
+            <div style="flex:1;min-width:240px;max-width:420px;">
+              <p class="muted" style="margin-top:0;">The organization is <b>mostly ready</b> and roughly two-thirds of the way through planned implementation. Engagement is strong; communication reach and risk in two phases need leadership attention this cycle.</p>
+              <p><span class="tl-pill teal">On track — monitor &amp; adapt</span></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== KPI scorecards ===== -->
+        <section aria-labelledby="kpi-heading">
+          <h2 id="kpi-heading">Key indicators</h2>
+          <div class="kpi-grid" style="margin:.8rem 0 1.8rem;">
+            <div class="scorecard green">
+              <div class="sc-label">Stakeholder engagement</div>
+              <div class="sc-num" data-count="82" data-suffix="%">0%</div>
+              <div class="sc-trend up">▲ 9 pts vs. last quarter</div>
+            </div>
+            <div class="scorecard amber">
+              <div class="sc-label">Communication effectiveness</div>
+              <div class="sc-num" data-count="68" data-suffix="%">0%</div>
+              <div class="sc-trend up">▲ 4 pts — reach improving</div>
+            </div>
+            <div class="scorecard green">
+              <div class="sc-label">Professional learning completion</div>
+              <div class="sc-num" data-count="74" data-suffix="%">0%</div>
+              <div class="sc-trend up">▲ 12 pts vs. baseline</div>
+            </div>
+            <div class="scorecard red">
+              <div class="sc-label">Milestones on schedule</div>
+              <div class="sc-num" data-count="60" data-suffix="%">0%</div>
+              <div class="sc-trend down">▼ 2 milestones at risk</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Phase progress ===== -->
+        <section aria-labelledby="phase-heading">
+          <h2 id="phase-heading">Phase progress</h2>
+          <p class="muted" style="margin-top:.2rem;">Completion across the six phases of the transformation framework.</p>
+          <div class="barlist" style="margin:1rem 0 1.8rem;">
+            <div class="row"><span>1 · Create the Vision</span><span class="track"><span class="fill" data-pct="100" style="width:100%"></span></span><b>100%</b></div>
+            <div class="row"><span>2 · Build Leadership Capacity</span><span class="track"><span class="fill" data-pct="88" style="width:88%"></span></span><b>88%</b></div>
+            <div class="row"><span>3 · Engage Stakeholders</span><span class="track"><span class="fill" data-pct="76" style="width:76%"></span></span><b>76%</b></div>
+            <div class="row"><span>4 · Implement with Purpose</span><span class="track"><span class="fill" data-pct="58" style="width:58%"></span></span><b>58%</b></div>
+            <div class="row"><span>5 · Monitor &amp; Adapt</span><span class="track"><span class="fill" data-pct="35" style="width:35%"></span></span><b>35%</b></div>
+            <div class="row"><span>6 · Sustain the Change</span><span class="track"><span class="fill" data-pct="14" style="width:14%"></span></span><b>14%</b></div>
+          </div>
+        </section>
+
+        <!-- ===== Engagement trend ===== -->
+        <section aria-labelledby="trend-heading">
+          <h2 id="trend-heading">Engagement trend</h2>
+          <p class="muted" style="margin-top:.2rem;">Stakeholder engagement index by month (illustrative).</p>
+          <div class="barchart" role="img" aria-label="Engagement index rising from 51 in September to 82 in February" style="margin:1rem 0 1.8rem;">
+            <div class="bar-col"><div class="bar" data-h="51" style="height:51%"><span class="bv">51</span></div><span class="bar-label">Sep</span></div>
+            <div class="bar-col"><div class="bar" data-h="57" style="height:57%"><span class="bv">57</span></div><span class="bar-label">Oct</span></div>
+            <div class="bar-col"><div class="bar" data-h="63" style="height:63%"><span class="bv">63</span></div><span class="bar-label">Nov</span></div>
+            <div class="bar-col"><div class="bar" data-h="69" style="height:69%"><span class="bv">69</span></div><span class="bar-label">Dec</span></div>
+            <div class="bar-col"><div class="bar" data-h="76" style="height:76%"><span class="bv">76</span></div><span class="bar-label">Jan</span></div>
+            <div class="bar-col"><div class="bar" data-h="82" style="height:82%"><span class="bv">82</span></div><span class="bar-label">Feb</span></div>
+          </div>
+        </section>
+
+        <!-- ===== Project milestones ===== -->
+        <section aria-labelledby="milestones-heading">
+          <h2 id="milestones-heading">Project milestones</h2>
+          <div class="table-wrap">
+            <table>
+              <caption>Key transformation milestones and current status (illustrative).</caption>
+              <thead>
+                <tr><th scope="col">Milestone</th><th scope="col">Owner</th><th scope="col">Due</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Shared vision &amp; case for change ratified</td><td>Leadership team</td><td>Sep 2025</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Guiding coalition chartered</td><td>Principal</td><td>Oct 2025</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Professional learning Series 1 delivered</td><td>PL coordinator</td><td>Dec 2025</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Stakeholder engagement plan in full effect</td><td>Engagement lead</td><td>Jan 2026</td><td><span class="tl-pill teal">On track</span></td></tr>
+                <tr><td>Classroom implementation — cohort A</td><td>Instructional coaches</td><td>Mar 2026</td><td><span class="tl-pill amber">At risk</span></td></tr>
+                <tr><td>Mid-cycle data review &amp; adaptation</td><td>Data team</td><td>Apr 2026</td><td><span class="tl-pill amber">At risk</span></td></tr>
+                <tr><td>Sustainability &amp; succession plan finalized</td><td>Leadership team</td><td>Jun 2026</td><td><span class="tl-pill red">Not started</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ===== Risk indicators ===== -->
+        <section aria-labelledby="risk-heading">
+          <h2 id="risk-heading">Risk indicators</h2>
+          <p class="muted" style="margin-top:.2rem;">Select a risk to view illustrative mitigations.</p>
+          <div style="margin:1rem 0 1.8rem;">
+            <div class="drill-row" role="button" tabindex="0" aria-expanded="false"><span class="chev" aria-hidden="true">▸</span><span style="flex:1;font-weight:700;">Implementation timeline slipping (cohort A)</span><span class="tl-pill red">High</span></div>
+            <div class="drill-panel"><p><b>Signal:</b> Two milestones at risk; coaching capacity stretched.</p><p><b>Mitigation:</b> Re-sequence non-critical tasks, protect coaching time, and secure quick wins to rebuild momentum before the next cohort.</p></div>
+
+            <div class="drill-row" role="button" tabindex="0" aria-expanded="false"><span class="chev" aria-hidden="true">▸</span><span style="flex:1;font-weight:700;">Communication reach uneven across teams</span><span class="tl-pill amber">Medium</span></div>
+            <div class="drill-panel"><p><b>Signal:</b> Effectiveness at 68%; some teams under-informed.</p><p><b>Mitigation:</b> Add a multi-channel cadence, equip middle leaders as message-carriers, and open a two-way feedback loop.</p></div>
+
+            <div class="drill-row" role="button" tabindex="0" aria-expanded="false"><span class="chev" aria-hidden="true">▸</span><span style="flex:1;font-weight:700;">Change fatigue among staff</span><span class="tl-pill amber">Medium</span></div>
+            <div class="drill-panel"><p><b>Signal:</b> Survey comments cite workload during rollout.</p><p><b>Mitigation:</b> Stop low-value work to make room, celebrate progress publicly, and pace the change with protected time.</p></div>
+
+            <div class="drill-row" role="button" tabindex="0" aria-expanded="false"><span class="chev" aria-hidden="true">▸</span><span style="flex:1;font-weight:700;">Sustainability planning not yet started</span><span class="tl-pill green">Watch</span></div>
+            <div class="drill-panel"><p><b>Signal:</b> Embedding &amp; succession milestone is downstream.</p><p><b>Mitigation:</b> Begin defining the systems, routines, and leadership succession that will hold the change in place.</p></div>
+          </div>
+        </section>
+
+        <!-- ===== Leadership actions ===== -->
+        <section aria-labelledby="actions-heading">
+          <h2 id="actions-heading">Leadership actions</h2>
+          <p class="muted" style="margin-top:.2rem;">Recent and upcoming actions to keep the change on course.</p>
+          <ul class="timeline" style="margin:1rem 0 1rem;">
+            <li class="done"><span class="t-when">This month · Done</span><br><b>Reaffirmed the vision</b> at an all-staff session and shared progress data transparently.</li>
+            <li class="done"><span class="t-when">This month · Done</span><br><b>Celebrated quick wins</b> from cohort A pilots to build momentum.</li>
+            <li class="now"><span class="t-when">In progress · Now</span><br><b>Protecting coaching time</b> and re-sequencing the implementation plan for at-risk milestones.</li>
+            <li><span class="t-when">Next 2 weeks</span><br><b>Launch a refreshed communication cadence</b> with middle leaders as message-carriers.</li>
+            <li><span class="t-when">Next month</span><br><b>Run a mid-cycle data review</b> with the guiding coalition and adapt the roadmap.</li>
+            <li><span class="t-when">This quarter</span><br><b>Begin sustainability &amp; succession planning</b> to embed the change in culture and systems.</li>
+          </ul>
+        </section>
+
+        <p class="muted" style="font-size:.85rem;margin-top:1.4rem;">All metrics, milestones, and risks shown are illustrative sample data for demonstration. In practice, populate this dashboard with your own evidence and review it with your guiding coalition.</p>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="readiness.html">Assess Your Readiness</a>
+          <a class="btn ghost" href="resources.html">Browse Resources</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leading Change</h4><p style="color:#c9d6e6;">A school transformation framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="readiness.html">Readiness</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="stakeholders.html">Stakeholders</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; transformation scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

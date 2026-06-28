@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Readiness Assessment — Leading Change</title>
+  <meta name="description" content="An organizational change readiness diagnostic across eight dimensions — generating a readiness score, strengths, risks, and recommended leadership actions.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leading Change" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LC</span><span class="brand-text"><span class="brand-title">Leading Change</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="change-framework.html">Framework</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Change framework">
+        <div class="rail-brand"><span class="mark">LC</span><b>Leading Change</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="change-framework.html"><span class="ico">🧭</span> Change Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Transformation Roadmap</a>
+        <a class="rail-link" href="stakeholders.html"><span class="ico">👥</span> Stakeholder Engagement</a>
+        <a class="rail-link" href="communication.html"><span class="ico">💬</span> Communication Strategy</a>
+        <div class="rail-group">Implement</div>
+        <a class="rail-link" href="implementation.html"><span class="ico">🧰</span> Implementation Toolkit</a>
+        <a class="rail-link" href="culture.html"><span class="ico">🌱</span> Culture &amp; Sustainability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Diagnose / <b>Readiness Assessment</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🩺 Diagnose</span>
+          <h1>Change Readiness Assessment</h1>
+          <p class="lead">An organizational readiness diagnostic across eight dimensions of change capacity. Rate each statement honestly, then generate a readiness score, your strengths, the risks to address first, and recommended leadership actions before you launch.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Readiness dimensions draw on Prosci ADKAR, Kotter's urgency and coalition steps, and organizational-trust research. Readiness is a leadership condition you can build — not a fixed trait. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <div class="assess-card">
+          <h3>How to use this diagnostic</h3>
+          <p class="muted" style="margin:.3rem 0 0;">Rate all sixteen statements on a five-point scale where <b>1 = Not yet</b> and <b>5 = Fully in place</b>. You may rate as a leader alone or average a leadership team's responses for a richer picture. Your ratings and score are saved privately in this browser only.</p>
+        </div>
+
+        <div data-assessment>
+          <!-- Leadership & Staff -->
+          <div class="assess-card">
+            <h3>🧭 Leadership &amp; 👥 Staff Readiness</h3>
+            <div class="assess-item" data-domain="leadership">
+              <p>Senior leaders share a clear, urgent, and compelling case for this change.</p>
+              <div class="likert" role="group" aria-label="Rate: leaders share a clear case for change">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="leadership">
+              <p>A credible guiding coalition is in place to sponsor and steer the change.</p>
+              <div class="likert" role="group" aria-label="Rate: a guiding coalition is in place">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="staff">
+              <p>Staff understand why the change matters and what it means for their daily work.</p>
+              <div class="likert" role="group" aria-label="Rate: staff understand why the change matters">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="staff">
+              <p>Most staff are willing to engage with the change rather than wait it out.</p>
+              <div class="likert" role="group" aria-label="Rate: staff are willing to engage">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Culture & Communication -->
+          <div class="assess-card">
+            <h3>🌍 School Culture &amp; 💬 Communication</h3>
+            <div class="assess-item" data-domain="culture">
+              <p>Our culture values learning, collaboration, and trying new practices.</p>
+              <div class="likert" role="group" aria-label="Rate: culture values learning and new practices">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="culture">
+              <p>Past changes have generally been seen through and not abandoned midway.</p>
+              <div class="likert" role="group" aria-label="Rate: past changes have been seen through">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="comm">
+              <p>There are clear, reliable channels to communicate the change to all groups.</p>
+              <div class="likert" role="group" aria-label="Rate: clear channels to communicate the change">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="comm">
+              <p>Two-way feedback is actively invited, heard, and acted upon.</p>
+              <div class="likert" role="group" aria-label="Rate: two-way feedback is invited and acted upon">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Capacity & Resources -->
+          <div class="assess-card">
+            <h3>🛠️ Capacity for Change &amp; 📦 Resource Availability</h3>
+            <div class="assess-item" data-domain="capacity">
+              <p>Staff have the skills, or a clear plan to build them, to make the change succeed.</p>
+              <div class="likert" role="group" aria-label="Rate: staff have skills or a plan to build them">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="capacity">
+              <p>People have protected time to learn and implement without overload.</p>
+              <div class="likert" role="group" aria-label="Rate: protected time to learn and implement">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="resources">
+              <p>The budget, tools, and materials needed for the change are secured.</p>
+              <div class="likert" role="group" aria-label="Rate: budget, tools, and materials secured">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="resources">
+              <p>Competing initiatives have been paused or aligned so this change can take priority.</p>
+              <div class="likert" role="group" aria-label="Rate: competing initiatives paused or aligned">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust & Innovation -->
+          <div class="assess-card">
+            <h3>🤝 Organizational Trust &amp; 💡 Innovation Mindset</h3>
+            <div class="assess-item" data-domain="trust">
+              <p>Staff trust that leaders act with transparency and follow through on commitments.</p>
+              <div class="likert" role="group" aria-label="Rate: staff trust leaders' transparency and follow-through">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="trust">
+              <p>People feel safe to raise concerns and admit mistakes without blame.</p>
+              <div class="likert" role="group" aria-label="Rate: people feel safe to raise concerns">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="innovation">
+              <p>Trying new approaches and learning from them is encouraged and celebrated.</p>
+              <div class="likert" role="group" aria-label="Rate: trying new approaches is encouraged">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="innovation">
+              <p>The organization adapts based on evidence rather than defending the status quo.</p>
+              <div class="likert" role="group" aria-label="Rate: organization adapts based on evidence">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin:1.2rem 0;">
+            <button class="btn" type="button" data-assess-run>Generate Readiness Score</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+          <p class="muted" style="font-size:.85rem;">Scale: <b>1 = Not yet</b> · 2 · 3 · 4 · <b>5 = Fully in place</b>. Rate every statement for the most accurate readiness picture.</p>
+        </div>
+
+        <div data-assess-result class="assess-result"></div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="roadmap.html">Build the Roadmap</a>
+          <a class="btn ghost" href="change-framework.html">Back to the Framework</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leading Change</h4><p style="color:#c9d6e6;">A school transformation framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="readiness.html">Readiness</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="stakeholders.html">Stakeholders</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; transformation scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

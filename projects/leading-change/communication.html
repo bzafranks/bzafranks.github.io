@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication Strategy — Leading Change</title>
+  <meta name="description" content="A complete communication framework for school transformation — leadership messaging, communication calendar, town halls, parent communication, crisis communication, progress updates, celebration, and feedback loops.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leading Change" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LC</span><span class="brand-text"><span class="brand-title">Leading Change</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="change-framework.html">Framework</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Change framework">
+        <div class="rail-brand"><span class="mark">LC</span><b>Leading Change</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="change-framework.html"><span class="ico">🧭</span> Change Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Transformation Roadmap</a>
+        <a class="rail-link" href="stakeholders.html"><span class="ico">👥</span> Stakeholder Engagement</a>
+        <a class="rail-link" href="communication.html"><span class="ico">💬</span> Communication Strategy</a>
+        <div class="rail-group">Implement</div>
+        <a class="rail-link" href="implementation.html"><span class="ico">🧰</span> Implementation Toolkit</a>
+        <a class="rail-link" href="culture.html"><span class="ico">🌱</span> Culture &amp; Sustainability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>Communication Strategy</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">💬 Communication</span>
+          <h1>Communication Strategy</h1>
+          <p class="lead">Change lives or dies by communication. This framework helps you plan leadership messaging, a communication calendar, town halls and staff meetings, parent and community outreach, crisis communication, progress updates, celebration, and the feedback loops that keep it two-way.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">A clearly communicated "why" — repeated through multiple channels — measurably reduces resistance and accelerates adoption. People resist what they don't understand; clarity of purpose is the single strongest predictor of buy-in. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <!-- ===== (a) MESSAGE GENERATOR ===== -->
+        <h2>Message Generator</h2>
+        <p class="muted">Draft a tailored message for any audience and moment. Adapt the output to your own voice and context.</p>
+        <div class="field-row" style="align-items:start;margin-bottom:2rem;">
+          <form data-generator="commsg">
+            <div class="field">
+              <label for="commAudience">Audience</label>
+              <select id="commAudience" name="audience">
+                <option>Staff</option>
+                <option>Parents</option>
+                <option>Students</option>
+                <option>Board</option>
+                <option>Community</option>
+                <option>District</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="commKind">Message type</label>
+              <select id="commKind" name="kind">
+                <option>Launch message</option>
+                <option>Progress update</option>
+                <option>Crisis communication</option>
+                <option>Celebration</option>
+                <option>Town hall talking points</option>
+              </select>
+            </div>
+            <div class="btn-row">
+              <button class="btn" type="submit">Draft Message</button>
+            </div>
+          </form>
+          <div class="gen-output" data-output="commsg">
+            <div class="out-toolbar">
+              <span class="ai-pill">💬 Drafted</span>
+              <button class="out-btn" type="button" data-act="copy">📋 Copy</button>
+              <button class="out-btn" type="button" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" type="button" data-act="print">🖨 Print</button>
+            </div>
+            <div class="out-body">
+              <p class="muted">Choose an audience and message type, then select <b>Draft Message</b> to generate talking points.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== (b) SAVED COMMUNICATION PLANNER ===== -->
+        <h2>Communication Planner</h2>
+        <p class="muted">Capture your communication plan. It saves privately in this browser.</p>
+        <form data-comm style="margin-bottom:2rem;">
+          <div class="field">
+            <label for="commKey">Core message — your "why"</label>
+            <textarea id="commKey" name="keyMessage" placeholder="In one or two sentences: why this change, why now, and what success looks like for our community."></textarea>
+          </div>
+          <div class="field">
+            <label for="commChannels">Channels</label>
+            <textarea id="commChannels" name="channels" placeholder="Town halls, staff meetings, weekly newsletter, family text/email, website, social media, principal's blog, listening sessions…"></textarea>
+          </div>
+          <div class="field">
+            <label for="commCalendar">Communication calendar</label>
+            <textarea id="commCalendar" name="calendar" placeholder="When does each message go out, to whom, through which channel, and who owns it?"></textarea>
+          </div>
+          <div class="field">
+            <label for="commFeedback">Feedback loops</label>
+            <textarea id="commFeedback" name="feedback" placeholder="How will people respond and be heard? Surveys, Q&amp;A, listening sessions, an open inbox, focus groups…"></textarea>
+          </div>
+          <div class="btn-row">
+            <button class="btn" type="submit">💾 Save Plan</button>
+            <button class="btn ghost" type="button" data-plan-clear>Clear</button>
+            <span class="saved-note" data-plan-saved></span>
+          </div>
+        </form>
+
+        <!-- ===== (c) COMMUNICATION CALENDAR TIMELINE ===== -->
+        <h2>Communication Calendar</h2>
+        <p class="muted">An illustrative cadence across a transformation year — pace messages to match each phase of the change.</p>
+        <ul class="timeline" style="margin:1rem 0 2rem;">
+          <li class="done"><span class="t-when">8 weeks before launch</span><br><b>Leadership alignment.</b> Align the guiding coalition on the core message and answers to the hard questions before going public.</li>
+          <li class="done"><span class="t-when">4 weeks before launch</span><br><b>Staff preview.</b> Share the "why" with staff first — never let them hear the news from families or the press.</li>
+          <li class="now"><span class="t-when">Launch week</span><br><b>Town hall + family letter.</b> A unified launch message across staff meeting, town hall, and a family communication on the same day.</li>
+          <li><span class="t-when">Monthly</span><br><b>Progress updates.</b> Short, honest updates: wins, what's hard, and what's next. Consistency builds trust.</li>
+          <li><span class="t-when">As needed</span><br><b>Crisis communication.</b> Fast, transparent, and human — acknowledge, inform, and state next steps.</li>
+          <li><span class="t-when">Each milestone</span><br><b>Celebration.</b> Name the people behind every win and connect it back to the vision.</li>
+          <li><span class="t-when">Each quarter</span><br><b>Listening cycle.</b> Survey and listening sessions feed the next quarter's plan.</li>
+        </ul>
+
+        <!-- ===== (c) CHANNEL GUIDES (DRILL ROWS) ===== -->
+        <h2>Channel Guides</h2>
+        <p class="muted">Click a channel for purpose, cadence, and a quick best-practice note.</p>
+        <div style="margin:1rem 0 2rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🏛️ Town halls</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Establish the shared vision and invite questions in real time.</p>
+            <p><b>Cadence:</b> At launch and at major milestones.</p>
+            <p><b>Best practice:</b> Open with the "why," reserve real time for Q&amp;A, and follow up in writing with answers to questions you couldn't address live.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">👥 Staff meetings</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Translate the change into daily practice and surface frontline concerns.</p>
+            <p><b>Cadence:</b> Weekly or biweekly during active implementation.</p>
+            <p><b>Best practice:</b> Reserve standing time for change updates; close every meeting with a clear, doable next step.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🏡 Parent &amp; family communication</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Build family confidence and partnership in the change.</p>
+            <p><b>Cadence:</b> At launch, monthly updates, and at milestones.</p>
+            <p><b>Best practice:</b> Plain language, translated as needed, in the families' preferred channels — always pairing the "what" with "what it means for your child."</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🚨 Crisis communication</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Maintain trust when something goes wrong or off-plan.</p>
+            <p><b>Cadence:</b> Immediate, then a follow-up once facts are confirmed.</p>
+            <p><b>Best practice:</b> Acknowledge quickly, be transparent about what you know and don't, name a single point of contact, and state the next step and timeline.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">📈 Progress updates</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Sustain momentum and show that the change is working.</p>
+            <p><b>Cadence:</b> Monthly across all audiences.</p>
+            <p><b>Best practice:</b> Lead with evidence, be honest about challenges, and always connect progress to the original vision.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🎉 Celebration</span></div>
+          <div class="drill-panel">
+            <p><b>Purpose:</b> Reinforce the change by recognizing effort and early wins.</p>
+            <p><b>Cadence:</b> At every milestone, plus spontaneous shout-outs.</p>
+            <p><b>Best practice:</b> Name specific people and behaviors, make it public, and tie each win back to the shared purpose.</p>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="stakeholders.html">Map Your Stakeholders</a>
+          <a class="btn ghost" href="implementation.html">Open the Toolkit</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leading Change</h4><p style="color:#c9d6e6;">A school transformation framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="readiness.html">Readiness</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="stakeholders.html">Stakeholders</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; transformation scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation Roadmap — Leading Change</title>
+  <meta name="description" content="A complete implementation planning system — vision, strategic priorities, milestones, timeline, project governance, resource planning, risk mitigation, and continuous review.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leading Change" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LC</span><span class="brand-text"><span class="brand-title">Leading Change</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="change-framework.html">Framework</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Change framework">
+        <div class="rail-brand"><span class="mark">LC</span><b>Leading Change</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="change-framework.html"><span class="ico">🧭</span> Change Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Transformation Roadmap</a>
+        <a class="rail-link" href="stakeholders.html"><span class="ico">👥</span> Stakeholder Engagement</a>
+        <a class="rail-link" href="communication.html"><span class="ico">💬</span> Communication Strategy</a>
+        <div class="rail-group">Implement</div>
+        <a class="rail-link" href="implementation.html"><span class="ico">🧰</span> Implementation Toolkit</a>
+        <a class="rail-link" href="culture.html"><span class="ico">🌱</span> Culture &amp; Sustainability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>Transformation Roadmap</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗺️ Plan</span>
+          <h1>Transformation Roadmap</h1>
+          <p class="lead">A complete implementation planning system. Set the vision, name strategic priorities, define milestones and a multi-year timeline, establish project governance and leadership responsibilities, plan resources, anticipate risks, and build in continuous review — then save it privately to revisit and refine.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">A roadmap turns vision into sequenced, governed action — pairing Kotter's short-term wins with ADKAR's reinforcement and the discipline of clear ownership and review cadence. A plan is a living instrument, revised as evidence comes in. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <!-- (a) Saved roadmap planner -->
+        <h2 style="margin-top:.4rem;">Your Transformation Roadmap</h2>
+        <p class="muted" style="margin:.2rem 0 1rem;">Capture the core of your plan. Entries save automatically and privately in this browser.</p>
+        <div class="assess-card">
+          <form data-planner>
+            <div class="field">
+              <label for="rm-vision">Vision — a compelling picture of success</label>
+              <textarea id="rm-vision" name="vision" placeholder="In three years, our school will… Describe the change and why it matters for students."></textarea>
+            </div>
+            <div class="field">
+              <label for="rm-priorities">Strategic priorities — the few things that matter most</label>
+              <textarea id="rm-priorities" name="priorities" placeholder="List 3–5 priorities that will drive the transformation (e.g., instructional quality, family engagement, staff capacity)."></textarea>
+            </div>
+            <div class="field">
+              <label for="rm-milestones">Milestones &amp; timeline — what, by when</label>
+              <textarea id="rm-milestones" name="milestones" placeholder="Sequence key milestones across Year 1 launch, Year 2 scale, and Year 3 embed, with target dates."></textarea>
+            </div>
+            <div class="field">
+              <label for="rm-governance">Project governance &amp; responsibilities — who owns what</label>
+              <textarea id="rm-governance" name="governance" placeholder="Name the sponsor, steering group, workstream leads, decision rights, and review cadence."></textarea>
+            </div>
+            <div class="field">
+              <label for="rm-risks">Risk mitigation — what could derail this, and the plan</label>
+              <textarea id="rm-risks" name="risks" placeholder="Identify the top risks (capacity, resistance, resourcing) and your mitigation for each."></textarea>
+            </div>
+            <div class="btn-row" style="align-items:center;gap:.8rem;">
+              <button class="btn" type="submit">Save Roadmap</button>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+              <span data-plan-saved class="saved-note"></span>
+            </div>
+          </form>
+        </div>
+
+        <!-- (b) Change-action generator -->
+        <h2 style="margin-top:2rem;">Change Action Plan Generator</h2>
+        <p class="muted" style="margin:.2rem 0 1rem;">Name a change and a phase to draft a structured action plan you can adapt to your context.</p>
+        <div class="field-row" style="align-items:start;">
+          <div>
+            <div class="assess-card">
+              <form data-generator="changeplan">
+                <div class="field">
+                  <label for="cp-change">The change you are leading</label>
+                  <input id="cp-change" name="change" type="text" placeholder="e.g., a school-wide shift to standards-based grading">
+                </div>
+                <div class="field">
+                  <label for="cp-phase">Current phase of transformation</label>
+                  <select id="cp-phase" name="phase">
+                    <option>Create the Vision</option>
+                    <option>Build Leadership Capacity</option>
+                    <option>Engage Stakeholders</option>
+                    <option>Implement with Purpose</option>
+                    <option>Monitor &amp; Adapt</option>
+                    <option>Sustain the Change</option>
+                  </select>
+                </div>
+                <div class="btn-row">
+                  <button class="btn" type="submit">Generate Action Plan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="gen-output" data-output="changeplan">
+            <div class="out-toolbar">
+              <span class="ai-pill">Kotter + ADKAR</span>
+              <button class="out-btn" type="button" data-act="copy">📋 Copy</button>
+              <button class="out-btn" type="button" data-act="print">🖨️ Print</button>
+              <button class="out-btn" type="button" data-act="regen">↻ Regenerate</button>
+            </div>
+            <div class="out-body"><p class="muted">Name a change and phase, then select <b>Generate Action Plan</b> to draft a structured plan here.</p></div>
+          </div>
+        </div>
+
+        <!-- (c) Multi-year timeline -->
+        <h2 style="margin-top:2rem;">Multi-Year Roadmap</h2>
+        <p class="muted" style="margin:.2rem 0 1rem;">From launch to embedded practice — a three-year arc of sequenced milestones.</p>
+        <div class="assess-card">
+          <ul class="timeline">
+            <li class="done">
+              <span class="t-when">Months 0–3 · Foundation</span>
+              <p style="margin:.2rem 0 0;"><b>Create the vision &amp; build the coalition.</b> Establish urgency, co-create the vision, form the steering group, and complete a readiness assessment.</p>
+            </li>
+            <li class="now">
+              <span class="t-when">Year 1 · Launch</span>
+              <p style="margin:.2rem 0 0;"><b>Engage and begin.</b> Roll out the engagement and communication plans, deliver foundational professional learning, and secure visible quick wins.</p>
+            </li>
+            <li>
+              <span class="t-when">Year 2 · Scale</span>
+              <p style="margin:.2rem 0 0;"><b>Implement with purpose.</b> Extend practice across teams, remove barriers, monitor leading indicators, and adapt based on evidence.</p>
+            </li>
+            <li>
+              <span class="t-when">Year 3 · Embed</span>
+              <p style="margin:.2rem 0 0;"><b>Sustain the change.</b> Institutionalize new routines, align systems and hiring, plan leadership succession, and celebrate lasting results.</p>
+            </li>
+            <li>
+              <span class="t-when">Ongoing · Continuous review</span>
+              <p style="margin:.2rem 0 0;"><b>Monitor &amp; adapt.</b> Maintain a review cadence with the dashboard, refresh priorities, and keep the roadmap living.</p>
+            </li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:2rem;">Milestone Journey</h2>
+        <div class="journey" style="margin-top:.8rem;">
+          <div class="j-stage"><div class="n">Foundation</div><p class="muted" style="font-size:.82rem;">Vision, coalition, readiness check.</p></div>
+          <div class="j-stage"><div class="n">Launch</div><p class="muted" style="font-size:.82rem;">Engage, learn, quick wins.</p></div>
+          <div class="j-stage"><div class="n">Scale</div><p class="muted" style="font-size:.82rem;">Extend &amp; remove barriers.</p></div>
+          <div class="j-stage"><div class="n">Embed</div><p class="muted" style="font-size:.82rem;">Institutionalize &amp; sustain.</p></div>
+          <div class="j-stage"><div class="n">Review</div><p class="muted" style="font-size:.82rem;">Evidence-led adaptation.</p></div>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="stakeholders.html">Plan Stakeholder Engagement</a>
+          <a class="btn ghost" href="readiness.html">Reassess Readiness</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leading Change</h4><p style="color:#c9d6e6;">A school transformation framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="readiness.html">Readiness</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="stakeholders.html">Stakeholders</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; transformation scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
