@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Library — Collaborative Learning Communities</title>
+  <meta name="description" content="A shared bank of effective practices, artifacts, and protocols captured by the Professional Learning Community — assessments, routines, protocols, and lesson study reports.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Collaborative Learning Communities" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CLC</span><span class="brand-text"><span class="brand-title">Collaborative Learning Communities</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="meeting-hub.html">Meeting Hub</a></li>
+        <li><a href="lesson-study.html">Lesson Study</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">CLC</span><b>Collaborative Learning Communities</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Community Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> PLC Framework</a>
+        <a class="rail-link" href="collaborative-inquiry.html"><span class="ico">🔍</span> Collaborative Inquiry</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="meeting-hub.html"><span class="ico">🗓️</span> Meeting Hub</a>
+        <a class="rail-link" href="lesson-study.html"><span class="ico">📚</span> Lesson Study</a>
+        <a class="rail-link" href="professional-learning.html"><span class="ico">🎓</span> Professional Learning</a>
+        <div class="rail-group">Knowledge</div>
+        <a class="rail-link" href="knowledge-library.html"><span class="ico">📂</span> Knowledge Library</a>
+        <a class="rail-link" href="facilitator-toolkit.html"><span class="ico">🧰</span> Facilitator Toolkit</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Knowledge / <b>Knowledge Library</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Community updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Community Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Grade 4 Math PLC</b> closed an inquiry cycle — fractions up 11 pts.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--clc-accent-2);"></span><div><b>Lesson study</b> debrief scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Science Department</b> hasn't met in 3 weeks.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="meeting-hub.html">Open the Meeting Hub →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📂 Shared Practice Bank</span>
+          <h1>Knowledge Library</h1>
+          <p class="lead">A shared bank of effective practices, artifacts, and protocols the community has captured — so a great idea from one team becomes everyone's starting point. All artifacts shown are illustrative samples.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-strip" data-filters>
+          <label for="lib-subject">Subject</label>
+          <select id="lib-subject">
+            <option>All subjects</option>
+            <option>Mathematics</option>
+            <option>Literacy / ELA</option>
+            <option>Science</option>
+            <option>Cross-curricular</option>
+          </select>
+          <label for="lib-type">Type</label>
+          <select id="lib-type">
+            <option>All types</option>
+            <option>Common assessment</option>
+            <option>Protocol</option>
+            <option>Routine</option>
+            <option>Report</option>
+            <option>Template</option>
+          </select>
+          <label for="lib-team">Team</label>
+          <select id="lib-team">
+            <option>All teams</option>
+            <option>Grade 4 Math PLC</option>
+            <option>Literacy Team</option>
+            <option>Science Department</option>
+            <option>Instructional Leadership Team</option>
+          </select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- Library stats -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi green"><div class="k-label">📂 Artifacts Shared</div><div class="k-num"><span data-count="48">0</span></div><div class="k-trend up">▲ 9 this term</div></div>
+          <div class="kpi green"><div class="k-label">⬇ Downloads This Term</div><div class="k-num"><span data-count="312">0</span></div><div class="k-trend up">▲ 22%</div></div>
+          <div class="kpi coral"><div class="k-label">👥 Contributing Teams</div><div class="k-num"><span data-count="11">0</span></div><div class="k-trend up">▲ 2</div></div>
+          <div class="kpi green"><div class="k-label">♻️ Reuse Rate</div><div class="k-num"><span data-count="64" data-suffix="%">0</span></div><div class="k-trend up">▲ artifacts adapted by another team</div></div>
+        </div>
+
+        <!-- Artifact grid -->
+        <h2 style="margin:0 0 .8rem;">Artifacts &amp; protocols</h2>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">📝</span>
+          <div class="l-body"><b>Grade 4 fractions common assessment</b><small>10-item formative + answer key and item analysis sheet · Grade 4 Math PLC</small></div>
+          <span class="l-tag">Common assessment</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">🔍</span>
+          <div class="l-body"><b>Close-reading protocol</b><small>Three-read routine with text-dependent question stems · Literacy Team</small></div>
+          <span class="l-tag">Protocol</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">🔢</span>
+          <div class="l-body"><b>Math number-talk routine</b><small>10-minute daily routine with sentence frames for student reasoning · Grade 4 Math PLC</small></div>
+          <span class="l-tag">Routine</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">🎫</span>
+          <div class="l-body"><b>Exit-ticket bank</b><small>Sorted by standard, with quick re-teach prompts for common misconceptions · Literacy Team</small></div>
+          <span class="l-tag">Common assessment</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">📚</span>
+          <div class="l-body"><b>Lesson study report: ratios</b><small>Research lesson, observation notes, and revised plan · Grade 6 Math PLC</small></div>
+          <span class="l-tag">Report</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">📋</span>
+          <div class="l-body"><b>Norms template</b><small>Editable team-norms starter with accountability commitments · Instructional Leadership Team</small></div>
+          <span class="l-tag">Template</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">🧪</span>
+          <div class="l-body"><b>Science claim–evidence–reasoning frame</b><small>Scaffold for argumentation in lab write-ups · Science Department</small></div>
+          <span class="l-tag">Routine</span>
+        </div>
+        <div class="lib-item">
+          <span class="l-ico" aria-hidden="true">📊</span>
+          <div class="l-body"><b>Data inquiry protocol</b><small>Predict–observe–infer steps for reviewing common assessment results · Grade 4 Math PLC</small></div>
+          <span class="l-tag">Protocol</span>
+        </div>
+
+        <!-- Most-used drilldown -->
+        <h2 style="margin:1.6rem 0 .6rem;">Most-used this term <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h2>
+        <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Math number-talk routine</b></span><span class="tl-pill green">82 downloads</span></div>
+        <div class="drill-panel"><p class="muted">Adopted by four teams across two grade bands. Teams report stronger student talk and more visible reasoning. Pairs well with the data inquiry protocol when reviewing the impact.</p></div>
+        <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Close-reading protocol</b></span><span class="tl-pill teal">67 downloads</span></div>
+        <div class="drill-panel"><p class="muted">The Literacy Team's three-read routine is now a shared starting point across content areas. Most adaptations swap in discipline-specific question stems.</p></div>
+        <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 4 fractions common assessment</b></span><span class="tl-pill amber">54 downloads</span></div>
+        <div class="drill-panel"><p class="muted">Reused as a model for building common assessments in other units. The accompanying item-analysis sheet is the most-copied attachment in the library.</p></div>
+
+        <p class="muted" style="margin-top:1.6rem;font-size:.85rem;">All artifacts, teams, and figures shown are illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Collaborative Learning Communities</h4><p style="color:#c9d6e6;">A complete system for thriving Professional Learning Communities — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="framework.html">PLC Framework</a></li><li><a href="meeting-hub.html">Meeting Hub</a></li><li><a href="lesson-study.html">Lesson Study</a></li><li><a href="knowledge-library.html">Knowledge Library</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

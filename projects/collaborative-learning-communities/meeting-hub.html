@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Hub — Collaborative Learning Communities</title>
+  <meta name="description" content="The team's home for productive PLC meetings: an AI-style protocol & agenda generator, a live collaborative idea wall, and a model meeting timeline.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Collaborative Learning Communities" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CLC</span><span class="brand-text"><span class="brand-title">Collaborative Learning Communities</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="meeting-hub.html">Meeting Hub</a></li>
+        <li><a href="lesson-study.html">Lesson Study</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">CLC</span><b>Collaborative Learning Communities</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Community Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> PLC Framework</a>
+        <a class="rail-link" href="collaborative-inquiry.html"><span class="ico">🔍</span> Collaborative Inquiry</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="meeting-hub.html"><span class="ico">🗓️</span> Meeting Hub</a>
+        <a class="rail-link" href="lesson-study.html"><span class="ico">📚</span> Lesson Study</a>
+        <a class="rail-link" href="professional-learning.html"><span class="ico">🎓</span> Professional Learning</a>
+        <div class="rail-group">Knowledge</div>
+        <a class="rail-link" href="knowledge-library.html"><span class="ico">📂</span> Knowledge Library</a>
+        <a class="rail-link" href="facilitator-toolkit.html"><span class="ico">🧰</span> Facilitator Toolkit</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Practice / <b>Meeting Hub</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Community updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Community Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Grade 4 Math PLC</b> closed an inquiry cycle — fractions up 11 pts.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--clc-accent-2);"></span><div><b>Lesson study</b> debrief scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Science Department</b> hasn't met in 3 weeks.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="meeting-hub.html">Open the Meeting Hub →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗓️ Meeting Hub</span>
+          <h1>Meeting Hub</h1>
+          <p class="lead">The team's home for productive meetings. Generate a structured protocol or agenda in seconds, capture the ideas that surface, and run every meeting against a proven start-to-finish rhythm. All content is illustrative sample data.</p>
+        </div>
+
+        <!-- ===== PROTOCOL / AGENDA GENERATOR ===== -->
+        <section aria-labelledby="gen-heading" style="margin-bottom:2.2rem;">
+          <h2 id="gen-heading">Protocol &amp; agenda generator</h2>
+          <p class="muted" style="max-width:70ch;">Choose a protocol, name your team and focus, and generate a ready-to-run, timed agenda with roles and a close. Adapt the timings to your team — protocols serve the work.</p>
+          <div class="gen-layout">
+            <form class="gen-form" data-generator="protocol">
+              <h3>Build a meeting protocol</h3>
+              <div class="field">
+                <label for="gen-type">Protocol type</label>
+                <select id="gen-type" name="type">
+                  <option>PLC Meeting Agenda</option>
+                  <option>Norms &amp; Commitments</option>
+                  <option>Data Inquiry Protocol</option>
+                  <option>Lesson Study Plan</option>
+                  <option>Collaborative Inquiry Cycle</option>
+                  <option>Peer Observation Protocol</option>
+                  <option>Consultancy Protocol</option>
+                  <option>Reflection Protocol</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="gen-team">Team name</label>
+                <input id="gen-team" name="team" type="text" value="Grade 4 Math PLC" placeholder="e.g. Grade 4 Math PLC">
+              </div>
+              <div class="field">
+                <label for="gen-focus">Focus for this meeting</label>
+                <input id="gen-focus" name="focus" type="text" value="improving student learning" placeholder="e.g. improving student learning">
+              </div>
+              <div class="btn-row">
+                <button class="btn" type="submit">✨ Generate protocol</button>
+              </div>
+              <p class="muted" style="font-size:.82rem;margin-top:.8rem;">Tip: regenerate to refresh the draft, then copy or print it for your meeting.</p>
+            </form>
+
+            <div class="gen-output" data-output="protocol">
+              <div class="out-toolbar">
+                <span class="ai-pill">Draft</span>
+                <button class="out-btn" data-act="regen">↻ Regenerate</button>
+                <button class="out-btn" data-act="copy">📋 Copy</button>
+                <button class="out-btn" data-act="print">🖨️ Print</button>
+              </div>
+              <div class="out-body">
+                <div class="out-empty"><div><div class="big">🗓️</div><p>Pick a protocol and Generate.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== LIVE IDEA WALL ===== -->
+        <section aria-labelledby="wall-heading" style="margin-bottom:2.2rem;">
+          <h2 id="wall-heading">Live idea wall</h2>
+          <p class="muted" style="max-width:70ch;">Meetings generate momentum — capture it. Add the ideas, wonderings, and commitments that come up, then let the team upvote what matters most. Contributions save locally in your browser, so the wall stays put between visits on this device.</p>
+
+          <div class="grid grid-2" style="gap:1.4rem;align-items:start;">
+            <div class="card">
+              <h3 style="margin-top:0;">➕ Add to the wall</h3>
+              <form data-idea-form>
+                <div class="field">
+                  <label for="idea-text">Your idea</label>
+                  <input id="idea-text" name="idea" type="text" placeholder="A short, actionable idea or wondering…">
+                </div>
+                <div class="field">
+                  <label for="idea-who">Your name or team</label>
+                  <input id="idea-who" name="who" type="text" placeholder="e.g. Literacy Team">
+                </div>
+                <div class="field">
+                  <label for="idea-tag">Tag</label>
+                  <select id="idea-tag" name="tag">
+                    <option>Inquiry</option>
+                    <option>Reflection</option>
+                    <option>Leadership</option>
+                    <option>Culture</option>
+                    <option>Resource</option>
+                    <option>Idea</option>
+                  </select>
+                </div>
+                <div class="btn-row">
+                  <button class="btn" type="submit">Add idea</button>
+                  <button class="out-btn" type="button" data-idea-clear>Reset wall</button>
+                </div>
+              </form>
+            </div>
+
+            <div>
+              <h3 style="margin-top:0;">💡 What the community is thinking</h3>
+              <div data-idea-wall></div>
+              <p class="muted" style="font-size:.82rem;">Click 👍 to boost an idea. Sample ideas are illustrative; your additions save locally.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== MODEL MEETING TIMELINE ===== -->
+        <section aria-labelledby="flow-heading" style="margin-bottom:1.6rem;">
+          <h2 id="flow-heading">A great PLC meeting, start to finish</h2>
+          <p class="muted" style="max-width:70ch;">A reliable rhythm protects the work. Here is the arc of a focused, 45–50 minute meeting.</p>
+          <div class="card">
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Minute 0–5 · Connect</span><br><b>Open with connection &amp; norms.</b> Greet, review the team's norms aloud, and confirm the facilitator, recorder, and timekeeper.</li>
+              <li class="done"><span class="t-when">Minute 5–15 · Look back</span><br><b>Revisit the SMART goal &amp; data.</b> What did we commit to last time? What does the student-learning evidence show now?</li>
+              <li class="now"><span class="t-when">Minute 15–30 · Inquire</span><br><b>Center the learning question.</b> Examine student work together, name what's working, and surface a high-leverage focus.</li>
+              <li><span class="t-when">Minute 30–40 · Decide</span><br><b>Choose the next instructional action.</b> Agree on who does what, by when, and how you'll know it worked.</li>
+              <li><span class="t-when">Minute 40–48 · Reflect</span><br><b>Close with reflection &amp; commitments.</b> Each member names one insight and one commitment for the coming week.</li>
+              <li><span class="t-when">Minute 48–50 · Confirm</span><br><b>Set the next meeting &amp; roles.</b> Lock the date, rotate facilitation, and capture the agenda seed for next time.</li>
+            </ul>
+          </div>
+          <div class="btn-row" style="margin-top:1.2rem;">
+            <a class="btn" href="lesson-study.html">📚 Plan a lesson study</a>
+            <a class="btn ghost" href="facilitator-toolkit.html">🧰 Open the Facilitator Toolkit</a>
+            <a class="btn ghost" href="dashboard.html">📊 Back to the Dashboard</a>
+          </div>
+          <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration. Idea-wall contributions save locally in your browser on this device.</p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Collaborative Learning Communities</h4><p style="color:#c9d6e6;">A complete system for thriving Professional Learning Communities — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="framework.html">PLC Framework</a></li><li><a href="meeting-hub.html">Meeting Hub</a></li><li><a href="lesson-study.html">Lesson Study</a></li><li><a href="knowledge-library.html">Knowledge Library</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

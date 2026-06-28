@@ -295,5 +295,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "📊",
     tags: ["Executive Dashboards", "Business Intelligence", "People Analytics", "Teacher Retention", "Predictive Insights", "Data-Driven Leadership"],
     summary: "An executive decision-intelligence platform that measures what most dashboards ignore — leadership effectiveness, organizational health, teacher engagement & retention, and strategic execution. Includes an Executive Dashboard, a scored 8-domain Leadership Scorecard, School Performance & People Analytics, a doctoral-research-based Teacher Retention module with predictive turnover risk, Strategic Performance tracking, a ten-domain School Health Index with heat maps, Predictive Insights (framed as decision-support, not autopilot), and an executive Reports Center. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "collaborative-learning-communities",
+    title: "Collaborative Learning Communities",
+    subtitle: "Building thriving Professional Learning Communities, on purpose",
+    pillar: "il",
+    grade: "Leadership · Framework",
+    status: "done",
+    url: "projects/collaborative-learning-communities/index.html",
+    icon: "🤝",
+    tags: ["Professional Learning Communities", "Collaborative Inquiry", "Lesson Study", "Job-Embedded PD", "Teacher Collaboration", "Continuous Improvement"],
+    summary: "A complete operating system for thriving Professional Learning Communities built on six pillars (Shared Vision & Purpose, Collaborative Culture & Trust, Collective Inquiry, Focus on Learning & Results, Reflective Practice, Distributed Leadership) — with a scored 6-pillar PLC Health Assessment, a Community Dashboard, a repeatable collaborative-inquiry cycle, a Meeting Hub (protocol/agenda generator + live idea wall), a lesson-study workflow, job-embedded professional learning, a shared knowledge library, and a facilitator toolkit. Grounded in PLC, lesson-study & collaborative-inquiry research with a through-line to Dr. Franks' doctoral research on the leadership behaviors that build collaborative culture. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

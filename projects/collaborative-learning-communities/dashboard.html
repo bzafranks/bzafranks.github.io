@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Dashboard — Collaborative Learning Communities</title>
+  <meta name="description" content="A live dashboard for a Professional Learning Community: community health, team participation, active inquiry cycles, lesson studies, professional learning, and impact on student learning.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Collaborative Learning Communities" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CLC</span><span class="brand-text"><span class="brand-title">Collaborative Learning Communities</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="meeting-hub.html">Meeting Hub</a></li>
+        <li><a href="lesson-study.html">Lesson Study</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">CLC</span><b>Collaborative Learning Communities</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Community Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> PLC Framework</a>
+        <a class="rail-link" href="collaborative-inquiry.html"><span class="ico">🔍</span> Collaborative Inquiry</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="meeting-hub.html"><span class="ico">🗓️</span> Meeting Hub</a>
+        <a class="rail-link" href="lesson-study.html"><span class="ico">📚</span> Lesson Study</a>
+        <a class="rail-link" href="professional-learning.html"><span class="ico">🎓</span> Professional Learning</a>
+        <div class="rail-group">Knowledge</div>
+        <a class="rail-link" href="knowledge-library.html"><span class="ico">📂</span> Knowledge Library</a>
+        <a class="rail-link" href="facilitator-toolkit.html"><span class="ico">🧰</span> Facilitator Toolkit</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Community Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Community updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Community Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Grade 4 Math PLC</b> closed an inquiry cycle — fractions up 11 pts.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--clc-accent-2);"></span><div><b>Lesson study</b> debrief scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Science Department</b> hasn't met in 3 weeks.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="meeting-hub.html">Open the Meeting Hub →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Community Command Center</span>
+          <h1>Community Dashboard</h1>
+          <p class="lead">The health and impact of your Professional Learning Communities, at a glance. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>Team</label><select><option>All teams</option><option>Grade 4 Math PLC</option><option>Literacy Team</option><option>Science Department</option></select>
+          <label>Term</label><select><option>This term</option><option>Last term</option></select>
+          <label>Cycle</label><select><option>Current inquiry cycle</option><option>Previous cycle</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="78">0</span></div><div class="muted" style="color:#dceee9;">Community Health Score</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Developing PLC</span><span class="sc-trend up" style="color:#b6e8c6;">▲ 6 vs. last term</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="86" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Team participation</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="92" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Teams meeting norms</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi green"><div class="k-label">👥 Active PLC Teams</div><div class="k-num"><span data-count="14">0</span></div><div class="k-trend up">▲ 2 new</div></div>
+          <div class="kpi green"><div class="k-label">🔍 Open Inquiry Cycles</div><div class="k-num"><span data-count="9">0</span></div><div class="k-trend up">▲ 3</div></div>
+          <div class="kpi coral"><div class="k-label">📚 Lesson Studies This Term</div><div class="k-num"><span data-count="6">0</span></div><div class="k-trend up">▲ vs. prior</div></div>
+          <div class="kpi green"><div class="k-label">🤝 Collaboration Index</div><div class="k-num"><span data-count="82" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+          <div class="kpi green"><div class="k-label">📈 Student Growth (PLC focus skills)</div><div class="k-num"><span data-count="9" data-prefix="+" data-suffix="%">0</span></div><div class="k-trend up">▲ since baseline</div></div>
+          <div class="kpi amber"><div class="k-label">⏳ Teams Needing Support</div><div class="k-num"><span data-count="2">0</span></div><div class="k-trend down">▲ watch</div></div>
+        </div>
+
+        <!-- brief + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Community Briefing</h4><p>Community health is improving (78, ▲6). Participation (86%) and norm-adherence (92%) are strong, and inquiry cycles are up. Two teams need support to re-establish a meeting rhythm. Recommended focus: pair the Science Department with a facilitator and celebrate the Grade 4 Math PLC's fractions win. <a href="meeting-hub.html">Open the Meeting Hub →</a></p></div>
+          <div class="card"><h3 style="margin-top:0;">Collaboration Index Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Collaboration index trend"><path class="area" d="M0,46 L50,42 L100,40 L150,34 L200,30 L250,26 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,46 L50,42 L100,40 L150,34 L200,30 L250,26 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Steady growth as teams establish routines.</p></div>
+        </div>
+
+        <!-- pillar bars + team status drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Strength by PLC Pillar</h3><div class="barlist">
+            <div class="row"><span>🎯 Shared Vision &amp; Purpose</span><span class="track"><span class="fill" data-pct="84"></span></span><b>84%</b></div>
+            <div class="row"><span>🤝 Collaborative Culture</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+            <div class="row"><span>🔍 Collective Inquiry</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>📊 Focus on Results</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>🪞 Reflective Practice</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+            <div class="row"><span>🌱 Distributed Leadership</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">👥 Team Status <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 4 Math PLC</b></span><span class="tl-pill green">Thriving</span></div>
+            <div class="drill-panel"><p class="muted">Closed a fractions inquiry cycle (+11 pts). Sharing their common assessment in the Knowledge Library.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Literacy Team</b></span><span class="tl-pill teal">Developing</span></div>
+            <div class="drill-panel"><p class="muted">Strong norms; ready to deepen results orientation with a common formative assessment.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Science Department</b></span><span class="tl-pill amber">Needs support</span></div>
+            <div class="drill-panel"><p class="muted">Hasn't met in 3 weeks. Recommend a facilitator and a protected meeting time.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="framework.html#assessment">🧭 Take the PLC Health Assessment</a>
+          <a class="btn ghost" href="collaborative-inquiry.html">🔍 Start an Inquiry Cycle</a>
+          <a class="btn ghost" href="meeting-hub.html">🗓️ Plan a Meeting</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Collaborative Learning Communities</h4><p style="color:#c9d6e6;">A complete system for thriving Professional Learning Communities — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="framework.html">PLC Framework</a></li><li><a href="meeting-hub.html">Meeting Hub</a></li><li><a href="lesson-study.html">Lesson Study</a></li><li><a href="knowledge-library.html">Knowledge Library</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
