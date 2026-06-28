@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Self-Assessment — Principal Leadership Excellence Framework</title>
+  <meta name="description" content="An interactive leadership diagnostic across all six domains — generating a leadership profile, readiness score, strengths, growth opportunities, recommended professional learning, and a personalized action plan.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Principal Leadership Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">PL</span><span class="brand-text"><span class="brand-title">Principal Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="competencies.html">Competencies</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <aside class="app-rail" aria-label="Leadership system">
+        <div class="rail-brand"><span class="mark">PL</span><b>Leadership Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Leadership Framework</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Model</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="self-assessment.html"><span class="ico">📝</span> Self-Assessment</a>
+        <a class="rail-link" href="development.html"><span class="ico">🗺️</span> Development Planner</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">📚</span> Instructional Leadership</a>
+        <a class="rail-link" href="teacher-development.html"><span class="ico">👩‍🏫</span> Teacher Development</a>
+        <a class="rail-link" href="school-culture.html"><span class="ico">🤝</span> School Culture</a>
+        <a class="rail-link" href="strategic-leadership.html"><span class="ico">📈</span> Strategic Leadership</a>
+        <a class="rail-link" href="observation.html"><span class="ico">🔎</span> Leadership Observation</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Leadership Resources</a>
+      </aside>
+
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Develop / <b>Self-Assessment</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📝 Leadership Diagnostic</span>
+          <h1>Leadership Self-Assessment</h1>
+          <p class="lead">Rate yourself on 18 statements across the six leadership domains. The diagnostic generates your leadership profile, a readiness score, signature strengths, growth opportunities, recommended professional learning, and a personalized action plan. Your responses stay private in this browser.</p>
+        </div>
+
+        <div data-assessment>
+          <p class="muted" style="margin-bottom:.6rem;">Scale: <b>1</b> = Rarely · <b>2</b> = Sometimes · <b>3</b> = Often · <b>4</b> = Usually · <b>5</b> = Consistently</p>
+
+          <div class="assess-card">
+            <h3>🔭 Visionary Leadership</h3>
+            <div class="assess-item" data-domain="visionary"><p>I communicate a clear, shared vision that connects daily work to purpose.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="visionary"><p>I align school goals and decisions to our vision.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="visionary"><p>I keep the team focused and resilient through change.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="assess-card">
+            <h3>📚 Instructional Leadership</h3>
+            <div class="assess-item" data-domain="instructional"><p>I conduct frequent walkthroughs and give specific, growth-focused feedback.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="instructional"><p>I run coaching cycles and protect time for teacher collaboration.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="instructional"><p>I use evidence and data to drive instructional improvement.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🤝 People Leadership <span class="ai-pill">Retention-linked</span></h3>
+            <div class="assess-item" data-domain="people"><p>I build trust and psychological safety; staff feel safe to take risks and speak up.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="people"><p>I recognize excellent work authentically and solicit and act on teacher voice.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="people"><p>I actively support teacher wellbeing and develop teacher leaders.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🏛️ Organizational Leadership</h3>
+            <div class="assess-item" data-domain="organizational"><p>I design efficient systems and routines that protect teacher time.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="organizational"><p>I manage resources and workload to reduce burnout.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="organizational"><p>I make transparent, consistent operational decisions.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🌍 Community Leadership</h3>
+            <div class="assess-item" data-domain="community"><p>I communicate proactively and build two-way relationships with families.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="community"><p>I build community partnerships that support students and staff.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="community"><p>I foster a welcoming, culturally responsive school climate.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="assess-card">
+            <h3>⚖️ Ethical Leadership</h3>
+            <div class="assess-item" data-domain="ethical"><p>I act with integrity and make values-based, equitable decisions.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="ethical"><p>I am transparent about my reasoning and follow through on commitments.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="assess-item" data-domain="ethical"><p>I safeguard equity and hold myself and others accountable.</p><div class="likert"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+          </div>
+
+          <div class="btn-row" style="margin:1rem 0 .5rem;">
+            <button class="btn" type="button" data-assess-run>See My Leadership Profile</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+          <p class="muted" style="font-size:.85rem;">This is a reflective self-diagnostic, not an evaluation. Domain weighting reflects research on leadership behaviors linked to teacher retention and school performance.</p>
+        </div>
+
+        <div data-assess-result class="assess-result" style="margin-top:1.4rem;"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Principal Leadership Excellence Framework</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Develop</h4><ul><li><a href="framework.html">Framework</a></li><li><a href="competencies.html">Competencies</a></li><li><a href="development.html">Development Planner</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Your responses stay private in this browser. Research-informed; illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

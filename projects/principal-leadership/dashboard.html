@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Dashboard — Principal Leadership Excellence Framework</title>
+  <meta name="description" content="An executive leadership dashboard — leadership competency growth, professional-learning progress, teacher engagement, school climate, school-improvement goals, leadership milestones, and organizational health. Illustrative data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Principal Leadership Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">PL</span><span class="brand-text"><span class="brand-title">Principal Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="competencies.html">Competencies</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every framework page) ===== -->
+      <aside class="app-rail" aria-label="Leadership system">
+        <div class="rail-brand"><span class="mark">PL</span><b>Leadership Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Leadership Framework</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Model</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="self-assessment.html"><span class="ico">📝</span> Self-Assessment</a>
+        <a class="rail-link" href="development.html"><span class="ico">🗺️</span> Development Planner</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">📚</span> Instructional Leadership</a>
+        <a class="rail-link" href="teacher-development.html"><span class="ico">👩‍🏫</span> Teacher Development</a>
+        <a class="rail-link" href="school-culture.html"><span class="ico">🤝</span> School Culture</a>
+        <a class="rail-link" href="strategic-leadership.html"><span class="ico">📈</span> Strategic Leadership</a>
+        <a class="rail-link" href="observation.html"><span class="ico">🔎</span> Leadership Observation</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Leadership Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Insight / <b>Leadership Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Leadership Dashboard</span>
+          <h1>Leadership Dashboard</h1>
+          <p class="lead">An executive view of leadership growth and organizational health — competency growth, professional-learning progress, teacher engagement, school climate, school-improvement goals, leadership milestones, and strategic priorities, all in one place.</p>
+          <p class="muted" style="font-size:.85rem;margin-top:.5rem;"><span class="ai-pill">Illustrative</span> All figures below are illustrative fictional data for demonstration.</p>
+        </div>
+
+        <!-- KPI scorecards -->
+        <h2>Professional-Growth Metrics</h2>
+        <div class="kpi-grid" style="margin:.9rem 0 2rem;">
+          <div class="scorecard">
+            <div class="sc-label">Leadership readiness</div>
+            <div class="sc-num"><span data-count="78" data-suffix="%">0%</span></div>
+            <div class="sc-trend">▲ +9 pts this year</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">Teacher engagement</div>
+            <div class="sc-num"><span data-count="84" data-suffix="%">0%</span></div>
+            <div class="sc-trend">▲ +6 pts since fall</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">Teacher retention</div>
+            <div class="sc-num"><span data-count="92" data-suffix="%">0%</span></div>
+            <div class="sc-trend">▲ +4 pts year over year</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">PL pathways complete</div>
+            <div class="sc-num"><span data-count="71" data-suffix="%">0%</span></div>
+            <div class="sc-trend">▲ On pace for the year</div>
+          </div>
+        </div>
+
+        <!-- Gauges: organizational health + teacher engagement -->
+        <h2>Organizational Health &amp; Engagement</h2>
+        <p class="muted">Composite indices blending climate, engagement, and stability signals.</p>
+        <div style="display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;margin:1.2rem 0 2rem;">
+          <div class="gauge" data-gauge="82" data-gauge-suffix="%">
+            <div class="hole"><b data-gauge-num>0%</b><small>Organizational health</small></div>
+          </div>
+          <div class="gauge" data-gauge="84" data-gauge-suffix="%">
+            <div class="hole"><b data-gauge-num>0%</b><small>Teacher engagement</small></div>
+          </div>
+        </div>
+
+        <!-- Competency growth by domain (barlist) -->
+        <h2>Competency Growth by Domain</h2>
+        <p class="muted">Current proficiency across the six leadership domains (illustrative).</p>
+        <div class="barlist" style="margin:.9rem 0 2rem;">
+          <div class="row"><span>🔭 Visionary Leadership</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+          <div class="row"><span>📚 Instructional Leadership</span><span class="track"><span class="fill" data-pct="86"></span></span><b>86%</b></div>
+          <div class="row"><span>🤝 People Leadership</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+          <div class="row"><span>🏛️ Organizational Leadership</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+          <div class="row"><span>🌍 Community Leadership</span><span class="track"><span class="fill" data-pct="69"></span></span><b>69%</b></div>
+          <div class="row"><span>⚖️ Ethical Leadership</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+        </div>
+
+        <!-- Professional learning progress (barchart) -->
+        <h2>Professional Learning Progress</h2>
+        <p class="muted">Pathway completion by term across the school year (illustrative).</p>
+        <div class="barchart" style="margin:1.4rem 0 2rem;">
+          <div class="bar-col"><div class="bar" data-h="42" style="height:0%;"><span class="bv">42%</span></div><span class="bar-label">Summer</span></div>
+          <div class="bar-col"><div class="bar" data-h="55" style="height:0%;"><span class="bv">55%</span></div><span class="bar-label">Fall</span></div>
+          <div class="bar-col"><div class="bar" data-h="64" style="height:0%;"><span class="bv">64%</span></div><span class="bar-label">Winter</span></div>
+          <div class="bar-col"><div class="bar" data-h="71" style="height:0%;"><span class="bv">71%</span></div><span class="bar-label">Spring</span></div>
+        </div>
+
+        <!-- Strategic priorities table -->
+        <h2>Strategic Priorities</h2>
+        <p class="muted">Progress against this year's school-improvement priorities (illustrative).</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Strategic priorities and current status (illustrative).</caption>
+            <thead>
+              <tr><th scope="col">Priority</th><th scope="col">Measure</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Strengthen Tier 1 literacy instruction</td>
+                <td>% at/above benchmark on universal screener</td>
+                <td><span class="tl-pill green">On track</span></td>
+              </tr>
+              <tr>
+                <td>Retain teachers through trust &amp; recognition</td>
+                <td>Annual retention rate &amp; engagement pulse</td>
+                <td><span class="tl-pill green">On track</span></td>
+              </tr>
+              <tr>
+                <td>Coaching cycle for every teacher</td>
+                <td>% of teachers in an active coaching cycle</td>
+                <td><span class="tl-pill amber">At risk</span></td>
+              </tr>
+              <tr>
+                <td>Increase family engagement</td>
+                <td>Family participation &amp; response rate</td>
+                <td><span class="tl-pill amber">At risk</span></td>
+              </tr>
+              <tr>
+                <td>Reduce chronic absenteeism</td>
+                <td>% of students chronically absent</td>
+                <td><span class="tl-pill red">Off track</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Leadership milestones timeline -->
+        <h2 style="margin-top:2rem;">Leadership Milestones</h2>
+        <p class="muted">Key growth milestones across the leader's development year (illustrative).</p>
+        <ol class="timeline" style="margin:.9rem 0 2rem;">
+          <li class="done"><span class="t-when">Term 1</span><br><b>Baseline self-assessment complete.</b> Strengths and growth areas identified across all six domains.</li>
+          <li class="done"><span class="t-when">Term 1</span><br><b>90-day development plan launched.</b> Focus set on People &amp; Instructional Leadership.</li>
+          <li class="now"><span class="t-when">Term 2</span><br><b>Coaching cycle underway.</b> Walkthrough and engagement routines established; mid-year review in progress.</li>
+          <li><span class="t-when">Term 3</span><br><b>Distributed-leadership expansion.</b> Teacher-leader roles and shared decision structures rolled out.</li>
+          <li><span class="t-when">Term 4</span><br><b>Re-assessment &amp; renewal.</b> Measure growth, celebrate progress, and set next-year priorities.</li>
+        </ol>
+
+        <div class="research" style="margin:1.4rem 0;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Engagement and school-climate metrics on this dashboard are framed as <strong>retention-linked behaviors</strong> — trust, recognition, voice, and support — drawn from doctoral research on the leadership behaviors that most influence whether teachers stay. <em>(Research applied to inform practice; data illustrative.)</em></p>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;">All figures on this page are illustrative fictional data for demonstration and do not represent any real school or leader.</p>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="strategic-leadership.html">Open Strategic Leadership</a>
+          <a class="btn ghost" href="self-assessment.html">Run the Self-Assessment</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Principal Leadership Excellence Framework</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="competencies.html">Competency Model</a></li><li><a href="self-assessment.html">Self-Assessment</a></li><li><a href="development.html">Development Planner</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; examples and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

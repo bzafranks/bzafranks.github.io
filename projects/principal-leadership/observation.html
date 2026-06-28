@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Observation System — Principal Leadership Excellence Framework</title>
+  <meta name="description" content="A growth-focused principal observation system — leadership standards, observation protocols, evidence collection, reflection tools, growth feedback, professional coaching, and leadership rubrics.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Principal Leadership Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">PL</span><span class="brand-text"><span class="brand-title">Principal Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="competencies.html">Competencies</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every framework page) ===== -->
+      <aside class="app-rail" aria-label="Leadership system">
+        <div class="rail-brand"><span class="mark">PL</span><b>Leadership Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Leadership Framework</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Model</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="self-assessment.html"><span class="ico">📝</span> Self-Assessment</a>
+        <a class="rail-link" href="development.html"><span class="ico">🗺️</span> Development Planner</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">📚</span> Instructional Leadership</a>
+        <a class="rail-link" href="teacher-development.html"><span class="ico">👩‍🏫</span> Teacher Development</a>
+        <a class="rail-link" href="school-culture.html"><span class="ico">🤝</span> School Culture</a>
+        <a class="rail-link" href="strategic-leadership.html"><span class="ico">📈</span> Strategic Leadership</a>
+        <a class="rail-link" href="observation.html"><span class="ico">🔎</span> Leadership Observation</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Leadership Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Practice / <b>Leadership Observation</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🔎 Leadership Observation</span>
+          <h1>Leadership Observation System</h1>
+          <p class="lead">A comprehensive, growth-focused system for observing and developing principals. It pairs clear leadership standards and protocols with low-inference evidence collection, reflection tools, growth feedback, and professional coaching — never a "gotcha".</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Observation accelerates growth when it is <strong>developmental, not evaluative</strong>. Low-inference evidence, reflective dialogue, and a coaching follow-up build trust and improve practice far more than scoring alone. <em>(Research applied to inform practice; scenarios illustrative.)</em></p>
+        </div>
+
+        <!-- (a) Observation summary generator -->
+        <h2>Observation Summary Generator</h2>
+        <p class="muted">Draft a growth-focused observation summary aligned to a leadership domain, then adapt it to your context. Generated text is illustrative.</p>
+        <div class="field-row" style="align-items:start;margin:.9rem 0 2rem;">
+          <form data-generator="observation" aria-label="Observation summary generator">
+            <div class="field">
+              <label for="obs-standard">Leadership domain / standard</label>
+              <select id="obs-standard" name="standard">
+                <option>Visionary Leadership</option>
+                <option selected>Instructional Leadership</option>
+                <option>People Leadership</option>
+                <option>Organizational Leadership</option>
+                <option>Community Leadership</option>
+                <option>Ethical Leadership</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="obs-leader">Leader / role</label>
+              <input id="obs-leader" name="leader" type="text" placeholder="e.g., Assistant Principal, Grade-3 team lead">
+            </div>
+            <button class="btn" type="submit">✨ Generate observation summary</button>
+            <p class="muted" style="font-size:.82rem;margin-top:.7rem;">Growth-focused and developmental — designed to inform coaching, not to score.</p>
+          </form>
+
+          <div class="gen-output" data-output="observation">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen" aria-label="Regenerate">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a growth-focused observation summary to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- (b) Leadership rubric -->
+        <h2>Leadership Rubric</h2>
+        <p class="muted">A developmental rubric describes what practice looks like across a continuum — used to locate practice and plan growth, not to label a leader. Illustrative descriptors.</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Leadership rubric across four developmental levels (illustrative).</caption>
+            <thead>
+              <tr>
+                <th scope="col">Standard</th>
+                <th scope="col">Emerging</th>
+                <th scope="col">Developing</th>
+                <th scope="col">Proficient</th>
+                <th scope="col">Leading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Visionary Leadership</th>
+                <td>References a vision occasionally; direction is unclear to staff.</td>
+                <td>Communicates a vision; some staff connect daily work to it.</td>
+                <td>Consistently connects work to a shared vision; staff are aligned.</td>
+                <td>Co-creates and sustains a living vision; others tell the story.</td>
+              </tr>
+              <tr>
+                <th scope="row">Instructional Leadership</th>
+                <td>Visits classrooms rarely; feedback is general.</td>
+                <td>Conducts walkthroughs; feedback is specific but inconsistent.</td>
+                <td>Frequent low-inference walkthroughs with growth-focused feedback.</td>
+                <td>Builds a coaching culture; teachers seek and use feedback.</td>
+              </tr>
+              <tr>
+                <th scope="row">People Leadership</th>
+                <td>Recognition and teacher voice are sporadic.</td>
+                <td>Recognizes staff and gathers voice, but acts on it unevenly.</td>
+                <td>Authentic recognition and acted-on teacher voice; trust is strong.</td>
+                <td>Distributes leadership; retention and engagement are signature strengths.</td>
+              </tr>
+              <tr>
+                <th scope="row">Ethical Leadership</th>
+                <td>Decisions feel inconsistent; reasoning is not shared.</td>
+                <td>Acts with integrity; equity is considered case by case.</td>
+                <td>Transparent, values-based, equity-centered decisions.</td>
+                <td>Models and develops ethical, equitable decision-making in others.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- (c) Observation protocols drill-downs -->
+        <h2 style="margin-top:2rem;">Observation Protocols</h2>
+        <p class="muted">Clear protocols keep observation fair, focused, and developmental.</p>
+        <div style="margin:.6rem 0 2rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Pre-observation conversation</span></div>
+          <div class="drill-panel">
+            <p>The leader names a focus domain and a question they want evidence on. This frames the observation around the leader's goals, not a hidden checklist.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Evidence collection (low-inference)</span></div>
+          <div class="drill-panel">
+            <p>Record observable actions, statements, and artifacts without judgment. Separate what was seen and heard from interpretation, so the leader can draw their own conclusions first.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Reflection tools</span></div>
+          <div class="drill-panel">
+            <p>Guiding questions invite the leader to analyze the evidence: What is working? What surprised you? What would you try next? Reflection precedes feedback.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Growth feedback &amp; coaching next step</span></div>
+          <div class="drill-panel">
+            <p>Name one specific strength (glow) and one high-leverage next step (grow), then co-design a coaching action with a follow-up date. The goal is momentum, not a verdict.</p>
+          </div>
+        </div>
+
+        <!-- Observation → coaching cycle timeline -->
+        <h2>Observation &amp; Coaching Cycle</h2>
+        <p class="muted">Observation is the start of a cycle, not an event. Each step builds toward the leader's growth.</p>
+        <ol class="timeline" style="margin:.9rem 0 2rem;">
+          <li class="done"><span class="t-when">Step 1 · Frame</span><br><b>Pre-observation conversation.</b> Agree on a focus domain and a guiding question.</li>
+          <li class="done"><span class="t-when">Step 2 · Observe</span><br><b>Collect low-inference evidence.</b> Capture actions, statements, and artifacts without judgment.</li>
+          <li class="now"><span class="t-when">Step 3 · Reflect</span><br><b>Leader-first reflection.</b> The leader analyzes the evidence before any feedback is offered.</li>
+          <li><span class="t-when">Step 4 · Feedback</span><br><b>Glow &amp; grow.</b> Affirm a strength and co-identify one high-leverage next step.</li>
+          <li><span class="t-when">Step 5 · Coach</span><br><b>Coaching follow-up.</b> Support the next step and schedule the next observation cycle.</li>
+        </ol>
+
+        <div class="research" style="margin:1.4rem 0;">
+          <span class="tag">Stance</span>
+          <p class="muted" style="margin:.3rem 0 0;">This system is intentionally <strong>growth-focused, not evaluative "gotcha"</strong>. Evidence is low-inference, reflection comes before feedback, and every observation ends in a coaching commitment. <em>(Scenarios illustrative.)</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="development.html">Plan a Coaching Cycle</a>
+          <a class="btn ghost" href="competencies.html">Explore Competencies</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Principal Leadership Excellence Framework</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="competencies.html">Competency Model</a></li><li><a href="self-assessment.html">Self-Assessment</a></li><li><a href="development.html">Development Planner</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; examples and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

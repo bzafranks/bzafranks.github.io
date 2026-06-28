@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Development Planner — Principal Leadership Excellence Framework</title>
+  <meta name="description" content="An individualized leadership growth system — a saved development plan, an AI-style 90-day plan generator, a private reflection journal, and a guided leadership development journey.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Principal Leadership Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">PL</span><span class="brand-text"><span class="brand-title">Principal Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="competencies.html">Competencies</a></li>
+        <li><a href="self-assessment.html">Self-Assessment</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every framework page) ===== -->
+      <aside class="app-rail" aria-label="Leadership system">
+        <div class="rail-brand"><span class="mark">PL</span><b>Leadership Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Leadership Framework</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Model</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="self-assessment.html"><span class="ico">📝</span> Self-Assessment</a>
+        <a class="rail-link" href="development.html"><span class="ico">🗺️</span> Development Planner</a>
+        <div class="rail-group">Practice</div>
+        <a class="rail-link" href="instructional-leadership.html"><span class="ico">📚</span> Instructional Leadership</a>
+        <a class="rail-link" href="teacher-development.html"><span class="ico">👩‍🏫</span> Teacher Development</a>
+        <a class="rail-link" href="school-culture.html"><span class="ico">🤝</span> School Culture</a>
+        <a class="rail-link" href="strategic-leadership.html"><span class="ico">📈</span> Strategic Leadership</a>
+        <a class="rail-link" href="observation.html"><span class="ico">🔎</span> Leadership Observation</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Leadership Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Develop / <b>Development Planner</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗺️ Your Growth</span>
+          <h1>Leadership Development Planner</h1>
+          <p class="lead">Turn insight into action. Capture your annual goal and 90-day plan, generate a starter plan to adapt, reflect on your growth each week, and follow a guided leadership journey. Everything you enter is saved privately in this browser — nothing leaves your device.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Effective leadership growth pairs a focused goal with short cycles, coaching, and structured reflection. Priorities in the People domain — trust, recognition, voice, and wellbeing — reflect Dr. Franks' doctoral research on the behaviors most linked to teacher retention. <em>(Research applied to inform practice; scenarios illustrative.)</em></p>
+        </div>
+
+        <!-- ============ (a) SAVED PLANNER ============ -->
+        <h2>📋 My Development Plan</h2>
+        <p class="muted">Auto-saves as you type. Pick a focus domain, set your goal, and sketch your plan.</p>
+        <div class="assess-card">
+          <form data-planner>
+            <div class="field">
+              <label for="annualGoal">Annual leadership goal</label>
+              <input id="annualGoal" name="annualGoal" type="text" placeholder="e.g., Strengthen instructional feedback so every teacher receives a coaching conversation each month.">
+            </div>
+            <div class="field">
+              <label for="focusDomain">Focus domain</label>
+              <select id="focusDomain" name="focusDomain">
+                <option value="">Choose a domain…</option>
+                <option>Visionary Leadership</option>
+                <option>Instructional Leadership</option>
+                <option>People Leadership</option>
+                <option>Organizational Leadership</option>
+                <option>Community Leadership</option>
+                <option>Ethical Leadership</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="ninetyDay">90-day improvement plan</label>
+              <textarea id="ninetyDay" name="ninetyDay" placeholder="Days 1–30 baseline · Days 31–60 implement one high-leverage routine · Days 61–90 review impact and plan the next cycle."></textarea>
+            </div>
+            <div class="field">
+              <label for="monthlyPriorities">Monthly priorities</label>
+              <textarea id="monthlyPriorities" name="monthlyPriorities" placeholder="Month 1: model & communicate · Month 2: coach & support · Month 3: measure & celebrate."></textarea>
+            </div>
+            <div class="field">
+              <label for="learningRoadmap">Learning roadmap</label>
+              <textarea id="learningRoadmap" name="learningRoadmap" placeholder="Readings, peer observations, conferences, or networks that will build this capability."></textarea>
+            </div>
+            <div class="field">
+              <label for="coaching">Coaching recommendations</label>
+              <textarea id="coaching" name="coaching" placeholder="Who will coach you, on what cadence, and what feedback you want."></textarea>
+            </div>
+            <div class="btn-row" style="align-items:center;">
+              <button class="btn" type="submit">Save plan</button>
+              <span data-plan-saved class="saved-note"></span>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ============ (b) DEVPLAN GENERATOR ============ -->
+        <h2 style="margin-top:2rem;">✨ 90-Day Plan Generator</h2>
+        <p class="muted">Describe your goal and choose a domain to draft a starter 90-day plan you can adapt and paste into your plan above.</p>
+        <div class="field-row" style="align-items:start;">
+          <div class="assess-card" style="margin-bottom:0;">
+            <form data-generator="devplan">
+              <div class="field">
+                <label for="goal">Leadership goal</label>
+                <input id="goal" name="goal" type="text" placeholder="e.g., strengthen instructional leadership">
+              </div>
+              <div class="field">
+                <label for="domain">Focus domain</label>
+                <select id="domain" name="domain">
+                  <option>Visionary Leadership</option>
+                  <option>Instructional Leadership</option>
+                  <option>People Leadership</option>
+                  <option>Organizational Leadership</option>
+                  <option>Community Leadership</option>
+                  <option>Ethical Leadership</option>
+                </select>
+              </div>
+              <button class="btn" type="submit">✨ Generate 90-day plan</button>
+            </form>
+          </div>
+          <div class="gen-output" data-output="devplan">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a starter 90-day plan to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- ============ (c) REFLECTION JOURNAL ============ -->
+        <h2 style="margin-top:2rem;">🪞 Reflection Journal</h2>
+        <p class="muted">Reflection turns experience into growth. Add a short entry each week — entries are saved privately in this browser.</p>
+        <div class="assess-card">
+          <div data-journal>
+            <div class="field">
+              <label for="journalEntry">This week's reflection</label>
+              <textarea id="journalEntry" placeholder="What did I learn about my leadership this week?"></textarea>
+            </div>
+            <div class="btn-row" style="align-items:center;">
+              <button class="btn" type="button" data-journal-add>Add reflection</button>
+              <button class="out-btn" type="button" data-journal-clear>Clear journal</button>
+            </div>
+            <div data-journal-list style="margin-top:1rem;"></div>
+          </div>
+        </div>
+
+        <!-- ============ (d) LEADERSHIP JOURNEY ============ -->
+        <h2 style="margin-top:2rem;">🧭 Your Leadership Journey</h2>
+        <p class="muted">Growth is a cycle, not a checklist. Move through these stages, then begin again — each loop deepens your practice.</p>
+        <div class="journey" style="margin-top:.8rem;">
+          <div class="j-stage"><span class="n">1</span><h4>Understand</h4><p class="muted" style="font-size:.84rem;">Learn the framework and competencies that define exceptional leadership.</p></div>
+          <div class="j-stage"><span class="n">2</span><h4>Assess</h4><p class="muted" style="font-size:.84rem;">Locate your current practice with the <a href="self-assessment.html">self-assessment</a>.</p></div>
+          <div class="j-stage"><span class="n">3</span><h4>Plan</h4><p class="muted" style="font-size:.84rem;">Set a focused goal and a 90-day plan with the planner above.</p></div>
+          <div class="j-stage"><span class="n">4</span><h4>Lead</h4><p class="muted" style="font-size:.84rem;">Put high-leverage routines into daily practice and coach others.</p></div>
+          <div class="j-stage"><span class="n">5</span><h4>Reflect</h4><p class="muted" style="font-size:.84rem;">Review evidence, journal your learning, and start the next cycle.</p></div>
+        </div>
+        <div class="research" style="margin-top:1.2rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">🎉 <strong>Celebrate milestones.</strong> Naming and celebrating progress — a completed cycle, a goal met, a teacher retained — sustains motivation and models the recognition culture that research links to engagement and retention. Mark each milestone before you begin the next loop.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.8rem;">
+          <a class="btn" href="self-assessment.html">Re-Assess Your Practice</a>
+          <a class="btn ghost" href="competencies.html">Explore Competencies</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Principal Leadership Excellence Framework</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="competencies.html">Competency Model</a></li><li><a href="self-assessment.html">Self-Assessment</a></li><li><a href="development.html">Development Planner</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; examples and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

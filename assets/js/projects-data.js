@@ -175,5 +175,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🏭",
     tags: ["AI Product", "Educational Publishing", "Workflow Automation", "Content Production", "Multimedia Learning", "Enterprise Software"],
     summary: "An enterprise AI content-production platform that turns a single prompt into a complete instructional package (lesson, workbook, slides, video, assessment, rubric, interactive activity, teacher/student/parent guides, LMS package). 17 tools: content factory, wizard, lesson/assessment/video/interactive/presentation/workbook/teacher-guide/parent generators, LMS builder, publishing center, content library, an animated workflow-automation pipeline, analytics, and enterprise admin — with a human editorial gate. Command palette, dark mode. Part of the AI for Education Innovation Suite."
+  },
+  {
+    id: "principal-leadership",
+    title: "Principal Leadership Excellence Framework",
+    subtitle: "An evidence-based system for building exceptional school leaders",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/principal-leadership/index.html",
+    icon: "🧭",
+    tags: ["Educational Leadership", "School Improvement", "Leadership Development", "Teacher Retention", "Research-Based", "Executive Coaching"],
+    summary: "A comprehensive leadership development system built on six integrated domains (Visionary, Instructional, People, Organizational, Community, Ethical) — with an interactive competency model, an 18-item scored leadership self-assessment (profile, readiness score, action plan), a development planner with saved reflection journal, instructional-leadership & observation toolkits, a culture dashboard, and leadership analytics. Grounded in leadership theory and Dr. Franks' doctoral research on leadership behaviors that influence teacher retention. First project in the Educational Leadership & School Improvement Suite."
   }
 ];
