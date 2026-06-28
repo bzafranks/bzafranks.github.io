@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Analytics — Executive Leadership Growth System</title>
+  <meta name="description" content="Executive leadership analytics: competency growth, coaching progress, 360° feedback trends, professional learning, leadership effectiveness, school-improvement impact, teacher engagement, milestones, and organizational performance.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Executive Leadership Growth System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ELG</span><span class="brand-text"><span class="brand-title">Executive Leadership Growth</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="evaluation-framework.html">Framework</a></li>
+        <li><a href="executive-coaching.html">Coaching</a></li>
+        <li><a href="360-feedback.html">360° Feedback</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">ELG</span><b>Executive Leadership Growth</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Performance Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="evaluation-framework.html"><span class="ico">🧭</span> Evaluation Framework</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Growth</div>
+        <a class="rail-link" href="360-feedback.html"><span class="ico">🔄</span> 360° Feedback</a>
+        <a class="rail-link" href="executive-coaching.html"><span class="ico">🎓</span> Executive Coaching</a>
+        <a class="rail-link" href="growth-plans.html"><span class="ico">🌱</span> Growth Plans</a>
+        <a class="rail-link" href="leadership-portfolio.html"><span class="ico">📁</span> Leadership Portfolio</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Leadership Analytics</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Leadership Analytics</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Leadership updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Leadership Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>360° feedback</b> window closed — results ready to review.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--elg-accent-2);"></span><div><b>Coaching conversation</b> scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>90-day growth plan</b> mid-point check due this week.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="executive-coaching.html">Open Executive Coaching →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Leadership Intelligence</span>
+          <h1>Leadership Analytics</h1>
+          <p class="lead">Executive dashboards tracking leadership competency growth, coaching progress, feedback trends, professional learning, effectiveness, and organizational impact. All figures are illustrative sample data created for demonstration.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="f-leader">Leader</label>
+          <select id="f-leader"><option>Dr. A. Reyes — Principal</option><option>J. Carter — Vice Principal</option><option>District cohort (all)</option></select>
+          <label for="f-cycle">Cycle</label>
+          <select id="f-cycle"><option>2025–26</option><option>2024–25</option><option>2023–24</option></select>
+          <label for="f-domain">Domain</label>
+          <select id="f-domain"><option>All domains</option><option>Visionary</option><option>Instructional</option><option>People</option><option>Strategic</option><option>Operational</option><option>Ethical</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi gold"><div class="k-label">🧭 Leadership Performance Index</div><div class="k-num"><span data-count="84">0</span></div><div class="k-trend up">▲ 5 vs. last cycle</div></div>
+          <div class="kpi green"><div class="k-label">📈 Competency Growth</div><div class="k-num"><span data-count="12" data-prefix="+" data-suffix=" pts">0</span></div><div class="k-trend up">▲ this cycle</div></div>
+          <div class="kpi green"><div class="k-label">🎓 Coaching Progress</div><div class="k-num"><span data-count="92" data-suffix="%">0</span></div><div class="k-trend up">▲ 9%</div></div>
+          <div class="kpi green"><div class="k-label">🔄 360° Favorable</div><div class="k-num"><span data-count="88" data-suffix="%">0</span></div><div class="k-trend up">▲ 6%</div></div>
+          <div class="kpi gold"><div class="k-label">📚 Professional Learning</div><div class="k-num"><span data-count="48" data-suffix=" hrs">0</span></div><div class="k-trend up">▲ 14 hrs</div></div>
+          <div class="kpi green"><div class="k-label">🔥 Teacher Engagement</div><div class="k-num"><span data-count="83" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+        </div>
+
+        <!-- gauges -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">Leadership Effectiveness</h3><div class="gauge" data-gauge="86" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Effectiveness rating</small></div></div><p class="muted" style="font-size:.84rem;">Composite of feedback, goals, and impact signals.</p></div>
+          <div class="card" style="text-align:center;"><h3 style="margin-top:0;">School-Improvement Impact</h3><div class="gauge" data-gauge="79" data-gauge-suffix=""><div class="hole"><b data-gauge-num>0</b><small>Impact index</small></div></div><p class="muted" style="font-size:.84rem;">Weighted progress across improvement initiatives.</p></div>
+        </div>
+
+        <!-- competency bars + effectiveness trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Competency growth (this cycle vs last)</h3><div class="barlist">
+            <div class="row"><span>🔭 Visionary</span><span class="track"><span class="fill" data-pct="86"></span></span><b>86%</b></div>
+            <div class="row"><span>📚 Instructional</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+            <div class="row"><span>🤝 People</span><span class="track"><span class="fill" data-pct="90"></span></span><b>90%</b></div>
+            <div class="row"><span>🎯 Strategic</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>🏛️ Operational</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>⚖️ Ethical</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+          </div><p class="muted" style="font-size:.84rem;margin-top:.6rem;">Strongest gains this cycle in Strategic (+9) and Operational (+7).</p></div>
+          <div class="card"><h3 style="margin-top:0;">Leadership effectiveness trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Leadership effectiveness trend"><path class="area" d="M0,48 L50,44 L100,39 L150,33 L200,29 L250,24 L300,19 L300,64 L0,64 Z"></path><path class="line" d="M0,48 L50,44 L100,39 L150,33 L200,29 L250,24 L300,19"></path></svg><p class="muted" style="font-size:.84rem;">Effectiveness has risen steadily across six coaching cycles.</p></div>
+        </div>
+
+        <!-- heatmap: growth by domain x cycle -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Growth by domain × cycle</h3>
+          <div class="heat" style="grid-template-columns:140px repeat(5,1fr);align-items:center;">
+            <span></span>
+            <span class="muted" style="text-align:center;font-size:.74rem;font-weight:700;">C1</span>
+            <span class="muted" style="text-align:center;font-size:.74rem;font-weight:700;">C2</span>
+            <span class="muted" style="text-align:center;font-size:.74rem;font-weight:700;">C3</span>
+            <span class="muted" style="text-align:center;font-size:.74rem;font-weight:700;">C4</span>
+            <span class="muted" style="text-align:center;font-size:.74rem;font-weight:700;">C5</span>
+
+            <span style="font-size:.82rem;font-weight:700;">🔭 Visionary</span>
+            <span class="hcell h3">3</span><span class="hcell h3">3</span><span class="hcell h4">4</span><span class="hcell h4">4</span><span class="hcell h5">5</span>
+
+            <span style="font-size:.82rem;font-weight:700;">📚 Instructional</span>
+            <span class="hcell h2">2</span><span class="hcell h3">3</span><span class="hcell h3">3</span><span class="hcell h4">4</span><span class="hcell h4">4</span>
+
+            <span style="font-size:.82rem;font-weight:700;">🤝 People</span>
+            <span class="hcell h3">3</span><span class="hcell h4">4</span><span class="hcell h4">4</span><span class="hcell h5">5</span><span class="hcell h5">5</span>
+
+            <span style="font-size:.82rem;font-weight:700;">🎯 Strategic</span>
+            <span class="hcell h1">1</span><span class="hcell h2">2</span><span class="hcell h2">2</span><span class="hcell h3">3</span><span class="hcell h4">4</span>
+
+            <span style="font-size:.82rem;font-weight:700;">🏛️ Operational</span>
+            <span class="hcell h2">2</span><span class="hcell h2">2</span><span class="hcell h3">3</span><span class="hcell h3">3</span><span class="hcell h4">4</span>
+
+            <span style="font-size:.82rem;font-weight:700;">⚖️ Ethical</span>
+            <span class="hcell h3">3</span><span class="hcell h4">4</span><span class="hcell h4">4</span><span class="hcell h5">5</span><span class="hcell h5">5</span>
+          </div>
+          <div style="display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;margin-top:.9rem;font-size:.78rem;">
+            <span class="muted" style="font-weight:700;">Proficiency:</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span class="hcell h1" style="width:18px;height:18px;">1</span> Emerging</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span class="hcell h2" style="width:18px;height:18px;">2</span> Developing</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span class="hcell h3" style="width:18px;height:18px;">3</span> Approaching</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span class="hcell h4" style="width:18px;height:18px;">4</span> Proficient</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span class="hcell h5" style="width:18px;height:18px;">5</span> Distinguished</span>
+          </div>
+        </div>
+
+        <!-- milestones table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Leadership Milestones</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">Milestone</th><th scope="col">Date</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td>Completed baseline leadership self-assessment</td><td>Cycle 1 · Sep</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>First 360° feedback round closed</td><td>Cycle 1 · Nov</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Distributed-leadership teams established</td><td>Cycle 1 · Mar</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Coaching cadence embedded schoolwide</td><td>Cycle 2 · Oct</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>Strategic resource-alignment plan</td><td>Cycle 2 · Feb</td><td><span class="tl-pill gold">In progress</span></td></tr>
+                <tr><td>Succession &amp; leadership-pipeline plan</td><td>Cycle 3 · Planned</td><td><span class="tl-pill amber">Upcoming</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- insights drill -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📊 Analytics Insights <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Coaching progress correlates with effectiveness gains</b></span><span class="tl-pill green">Strong signal</span></div>
+          <div class="drill-panel"><p class="muted">Cycles with a higher coaching cadence show the steepest effectiveness gains. The bi-weekly conversation rhythm tracks closely with the rising trendline.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Strategic Leadership is the highest-leverage growth area</b></span><span class="tl-pill gold">Watch</span></div>
+          <div class="drill-panel"><p class="muted">Strategic sits lowest (74%) but is climbing fastest (+9). Continued resource-alignment work should close the gap to the proficient band next cycle.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>People Leadership drives teacher engagement &amp; retention</b></span><span class="tl-pill green">Strong signal</span></div>
+          <div class="drill-panel"><p class="muted">People Leadership (90%) moves in step with engagement (83%) and retention (89%) — the clearest organizational-performance linkage in the data.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Organizational performance is improving overall</b></span><span class="tl-pill green">On track</span></div>
+          <div class="drill-panel"><p class="muted">Composite organizational indicators (engagement, retention, goals on track, improvement impact) are all trending upward this cycle.</p></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="leadership-portfolio.html">📁 Open Portfolio</a>
+          <a class="btn ghost" href="executive-coaching.html">🎓 Plan a Coaching Cycle</a>
+          <a class="btn ghost" href="growth-plans.html">🌱 Build a Growth Plan</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Executive Leadership Growth System</h4><p style="color:#c9d6e6;">A comprehensive framework for evaluating, coaching, and developing exceptional educational leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="evaluation-framework.html">Evaluation Framework</a></li><li><a href="360-feedback.html">360° Feedback</a></li><li><a href="executive-coaching.html">Executive Coaching</a></li><li><a href="growth-plans.html">Growth Plans</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -307,5 +307,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🤝",
     tags: ["Professional Learning Communities", "Collaborative Inquiry", "Lesson Study", "Job-Embedded PD", "Teacher Collaboration", "Continuous Improvement"],
     summary: "A complete operating system for thriving Professional Learning Communities built on six pillars (Shared Vision & Purpose, Collaborative Culture & Trust, Collective Inquiry, Focus on Learning & Results, Reflective Practice, Distributed Leadership) — with a scored 6-pillar PLC Health Assessment, a Community Dashboard, a repeatable collaborative-inquiry cycle, a Meeting Hub (protocol/agenda generator + live idea wall), a lesson-study workflow, job-embedded professional learning, a shared knowledge library, and a facilitator toolkit. Grounded in PLC, lesson-study & collaborative-inquiry research with a through-line to Dr. Franks' doctoral research on the leadership behaviors that build collaborative culture. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "executive-leadership-growth",
+    title: "Executive Leadership Growth System",
+    subtitle: "Evaluating, coaching & developing exceptional educational leaders",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/executive-leadership-growth/index.html",
+    icon: "🎓",
+    tags: ["Leadership Evaluation", "Executive Coaching", "Professional Growth", "360° Feedback", "Leadership Development", "Performance Management"],
+    summary: "A comprehensive executive leadership development system that reframes leadership evaluation as growth, not compliance. Built on six leadership domains (Visionary, Instructional, People, Strategic, Operational, Ethical), it includes a Performance Dashboard, a scored 6-domain Leadership Self-Assessment (Leadership Performance Index), a Standards explorer (Emerging→Distinguished), a 360° multi-source feedback dashboard with heat maps, an Executive Coaching cycle with a reflection journal, a coaching/growth-plan generator plus a saved growth-plan builder, a digital Leadership Portfolio, and Leadership Analytics. Grounded in transformational & instructional leadership, executive coaching, and adult-learning research, with a through-line to Dr. Franks' doctoral research on how leadership growth influences teacher satisfaction, culture & retention. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

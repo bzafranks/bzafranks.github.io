@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Dashboard — Executive Leadership Growth System</title>
+  <meta name="description" content="An executive dashboard for leadership growth: Leadership Performance Index, professional growth, coaching activity, 360° feedback, strategic goals, teacher engagement, and organizational health.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Executive Leadership Growth System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ELG</span><span class="brand-text"><span class="brand-title">Executive Leadership Growth</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="evaluation-framework.html">Framework</a></li>
+        <li><a href="executive-coaching.html">Coaching</a></li>
+        <li><a href="360-feedback.html">360° Feedback</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">ELG</span><b>Executive Leadership Growth</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Performance Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="evaluation-framework.html"><span class="ico">🧭</span> Evaluation Framework</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Growth</div>
+        <a class="rail-link" href="360-feedback.html"><span class="ico">🔄</span> 360° Feedback</a>
+        <a class="rail-link" href="executive-coaching.html"><span class="ico">🎓</span> Executive Coaching</a>
+        <a class="rail-link" href="growth-plans.html"><span class="ico">🌱</span> Growth Plans</a>
+        <a class="rail-link" href="leadership-portfolio.html"><span class="ico">📁</span> Leadership Portfolio</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Leadership Analytics</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Performance Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Leadership updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Leadership Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>360° feedback</b> window closed — results ready to review.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--elg-accent-2);"></span><div><b>Coaching conversation</b> scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>90-day growth plan</b> mid-point check due this week.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="executive-coaching.html">Open Executive Coaching →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Executive Growth Command Center</span>
+          <h1>Performance Dashboard</h1>
+          <p class="lead">A leader's growth, coaching, feedback, and organizational impact — in one executive view. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>Leader</label><select><option>Dr. A. Reyes — Principal</option><option>J. Carter — Vice Principal</option><option>District cohort (all)</option></select>
+          <label>Cycle</label><select><option>2025–26</option><option>2024–25</option></select>
+          <label>View</label><select><option>Growth view</option><option>Evaluation view</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="84">0</span></div><div class="muted" style="color:#f0e6d2;">Leadership Performance Index</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Proficient</span><span class="sc-trend up" style="color:#9fe0b4;">▲ 5 vs. last cycle</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="78" data-gauge-suffix=""><div class="hole"><b data-gauge-num>0</b><small>Professional Growth Index</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="88" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>360° favorable</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi green"><div class="k-label">🎯 Strategic Goals On Track</div><div class="k-num"><span data-count="76" data-suffix="%">0</span></div><div class="k-trend up">▲ 8%</div></div>
+          <div class="kpi gold"><div class="k-label">🎓 Coaching Conversations</div><div class="k-num"><span data-count="9">0</span></div><div class="k-trend up">▲ this cycle</div></div>
+          <div class="kpi green"><div class="k-label">🔥 Teacher Engagement</div><div class="k-num"><span data-count="83" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+          <div class="kpi green"><div class="k-label">💚 Teacher Retention</div><div class="k-num"><span data-count="89" data-suffix="%">0</span></div><div class="k-trend up">▲ 4%</div></div>
+          <div class="kpi gold"><div class="k-label">📁 Portfolio Artifacts</div><div class="k-num"><span data-count="24">0</span></div><div class="k-trend up">▲ 6 new</div></div>
+          <div class="kpi amber"><div class="k-label">⏳ Growth Goals Mid-Cycle</div><div class="k-num"><span data-count="2">0</span></div><div class="k-trend flat">on track</div></div>
+        </div>
+
+        <!-- brief + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Executive Growth Briefing</h4><p>Leadership Performance Index is strong and improving (84, ▲5; <b>Proficient</b>). 360° feedback is favorable (88%) with People Leadership as a signature strength. Growth focus this cycle: <b>Strategic Leadership</b> and <b>Operational Leadership</b>. Coaching cadence is healthy and teacher retention is climbing (89%, ▲4). <a href="growth-plans.html">Review the growth plan →</a></p></div>
+          <div class="card"><h3 style="margin-top:0;">Leadership Index Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Leadership index trend"><path class="area" d="M0,46 L50,42 L100,38 L150,34 L200,30 L250,26 L300,21 L300,64 L0,64 Z"></path><path class="line" d="M0,46 L50,42 L100,38 L150,34 L200,30 L250,26 L300,21"></path></svg><p class="muted" style="font-size:.84rem;">Steady growth across coaching cycles.</p></div>
+        </div>
+
+        <!-- domain bars + growth-goal drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Leadership Domains</h3><div class="barlist">
+            <div class="row"><span>🔭 Visionary</span><span class="track"><span class="fill" data-pct="86"></span></span><b>86%</b></div>
+            <div class="row"><span>📚 Instructional</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+            <div class="row"><span>🤝 People</span><span class="track"><span class="fill" data-pct="90"></span></span><b>90%</b></div>
+            <div class="row"><span>🎯 Strategic</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>🏛️ Operational</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>⚖️ Ethical</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">🌱 Growth Goals <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Sharpen strategic resource alignment</b></span><span class="tl-pill gold">In progress</span></div>
+            <div class="drill-panel"><p class="muted">Aligning budget &amp; staffing to two high-leverage priorities. Coach check-in bi-weekly. Mid-point review this week.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Protect time for instructional leadership</b></span><span class="tl-pill gold">In progress</span></div>
+            <div class="drill-panel"><p class="muted">Streamlining operational routines to free 4 hours/week for walkthroughs &amp; feedback.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Expand distributed leadership</b></span><span class="tl-pill green">Achieved</span></div>
+            <div class="drill-panel"><p class="muted">Established three teacher-led leadership teams; documented in the leadership portfolio.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="evaluation-framework.html#assessment">🧭 Take the Self-Assessment</a>
+          <a class="btn ghost" href="executive-coaching.html">🎓 Plan a Coaching Cycle</a>
+          <a class="btn ghost" href="growth-plans.html">🌱 Build a Growth Plan</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Executive Leadership Growth System</h4><p style="color:#c9d6e6;">A comprehensive framework for evaluating, coaching, and developing exceptional educational leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="evaluation-framework.html">Evaluation Framework</a></li><li><a href="360-feedback.html">360° Feedback</a></li><li><a href="executive-coaching.html">Executive Coaching</a></li><li><a href="growth-plans.html">Growth Plans</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

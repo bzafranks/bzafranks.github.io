@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Growth Plans — Executive Leadership Growth System</title>
+  <meta name="description" content="Personalized professional growth plans for educational leaders: annual goals, 90-day plans, leadership competencies, professional learning, conferences, reading, milestones, and progress monitoring — with a plan generator and a saved growth-plan builder.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Executive Leadership Growth System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ELG</span><span class="brand-text"><span class="brand-title">Executive Leadership Growth</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="evaluation-framework.html">Framework</a></li>
+        <li><a href="executive-coaching.html">Coaching</a></li>
+        <li><a href="360-feedback.html">360° Feedback</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">ELG</span><b>Executive Leadership Growth</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Performance Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="evaluation-framework.html"><span class="ico">🧭</span> Evaluation Framework</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Growth</div>
+        <a class="rail-link" href="360-feedback.html"><span class="ico">🔄</span> 360° Feedback</a>
+        <a class="rail-link" href="executive-coaching.html"><span class="ico">🎓</span> Executive Coaching</a>
+        <a class="rail-link" href="growth-plans.html"><span class="ico">🌱</span> Growth Plans</a>
+        <a class="rail-link" href="leadership-portfolio.html"><span class="ico">📁</span> Leadership Portfolio</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Leadership Analytics</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Growth / <b>Growth Plans</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Leadership updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Leadership Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>360° feedback</b> window closed — results ready to review.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--elg-accent-2);"></span><div><b>Coaching conversation</b> scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>90-day growth plan</b> mid-point check due this week.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="executive-coaching.html">Open Executive Coaching →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🌱 Personalized Development</span>
+          <h1>Professional Growth Plans</h1>
+          <p class="lead">Personalized leadership development that connects annual goals, 90-day plans, leadership competencies, professional learning, conferences, reading, milestones, and progress monitoring into one coherent path. All content is illustrative sample data.</p>
+        </div>
+
+        <!-- (1) PLAN GENERATOR -->
+        <h2 style="margin:0 0 .4rem;">Plan generator</h2>
+        <p class="muted" style="margin-top:0;max-width:70ch;">Choose a plan type and a focus, then generate a personalized draft you can refine with a coach. The draft is a starting point — make it your own.</p>
+        <div class="gen-layout" style="margin-bottom:1.6rem;">
+          <form class="gen-form" data-generator="plan">
+            <h3>Generate a growth plan</h3>
+            <div class="field">
+              <label for="gen-type">Plan type</label>
+              <select id="gen-type" name="type">
+                <option>90-Day Coaching Plan</option>
+                <option>Annual Leadership Goals</option>
+                <option>Executive Coaching Agenda</option>
+                <option>Professional Growth Plan</option>
+                <option>Leadership Development Plan</option>
+                <option>Succession Readiness Plan</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="gen-leader">Leader</label>
+              <input id="gen-leader" name="leader" type="text" value="Dr. A. Reyes">
+            </div>
+            <div class="field">
+              <label for="gen-focus">Focus domain</label>
+              <input id="gen-focus" name="focus" type="text" value="Strategic Leadership">
+            </div>
+            <div class="field">
+              <label for="gen-goal">Leadership goal</label>
+              <input id="gen-goal" name="goal" type="text" value="align resources to two high-leverage priorities">
+            </div>
+            <button class="btn" type="submit">✨ Generate plan</button>
+          </form>
+
+          <div class="gen-output" data-output="plan">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body">
+              <div class="out-empty"><div><div class="big">🌱</div><p>Pick a plan type and Generate.</p></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- (2) SAVED GROWTH-PLAN BUILDER -->
+        <h2 style="margin:0 0 .4rem;">Build &amp; save a growth plan</h2>
+        <p class="muted" style="margin-top:0;max-width:70ch;">Commit a goal to a leadership domain and a time horizon, name your key actions, and define your evidence of success. Your plan saves locally in this browser.</p>
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.6rem;align-items:start;">
+          <form class="gen-form" data-plan-form>
+            <h3>Growth-plan builder</h3>
+            <div class="field-row">
+              <div class="field">
+                <label for="plan-domain">Leadership domain</label>
+                <select id="plan-domain" name="domain">
+                  <option>Visionary Leadership</option>
+                  <option>Instructional Leadership</option>
+                  <option>People Leadership</option>
+                  <option>Strategic Leadership</option>
+                  <option>Operational Leadership</option>
+                  <option>Ethical Leadership</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="plan-horizon">Time horizon</label>
+                <select id="plan-horizon" name="horizon">
+                  <option>90 days</option>
+                  <option>Semester</option>
+                  <option>Annual</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="plan-goal">Leadership goal</label>
+              <textarea id="plan-goal" name="goal" rows="2" placeholder="A clear, measurable leadership growth goal…"></textarea>
+            </div>
+            <div class="field">
+              <label for="plan-actions">Key actions</label>
+              <textarea id="plan-actions" name="actions" rows="3" placeholder="The few high-leverage practices, professional learning, conferences, or reading you'll pursue…"></textarea>
+            </div>
+            <div class="field">
+              <label for="plan-evidence">Evidence of success</label>
+              <textarea id="plan-evidence" name="evidence" rows="3" placeholder="The milestones, artifacts, and indicators that will show progress…"></textarea>
+            </div>
+            <button class="btn" type="submit">Save growth plan</button>
+          </form>
+
+          <div class="card">
+            <h3 style="margin-top:0;">Your saved growth plan</h3>
+            <p class="muted" style="margin-top:0;font-size:.88rem;">Saved plans live only in this browser's local storage — nothing is uploaded.</p>
+            <div data-plan-saved></div>
+          </div>
+        </div>
+
+        <!-- year-of-growth timeline -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">A year of leadership growth</h3>
+          <p class="muted" style="margin-top:0;">An illustrative annual arc that weaves goals, professional learning, and milestones into a continuous growth journey.</p>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Quarter 1 · Reflect &amp; set</span><br><b>Establish the focus</b> — review 360° feedback and the self-assessment; set annual goals and a first 90-day plan.</li>
+            <li class="done"><span class="t-when">Quarter 2 · Learn &amp; apply</span><br><b>Build competency</b> — attend a leadership conference, begin a professional reading, and apply high-leverage practices with coaching.</li>
+            <li class="now"><span class="t-when">Quarter 3 · Monitor</span><br><b>Mid-year review</b> — check milestones, gather portfolio evidence, and adjust the plan while there's still time.</li>
+            <li><span class="t-when">Quarter 4 · Evidence &amp; renew</span><br><b>Show impact</b> — collect evidence of growth, celebrate wins, and set the next cycle of goals.</li>
+          </ul>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="executive-coaching.html">🎓 Plan a coaching cycle</a>
+          <a class="btn ghost" href="360-feedback.html">🔄 Review 360° feedback</a>
+          <a class="btn ghost" href="evaluation-framework.html#assessment">🧭 Take the self-assessment</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All content shown is illustrative sample data; generated and saved plans are starting points to personalize with a coach.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Executive Leadership Growth System</h4><p style="color:#c9d6e6;">A comprehensive framework for evaluating, coaching, and developing exceptional educational leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="evaluation-framework.html">Evaluation Framework</a></li><li><a href="360-feedback.html">360° Feedback</a></li><li><a href="executive-coaching.html">Executive Coaching</a></li><li><a href="growth-plans.html">Growth Plans</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

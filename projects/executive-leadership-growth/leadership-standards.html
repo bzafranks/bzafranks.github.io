@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Standards — Executive Leadership Growth System</title>
+  <meta name="description" content="An interactive leadership standards and competency framework: four-level growth progressions (Emerging to Distinguished) across the six leadership domains, with evidence artifacts, professional expectations, and benchmarks.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Executive Leadership Growth System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ELG</span><span class="brand-text"><span class="brand-title">Executive Leadership Growth</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="evaluation-framework.html">Framework</a></li>
+        <li><a href="executive-coaching.html">Coaching</a></li>
+        <li><a href="360-feedback.html">360° Feedback</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">ELG</span><b>Executive Leadership Growth</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Performance Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="evaluation-framework.html"><span class="ico">🧭</span> Evaluation Framework</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Growth</div>
+        <a class="rail-link" href="360-feedback.html"><span class="ico">🔄</span> 360° Feedback</a>
+        <a class="rail-link" href="executive-coaching.html"><span class="ico">🎓</span> Executive Coaching</a>
+        <a class="rail-link" href="growth-plans.html"><span class="ico">🌱</span> Growth Plans</a>
+        <a class="rail-link" href="leadership-portfolio.html"><span class="ico">📁</span> Leadership Portfolio</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Leadership Analytics</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Framework / <b>Leadership Standards</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Leadership updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Leadership Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>360° feedback</b> window closed — results ready to review.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--elg-accent-2);"></span><div><b>Coaching conversation</b> scheduled for Thursday.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>90-day growth plan</b> mid-point check due this week.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="executive-coaching.html">Open Executive Coaching →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📐 Competency Progressions</span>
+          <h1>Leadership Standards</h1>
+          <p class="lead">An interactive competency framework. Each leadership standard is described across four growth levels — Emerging, Developing, Proficient, and Distinguished — with evidence artifacts, professional expectations, and benchmarks. All content is illustrative sample material.</p>
+        </div>
+
+        <!-- ===== Filter strip ===== -->
+        <div class="filter-strip" data-filters>
+          <label for="f-domain">Domain</label>
+          <select id="f-domain">
+            <option>All domains</option>
+            <option>🔭 Visionary</option>
+            <option>📚 Instructional</option>
+            <option>🤝 People</option>
+            <option>🎯 Strategic</option>
+            <option>🏛️ Operational</option>
+            <option>⚖️ Ethical</option>
+          </select>
+          <label for="f-level">Target level</label>
+          <select id="f-level">
+            <option>All levels</option>
+            <option>Emerging</option>
+            <option>Developing</option>
+            <option>Proficient</option>
+            <option>Distinguished</option>
+          </select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download standards</button>
+        </div>
+
+        <!-- ===== Intro brief ===== -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>📋 How the progressions work</h4>
+          <p>Each competency below is mapped along a four-level continuum. The levels are a <b>growth trajectory</b>, not labels: <b>Emerging</b> leaders are building the practice, <b>Developing</b> leaders apply it with support, <b>Proficient</b> leaders use it consistently, and <b>Distinguished</b> leaders build the capacity in others so the practice outlasts them. Click any competency to see the leadership artifacts that serve as evidence. Use these standards alongside the <a href="evaluation-framework.html#assessment">Leadership Self-Assessment</a> and your <a href="360-feedback.html">360° feedback</a>.</p>
+        </div>
+
+        <!-- ===================== COMPETENCY 1 ===================== -->
+        <article class="card" style="margin-bottom:1.2rem;">
+          <h2 style="margin-top:0;">🔭 Shared Vision &amp; Direction <span class="chip">Visionary</span></h2>
+          <p class="muted" style="margin-top:0;">Co-creating and sustaining a compelling, inclusive vision.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Articulates a personal vision but rarely connects it to daily decisions or goals.</div>
+            <div class="prog-step s2"><b>Developing</b>States a clear vision and sets some goals; ownership is still mostly the leader's.</div>
+            <div class="prog-step s3"><b>Proficient</b>Keeps a values-aligned vision visible and translates it into measurable goals.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Builds collective ownership so the vision drives the work even in the leader's absence.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">Visionary</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> strategic plan, vision-to-goals map, communications referencing the vision, stakeholder co-design notes.</li>
+              <li><b>Professional expectation:</b> every major decision can be traced to a stated priority.</li>
+              <li><b>Benchmark:</b> ≥ 80% of staff agree "we share a clear direction" on the climate survey.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===================== COMPETENCY 2 ===================== -->
+        <article class="card" style="margin-bottom:1.2rem;">
+          <h2 style="margin-top:0;">📚 Instructional Feedback &amp; Coaching <span class="chip">Instructional</span></h2>
+          <p class="muted" style="margin-top:0;">Building teacher capacity through walkthroughs and growth-oriented feedback.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Visits classrooms occasionally; feedback is infrequent or general.</div>
+            <div class="prog-step s2"><b>Developing</b>Conducts regular walkthroughs; feedback is specific but not yet part of a cycle.</div>
+            <div class="prog-step s3"><b>Proficient</b>Runs consistent feedback cycles teachers find useful and actionable.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Develops teacher-leaders who carry instructional improvement forward.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">Instructional</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> walkthrough logs, feedback records, PLC agendas, professional learning plans.</li>
+              <li><b>Professional expectation:</b> protected, predictable time in classrooms each week.</li>
+              <li><b>Benchmark:</b> teacher-reported usefulness of feedback rising cycle over cycle.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===================== COMPETENCY 3 ===================== -->
+        <article class="card" style="margin-bottom:1.2rem;">
+          <h2 style="margin-top:0;">🤝 Trust, Recognition &amp; Retention <span class="chip">People</span></h2>
+          <p class="muted" style="margin-top:0;">Cultivating a culture where talented educators choose to stay and grow.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Recognition is sporadic; staff voice is gathered but rarely acted on.</div>
+            <div class="prog-step s2"><b>Developing</b>Offers regular recognition and responds to some staff feedback.</div>
+            <div class="prog-step s3"><b>Proficient</b>Sustains trust, specific recognition, and retention-focused practices.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Builds distributed leadership and a culture that retains and grows talent.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">People</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> engagement survey results, stay-conversation notes, recognition records, retention data.</li>
+              <li><b>Professional expectation:</b> stay-conversations held with all key staff annually.</li>
+              <li><b>Benchmark:</b> retention and belonging scores trending upward.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===================== COMPETENCY 4 ===================== -->
+        <article class="card" style="margin-bottom:1.2rem;">
+          <h2 style="margin-top:0;">🎯 Strategic Prioritization &amp; Resource Alignment <span class="chip">Strategic</span></h2>
+          <p class="muted" style="margin-top:0;">Focusing the organization on a few high-leverage priorities.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Pursues many initiatives; resources are not clearly tied to priorities.</div>
+            <div class="prog-step s2"><b>Developing</b>Names priorities and aligns some resources, but focus drifts.</div>
+            <div class="prog-step s3"><b>Proficient</b>Maintains focus and aligns budget, staffing, and time to goals.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Builds an organization that self-corrects toward its strategic goals.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">Strategic</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> strategic plan, resource-to-goal map, progress dashboards, decision logs.</li>
+              <li><b>Professional expectation:</b> low-leverage initiatives are declined to protect focus.</li>
+              <li><b>Benchmark:</b> clear line of sight from budget allocations to stated priorities.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===================== COMPETENCY 5 ===================== -->
+        <article class="card" style="margin-bottom:1.2rem;">
+          <h2 style="margin-top:0;">🏛️ Systems, Operations &amp; Continuity <span class="chip">Operational</span></h2>
+          <p class="muted" style="margin-top:0;">Building dependable systems that protect time for learning.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Reacts to operational issues as they arise; routines are inconsistent.</div>
+            <div class="prog-step s2"><b>Developing</b>Establishes core routines; communication of systems is improving.</div>
+            <div class="prog-step s3"><b>Proficient</b>Runs reliable, transparent operations with proactive risk planning.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Builds systems so dependable they free time for instructional leadership.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">Operational</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> process documentation, operational dashboards, continuity and safety plans, budget records.</li>
+              <li><b>Professional expectation:</b> recurring processes are documented and delegated where possible.</li>
+              <li><b>Benchmark:</b> measurable reduction in recurring operational "fires."</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===================== COMPETENCY 6 ===================== -->
+        <article class="card" style="margin-bottom:1.4rem;">
+          <h2 style="margin-top:0;">⚖️ Integrity, Equity &amp; Transparent Decisions <span class="chip">Ethical</span></h2>
+          <p class="muted" style="margin-top:0;">Leading with values, transparency, and a commitment to equity.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Acts with integrity but rarely makes the reasoning behind decisions visible.</div>
+            <div class="prog-step s2"><b>Developing</b>Explains some decisions and begins to surface equity gaps.</div>
+            <div class="prog-step s3"><b>Proficient</b>Makes transparent, values-based decisions and advances access for all.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Makes values and equity visible enough to shape the whole culture.</div>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Evidence artifacts &amp; leadership benchmarks</b></span><span class="tl-pill gold">Ethical</span></div>
+          <div class="drill-panel">
+            <ul>
+              <li><b>Artifacts:</b> equity/access analyses, decision logs with rationale, trust and fairness survey data.</li>
+              <li><b>Professional expectation:</b> the values behind difficult decisions are communicated openly.</li>
+              <li><b>Benchmark:</b> narrowing equity gaps and rising perceived fairness.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ===== Artifact library ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📁 Leadership Artifact Library</h3>
+          <p class="muted" style="margin-top:0;">Sample evidence leaders submit to demonstrate standards across levels.</p>
+          <div class="lib-item"><span class="l-ico">🔭</span><span class="l-body"><b>Vision-to-Goals Map</b><small>Links the shared vision to measurable annual goals.</small></span><span class="l-tag">Visionary</span></div>
+          <div class="lib-item"><span class="l-ico">📚</span><span class="l-body"><b>Walkthrough &amp; Feedback Log</b><small>Cadence of classroom visits and coaching feedback.</small></span><span class="l-tag">Instructional</span></div>
+          <div class="lib-item"><span class="l-ico">🤝</span><span class="l-body"><b>Stay-Conversation Summary</b><small>Notes and follow-through from retention conversations.</small></span><span class="l-tag">People</span></div>
+          <div class="lib-item"><span class="l-ico">🎯</span><span class="l-body"><b>Resource-to-Goal Alignment Sheet</b><small>Shows budget and staffing tied to priorities.</small></span><span class="l-tag">Strategic</span></div>
+          <div class="lib-item"><span class="l-ico">🏛️</span><span class="l-body"><b>Operational Continuity Plan</b><small>Documented systems, risks, and contingencies.</small></span><span class="l-tag">Operational</span></div>
+          <div class="lib-item"><span class="l-ico">⚖️</span><span class="l-body"><b>Decision Log with Rationale</b><small>Transparent record of values-based decisions.</small></span><span class="l-tag">Ethical</span></div>
+        </div>
+
+        <!-- ===== Research note ===== -->
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research base</span>
+          <h3 style="margin:.3rem 0 .5rem;">Why standards are framed as growth, not compliance</h3>
+          <p style="margin:0;">Dr. Barbara Z. Franks' doctoral research found that leaders who treat standards as a <b>development trajectory</b> — rather than a pass/fail checklist — see stronger teacher satisfaction, healthier culture, and higher retention. These progressions are built to do exactly that: locate current practice honestly, then pair it with the coaching that moves a leader toward Distinguished.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="evaluation-framework.html#assessment">📝 Take the Self-Assessment</a>
+          <a class="btn ghost" href="360-feedback.html">🔄 Gather 360° Feedback</a>
+          <a class="btn ghost" href="evaluation-framework.html">🧭 Back to Evaluation Framework</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Executive Leadership Growth System</h4><p style="color:#c9d6e6;">A comprehensive framework for evaluating, coaching, and developing exceptional educational leaders — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="evaluation-framework.html">Evaluation Framework</a></li><li><a href="360-feedback.html">360° Feedback</a></li><li><a href="executive-coaching.html">Executive Coaching</a></li><li><a href="growth-plans.html">Growth Plans</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
