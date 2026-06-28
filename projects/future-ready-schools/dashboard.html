@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovation Dashboard — Future-Ready Schools Framework</title>
+  <meta name="description" content="An executive innovation dashboard: digital readiness, AI implementation, technology adoption, professional learning, innovation projects, future skills, digital equity, infrastructure, and an overall Innovation Index.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Future-Ready Schools Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">FR</span><span class="brand-text"><span class="brand-title">Future-Ready Schools</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="ai-readiness.html">AI Readiness</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Framework">
+        <div class="rail-brand"><span class="mark">FR</span><b>Future-Ready Schools</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Innovation Dashboard</a>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Future-Ready Framework</a>
+        <div class="rail-group">Transform</div>
+        <a class="rail-link" href="digital-transformation.html"><span class="ico">💻</span> Digital Transformation</a>
+        <a class="rail-link" href="ai-readiness.html"><span class="ico">🤖</span> AI Readiness</a>
+        <a class="rail-link" href="future-skills.html"><span class="ico">🧠</span> Future Skills</a>
+        <div class="rail-group">Capacity</div>
+        <a class="rail-link" href="innovation-culture.html"><span class="ico">💡</span> Innovation Culture</a>
+        <a class="rail-link" href="technology-leadership.html"><span class="ico">🛰️</span> Technology Leadership</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Innovation Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Innovation updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Innovation Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>AI literacy</b> PD reached 72% of teachers.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--frs-accent-2);"></span><div><b>Two innovation labs</b> launched this term.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Digital equity</b> gap flagged in two schools.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="ai-readiness.html">Open AI Readiness →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Innovation Command Center</span>
+          <h1>Innovation Dashboard</h1>
+          <p class="lead">Digital readiness, AI implementation, future skills, and innovation — in one executive view. All figures are illustrative; AI features assist, never replace, educators.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>Scope</label><select><option>District (all schools)</option><option>Innovation Pilot Cohort</option><option>Secondary schools</option></select>
+          <label>Phase</label><select><option>Phase 4 — AI Integration</option><option>Phase 3 — Capacity Building</option></select>
+          <label>Year</label><select><option>Year 3 of 5</option><option>Year 2</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="71">0</span></div><div class="muted" style="color:#e7e1f7;">Innovation Index</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Advancing stage</span><span class="sc-trend up" style="color:#9ce8d4;">▲ 15 since baseline</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="74" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Digital readiness</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="66" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>AI readiness</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi cyan"><div class="k-label">🤖 Teachers AI-Literate</div><div class="k-num"><span data-count="72" data-suffix="%">0</span></div><div class="k-trend up">▲ 18%</div></div>
+          <div class="kpi green"><div class="k-label">💻 Technology Adoption</div><div class="k-num"><span data-count="81" data-suffix="%">0</span></div><div class="k-trend up">▲ 9%</div></div>
+          <div class="kpi cyan"><div class="k-label">💡 Active Innovation Projects</div><div class="k-num"><span data-count="34">0</span></div><div class="k-trend up">▲ 12</div></div>
+          <div class="kpi green"><div class="k-label">🧠 Future-Skills Integration</div><div class="k-num"><span data-count="68" data-suffix="%">0</span></div><div class="k-trend up">▲ 7%</div></div>
+          <div class="kpi amber"><div class="k-label">⚖️ Digital Equity Index</div><div class="k-num"><span data-count="76" data-suffix="%">0</span></div><div class="k-trend up">▲ watch 2 schools</div></div>
+          <div class="kpi green"><div class="k-label">🎓 PD Hours (Innovation)</div><div class="k-num"><span data-count="1850">0</span></div><div class="k-trend up">▲ YTD</div></div>
+        </div>
+
+        <!-- brief + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Innovation Briefing</h4><p>The Innovation Index is <b>Advancing</b> (71, ▲15 since baseline) and the system is in <b>Phase 4 — AI Integration</b>. Technology adoption and AI literacy are climbing; <b>AI readiness</b> (66%) and <b>digital equity</b> in two schools are the focus areas. Recommended next move: targeted AI-governance PD and an equity-of-access plan. <a href="ai-readiness.html">Open AI readiness →</a> <span class="muted">AI assists educators; it does not replace them.</span></p></div>
+          <div class="card"><h3 style="margin-top:0;">Innovation Index Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Innovation index trend"><path class="area" d="M0,52 L60,47 L120,41 L180,34 L240,27 L300,21 L300,64 L0,64 Z"></path><path class="line" d="M0,52 L60,47 L120,41 L180,34 L240,27 L300,21"></path></svg><p class="muted" style="font-size:.84rem;">Steady gains as capacity builds.</p></div>
+        </div>
+
+        <!-- pillar bars + initiative drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Readiness by Future-Ready Pillar</h3><div class="barlist">
+            <div class="row"><span>🔭 Visionary Leadership</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+            <div class="row"><span>💻 Digital Transformation</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>🤖 AI Integration</span><span class="track"><span class="fill" data-pct="66"></span></span><b>66%</b></div>
+            <div class="row"><span>🧠 Future Skills</span><span class="track"><span class="fill" data-pct="68"></span></span><b>68%</b></div>
+            <div class="row"><span>💡 Innovation Culture</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+            <div class="row"><span>♻️ Continuous Adaptation</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">🚀 Innovation Initiatives <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Responsible-AI governance &amp; literacy</b></span><span class="tl-pill cyan">In progress</span></div>
+            <div class="drill-panel"><p class="muted">AI policy adopted; teacher &amp; student AI-literacy pathways rolling out. Ethics guidelines published.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Digital-equity access plan</b></span><span class="tl-pill amber">Priority</span></div>
+            <div class="drill-panel"><p class="muted">Two schools flagged for device/connectivity gaps; targeted investment underway.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Innovation labs &amp; design thinking</b></span><span class="tl-pill green">Scaling</span></div>
+            <div class="drill-panel"><p class="muted">Two labs launched; design-thinking routines spreading across departments.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="framework.html#assessment">🧭 Run the Future-Readiness Diagnostic</a>
+          <a class="btn ghost" href="roadmap.html">🗺️ Implementation Roadmap</a>
+          <a class="btn ghost" href="future-skills.html">🧠 Future Skills</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration. AI features are decision-support that assists educators.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Future-Ready Schools Framework</h4><p style="color:#c9d6e6;">A leadership framework for digital transformation, AI readiness, and educational innovation — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="framework.html">Future-Ready Framework</a></li><li><a href="digital-transformation.html">Digital Transformation</a></li><li><a href="ai-readiness.html">AI Readiness</a></li><li><a href="roadmap.html">Roadmap</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

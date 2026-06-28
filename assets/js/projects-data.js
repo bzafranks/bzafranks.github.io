@@ -333,6 +333,18 @@ window.PORTFOLIO_PROJECTS = [
     summary: "A Ministry-of-Education-scale national strategy for building high-performing school leadership systems across an entire country. Built on six system capacities (Standards & Competencies, Pipeline & Talent, Preparation & Academy, Certification & Licensure, Succession & Continuity, Governance & Policy), it includes a National Leadership Dashboard with a regional performance map, a scored National Leadership System Readiness diagnostic, national leadership standards (Emerging→Distinguished), a leadership talent pipeline, a national leadership academy, certification & licensure with digital badges, a succession-management system with a readiness heat map, a policy & governance framework with a policy/leadership brief generator, and a five-phase implementation roadmap. Grounded in OECD/UNESCO leadership, transformational & distributed leadership, and continuous-improvement research, with a through-line to Dr. Franks' doctoral research scaled to the national level. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
   },
   {
+    id: "future-ready-schools",
+    title: "Future-Ready Schools Framework",
+    subtitle: "Leading digital transformation, AI readiness & educational innovation",
+    pillar: "il",
+    grade: "Leadership · Innovation",
+    status: "done",
+    url: "projects/future-ready-schools/index.html",
+    icon: "🚀",
+    tags: ["Digital Transformation", "AI Readiness", "Educational Innovation", "Future Skills", "Change Management", "Technology Leadership"],
+    summary: "A leadership framework for digital transformation, AI readiness, and educational innovation that bridges the Leadership Suite and the AI for Education Innovation Suite. Built on six strategic pillars (Visionary Leadership, Digital Transformation, AI Integration, Future Skills Development, Innovation Culture, Continuous Adaptation), it includes an Innovation Dashboard, a scored Future-Readiness diagnostic, an interactive digital-maturity model, a responsible-AI-readiness module with governance & ethics, a ten-skill future-skills matrix, innovation-culture and technology-leadership systems, a six-phase implementation roadmap, and a transformation/tech-plan generator. Grounded in OECD Future of Education, UNESCO digital learning, ISTE standards, future-skills and change-management research, with a doctoral through-line — and AI framed throughout as decision-support that assists, never replaces, educators. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
     id: "leadership-consulting-playbook",
     title: "Educational Leadership Consulting Playbook",
     subtitle: "A comprehensive methodology for sustainable educational transformation",
