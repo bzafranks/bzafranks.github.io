@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback &amp; Reflection — Teaching Excellence &amp; Instructional Leadership</title>
+  <meta name="description" content="A growth-focused feedback and reflection system — feedback models, reflective questioning, teacher self-reflection, strength-based coaching, goal monitoring, and continuous-improvement planning, with a built-in feedback generator and reflection journal.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Teaching Excellence & Instructional Leadership Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">TE</span><span class="brand-text"><span class="brand-title">Teaching Excellence &amp; Instructional Leadership</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="teaching-excellence.html">Teaching Model</a></li>
+        <li><a href="instructional-coaching.html">Coaching</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every framework page) ===== -->
+      <aside class="app-rail" aria-label="Instructional leadership system">
+        <div class="rail-brand"><span class="mark">TE</span><b>Teaching Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Instructional Framework</a>
+        <a class="rail-link" href="teaching-excellence.html"><span class="ico">⭐</span> Teaching Excellence Model</a>
+        <div class="rail-group">Coach</div>
+        <a class="rail-link" href="instructional-coaching.html"><span class="ico">🧑‍🏫</span> Instructional Coaching</a>
+        <a class="rail-link" href="classroom-observation.html"><span class="ico">🔎</span> Classroom Observation</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Feedback &amp; Reflection</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="professional-learning.html"><span class="ico">📚</span> Professional Learning</a>
+        <a class="rail-link" href="curriculum-assessment.html"><span class="ico">📐</span> Curriculum &amp; Assessment</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Teaching Analytics</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Coach / <b>Feedback &amp; Reflection</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">💬 Feedback &amp; Reflection</span>
+          <h1>Feedback &amp; Reflection</h1>
+          <p class="lead">Feedback is one of the most powerful — and most variable — influences on teaching. This system makes it growth-focused, specific, and reflective: structured feedback models, reflective questioning, teacher self-reflection, strength-based coaching conversations, goal monitoring, and continuous-improvement planning. The aim is feedback that teachers act on, not feedback that is merely delivered.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Effective feedback answers three questions — <em>Where am I going? How am I going? Where to next?</em> — and is most powerful when it targets the task and process, invites reflection, and is followed by a chance to apply it. Feedback that changes practice is specific, timely, growth-oriented, and paired with a single high-leverage next step rather than a long list of corrections. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <!-- Why feedback / scorecards -->
+        <div class="kpi-grid" style="margin-bottom:1.8rem;">
+          <div class="scorecard green"><div class="sc-label">Feedback acted on</div><div class="sc-num"><span data-count="1" data-prefix="" data-suffix="">1</span> step</div><div class="sc-trend up">One focus beats ten notes</div></div>
+          <div class="scorecard blue"><div class="sc-label">Timeliness</div><div class="sc-num"><span data-count="48" data-suffix="h">0h</span></div><div class="sc-trend flat">Closer to the lesson, more useful</div></div>
+          <div class="scorecard amber"><div class="sc-label">Reflection first</div><div class="sc-num"><span data-count="70" data-suffix="%">0%</span></div><div class="sc-trend up">Teacher talk before coach talk</div></div>
+        </div>
+
+        <!-- ===== FEEDBACK GENERATOR ===== -->
+        <h2>Growth-Focused Feedback Generator</h2>
+        <p class="muted">Choose a focus area to draft a strength-based, single-next-step feedback note you can adapt to a specific teacher and lesson.</p>
+        <div class="field-row" style="align-items:start;margin-top:.8rem;">
+          <form data-generator="feedback">
+            <div class="field">
+              <label for="fb-area">Focus area</label>
+              <select id="fb-area" name="area">
+                <option>Questioning Techniques</option>
+                <option>Student Engagement</option>
+                <option>Differentiation</option>
+                <option>Assessment for Learning</option>
+                <option>Classroom Environment</option>
+                <option>Instructional Clarity</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+          <div class="gen-output" data-output="feedback">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a draft to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- ===== FEEDBACK MODELS ===== -->
+        <h2 style="margin-top:2.4rem;">Feedback Models</h2>
+        <p class="muted">Structured moves keep feedback specific and growth-oriented. Click a model to explore it.</p>
+        <div style="margin-top:.6rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🌟 Glow &amp; Grow</span><span class="tl-pill blue">Balanced</span></div>
+          <div class="drill-panel">
+            <p><b>Glow:</b> name one specific, evidence-based strength to reinforce — what the teacher did and the effect it had on learning.</p>
+            <p><b>Grow:</b> name <em>one</em> high-leverage next step, framed as a move to try rather than a deficit to fix.</p>
+            <p><b>Why it works:</b> protects the relationship, keeps cognitive load low, and makes the next step unmistakable.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🤔 Reflective Questioning</span><span class="tl-pill amber">Teacher-led</span></div>
+          <div class="drill-panel">
+            <p>Instead of telling, ask: <em>"What did you notice about student talk in the second task?"</em> The teacher surfaces the insight, which makes the change more durable.</p>
+            <p><b>Use when:</b> the teacher has the capacity to self-diagnose and you want ownership, not compliance.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🎯 Bright Spot &amp; Bet</span><span class="tl-pill green">Strength-based</span></div>
+          <div class="drill-panel">
+            <p><b>Bright spot:</b> identify an effective move already in the teacher's repertoire.</p>
+            <p><b>Bet:</b> propose extending that strength to a new context — building from what works rather than starting over.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">📊 Evidence → Effect → Step</span><span class="tl-pill blue">Low-inference</span></div>
+          <div class="drill-panel">
+            <p><b>Evidence:</b> a low-inference observation ("12 of 24 students answered the cold call").</p>
+            <p><b>Effect:</b> the impact on learning that evidence suggests.</p>
+            <p><b>Step:</b> one concrete adjustment and a date to revisit it.</p>
+          </div>
+        </div>
+
+        <!-- ===== REFLECTIVE QUESTIONS ===== -->
+        <h2 style="margin-top:2.4rem;">Reflective Questions for Professional Conversations</h2>
+        <p class="muted">Open, non-evaluative questions that invite the teacher to think — sequence from describing to analyzing to planning.</p>
+        <ul class="check-list" style="margin-top:.6rem;">
+          <li>What were you hoping students would learn, and how would you know they had?</li>
+          <li>What evidence showed students were — or were not — learning?</li>
+          <li>Which moment in the lesson are you most curious about, and why?</li>
+          <li>What did you decide in the moment that you might reconsider?</li>
+          <li>If you taught this again tomorrow, what is the one thing you would change?</li>
+          <li>What support would make that change easier to try?</li>
+        </ul>
+
+        <!-- ===== STRENGTH-BASED COACHING + GOAL MONITORING ===== -->
+        <h2 style="margin-top:2.4rem;">Strength-Based Coaching &amp; Goal Monitoring</h2>
+        <div class="comp-grid" style="margin-top:.6rem;">
+          <div class="comp-card"><h4>🌟 Name the strength</h4><p class="c-meta">Build from what works</p><div class="comp-detail"><p>Anchor the conversation in an effective move the teacher already owns, described with specific evidence so it feels earned, not flattering.</p></div></div>
+          <div class="comp-card"><h4>🎯 Set one goal</h4><p class="c-meta">High-leverage focus</p><div class="comp-detail"><p>Co-create a single, observable goal with success criteria. One goal pursued well outperforms many goals pursued shallowly.</p></div></div>
+          <div class="comp-card"><h4>📅 Monitor progress</h4><p class="c-meta">Short cycles</p><div class="comp-detail"><p>Schedule brief, regular check-ins. Track evidence of the goal over time so progress is visible to the teacher, not just the coach.</p></div></div>
+          <div class="comp-card"><h4>🔁 Continuous improvement</h4><p class="c-meta">Plan → act → reflect</p><div class="comp-detail"><p>Close each cycle by reflecting on impact and naming the next focus, turning feedback into an ongoing improvement loop.</p></div></div>
+        </div>
+
+        <!-- ===== CONTINUOUS-IMPROVEMENT PLANNING NOTE ===== -->
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Feedback that changes practice</span>
+          <p class="muted" style="margin:.3rem 0 0;">Feedback only improves teaching when it is <b>specific</b> (tied to evidence), <b>timely</b> (close to the lesson), <b>growth-oriented</b> (one next step, not a verdict), and <b>followed up</b> (revisited together). Delivering feedback is not the goal — <em>changed practice</em> is. <em>Illustrative.</em></p>
+        </div>
+
+        <!-- ===== REFLECTION JOURNAL ===== -->
+        <h2 style="margin-top:2.4rem;">Teacher Self-Reflection Journal</h2>
+        <p class="muted">A private space to capture reflections after a lesson, observation, or coaching conversation. Saved locally in this browser — nothing leaves your device.</p>
+        <div data-journal style="margin-top:.8rem;">
+          <div class="field">
+            <label for="journal-entry">Reflection note</label>
+            <textarea id="journal-entry" placeholder="What did I notice? What will I try next? What support do I need?"></textarea>
+          </div>
+          <div class="btn-row" style="margin-bottom:1rem;">
+            <button class="btn" type="button" data-journal-add>🪞 Save reflection</button>
+            <button class="out-btn" type="button" data-journal-clear>Clear journal</button>
+          </div>
+          <div data-journal-list></div>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="instructional-coaching.html">Plan a Coaching Cycle</a>
+          <a class="btn ghost" href="classroom-observation.html">Open Classroom Observation</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Teaching Excellence &amp; Instructional Leadership Framework</h4><p style="color:#c9d6e6;">An evidence-based instructional leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="teaching-excellence.html">Teaching Model</a></li><li><a href="instructional-coaching.html">Coaching</a></li><li><a href="classroom-observation.html">Observation</a></li><li><a href="analytics.html">Analytics</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; classroom scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Dashboard — Teaching Excellence & Instructional Leadership</title>
+  <meta name="description" content="Executive instructional-leadership dashboard: school instructional health, coaching progress, professional-learning completion, observation schedules, school-improvement priorities, instructional goals, and leadership actions. Illustrative.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Teaching Excellence & Instructional Leadership Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">TE</span><span class="brand-text"><span class="brand-title">Teaching Excellence &amp; Instructional Leadership</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="teaching-excellence.html">Teaching Model</a></li>
+        <li><a href="instructional-coaching.html">Coaching</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every framework page) ===== -->
+      <aside class="app-rail" aria-label="Instructional leadership system">
+        <div class="rail-brand"><span class="mark">TE</span><b>Teaching Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Instructional Framework</a>
+        <a class="rail-link" href="teaching-excellence.html"><span class="ico">⭐</span> Teaching Excellence Model</a>
+        <div class="rail-group">Coach</div>
+        <a class="rail-link" href="instructional-coaching.html"><span class="ico">🧑‍🏫</span> Instructional Coaching</a>
+        <a class="rail-link" href="classroom-observation.html"><span class="ico">🔎</span> Classroom Observation</a>
+        <a class="rail-link" href="feedback.html"><span class="ico">💬</span> Feedback &amp; Reflection</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="professional-learning.html"><span class="ico">📚</span> Professional Learning</a>
+        <a class="rail-link" href="curriculum-assessment.html"><span class="ico">📐</span> Curriculum &amp; Assessment</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📈</span> Teaching Analytics</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Insight / <b>Leadership Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Leadership Dashboard</span>
+          <h1>Leadership Dashboard</h1>
+          <p class="lead">A single executive view for the instructional leader — school instructional health at a glance, coaching progress, professional-learning completion, the observation schedule, school-improvement priorities, and the leadership actions moving them forward.</p>
+        </div>
+
+        <!-- ===== KPI scorecards ===== -->
+        <h2>This week at a glance</h2>
+        <div class="kpi-grid" style="margin-top:.8rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Instructional health score</div>
+            <div class="sc-num" data-count="81" data-suffix="%">0</div>
+            <div class="sc-trend up">▲ 5 pts this quarter</div>
+          </div>
+          <div class="scorecard blue">
+            <div class="sc-label">Active coaching cycles</div>
+            <div class="sc-num" data-count="14">0</div>
+            <div class="sc-trend up">▲ 3 in progress</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">PL modules completed</div>
+            <div class="sc-num" data-count="87" data-suffix="%">0</div>
+            <div class="sc-trend flat">▬ On pace</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Observations this month</div>
+            <div class="sc-num" data-count="42">0</div>
+            <div class="sc-trend up">▲ Goal: 40</div>
+          </div>
+        </div>
+
+        <!-- ===== Instructional health gauge ===== -->
+        <h2 style="margin-top:2rem;">School instructional health</h2>
+        <div class="kpi-grid" style="margin-top:.8rem;">
+          <div class="scorecard">
+            <div class="gauge" data-gauge="81" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Instructional health</small></div></div>
+            <p class="muted" style="text-align:center;margin:.6rem 0 0;font-size:.86rem;">Composite of observation quality, engagement, coaching reach, and PL completion.</p>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">Performance trend (year)</div>
+            <div class="sc-num" data-count="3.4" data-suffix=" → 3.7">0</div>
+            <div class="sc-trend up">▲ Instructional-quality rating rising</div>
+            <p class="muted" style="margin:.6rem 0 0;font-size:.86rem;">Aggregate quality has climbed steadily across observation cycles this year.</p>
+          </div>
+        </div>
+
+        <!-- ===== Improvement priorities progress (barlist) ===== -->
+        <h2 style="margin-top:2rem;">Improvement priorities progress</h2>
+        <p class="muted">Percent complete against this year's school-improvement priorities.</p>
+        <div class="barlist" style="margin-top:.8rem;">
+          <div class="row"><span>🔁 Strengthen feedback practice</span><span class="track"><span class="fill" data-pct="58"></span></span><b>58%</b></div>
+          <div class="row"><span>📐 Increase cognitive rigor</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+          <div class="row"><span>💬 Expand academic discourse</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+          <div class="row"><span>📚 Sustain PLC routines</span><span class="track"><span class="fill" data-pct="89"></span></span><b>89%</b></div>
+          <div class="row"><span>🤝 Grow teacher leadership</span><span class="track"><span class="fill" data-pct="46"></span></span><b>46%</b></div>
+        </div>
+
+        <!-- ===== Observation schedule table ===== -->
+        <h2 style="margin-top:2rem;">Observation schedule</h2>
+        <p class="muted">Upcoming and recent visits across the building (illustrative).</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Observation calendar — illustrative.</caption>
+            <thead>
+              <tr><th scope="col">Teacher</th><th scope="col">Type</th><th scope="col">Date</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>A. Rivera</td><td>Coaching cycle</td><td>Mon, Jun 1</td><td><span class="tl-pill green">Complete</span></td></tr>
+              <tr><td>J. Okafor</td><td>Walkthrough</td><td>Tue, Jun 2</td><td><span class="tl-pill green">Complete</span></td></tr>
+              <tr><td>M. Chen</td><td>Full observation</td><td>Thu, Jun 4</td><td><span class="tl-pill amber">Scheduled</span></td></tr>
+              <tr><td>S. Patel</td><td>Peer rounds</td><td>Fri, Jun 5</td><td><span class="tl-pill amber">Scheduled</span></td></tr>
+              <tr><td>D. Nguyen</td><td>Coaching cycle</td><td>Mon, Jun 8</td><td><span class="tl-pill blue">Planned</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ===== Leadership actions timeline ===== -->
+        <h2 style="margin-top:2rem;">Leadership actions</h2>
+        <p class="muted">Key moves driving the instructional goals forward.</p>
+        <ul class="timeline" style="margin-top:.8rem;">
+          <li class="done"><span class="t-when">Completed</span><br><b>Launched discourse PLC</b> — set norms, look-fors, and a shared talk-routine toolkit.</li>
+          <li class="done"><span class="t-when">Completed</span><br><b>Calibrated walkthroughs</b> — leadership team normed on the observation rubric.</li>
+          <li class="now"><span class="t-when">In progress</span><br><b>Feedback coaching sprint</b> — modeling student-actionable feedback with the focus cohort.</li>
+          <li><span class="t-when">Next</span><br><b>Lesson study on rigor</b> — co-plan and study DOK 3–4 tasks across content teams.</li>
+          <li><span class="t-when">Later</span><br><b>Teacher-leadership pathway</b> — recruit and develop the next round of teacher leaders.</li>
+        </ul>
+
+        <!-- ===== Instructional goals (drill-row) ===== -->
+        <h2 style="margin-top:2rem;">Instructional goals &amp; priorities</h2>
+        <p class="muted">Expand a priority for its goal, owner, and status.</p>
+        <div style="margin-top:.6rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🔁 Feedback to students</span><span class="tl-pill red">Highest leverage</span></div>
+          <div class="drill-panel"><p><b>Goal:</b> 80% of observed lessons show timely, student-actionable feedback by spring. <b>Owner:</b> Coaching team. <b>Status:</b> 58% — sprint underway.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">📐 Cognitive rigor / DOK</span><span class="tl-pill amber">In progress</span></div>
+          <div class="drill-panel"><p><b>Goal:</b> Every content team plans at least one DOK 3–4 task per unit. <b>Owner:</b> Department leads. <b>Status:</b> 64% — lesson study planned.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">💬 Academic discourse</span><span class="tl-pill amber">In progress</span></div>
+          <div class="drill-panel"><p><b>Goal:</b> Structured talk routines visible in 85% of classrooms. <b>Owner:</b> Discourse PLC. <b>Status:</b> 72% — on track.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🤝 Teacher leadership</span><span class="tl-pill blue">Building</span></div>
+          <div class="drill-panel"><p><b>Goal:</b> Distribute instructional leadership across 8 teacher leaders. <b>Owner:</b> Principal. <b>Status:</b> 46% — pathway forming.</p></div>
+        </div>
+
+        <p class="muted" style="margin-top:1.2rem;font-size:.88rem;">All figures, names, and dates on this dashboard are illustrative sample data for portfolio demonstration — not records from any school.</p>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="analytics.html">Open Teaching Analytics</a>
+          <a class="btn ghost" href="resources.html">Browse Resources</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Teaching Excellence &amp; Instructional Leadership Framework</h4><p style="color:#c9d6e6;">An evidence-based instructional leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="teaching-excellence.html">Teaching Model</a></li><li><a href="instructional-coaching.html">Coaching</a></li><li><a href="classroom-observation.html">Observation</a></li><li><a href="analytics.html">Analytics</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; classroom scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -199,5 +199,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🎓",
     tags: ["Teacher Retention", "Educational Leadership", "Human Capital", "People Analytics", "Organizational Development", "Research-Based"],
     summary: "An evidence-based workforce-excellence system that translates Dr. Franks' doctoral research, 'The Influence of Leadership Behaviors on Teacher Retention,' into practice — a 10-pillar retention framework, a dissertation research showcase, leadership-behavior guides with a retention-leadership pulse self-assessment, teacher wellbeing/voice/recognition/growth toolkits, people-analytics dashboards, an early-warning retention-risk calculator, and a saved 90-day leadership action planner. Second project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "teaching-excellence",
+    title: "Teaching Excellence & Instructional Leadership Framework",
+    subtitle: "Advancing teaching quality through leadership, coaching & continuous improvement",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/teaching-excellence/index.html",
+    icon: "⭐",
+    tags: ["Instructional Leadership", "Instructional Coaching", "Teacher Development", "Professional Learning", "School Improvement", "Research-Based"],
+    summary: "A comprehensive instructional leadership system built on six domains (Vision, Coaching, Curriculum & Assessment, Professional Learning, Data-Informed Improvement, Collaborative Culture) — with an interactive teaching-excellence model, a built-in instructional-leadership self-assessment, a coaching cycle + plan generator, classroom-observation tools + summary generator, growth-focused feedback, professional-learning planner, curriculum/data toolkits, and teaching-quality analytics. Third project in the Educational Leadership & School Improvement Suite."
   }
 ];
