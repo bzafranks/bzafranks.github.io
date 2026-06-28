@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Health Assessment — Culture by Design</title>
+  <meta name="description" content="A culture diagnostic across nine dimensions — trust, communication, collaboration, leadership, engagement, belonging, psychological safety, innovation, and growth — generating a Culture Health Score, strengths, growth opportunities, and a leadership roadmap.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Culture by Design" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CD</span><span class="brand-text"><span class="brand-title">Culture by Design</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="culture-assessment.html">Assessment</a></li>
+        <li><a href="recognition.html">Recognition</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Culture system">
+        <div class="rail-brand"><span class="mark">CD</span><b>Culture by Design</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Culture Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="culture-assessment.html"><span class="ico">🩺</span> Culture Assessment</a>
+        <div class="rail-group">Build</div>
+        <a class="rail-link" href="trust.html"><span class="ico">🛡️</span> Trust &amp; Safety</a>
+        <a class="rail-link" href="teacher-voice.html"><span class="ico">🗣️</span> Teacher Voice</a>
+        <a class="rail-link" href="recognition.html"><span class="ico">🏅</span> Recognition &amp; Belonging</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration &amp; Community</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📊</span> Culture Analytics</a>
+        <a class="rail-link" href="action-planner.html"><span class="ico">🗺️</span> Leadership Action Planner</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Diagnose / <b>Culture Assessment</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🩺 Diagnose</span>
+          <h1>Culture Health Assessment</h1>
+          <p class="lead">A culture diagnostic across nine reinforcing dimensions. Rate how consistently each statement is true of your school, then generate a <b>Culture Health Score</b> with your cultural strengths, growth opportunities, and a leadership roadmap. Saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Dimension weighting reflects doctoral research on the leadership behaviors — trust, communication, recognition, voice, and psychological safety — most strongly tied to school culture and teacher retention. <em>This survey is illustrative; adapt items to your context.</em></p>
+        </div>
+
+        <div class="assess-card" style="border-left:5px solid var(--cbd-accent-2);">
+          <p style="margin:0;"><b>Scale:</b> <span class="kbd">1</span> Rarely · <span class="kbd">2</span> Occasionally · <span class="kbd">3</span> Sometimes · <span class="kbd">4</span> Often · <span class="kbd">5</span> Consistently. Rate every statement for the most accurate score.</p>
+        </div>
+
+        <div data-assessment>
+          <!-- Trust & Communication -->
+          <div class="assess-card">
+            <h3>🤝 Trust &amp; 💬 Communication</h3>
+            <div class="assess-item" data-domain="trust">
+              <p>Staff trust that leadership is consistent and follows through on commitments.</p>
+              <div class="likert" role="group" aria-label="Rate: leadership consistency and follow-through">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="trust">
+              <p>People can rely on one another and assume positive intent in everyday interactions.</p>
+              <div class="likert" role="group" aria-label="Rate: reliability and positive intent">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="communication">
+              <p>Information flows transparently and decisions are explained, not just announced.</p>
+              <div class="likert" role="group" aria-label="Rate: transparent communication of decisions">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="communication">
+              <p>Communication is two-way — staff are heard, not just informed.</p>
+              <div class="likert" role="group" aria-label="Rate: two-way communication">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collaboration & Leadership -->
+          <div class="assess-card">
+            <h3>👥 Collaboration &amp; 🧭 Leadership Effectiveness</h3>
+            <div class="assess-item" data-domain="collaboration">
+              <p>Teachers regularly plan, problem-solve, and learn together in protected time.</p>
+              <div class="likert" role="group" aria-label="Rate: protected collaborative time">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="collaboration">
+              <p>Collaboration is the default way of working, not an occasional event.</p>
+              <div class="likert" role="group" aria-label="Rate: collaboration as default">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="leadership">
+              <p>Leadership is visible, present, and supportive in the daily life of the school.</p>
+              <div class="likert" role="group" aria-label="Rate: visible supportive leadership">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="leadership">
+              <p>Leaders remove barriers so staff can do their best work.</p>
+              <div class="likert" role="group" aria-label="Rate: leaders remove barriers">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engagement & Belonging -->
+          <div class="assess-card">
+            <h3>🔥 Teacher Engagement &amp; 💗 Belonging</h3>
+            <div class="assess-item" data-domain="engagement">
+              <p>Staff feel energized by their work and connected to the school's purpose.</p>
+              <div class="likert" role="group" aria-label="Rate: energy and connection to purpose">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="engagement">
+              <p>Teachers go beyond the minimum because they care about the mission.</p>
+              <div class="likert" role="group" aria-label="Rate: discretionary effort">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="belonging">
+              <p>Every staff member feels seen, valued, and included regardless of role or background.</p>
+              <div class="likert" role="group" aria-label="Rate: staff feel seen and included">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="belonging">
+              <p>People feel they genuinely belong to this community.</p>
+              <div class="likert" role="group" aria-label="Rate: sense of belonging">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Psychological Safety & Innovation -->
+          <div class="assess-card">
+            <h3>🛡️ Psychological Safety &amp; 💡 Innovation Culture</h3>
+            <div class="assess-item" data-domain="safety">
+              <p>It is safe to raise concerns, disagree, or admit mistakes without fear of blame.</p>
+              <div class="likert" role="group" aria-label="Rate: safe to raise concerns">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="safety">
+              <p>Mistakes are treated as learning opportunities rather than failures to punish.</p>
+              <div class="likert" role="group" aria-label="Rate: mistakes as learning">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="innovation">
+              <p>New ideas are welcomed and people are encouraged to experiment and iterate.</p>
+              <div class="likert" role="group" aria-label="Rate: new ideas welcomed">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="innovation">
+              <p>The school adapts and improves rather than defaulting to "the way we've always done it."</p>
+              <div class="likert" role="group" aria-label="Rate: willingness to adapt">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Growth -->
+          <div class="assess-card">
+            <h3>📈 Professional Growth</h3>
+            <div class="assess-item" data-domain="growth">
+              <p>Every educator has a visible, supported pathway for professional growth.</p>
+              <div class="likert" role="group" aria-label="Rate: visible growth pathway">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="growth">
+              <p>Feedback and professional learning are ongoing, meaningful, and tied to real practice.</p>
+              <div class="likert" role="group" aria-label="Rate: meaningful ongoing learning">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin:1.2rem 0;">
+            <button class="btn" type="button" data-assess-run>Generate Culture Health Score</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+        </div>
+
+        <div data-assess-result class="assess-result"></div>
+
+        <div class="research" style="margin-top:1.4rem;">
+          <span class="tag">Next step</span>
+          <p class="muted" style="margin:.3rem 0 0;">Use your results to choose one or two highest-leverage dimensions, then turn them into a focused 90-day plan with the <a href="action-planner.html">Leadership Action Planner</a>. Re-assess each quarter to track culture over time on the <a href="analytics.html">Culture Analytics</a> dashboard.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Culture by Design</h4><p style="color:#c9d6e6;">A research-based school-culture framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="culture-assessment.html">Culture Assessment</a></li><li><a href="trust.html">Trust &amp; Safety</a></li><li><a href="recognition.html">Recognition</a></li><li><a href="analytics.html">Analytics</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; culture surveys &amp; scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

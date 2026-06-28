@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recognition &amp; Belonging — Culture by Design</title>
+  <meta name="description" content="A recognition and belonging system — recognition programs, peer recognition, celebrating success, professional milestones, appreciation strategies, inclusive culture, staff wellbeing, and employee engagement.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Culture by Design" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CD</span><span class="brand-text"><span class="brand-title">Culture by Design</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="culture-assessment.html">Assessment</a></li>
+        <li><a href="recognition.html">Recognition</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Culture system">
+        <div class="rail-brand"><span class="mark">CD</span><b>Culture by Design</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Culture Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="culture-assessment.html"><span class="ico">🩺</span> Culture Assessment</a>
+        <div class="rail-group">Build</div>
+        <a class="rail-link" href="trust.html"><span class="ico">🛡️</span> Trust &amp; Safety</a>
+        <a class="rail-link" href="teacher-voice.html"><span class="ico">🗣️</span> Teacher Voice</a>
+        <a class="rail-link" href="recognition.html"><span class="ico">🏅</span> Recognition &amp; Belonging</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration &amp; Community</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📊</span> Culture Analytics</a>
+        <a class="rail-link" href="action-planner.html"><span class="ico">🗺️</span> Leadership Action Planner</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Build / <b>Recognition &amp; Belonging</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🏅 Recognition &amp; Belonging</span>
+          <h1>Recognition &amp; Belonging</h1>
+          <p class="lead">When people feel genuinely seen, valued, and included, they stay — and they give their best. This system blends authentic recognition programs, peer appreciation, milestone celebrations, and inclusive practices into the daily rhythm of school life.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Doctoral research on leadership behaviors and teacher retention finds that <b>feeling valued is one of the strongest predictors of an educator's intent to stay</b>. Authentic, frequent recognition — and a felt sense of belonging — outperform pay-only strategies for engagement and retention. <em>Data &amp; scenarios are illustrative.</em></p>
+        </div>
+
+        <!-- ===== (a) Live Recognition Wall ===== -->
+        <h2>🏅 Recognition Wall</h2>
+        <p class="muted" style="max-width:70ch;">Post a specific shout-out for a colleague. Recognition is most powerful when it names a real action and its impact. Entries are saved privately in this browser.</p>
+        <div class="assess-card" data-recognition>
+          <div class="feed-add">
+            <div class="field" style="margin:0;">
+              <label for="rec-who">Recognize whom?</label>
+              <input id="rec-who" type="text" data-feed-who placeholder="Recognize whom?">
+            </div>
+            <div class="field" style="margin:0;">
+              <label for="rec-msg">For what?</label>
+              <input id="rec-msg" type="text" data-feed-msg placeholder="For what? (a specific shout-out)">
+            </div>
+            <button class="btn" type="button" data-feed-add>Post recognition</button>
+          </div>
+          <div class="feed-list" data-feed-list></div>
+          <div class="btn-row" style="margin-top:.9rem;">
+            <button class="out-btn" type="button" data-feed-clear>Clear</button>
+          </div>
+        </div>
+
+        <!-- ===== Scorecards ===== -->
+        <h2 style="margin-top:2rem;">Belonging at a glance</h2>
+        <div class="kpi-grid" style="margin-top:.8rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Staff who feel valued</div>
+            <div class="sc-num" data-count="86" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ 14 pts since recognition relaunch</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">Recognition frequency</div>
+            <div class="sc-num" data-count="3.4" data-suffix="×/wk">0</div>
+            <div class="sc-trend up">▲ peer + leader shout-outs</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Sense of belonging</div>
+            <div class="sc-num" data-count="78" data-suffix="%">0%</div>
+            <div class="sc-trend flat">— steady; new-hire gap to close</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Engagement index</div>
+            <div class="sc-num" data-count="82" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ linked to feeling valued</div>
+          </div>
+        </div>
+
+        <!-- ===== (b) Recognition programs tool grid ===== -->
+        <h2 style="margin-top:2rem;">Recognition programs</h2>
+        <p class="muted" style="max-width:70ch;">A balanced system uses many channels — leader-to-staff, peer-to-peer, public, and private — so every kind of contribution gets seen.</p>
+        <div class="tool-grid" style="margin-top:.9rem;">
+          <div class="tool-card">
+            <div class="t-ico">🌟</div>
+            <h4>Staff Shout-Outs</h4>
+            <p>A live wall where anyone can recognize a colleague for a specific action. Read aloud at staff meetings.</p>
+            <span class="t-go">Peer + leader</span>
+          </div>
+          <div class="tool-card">
+            <div class="t-ico">🤝</div>
+            <h4>Peer Recognition Circles</h4>
+            <p>Grade or department teams close meetings by naming one thing a teammate did well that week.</p>
+            <span class="t-go">Peer-to-peer</span>
+          </div>
+          <div class="tool-card">
+            <div class="t-ico">🎉</div>
+            <h4>Celebrating Success</h4>
+            <p>Spotlight wins — a turned-around class, a great lesson, a problem solved — in newsletters and assemblies.</p>
+            <span class="t-go">Public</span>
+          </div>
+          <div class="tool-card">
+            <div class="t-ico">💌</div>
+            <h4>Notes of Appreciation</h4>
+            <p>Handwritten notes from leaders and families. Small, specific, and private — and deeply remembered.</p>
+            <span class="t-go">Private</span>
+          </div>
+          <div class="tool-card">
+            <div class="t-ico">🏆</div>
+            <h4>Milestone &amp; Service Awards</h4>
+            <p>Recognize years of service and professional achievements as community moments, not afterthoughts.</p>
+            <span class="t-go">Professional milestones</span>
+          </div>
+          <div class="tool-card">
+            <div class="t-ico">🌱</div>
+            <h4>New-Hire Welcome</h4>
+            <p>An intentional first-90-days belonging ritual: buddy, welcome circle, and an early public win.</p>
+            <span class="t-go">Inclusive culture</span>
+          </div>
+        </div>
+
+        <!-- ===== Professional milestones timeline ===== -->
+        <h2 style="margin-top:2rem;">Professional milestones</h2>
+        <p class="muted" style="max-width:70ch;">Mark the moments that matter across an educator's journey — each one a chance to say "you belong here."</p>
+        <ul class="timeline" style="margin-top:.9rem;">
+          <li class="done"><span class="t-when">Day 1</span><br><b>Warm welcome</b> — buddy assigned, team introduction, workspace ready before arrival.</li>
+          <li class="done"><span class="t-when">90 days</span><br><b>First-quarter check-in</b> — celebrate an early win and ask "what would help you thrive?"</li>
+          <li class="now"><span class="t-when">Year 1</span><br><b>First-year reflection</b> — public recognition of growth and contribution to the team.</li>
+          <li><span class="t-when">Years 3 &amp; 5</span><br><b>Service milestones</b> — community celebration of commitment and impact.</li>
+          <li><span class="t-when">10+ years</span><br><b>Legacy recognition</b> — mentor role, signature contribution, and a story shared school-wide.</li>
+        </ul>
+
+        <!-- ===== (b) Appreciation practices drill-row ===== -->
+        <h2 style="margin-top:2rem;">Appreciation strategies</h2>
+        <p class="muted" style="max-width:70ch;">Everyday practices that build a culture of appreciation, staff wellbeing, and community celebration. Click to expand.</p>
+        <div class="assess-card" style="margin-top:.9rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🗣️ Specific, behavior-based recognition</span></div>
+          <div class="drill-panel">
+            <p>Name the action and its impact: "Thank you for staying with that student until the concept clicked — that's exactly the patience our culture is built on." Vague praise ("nice job!") fades; specific praise sticks and teaches the whole team what good looks like.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🌈 Inclusive culture &amp; every-voice recognition</span></div>
+          <div class="drill-panel">
+            <p>Audit who gets recognized. Make sure quiet contributors, support staff, and behind-the-scenes work are seen — not only the most visible. Rotate spotlights so recognition is equitable across roles and backgrounds.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">💗 Staff wellbeing &amp; care</span></div>
+          <div class="drill-panel">
+            <p>Protect wellbeing as part of belonging: workload check-ins, wellness days, and "no-email" windows. People feel valued when their humanity — not just their output — is acknowledged.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🎊 Community celebrations</span></div>
+          <div class="drill-panel">
+            <p>Build shared rituals — Friday wins, team milestones, seasonal gatherings, and family-and-staff events. Collective celebration turns individual recognition into community belonging.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">⏱️ Frequent, low-cost, sincere</span></div>
+          <div class="drill-panel">
+            <p>Recognition works best little and often. A 30-second sincere thank-you, given consistently, beats one annual ceremony. Make appreciation a daily leadership habit, not an event.</p>
+          </div>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Why it matters</span>
+          <p class="muted" style="margin:.3rem 0 0;">Across the doctoral research, educators who reported <b>feeling regularly recognized and a strong sense of belonging</b> were markedly more likely to intend to stay. Recognition &amp; belonging are not "soft extras" — they are a retention strategy. <em>Illustrative.</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="analytics.html">See it in the dashboard</a>
+          <a class="btn ghost" href="action-planner.html">Build a 90-Day Plan</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Culture by Design</h4><p style="color:#c9d6e6;">A research-based school-culture framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="culture-assessment.html">Culture Assessment</a></li><li><a href="trust.html">Trust &amp; Safety</a></li><li><a href="recognition.html">Recognition</a></li><li><a href="analytics.html">Analytics</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; culture surveys &amp; scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

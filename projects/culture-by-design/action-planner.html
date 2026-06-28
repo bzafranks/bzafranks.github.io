@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Action Planner — Culture by Design</title>
+  <meta name="description" content="Practical implementation tools for school-culture leaders — a saved 90-day culture plan, leadership priorities, recognition calendar, communication plan, relationship-building activities, a progress tracker, and a reflection journal.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Culture by Design" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CD</span><span class="brand-text"><span class="brand-title">Culture by Design</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="culture-assessment.html">Assessment</a></li>
+        <li><a href="recognition.html">Recognition</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Culture system">
+        <div class="rail-brand"><span class="mark">CD</span><b>Culture by Design</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Culture Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="culture-assessment.html"><span class="ico">🩺</span> Culture Assessment</a>
+        <div class="rail-group">Build</div>
+        <a class="rail-link" href="trust.html"><span class="ico">🛡️</span> Trust &amp; Safety</a>
+        <a class="rail-link" href="teacher-voice.html"><span class="ico">🗣️</span> Teacher Voice</a>
+        <a class="rail-link" href="recognition.html"><span class="ico">🏅</span> Recognition &amp; Belonging</a>
+        <a class="rail-link" href="collaboration.html"><span class="ico">👥</span> Collaboration &amp; Community</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📊</span> Culture Analytics</a>
+        <a class="rail-link" href="action-planner.html"><span class="ico">🗺️</span> Leadership Action Planner</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Act / <b>Leadership Action Planner</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗺️ Act</span>
+          <h1>Leadership Action Planner</h1>
+          <p class="lead">Turn culture insight into practice. Capture your leadership priorities, draft a 90-day culture improvement plan, lay out a recognition calendar and communication plan, schedule relationship-building activities, and track progress — then reflect as you go. Everything you type is saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Implementation structure reflects doctoral research on the leadership behaviors — trust, communication, recognition, voice, and psychological safety — most tied to school culture and teacher retention. <em>Templates and sample plans are illustrative; adapt them to your context.</em></p>
+        </div>
+
+        <!-- ============ (a) SAVED PLANNER ============ -->
+        <h2 style="margin-top:.4rem;">Your Culture Improvement Plan</h2>
+        <p class="muted" style="margin-top:.2rem;">Fill in each section. Your work saves automatically as you type and when you press Save.</p>
+        <form data-planner class="assess-card" style="margin-top:.8rem;" aria-label="Culture improvement plan">
+          <div class="field">
+            <label for="priorities">Leadership priorities</label>
+            <textarea id="priorities" name="priorities" placeholder="Name your top 2–3 culture priorities for this term — e.g., rebuild trust after a hard year; open real teacher-voice channels; make recognition routine."></textarea>
+          </div>
+          <div class="field">
+            <label for="ninetyDay">90-day culture improvement plan</label>
+            <textarea id="ninetyDay" name="ninetyDay" placeholder="Days 1–30 listen &amp; model · Days 31–60 act on the highest-leverage domain · Days 61–90 embed &amp; celebrate. What will you actually do in each phase?"></textarea>
+          </div>
+          <div class="field">
+            <label for="recognitionCal">Recognition calendar</label>
+            <textarea id="recognitionCal" name="recognitionCal" placeholder="Map authentic recognition across the term — weekly shout-outs, monthly celebrations, milestone moments, and who is responsible for each."></textarea>
+          </div>
+          <div class="field">
+            <label for="commPlan">Communication plan</label>
+            <textarea id="commPlan" name="commPlan" placeholder="How will you communicate, and how often? Weekly staff note, two-way feedback loops, transparent decisions, how you'll close the loop on teacher input."></textarea>
+          </div>
+          <div class="field">
+            <label for="relationships">Relationship-building activities</label>
+            <textarea id="relationships" name="relationships" placeholder="Plan deliberate connection — listening tours, classroom visits with no clipboard, team rituals, new-staff mentoring, informal gatherings."></textarea>
+          </div>
+          <div class="btn-row" style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;">
+            <button class="btn" type="submit">💾 Save plan</button>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            <span data-plan-saved class="saved-note"></span>
+          </div>
+        </form>
+
+        <!-- ============ (b) CULTURE-ACTION GENERATOR ============ -->
+        <h2 style="margin-top:2rem;">Draft a Culture Action Plan</h2>
+        <p class="muted" style="margin-top:.2rem;">Name a focus and pick a culture domain, then generate a research-informed 90-day starting draft you can adapt and paste into your plan above.</p>
+        <div class="field-row" style="margin-top:.8rem;align-items:start;">
+          <form data-generator="culture" class="assess-card" aria-label="Culture action plan generator">
+            <div class="field">
+              <label for="focus">Focus</label>
+              <input type="text" id="focus" name="focus" placeholder="e.g., rebuild relational trust this semester">
+            </div>
+            <div class="field">
+              <label for="domain">Culture domain</label>
+              <select id="domain" name="domain">
+                <option>Trust &amp; Relationships</option>
+                <option>Psychological Safety</option>
+                <option>Shared Vision &amp; Values</option>
+                <option>Collaboration &amp; Teamwork</option>
+                <option>Recognition &amp; Belonging</option>
+                <option>Continuous Learning &amp; Innovation</option>
+              </select>
+            </div>
+            <div class="btn-row">
+              <button class="btn" type="submit">✨ Generate plan</button>
+            </div>
+          </form>
+          <div class="gen-output" data-output="culture">
+            <div class="out-toolbar">
+              <span class="ai-pill">Research-informed</span>
+              <button class="out-btn" type="button" data-act="copy">📋 Copy</button>
+              <button class="out-btn" type="button" data-act="print">🖨️ Print</button>
+              <button class="out-btn" type="button" data-act="regen">↻ Regenerate</button>
+            </div>
+            <div class="out-body"><p class="muted">Name a focus, choose a domain, and press <b>Generate plan</b> to draft a 90-day culture action plan.</p></div>
+          </div>
+        </div>
+
+        <!-- ============ (c) TIMELINE + PROGRESS + JOURNAL ============ -->
+        <h2 style="margin-top:2rem;">90-Day Implementation</h2>
+        <div class="field-row" style="margin-top:.8rem;align-items:start;">
+          <div class="assess-card">
+            <h3 style="margin-top:0;">Implementation roadmap</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Days 1–14</span><br>Listen: culture pulse survey + small-group listening sessions.</li>
+              <li class="done"><span class="t-when">Days 15–30</span><br>Model the behavior you want to see — visibility, transparency, follow-through.</li>
+              <li class="now"><span class="t-when">Days 31–45</span><br>Launch an authentic recognition routine and open a teacher-voice channel.</li>
+              <li><span class="t-when">Days 46–60</span><br>Act visibly on one piece of teacher input; protect time for collaboration.</li>
+              <li><span class="t-when">Days 61–75</span><br>Embed the new practices into meetings and routines.</li>
+              <li><span class="t-when">Days 76–90</span><br>Re-survey, share progress, and celebrate wins together.</li>
+            </ul>
+            <p class="muted" style="font-size:.85rem;margin-bottom:0;">Sample roadmap — adapt the phases to your school's calendar.</p>
+          </div>
+
+          <div class="assess-card">
+            <h3 style="margin-top:0;">Progress tracker</h3>
+            <div class="barlist">
+              <div class="row"><span>🤝 Trust &amp; Relationships</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+              <div class="row"><span>💬 Communication plan</span><span class="track"><span class="fill" data-pct="60"></span></span><b>60%</b></div>
+              <div class="row"><span>🏅 Recognition calendar</span><span class="track"><span class="fill" data-pct="48"></span></span><b>48%</b></div>
+              <div class="row"><span>🗣️ Teacher voice</span><span class="track"><span class="fill" data-pct="40"></span></span><b>40%</b></div>
+              <div class="row"><span>👥 Collaboration time</span><span class="track"><span class="fill" data-pct="33"></span></span><b>33%</b></div>
+              <div class="row"><span>📈 Professional learning</span><span class="track"><span class="fill" data-pct="25"></span></span><b>25%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-bottom:0;">Illustrative progress — update the percentages to reflect your own milestones.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:2rem;">Reflection Journal</h2>
+        <p class="muted" style="margin-top:.2rem;">Capture what you're noticing as your plan unfolds — what's working, what's hard, and what you'll try next. Entries are saved privately in this browser.</p>
+        <div data-journal class="assess-card" style="margin-top:.8rem;">
+          <div class="field">
+            <label for="journal-note">New reflection</label>
+            <textarea id="journal-note" placeholder="Today I noticed… A small win was… One thing I'll adjust next week is…"></textarea>
+          </div>
+          <div class="btn-row" style="display:flex;gap:.8rem;flex-wrap:wrap;">
+            <button class="btn" type="button" data-journal-add>🪞 Add reflection</button>
+            <button class="out-btn" type="button" data-journal-clear>Clear all</button>
+          </div>
+          <div data-journal-list class="feed-list" style="margin-top:1rem;"></div>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.8rem;">
+          <a class="btn" href="culture-assessment.html">Re-assess Your Culture</a>
+          <a class="btn ghost" href="resources.html">Browse Resources</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Culture by Design</h4><p style="color:#c9d6e6;">A research-based school-culture framework — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Framework</h4><ul><li><a href="culture-assessment.html">Culture Assessment</a></li><li><a href="trust.html">Trust &amp; Safety</a></li><li><a href="recognition.html">Recognition</a></li><li><a href="analytics.html">Analytics</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; culture surveys &amp; scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

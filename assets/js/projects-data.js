@@ -271,5 +271,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🏅",
     tags: ["School Accreditation", "Quality Assurance", "Institutional Effectiveness", "Continuous Improvement", "Evidence Management", "Educational Consulting"],
     summary: "A complete institutional quality-assurance system that turns accreditation from a compliance event into everyday improvement: a six-domain quality framework, a configurable standards explorer + self-study generator, a scored 8-area Readiness Assessment with gap analysis, an interactive Evidence Manager (add/track/align artifacts with completion stats), a continuous-improvement module, a compliance dashboard, and a School Health Index in quality analytics. Aligns to Cognia/CIS/WASC/Middle States/ISO. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "culture-by-design",
+    title: "Culture by Design",
+    subtitle: "Building high-trust, high-performance school cultures on purpose",
+    pillar: "il",
+    grade: "Leadership · Framework",
+    status: "done",
+    url: "projects/culture-by-design/index.html",
+    icon: "💗",
+    tags: ["Organizational Culture", "School Climate", "Psychological Safety", "Teacher Engagement", "Belonging", "Research-Based"],
+    summary: "A research-based organizational-culture framework built on six domains (Trust & Relationships, Psychological Safety, Shared Vision & Values, Collaboration & Teamwork, Recognition & Belonging, Continuous Learning & Innovation) — with a scored 9-dimension Culture Health Assessment, a trust dashboard, a live teacher-voice idea portal, a live recognition wall, collaboration tools, culture analytics, and a saved 90-day culture action planner. Grounded in Dr. Franks' doctoral research on leadership behaviors that shape culture & teacher retention. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];
