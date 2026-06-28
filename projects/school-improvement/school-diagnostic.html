@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Diagnostic & Health Index — School Improvement Operating System</title>
+  <meta name="description" content="A comprehensive school health assessment across nine evidence areas — mapped to six improvement domains — that generates a single School Health Index to focus your continuous-improvement cycle.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Diagnose / <b>School Diagnostic</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🩺 Diagnose</span>
+          <h1>School Diagnostic &amp; Health Index</h1>
+          <p class="lead">A comprehensive school health assessment that generates a single <b>School Health Index</b>. Rate each indicator honestly across the six improvement domains; the engine scores every domain, ranks strengths and priority areas, and points you straight into a strategic plan. Improvement starts with an unflinching, evidence-anchored picture of where the school stands today.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Nine evidence areas — leadership effectiveness, teaching quality, student achievement, school culture, teacher engagement, community partnerships, operational effectiveness, resource management, and technology readiness — mapped onto six improvement domains. Grounded in Educational Effectiveness research, self-evaluation / accreditation practice, and Continuous Improvement theory. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <div class="stat-strip">
+          <div class="stat-tile"><div class="s-num">9</div><div class="s-label">Evidence areas assessed</div></div>
+          <div class="stat-tile"><div class="s-num">6</div><div class="s-label">Improvement domains scored</div></div>
+          <div class="stat-tile"><div class="s-num">12</div><div class="s-label">Indicator statements</div></div>
+          <div class="stat-tile"><div class="s-num">1</div><div class="s-label">School Health Index</div></div>
+        </div>
+
+        <h2 style="margin-top:1.8rem;">Rate each indicator</h2>
+        <p class="muted">Use the five-point scale below. <b>1 = Not yet</b> · 2 = Emerging · 3 = Developing · 4 = Embedded · <b>5 = Exemplary</b>. Answer as many as you can — the index scores whatever you complete.</p>
+
+        <!-- ===== DIAGNOSTIC ENGINE ===== -->
+        <div data-assessment>
+
+          <!-- DOMAIN 1: VISION & STRATEGIC DIRECTION  (Leadership effectiveness) -->
+          <div class="assess-card">
+            <h3>🧭 Vision &amp; Strategic Direction</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence area: leadership effectiveness.</p>
+            <div class="assess-item" data-domain="vision">
+              <p>Leadership has set a clear, shared vision and staff can articulate the school's strategic priorities.</p>
+              <div class="likert" role="group" aria-label="Rate: shared vision and clear priorities">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="vision">
+              <p>Decisions, goals, and resources are visibly aligned to the strategic plan rather than to competing priorities.</p>
+              <div class="likert" role="group" aria-label="Rate: alignment of decisions to strategy">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMAIN 2: TEACHING & LEARNING  (Teaching quality + student achievement) -->
+          <div class="assess-card">
+            <h3>📚 Teaching &amp; Learning</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence areas: teaching quality &amp; student achievement.</p>
+            <div class="assess-item" data-domain="teaching">
+              <p>Instruction is consistently high quality across classrooms, and walkthrough evidence shows effective, research-based practice.</p>
+              <div class="likert" role="group" aria-label="Rate: consistent teaching quality">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="teaching">
+              <p>Student achievement and growth data are strong, and achievement gaps between groups are closing over time.</p>
+              <div class="likert" role="group" aria-label="Rate: student achievement and growth">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMAIN 3: PEOPLE & LEADERSHIP  (Teacher engagement) -->
+          <div class="assess-card">
+            <h3>🤝 People &amp; Leadership</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence area: teacher engagement.</p>
+            <div class="assess-item" data-domain="people">
+              <p>Staff are engaged, well supported, and report high morale; turnover is low and capacity is actively developed.</p>
+              <div class="likert" role="group" aria-label="Rate: staff engagement and support">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="people">
+              <p>Leadership is distributed: teachers have meaningful voice, professional learning is purposeful, and talent is retained.</p>
+              <div class="likert" role="group" aria-label="Rate: distributed leadership and retention">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMAIN 4: CULTURE & COMMUNITY  (School culture + community partnerships) -->
+          <div class="assess-card">
+            <h3>🌍 Culture &amp; Community</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence areas: school culture &amp; community partnerships.</p>
+            <div class="assess-item" data-domain="culture">
+              <p>The school climate is positive, safe, and inclusive; students and staff report a strong sense of belonging and trust.</p>
+              <div class="likert" role="group" aria-label="Rate: positive and inclusive climate">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="culture">
+              <p>Families and community partners are actively engaged as partners in learning, with two-way communication and shared goals.</p>
+              <div class="likert" role="group" aria-label="Rate: family and community partnership">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMAIN 5: OPERATIONS & RESOURCES  (Operational effectiveness + resource management + technology readiness) -->
+          <div class="assess-card">
+            <h3>🏛️ Operations &amp; Resources</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence areas: operational effectiveness, resource management &amp; technology readiness.</p>
+            <div class="assess-item" data-domain="operations">
+              <p>Daily operations run smoothly and efficiently; systems and processes reduce friction and protect time for learning.</p>
+              <div class="likert" role="group" aria-label="Rate: operational effectiveness">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="operations">
+              <p>Resources are managed strategically and aligned to priorities, and technology infrastructure is reliable and ready to support teaching.</p>
+              <div class="likert" role="group" aria-label="Rate: resource management and technology readiness">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMAIN 6: PERFORMANCE & ACCOUNTABILITY  (cross-cutting evidence use) -->
+          <div class="assess-card">
+            <h3>📊 Performance &amp; Accountability</h3>
+            <p class="muted" style="margin-top:-.3rem;">Evidence area: evidence use across all nine areas.</p>
+            <div class="assess-item" data-domain="performance">
+              <p>The school regularly monitors progress against goals using reliable data, dashboards, and review cycles.</p>
+              <div class="likert" role="group" aria-label="Rate: progress monitoring against goals">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="performance">
+              <p>Evidence is acted upon: findings drive timely adjustments, and the team holds itself accountable for measurable results.</p>
+              <div class="likert" role="group" aria-label="Rate: acting on evidence and accountability">
+                <button type="button" data-v="1">1</button>
+                <button type="button" data-v="2">2</button>
+                <button type="button" data-v="3">3</button>
+                <button type="button" data-v="4">4</button>
+                <button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin-top:1.2rem;">
+            <button class="btn" type="button" data-assess-run>Generate School Health Index</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.6rem;">Scale: <b>1 = Not yet</b> … <b>5 = Exemplary</b>. Your responses stay private in this browser.</p>
+        </div>
+
+        <!-- ===== RESULT (rendered by the engine) ===== -->
+        <div data-assess-result class="assess-result"></div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">From diagnosis to action</span>
+          <p class="muted" style="margin:.3rem 0 0;">The diagnostic is a reflective starting point, not a verdict. Carry your two priority improvement areas into the <a href="strategic-planning.html">Strategic Planning</a> tool, then run them through the <a href="continuous-improvement.html">Continuous Improvement</a> cycle. <em>Scenarios are illustrative.</em></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

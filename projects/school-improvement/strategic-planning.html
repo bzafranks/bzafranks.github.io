@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Planning — School Improvement Operating System</title>
+  <meta name="description" content="A complete strategic planning system — vision, mission, and values; an interactive SWOT builder; a saved strategic plan with priorities and SMART goals; a Balanced Scorecard; and a PESTLE scan.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>Strategic Planning</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎯 Plan</span>
+          <h1>Strategic Planning</h1>
+          <p class="lead">A complete strategic planning system that turns diagnostic insight into direction. Anchor the work in a clear vision, mission, and values; scan the landscape with an interactive SWOT and PESTLE; commit to strategic priorities and SMART goals; then balance ambition across four perspectives with a Balanced Scorecard. Everything you enter is saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Draws on Strategic Leadership, Organizational Development, the Balanced Scorecard (Kaplan &amp; Norton), and SWOT / PESTLE environmental scanning. A strategic plan is a living instrument for coherence, not a binder on a shelf. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <!-- (a) VISION / MISSION / VALUES -->
+        <h2>Vision, mission &amp; values</h2>
+        <p class="muted">Strategy begins with shared purpose. These three anchors keep every priority, goal, and action pointed in the same direction.</p>
+        <div class="domain-grid" style="margin-top:.9rem;">
+          <div class="domain-card d1"><span class="d-ico">🌟</span><h3>Vision</h3><p class="muted"><b>Where we are going.</b> An aspirational, vivid picture of the school at its best — what success looks like for every learner, stated boldly enough to inspire and clearly enough to guide.</p></div>
+          <div class="domain-card d2"><span class="d-ico">🎯</span><h3>Mission</h3><p class="muted"><b>Why we exist &amp; what we do.</b> The school's core purpose and the distinctive approach by which it delivers on the vision, day in and day out.</p></div>
+          <div class="domain-card d3"><span class="d-ico">🤝</span><h3>Values</h3><p class="muted"><b>How we behave.</b> The shared commitments and non-negotiables that shape decisions, relationships, and culture — the standard the community holds itself to.</p></div>
+        </div>
+
+        <!-- (b) SWOT BUILDER -->
+        <h2 style="margin-top:2rem;">Interactive SWOT analysis</h2>
+        <p class="muted">Map internal capability against the external landscape. Pull strengths and weaknesses from your <a href="school-diagnostic.html">School Diagnostic</a>; draw opportunities and threats from the PESTLE scan below. Your entries save automatically.</p>
+        <form data-swot style="margin-top:.9rem;">
+          <div class="swot-grid">
+            <div class="swot-cell s">
+              <h4><label for="swot-s">💪 Strengths</label></h4>
+              <textarea id="swot-s" name="s" placeholder="Internal advantages to build on — e.g. strong instructional coaching, high staff retention, trusted leadership team…"></textarea>
+            </div>
+            <div class="swot-cell w">
+              <h4><label for="swot-w">⚠️ Weaknesses</label></h4>
+              <textarea id="swot-w" name="w" placeholder="Internal gaps to address — e.g. inconsistent assessment practice, aging technology, uneven family engagement…"></textarea>
+            </div>
+            <div class="swot-cell o">
+              <h4><label for="swot-o">🚀 Opportunities</label></h4>
+              <textarea id="swot-o" name="o" placeholder="External openings to seize — e.g. grant funding, community partnerships, new curriculum resources…"></textarea>
+            </div>
+            <div class="swot-cell t">
+              <h4><label for="swot-t">🌪️ Threats</label></h4>
+              <textarea id="swot-t" name="t" placeholder="External risks to mitigate — e.g. enrollment shifts, budget pressure, teacher-supply shortages…"></textarea>
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:1rem;align-items:center;">
+            <button class="btn" type="submit">Save SWOT</button>
+            <span data-plan-saved class="saved-note"></span>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+          </div>
+        </form>
+
+        <!-- (c) STRATEGIC PLAN FORM (separate form) -->
+        <h2 style="margin-top:2rem;">Build your strategic plan</h2>
+        <p class="muted">Translate purpose and analysis into a concrete plan: the vision you are pursuing, the few priorities that will move the school, the SMART goals that make progress measurable, and the roadmap that sequences delivery. This is a separate, independently saved plan.</p>
+        <form data-planner style="margin-top:.9rem;">
+          <div class="field">
+            <label for="plan-vision">Vision statement</label>
+            <textarea id="plan-vision" name="vision" placeholder="Where are we going? State the aspirational picture of success for every learner."></textarea>
+          </div>
+          <div class="field">
+            <label for="plan-priorities">Strategic priorities</label>
+            <textarea id="plan-priorities" name="priorities" placeholder="The 3–5 few-but-vital priorities for the cycle (e.g. raise literacy outcomes, strengthen Tier 1 instruction, deepen family partnership)."></textarea>
+          </div>
+          <div class="field">
+            <label for="plan-goals">SMART goals</label>
+            <textarea id="plan-goals" name="smartGoals" placeholder="Specific, Measurable, Achievable, Relevant, Time-bound goals per priority — baseline → target, by when, measured by which evidence."></textarea>
+          </div>
+          <div class="field">
+            <label for="plan-roadmap">Implementation roadmap</label>
+            <textarea id="plan-roadmap" name="roadmap" placeholder="How and when delivery happens — milestones by quarter, owners, resources, and key dependencies."></textarea>
+          </div>
+          <div class="btn-row" style="align-items:center;">
+            <button class="btn" type="submit">Save strategic plan</button>
+            <span data-plan-saved class="saved-note"></span>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+          </div>
+        </form>
+
+        <!-- (d) BALANCED SCORECARD + PESTLE -->
+        <h2 style="margin-top:2rem;">Balanced Scorecard</h2>
+        <p class="muted">Balance the plan across four connected perspectives so progress in one area never quietly erodes another. Each card pairs sample objectives with measures you would track.</p>
+        <div class="bsc-grid" style="margin-top:.9rem;">
+          <div class="bsc-card">
+            <h4>🎓 Student Outcomes</h4>
+            <p class="muted"><b>Objectives:</b> raise achievement &amp; growth; close gaps; improve wellbeing.</p>
+            <p class="muted"><b>Measures:</b> proficiency &amp; growth rates, gap indices, attendance, climate survey.</p>
+          </div>
+          <div class="bsc-card">
+            <h4>📚 Teaching &amp; Learning</h4>
+            <p class="muted"><b>Objectives:</b> strengthen Tier 1 instruction; embed effective assessment.</p>
+            <p class="muted"><b>Measures:</b> walkthrough trends, assessment-cycle fidelity, intervention reach.</p>
+          </div>
+          <div class="bsc-card">
+            <h4>🤝 People &amp; Culture</h4>
+            <p class="muted"><b>Objectives:</b> develop capacity; engage &amp; retain staff; build trust.</p>
+            <p class="muted"><b>Measures:</b> engagement &amp; retention rates, PD participation, climate index.</p>
+          </div>
+          <div class="bsc-card">
+            <h4>🏛️ Operations &amp; Resources</h4>
+            <p class="muted"><b>Objectives:</b> align budget to priorities; ensure systems &amp; tech enable learning.</p>
+            <p class="muted"><b>Measures:</b> budget-to-priority alignment, process efficiency, technology readiness.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:2rem;">PESTLE environmental scan</h2>
+        <p class="muted">Scan the external forces that shape strategy. Click each factor to explore prompts that surface opportunities and threats for your SWOT.</p>
+        <div style="margin-top:.6rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🏛️ Political</span></div>
+          <div class="drill-panel"><p class="muted">Policy shifts, accountability mandates, district priorities, governance changes. <b>Ask:</b> what is changing in the policy landscape, and how should we respond?</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">💰 Economic</span></div>
+          <div class="drill-panel"><p class="muted">Funding levels, grant availability, local economic conditions, family financial stress. <b>Ask:</b> how stable are our resources, and what risks should we hedge?</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">👪 Social</span></div>
+          <div class="drill-panel"><p class="muted">Demographic shifts, enrollment trends, community needs, family expectations. <b>Ask:</b> how is our community changing, and are we keeping pace?</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">💻 Technological</span></div>
+          <div class="drill-panel"><p class="muted">Edtech advances, infrastructure, data systems, AI and digital readiness. <b>Ask:</b> where can technology accelerate learning, and where are we exposed?</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">⚖️ Legal</span></div>
+          <div class="drill-panel"><p class="muted">Compliance, safeguarding, data privacy, special-education and civil-rights obligations. <b>Ask:</b> what must we get right, and where is risk concentrated?</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🌱 Environmental</span></div>
+          <div class="drill-panel"><p class="muted">Facilities, sustainability, health and safety, learning-environment quality. <b>Ask:</b> do our physical environments support — or constrain — our goals?</p></div>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Strategy into delivery</span>
+          <p class="muted" style="margin:.3rem 0 0;">A strong plan is necessary but not sufficient. Move priorities into <a href="action-planning.html">Action Planning</a> with owners and dates, then govern delivery through the <a href="continuous-improvement.html">Continuous Improvement</a> cycle and the <a href="dashboard.html">Leadership Dashboard</a>. <em>Scenarios are illustrative.</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.4rem;">
+          <a class="btn" href="continuous-improvement.html">Run the Improvement Cycle</a>
+          <a class="btn ghost" href="school-diagnostic.html">Back to the Diagnostic</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

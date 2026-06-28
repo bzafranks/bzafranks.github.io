@@ -223,5 +223,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🎓",
     tags: ["Leadership Development", "Executive Education", "Professional Learning", "Leadership Coaching", "Certification", "Adult Learning"],
     summary: "A world-class leadership-development ecosystem: 7 role-based leadership pathways, an 8-competency framework, a digital learning academy + 10-course catalog with saved progress, executive coaching with a saved planner, working branching leadership simulations (decisions → coaching feedback → outcome), competency-based certifications with claimable badges, a saved professional portfolio, and a learning-analytics dashboard. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "school-improvement",
+    title: "School Improvement Operating System",
+    subtitle: "Building high-performing schools through continuous improvement",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/school-improvement/index.html",
+    icon: "🩺",
+    tags: ["School Improvement", "Continuous Improvement", "Strategic Planning", "Systems Thinking", "Quality Assurance", "Organizational Development"],
+    summary: "An enterprise operating system for continuous school improvement: a six-domain framework + PDSA cycle, a scored School Diagnostic that generates a School Health Index, a strategic-planning suite (interactive SWOT builder, SMART goals, balanced scorecard), performance dashboards, a saved action planner + improvement-plan generator, monitoring & evaluation with a quarterly-review generator, and an executive leadership dashboard. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

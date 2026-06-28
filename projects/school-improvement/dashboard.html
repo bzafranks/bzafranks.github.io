@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Dashboard — School Improvement Operating System</title>
+  <meta name="description" content="An executive school-improvement dashboard — School Health Index, strategic-goal scorecards, improvement-initiative progress, performance trends, strategic priorities, risk indicators, and leadership priorities. Illustrative data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Insight / <b>Leadership Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Insight</span>
+          <h1>Leadership Dashboard</h1>
+          <p class="lead">An executive view of school improvement at a glance. The dashboard rolls up the six improvement domains into one operating picture — the School Health Index, strategic-goal progress, key outcomes, initiative momentum, performance trends, priorities, and risks — so leaders can see, decide, and act in the same place.</p>
+        </div>
+
+        <p class="muted" style="margin-bottom:1.4rem;">All figures below are <em>illustrative</em> sample data for portfolio demonstration — not from any real school.</p>
+
+        <!-- Hero: School Health Index gauge -->
+        <h2>School Health Index</h2>
+        <div class="assess-card">
+          <div style="display:flex;gap:1.8rem;flex-wrap:wrap;align-items:center;">
+            <div class="gauge" data-gauge="78" data-gauge-suffix="%" role="img" aria-label="School Health Index: 78 percent, effective band">
+              <div class="hole"><b data-gauge-num>0%</b><small>School Health Index</small></div>
+            </div>
+            <div style="flex:1;min-width:260px;">
+              <p><span class="tl-pill gold">Effective</span> <span class="sc-trend up">▲ 4 pts vs. last quarter</span></p>
+              <p class="muted" style="max-width:54ch;">A composite of the six improvement domains, weighted by strategic priority. Trending upward as teaching-and-learning and culture initiatives mature; operations remains the watch area.</p>
+              <div class="barlist" style="margin-top:.6rem;">
+                <div class="row"><span>🧭 Vision &amp; Strategic Direction</span><span class="track"><span class="fill" data-pct="84" style="width:84%"></span></span><b>84%</b></div>
+                <div class="row"><span>📚 Teaching &amp; Learning</span><span class="track"><span class="fill" data-pct="79" style="width:79%"></span></span><b>79%</b></div>
+                <div class="row"><span>🤝 People &amp; Leadership</span><span class="track"><span class="fill" data-pct="76" style="width:76%"></span></span><b>76%</b></div>
+                <div class="row"><span>🌍 Culture &amp; Community</span><span class="track"><span class="fill" data-pct="81" style="width:81%"></span></span><b>81%</b></div>
+                <div class="row"><span>🏛️ Operations &amp; Resources</span><span class="track"><span class="fill" data-pct="68" style="width:68%"></span></span><b>68%</b></div>
+                <div class="row"><span>📊 Performance &amp; Accountability</span><span class="track"><span class="fill" data-pct="80" style="width:80%"></span></span><b>80%</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI scorecards -->
+        <h2 style="margin-top:2rem;">Key performance indicators</h2>
+        <div class="kpi-grid" aria-label="Key performance indicators">
+          <div class="scorecard green">
+            <div class="sc-label">Strategic goal progress</div>
+            <div class="sc-num"><span data-count="82" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">▲ 6% on plan milestones</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Student outcomes (proficiency)</div>
+            <div class="sc-num"><span data-count="71" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">▲ 3% YoY · gaps narrowing</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Teacher engagement</div>
+            <div class="sc-num"><span data-count="88" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">▲ 5% · retention strong</div>
+          </div>
+          <div class="scorecard red">
+            <div class="sc-label">Operational performance</div>
+            <div class="sc-num"><span data-count="64" data-suffix="%">0%</span></div>
+            <div class="sc-trend down">▼ 2% · resourcing pressure</div>
+          </div>
+        </div>
+
+        <!-- Improvement initiatives progress (barlist) -->
+        <h2 style="margin-top:2rem;">Improvement initiatives progress</h2>
+        <div class="assess-card">
+          <div class="barlist" aria-label="Improvement initiatives progress">
+            <div class="row"><span>Tier-1 instruction playbook</span><span class="track"><span class="fill" data-pct="90" style="width:90%"></span></span><b>90%</b></div>
+            <div class="row"><span>Literacy intervention rollout</span><span class="track"><span class="fill" data-pct="74" style="width:74%"></span></span><b>74%</b></div>
+            <div class="row"><span>Distributed leadership teams</span><span class="track"><span class="fill" data-pct="66" style="width:66%"></span></span><b>66%</b></div>
+            <div class="row"><span>Family &amp; community engagement</span><span class="track"><span class="fill" data-pct="58" style="width:58%"></span></span><b>58%</b></div>
+            <div class="row"><span>Data &amp; PDSA cycle adoption</span><span class="track"><span class="fill" data-pct="82" style="width:82%"></span></span><b>82%</b></div>
+            <div class="row"><span>Operations &amp; resource alignment</span><span class="track"><span class="fill" data-pct="45" style="width:45%"></span></span><b>45%</b></div>
+          </div>
+        </div>
+
+        <!-- Performance trends (barchart) -->
+        <h2 style="margin-top:2rem;">Performance trends</h2>
+        <div class="assess-card">
+          <p class="muted" style="margin-top:0;">School Health Index by quarter (illustrative).</p>
+          <div class="barchart" role="img" aria-label="Performance trend by quarter: Q1 2024 65 percent, Q2 68 percent, Q3 70 percent, Q4 72 percent, Q1 2025 74 percent, Q2 2025 78 percent">
+            <div class="bar-col"><div class="bar" data-h="65" style="height:65%"><span class="bv">65</span></div><span class="bar-label">Q1 ’24</span></div>
+            <div class="bar-col"><div class="bar" data-h="68" style="height:68%"><span class="bv">68</span></div><span class="bar-label">Q2 ’24</span></div>
+            <div class="bar-col"><div class="bar" data-h="70" style="height:70%"><span class="bv">70</span></div><span class="bar-label">Q3 ’24</span></div>
+            <div class="bar-col"><div class="bar" data-h="72" style="height:72%"><span class="bv">72</span></div><span class="bar-label">Q4 ’24</span></div>
+            <div class="bar-col"><div class="bar" data-h="74" style="height:74%"><span class="bv">74</span></div><span class="bar-label">Q1 ’25</span></div>
+            <div class="bar-col"><div class="bar" data-h="78" style="height:78%"><span class="bv">78</span></div><span class="bar-label">Q2 ’25</span></div>
+          </div>
+        </div>
+
+        <!-- Strategic priorities table -->
+        <h2 style="margin-top:2rem;">Strategic priorities</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Strategic priorities aligned to the improvement plan (illustrative).</caption>
+            <thead>
+              <tr><th scope="col">Priority</th><th scope="col">Owner</th><th scope="col">Measure</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Raise core-instruction quality</td><td>Asst. Principal, Instruction</td><td>Walkthrough fidelity &amp; growth data</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Close literacy achievement gaps</td><td>Literacy Coach</td><td>Reading proficiency by subgroup</td><td><span class="tl-pill amber">Watch</span></td></tr>
+              <tr><td>Strengthen distributed leadership</td><td>Principal</td><td>Team charters &amp; staff survey</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Deepen family engagement</td><td>Community Liaison</td><td>Participation &amp; climate index</td><td><span class="tl-pill amber">Watch</span></td></tr>
+              <tr><td>Align operations to priorities</td><td>Operations Manager</td><td>Resource-to-goal alignment</td><td><span class="tl-pill red">Off track</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Risk indicators with drill-down -->
+        <h2 style="margin-top:2rem;">Risk indicators</h2>
+        <p class="muted">Select a risk to view its mitigation plan.</p>
+        <div class="assess-card">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Operations &amp; resourcing strain</span><span class="tl-pill red">High</span></div>
+          <div class="drill-panel">
+            <p><b>Signal:</b> operational performance at 64% and trending down; resource-to-priority alignment lagging.</p>
+            <p><b>Mitigation:</b> re-sequence the budget around the top three priorities, add an operations sprint to the PDSA cycle, and report alignment monthly to the leadership team.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Literacy gap persistence</span><span class="tl-pill amber">Medium</span></div>
+          <div class="drill-panel">
+            <p><b>Signal:</b> intervention rollout at 74%; subgroup proficiency improving but below target.</p>
+            <p><b>Mitigation:</b> protect intervention time, coach for fidelity, and review progress-monitoring data every two weeks.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Family-engagement reach</span><span class="tl-pill amber">Medium</span></div>
+          <div class="drill-panel">
+            <p><b>Signal:</b> engagement initiative at 58%; participation uneven across the community.</p>
+            <p><b>Mitigation:</b> diversify channels and times, gather family feedback, and set a quarterly participation target with the community liaison.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Initiative overload</span><span class="tl-pill green">Low</span></div>
+          <div class="drill-panel">
+            <p><b>Signal:</b> six active initiatives; capacity stretched but holding.</p>
+            <p><b>Mitigation:</b> hold the line on new commitments, finish high-progress initiatives first, and embed them before scaling the next.</p>
+          </div>
+        </div>
+
+        <!-- Leadership priorities timeline -->
+        <h2 style="margin-top:2rem;">Leadership priorities</h2>
+        <ul class="timeline" aria-label="Leadership priorities over the year">
+          <li class="done"><span class="t-when">Q1 · Complete</span><br><b>Diagnose &amp; set direction</b><p class="muted" style="margin:.2rem 0 0;">Ran the school diagnostic, set the School Health Index baseline, and named the top priorities.</p></li>
+          <li class="done"><span class="t-when">Q2 · Complete</span><br><b>Launch high-leverage initiatives</b><p class="muted" style="margin:.2rem 0 0;">Stood up the instruction playbook and literacy intervention with clear owners.</p></li>
+          <li class="now"><span class="t-when">Q3 · In progress</span><br><b>Monitor fidelity &amp; close gaps</b><p class="muted" style="margin:.2rem 0 0;">Run PDSA reviews, act on data, and pull operations alignment back on track.</p></li>
+          <li><span class="t-when">Q4 · Planned</span><br><b>Evaluate, embed &amp; scale</b><p class="muted" style="margin:.2rem 0 0;">Study results against goals, embed what works, and set next year’s priorities.</p></li>
+        </ul>
+
+        <div class="research" style="margin-top:2rem;">
+          <span class="tag">Continuous Improvement</span>
+          <p class="muted" style="margin:.3rem 0 0;">The School Health Index is a leading-and-lagging composite designed to be reviewed each PDSA cycle — not a one-time grade. Read alongside the strategic priorities and risk indicators, it turns the dashboard into a decision tool: see the trend, study the cause, act, and re-measure next quarter. <em>All data shown is illustrative.</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="school-diagnostic.html">Run the School Diagnostic</a>
+          <a class="btn ghost" href="strategic-planning.html">Open Strategic Planning</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

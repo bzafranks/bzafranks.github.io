@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Planning — School Improvement Operating System</title>
+  <meta name="description" content="Implementation tools that turn strategy into action — a saved action planner, an AI improvement-plan generator, an initiative tracker, and a milestone timeline. Scenarios are illustrative.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Plan / <b>Action Planning</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗺️ Implementation</span>
+          <h1>Action Planning</h1>
+          <p class="lead">Strategy only improves a school once it becomes action. These implementation tools translate priorities into named initiatives with owners, timelines, resources, risks, and success indicators — then track them to completion through a milestone timeline so nothing stalls between board meetings.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">From Strategy to Action</span>
+          <p class="muted" style="margin:.3rem 0 0;">Clear ownership, realistic timelines, and explicit success indicators are the difference between a plan and a binder on a shelf. <em>All examples are illustrative.</em></p>
+        </div>
+
+        <!-- (a) Saved action planner -->
+        <h2 style="margin-top:.4rem;">Action planner</h2>
+        <p class="muted">Capture a priority initiative as a working action plan. Saved privately in this browser.</p>
+        <form data-action class="assess-card" style="margin-top:.8rem;" aria-label="Action planner">
+          <div class="field-row">
+            <div class="field">
+              <label for="ap-initiative">Priority initiative</label>
+              <input id="ap-initiative" name="initiative" type="text" placeholder="e.g., Strengthen Tier 1 literacy instruction">
+            </div>
+            <div class="field">
+              <label for="ap-owner">Responsible leader</label>
+              <input id="ap-owner" name="owner" type="text" placeholder="e.g., Assistant Principal, Curriculum">
+            </div>
+          </div>
+          <div class="field">
+            <label for="ap-timeline">Timeline</label>
+            <input id="ap-timeline" name="timeline" type="text" placeholder="e.g., Aug 2026 – Jun 2027, reviewed quarterly">
+          </div>
+          <div class="field">
+            <label for="ap-resources">Resource allocation</label>
+            <textarea id="ap-resources" name="resources" placeholder="Budget, staffing, time, materials, professional learning…"></textarea>
+          </div>
+          <div class="field">
+            <label for="ap-risks">Risks &amp; mitigations</label>
+            <textarea id="ap-risks" name="risks" placeholder="What could derail this, and how will you respond?"></textarea>
+          </div>
+          <div class="field">
+            <label for="ap-indicators">Success indicators</label>
+            <textarea id="ap-indicators" name="indicators" placeholder="Leading and lagging indicators that show the initiative is working…"></textarea>
+          </div>
+          <div class="btn-row" style="align-items:center;gap:.8rem;">
+            <button class="btn" type="submit">💾 Save action plan</button>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            <span data-plan-saved class="saved-note"></span>
+          </div>
+        </form>
+
+        <!-- (b) Improvement-plan generator -->
+        <h2 style="margin-top:1.8rem;">School improvement plan generator</h2>
+        <p class="muted">Draft a structured improvement plan for a priority, aligned to one of the six improvement domains.</p>
+        <div class="field-row" style="align-items:start;margin-top:.8rem;">
+          <form data-generator="improvement" class="assess-card" aria-label="Improvement plan generator">
+            <div class="field">
+              <label for="ip-priority">Priority</label>
+              <input id="ip-priority" name="priority" type="text" placeholder="e.g., Improve early-grade reading proficiency">
+            </div>
+            <div class="field">
+              <label for="ip-domain">Improvement domain</label>
+              <select id="ip-domain" name="domain">
+                <option>Vision &amp; Strategic Direction</option>
+                <option>Teaching &amp; Learning</option>
+                <option>People &amp; Leadership</option>
+                <option>Culture &amp; Community</option>
+                <option>Operations &amp; Resources</option>
+                <option>Performance &amp; Accountability</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+          <div class="gen-output" data-output="improvement">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a draft to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- (c) Initiative tracker table -->
+        <h2 style="margin-top:1.8rem;">Initiative tracker</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Illustrative portfolio of active improvement initiatives.</caption>
+            <thead>
+              <tr><th scope="col">Initiative</th><th scope="col">Owner</th><th scope="col">Timeline</th><th scope="col">Milestone</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Tier 1 literacy instruction</td><td>AP, Curriculum</td><td>Aug–Jun</td><td>Coaching cycle 2 underway</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Attendance recovery plan</td><td>Dean of Students</td><td>Sep–May</td><td>Family outreach launched</td><td><span class="tl-pill amber">On watch</span></td></tr>
+              <tr><td>Teacher mentoring program</td><td>Instructional Coach</td><td>Aug–Jun</td><td>Mentor pairs assigned</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>MTSS behavior framework</td><td>School Counselor</td><td>Oct–Jun</td><td>Tier 2 rollout delayed</td><td><span class="tl-pill red">Off track</span></td></tr>
+              <tr><td>Family engagement nights</td><td>Community Liaison</td><td>Quarterly</td><td>Q2 event completed</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Master schedule redesign</td><td>Principal</td><td>Jan–Jul</td><td>Stakeholder input gathered</td><td><span class="tl-pill amber">On watch</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Milestone timeline -->
+        <h2 style="margin-top:1.8rem;">Milestone timeline</h2>
+        <p class="muted">A typical year of implementation milestones for a priority initiative.</p>
+        <ul class="timeline" style="margin-top:.8rem;">
+          <li class="done"><span class="t-when">August</span><br><b>Launch &amp; baseline</b> — set goals, establish ownership, capture starting data.</li>
+          <li class="done"><span class="t-when">October</span><br><b>Build capacity</b> — professional learning and coaching aligned to the priority.</li>
+          <li class="now"><span class="t-when">January</span><br><b>Mid-year check</b> — review leading indicators, adjust the plan, reallocate as needed.</li>
+          <li><span class="t-when">March</span><br><b>Scale what works</b> — extend bright spots; intensify support where stalled.</li>
+          <li><span class="t-when">June</span><br><b>Evaluate &amp; embed</b> — assess outcomes, document learning, decide what to sustain.</li>
+        </ul>
+
+        <p class="muted" style="font-size:.85rem;margin-top:1rem;">Tracker and timeline data are illustrative. Use the planner and generator above to build your own initiatives and connect them to the monitoring cycle.</p>
+
+        <div class="btn-row" style="margin-top:1.4rem;">
+          <a class="btn" href="monitoring.html">Set up Monitoring &amp; Evaluation</a>
+          <a class="btn ghost" href="strategic-planning.html">Back to Strategic Planning</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

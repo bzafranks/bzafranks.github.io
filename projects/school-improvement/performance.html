@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data &amp; Performance — School Improvement Operating System</title>
+  <meta name="description" content="Data-informed performance dashboards across academic achievement, attendance, teacher retention, professional learning, student wellbeing, behavior, school climate, operations, and community engagement. Scenarios are illustrative.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Monitor / <b>Data &amp; Performance</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Performance</span>
+          <h1>Data &amp; Performance</h1>
+          <p class="lead">Turn data into decisions. This dashboard brings together the indicators that matter most across the six improvement domains — academic performance, attendance, teacher retention, professional learning, student wellbeing, behavior, school climate, operational efficiency, and community engagement — so leaders can see the whole school at a glance and act early.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Data-Informed Leadership</span>
+          <p class="muted" style="margin:.3rem 0 0;">Leading and lagging indicators reviewed together, on a regular cadence, with RAG (red/amber/green) status to focus attention where it is needed. <em>All figures below are illustrative.</em></p>
+        </div>
+
+        <!-- KPI scorecards -->
+        <h2 style="margin-top:.4rem;">Headline indicators</h2>
+        <div class="kpi-grid" style="margin:.8rem 0 1.6rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Academic proficiency</div>
+            <div class="sc-num" data-count="78" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ 6 pts vs. last year</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Average daily attendance</div>
+            <div class="sc-num" data-count="93" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ 1.4 pts this term</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Teacher retention</div>
+            <div class="sc-num" data-count="91" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ 5 pts vs. last year</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">PD hours per teacher</div>
+            <div class="sc-num" data-count="42" data-suffix="h">0h</div>
+            <div class="sc-trend flat">► on target pace</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Student wellbeing index</div>
+            <div class="sc-num" data-count="74" data-suffix="%">0%</div>
+            <div class="sc-trend up">▲ 3 pts this term</div>
+          </div>
+          <div class="scorecard red">
+            <div class="sc-label">Behavior referrals (per 100)</div>
+            <div class="sc-num" data-count="12">0</div>
+            <div class="sc-trend down">▼ above threshold</div>
+          </div>
+        </div>
+
+        <!-- Gauges -->
+        <h2>School Health &amp; engagement</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <div style="display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;">
+            <div class="gauge" data-gauge="82" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>School Health Index</small></div></div>
+            <div class="gauge" data-gauge="68" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Community engagement</small></div></div>
+          </div>
+          <p class="muted" style="text-align:center;font-size:.85rem;margin:.9rem 0 0;">Composite indices roll up multiple indicators within a domain into a single, trackable signal.</p>
+        </div>
+
+        <!-- Performance by domain -->
+        <h2 style="margin-top:1.8rem;">Performance by domain</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <div class="barlist">
+            <div class="row"><span>🧭 Vision &amp; Strategic Direction</span><span class="track"><span class="fill" data-pct="84"></span></span><b>84%</b></div>
+            <div class="row"><span>📚 Teaching &amp; Learning</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+            <div class="row"><span>🤝 People &amp; Leadership</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+            <div class="row"><span>🌍 Culture &amp; Community</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+            <div class="row"><span>🏛️ Operations &amp; Resources</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+            <div class="row"><span>📊 Performance &amp; Accountability</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+          </div>
+        </div>
+
+        <!-- Trend over time -->
+        <h2 style="margin-top:1.8rem;">Trend over time</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <p class="muted" style="margin-top:0;">School Health Index across the last eight monitoring points.</p>
+          <svg class="trendline" viewBox="0 0 300 64" role="img" aria-label="School Health Index trending upward over eight monitoring points">
+            <path class="area" d="M0,46 L42,44 L85,40 L128,36 L171,30 L214,28 L257,22 L300,18 L300,64 L0,64 Z"></path>
+            <path class="line" d="M0,46 L42,44 L85,40 L128,36 L171,30 L214,28 L257,22 L300,18"></path>
+          </svg>
+          <p class="muted" style="font-size:.82rem;margin:.6rem 0 0;">Steady upward trend from 64% to 82% over the year — sustained gains, not a single spike.</p>
+        </div>
+
+        <!-- Bar chart -->
+        <h2 style="margin-top:1.8rem;">Attendance by month</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <div class="barchart" aria-label="Average daily attendance percentage by month">
+            <div class="bar-col"><div class="bar" data-h="88"><span class="bv">88%</span></div><span class="bar-label">Sep</span></div>
+            <div class="bar-col"><div class="bar" data-h="90"><span class="bv">90%</span></div><span class="bar-label">Oct</span></div>
+            <div class="bar-col"><div class="bar" data-h="87"><span class="bv">87%</span></div><span class="bar-label">Nov</span></div>
+            <div class="bar-col"><div class="bar" data-h="91"><span class="bv">91%</span></div><span class="bar-label">Dec</span></div>
+            <div class="bar-col"><div class="bar" data-h="93"><span class="bv">93%</span></div><span class="bar-label">Jan</span></div>
+            <div class="bar-col"><div class="bar" data-h="94"><span class="bv">94%</span></div><span class="bar-label">Feb</span></div>
+            <div class="bar-col"><div class="bar" data-h="95"><span class="bv">95%</span></div><span class="bar-label">Mar</span></div>
+          </div>
+        </div>
+
+        <!-- Key indicators table -->
+        <h2 style="margin-top:1.8rem;">Key indicators</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Illustrative indicator scorecard with RAG status against target.</caption>
+            <thead>
+              <tr><th scope="col">Indicator</th><th scope="col">Baseline</th><th scope="col">Current</th><th scope="col">Target</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Academic proficiency</td><td>72%</td><td>78%</td><td>82%</td><td><span class="tl-pill amber">On watch</span></td></tr>
+              <tr><td>Average daily attendance</td><td>89%</td><td>93%</td><td>95%</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Teacher retention</td><td>86%</td><td>91%</td><td>90%</td><td><span class="tl-pill green">Met</span></td></tr>
+              <tr><td>Professional learning (hrs/teacher)</td><td>30</td><td>42</td><td>45</td><td><span class="tl-pill amber">On watch</span></td></tr>
+              <tr><td>Student wellbeing index</td><td>68%</td><td>74%</td><td>78%</td><td><span class="tl-pill amber">On watch</span></td></tr>
+              <tr><td>Behavior referrals (per 100)</td><td>18</td><td>12</td><td>8</td><td><span class="tl-pill red">Off track</span></td></tr>
+              <tr><td>School climate (favorable)</td><td>70%</td><td>79%</td><td>80%</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Operational efficiency</td><td>74%</td><td>80%</td><td>80%</td><td><span class="tl-pill green">Met</span></td></tr>
+              <tr><td>Community engagement</td><td>58%</td><td>68%</td><td>75%</td><td><span class="tl-pill amber">On watch</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;margin-top:1rem;">All data on this page is illustrative and provided to demonstrate the dashboard design. Connect your own SIS, assessment, survey, and HR systems to populate live figures.</p>
+
+        <div class="btn-row" style="margin-top:1.4rem;">
+          <a class="btn" href="monitoring.html">Set up Monitoring &amp; Evaluation</a>
+          <a class="btn ghost" href="dashboard.html">Open the Leadership Dashboard</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

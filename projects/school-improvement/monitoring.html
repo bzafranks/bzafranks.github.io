@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoring &amp; Evaluation — School Improvement Operating System</title>
+  <meta name="description" content="Systems for quarterly reviews, evidence collection, goal monitoring, performance evaluation, implementation fidelity, and continuous feedback — with an AI quarterly-review generator. Scenarios are illustrative.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="School Improvement Operating System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SI</span><span class="brand-text"><span class="brand-title">School Improvement Operating System</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="school-diagnostic.html">Diagnostic</a></li>
+        <li><a href="strategic-planning.html">Strategy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Improvement system">
+        <div class="rail-brand"><span class="mark">SI</span><b>Improvement OS</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Improvement Framework</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="school-diagnostic.html"><span class="ico">🩺</span> School Diagnostic</a>
+        <div class="rail-group">Plan</div>
+        <a class="rail-link" href="strategic-planning.html"><span class="ico">🎯</span> Strategic Planning</a>
+        <a class="rail-link" href="action-planning.html"><span class="ico">🗺️</span> Action Planning</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="performance.html"><span class="ico">📈</span> Data &amp; Performance</a>
+        <a class="rail-link" href="monitoring.html"><span class="ico">🔎</span> Monitoring &amp; Evaluation</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Monitor / <b>Monitoring &amp; Evaluation</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🔎 Monitoring</span>
+          <h1>Monitoring &amp; Evaluation</h1>
+          <p class="lead">Improvement plans only work if someone checks. This is the rhythm of accountability — quarterly reviews, evidence collection, goal monitoring, performance evaluation, implementation-fidelity checks, continuous feedback, school review meetings, and annual evaluation reports — that keeps every initiative honest and on course.</p>
+        </div>
+
+        <div class="research">
+          <span class="tag">Evidence-Based Monitoring</span>
+          <p class="muted" style="margin:.3rem 0 0;">Effective monitoring is regular, evidence-based, and forward-looking — it pairs leading indicators (is the work happening as designed?) with lagging indicators (is it producing results?), and turns every review into decisions, not just reporting. <em>All examples are illustrative.</em></p>
+        </div>
+
+        <!-- (a) Quarterly review generator -->
+        <h2 style="margin-top:1.6rem;">Quarterly review generator</h2>
+        <p class="muted">Draft a structured quarterly review summary for any focus area.</p>
+        <div class="field-row" style="align-items:start;margin-top:.8rem;">
+          <form data-generator="review" class="assess-card" aria-label="Quarterly review generator">
+            <div class="field">
+              <label for="qr-quarter">Quarter</label>
+              <select id="qr-quarter" name="quarter">
+                <option>Q1</option>
+                <option>Q2</option>
+                <option>Q3</option>
+                <option>Q4</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="qr-focus">Review focus</label>
+              <input id="qr-focus" name="focus" type="text" placeholder="e.g., Tier 1 literacy initiative">
+            </div>
+            <button class="btn" type="submit">✨ Generate</button>
+          </form>
+          <div class="gen-output" data-output="review">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a draft to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- (b) Evidence-collection checklist -->
+        <h2 style="margin-top:1.8rem;">Evidence-collection checklist</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <p class="muted" style="margin-top:0;">Triangulate multiple sources before drawing conclusions — no single data point tells the whole story.</p>
+          <ul class="check-list">
+            <li>Achievement &amp; growth data from interim and summative assessments</li>
+            <li>Classroom walkthrough and observation trends</li>
+            <li>Attendance, behavior, and discipline records</li>
+            <li>Student, staff, and family survey results</li>
+            <li>Work samples and evidence of student learning</li>
+            <li>Implementation-fidelity checklists for each initiative</li>
+            <li>Meeting notes, coaching logs, and professional-learning records</li>
+            <li>Operational and resource-allocation data</li>
+          </ul>
+        </div>
+
+        <!-- (c) Review protocols (drill rows) -->
+        <h2 style="margin-top:1.8rem;">Review protocols</h2>
+        <div class="assess-card" style="margin-top:.8rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">School review meeting</span></div>
+          <div class="drill-panel">
+            <p><b>Cadence:</b> monthly leadership-team meeting on one priority at a time.</p>
+            <p><b>Protocol:</b> review the evidence, name what's working and what isn't, decide adjustments with owners and dates, and record decisions.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Implementation-fidelity check</span></div>
+          <div class="drill-panel">
+            <p><b>Cadence:</b> mid-cycle for each active initiative.</p>
+            <p><b>Protocol:</b> compare what was planned to what is happening in classrooms; identify barriers to faithful implementation and remove them.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Continuous-feedback loop</span></div>
+          <div class="drill-panel">
+            <p><b>Cadence:</b> ongoing.</p>
+            <p><b>Protocol:</b> short, frequent pulse checks and coaching conversations that feed adjustments long before the formal review.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Annual evaluation report</span></div>
+          <div class="drill-panel">
+            <p><b>Cadence:</b> once per year.</p>
+            <p><b>Protocol:</b> synthesize the year's evidence against goals, document outcomes and learning, and set priorities for the next cycle.</p>
+          </div>
+        </div>
+
+        <!-- Review cadence timeline -->
+        <h2 style="margin-top:1.8rem;">Review cadence</h2>
+        <p class="muted">A predictable rhythm of quarterly reviews building to an annual evaluation.</p>
+        <ul class="timeline" style="margin-top:.8rem;">
+          <li class="done"><span class="t-when">Q1 · October</span><br><b>Baseline review</b> — confirm goals, capture starting evidence, check early implementation.</li>
+          <li class="done"><span class="t-when">Q2 · January</span><br><b>Mid-year review</b> — analyze leading indicators, study fidelity, adjust the plan.</li>
+          <li class="now"><span class="t-when">Q3 · March</span><br><b>Progress review</b> — evaluate momentum, scale bright spots, intensify support where needed.</li>
+          <li><span class="t-when">Q4 · May</span><br><b>End-of-cycle review</b> — assess outcomes against goals and prepare findings.</li>
+          <li><span class="t-when">Annual · June</span><br><b>Annual evaluation report</b> — synthesize the year, document learning, set next-cycle priorities.</li>
+        </ul>
+
+        <!-- (d) Goal-monitoring table -->
+        <h2 style="margin-top:1.8rem;">Goal monitoring</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Illustrative goal-monitoring view with evidence and RAG status.</caption>
+            <thead>
+              <tr><th scope="col">Goal</th><th scope="col">Evidence</th><th scope="col">Progress</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Raise reading proficiency to 82%</td><td>Interim assessments, running records</td><td>72% → 78%</td><td><span class="tl-pill amber">On watch</span></td></tr>
+              <tr><td>Reach 95% average attendance</td><td>SIS daily attendance, outreach logs</td><td>89% → 93%</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Retain 90% of teachers</td><td>HR records, exit interviews</td><td>86% → 91%</td><td><span class="tl-pill green">Met</span></td></tr>
+              <tr><td>Cut behavior referrals to 8 per 100</td><td>Discipline data, MTSS logs</td><td>18 → 12</td><td><span class="tl-pill red">Off track</span></td></tr>
+              <tr><td>Lift family engagement to 75%</td><td>Event participation, family survey</td><td>58% → 68%</td><td><span class="tl-pill amber">On watch</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;margin-top:1rem;">All goals, evidence, and statuses are illustrative. Use the review generator above to draft your own quarterly summaries and connect them to your live performance data.</p>
+
+        <div class="btn-row" style="margin-top:1.4rem;">
+          <a class="btn" href="performance.html">View Data &amp; Performance</a>
+          <a class="btn ghost" href="continuous-improvement.html">See the Improvement Cycle</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>School Improvement Operating System</h4><p style="color:#c9d6e6;">An enterprise framework for continuous improvement — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="school-diagnostic.html">Diagnostic</a></li><li><a href="strategic-planning.html">Strategic Planning</a></li><li><a href="performance.html">Performance</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
