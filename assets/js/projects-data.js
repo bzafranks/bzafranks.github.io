@@ -331,5 +331,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🏛️",
     tags: ["National Education Policy", "Systems Transformation", "Leadership Pipeline", "Certification & Licensure", "Succession Planning", "Educational Reform"],
     summary: "A Ministry-of-Education-scale national strategy for building high-performing school leadership systems across an entire country. Built on six system capacities (Standards & Competencies, Pipeline & Talent, Preparation & Academy, Certification & Licensure, Succession & Continuity, Governance & Policy), it includes a National Leadership Dashboard with a regional performance map, a scored National Leadership System Readiness diagnostic, national leadership standards (Emerging→Distinguished), a leadership talent pipeline, a national leadership academy, certification & licensure with digital badges, a succession-management system with a readiness heat map, a policy & governance framework with a policy/leadership brief generator, and a five-phase implementation roadmap. Grounded in OECD/UNESCO leadership, transformational & distributed leadership, and continuous-improvement research, with a through-line to Dr. Franks' doctoral research scaled to the national level. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "leadership-consulting-playbook",
+    title: "Educational Leadership Consulting Playbook",
+    subtitle: "A comprehensive methodology for sustainable educational transformation",
+    pillar: "il",
+    grade: "Leadership · Capstone",
+    status: "done",
+    url: "projects/leadership-consulting-playbook/index.html",
+    icon: "💼",
+    tags: ["Executive Consulting", "Systems Transformation", "Change Management", "Strategic Planning", "Organizational Development", "Capstone"],
+    summary: "The CAPSTONE of the Educational Leadership & School Improvement Suite — a comprehensive consulting methodology for leading sustainable educational transformation from diagnosis through long-term sustainability. Built on a six-phase lifecycle (Discover, Diagnose, Design, Develop, Deliver, Sustain), it includes a Transformation Dashboard, an interactive maturity model, a scored Transformation Readiness diagnostic across six dimensions (leadership, culture, instruction, strategy, talent, innovation), a transformation blueprint generator, an implementation-services catalogue, a Leadership Solutions hub that integrates every framework in the suite, a consulting toolkit, and five client success stories. Integrates Dr. Franks' doctoral dissertation with transformational leadership, school-improvement, continuous-improvement, and organizational-development research, translated into practical consulting tools. Command palette, dark mode, notification center. The flagship methodology that brings the whole Leadership Suite together."
   }
 ];

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation Dashboard — Educational Leadership Consulting Playbook</title>
+  <meta name="description" content="An executive transformation dashboard: leadership capacity, school improvement, teacher retention, strategic implementation, organizational health, culture, professional learning, innovation readiness, and overall transformation progress.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Educational Leadership Consulting Playbook" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">CP</span><span class="brand-text"><span class="brand-title">Leadership Consulting Playbook</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="leadership-solutions.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Playbook">
+        <div class="rail-brand"><span class="mark">CP</span><b>Leadership Consulting Playbook</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Transformation Dashboard</a>
+        <div class="rail-group">Methodology</div>
+        <a class="rail-link" href="methodology.html"><span class="ico">🧭</span> Consulting Methodology</a>
+        <a class="rail-link" href="diagnostic.html"><span class="ico">🔍</span> Discovery &amp; Diagnostic</a>
+        <a class="rail-link" href="blueprint.html"><span class="ico">🗺️</span> Transformation Blueprint</a>
+        <div class="rail-group">Services</div>
+        <a class="rail-link" href="implementation.html"><span class="ico">🛠️</span> Implementation Services</a>
+        <a class="rail-link" href="leadership-solutions.html"><span class="ico">🧩</span> Leadership Solutions</a>
+        <a class="rail-link" href="toolkit.html"><span class="ico">🧰</span> Consulting Toolkit</a>
+        <div class="rail-group">Evidence</div>
+        <a class="rail-link" href="case-studies.html"><span class="ico">🏆</span> Client Success Stories</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Transformation Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Engagement updates">
+                <h4 style="margin:.2rem .4rem .6rem;">Engagement Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Phase 3 (Develop)</b> on track — leadership cohort 78% complete.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--clp-accent-2);"></span><div><b>Diagnostic refresh</b> due for the district engagement.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Culture workstream</b> slightly behind milestone.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="blueprint.html">Open the Blueprint →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Executive Transformation Console</span>
+          <h1>Transformation Dashboard</h1>
+          <p class="lead">Whole-organization transformation progress across leadership, improvement, culture, retention, and innovation. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>Engagement</label><select><option>Riverbend District (all schools)</option><option>Maple Grove Elementary</option><option>Northern Isles Ministry</option></select>
+          <label>Phase</label><select><option>Phase 3 — Develop</option><option>Phase 2 — Design</option><option>Phase 4 — Deliver</option></select>
+          <label>Year</label><select><option>Year 2 of 3</option><option>Year 1</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="74">0</span></div><div class="muted" style="color:#d8f0eb;">Transformation Readiness Index</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Advancing stage</span><span class="sc-trend up" style="color:#9fe0d6;">▲ 13 since baseline</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="68" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Transformation progress</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="82" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Milestones on track</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi teal"><div class="k-label">👤 Leadership Capacity</div><div class="k-num"><span data-count="79" data-suffix="%">0</span></div><div class="k-trend up">▲ 9%</div></div>
+          <div class="kpi green"><div class="k-label">📈 Schools Improving</div><div class="k-num"><span data-count="72" data-suffix="%">0</span></div><div class="k-trend up">▲ 11%</div></div>
+          <div class="kpi green"><div class="k-label">💚 Teacher Retention</div><div class="k-num"><span data-count="88" data-suffix="%">0</span></div><div class="k-trend up">▲ 6%</div></div>
+          <div class="kpi teal"><div class="k-label">🤝 Organizational Health</div><div class="k-num"><span data-count="76" data-suffix="%">0</span></div><div class="k-trend up">▲ 7%</div></div>
+          <div class="kpi green"><div class="k-label">🎓 Professional Learning Hrs</div><div class="k-num"><span data-count="2400">0</span></div><div class="k-trend up">▲ YTD</div></div>
+          <div class="kpi amber"><div class="k-label">🚀 Innovation Readiness</div><div class="k-num"><span data-count="61" data-suffix="%">0</span></div><div class="k-trend up">▲ focus area</div></div>
+        </div>
+
+        <!-- brief + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Engagement Briefing</h4><p>The transformation is <b>Advancing</b> (74, ▲13 since baseline) and in <b>Phase 3 — Develop</b>. Leadership capacity, retention, and improvement are climbing; <b>innovation readiness</b> (61%) and the <b>culture workstream</b> are the focus areas. Recommended next move: accelerate the culture workstream and begin innovation/future-readiness planning. <a href="blueprint.html">Review the blueprint →</a></p></div>
+          <div class="card"><h3 style="margin-top:0;">Transformation Progress Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Transformation progress trend"><path class="area" d="M0,50 L60,46 L120,40 L180,33 L240,27 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,50 L60,46 L120,40 L180,33 L240,27 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Steady gains across the engagement.</p></div>
+        </div>
+
+        <!-- dimension bars + phase progress drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Readiness by Transformation Dimension</h3><div class="barlist">
+            <div class="row"><span>👤 Leadership Capacity</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+            <div class="row"><span>🤝 Culture &amp; Climate</span><span class="track"><span class="fill" data-pct="70"></span></span><b>70%</b></div>
+            <div class="row"><span>📚 Instructional Quality</span><span class="track"><span class="fill" data-pct="75"></span></span><b>75%</b></div>
+            <div class="row"><span>🎯 Strategy &amp; Improvement</span><span class="track"><span class="fill" data-pct="77"></span></span><b>77%</b></div>
+            <div class="row"><span>💚 Talent &amp; Retention</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+            <div class="row"><span>🚀 Innovation &amp; Future-Readiness</span><span class="track"><span class="fill" data-pct="61"></span></span><b>61%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">🧭 Phase Progress <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Phase 1–2 · Discover → Design</b></span><span class="tl-pill green">Complete</span></div>
+            <div class="drill-panel"><p class="muted">Diagnostic, executive transformation report, vision &amp; roadmap delivered and signed off.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Phase 3 · Develop</b></span><span class="tl-pill teal">In progress</span></div>
+            <div class="drill-panel"><p class="muted">Leadership cohort 78% complete; culture &amp; instruction workstreams active. Culture slightly behind.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Phase 4–5 · Deliver → Sustain</b></span><span class="tl-pill amber">Upcoming</span></div>
+            <div class="drill-panel"><p class="muted">Implementation cycles, continuous improvement, distributed leadership &amp; succession to follow.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="diagnostic.html#assessment">🔍 Run the Diagnostic</a>
+          <a class="btn ghost" href="blueprint.html">🗺️ Build a Blueprint</a>
+          <a class="btn ghost" href="leadership-solutions.html">🧩 Matching Solutions</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Educational Leadership Consulting Playbook</h4><p style="color:#c9d6e6;">The capstone of the Educational Leadership &amp; School Improvement Suite — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Playbook</h4><ul><li><a href="methodology.html">Methodology</a></li><li><a href="diagnostic.html">Diagnostic</a></li><li><a href="blueprint.html">Blueprint</a></li><li><a href="leadership-solutions.html">Leadership Solutions</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-studies.html">Success Stories</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
