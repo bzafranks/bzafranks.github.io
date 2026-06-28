@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Dashboard — Accreditation Excellence Framework</title>
+  <meta name="description" content="An executive accreditation dashboard: readiness, standards completion, evidence status, improvement initiatives, compliance trends, school review outcomes, leadership priorities, and risk indicators at a glance.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Accreditation Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AE</span><span class="brand-text"><span class="brand-title">Accreditation Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="compliance-dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Quality assurance system">
+        <div class="rail-brand"><span class="mark">AE</span><b>Accreditation Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Quality Framework</a>
+        <a class="rail-link" href="standards.html"><span class="ico">📋</span> Accreditation Standards</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Prepare</div>
+        <a class="rail-link" href="evidence-management.html"><span class="ico">🗂️</span> Evidence Management</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="compliance-dashboard.html"><span class="ico">📊</span> Compliance Dashboard</a>
+        <a class="rail-link" href="quality-analytics.html"><span class="ico">📈</span> Quality Analytics</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Monitor / <b>Compliance Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Executive View</span>
+          <h1>Compliance Dashboard</h1>
+          <p class="lead">A single executive view of accreditation health: readiness, standards completion, evidence status, improvement initiatives, compliance trends, school review outcomes, leadership priorities, and risk indicators. Designed so leaders can see the whole picture in one glance and drill into what needs attention.</p>
+        </div>
+
+        <!-- ===== HERO GAUGES ===== -->
+        <div class="card" style="padding:1.6rem;margin-bottom:1.4rem;">
+          <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:center;justify-content:center;">
+            <div style="text-align:center;">
+              <div class="gauge" data-gauge="82" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Accreditation readiness</small></div></div>
+              <p style="margin:.6rem 0 0;"><span class="tl-pill amber">Nearly Ready</span></p>
+            </div>
+            <div style="text-align:center;">
+              <div class="gauge" data-gauge="74" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Evidence completion</small></div></div>
+              <p style="margin:.6rem 0 0;"><span class="tl-pill amber">On track</span></p>
+            </div>
+            <div style="flex:1;min-width:240px;max-width:38ch;">
+              <h3 style="margin-top:0;">Where we stand</h3>
+              <p class="muted">Readiness is climbing toward the review window. Evidence collection is the gating activity — three domains still need final artifacts. Leadership priorities below focus the next quarter.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KPI SCORECARDS ===== -->
+        <div class="kpi-grid" style="margin-bottom:1.6rem;">
+          <div class="scorecard green">
+            <div class="sc-label">Standards complete</div>
+            <div class="sc-num"><span data-count="38" data-suffix="/42">0</span></div>
+            <div class="sc-trend up">▲ +6 this quarter</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">Evidence status</div>
+            <div class="sc-num"><span data-count="74" data-suffix="%">0</span></div>
+            <div class="sc-trend up">▲ +9% this quarter</div>
+          </div>
+          <div class="scorecard green">
+            <div class="sc-label">Initiatives on track</div>
+            <div class="sc-num"><span data-count="11" data-suffix="/13">0</span></div>
+            <div class="sc-trend flat">▬ steady</div>
+          </div>
+          <div class="scorecard red">
+            <div class="sc-label">Days to review</div>
+            <div class="sc-num"><span data-count="96">0</span></div>
+            <div class="sc-trend down">▼ closing fast</div>
+          </div>
+        </div>
+
+        <!-- ===== STANDARDS COMPLETION BY DOMAIN ===== -->
+        <div class="card" style="padding:1.4rem;margin-bottom:1.6rem;">
+          <h3 style="margin-top:0;">Standards Completion by Domain</h3>
+          <div class="barlist">
+            <div class="row"><span>⚖️ Leadership &amp; Governance</span><span class="track"><span class="fill" data-pct="92" style="width:92%"></span></span><b>92%</b></div>
+            <div class="row"><span>📚 Teaching &amp; Learning</span><span class="track"><span class="fill" data-pct="85" style="width:85%"></span></span><b>85%</b></div>
+            <div class="row"><span>🎓 Student Success</span><span class="track"><span class="fill" data-pct="78" style="width:78%"></span></span><b>78%</b></div>
+            <div class="row"><span>🤝 People &amp; Professional Capacity</span><span class="track"><span class="fill" data-pct="88" style="width:88%"></span></span><b>88%</b></div>
+            <div class="row"><span>🏛️ Operations &amp; Resources</span><span class="track"><span class="fill" data-pct="64" style="width:64%"></span></span><b>64%</b></div>
+            <div class="row"><span>🔄 Continuous Improvement</span><span class="track"><span class="fill" data-pct="71" style="width:71%"></span></span><b>71%</b></div>
+          </div>
+        </div>
+
+        <!-- ===== STANDARDS STATUS TABLE ===== -->
+        <div class="card" style="padding:1.4rem;margin-bottom:1.6rem;">
+          <h3 style="margin-top:0;">Standards Status</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Standard</th><th>Domain</th><th>Evidence</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1.2 Strategic direction &amp; vision</td><td>Leadership &amp; Governance</td><td>Aligned</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>2.4 Curriculum alignment &amp; rigor</td><td>Teaching &amp; Learning</td><td>Aligned</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>3.1 Student achievement &amp; growth</td><td>Student Success</td><td>Partial</td><td><span class="tl-pill amber">In progress</span></td></tr>
+                <tr><td>4.3 Professional development impact</td><td>People &amp; Professional Capacity</td><td>Aligned</td><td><span class="tl-pill green">Complete</span></td></tr>
+                <tr><td>5.2 Facilities &amp; safety management</td><td>Operations &amp; Resources</td><td>Gap</td><td><span class="tl-pill red">Not started</span></td></tr>
+                <tr><td>5.5 Financial stewardship &amp; audit</td><td>Operations &amp; Resources</td><td>Partial</td><td><span class="tl-pill amber">In progress</span></td></tr>
+                <tr><td>6.1 Improvement cycle &amp; impact</td><td>Continuous Improvement</td><td>Partial</td><td><span class="tl-pill amber">In progress</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== RISK INDICATORS (DRILL ROWS) ===== -->
+        <div class="card" style="padding:1.4rem;margin-bottom:1.6rem;">
+          <h3 style="margin-top:0;">Risk Indicators</h3>
+          <p class="muted" style="margin-top:0;">Areas where readiness could slip before the review. Select a row to see detail and recommended action.</p>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🏛️ Operations &amp; Resources evidence lagging</span><span class="tl-pill red">High</span></div>
+          <div class="drill-panel"><p><b>Signal:</b> Facilities &amp; safety standard (5.2) has no aligned evidence at 96 days out.</p><p><b>Action:</b> Assign an owner this week; pull safety audit, inspection log, and incident records into the Evidence Manager.</p><p><a href="evidence-management.html">Open Evidence Manager →</a></p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🎓 Student Success data gaps</span><span class="tl-pill amber">Medium</span></div>
+          <div class="drill-panel"><p><b>Signal:</b> Achievement &amp; growth standard (3.1) is only partially evidenced; subgroup data incomplete.</p><p><b>Action:</b> Complete subgroup disaggregation; confirm outcome trends and wellbeing survey are attached.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🔄 Improvement-cycle documentation thin</span><span class="tl-pill amber">Medium</span></div>
+          <div class="drill-panel"><p><b>Signal:</b> Improvement plans exist but monitoring records (6.1) are inconsistent across teams.</p><p><b>Action:</b> Standardize quarterly monitoring notes; link each plan to its evidence and impact data.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">⚖️ Governance &amp; teaching evidence strong</span><span class="tl-pill green">Low</span></div>
+          <div class="drill-panel"><p><b>Signal:</b> Leadership/Governance and Teaching/Learning domains are well-evidenced and on track.</p><p><b>Action:</b> Maintain; reuse these as exemplars for weaker domains.</p></div>
+        </div>
+
+        <!-- ===== ACCREDITATION MILESTONES TIMELINE ===== -->
+        <div class="card" style="padding:1.4rem;margin-bottom:1.6rem;">
+          <h3 style="margin-top:0;">Accreditation Milestones</h3>
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Completed</span><h4>Self-Study Launched</h4><p class="muted">Six-domain self-study initiated; baselines captured and owners assigned.</p></li>
+            <li class="done"><span class="t-when">Completed</span><h4>Evidence Mapping</h4><p class="muted">Standards mapped to required artifacts; Evidence Manager populated.</p></li>
+            <li class="now"><span class="t-when">In progress</span><h4>Evidence Completion &amp; Internal Review</h4><p class="muted">Closing partial and gap standards; internal review of the self-study draft.</p></li>
+            <li><span class="t-when">Upcoming</span><h4>Self-Study Submission</h4><p class="muted">Final self-study and evidence portfolio submitted to the accrediting body.</p></li>
+            <li><span class="t-when">Upcoming</span><h4>External Review Visit</h4><p class="muted">Visiting team verifies evidence and outcomes; findings and recommendations issued.</p></li>
+          </ul>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;">All figures, standards, and review outcomes shown are illustrative sample data to demonstrate the dashboard; connect your own quality system to populate live indicators.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Accreditation Excellence Framework</h4><p style="color:#c9d6e6;">A quality-assurance system for institutional excellence — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="standards.html">Standards</a></li><li><a href="readiness.html">Readiness</a></li><li><a href="evidence-management.html">Evidence</a></li><li><a href="compliance-dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; standards &amp; evidence examples are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

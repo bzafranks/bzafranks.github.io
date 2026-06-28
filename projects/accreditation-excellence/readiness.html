@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readiness Assessment — Accreditation Excellence Framework</title>
+  <meta name="description" content="A reflective accreditation-readiness diagnostic across eight areas. Rate indicators to generate a readiness score, gap analysis, priority recommendations, and an improvement roadmap.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Accreditation Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AE</span><span class="brand-text"><span class="brand-title">Accreditation Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="compliance-dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Quality assurance system">
+        <div class="rail-brand"><span class="mark">AE</span><b>Accreditation Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Quality Framework</a>
+        <a class="rail-link" href="standards.html"><span class="ico">📋</span> Accreditation Standards</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Prepare</div>
+        <a class="rail-link" href="evidence-management.html"><span class="ico">🗂️</span> Evidence Management</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="compliance-dashboard.html"><span class="ico">📊</span> Compliance Dashboard</a>
+        <a class="rail-link" href="quality-analytics.html"><span class="ico">📈</span> Quality Analytics</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Diagnose / <b>Readiness Assessment</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🩺 Self-Diagnostic</span>
+          <h1>Accreditation Readiness Assessment</h1>
+          <p class="lead">A reflective diagnostic across eight accreditation areas. Rate each indicator honestly and generate a readiness score, a gap analysis that surfaces your priority areas, recommendations, and an improvement roadmap. Accreditation is continuous improvement — this is a starting point for an honest conversation, not a verdict.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">How to use it</span>
+          <p class="muted" style="margin:.3rem 0 0;">Rate each indicator on a 1–5 scale: <b>1 = Not in place</b>, 2 = Emerging, 3 = Developing, 4 = Mostly in place, <b>5 = Fully embedded</b>. Your responses are scored locally and saved privately in this browser. <em>Indicators are illustrative; the diagnostic is configurable to any accreditation model.</em></p>
+        </div>
+
+        <div data-assessment>
+          <!-- AREA: Leadership Capacity -->
+          <div class="assess-card">
+            <h3>🧭 Leadership Capacity</h3>
+            <div class="assess-item" data-domain="leadership">
+              <p>School leaders set a clear direction and hold the organization accountable for results.</p>
+              <div class="likert" role="group" aria-label="Rate: leaders set clear direction">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="leadership">
+              <p>Leadership decisions are transparent, consistent, and grounded in the institution's mission.</p>
+              <div class="likert" role="group" aria-label="Rate: leadership decisions are mission-grounded">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Teaching Quality -->
+          <div class="assess-card">
+            <h3>📚 Teaching Quality</h3>
+            <div class="assess-item" data-domain="teaching">
+              <p>Curriculum is documented, aligned to standards, and consistently taught across classrooms.</p>
+              <div class="likert" role="group" aria-label="Rate: curriculum is documented and aligned">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="teaching">
+              <p>Formative assessment is used regularly to adjust instruction to student needs.</p>
+              <div class="likert" role="group" aria-label="Rate: formative assessment adjusts instruction">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Student Outcomes -->
+          <div class="assess-card">
+            <h3>🎓 Student Outcomes</h3>
+            <div class="assess-item" data-domain="outcomes">
+              <p>Student achievement and growth are monitored against benchmarks and trend over time.</p>
+              <div class="likert" role="group" aria-label="Rate: achievement and growth are monitored">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="outcomes">
+              <p>Outcome data are disaggregated by group, and gaps trigger targeted action.</p>
+              <div class="likert" role="group" aria-label="Rate: data are disaggregated and gaps acted upon">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Governance -->
+          <div class="assess-card">
+            <h3>⚖️ Governance</h3>
+            <div class="assess-item" data-domain="governance">
+              <p>The governing board operates within clear roles and focuses on direction and oversight.</p>
+              <div class="likert" role="group" aria-label="Rate: board operates within clear roles">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="governance">
+              <p>Policies are current, followed, and reviewed on a defined cycle.</p>
+              <div class="likert" role="group" aria-label="Rate: policies are current and reviewed">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Strategic Planning -->
+          <div class="assess-card">
+            <h3>🎯 Strategic Planning</h3>
+            <div class="assess-item" data-domain="planning">
+              <p>A current strategic plan with measurable goals guides budget and calendar decisions.</p>
+              <div class="likert" role="group" aria-label="Rate: strategic plan guides decisions">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="planning">
+              <p>Progress against plan goals is reviewed regularly and adjustments are documented.</p>
+              <div class="likert" role="group" aria-label="Rate: progress is reviewed regularly">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Evidence Quality -->
+          <div class="assess-card">
+            <h3>🗂️ Evidence Quality</h3>
+            <div class="assess-item" data-domain="evidence">
+              <p>Evidence is organized, current, and aligned to specific standards and indicators.</p>
+              <div class="likert" role="group" aria-label="Rate: evidence is organized and aligned">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="evidence">
+              <p>Claims in the self-study are supported by artifacts and outcome data, not assertion.</p>
+              <div class="likert" role="group" aria-label="Rate: claims are supported by artifacts">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Continuous Improvement -->
+          <div class="assess-card">
+            <h3>🔄 Continuous Improvement</h3>
+            <div class="assess-item" data-domain="improvement">
+              <p>Improvement cycles (plan → act → monitor → reflect) are embedded in routines.</p>
+              <div class="likert" role="group" aria-label="Rate: improvement cycles are embedded">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="improvement">
+              <p>Changes are made because of evidence, and their impact is monitored and documented.</p>
+              <div class="likert" role="group" aria-label="Rate: changes are evidence-driven with monitored impact">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AREA: Stakeholder Engagement -->
+          <div class="assess-card">
+            <h3>🤝 Stakeholder Engagement</h3>
+            <div class="assess-item" data-domain="stakeholders">
+              <p>Families, students, and staff have meaningful, two-way input into improvement.</p>
+              <div class="likert" role="group" aria-label="Rate: stakeholders have two-way input">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="stakeholders">
+              <p>Results and decisions are communicated, and stakeholders can see how feedback was used.</p>
+              <div class="likert" role="group" aria-label="Rate: results communicated and feedback visibly used">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin-top:1.2rem;">
+            <button class="btn" type="button" data-assess-run>Generate Readiness Score</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+          <p class="muted" style="font-size:.85rem;margin-top:.6rem;">Scale: 1 = Not in place · 2 = Emerging · 3 = Developing · 4 = Mostly in place · 5 = Fully embedded.</p>
+        </div>
+
+        <div data-assess-result class="assess-result"></div>
+
+        <div class="btn-row" style="margin-top:1.8rem;">
+          <a class="btn ghost" href="standards.html">Review the Standards</a>
+          <a class="btn ghost" href="evidence-management.html">Open Evidence Manager</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Accreditation Excellence Framework</h4><p style="color:#c9d6e6;">A quality-assurance system for institutional excellence — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="standards.html">Standards</a></li><li><a href="readiness.html">Readiness</a></li><li><a href="evidence-management.html">Evidence</a></li><li><a href="compliance-dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; standards &amp; evidence examples are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

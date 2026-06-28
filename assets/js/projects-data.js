@@ -259,5 +259,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "📈",
     tags: ["Strategic Leadership", "Strategic Planning", "Balanced Scorecard", "Performance Management", "Governance", "Systems Thinking"],
     summary: "A complete strategic-management system for education: a six-stage framework (Discover→Define→Design→Deploy→Measure→Refine), an interactive Vision Builder, SWOT & PESTLE builders, a priority matrix, a Goal & KPI Manager with a live interactive KPI tracker and balanced scorecard, an implementation roadmap, a performance dashboard, and a governance & accountability module. Translates vision into measurable results. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "accreditation-excellence",
+    title: "Accreditation Excellence Framework",
+    subtitle: "Quality assurance, accreditation readiness & institutional excellence",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/accreditation-excellence/index.html",
+    icon: "🏅",
+    tags: ["School Accreditation", "Quality Assurance", "Institutional Effectiveness", "Continuous Improvement", "Evidence Management", "Educational Consulting"],
+    summary: "A complete institutional quality-assurance system that turns accreditation from a compliance event into everyday improvement: a six-domain quality framework, a configurable standards explorer + self-study generator, a scored 8-area Readiness Assessment with gap analysis, an interactive Evidence Manager (add/track/align artifacts with completion stats), a continuous-improvement module, a compliance dashboard, and a School Health Index in quality analytics. Aligns to Cognia/CIS/WASC/Middle States/ISO. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Management — Accreditation Excellence Framework</title>
+  <meta name="description" content="A centralized evidence system — repository, organization, version control, tagging, standards alignment, review workflow, approval, and quality indicators — with an interactive evidence tracker and completion analytics.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Accreditation Excellence Framework" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">AE</span><span class="brand-text"><span class="brand-title">Accreditation Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="readiness.html">Readiness</a></li>
+        <li><a href="compliance-dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Quality assurance system">
+        <div class="rail-brand"><span class="mark">AE</span><b>Accreditation Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Quality Framework</a>
+        <a class="rail-link" href="standards.html"><span class="ico">📋</span> Accreditation Standards</a>
+        <div class="rail-group">Diagnose</div>
+        <a class="rail-link" href="readiness.html"><span class="ico">🩺</span> Readiness Assessment</a>
+        <div class="rail-group">Prepare</div>
+        <a class="rail-link" href="evidence-management.html"><span class="ico">🗂️</span> Evidence Management</a>
+        <a class="rail-link" href="continuous-improvement.html"><span class="ico">🔄</span> Continuous Improvement</a>
+        <div class="rail-group">Monitor</div>
+        <a class="rail-link" href="compliance-dashboard.html"><span class="ico">📊</span> Compliance Dashboard</a>
+        <a class="rail-link" href="quality-analytics.html"><span class="ico">📈</span> Quality Analytics</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Prepare / <b>Evidence Management</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗂️ Evidence System</span>
+          <h1>Evidence Management</h1>
+          <p class="lead">A centralized home for your accreditation evidence — one repository for organizing, version-controlling, tagging, and aligning every artifact to a standard, with a review-and-approval workflow and quality indicators. Track collection progress, see what is complete, and walk artifacts from upload to approval.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Reviewers weigh evidence quality, not quantity. The strongest evidence is current, aligned to a specific indicator, triangulated across sources, and shows impact. <em>Standards &amp; evidence shown are illustrative; your evidence log is saved privately in this browser.</em></p>
+        </div>
+
+        <!-- ===== (a) Completion analytics ===== -->
+        <h2>Evidence Completion</h2>
+        <div class="stat-strip" style="margin-top:.6rem;">
+          <div class="stat-tile">
+            <div class="s-num"><span data-ev-total>0</span></div>
+            <div class="s-label">Artifacts logged</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-ev-done>0</span></div>
+            <div class="s-label">Complete &amp; approved</div>
+          </div>
+          <div class="stat-tile">
+            <div class="s-num"><span data-ev-pct>0%</span></div>
+            <div class="s-label">Collection complete</div>
+          </div>
+        </div>
+
+        <div class="barlist" style="margin:1rem 0 2rem;">
+          <div class="row">
+            <span>Evidence completion</span>
+            <span class="track"><span class="fill" data-ev-fill style="width:0%"></span></span>
+            <b><span data-ev-pct>0%</span></b>
+          </div>
+        </div>
+
+        <!-- ===== (b) Interactive evidence tracker ===== -->
+        <h2>Evidence Tracker</h2>
+        <p class="muted" style="margin:.2rem 0 1rem;max-width:70ch;">Add each artifact, align it to a quality domain, and set its review status. Completion analytics above update automatically. Your log is stored privately in this browser — nothing is uploaded.</p>
+
+        <div data-evidence>
+          <div class="ev-add">
+            <div class="field" style="margin-bottom:0;">
+              <label for="ev-name">Evidence / artifact</label>
+              <input id="ev-name" data-ev-name type="text" placeholder="Evidence / artifact name">
+            </div>
+            <div class="field" style="margin-bottom:0;">
+              <label for="ev-standard">Aligned domain</label>
+              <select id="ev-standard" data-ev-standard>
+                <option>Leadership &amp; Governance</option>
+                <option>Teaching &amp; Learning</option>
+                <option>Student Success</option>
+                <option>People &amp; Professional Capacity</option>
+                <option>Operations &amp; Resources</option>
+                <option>Continuous Improvement</option>
+              </select>
+            </div>
+            <div class="field" style="margin-bottom:0;">
+              <label for="ev-status">Status</label>
+              <select id="ev-status" data-ev-status>
+                <option>Not started</option>
+                <option>In progress</option>
+                <option>Complete</option>
+              </select>
+            </div>
+            <button class="btn" type="button" data-ev-add>Add evidence</button>
+          </div>
+
+          <div class="ev-list" data-ev-list></div>
+
+          <div class="btn-row" style="margin-top:1rem;">
+            <button class="out-btn" type="button" data-ev-clear>Clear log</button>
+          </div>
+        </div>
+
+        <!-- ===== (c) Workflow guide ===== -->
+        <h2 style="margin-top:2.4rem;">Evidence Workflow</h2>
+        <p class="muted" style="margin:.2rem 0 1rem;max-width:70ch;">Every artifact moves through five stages. Click each step to expand it.</p>
+
+        <div class="assess-card" style="padding:.4rem 1.3rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">1 · Upload &amp; version control</span><span class="tl-pill bronze">Repository</span></div>
+          <div class="drill-panel"><p>Add the artifact to the central repository. Keep a single source of truth: name files consistently, capture the date, and retain prior versions so reviewers see the current document and its history.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">2 · Tag &amp; organize</span><span class="tl-pill bronze">Metadata</span></div>
+          <div class="drill-panel"><p>Apply tags — domain, year, owner, source type — so any artifact is findable. Good metadata is what turns a folder of files into an evidence system.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">3 · Align to a standard</span><span class="tl-pill amber">Alignment</span></div>
+          <div class="drill-panel"><p>Map the artifact to the specific standard and indicator it supports. One strong artifact may evidence several indicators; note each alignment explicitly. See the <a href="standards.html">standards library</a>.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">4 · Review for quality</span><span class="tl-pill amber">Workflow</span></div>
+          <div class="drill-panel"><p>A reviewer checks the artifact against the quality indicators: is it current, relevant, triangulated, and does it show impact? Weak or dated evidence is flagged for replacement.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">5 · Approve &amp; finalize</span><span class="tl-pill green">Approval</span></div>
+          <div class="drill-panel"><p>An approver marks the artifact complete and ready for the self-study. Approved evidence counts toward your completion analytics above.</p></div>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Evidence Quality Indicators</span>
+          <p class="muted" style="margin:.3rem 0 0;">Strong evidence is <b>current</b> (reflects present practice), <b>aligned</b> (maps to a named indicator), <b>triangulated</b> (corroborated across sources), and <b>impact-bearing</b> (shows a result, not just an activity). When you log artifacts above, set status to <b>Complete</b> only once an artifact meets these tests. <em>All examples are illustrative.</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.8rem;">
+          <a class="btn" href="readiness.html">Re-check Readiness</a>
+          <a class="btn ghost" href="standards.html">Align to Standards</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Accreditation Excellence Framework</h4><p style="color:#c9d6e6;">A quality-assurance system for institutional excellence — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="standards.html">Standards</a></li><li><a href="readiness.html">Readiness</a></li><li><a href="evidence-management.html">Evidence</a></li><li><a href="compliance-dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; standards &amp; evidence examples are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
