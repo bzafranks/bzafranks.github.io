@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Leadership Academy — National Leadership Excellence Initiative</title>
+  <meta name="description" content="A national leadership development ecosystem: leadership preparation, certification programs, executive coaching, professional learning, microcredentials, simulations, mentoring, and continuous PD.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="National Leadership Excellence Initiative" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">NLE</span><span class="brand-text"><span class="brand-title">National Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Initiative">
+        <div class="rail-brand"><span class="mark">NLE</span><b>National Leadership Excellence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> National Dashboard</a>
+        <div class="rail-group">Strategy</div>
+        <a class="rail-link" href="strategy.html"><span class="ico">🧭</span> National Strategy</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="pipeline.html"><span class="ico">🔑</span> Leadership Pipeline</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🎓</span> Leadership Academy</a>
+        <a class="rail-link" href="certification.html"><span class="ico">📜</span> Certification</a>
+        <a class="rail-link" href="succession.html"><span class="ico">🔄</span> Succession Planning</a>
+        <div class="rail-group">Govern</div>
+        <a class="rail-link" href="policy.html"><span class="ico">🏛️</span> Policy &amp; Governance</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Develop / <b>Leadership Academy</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="National updates">
+                <h4 style="margin:.2rem .4rem .6rem;">National Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Leadership Academy</b> graduated Cohort 3 — 142 certified leaders.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--nle-accent-2);"></span><div><b>Northern Region</b> certification rate up to 81%.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Eastern Region</b> succession readiness below target.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="succession.html">Open Succession Planning →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎓 Preparation &amp; PD</span>
+          <h1>National Leadership Academy</h1>
+          <p class="lead">A national leadership development ecosystem — preparation, certification, coaching, and continuous professional learning that grows leaders at every stage of their career. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="af-cohort">Cohort</label><select id="af-cohort"><option>All cohorts</option><option>Cohort 4 (current)</option><option>Cohort 3</option><option>Cohort 2</option><option>Cohort 1</option></select>
+          <label for="af-program">Program</label><select id="af-program"><option>All programs</option><option>Leadership preparation</option><option>Executive coaching</option><option>Microcredentials</option><option>Mentoring</option></select>
+          <label for="af-region">Region</label><select id="af-region"><option>National (all regions)</option><option>Northern</option><option>Southern</option><option>Eastern</option><option>Western</option><option>Capital</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- Academy stats -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi gold"><div class="k-label">👥 Active Cohorts</div><div class="k-num"><span data-count="12">0</span></div><div class="k-trend up">▲ 3</div></div>
+          <div class="kpi green"><div class="k-label">🎓 Graduates to Date</div><div class="k-num"><span data-count="1480">0</span></div><div class="k-trend up">▲ Cohort 3</div></div>
+          <div class="kpi green"><div class="k-label">✅ Completion Rate</div><div class="k-num"><span data-count="91" data-suffix="%">0</span></div><div class="k-trend up">▲ 4%</div></div>
+          <div class="kpi gold"><div class="k-label">⭐ Participant Satisfaction</div><div class="k-num"><span data-count="94" data-suffix="%">0</span></div><div class="k-trend up">▲ 2%</div></div>
+          <div class="kpi green"><div class="k-label">🧑‍🏫 Active Mentors</div><div class="k-num"><span data-count="320">0</span></div><div class="k-trend up">▲ 38</div></div>
+          <div class="kpi green"><div class="k-label">🏅 Microcredentials Issued</div><div class="k-num"><span data-count="2640">0</span></div><div class="k-trend up">▲ 18%</div></div>
+        </div>
+
+        <!-- Programs -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🎓 Academy Programs <span class="muted" style="font-size:.85rem;font-weight:400;">— an integrated development ecosystem</span></h3>
+          <div class="tool-grid">
+            <a class="tool-card" href="certification.html"><div class="t-ico" aria-hidden="true">🧭</div><h4>Leadership Preparation</h4><p>Structured preparation for aspiring and new leaders, aligned to the national leadership standards.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="certification.html"><div class="t-ico" aria-hidden="true">📜</div><h4>Certification Programs</h4><p>Competency-based programs leading to principal certification and leadership endorsements.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="#journey"><div class="t-ico" aria-hidden="true">🎯</div><h4>Executive Coaching</h4><p>One-to-one coaching for principals and system leaders, focused on real-time challenges.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="resources.html"><div class="t-ico" aria-hidden="true">📚</div><h4>Professional Learning</h4><p>Job-embedded learning communities and courses on instructional and school-improvement leadership.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="certification.html"><div class="t-ico" aria-hidden="true">🏅</div><h4>Microcredentials</h4><p>Stackable, competency-based badges that recognize discrete leadership skills as they are mastered.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="#simulation"><div class="t-ico" aria-hidden="true">🎮</div><h4>Leadership Simulations</h4><p>Immersive scenario practice — staffing crises, budgets, and community decisions — in a safe environment.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="pipeline.html"><div class="t-ico" aria-hidden="true">🤝</div><h4>Mentoring</h4><p>Matching new leaders with experienced mentors to accelerate readiness and reduce early turnover.</p><span class="t-go">Explore →</span></a>
+            <a class="tool-card" href="resources.html"><div class="t-ico" aria-hidden="true">🔁</div><h4>Continuous PD</h4><p>Ongoing, renewal-linked development that keeps experienced leaders current and growing.</p><span class="t-go">Explore →</span></a>
+          </div>
+        </div>
+
+        <!-- Learning journey timeline -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card" id="journey"><h3 style="margin-top:0;">🛤️ The academy learning journey</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Stage 1 · Identify</span><div><b>Selection &amp; onboarding</b> — identified leaders enter a cohort with a readiness baseline and learning plan.</div></li>
+              <li class="done"><span class="t-when">Stage 2 · Build</span><div><b>Core preparation</b> — coursework and professional learning aligned to the national leadership standards.</div></li>
+              <li class="now"><span class="t-when">Stage 3 · Apply</span><div><b>Simulations &amp; practicum</b> — scenario practice and a supervised on-the-job leadership project.</div></li>
+              <li><span class="t-when">Stage 4 · Coach</span><div><b>Coaching &amp; mentoring</b> — individualized support from an executive coach and a peer mentor.</div></li>
+              <li><span class="t-when">Stage 5 · Certify</span><div><b>Certification &amp; placement</b> — competency assessment, credential, and placement into the pipeline.</div></li>
+              <li><span class="t-when">Ongoing</span><div><b>Continuous PD</b> — renewal-linked learning that sustains and grows leadership over a career.</div></li>
+            </ul>
+          </div>
+
+          <div class="card"><h3 style="margin-top:0;">Program enrollment <span class="muted" style="font-size:.85rem;font-weight:400;">— share of active participants</span></h3><div class="barlist">
+            <div class="row"><span>🧭 Leadership Preparation</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+            <div class="row"><span>📜 Certification Programs</span><span class="track"><span class="fill" data-pct="68"></span></span><b>68%</b></div>
+            <div class="row"><span>🎯 Executive Coaching</span><span class="track"><span class="fill" data-pct="44"></span></span><b>44%</b></div>
+            <div class="row"><span>📚 Professional Learning</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>🏅 Microcredentials</span><span class="track"><span class="fill" data-pct="58"></span></span><b>58%</b></div>
+            <div class="row"><span>🤝 Mentoring</span><span class="track"><span class="fill" data-pct="61"></span></span><b>61%</b></div>
+          </div>
+          <p class="muted" style="font-size:.84rem;margin-top:.8rem;">Participants typically engage in several programs at once across the learning journey.</p></div>
+        </div>
+
+        <!-- Simulation drilldown -->
+        <div class="card" id="simulation" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🎮 Inside a leadership simulation <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>The scenario</b></span><span class="tl-pill gold">Practicum</span></div>
+          <div class="drill-panel"><p class="muted">A new principal arrives to a sudden teacher shortage, a strained budget, and an anxious community. Over a simulated term, participants make staffing, communication, and resourcing decisions and see the consequences ripple through the school.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>What it develops</b></span><span class="tl-pill green-d">Competencies</span></div>
+          <div class="drill-panel"><p class="muted">Decision-making under pressure, ethical reasoning, stakeholder communication, and the ability to keep instruction central in a crisis — practiced safely before the stakes are real.</p>
+            <ul class="muted" style="margin:.4rem 0 0 1.1rem;"><li>Crisis &amp; change leadership</li><li>People &amp; community leadership</li><li>Resource stewardship &amp; trade-offs</li></ul></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>How it is assessed</b></span><span class="tl-pill amber">Feedback</span></div>
+          <div class="drill-panel"><p class="muted">Coaches review each decision branch with the participant against the national leadership standards, producing a personalized growth report that feeds the next stage of the journey.</p></div>
+        </div>
+
+        <!-- Research note -->
+        <div class="card research" style="margin-bottom:1.4rem;">
+          <span class="tag">Adult learning &amp; leadership preparation</span>
+          <p style="margin:.4rem 0 0;">Effective leadership preparation reflects what is known about adult learning: it is experiential, problem-centered, and job-embedded, pairing rigorous coursework with coaching, practice, and reflection. Programs that blend simulations, mentoring, and authentic projects show stronger transfer to practice than coursework alone. <em>Illustrative summary; verify against current research.</em></p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="certification.html">📜 See certification pathways</a>
+          <a class="btn ghost" href="pipeline.html">🔑 Back to the Pipeline</a>
+          <a class="btn ghost" href="dashboard.html">📊 National Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>National Leadership Excellence Initiative</h4><p style="color:#c9d6e6;">A comprehensive national strategy for building high-performing school leadership systems — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Initiative</h4><ul><li><a href="strategy.html">National Strategy</a></li><li><a href="pipeline.html">Leadership Pipeline</a></li><li><a href="academy.html">Leadership Academy</a></li><li><a href="succession.html">Succession Planning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

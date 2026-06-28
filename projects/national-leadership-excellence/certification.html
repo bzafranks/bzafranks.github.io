@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certification &amp; Licensure — National Leadership Excellence Initiative</title>
+  <meta name="description" content="A national certification framework: principal certification, leadership endorsements, professional standards, competency assessments, renewal requirements, professional portfolios, leadership credentials, and digital badges.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="National Leadership Excellence Initiative" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">NLE</span><span class="brand-text"><span class="brand-title">National Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Initiative">
+        <div class="rail-brand"><span class="mark">NLE</span><b>National Leadership Excellence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> National Dashboard</a>
+        <div class="rail-group">Strategy</div>
+        <a class="rail-link" href="strategy.html"><span class="ico">🧭</span> National Strategy</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="pipeline.html"><span class="ico">🔑</span> Leadership Pipeline</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🎓</span> Leadership Academy</a>
+        <a class="rail-link" href="certification.html"><span class="ico">📜</span> Certification</a>
+        <a class="rail-link" href="succession.html"><span class="ico">🔄</span> Succession Planning</a>
+        <div class="rail-group">Govern</div>
+        <a class="rail-link" href="policy.html"><span class="ico">🏛️</span> Policy &amp; Governance</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Develop / <b>Certification</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="National updates">
+                <h4 style="margin:.2rem .4rem .6rem;">National Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Leadership Academy</b> graduated Cohort 3 — 142 certified leaders.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--nle-accent-2);"></span><div><b>Northern Region</b> certification rate up to 81%.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Eastern Region</b> succession readiness below target.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="succession.html">Open Succession Planning →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📜 Licensure &amp; Credentials</span>
+          <h1>Certification &amp; Licensure</h1>
+          <p class="lead">A national certification framework — professional standards, competency assessments, credentials, and renewal — that defines what it means to be a qualified school and system leader. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="cf-cred">Credential</label><select id="cf-cred"><option>All credentials</option><option>Certified School Leader</option><option>Instructional Leadership Endorsement</option><option>Executive Leadership Credential</option><option>Mentor Leader</option></select>
+          <label for="cf-status">Status</label><select id="cf-status"><option>All statuses</option><option>Active</option><option>Due for renewal</option><option>In progress</option></select>
+          <label for="cf-region">Region</label><select id="cf-region"><option>National (all regions)</option><option>Northern</option><option>Southern</option><option>Eastern</option><option>Western</option><option>Capital</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- Certification stats + national rate gauge -->
+        <div class="grid" style="grid-template-columns:1fr 1fr 1fr 1fr;gap:1.1rem;margin-bottom:1.4rem;">
+          <div class="kpi green"><div class="k-label">📜 Certified Leaders</div><div class="k-num"><span data-count="8420">0</span></div><div class="k-trend up">▲ 14%</div></div>
+          <div class="kpi gold"><div class="k-label">🏅 Endorsements Held</div><div class="k-num"><span data-count="3110">0</span></div><div class="k-trend up">▲ 12%</div></div>
+          <div class="kpi amber"><div class="k-label">🔁 Due for Renewal</div><div class="k-num"><span data-count="640">0</span></div><div class="k-trend flat">● this year</div></div>
+          <div class="kpi green"><div class="k-label">📂 Portfolios Submitted</div><div class="k-num"><span data-count="96" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+        </div>
+
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card" style="text-align:center;display:grid;place-items:center;"><h3 style="margin-top:0;">National certification rate</h3><div class="gauge" data-gauge="78" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>of serving leaders</small></div></div><p class="muted" style="font-size:.84rem;margin-top:.8rem;">Share of serving school and system leaders holding a current national credential — up from 64% at the start of the rollout.</p></div>
+          <div class="card exec-brief"><h4>📋 Why certification matters</h4><p>Certification turns the national leadership standards into a guarantee: every credentialed leader has demonstrated the competencies the system expects. Tied to renewal and continuing requirements, it keeps leadership current rather than a one-time milestone — and gives families, staff, and government a clear assurance of quality. <a href="leadership-standards.html">See the standards →</a></p></div>
+        </div>
+
+        <!-- Certification pathways table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📜 Certification pathways <span class="muted" style="font-size:.85rem;font-weight:400;">— credentials, requirements &amp; renewal (illustrative)</span></h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Credential</th><th scope="col">Level</th><th scope="col">Requirements</th><th scope="col">Renewal</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Certified School Leader</th><td>Principal</td><td>Leadership preparation program, competency assessment, supervised practicum, professional portfolio</td><td>Every 5 years · continuing PD hours</td></tr>
+                <tr><th scope="row">Instructional Leadership Endorsement</th><td>Add-on</td><td>Evidence of instructional-leadership impact, microcredential set, observation cycle</td><td>Every 3 years · renewal portfolio</td></tr>
+                <tr><th scope="row">Executive Leadership Credential</th><td>District / System</td><td>Advanced competency assessment, system-leadership project, executive coaching record</td><td>Every 5 years · continuing PD + review</td></tr>
+                <tr><th scope="row">Mentor Leader</th><td>Add-on</td><td>Active certification, mentoring training, evidence of mentee growth</td><td>Every 3 years · mentoring hours</td></tr>
+                <tr><th scope="row">Aspiring Leader Certificate</th><td>Entry</td><td>Completion of preparation pathway, foundational competency assessment</td><td>Convert to Certified School Leader within 3 years</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Digital badges -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🏅 Digital leadership badges <span class="muted" style="font-size:.85rem;font-weight:400;">— portable, verifiable credentials</span></h3>
+          <p class="muted" style="margin-top:0;">Each credential is issued as a verifiable digital badge that leaders can carry across schools and regions.</p>
+          <div>
+            <span class="badge">📜 Certified School Leader</span>
+            <span class="badge">📐 Instructional Leadership Endorsement</span>
+            <span class="badge">🏛️ Executive Leadership Credential</span>
+            <span class="badge">🤝 Mentor Leader</span>
+            <span class="badge">🌱 Aspiring Leader Certificate</span>
+          </div>
+        </div>
+
+        <!-- Competency assessment bars + renewal drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Competency assessment results <span class="muted" style="font-size:.85rem;font-weight:400;">— pass rate by domain</span></h3><div class="barlist">
+            <div class="row"><span>📐 Instructional Leadership</span><span class="track"><span class="fill" data-pct="84"></span></span><b>84%</b></div>
+            <div class="row"><span>🤝 People Leadership</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+            <div class="row"><span>🗂️ Operational Leadership</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+            <div class="row"><span>🌍 System &amp; Community</span><span class="track"><span class="fill" data-pct="69"></span></span><b>69%</b></div>
+            <div class="row"><span>⚖️ Ethics &amp; Equity</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+          </div>
+          <p class="muted" style="font-size:.84rem;margin-top:.8rem;">Assessments are competency-based and aligned to the national professional standards for leadership.</p></div>
+
+          <div class="card"><h3 style="margin-top:0;">🔁 Renewal &amp; continuing requirements <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Continuing professional development</b></span><span class="tl-pill green-d">Required</span></div>
+            <div class="drill-panel"><p class="muted">Credential holders complete continuing PD hours each renewal cycle — drawn from academy programs, microcredentials, and learning communities — to keep their practice current.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Professional portfolio</b></span><span class="tl-pill gold">Evidence</span></div>
+            <div class="drill-panel"><p class="muted">At renewal, leaders submit a professional portfolio of leadership impact — evidence mapped to the standards, reflection, and outcomes — reviewed by a certification panel.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Standing &amp; lapses</b></span><span class="tl-pill amber">Status</span></div>
+            <div class="drill-panel"><p class="muted">Credentials in good standing remain active; those approaching expiry are flagged for renewal, and lapsed credentials follow a defined reinstatement pathway.</p></div>
+          </div>
+        </div>
+
+        <!-- Research / illustrative note -->
+        <div class="card research" style="margin-bottom:1.4rem;">
+          <span class="tag">Professional standards</span>
+          <p style="margin:.4rem 0 0;">National professional standards and competency-based licensure are widely used to define and assure leadership quality. When certification is tied to demonstrated competencies and periodic renewal — rather than seat time alone — it supports continuous improvement and public confidence in school leadership. <em>Illustrative summary; verify against current national policy.</em></p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="leadership-standards.html">📐 View Leadership Standards</a>
+          <a class="btn ghost" href="academy.html">🎓 Back to the Academy</a>
+          <a class="btn ghost" href="dashboard.html">📊 National Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>National Leadership Excellence Initiative</h4><p style="color:#c9d6e6;">A comprehensive national strategy for building high-performing school leadership systems — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Initiative</h4><ul><li><a href="strategy.html">National Strategy</a></li><li><a href="pipeline.html">Leadership Pipeline</a></li><li><a href="academy.html">Leadership Academy</a></li><li><a href="succession.html">Succession Planning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

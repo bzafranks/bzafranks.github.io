@@ -319,5 +319,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🎓",
     tags: ["Leadership Evaluation", "Executive Coaching", "Professional Growth", "360° Feedback", "Leadership Development", "Performance Management"],
     summary: "A comprehensive executive leadership development system that reframes leadership evaluation as growth, not compliance. Built on six leadership domains (Visionary, Instructional, People, Strategic, Operational, Ethical), it includes a Performance Dashboard, a scored 6-domain Leadership Self-Assessment (Leadership Performance Index), a Standards explorer (Emerging→Distinguished), a 360° multi-source feedback dashboard with heat maps, an Executive Coaching cycle with a reflection journal, a coaching/growth-plan generator plus a saved growth-plan builder, a digital Leadership Portfolio, and Leadership Analytics. Grounded in transformational & instructional leadership, executive coaching, and adult-learning research, with a through-line to Dr. Franks' doctoral research on how leadership growth influences teacher satisfaction, culture & retention. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "national-leadership-excellence",
+    title: "National Leadership Excellence Initiative",
+    subtitle: "A national strategy for high-performing school leadership systems",
+    pillar: "il",
+    grade: "Leadership · National System",
+    status: "done",
+    url: "projects/national-leadership-excellence/index.html",
+    icon: "🏛️",
+    tags: ["National Education Policy", "Systems Transformation", "Leadership Pipeline", "Certification & Licensure", "Succession Planning", "Educational Reform"],
+    summary: "A Ministry-of-Education-scale national strategy for building high-performing school leadership systems across an entire country. Built on six system capacities (Standards & Competencies, Pipeline & Talent, Preparation & Academy, Certification & Licensure, Succession & Continuity, Governance & Policy), it includes a National Leadership Dashboard with a regional performance map, a scored National Leadership System Readiness diagnostic, national leadership standards (Emerging→Distinguished), a leadership talent pipeline, a national leadership academy, certification & licensure with digital badges, a succession-management system with a readiness heat map, a policy & governance framework with a policy/leadership brief generator, and a five-phase implementation roadmap. Grounded in OECD/UNESCO leadership, transformational & distributed leadership, and continuous-improvement research, with a through-line to Dr. Franks' doctoral research scaled to the national level. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

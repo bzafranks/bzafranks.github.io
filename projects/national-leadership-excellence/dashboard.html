@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Leadership Dashboard — National Leadership Excellence Initiative</title>
+  <meta name="description" content="A Ministry-level national dashboard: leadership capacity, certification rates, vacancies, succession readiness, professional learning, teacher retention, school improvement, and regional performance.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="National Leadership Excellence Initiative" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">NLE</span><span class="brand-text"><span class="brand-title">National Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Initiative">
+        <div class="rail-brand"><span class="mark">NLE</span><b>National Leadership Excellence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> National Dashboard</a>
+        <div class="rail-group">Strategy</div>
+        <a class="rail-link" href="strategy.html"><span class="ico">🧭</span> National Strategy</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="pipeline.html"><span class="ico">🔑</span> Leadership Pipeline</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🎓</span> Leadership Academy</a>
+        <a class="rail-link" href="certification.html"><span class="ico">📜</span> Certification</a>
+        <a class="rail-link" href="succession.html"><span class="ico">🔄</span> Succession Planning</a>
+        <div class="rail-group">Govern</div>
+        <a class="rail-link" href="policy.html"><span class="ico">🏛️</span> Policy &amp; Governance</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>National Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="National updates">
+                <h4 style="margin:.2rem .4rem .6rem;">National Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Leadership Academy</b> graduated Cohort 3 — 142 certified leaders.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--nle-accent-2);"></span><div><b>Northern Region</b> certification rate up to 81%.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Eastern Region</b> succession readiness below target.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="succession.html">Open Succession Planning →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Ministry Command Center</span>
+          <h1>National Leadership Dashboard</h1>
+          <p class="lead">Leadership capacity, certification, succession, and regional performance across the national education system. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>Region</label><select><option>National (all regions)</option><option>Northern</option><option>Southern</option><option>Eastern</option><option>Western</option><option>Capital</option></select>
+          <label>Year</label><select><option>Year 3 of 5</option><option>Year 2</option><option>Year 1</option></select>
+          <label>Level</label><select><option>All leadership levels</option><option>Principals</option><option>District Leaders</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="72">0</span></div><div class="muted" style="color:#e9f1ec;">National Leadership Readiness</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Established</span><span class="sc-trend up" style="color:#9fe0b4;">▲ 11 since Year 1</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="78" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Certified leaders</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="64" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Succession ready</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi gold"><div class="k-label">🎓 Leaders in Academy Pipeline</div><div class="k-num"><span data-count="1240">0</span></div><div class="k-trend up">▲ Cohort 3</div></div>
+          <div class="kpi green"><div class="k-label">📜 Certification Rate</div><div class="k-num"><span data-count="78" data-suffix="%">0</span></div><div class="k-trend up">▲ 14%</div></div>
+          <div class="kpi amber"><div class="k-label">🪑 Critical Vacancies</div><div class="k-num"><span data-count="63">0</span></div><div class="k-trend down">▲ ↓ 9%</div></div>
+          <div class="kpi green"><div class="k-label">💚 Teacher Retention</div><div class="k-num"><span data-count="87" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+          <div class="kpi green"><div class="k-label">📈 Schools Improving</div><div class="k-num"><span data-count="71" data-suffix="%">0</span></div><div class="k-trend up">▲ 8%</div></div>
+          <div class="kpi gold"><div class="k-label">🌍 Regions On Track</div><div class="k-num"><span data-count="4" data-suffix="/5">0</span></div><div class="k-trend up">▲ 1</div></div>
+        </div>
+
+        <!-- brief + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Ministry Briefing</h4><p>National Leadership Readiness is <b>Established</b> (72, ▲11 since Year 1). Certification is climbing (78%, ▲14) and the academy pipeline is strong. Watch area: <b>succession readiness</b> (64%) and the Eastern Region. Recommended focus: accelerate talent pools in under-served regions and protect academy funding. <a href="succession.html">Review succession →</a></p></div>
+          <div class="card"><h3 style="margin-top:0;">National Readiness Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="National readiness trend"><path class="area" d="M0,50 L60,46 L120,40 L180,34 L240,28 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,50 L60,46 L120,40 L180,34 L240,28 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Steady multi-year growth across the rollout.</p></div>
+        </div>
+
+        <!-- regional performance map -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🌍 Regional Performance <span class="muted" style="font-size:.85rem;font-weight:400;">— leadership readiness by region (illustrative)</span></h3>
+          <div class="region-grid">
+            <div class="region-card r-green"><div class="r-name">Capital</div><div class="r-stat">84</div><div class="r-sub">Leading · 86% certified</div></div>
+            <div class="region-card r-green"><div class="r-name">Northern</div><div class="r-stat">76</div><div class="r-sub">Established · 81% certified</div></div>
+            <div class="region-card r-amber"><div class="r-name">Southern</div><div class="r-stat">69</div><div class="r-sub">Established · 74% certified</div></div>
+            <div class="region-card r-amber"><div class="r-name">Western</div><div class="r-stat">66</div><div class="r-sub">Emerging · 71% certified</div></div>
+            <div class="region-card r-red"><div class="r-name">Eastern</div><div class="r-stat">58</div><div class="r-sub">Emerging · 63% certified</div></div>
+          </div>
+        </div>
+
+        <!-- system capacity bars + priorities drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">System Capacity by Dimension</h3><div class="barlist">
+            <div class="row"><span>📐 Standards &amp; Competencies</span><span class="track"><span class="fill" data-pct="82"></span></span><b>82%</b></div>
+            <div class="row"><span>🔑 Pipeline &amp; Talent</span><span class="track"><span class="fill" data-pct="70"></span></span><b>70%</b></div>
+            <div class="row"><span>🎓 Preparation &amp; Academy</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>📜 Certification &amp; Licensure</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+            <div class="row"><span>🔄 Succession &amp; Continuity</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+            <div class="row"><span>🏛️ Governance &amp; Policy</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">🎯 National Priorities <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Strengthen succession in under-served regions</b></span><span class="tl-pill amber">Priority</span></div>
+            <div class="drill-panel"><p class="muted">Build regional talent pools &amp; retirement forecasting; target Eastern &amp; Western regions first.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Scale the leadership pipeline</b></span><span class="tl-pill gold">In progress</span></div>
+            <div class="drill-panel"><p class="muted">Expand teacher-leadership &amp; aspiring-leader entry points to widen the talent base.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Sustain academy &amp; certification funding</b></span><span class="tl-pill green-d">On track</span></div>
+            <div class="drill-panel"><p class="muted">Multi-year funding tied to certification &amp; retention indicators.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="strategy.html#assessment">🧭 Run the Readiness Diagnostic</a>
+          <a class="btn ghost" href="roadmap.html">🗺️ Implementation Roadmap</a>
+          <a class="btn ghost" href="policy.html">🏛️ Generate a Policy Brief</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>National Leadership Excellence Initiative</h4><p style="color:#c9d6e6;">A comprehensive national strategy for building high-performing school leadership systems — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Initiative</h4><ul><li><a href="strategy.html">National Strategy</a></li><li><a href="pipeline.html">Leadership Pipeline</a></li><li><a href="academy.html">Leadership Academy</a></li><li><a href="succession.html">Succession Planning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

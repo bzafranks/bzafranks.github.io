@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Pipeline — National Leadership Excellence Initiative</title>
+  <meta name="description" content="A national leadership talent pipeline: leadership succession, talent identification, career pathways, and leadership readiness assessments from teacher leadership to executive leaders.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="National Leadership Excellence Initiative" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">NLE</span><span class="brand-text"><span class="brand-title">National Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Initiative">
+        <div class="rail-brand"><span class="mark">NLE</span><b>National Leadership Excellence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> National Dashboard</a>
+        <div class="rail-group">Strategy</div>
+        <a class="rail-link" href="strategy.html"><span class="ico">🧭</span> National Strategy</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="pipeline.html"><span class="ico">🔑</span> Leadership Pipeline</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🎓</span> Leadership Academy</a>
+        <a class="rail-link" href="certification.html"><span class="ico">📜</span> Certification</a>
+        <a class="rail-link" href="succession.html"><span class="ico">🔄</span> Succession Planning</a>
+        <div class="rail-group">Govern</div>
+        <a class="rail-link" href="policy.html"><span class="ico">🏛️</span> Policy &amp; Governance</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Develop / <b>Leadership Pipeline</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="National updates">
+                <h4 style="margin:.2rem .4rem .6rem;">National Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Leadership Academy</b> graduated Cohort 3 — 142 certified leaders.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--nle-accent-2);"></span><div><b>Northern Region</b> certification rate up to 81%.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Eastern Region</b> succession readiness below target.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="succession.html">Open Succession Planning →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🔑 Talent &amp; Pathways</span>
+          <h1>Leadership Pipeline</h1>
+          <p class="lead">A national leadership talent pipeline — identifying, developing, and advancing leaders from the classroom to the executive level so every school is led well. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="pf-region">Region</label><select id="pf-region"><option>National (all regions)</option><option>Northern</option><option>Southern</option><option>Eastern</option><option>Western</option><option>Capital</option></select>
+          <label for="pf-stage">Stage</label><select id="pf-stage"><option>All pipeline stages</option><option>Teacher Leadership</option><option>Aspiring Leaders</option><option>Vice Principals</option><option>School Principals</option><option>District Leaders</option><option>Executive Leaders</option></select>
+          <label for="pf-ready">Readiness</label><select id="pf-ready"><option>All readiness levels</option><option>Ready now</option><option>Ready 1–2 yrs</option><option>Developing</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- KPI stats -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi gold"><div class="k-label">🔑 Leaders in Pipeline</div><div class="k-num"><span data-count="3860">0</span></div><div class="k-trend up">▲ 12%</div></div>
+          <div class="kpi green"><div class="k-label">✅ Ready Now</div><div class="k-num"><span data-count="640">0</span></div><div class="k-trend up">▲ 84</div></div>
+          <div class="kpi green"><div class="k-label">🎯 Readiness Assessed</div><div class="k-num"><span data-count="92" data-suffix="%">0</span></div><div class="k-trend up">▲ 7%</div></div>
+          <div class="kpi gold"><div class="k-label">🪜 Avg. Time to Principal</div><div class="k-num"><span data-count="5" data-suffix=" yrs">0</span></div><div class="k-trend down">▲ ↓ 1 yr</div></div>
+          <div class="kpi amber"><div class="k-label">🪑 Successor-Ready Schools</div><div class="k-num"><span data-count="68" data-suffix="%">0</span></div><div class="k-trend up">▲ 9%</div></div>
+          <div class="kpi green"><div class="k-label">🌍 Pipeline Diversity</div><div class="k-num"><span data-count="54" data-suffix="%">0</span></div><div class="k-trend up">▲ 6%</div></div>
+        </div>
+
+        <!-- Pipeline stages -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🪜 The National Leadership Pipeline <span class="muted" style="font-size:.85rem;font-weight:400;">— six stages from classroom to cabinet (illustrative pool sizes)</span></h3>
+          <div class="pipe">
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">👩‍🏫</div>
+              <div class="p-body"><b>Teacher Leadership</b><small>Classroom teachers taking on team, mentoring, and instructional-leadership roles — the widest entry point into the pipeline.</small></div>
+              <div class="p-count"><span data-count="1820">0</span></div>
+            </div>
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">🌱</div>
+              <div class="p-body"><b>Aspiring Leaders</b><small>Identified high-potential educators in structured preparation; readiness is emerging and being developed toward a first formal role.</small></div>
+              <div class="p-count"><span data-count="920">0</span></div>
+            </div>
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">🧭</div>
+              <div class="p-body"><b>Vice Principals</b><small>Serving in deputy leadership roles, building operational and instructional readiness for the principalship.</small></div>
+              <div class="p-count"><span data-count="560">0</span></div>
+            </div>
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">🏫</div>
+              <div class="p-body"><b>School Principals</b><small>Leading whole schools; the system's core leadership tier and the primary target of certification and succession planning.</small></div>
+              <div class="p-count"><span data-count="410">0</span></div>
+            </div>
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">🗺️</div>
+              <div class="p-body"><b>District Leaders</b><small>Superintendents and district officers leading clusters of schools; readiness assessed against system-level competencies.</small></div>
+              <div class="p-count"><span data-count="120">0</span></div>
+            </div>
+            <div class="pipe-stage">
+              <div class="p-ico" aria-hidden="true">🏛️</div>
+              <div class="p-body"><b>Executive Leaders</b><small>Ministry and regional executives setting national direction; a small, deeply vetted pool with the highest readiness bar.</small></div>
+              <div class="p-count"><span data-count="30">0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pipeline health + drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Pipeline health by stage</h3><div class="barlist">
+            <div class="row"><span>👩‍🏫 Teacher Leadership</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+            <div class="row"><span>🌱 Aspiring Leaders</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>🧭 Vice Principals</span><span class="track"><span class="fill" data-pct="70"></span></span><b>70%</b></div>
+            <div class="row"><span>🏫 School Principals</span><span class="track"><span class="fill" data-pct="66"></span></span><b>66%</b></div>
+            <div class="row"><span>🗺️ District Leaders</span><span class="track"><span class="fill" data-pct="58"></span></span><b>58%</b></div>
+            <div class="row"><span>🏛️ Executive Leaders</span><span class="track"><span class="fill" data-pct="52"></span></span><b>52%</b></div>
+          </div>
+          <p class="muted" style="font-size:.84rem;margin-top:.8rem;">Health = proportion of needed successors with an identified, assessed, ready-or-developing candidate. The pipeline narrows and weakens toward the top — the focus of succession planning.</p></div>
+
+          <div class="card"><h3 style="margin-top:0;">🎯 Talent identification &amp; readiness criteria <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>How talent is identified</b></span><span class="tl-pill gold">Process</span></div>
+            <div class="drill-panel"><p class="muted">A blend of nomination, performance evidence, and self-referral feeds a structured talent review. Identified educators complete a readiness assessment and enter a development pathway with a named sponsor.</p>
+              <ul class="muted" style="margin:.4rem 0 0 1.1rem;"><li>Principal &amp; peer nomination of high-potential teachers</li><li>Performance &amp; growth evidence over multiple years</li><li>Open self-nomination to widen and diversify the pool</li></ul></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Leadership readiness assessment</b></span><span class="tl-pill green-d">Criteria</span></div>
+            <div class="drill-panel"><p class="muted">Readiness is rated against the national leadership standards across instructional, people, operational, and system competencies, producing a banding of <b>Ready now</b>, <b>Ready 1–2 years</b>, or <b>Developing</b>.</p>
+              <ul class="muted" style="margin:.4rem 0 0 1.1rem;"><li>Instructional &amp; school-improvement leadership</li><li>People leadership: coaching, teams, culture</li><li>Operational &amp; resource stewardship</li><li>Ethics, equity, and system thinking</li></ul></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Career pathways &amp; succession</b></span><span class="tl-pill amber">Pathway</span></div>
+            <div class="drill-panel"><p class="muted">Each stage links to the next through defined pathways — preparation, certification, and academy programs — so movement is transparent. Succession plans map ready candidates to forecast vacancies, region by region.</p></div>
+          </div>
+        </div>
+
+        <!-- Research note -->
+        <div class="card research" style="margin-bottom:1.4rem;">
+          <span class="tag">Why a pipeline</span>
+          <p style="margin:.4rem 0 0;">In the leadership-and-retention research base, schools with strong principal supply experience fewer leadership gaps, faster recovery from turnover, and steadier improvement. A deliberate pipeline — rather than ad-hoc hiring — is the most reliable way to guarantee qualified leaders for every school. <em>Illustrative summary; verify against current national data.</em></p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="academy.html">🎓 Develop talent in the Academy</a>
+          <a class="btn ghost" href="succession.html">🔄 Plan succession</a>
+          <a class="btn ghost" href="dashboard.html">📊 Back to National Dashboard</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>National Leadership Excellence Initiative</h4><p style="color:#c9d6e6;">A comprehensive national strategy for building high-performing school leadership systems — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Initiative</h4><ul><li><a href="strategy.html">National Strategy</a></li><li><a href="pipeline.html">Leadership Pipeline</a></li><li><a href="academy.html">Leadership Academy</a></li><li><a href="succession.html">Succession Planning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

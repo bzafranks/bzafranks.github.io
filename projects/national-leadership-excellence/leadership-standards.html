@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Leadership Standards — National Leadership Excellence Initiative</title>
+  <meta name="description" content="A national leadership competency framework: leadership competencies, professional standards, behaviors, performance indicators, evidence requirements, career progression, certification expectations, and international benchmarking.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="National Leadership Excellence Initiative" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">NLE</span><span class="brand-text"><span class="brand-title">National Leadership Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Initiative">
+        <div class="rail-brand"><span class="mark">NLE</span><b>National Leadership Excellence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> National Dashboard</a>
+        <div class="rail-group">Strategy</div>
+        <a class="rail-link" href="strategy.html"><span class="ico">🧭</span> National Strategy</a>
+        <a class="rail-link" href="leadership-standards.html"><span class="ico">📐</span> Leadership Standards</a>
+        <div class="rail-group">Develop</div>
+        <a class="rail-link" href="pipeline.html"><span class="ico">🔑</span> Leadership Pipeline</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🎓</span> Leadership Academy</a>
+        <a class="rail-link" href="certification.html"><span class="ico">📜</span> Certification</a>
+        <a class="rail-link" href="succession.html"><span class="ico">🔄</span> Succession Planning</a>
+        <div class="rail-group">Govern</div>
+        <a class="rail-link" href="policy.html"><span class="ico">🏛️</span> Policy &amp; Governance</a>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📦</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Strategy / <b>Leadership Standards</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="National updates">
+                <h4 style="margin:.2rem .4rem .6rem;">National Updates</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-green);"></span><div><b>Leadership Academy</b> graduated Cohort 3 — 142 certified leaders.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--nle-accent-2);"></span><div><b>Northern Region</b> certification rate up to 81%.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Eastern Region</b> succession readiness below target.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="succession.html">Open Succession Planning →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📐 National Competency Framework</span>
+          <h1>National Leadership Standards</h1>
+          <p class="lead">A national competency framework defining what effective school leaders know, do, and demonstrate — with four-level progressions, performance indicators, evidence requirements, career progression, and certification expectations. All descriptors are illustrative.</p>
+        </div>
+
+        <!-- FRAMEWORK OVERVIEW -->
+        <div class="card exec-brief" style="margin-bottom:1.4rem;">
+          <h4>📐 How the framework works</h4>
+          <p>The framework names <b>six leadership competencies</b>, expresses each through observable <b>behaviors</b> and <b>performance indicators</b>, and grades each across a four-level progression — <b>Emerging → Developing → Proficient → Distinguished</b>. Certification confirms a leader is at least <b>Proficient</b> across all six. The same competencies anchor the <a href="strategy.html#assessment">National Readiness diagnostic</a> and the <a href="certification.html">certification</a> pathway.</p>
+        </div>
+
+        <!-- FILTER STRIP -->
+        <div class="filter-strip" data-filters>
+          <label for="f-domain">Domain</label>
+          <select id="f-domain">
+            <option>All competencies</option>
+            <option>Vision &amp; Strategic Direction</option>
+            <option>Instructional Leadership</option>
+            <option>People &amp; Talent Development</option>
+            <option>Organizational &amp; Operational Management</option>
+            <option>Community &amp; Stakeholder Engagement</option>
+            <option>Ethics, Equity &amp; Professional Conduct</option>
+          </select>
+          <label for="f-level">Level</label>
+          <select id="f-level">
+            <option>All levels</option>
+            <option>Emerging</option>
+            <option>Developing</option>
+            <option>Proficient</option>
+            <option>Distinguished</option>
+          </select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download framework</button>
+        </div>
+
+        <!-- COMPETENCY 1 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📐 1 · Vision &amp; Strategic Direction <span class="tl-pill green-d">Core</span></h3>
+          <p class="muted">Behaviors: sets and communicates a shared vision; aligns school improvement plans to national goals; uses evidence to set priorities.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>States a vision but it is not yet shared or used to guide decisions.</div>
+            <div class="prog-step s2"><b>Developing</b>Communicates a vision and begins aligning some plans and priorities to it.</div>
+            <div class="prog-step s3"><b>Proficient</b>Leads a shared vision that consistently guides improvement planning and resourcing.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Builds collective ownership of a vision that drives sustained, evidence-based improvement system-wide.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> improvement plan aligned to national goals · staff can articulate the vision · priorities traceable to data.</p>
+        </div>
+
+        <!-- COMPETENCY 2 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📚 2 · Instructional Leadership <span class="tl-pill green-d">Core</span></h3>
+          <p class="muted">Behaviors: protects time for learning; observes and improves teaching; uses assessment data to guide instruction.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Monitors compliance but rarely engages directly with the quality of teaching.</div>
+            <div class="prog-step s2"><b>Developing</b>Observes lessons and gives feedback, though follow-through is inconsistent.</div>
+            <div class="prog-step s3"><b>Proficient</b>Runs regular cycles of observation, feedback, and data review that lift instruction.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Cultivates a self-improving instructional culture where teachers lead peer improvement.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> documented observation cycles · data used in planning · measurable gains in teaching quality.</p>
+        </div>
+
+        <!-- COMPETENCY 3 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🔑 3 · People &amp; Talent Development <span class="tl-pill gold">Pipeline</span></h3>
+          <p class="muted">Behaviors: develops staff; grows teacher-leaders; supports retention and succession.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Manages staffing reactively with limited attention to development.</div>
+            <div class="prog-step s2"><b>Developing</b>Provides professional learning and identifies some emerging leaders.</div>
+            <div class="prog-step s3"><b>Proficient</b>Builds a deliberate talent pipeline and visibly improves retention.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Develops leaders who advance system-wide; the school becomes a talent source for the region.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> staff development plans · teacher-leaders in post · retention above benchmark.</p>
+        </div>
+
+        <!-- COMPETENCY 4 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">⚙️ 4 · Organizational &amp; Operational Management <span class="tl-pill green-d">Core</span></h3>
+          <p class="muted">Behaviors: manages resources, systems, and safety; ensures sound governance and data integrity.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Maintains basic operations but systems are informal or inconsistent.</div>
+            <div class="prog-step s2"><b>Developing</b>Establishes routines and manages resources to plan in most areas.</div>
+            <div class="prog-step s3"><b>Proficient</b>Runs efficient, transparent systems that free time and resources for learning.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Designs resilient systems others adopt; resources are strategically tied to outcomes.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> clean audits · accurate data returns · resources mapped to priorities.</p>
+        </div>
+
+        <!-- COMPETENCY 5 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🤝 5 · Community &amp; Stakeholder Engagement <span class="tl-pill amber">Context</span></h3>
+          <p class="muted">Behaviors: builds family and community partnerships; communicates transparently; responds to local needs.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Communicates with families mainly when problems arise.</div>
+            <div class="prog-step s2"><b>Developing</b>Establishes regular communication and some community partnerships.</div>
+            <div class="prog-step s3"><b>Proficient</b>Sustains active partnerships that support learning and trust.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Mobilizes the community as a partner in improvement; the school is a community anchor.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> engagement plan · partnership agreements · stakeholder satisfaction.</p>
+        </div>
+
+        <!-- COMPETENCY 6 -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">⚖️ 6 · Ethics, Equity &amp; Professional Conduct <span class="tl-pill green-d">Core</span></h3>
+          <p class="muted">Behaviors: models integrity; advances equity for all learners; upholds professional standards.</p>
+          <div class="prog-track">
+            <div class="prog-step s1"><b>Emerging</b>Meets minimum conduct expectations with limited focus on equity.</div>
+            <div class="prog-step s2"><b>Developing</b>Acts ethically and begins to address equity gaps deliberately.</div>
+            <div class="prog-step s3"><b>Proficient</b>Embeds equity in decisions and consistently models professional conduct.</div>
+            <div class="prog-step s4"><b>Distinguished</b>Champions equity beyond the school and sets the ethical standard for peers.</div>
+          </div>
+          <p class="muted" style="font-size:.85rem;"><b>Performance indicators:</b> equity actions documented · no conduct concerns · narrowing outcome gaps.</p>
+        </div>
+
+        <!-- EVIDENCE REQUIREMENTS (drill) -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">📂 Evidence Requirements <span class="muted" style="font-size:.85rem;font-weight:400;">— click each to expand what counts as evidence</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Vision &amp; Strategic Direction</b></span><span class="tl-pill green-d">Portfolio</span></div>
+          <div class="drill-panel"><p class="muted">School improvement plan aligned to national goals, communication artifacts, and a data-informed priority log reviewed by a verifier.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Instructional Leadership</b></span><span class="tl-pill green-d">Observed</span></div>
+          <div class="drill-panel"><p class="muted">Documented observation-and-feedback cycles, evidence of data use in planning, and verifier observation of an improvement conversation.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>People &amp; Talent Development</b></span><span class="tl-pill gold">Records</span></div>
+          <div class="drill-panel"><p class="muted">Staff development plans, evidence of teacher-leaders developed, and retention data against the regional benchmark.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Operational Management</b></span><span class="tl-pill amber">Audit</span></div>
+          <div class="drill-panel"><p class="muted">Audit outcomes, accuracy of data returns, and a resource map linking spending to improvement priorities.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Ethics, Equity &amp; Conduct</b></span><span class="tl-pill green">Attested</span></div>
+          <div class="drill-panel"><p class="muted">Documented equity actions, clear conduct record, and attestation from the regional implementation unit.</p></div>
+        </div>
+
+        <!-- CAREER PROGRESSION + CERTIFICATION EXPECTATIONS -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card">
+            <h3 style="margin-top:0;">Career Progression</h3>
+            <p class="muted">The standards anchor a transparent progression across the leadership career.</p>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Teacher-Leader</span><br>Demonstrates competencies at <b>Emerging–Developing</b> within a defined remit.</li>
+              <li class="now"><span class="t-when">Aspiring Leader</span><br>Reaches <b>Developing</b> across most competencies; eligible for academy preparation.</li>
+              <li><span class="t-when">School Leader</span><br>Certified at <b>Proficient</b> across all six competencies.</li>
+              <li><span class="t-when">System Leader</span><br>Operates at <b>Distinguished</b> and develops other leaders across a region.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">Certification Expectations</h3>
+            <p class="muted">What certification confirms (illustrative thresholds).</p>
+            <div class="stat-strip">
+              <div class="stat-tile"><div class="s-num">6/6</div><div class="s-label">Competencies at Proficient or above</div></div>
+              <div class="stat-tile"><div class="s-num">≥3</div><div class="s-label">Evidence sources per competency</div></div>
+              <div class="stat-tile"><div class="s-num">1</div><div class="s-label">Verifier observation required</div></div>
+              <div class="stat-tile"><div class="s-num">3 yr</div><div class="s-label">Renewal cycle tied to continued learning</div></div>
+            </div>
+            <div class="btn-row" style="margin-top:.6rem;">
+              <a class="btn" href="certification.html">📜 Open Certification</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERNATIONAL BENCHMARKING -->
+        <div class="card research" style="margin-bottom:1.4rem;">
+          <span class="tag">International benchmarking</span>
+          <h3 style="margin-top:.3rem;">Aligned to leading frameworks, adapted to national context</h3>
+          <p>The framework is calibrated against widely used national and international leadership-standards frameworks and the broader OECD evidence base on school leadership. Benchmarking is used to confirm that the six competencies, the four-level progression, and the evidence model are comparable in rigor to mature systems internationally — while the descriptors and thresholds are adapted to national priorities and context. Comparisons are general and illustrative; no specific external standards are reproduced here.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.4rem;">
+          <a class="btn" href="strategy.html#assessment">🧭 Run the Readiness Diagnostic</a>
+          <a class="btn ghost" href="certification.html">📜 Certification &amp; Licensure</a>
+          <a class="btn ghost" href="strategy.html">🧭 Back to National Strategy</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>National Leadership Excellence Initiative</h4><p style="color:#c9d6e6;">A comprehensive national strategy for building high-performing school leadership systems — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Initiative</h4><ul><li><a href="strategy.html">National Strategy</a></li><li><a href="pipeline.html">Leadership Pipeline</a></li><li><a href="academy.html">Leadership Academy</a></li><li><a href="succession.html">Succession Planning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
