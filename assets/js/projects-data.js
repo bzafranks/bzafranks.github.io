@@ -187,5 +187,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🧭",
     tags: ["Educational Leadership", "School Improvement", "Leadership Development", "Teacher Retention", "Research-Based", "Executive Coaching"],
     summary: "A comprehensive leadership development system built on six integrated domains (Visionary, Instructional, People, Organizational, Community, Ethical) — with an interactive competency model, an 18-item scored leadership self-assessment (profile, readiness score, action plan), a development planner with saved reflection journal, instructional-leadership & observation toolkits, a culture dashboard, and leadership analytics. Grounded in leadership theory and Dr. Franks' doctoral research on leadership behaviors that influence teacher retention. First project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "teacher-retention",
+    title: "Teacher Retention & Workforce Excellence System",
+    subtitle: "Translating doctoral research into a teacher-retention leadership system",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/teacher-retention/index.html",
+    icon: "🎓",
+    tags: ["Teacher Retention", "Educational Leadership", "Human Capital", "People Analytics", "Organizational Development", "Research-Based"],
+    summary: "An evidence-based workforce-excellence system that translates Dr. Franks' doctoral research, 'The Influence of Leadership Behaviors on Teacher Retention,' into practice — a 10-pillar retention framework, a dissertation research showcase, leadership-behavior guides with a retention-leadership pulse self-assessment, teacher wellbeing/voice/recognition/growth toolkits, people-analytics dashboards, an early-warning retention-risk calculator, and a saved 90-day leadership action planner. Second project in the Educational Leadership & School Improvement Suite."
   }
 ];

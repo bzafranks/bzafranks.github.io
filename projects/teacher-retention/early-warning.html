@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Warning Dashboard — Teacher Retention & Workforce Excellence System</title>
+  <meta name="description" content="A predictive, proactive early-warning dashboard for teacher retention — spot risk early with a retention-risk calculator, risk-indicator cards, and supportive interventions. Supportive, not surveillance. Illustrative data.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Teacher Retention & Workforce Excellence System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">TR</span><span class="brand-text"><span class="brand-title">Teacher Retention &amp; Workforce Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="early-warning.html">Early Warning</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Retention system">
+        <div class="rail-brand"><span class="mark">TR</span><b>Workforce Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧩</span> Retention Framework</a>
+        <a class="rail-link" href="research.html"><span class="ico">🎓</span> Dissertation Research</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-behaviors.html"><span class="ico">🤝</span> Leadership Behaviors</a>
+        <a class="rail-link" href="teacher-wellbeing.html"><span class="ico">💚</span> Teacher Wellbeing</a>
+        <a class="rail-link" href="teacher-voice.html"><span class="ico">🗣️</span> Teacher Voice</a>
+        <a class="rail-link" href="recognition.html"><span class="ico">🏅</span> Recognition &amp; Engagement</a>
+        <a class="rail-link" href="professional-growth.html"><span class="ico">📈</span> Professional Growth</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📊</span> Retention Analytics</a>
+        <a class="rail-link" href="early-warning.html"><span class="ico">🚨</span> Early Warning Dashboard</a>
+        <div class="rail-group">Act</div>
+        <a class="rail-link" href="action-planner.html"><span class="ico">🗺️</span> Leadership Action Planner</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Insight / <b>Early Warning Dashboard</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🚨 Predict &amp; Prevent</span>
+          <h1>Early Warning Dashboard</h1>
+          <p class="lead">The cost of losing a great teacher is felt long before they resign. This dashboard helps leaders spot the early, quiet signals — fading engagement, mounting workload, a stalled growth path — while there is still time to respond with support. Early, supportive intervention is far more effective than reactive replacement.</p>
+          <p class="illustrative">Supportive, not surveillance. Every indicator here is a prompt for a caring conversation, not a verdict. All data is illustrative.</p>
+        </div>
+
+        <!-- ===== (a) RETENTION-RISK CALCULATOR ===== -->
+        <h2 style="margin:.2rem 0 .6rem;">Retention-risk calculator</h2>
+        <p class="muted" style="margin-top:0;">Rate where a teacher (or a team) sits on each retention factor. The tool returns a retention-health profile and proactive, leadership-led moves to make first.</p>
+        <div class="riskcalc" data-riskcalc>
+          <div class="factor">
+            <label for="f-engagement">Engagement &amp; energy</label>
+            <select id="f-engagement" data-factor="engagement">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="factor">
+            <label for="f-recognition">Feels recognized &amp; valued</label>
+            <select id="f-recognition" data-factor="recognition">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="factor">
+            <label for="f-workload">Workload is sustainable</label>
+            <select id="f-workload" data-factor="workload">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="factor">
+            <label for="f-growth">Clear professional-growth path</label>
+            <select id="f-growth" data-factor="growth">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="factor">
+            <label for="f-voice">Has real voice in decisions</label>
+            <select id="f-voice" data-factor="voice">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="factor">
+            <label for="f-support">Feels supported by leadership</label>
+            <select id="f-support" data-factor="support">
+              <option value="5">High / Healthy</option>
+              <option value="4">Good</option>
+              <option value="3">Mixed</option>
+              <option value="2">Low</option>
+              <option value="1">Very low</option>
+            </select>
+          </div>
+          <div class="btn-row" style="margin-top:1rem;">
+            <button class="btn" type="button" data-riskcalc-run>Generate risk profile</button>
+          </div>
+        </div>
+        <div data-riskcalc-result class="risk-card"></div>
+
+        <!-- ===== (b) RISK-INDICATOR CARDS ===== -->
+        <h2 style="margin:1.8rem 0 .6rem;">Risk-indicator scan</h2>
+        <p class="muted" style="margin-top:0;">A workforce-level read on the early signals most associated with teachers leaving. Watch the amber and red cards first.</p>
+        <div class="kpi-grid">
+          <div class="scorecard red">
+            <div class="sc-label">🔥 Burnout indicators</div>
+            <div class="sc-num"><span data-count="11" data-suffix="%">0%</span></div>
+            <div class="sc-trend down">Teachers signaling exhaustion / overload</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">📉 Declining engagement</div>
+            <div class="sc-num"><span data-count="14" data-suffix="%">0%</span></div>
+            <div class="sc-trend flat">Engagement scores trending down</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">🗓️ Attendance concerns</div>
+            <div class="sc-num"><span data-count="9" data-suffix="%">0%</span></div>
+            <div class="sc-trend flat">Rising unplanned absence</div>
+          </div>
+          <div class="scorecard amber">
+            <div class="sc-label">📈 Professional-growth gaps</div>
+            <div class="sc-num"><span data-count="17" data-suffix="%">0%</span></div>
+            <div class="sc-trend flat">No active growth pathway</div>
+          </div>
+          <div class="scorecard">
+            <div class="sc-label">🤝 Leadership-support needs</div>
+            <div class="sc-num"><span data-count="12" data-suffix="%">0%</span></div>
+            <div class="sc-trend up">Requesting more check-ins</div>
+          </div>
+          <div class="scorecard red">
+            <div class="sc-label">🚪 Potential turnover risk</div>
+            <div class="sc-num"><span data-count="8" data-suffix="%">0%</span></div>
+            <div class="sc-trend down">Elevated composite risk</div>
+          </div>
+        </div>
+
+        <!-- ===== (c) RISK COHORTS + INTERVENTIONS ===== -->
+        <h2 style="margin:1.8rem 0 .6rem;">Risk cohorts &amp; proactive interventions</h2>
+        <p class="muted" style="margin-top:0;">Each cohort below pairs an early signal with the recommended supportive move. Click a row to expand.</p>
+        <div class="assess-card">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🔥 Early-career teachers showing overload (Years 1–3)</span></div>
+          <div class="drill-panel"><p class="muted">Pair with a mentor, audit and trim non-essential tasks, and schedule a weekly supportive check-in. Protect planning time first — workload is the leading driver of early exits.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">📉 Mid-career teachers with fading engagement</span></div>
+          <div class="drill-panel"><p class="muted">Open a stay-conversation, listen for what changed, and co-design one meaningful role or project. Re-engagement, not replacement, is the goal.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">📈 High performers with no growth pathway</span></div>
+          <div class="drill-panel"><p class="muted">Offer a concrete growth or teacher-leadership opportunity. Your strongest teachers leave when they stop being challenged or seen.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🗣️ Teachers who feel unheard in decisions</span></div>
+          <div class="drill-panel"><p class="muted">Invite them into a decision that affects their work — and visibly act on their input. Voice builds ownership and commitment.</p></div>
+
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">🤝 Teachers requesting more leadership support</span></div>
+          <div class="drill-panel"><p class="muted">Increase instructional and emotional support; commit to a steady cadence of check-ins. Felt support is foundational to staying.</p></div>
+        </div>
+
+        <!-- ===== RESEARCH BLOCK ===== -->
+        <div class="research-block" style="margin-top:1.8rem;">
+          <h3>🎓 Why early, supportive intervention wins</h3>
+          <p class="muted" style="margin:.2rem 0 0;">The research is clear: teachers rarely leave overnight. Engagement, workload, recognition, and growth signals shift well in advance — and leaders who notice and respond early, with genuine support, keep teachers who would otherwise have walked. Reactive replacement is costly in money, momentum, and culture; proactive care is cheaper and kinder. <a href="research.html">Read the research →</a></p>
+          <p class="illustrative" style="margin:.4rem 0 0;">This dashboard is supportive decision-support, not surveillance. Indicators prompt caring conversations and professional judgment; all data is illustrative.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="action-planner.html">Turn signals into a 90-Day Plan</a>
+          <a class="btn ghost" href="analytics.html">Back to Retention Analytics</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Teacher Retention &amp; Workforce Excellence System</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="research.html">Dissertation Research</a></li><li><a href="leadership-behaviors.html">Leadership Behaviors</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="early-warning.html">Early Warning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school data and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

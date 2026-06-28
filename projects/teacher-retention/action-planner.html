@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Action Planner — Teacher Retention & Workforce Excellence System</title>
+  <meta name="description" content="Implementation tools for school leaders — a saved retention action planner, an AI-style 90-day retention-plan generator, a reflection journal, and a 90-day implementation timeline with an improvement tracker. Illustrative.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Teacher Retention & Workforce Excellence System" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">TR</span><span class="brand-text"><span class="brand-title">Teacher Retention &amp; Workforce Excellence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="early-warning.html">Early Warning</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every system page) ===== -->
+      <aside class="app-rail" aria-label="Retention system">
+        <div class="rail-brand"><span class="mark">TR</span><b>Workforce Excellence</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧩</span> Retention Framework</a>
+        <a class="rail-link" href="research.html"><span class="ico">🎓</span> Dissertation Research</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-behaviors.html"><span class="ico">🤝</span> Leadership Behaviors</a>
+        <a class="rail-link" href="teacher-wellbeing.html"><span class="ico">💚</span> Teacher Wellbeing</a>
+        <a class="rail-link" href="teacher-voice.html"><span class="ico">🗣️</span> Teacher Voice</a>
+        <a class="rail-link" href="recognition.html"><span class="ico">🏅</span> Recognition &amp; Engagement</a>
+        <a class="rail-link" href="professional-growth.html"><span class="ico">📈</span> Professional Growth</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="analytics.html"><span class="ico">📊</span> Retention Analytics</a>
+        <a class="rail-link" href="early-warning.html"><span class="ico">🚨</span> Early Warning Dashboard</a>
+        <div class="rail-group">Act</div>
+        <a class="rail-link" href="action-planner.html"><span class="ico">🗺️</span> Leadership Action Planner</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Act / <b>Leadership Action Planner</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🗺️ Implement</span>
+          <h1>Leadership Action Planner</h1>
+          <p class="lead">Insight only matters when it becomes action. This is the leader's workspace for turning the framework and the data into a concrete retention plan — a saved strategy you can return to, a generated 90-day starter plan to adapt, and a private reflection journal to keep the work human.</p>
+          <p class="illustrative">Everything you type saves privately in this browser only. Nothing leaves your device. Illustrative tool.</p>
+        </div>
+
+        <!-- ===== (a) SAVED PLANNER ===== -->
+        <h2 style="margin:.2rem 0 .6rem;">Your retention action plan</h2>
+        <p class="muted" style="margin-top:0;">Draft your plan once and it auto-saves as you type. Come back anytime.</p>
+        <div class="assess-card">
+          <form data-planner>
+            <div class="field">
+              <label for="annualStrategy">Annual retention strategy</label>
+              <textarea id="annualStrategy" name="annualStrategy" placeholder="Our north-star retention goal this year, and the pillars we will lead with…"></textarea>
+            </div>
+            <div class="field">
+              <label for="priorities">Leadership priorities</label>
+              <textarea id="priorities" name="priorities" placeholder="The two or three leadership behaviors I will model and protect…"></textarea>
+            </div>
+            <div class="field">
+              <label for="ninetyDay">90-day plan</label>
+              <textarea id="ninetyDay" name="ninetyDay" placeholder="Days 1–30 listen &amp; baseline · Days 31–60 act on highest-leverage pillars · Days 61–90 embed &amp; measure…"></textarea>
+            </div>
+            <div class="field">
+              <label for="monthlyCalendar">Monthly action calendar</label>
+              <textarea id="monthlyCalendar" name="monthlyCalendar" placeholder="Month-by-month moves: stay-conversations, recognition routines, voice council, workload audit…"></textarea>
+            </div>
+            <div class="field">
+              <label for="proLearning">Professional learning schedule</label>
+              <textarea id="proLearning" name="proLearning" placeholder="Coaching cycles, leadership development, and growth pathways scheduled across the year…"></textarea>
+            </div>
+            <div class="btn-row" style="align-items:center;gap:.8rem;">
+              <button class="btn">Save plan</button>
+              <span data-plan-saved class="saved-note"></span>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ===== (b) RETENTION-PLAN GENERATOR ===== -->
+        <h2 style="margin:1.8rem 0 .6rem;">90-day retention-plan generator</h2>
+        <p class="muted" style="margin-top:0;">Need a starting point? Generate a research-informed 90-day plan, then adapt it into your planner above.</p>
+        <div class="assess-card">
+          <form data-generator="retention">
+            <div class="field-row">
+              <div class="field">
+                <label for="gen-school">School or team</label>
+                <input id="gen-school" name="school" type="text" placeholder="e.g., Maple Grove Elementary">
+              </div>
+              <div class="field">
+                <label for="gen-focus">Primary focus</label>
+                <input id="gen-focus" name="focus" type="text" placeholder="e.g., recognition &amp; teacher voice">
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn" type="submit">✨ Generate 90-day retention plan</button>
+            </div>
+          </form>
+          <div class="gen-output" data-output="retention" style="margin-top:1rem;">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body"><p class="muted">Generate a starter 90-day retention plan to adapt.</p></div>
+          </div>
+        </div>
+
+        <!-- ===== (c) REFLECTION JOURNAL ===== -->
+        <h2 style="margin:1.8rem 0 .6rem;">Reflection journal</h2>
+        <p class="muted" style="margin-top:0;">The best retention leaders reflect in writing. Capture one move at a time — saved privately in this browser.</p>
+        <div class="assess-card">
+          <div data-journal>
+            <div class="field">
+              <label for="journal-input">This week's retention move</label>
+              <textarea id="journal-input" placeholder="What retention move will I make this week?"></textarea>
+            </div>
+            <div class="btn-row" style="gap:.8rem;">
+              <button class="btn" type="button" data-journal-add>Add note</button>
+              <button class="out-btn" type="button" data-journal-clear>Clear</button>
+            </div>
+            <div data-journal-list style="margin-top:1rem;"></div>
+          </div>
+        </div>
+
+        <!-- ===== (d) TIMELINE + IMPROVEMENT TRACKER ===== -->
+        <h2 style="margin:1.8rem 0 .6rem;">90-day implementation</h2>
+        <div class="assess-card">
+          <ul class="timeline">
+            <li class="done"><span class="t-when">Days 1–15 · Listen</span><p style="margin:.2rem 0 0;">Run a staff pulse survey and stay-conversations with key teachers; review engagement, workload, and turnover signals.</p></li>
+            <li class="done"><span class="t-when">Days 16–30 · Baseline</span><p style="margin:.2rem 0 0;">Map results to the retention pillars; name the highest-leverage two or three to lead with.</p></li>
+            <li class="now"><span class="t-when">Days 31–60 · Act</span><p style="margin:.2rem 0 0;">Launch an authentic recognition routine, open a teacher-voice channel, and remove one low-value workload demand.</p></li>
+            <li><span class="t-when">Days 61–80 · Grow</span><p style="margin:.2rem 0 0;">Give every teacher a visible growth step; begin coaching cycles and leadership opportunities.</p></li>
+            <li><span class="t-when">Days 81–90 · Measure &amp; embed</span><p style="margin:.2rem 0 0;">Re-survey, compare engagement to baseline, celebrate wins, and lock the routines into the calendar.</p></li>
+          </ul>
+        </div>
+
+        <h2 style="margin:1.8rem 0 .6rem;">Improvement tracker</h2>
+        <div class="assess-card">
+          <p class="muted">Progress against this term's retention targets — review monthly with your leadership team.</p>
+          <div class="barlist">
+            <div class="row"><span>Stay-conversations held</span><span class="track"><span class="fill" data-pct="80"></span></span><b>80%</b></div>
+            <div class="row"><span>Recognition routine adopted</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+            <div class="row"><span>Teacher-voice actions closed</span><span class="track"><span class="fill" data-pct="64"></span></span><b>64%</b></div>
+            <div class="row"><span>Workload demands reduced</span><span class="track"><span class="fill" data-pct="55"></span></span><b>55%</b></div>
+            <div class="row"><span>Growth pathways assigned</span><span class="track"><span class="fill" data-pct="48"></span></span><b>48%</b></div>
+          </div>
+          <p class="illustrative" style="margin-top:.8rem;">Tracker values are illustrative; replace with your own targets and progress.</p>
+        </div>
+
+        <!-- ===== RESEARCH BLOCK ===== -->
+        <div class="research-block" style="margin-top:1.8rem;">
+          <h3>🎓 From research to routine</h3>
+          <p class="muted" style="margin:.2rem 0 0;">A retention strategy succeeds when it becomes routine. The planner and timeline operationalize the framework's pillars into the weekly and monthly leadership behaviors the research links to teachers staying. <a href="framework.html">See the framework →</a></p>
+          <p class="illustrative" style="margin:.4rem 0 0;">Research-informed; the generated plan is a starter draft to adapt to your context. All data illustrative.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="early-warning.html">Check the Early Warning Dashboard</a>
+          <a class="btn ghost" href="analytics.html">View Retention Analytics</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Teacher Retention &amp; Workforce Excellence System</h4><p style="color:#c9d6e6;">An evidence-based leadership system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>System</h4><ul><li><a href="research.html">Dissertation Research</a></li><li><a href="leadership-behaviors.html">Leadership Behaviors</a></li><li><a href="analytics.html">Analytics</a></li><li><a href="early-warning.html">Early Warning</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; school data and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
