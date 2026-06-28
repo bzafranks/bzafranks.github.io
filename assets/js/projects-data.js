@@ -247,5 +247,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🧭",
     tags: ["Change Management", "School Transformation", "Transformational Leadership", "Stakeholder Engagement", "Organizational Development", "Research-Based"],
     summary: "A comprehensive educational change-leadership framework: six phases of transformation (Vision, Capacity, Engage, Implement, Monitor, Sustain), a scored 8-dimension Change Readiness Assessment, a transformation roadmap planner + change-action generator, a stakeholder influence/interest map, a communication strategy planner + message generator, an implementation toolkit, a culture & sustainability module, and a leadership dashboard. Grounded in Kotter & ADKAR. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "strategic-planning",
+    title: "Strategic Planning Blueprint",
+    subtitle: "Designing, executing & monitoring high-impact educational strategy",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/strategic-planning/index.html",
+    icon: "📈",
+    tags: ["Strategic Leadership", "Strategic Planning", "Balanced Scorecard", "Performance Management", "Governance", "Systems Thinking"],
+    summary: "A complete strategic-management system for education: a six-stage framework (Discover→Define→Design→Deploy→Measure→Refine), an interactive Vision Builder, SWOT & PESTLE builders, a priority matrix, a Goal & KPI Manager with a live interactive KPI tracker and balanced scorecard, an implementation roadmap, a performance dashboard, and a governance & accountability module. Translates vision into measurable results. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

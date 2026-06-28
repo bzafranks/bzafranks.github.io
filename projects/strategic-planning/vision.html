@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Builder — Strategic Planning Blueprint</title>
+  <meta name="description" content="A strategic vision development system: build a vision statement, mission, core values, graduate profile, strategic themes, and organizational identity with an editable AI-style draft generator.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Strategic Planning Blueprint" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SP</span><span class="brand-text"><span class="brand-title">Strategic Planning Blueprint</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="goal-manager.html">KPIs</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Strategic planning system">
+        <div class="rail-brand"><span class="mark">SP</span><b>Strategic Blueprint</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Planning Framework</a>
+        <div class="rail-group">Discover &amp; Define</div>
+        <a class="rail-link" href="vision.html"><span class="ico">🌅</span> Vision Builder</a>
+        <a class="rail-link" href="environmental-analysis.html"><span class="ico">🔬</span> Environmental Analysis</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="strategic-priorities.html"><span class="ico">🎯</span> Strategic Priorities</a>
+        <a class="rail-link" href="goal-manager.html"><span class="ico">📊</span> Goal &amp; KPI Manager</a>
+        <div class="rail-group">Deploy &amp; Measure</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📈</span> Performance Dashboard</a>
+        <a class="rail-link" href="governance.html"><span class="ico">⚖️</span> Governance &amp; Accountability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Define / <b>Vision Builder</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🌅 Define the Future</span>
+          <h1>Vision Builder</h1>
+          <p class="lead">A great strategy begins with a compelling, shared picture of the future. Draft your vision statement, mission, and core values, then translate them into a graduate profile, strategic themes, and a clear organizational identity. Your draft is saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Grounded in Collins &amp; Porras' work on vision and BHAGs, Kotter's leading change, and the Balanced Scorecard's strategy-map logic — aligning aspiration, identity, and direction. <em>All content is illustrative.</em></p>
+        </div>
+
+        <!-- ===== Vision generator + saved draft (one form does both) ===== -->
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="vision" data-vision-form>
+            <h3>🌅 Draft Your Vision</h3>
+            <p class="muted" style="font-size:.88rem;margin-top:-.4rem;">Describe your organization and aspiration. We'll assemble an editable vision, mission, and values draft — and save your inputs automatically.</p>
+
+            <div class="field">
+              <label for="vb-school">Organization / School name</label>
+              <input type="text" id="vb-school" name="school" placeholder="e.g., Riverside Academy">
+            </div>
+            <div class="field">
+              <label for="vb-aspiration">Core aspiration — what will be true for every learner?</label>
+              <textarea id="vb-aspiration" name="aspiration" placeholder="e.g., Every learner thrives academically, leads with character, and shapes their community"></textarea>
+            </div>
+            <div class="field">
+              <label for="vb-values">Core values (comma separated)</label>
+              <input type="text" id="vb-values" name="values" placeholder="e.g., Excellence, Equity, Belonging, Curiosity">
+            </div>
+            <div class="field">
+              <label for="vb-horizon">Planning horizon</label>
+              <select id="vb-horizon" name="horizon">
+                <option value="three years">Three years</option>
+                <option value="five years" selected>Five years</option>
+                <option value="ten years">Ten years</option>
+              </select>
+            </div>
+
+            <div class="btn-row" style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;">
+              <button class="btn" type="submit">✨ Generate</button>
+              <span data-plan-saved class="saved-note"></span>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            </div>
+          </form>
+
+          <div class="gen-output" data-output="vision">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print</button>
+            </div>
+            <div class="out-body">
+              <p class="muted">Generate a draft to refine.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Identity cards ===== -->
+        <h2 style="margin-top:2.2rem;">From Vision to Identity</h2>
+        <p class="muted" style="max-width:70ch;">A vision only lives when it shapes who you graduate, what themes you pursue, and how the organization understands itself.</p>
+
+        <div class="tool-grid" style="margin-top:1rem;">
+          <article class="tool-card" aria-label="Graduate Profile">
+            <div class="t-ico" aria-hidden="true">🎓</div>
+            <h4>Graduate Profile</h4>
+            <p>The durable competencies every learner should carry on the day they leave us — the human evidence of the vision.</p>
+            <ul style="margin:.7rem 0 0;padding-left:1.1rem;color:var(--ink-soft);font-size:.9rem;line-height:1.6;">
+              <li><b>Knowledgeable:</b> deep literacy and numeracy across disciplines.</li>
+              <li><b>Self-directed:</b> sets goals, manages time, reflects, and improves.</li>
+              <li><b>Collaborative:</b> communicates, listens, and leads with empathy.</li>
+              <li><b>Principled:</b> acts with integrity and contributes to community.</li>
+            </ul>
+          </article>
+
+          <article class="tool-card" aria-label="Strategic Themes">
+            <div class="t-ico" aria-hidden="true">🧩</div>
+            <h4>Strategic Themes</h4>
+            <p>The three-to-five enduring focus areas that organize every priority and KPI under the vision.</p>
+            <div style="margin-top:.7rem;">
+              <span class="chip-tag">Excellence in Learning</span>
+              <span class="chip-tag">People &amp; Culture</span>
+              <span class="chip-tag">Belonging &amp; Wellbeing</span>
+              <span class="chip-tag">Family &amp; Community</span>
+              <span class="chip-tag">Stewardship &amp; Sustainability</span>
+            </div>
+          </article>
+
+          <article class="tool-card" aria-label="Organizational Identity">
+            <div class="t-ico" aria-hidden="true">🪪</div>
+            <h4>Organizational Identity</h4>
+            <p>Who we are, in one breath — the through-line that connects mission, brand, and daily behavior.</p>
+            <ul style="margin:.7rem 0 0;padding-left:1.1rem;color:var(--ink-soft);font-size:.9rem;line-height:1.6;">
+              <li><b>Purpose:</b> develop knowledgeable, principled leaders.</li>
+              <li><b>Promise:</b> a personal, rigorous, joyful education.</li>
+              <li><b>Personality:</b> warm, ambitious, evidence-driven.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Mission &amp; Values</span>
+          <p class="muted" style="margin:.3rem 0 0;">Pair your vision with a <b>mission</b> (how you act now) and <b>values</b> (how you behave along the way). Mission answers "what we do daily"; vision answers "where we are going." Use the generator above to draft all three together.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="environmental-analysis.html">Next: Environmental Analysis</a>
+          <a class="btn ghost" href="strategic-priorities.html">Set Priorities</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Strategic Planning Blueprint</h4><p style="color:#c9d6e6;">A complete strategic management system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Blueprint</h4><ul><li><a href="vision.html">Vision Builder</a></li><li><a href="strategic-priorities.html">Priorities</a></li><li><a href="goal-manager.html">Goal & KPI Manager</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="governance.html">Governance</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; strategic plans &amp; data are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

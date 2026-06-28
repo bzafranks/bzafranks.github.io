@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Priorities — Strategic Planning Blueprint</title>
+  <meta name="description" content="Establish strategic priorities: an impact-vs-effort priority matrix, a saved strategic plan, an initiative-brief generator, and a priorities table with objectives, owners, KPIs, and status.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Strategic Planning Blueprint" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SP</span><span class="brand-text"><span class="brand-title">Strategic Planning Blueprint</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="goal-manager.html">KPIs</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Strategic planning system">
+        <div class="rail-brand"><span class="mark">SP</span><b>Strategic Blueprint</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Planning Framework</a>
+        <div class="rail-group">Discover &amp; Define</div>
+        <a class="rail-link" href="vision.html"><span class="ico">🌅</span> Vision Builder</a>
+        <a class="rail-link" href="environmental-analysis.html"><span class="ico">🔬</span> Environmental Analysis</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="strategic-priorities.html"><span class="ico">🎯</span> Strategic Priorities</a>
+        <a class="rail-link" href="goal-manager.html"><span class="ico">📊</span> Goal &amp; KPI Manager</a>
+        <div class="rail-group">Deploy &amp; Measure</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📈</span> Performance Dashboard</a>
+        <a class="rail-link" href="governance.html"><span class="ico">⚖️</span> Governance &amp; Accountability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Design / <b>Strategic Priorities</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎯 Choose What Matters</span>
+          <h1>Strategic Priorities</h1>
+          <p class="lead">Strategy is sacrifice. The discipline here is choosing a few high-leverage priorities — and saying no to the rest. Sort initiatives by impact and effort, capture your plan, generate an initiative brief, and track every priority against an owner and KPI. Your plan is saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Draws on Porter's view of strategy as choice and trade-off, the Eisenhower impact/effort prioritization logic, and OKR practice (Doerr) — focusing energy on the vital few. <em>All content is illustrative.</em></p>
+        </div>
+
+        <!-- ===== Priority matrix ===== -->
+        <h2 style="margin-top:.4rem;">Priority Matrix</h2>
+        <p class="muted" style="max-width:70ch;">Plot each candidate initiative by its likely impact and the effort required, then act accordingly.</p>
+        <div class="matrix" style="margin-top:1rem;">
+          <div class="matrix-cell do-now">
+            <span class="q">High impact · Low effort → Do now / quick wins</span>
+            <h4 style="margin:.3rem 0 .5rem;">✅ Do Now</h4>
+            <p class="muted" style="font-size:.88rem;">Bankable wins that build momentum and credibility early.</p>
+            <div>
+              <span class="chip-tag">Weekly data huddles</span>
+              <span class="chip-tag">Attendance call protocol</span>
+              <span class="chip-tag">Shared lesson templates</span>
+            </div>
+          </div>
+          <div class="matrix-cell plan">
+            <span class="q">High impact · High effort → Plan carefully</span>
+            <h4 style="margin:.3rem 0 .5rem;">🗂️ Plan Carefully</h4>
+            <p class="muted" style="font-size:.88rem;">Major bets that need sequencing, resourcing, and governance.</p>
+            <div>
+              <span class="chip-tag">Curriculum redesign</span>
+              <span class="chip-tag">Coaching &amp; PD system</span>
+              <span class="chip-tag">Facilities modernization</span>
+            </div>
+          </div>
+          <div class="matrix-cell quick">
+            <span class="q">Low impact · Low effort → Quick fill-ins</span>
+            <h4 style="margin:.3rem 0 .5rem;">⚡ Quick Fill-ins</h4>
+            <p class="muted" style="font-size:.88rem;">Do if convenient; never let them crowd out the vital few.</p>
+            <div>
+              <span class="chip-tag">Refresh signage</span>
+              <span class="chip-tag">Tidy shared drive</span>
+              <span class="chip-tag">Update website copy</span>
+            </div>
+          </div>
+          <div class="matrix-cell later">
+            <span class="q">Low impact · High effort → Later / avoid</span>
+            <h4 style="margin:.3rem 0 .5rem;">🕓 Later / Avoid</h4>
+            <p class="muted" style="font-size:.88rem;">Park or decline — the trade-off rarely pays off this cycle.</p>
+            <div>
+              <span class="chip-tag">Full rebrand</span>
+              <span class="chip-tag">New SIS migration</span>
+              <span class="chip-tag">Bespoke app build</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Saved strategic plan + initiative-brief generator ===== -->
+        <h2 style="margin-top:2.2rem;">Build Your Strategic Plan</h2>
+        <div class="gen-layout">
+          <form class="gen-form" data-planner>
+            <h3>🗒️ Strategic Plan</h3>
+            <p class="muted" style="font-size:.88rem;margin-top:-.4rem;">Capture the core of your plan. Each field saves automatically as you go.</p>
+
+            <div class="field">
+              <label for="pl-objectives">Strategic objectives</label>
+              <textarea id="pl-objectives" name="objectives" placeholder="e.g., Raise reading proficiency to 80%; strengthen staff retention; deepen family engagement"></textarea>
+            </div>
+            <div class="field">
+              <label for="pl-initiatives">Initiatives</label>
+              <textarea id="pl-initiatives" name="initiatives" placeholder="e.g., Tiered literacy intervention; instructional coaching; family-partnership program"></textarea>
+            </div>
+            <div class="field">
+              <label for="pl-alignment">Resource &amp; budget alignment</label>
+              <textarea id="pl-alignment" name="alignment" placeholder="e.g., Reallocate PD budget to coaching; protect 2 intervention FTEs; grant for facilities"></textarea>
+            </div>
+            <div class="field">
+              <label for="pl-owners">Leadership ownership</label>
+              <textarea id="pl-owners" name="owners" placeholder="e.g., Deputy Head — instruction; Business Manager — resources; Head — community"></textarea>
+            </div>
+
+            <div class="btn-row" style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;">
+              <button class="btn" type="submit">💾 Save Plan</button>
+              <span data-plan-saved class="saved-note"></span>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            </div>
+          </form>
+
+          <form class="gen-form" data-generator="strategy" style="align-self:start;">
+            <h3>✨ Initiative Brief Generator</h3>
+            <p class="muted" style="font-size:.88rem;margin-top:-.4rem;">Turn a single priority into a structured, Balanced-Scorecard-aligned brief.</p>
+
+            <div class="field">
+              <label for="st-priority">Priority</label>
+              <input type="text" id="st-priority" name="priority" placeholder="e.g., Raise reading proficiency to 80% in three years">
+            </div>
+            <div class="field">
+              <label for="st-owner">Owner</label>
+              <input type="text" id="st-owner" name="owner" placeholder="e.g., Deputy Head of Instruction">
+            </div>
+
+            <div class="btn-row">
+              <button class="btn" type="submit">✨ Generate</button>
+            </div>
+
+            <div class="gen-output" data-output="strategy" style="margin-top:1.2rem;">
+              <div class="out-toolbar">
+                <span class="ai-pill">Draft</span>
+                <button class="out-btn" data-act="regen">↻</button>
+                <button class="out-btn" data-act="copy">📋 Copy</button>
+                <button class="out-btn" data-act="print">🖨️ Print</button>
+              </div>
+              <div class="out-body">
+                <p class="muted">Generate a draft to refine.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- ===== Priorities table ===== -->
+        <h2 style="margin-top:2.2rem;">Strategic Priorities Tracker</h2>
+        <p class="muted" style="max-width:70ch;">Every priority needs an objective, an owner, a measure, and a status. <em>Illustrative example.</em></p>
+        <div class="table-wrap">
+          <table>
+            <caption>Strategic priorities (illustrative)</caption>
+            <thead>
+              <tr><th scope="col">Priority</th><th scope="col">Objective</th><th scope="col">Owner</th><th scope="col">KPI</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Literacy for All</td><td>Reading proficiency to 80% by Year 3</td><td>Deputy Head, Instruction</td><td>% at/above grade level</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Great People</td><td>Staff retention to 92%</td><td>Head of School</td><td>Annual retention rate</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Belonging &amp; Wellbeing</td><td>Lift student belonging index by 10 pts</td><td>Dean of Students</td><td>Belonging survey score</td><td><span class="tl-pill amber">At risk</span></td></tr>
+              <tr><td>Family Partnership</td><td>70% of families in 2+ touchpoints</td><td>Community Lead</td><td>Family engagement rate</td><td><span class="tl-pill amber">At risk</span></td></tr>
+              <tr><td>Stewardship</td><td>Balanced multi-year budget</td><td>Business Manager</td><td>Operating margin</td><td><span class="tl-pill green">On track</span></td></tr>
+              <tr><td>Facilities Modernization</td><td>Phase 1 learning spaces refit</td><td>Operations Director</td><td>Milestones delivered</td><td><span class="tl-pill red">Behind</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">The Rule of Few</span>
+          <p class="muted" style="margin:.3rem 0 0;">If everything is a priority, nothing is. Aim for three-to-five priorities tied to your strategic themes, each with a named owner and a single headline KPI — then resource them properly.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="goal-manager.html">Next: Goals &amp; KPIs</a>
+          <a class="btn ghost" href="environmental-analysis.html">Back to Analysis</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Strategic Planning Blueprint</h4><p style="color:#c9d6e6;">A complete strategic management system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Blueprint</h4><ul><li><a href="vision.html">Vision Builder</a></li><li><a href="strategic-priorities.html">Priorities</a></li><li><a href="goal-manager.html">Goal & KPI Manager</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="governance.html">Governance</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; strategic plans &amp; data are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

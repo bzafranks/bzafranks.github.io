@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Analysis — Strategic Planning Blueprint</title>
+  <meta name="description" content="A strategic analysis toolkit: build a SWOT analysis, a PESTLE scan, a stakeholder analysis, and a risk assessment to understand your context before setting direction.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Strategic Planning Blueprint" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SP</span><span class="brand-text"><span class="brand-title">Strategic Planning Blueprint</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="goal-manager.html">KPIs</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Strategic planning system">
+        <div class="rail-brand"><span class="mark">SP</span><b>Strategic Blueprint</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Planning Framework</a>
+        <div class="rail-group">Discover &amp; Define</div>
+        <a class="rail-link" href="vision.html"><span class="ico">🌅</span> Vision Builder</a>
+        <a class="rail-link" href="environmental-analysis.html"><span class="ico">🔬</span> Environmental Analysis</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="strategic-priorities.html"><span class="ico">🎯</span> Strategic Priorities</a>
+        <a class="rail-link" href="goal-manager.html"><span class="ico">📊</span> Goal &amp; KPI Manager</a>
+        <div class="rail-group">Deploy &amp; Measure</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📈</span> Performance Dashboard</a>
+        <a class="rail-link" href="governance.html"><span class="ico">⚖️</span> Governance &amp; Accountability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Discover / <b>Environmental Analysis</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🔬 Understand the Context</span>
+          <h1>Environmental Analysis</h1>
+          <p class="lead">Honest strategy starts with an honest scan. Map your internal strengths and weaknesses against external opportunities and threats, survey the macro forces shaping your future, and analyze the stakeholders and risks that will make or break delivery. Your work is saved privately in this browser.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Combines classic environmental-scanning tools — SWOT (Learned et al.), PESTLE macro analysis, Freeman's stakeholder theory, and ISO 31000 risk thinking — to build a shared, evidence-based picture of reality. <em>All entries are illustrative.</em></p>
+        </div>
+
+        <!-- ===== SWOT ===== -->
+        <h2 style="margin-top:.4rem;">SWOT Analysis</h2>
+        <p class="muted" style="max-width:70ch;">Internal factors (Strengths, Weaknesses) and external factors (Opportunities, Threats). Type directly into each quadrant — it saves automatically.</p>
+        <form data-swot style="margin-top:1rem;">
+          <div class="swot-grid">
+            <div class="swot-cell s">
+              <h4>💪 Strengths <span class="muted" style="font-weight:400;font-size:.8rem;">(internal, positive)</span></h4>
+              <label class="visually-hidden" for="sw-s">Strengths</label>
+              <textarea id="sw-s" name="s" placeholder="e.g., Strong, stable teaching team; trusted in the community; healthy reserves"></textarea>
+            </div>
+            <div class="swot-cell w">
+              <h4>⚠️ Weaknesses <span class="muted" style="font-weight:400;font-size:.8rem;">(internal, negative)</span></h4>
+              <label class="visually-hidden" for="sw-w">Weaknesses</label>
+              <textarea id="sw-w" name="w" placeholder="e.g., Aging facilities; inconsistent data use; limited middle-leadership pipeline"></textarea>
+            </div>
+            <div class="swot-cell o">
+              <h4>🌱 Opportunities <span class="muted" style="font-weight:400;font-size:.8rem;">(external, positive)</span></h4>
+              <label class="visually-hidden" for="sw-o">Opportunities</label>
+              <textarea id="sw-o" name="o" placeholder="e.g., New grant funding; community partnerships; growing demand for STEM"></textarea>
+            </div>
+            <div class="swot-cell t">
+              <h4>⛈️ Threats <span class="muted" style="font-weight:400;font-size:.8rem;">(external, negative)</span></h4>
+              <label class="visually-hidden" for="sw-t">Threats</label>
+              <textarea id="sw-t" name="t" placeholder="e.g., Teacher shortage; enrollment shifts; rising operating costs"></textarea>
+            </div>
+          </div>
+          <div class="btn-row" style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:1rem;">
+            <button class="btn" type="submit">💾 Save SWOT</button>
+            <span data-plan-saved class="saved-note"></span>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+          </div>
+        </form>
+
+        <!-- ===== PESTLE ===== -->
+        <h2 style="margin-top:2.2rem;">PESTLE Scan</h2>
+        <p class="muted" style="max-width:70ch;">Survey the six macro forces shaping your operating environment. Each field saves automatically and independently of the SWOT above.</p>
+        <form data-pestle style="margin-top:1rem;">
+          <div class="bsc-grid">
+            <div class="bsc-card">
+              <h4>🏛️ Political</h4>
+              <label class="visually-hidden" for="pe-political">Political factors</label>
+              <textarea id="pe-political" name="political" placeholder="Policy shifts, accountability mandates, district leadership changes" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+            <div class="bsc-card">
+              <h4>💵 Economic</h4>
+              <label class="visually-hidden" for="pe-economic">Economic factors</label>
+              <textarea id="pe-economic" name="economic" placeholder="Funding formulas, inflation, local employment, family economics" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+            <div class="bsc-card">
+              <h4>👥 Social</h4>
+              <label class="visually-hidden" for="pe-social">Social factors</label>
+              <textarea id="pe-social" name="social" placeholder="Demographic shifts, family expectations, community values, wellbeing" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+            <div class="bsc-card">
+              <h4>💻 Technological</h4>
+              <label class="visually-hidden" for="pe-technological">Technological factors</label>
+              <textarea id="pe-technological" name="technological" placeholder="AI in learning, device access, data systems, cybersecurity" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+            <div class="bsc-card">
+              <h4>⚖️ Legal</h4>
+              <label class="visually-hidden" for="pe-legal">Legal factors</label>
+              <textarea id="pe-legal" name="legal" placeholder="Safeguarding, data privacy, employment law, compliance requirements" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+            <div class="bsc-card">
+              <h4>🌍 Environmental</h4>
+              <label class="visually-hidden" for="pe-environmental">Environmental factors</label>
+              <textarea id="pe-environmental" name="environmental" placeholder="Sustainability goals, facilities energy use, climate resilience" style="width:100%;min-height:80px;resize:vertical;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:.6rem .7rem;font:inherit;background:var(--surface);color:var(--ink);"></textarea>
+            </div>
+          </div>
+          <div class="btn-row" style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:1rem;">
+            <button class="btn" type="submit">💾 Save PESTLE</button>
+            <span data-plan-saved class="saved-note"></span>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+          </div>
+        </form>
+
+        <!-- ===== Stakeholder analysis ===== -->
+        <h2 style="margin-top:2.2rem;">Stakeholder Analysis</h2>
+        <p class="muted" style="max-width:70ch;">Map each group by interest and influence, then choose an engagement strategy. <em>Illustrative example.</em></p>
+        <div class="table-wrap">
+          <table>
+            <caption>Stakeholder map (illustrative)</caption>
+            <thead>
+              <tr><th scope="col">Stakeholder</th><th scope="col">Interest</th><th scope="col">Influence</th><th scope="col">Strategy</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Board / Governors</td><td>High</td><td>High</td><td><b>Manage closely</b> — co-create vision, brief regularly, report on KPIs.</td></tr>
+              <tr><td>Teachers &amp; Staff</td><td>High</td><td>Medium</td><td><b>Engage &amp; involve</b> — consult on priorities, build leadership capacity.</td></tr>
+              <tr><td>Families &amp; Students</td><td>High</td><td>Medium</td><td><b>Keep informed &amp; listen</b> — surveys, forums, transparent updates.</td></tr>
+              <tr><td>Funders / District</td><td>Medium</td><td>High</td><td><b>Keep satisfied</b> — align proposals, demonstrate impact and stewardship.</td></tr>
+              <tr><td>Community Partners</td><td>Medium</td><td>Low</td><td><b>Keep informed</b> — share opportunities, invite collaboration.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ===== Risk assessment ===== -->
+        <h2 style="margin-top:2.2rem;">Risk Assessment</h2>
+        <p class="muted" style="max-width:70ch;">Score each risk by likelihood and impact, then assign a mitigation. <em>Illustrative example.</em></p>
+        <div class="table-wrap">
+          <table>
+            <caption>Strategic risk register (illustrative)</caption>
+            <thead>
+              <tr><th scope="col">Risk</th><th scope="col">Likelihood</th><th scope="col">Impact</th><th scope="col">Mitigation</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Teacher recruitment &amp; retention shortfall</td><td><span class="tl-pill red">High</span></td><td><span class="tl-pill red">High</span></td><td>Continuity plan, async-ready curriculum, growth pathways, competitive offer.</td></tr>
+              <tr><td>Enrollment decline</td><td><span class="tl-pill amber">Medium</span></td><td><span class="tl-pill red">High</span></td><td>Strengthen distinctiveness, family engagement, and marketing of outcomes.</td></tr>
+              <tr><td>Budget pressure / funding cut</td><td><span class="tl-pill amber">Medium</span></td><td><span class="tl-pill amber">Medium</span></td><td>Multi-year financial plan, reserves, diversified funding, scenario planning.</td></tr>
+              <tr><td>Data / cybersecurity incident</td><td><span class="tl-pill amber">Medium</span></td><td><span class="tl-pill red">High</span></td><td>Access controls, staff training, backups, tested incident-response plan.</td></tr>
+              <tr><td>Initiative overload / change fatigue</td><td><span class="tl-pill green">Low</span></td><td><span class="tl-pill amber">Medium</span></td><td>Limit to a few high-leverage priorities; sequence and protect capacity.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">From Scan to Strategy</span>
+          <p class="muted" style="margin:.3rem 0 0;">Cross your SWOT quadrants to surface strategy: <b>S–O</b> (leverage), <b>W–O</b> (improve), <b>S–T</b> (defend), <b>W–T</b> (mitigate). Carry the strongest signals forward into your priorities.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="strategic-priorities.html">Next: Strategic Priorities</a>
+          <a class="btn ghost" href="vision.html">Back to Vision</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Strategic Planning Blueprint</h4><p style="color:#c9d6e6;">A complete strategic management system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Blueprint</h4><ul><li><a href="vision.html">Vision Builder</a></li><li><a href="strategic-priorities.html">Priorities</a></li><li><a href="goal-manager.html">Goal & KPI Manager</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="governance.html">Governance</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; strategic plans &amp; data are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

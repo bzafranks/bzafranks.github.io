@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance &amp; Accountability — Strategic Planning Blueprint</title>
+  <meta name="description" content="Governance systems that sustain a strategy — strategic review meetings, board reporting, leadership accountability, evidence tracking, decision logs, policy alignment, and a governance calendar.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Strategic Planning Blueprint" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">SP</span><span class="brand-text"><span class="brand-title">Strategic Planning Blueprint</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="goal-manager.html">KPIs</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every page) ===== -->
+      <aside class="app-rail" aria-label="Strategic planning system">
+        <div class="rail-brand"><span class="mark">SP</span><b>Strategic Blueprint</b></div>
+        <div class="rail-group">Framework</div>
+        <a class="rail-link" href="framework.html"><span class="ico">🧭</span> Planning Framework</a>
+        <div class="rail-group">Discover &amp; Define</div>
+        <a class="rail-link" href="vision.html"><span class="ico">🌅</span> Vision Builder</a>
+        <a class="rail-link" href="environmental-analysis.html"><span class="ico">🔬</span> Environmental Analysis</a>
+        <div class="rail-group">Design</div>
+        <a class="rail-link" href="strategic-priorities.html"><span class="ico">🎯</span> Strategic Priorities</a>
+        <a class="rail-link" href="goal-manager.html"><span class="ico">📊</span> Goal &amp; KPI Manager</a>
+        <div class="rail-group">Deploy &amp; Measure</div>
+        <a class="rail-link" href="roadmap.html"><span class="ico">🗺️</span> Implementation Roadmap</a>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📈</span> Performance Dashboard</a>
+        <a class="rail-link" href="governance.html"><span class="ico">⚖️</span> Governance &amp; Accountability</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Measure / <b>Governance &amp; Accountability</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">⚖️ Oversight &amp; Accountability</span>
+          <h1>Governance &amp; Accountability</h1>
+          <p class="lead">A strategy is only as strong as the governance that holds it. This system defines strategic review meetings, board reporting, leadership accountability, evidence tracking, decision logs, policy alignment, and a governance calendar — turning oversight into a continuous-improvement engine rather than a compliance exercise.</p>
+        </div>
+
+        <div class="research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research Foundation</span>
+          <p class="muted" style="margin:.3rem 0 0;">Grounded in corporate &amp; educational governance research, the Balanced Scorecard's strategic-review discipline, and evidence-based decision-making — clear roles, regular evidence review, transparent decision records, and aligned policy sustain accountability and trust. <em>Plans, logs, and data are illustrative.</em></p>
+        </div>
+
+        <!-- ===== (a) SAVED GOVERNANCE PLANNER ===== -->
+        <h2>Governance Planner</h2>
+        <p class="muted" style="max-width:70ch;">Draft your organization's governance approach. Entries save privately in this browser, so you can return and refine them over time.</p>
+
+        <form class="gen-form" data-governance style="margin:1rem 0 1.6rem;">
+          <div class="field">
+            <label for="reviewCadence">Review cadence</label>
+            <textarea id="reviewCadence" name="reviewCadence" placeholder="How often will leadership and the board review strategic progress? (e.g., monthly leadership, quarterly board, annual full review)"></textarea>
+          </div>
+          <div class="field">
+            <label for="boardReporting">Board reporting</label>
+            <textarea id="boardReporting" name="boardReporting" placeholder="What is reported to the board, in what format, and how often? (e.g., quarterly KPI dashboard, risk register, decision summary)"></textarea>
+          </div>
+          <div class="field">
+            <label for="accountability">Accountability roles</label>
+            <textarea id="accountability" name="accountability" placeholder="Who is accountable for which outcomes and decisions? (e.g., owners, steering group, board committees)"></textarea>
+          </div>
+          <div class="field">
+            <label for="decisions">Decision log notes</label>
+            <textarea id="decisions" name="decisions" placeholder="Key decisions, who made them, and the evidence behind them."></textarea>
+          </div>
+          <div class="btn-row" style="align-items:center;gap:.8rem;">
+            <button class="btn" type="submit">Save governance plan</button>
+            <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            <span class="saved-note" data-plan-saved role="status" aria-live="polite"></span>
+          </div>
+        </form>
+
+        <!-- ===== (b) GOVERNANCE CALENDAR ===== -->
+        <h2 style="margin-top:2rem;">Governance Calendar</h2>
+        <p class="muted" style="max-width:70ch;">A predictable cadence of monthly, quarterly, and annual touchpoints keeps oversight rhythmic and proactive.</p>
+        <ul class="timeline" style="margin-top:1rem;">
+          <li class="now"><span class="t-when">Monthly · Leadership review</span><br>Leadership team reviews KPI progress, risks, and decisions; updates the decision log and evidence tracker.</li>
+          <li><span class="t-when">Quarterly · Board report &amp; strategic review</span><br>Board receives the KPI dashboard, risk register, and decision summary; formal strategic-progress review.</li>
+          <li><span class="t-when">Quarterly · Policy alignment check</span><br>Confirm policies and resource decisions remain aligned to the strategic priorities.</li>
+          <li class="done"><span class="t-when">Annual · Continuous-improvement review</span><br>Full evaluation of outcomes against the plan; capture lessons learned and renew the strategy.</li>
+        </ul>
+
+        <!-- ===== (c) DECISION LOG TABLE ===== -->
+        <h2 style="margin-top:2rem;">Decision Log</h2>
+        <p class="muted" style="max-width:70ch;">A transparent record of significant decisions — when they were made, who owns them, and their status — creating an auditable trail and shared memory.</p>
+        <div class="table-wrap" style="margin-top:.8rem;">
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Decision</th><th>Owner</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2025-09</td><td>Adopt new literacy framework</td><td>Board</td><td><span class="tl-pill green">Approved</span></td></tr>
+              <tr><td>2025-11</td><td>Reallocate budget to coaching model</td><td>Steering Group</td><td><span class="tl-pill green">Approved</span></td></tr>
+              <tr><td>2026-02</td><td>Expand MTSS intervention staffing</td><td>Leadership Team</td><td><span class="tl-pill amber">In review</span></td></tr>
+              <tr><td>2026-04</td><td>Revise family-engagement strategy</td><td>Community Liaison</td><td><span class="tl-pill amber">In review</span></td></tr>
+              <tr><td>2026-06</td><td>Update data-privacy &amp; reporting policy</td><td>Board Committee</td><td><span class="tl-pill red">Pending</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ===== (c) ACCOUNTABILITY ROLES DRILL-ROW ===== -->
+        <h2 style="margin-top:2rem;">Accountability Roles</h2>
+        <p class="muted" style="max-width:70ch;">Clear decision rights prevent diffusion of responsibility. Expand each role to see its remit.</p>
+        <div style="margin-top:.6rem;">
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Board of Directors / Trustees</span></div>
+          <div class="drill-panel">
+            <p>Sets strategic direction, approves major decisions and budgets, and holds leadership accountable for outcomes.</p>
+            <p>Receives the quarterly dashboard, risk register, and decision summary; conducts the annual strategy review.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Executive / Head of Organization</span></div>
+          <div class="drill-panel">
+            <p>Owns delivery of the strategic plan; chairs the steering group; reports to the board.</p>
+            <p>Ensures evidence is tracked and decisions are logged and communicated.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Steering Group</span></div>
+          <div class="drill-panel">
+            <p>Oversees initiative delivery, allocates resources, and unblocks issues between board meetings.</p>
+            <p>Maintains the risk register and recommends decisions for board approval.</p>
+          </div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;font-weight:700;">Initiative Owners</span></div>
+          <div class="drill-panel">
+            <p>Accountable for specific KPIs, milestones, evidence, and risks within their initiative.</p>
+            <p>Report status into the monthly leadership review. <a href="roadmap.html">See the roadmap →</a></p>
+          </div>
+        </div>
+
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Why Governance Matters</span>
+          <p class="muted" style="margin:.3rem 0 0;">Good governance is the difference between a plan that lives and one that gathers dust. Regular evidence review, transparent decision logs, named accountability, and aligned policy convert oversight into continuous improvement — building stakeholder trust and protecting the strategy from drift. <em>Illustrative.</em></p>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="dashboard.html">View the Dashboard</a>
+          <a class="btn ghost" href="framework.html">Back to Framework</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Strategic Planning Blueprint</h4><p style="color:#c9d6e6;">A complete strategic management system — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Blueprint</h4><ul><li><a href="vision.html">Vision Builder</a></li><li><a href="strategic-priorities.html">Priorities</a></li><li><a href="goal-manager.html">Goal & KPI Manager</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="governance.html">Governance</a></li><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; strategic plans &amp; data are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
