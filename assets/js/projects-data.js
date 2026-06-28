@@ -211,5 +211,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "⭐",
     tags: ["Instructional Leadership", "Instructional Coaching", "Teacher Development", "Professional Learning", "School Improvement", "Research-Based"],
     summary: "A comprehensive instructional leadership system built on six domains (Vision, Coaching, Curriculum & Assessment, Professional Learning, Data-Informed Improvement, Collaborative Culture) — with an interactive teaching-excellence model, a built-in instructional-leadership self-assessment, a coaching cycle + plan generator, classroom-observation tools + summary generator, growth-focused feedback, professional-learning planner, curriculum/data toolkits, and teaching-quality analytics. Third project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "leadership-academy",
+    title: "Educational Leadership Academy",
+    subtitle: "A professional learning ecosystem for transformational educational leaders",
+    pillar: "il",
+    grade: "Leadership · Academy",
+    status: "done",
+    url: "projects/leadership-academy/index.html",
+    icon: "🎓",
+    tags: ["Leadership Development", "Executive Education", "Professional Learning", "Leadership Coaching", "Certification", "Adult Learning"],
+    summary: "A world-class leadership-development ecosystem: 7 role-based leadership pathways, an 8-competency framework, a digital learning academy + 10-course catalog with saved progress, executive coaching with a saved planner, working branching leadership simulations (decisions → coaching feedback → outcome), competency-based certifications with claimable badges, a saved professional portfolio, and a learning-analytics dashboard. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

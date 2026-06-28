@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio — Educational Leadership Academy</title>
+  <meta name="description" content="Build an online leadership portfolio — philosophy, goals, evidence, and achievements — alongside your credentials, growth timeline, and a private reflection journal.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Educational Leadership Academy" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LA</span><span class="brand-text"><span class="brand-title">Educational Leadership Academy</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="leadership-pathways.html">Pathways</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="simulations.html">Simulations</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every academy page) ===== -->
+      <aside class="app-rail" aria-label="Academy">
+        <div class="rail-brand"><span class="mark">LA</span><b>Leadership Academy</b></div>
+        <div class="rail-group">Learn</div>
+        <a class="rail-link" href="leadership-pathways.html"><span class="ico">🛤️</span> Leadership Pathways</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Framework</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🏛️</span> Learning Academy</a>
+        <a class="rail-link" href="courses.html"><span class="ico">📚</span> Leadership Courses</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="coaching.html"><span class="ico">🧑‍🏫</span> Coaching &amp; Mentoring</a>
+        <a class="rail-link" href="simulations.html"><span class="ico">🎮</span> Leadership Simulations</a>
+        <a class="rail-link" href="certifications.html"><span class="ico">🏅</span> Certification Programs</a>
+        <a class="rail-link" href="portfolio.html"><span class="ico">📁</span> Professional Portfolio</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Professional Portfolio</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📁 Your Leadership Story</span>
+          <h1>Professional Portfolio</h1>
+          <p class="lead">Curate an online leadership portfolio that grows with you. Capture your philosophy, goals, evidence, and achievements; watch your credentials and growth timeline build alongside a private reflection journal.</p>
+        </div>
+
+        <!-- ===== (a) SAVED PORTFOLIO FORM ===== -->
+        <h2 style="margin-top:1.4rem;">Build your portfolio</h2>
+        <p class="muted" style="margin-top:.3rem;">Each field saves to your browser as you type. Use it to draft, refine, and revisit your leadership narrative over time.</p>
+        <div class="card" style="margin-top:.8rem;">
+          <form data-portfolio>
+            <div class="field">
+              <label for="pf-philosophy">Leadership philosophy</label>
+              <textarea id="pf-philosophy" name="philosophy" placeholder="What do you believe about leading learning, people, and change? Describe the values and beliefs that anchor your practice."></textarea>
+            </div>
+            <div class="field">
+              <label for="pf-goals">Professional goals</label>
+              <textarea id="pf-goals" name="goals" placeholder="What are you working toward this year and beyond? Name the outcomes, competencies, and impact you are pursuing."></textarea>
+            </div>
+            <div class="field">
+              <label for="pf-evidence">Evidence of leadership</label>
+              <textarea id="pf-evidence" name="evidence" placeholder="Point to artifacts, initiatives, and results that show your leadership in action — improvement plans, observation data, team outcomes."></textarea>
+            </div>
+            <div class="field">
+              <label for="pf-achievements">Professional achievements</label>
+              <textarea id="pf-achievements" name="achievements" placeholder="Recognitions, completed programs, milestones, and contributions you are proud of."></textarea>
+            </div>
+            <div class="btn-row" style="align-items:center;">
+              <button class="btn">Save portfolio</button>
+              <span data-plan-saved class="saved-note"></span>
+              <button class="out-btn" type="button" data-plan-clear>Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ===== (b) CREDENTIALS & GROWTH ===== -->
+        <h2 style="margin-top:1.6rem;">Credentials &amp; growth</h2>
+        <p class="muted" style="margin-top:.3rem;">These counters reflect the courses you complete and credentials you claim across the Academy.</p>
+        <div class="stat-strip">
+          <div class="stat-tile"><div class="s-num"><span data-courses-done>0</span>/10</div><div class="s-label">Courses completed</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-badges-earned>0</span></div><div class="s-label">Credentials earned</div></div>
+        </div>
+
+        <h3 style="margin-top:1.2rem;">Growth timeline</h3>
+        <ul class="timeline" style="margin-top:.6rem;">
+          <li class="done"><span class="t-when">2023</span><br><b>Entered leadership</b> — stepped into a formal leadership role and completed onboarding foundations.</li>
+          <li class="done"><span class="t-when">2024</span><br><b>Foundations of Educational Leadership</b> — earned first credential and built a 90-day priorities plan.</li>
+          <li class="now"><span class="t-when">2025</span><br><b>Instructional Leadership focus</b> — currently deepening walkthrough and coaching practice.</li>
+          <li><span class="t-when">2026</span><br><b>Strategic leadership goal</b> — pursuing a school-improvement capstone and advanced certification.</li>
+        </ul>
+
+        <!-- ===== Reflection journal ===== -->
+        <h3 style="margin-top:1.4rem;">Reflection journal</h3>
+        <p class="muted" style="margin-top:.3rem;">Capture reflections on your leadership practice. Entries are kept privately in this browser.</p>
+        <div class="card" style="margin-top:.6rem;" data-journal>
+          <div class="field">
+            <label for="pf-journal">New reflection</label>
+            <textarea id="pf-journal" placeholder="What did you learn, decide, or change in your leadership this week?"></textarea>
+          </div>
+          <div class="btn-row" style="align-items:center;">
+            <button class="btn small" type="button" data-journal-add>Add entry</button>
+            <button class="out-btn" type="button" data-journal-clear>Clear journal</button>
+          </div>
+          <div data-journal-list style="margin-top:1rem;"></div>
+        </div>
+
+        <!-- ===== (c) PRIVACY NOTE ===== -->
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;">Your portfolio, credentials, and reflections are saved privately in your browser — nothing is uploaded or shared. All data shown is illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Educational Leadership Academy</h4><p style="color:#c9d6e6;">A professional learning ecosystem — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Academy</h4><ul><li><a href="leadership-pathways.html">Pathways</a></li><li><a href="courses.html">Courses</a></li><li><a href="simulations.html">Simulations</a></li><li><a href="certifications.html">Certifications</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; courses and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

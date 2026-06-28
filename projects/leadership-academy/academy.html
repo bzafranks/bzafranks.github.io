@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Academy — Educational Leadership Academy</title>
+  <meta name="description" content="The digital learning hub: featured programs, learning paths, microlearning, masterclasses, a leadership reading library, and a learning-progress tracker.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Educational Leadership Academy" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LA</span><span class="brand-text"><span class="brand-title">Educational Leadership Academy</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="leadership-pathways.html">Pathways</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="simulations.html">Simulations</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every academy page) ===== -->
+      <aside class="app-rail" aria-label="Academy">
+        <div class="rail-brand"><span class="mark">LA</span><b>Leadership Academy</b></div>
+        <div class="rail-group">Learn</div>
+        <a class="rail-link" href="leadership-pathways.html"><span class="ico">🛤️</span> Leadership Pathways</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Framework</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🏛️</span> Learning Academy</a>
+        <a class="rail-link" href="courses.html"><span class="ico">📚</span> Leadership Courses</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="coaching.html"><span class="ico">🧑‍🏫</span> Coaching &amp; Mentoring</a>
+        <a class="rail-link" href="simulations.html"><span class="ico">🎮</span> Leadership Simulations</a>
+        <a class="rail-link" href="certifications.html"><span class="ico">🏅</span> Certification Programs</a>
+        <a class="rail-link" href="portfolio.html"><span class="ico">📁</span> Professional Portfolio</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Learn / <b>Learning Academy</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🏛️ Digital Learning Hub</span>
+          <h1>Learning Academy</h1>
+          <p class="lead">Your home for leadership learning — featured programs, learning paths, microlearning, masterclasses, a reading library, and a progress tracker. Courses you complete are saved to your browser and reflected across the Academy.</p>
+        </div>
+
+        <!-- progress strip -->
+        <div class="stat-strip">
+          <div class="stat-tile"><div class="s-num"><span data-courses-done>0</span>/10</div><div class="s-label">Courses completed</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-badges-earned>0</span></div><div class="s-label">Credentials earned</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-count="7">0</span></div><div class="s-label">Leadership pathways</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-count="40">0</span>+</div><div class="s-label">Microlearning modules</div></div>
+        </div>
+
+        <!-- featured programs -->
+        <h2 style="margin-top:1.4rem;">Featured Programs</h2>
+        <div class="course-grid" style="margin-top:.8rem;">
+          <div class="course-card" data-course="found-led"><div class="c-top"><span class="c-ico">🌟</span><h3 style="color:#fff;margin:.3rem 0 0;">Foundations of Educational Leadership</h3></div><div class="c-body"><p class="c-meta">Pathway: New Principals · 6 modules · ~8 hrs</p><p class="muted">Core leadership knowledge, identity, and first-90-days priorities.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="found-led">Mark complete</button></div></div></div>
+          <div class="course-card" data-course="instr-led"><div class="c-top"><span class="c-ico">📚</span><h3 style="color:#fff;margin:.3rem 0 0;">Instructional Leadership Excellence</h3></div><div class="c-body"><p class="c-meta">Pathway: Experienced Principals · 7 modules · ~10 hrs</p><p class="muted">Walkthroughs, coaching, and a culture of instructional excellence.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="instr-led">Mark complete</button></div></div></div>
+          <div class="course-card" data-course="retention"><div class="c-top"><span class="c-ico">🤝</span><h3 style="color:#fff;margin:.3rem 0 0;">Teacher Retention &amp; Workforce Leadership</h3></div><div class="c-body"><p class="c-meta">Pathway: All leaders · 5 modules · ~6 hrs</p><p class="muted">Research-based behaviors that retain great teachers.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="retention">Mark complete</button></div></div></div>
+        </div>
+        <p class="muted" style="margin-top:.6rem;"><a href="courses.html">See the full course catalog →</a></p>
+
+        <!-- learning modes -->
+        <h2 style="margin-top:1.6rem;">Ways to Learn</h2>
+        <div class="tool-grid" style="margin-top:.8rem;">
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">⚡</span><h4>Microlearning</h4><p class="muted">5–10 minute modules for busy leaders.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🎥</span><h4>Masterclasses &amp; Video</h4><p class="muted">Deep dives from expert practitioners.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🧑‍🏫</span><h4>Workshops</h4><p class="muted">Facilitated, application-focused sessions.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">💬</span><h4>Discussion Forums</h4><p class="muted">Learn with a community of leaders.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🎮</span><h4>Simulations</h4><p class="muted">Practice high-stakes decisions safely. <a href="simulations.html">Try →</a></p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">📖</span><h4>Reading Library</h4><p class="muted">Curated leadership reading. <a href="resources.html">Browse →</a></p></div>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="courses.html">Browse Courses</a>
+          <a class="btn ghost" href="leadership-pathways.html">Find Your Pathway</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">Progress is saved privately in your browser. Courses and scenarios are illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Educational Leadership Academy</h4><p style="color:#c9d6e6;">A professional learning ecosystem — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Academy</h4><ul><li><a href="leadership-pathways.html">Pathways</a></li><li><a href="courses.html">Courses</a></li><li><a href="simulations.html">Simulations</a></li><li><a href="certifications.html">Certifications</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; courses and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

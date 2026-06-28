@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Simulations — Educational Leadership Academy</title>
+  <meta name="description" content="Practice high-stakes leadership decisions safely with branching scenarios: difficult conversations, school crises, performance coaching, change leadership, and more.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Educational Leadership Academy" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LA</span><span class="brand-text"><span class="brand-title">Educational Leadership Academy</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="leadership-pathways.html">Pathways</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="simulations.html">Simulations</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every academy page) ===== -->
+      <aside class="app-rail" aria-label="Academy">
+        <div class="rail-brand"><span class="mark">LA</span><b>Leadership Academy</b></div>
+        <div class="rail-group">Learn</div>
+        <a class="rail-link" href="leadership-pathways.html"><span class="ico">🛤️</span> Leadership Pathways</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Framework</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🏛️</span> Learning Academy</a>
+        <a class="rail-link" href="courses.html"><span class="ico">📚</span> Leadership Courses</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="coaching.html"><span class="ico">🧑‍🏫</span> Coaching &amp; Mentoring</a>
+        <a class="rail-link" href="simulations.html"><span class="ico">🎮</span> Leadership Simulations</a>
+        <a class="rail-link" href="certifications.html"><span class="ico">🏅</span> Certification Programs</a>
+        <a class="rail-link" href="portfolio.html"><span class="ico">📁</span> Professional Portfolio</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Grow / <b>Leadership Simulations</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🎮 Decision Practice</span>
+          <h1>Leadership Simulations</h1>
+          <p class="lead">Practice high-stakes leadership decisions safely with branching scenarios. Each choice reveals coaching feedback and leads toward a different outcome — so you can rehearse hard moments before they happen in real life. There are no permanent consequences here, only learning.</p>
+        </div>
+
+        <!-- simulation library -->
+        <h2 style="margin-top:1.4rem;">Simulation Library</h2>
+        <div class="tool-grid" style="margin-top:.8rem;">
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">💬</span><h4>Managing difficult conversations</h4><p class="muted">Address performance and disengagement with candor and care.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🚨</span><h4>Responding to school crises</h4><p class="muted">Lead calmly and decisively when the unexpected hits.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🎯</span><h4>Teacher performance coaching</h4><p class="muted">Turn evaluation into growth-focused coaching.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">👪</span><h4>Parent engagement</h4><p class="muted">Navigate a high-emotion family conversation.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🔄</span><h4>Leading organizational change</h4><p class="muted">Build buy-in for a major initiative.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">⚖️</span><h4>Conflict resolution</h4><p class="muted">Mediate tension between team members fairly.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">🧭</span><h4>Strategic decision-making</h4><p class="muted">Weigh trade-offs under uncertainty.</p></div>
+          <div class="card" data-fade><span class="t-ico" style="font-size:1.6rem;">📈</span><h4>School improvement planning</h4><p class="muted">Prioritize and sequence improvement efforts.</p></div>
+        </div>
+
+        <!-- featured simulation -->
+        <h2 style="margin-top:1.6rem;">Featured Simulation</h2>
+        <p class="muted" style="margin-top:.3rem;">Managing a difficult conversation with a disengaged teacher. Read each scene, choose how you would respond, and review the coaching note before continuing. This is a safe space to practice; the scenario is illustrative.</p>
+
+        <div class="sim" data-sim data-start="s1" style="margin-top:1rem;">
+          <div class="sim-stage" data-step="s1">
+            <p class="sim-scene">Mr. Adeyemi is one of your strongest teachers — but after a tough term, he has grown quiet in meetings, stopped volunteering, and his lessons feel like he is going through the motions. A parent has casually mentioned that "things feel different" in his class. You have asked him to stop by your office. He sits down, arms folded, and waits. How do you open the conversation?</p>
+            <div class="sim-options">
+              <button class="sim-opt" data-goto="s2a" data-note="Opening with genuine curiosity and care lowers defensiveness and signals respect. Naming what you have noticed without judgment invites him to tell his story.">Open with care: "I have noticed you seem a bit weighed down lately, and I wanted to check in. How are you doing?"</button>
+              <button class="sim-opt" data-goto="s2b" data-note="Leading with the deficit puts him on the defensive immediately. Even when concerns are valid, opening with an accusation usually shuts down honest dialogue.">Lead with the concern: "Your engagement has dropped and a parent has noticed. We need to talk about your performance."</button>
+              <button class="sim-opt" data-goto="s2c" data-note="Avoiding the real issue wastes the moment and can feel dismissive. Soft small talk with no purpose leaves him guessing why he is really here.">Keep it light: chat about the weekend and hope he opens up on his own without you raising anything.</button>
+            </div>
+          </div>
+
+          <div class="sim-stage" data-step="s2a">
+            <p class="sim-scene">His arms slowly unfold. After a pause he admits: "Honestly? I'm exhausted. My mother has been ill, I'm covering two extra duties, and I feel like nothing I do here gets noticed anymore." He looks at you to see how you will react. What do you do next?</p>
+            <div class="sim-options">
+              <button class="sim-opt" data-goto="end-strong" data-note="Listening fully, acknowledging the load, and co-creating support honors the person and the professional. This is coaching at its best — you address well-being AND a path forward.">Acknowledge the load, thank him for his honesty, and ask: "What would actually help right now — and what does support look like for you?"</button>
+              <button class="sim-opt" data-goto="end-mixed" data-note="Jumping straight to solutions before he feels heard can feel transactional. The instinct to help is good, but rushing past his emotion risks him feeling managed rather than understood.">Move quickly to fixes: immediately offer to remove one duty and lay out a performance-improvement timeline.</button>
+              <button class="sim-opt" data-goto="end-mixed" data-note="Empathy without any follow-through leaves the problem unsolved. Validation is necessary but not sufficient — he also needs to leave with something concrete.">Validate warmly — "That sounds really hard" — and end the meeting there, planning to revisit it some other time.</button>
+            </div>
+          </div>
+
+          <div class="sim-stage" data-step="s2b">
+            <p class="sim-scene">He stiffens. "So a parent complains and suddenly I'm a problem? I've given everything to this school." He is now defending himself rather than reflecting. The conversation has become adversarial. How do you recover?</p>
+            <div class="sim-options">
+              <button class="sim-opt" data-goto="end-mixed" data-note="Naming the misstep and resetting toward care can partially repair the rupture — but trust has already taken a hit, and the conversation will be harder than it needed to be.">Reset: "I started that badly. I'm not here to attack you — I'm worried about you. Can we start over?"</button>
+              <button class="sim-opt" data-goto="end-weak" data-note="Doubling down on authority in a defensive moment escalates conflict and damages trust, often for far longer than the original issue would have.">Hold firm: "Regardless of how it came up, the expectations are the expectations, and they aren't being met."</button>
+              <button class="sim-opt" data-goto="end-weak" data-note="Retreating entirely teaches that pushback ends accountability, and the underlying disengagement goes unaddressed. Avoidance is rarely leadership.">Back off entirely: apologize, drop the subject, and send him back to class to avoid further conflict.</button>
+            </div>
+          </div>
+
+          <div class="sim-stage" data-step="s2c">
+            <p class="sim-scene">Fifteen minutes of pleasant small talk pass, but he never raises anything real and the bell is about to ring. He stands to leave, clearly relieved that "nothing was wrong." You have learned little and changed nothing. You realize you have to decide now. What do you do?</p>
+            <div class="sim-options">
+              <button class="sim-opt" data-goto="end-mixed" data-note="Pivoting to a genuine, caring question before he leaves rescues the meeting — though the wandering start cost time and a little credibility.">Catch it before he goes: "Before you head out — I actually asked you here because I've been a little worried about you. How are things, really?"</button>
+              <button class="sim-opt" data-goto="end-weak" data-note="Letting him leave without ever surfacing the issue means the disengagement continues unaddressed and you have modeled avoidance.">Let him go and tell yourself you will find a better time later — there is always next week.</button>
+              <button class="sim-opt" data-goto="end-weak" data-note="An abrupt accusation at the door, after pleasant chatter, feels like a trap and damages trust badly.">As he reaches the door, blurt out that his performance has slipped and a parent complained.</button>
+            </div>
+          </div>
+
+          <div class="sim-stage sim-outcome" data-step="end-strong">
+            <p class="sim-scene"><span class="sim-quality strong">Strong outcome</span></p>
+            <p>Mr. Adeyemi leaves feeling seen, supported, and respected. Together you agree to redistribute one duty, schedule a follow-up, and connect him to the employee assistance program. Within weeks his energy returns — and because he felt cared for first, he is open to honest coaching about his teaching, too. You addressed the human being and the professional, and you strengthened trust for every future conversation.</p>
+            <button class="btn" data-sim-restart>Restart simulation</button>
+          </div>
+
+          <div class="sim-stage sim-outcome" data-step="end-mixed">
+            <p class="sim-scene"><span class="sim-quality mixed">Mixed outcome</span></p>
+            <p>The conversation produced something useful — but at a cost. Either he felt managed rather than understood, or the issue was named without a real path forward. He leaves partly reassured and partly wary. The relationship is intact but not deepened, and you will likely need another conversation to fully address both his well-being and his practice. A reminder: in difficult conversations, sequence matters — connect before you correct.</p>
+            <button class="btn" data-sim-restart>Restart simulation</button>
+          </div>
+
+          <div class="sim-stage sim-outcome" data-step="end-weak">
+            <p class="sim-scene"><span class="sim-quality weak">Weak outcome</span></p>
+            <p>The conversation eroded trust or avoided the real issue entirely. Mr. Adeyemi leaves feeling attacked, dismissed, or confused — and the underlying disengagement is unresolved. Worse, he may now be more guarded in future interactions, making the next conversation harder. The lesson: difficult conversations go best when you lead with curiosity and care, stay present when emotions rise, and always leave the person with a concrete next step.</p>
+            <button class="btn" data-sim-restart>Restart simulation</button>
+          </div>
+        </div>
+
+        <!-- research note -->
+        <div class="research" style="margin-top:1.6rem;">
+          <span class="tag">Research-informed</span>
+          <p style="margin:.3rem 0 0;">Branching simulations let leaders rehearse rare, high-stakes situations in a low-risk setting and receive immediate feedback on their choices — a practice drawn from medicine, aviation, and crisis management. Deliberate, feedback-rich practice builds the judgment that real moments demand.</p>
+        </div>
+
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">This is a safe space to practice. All scenarios are illustrative.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Educational Leadership Academy</h4><p style="color:#c9d6e6;">A professional learning ecosystem — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Academy</h4><ul><li><a href="leadership-pathways.html">Pathways</a></li><li><a href="courses.html">Courses</a></li><li><a href="simulations.html">Simulations</a></li><li><a href="certifications.html">Certifications</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; courses and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

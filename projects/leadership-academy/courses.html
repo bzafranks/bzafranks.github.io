@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Courses — Educational Leadership Academy</title>
+  <meta name="description" content="The full leadership course catalog — ten research-informed courses from Foundations of Educational Leadership to AI for School Leaders, with completion tracked privately in your browser.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Educational Leadership Academy" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LA</span><span class="brand-text"><span class="brand-title">Educational Leadership Academy</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="leadership-pathways.html">Pathways</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="simulations.html">Simulations</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every academy page) ===== -->
+      <aside class="app-rail" aria-label="Academy">
+        <div class="rail-brand"><span class="mark">LA</span><b>Leadership Academy</b></div>
+        <div class="rail-group">Learn</div>
+        <a class="rail-link" href="leadership-pathways.html"><span class="ico">🛤️</span> Leadership Pathways</a>
+        <a class="rail-link" href="competencies.html"><span class="ico">🎯</span> Competency Framework</a>
+        <a class="rail-link" href="academy.html"><span class="ico">🏛️</span> Learning Academy</a>
+        <a class="rail-link" href="courses.html"><span class="ico">📚</span> Leadership Courses</a>
+        <div class="rail-group">Grow</div>
+        <a class="rail-link" href="coaching.html"><span class="ico">🧑‍🏫</span> Coaching &amp; Mentoring</a>
+        <a class="rail-link" href="simulations.html"><span class="ico">🎮</span> Leadership Simulations</a>
+        <a class="rail-link" href="certifications.html"><span class="ico">🏅</span> Certification Programs</a>
+        <a class="rail-link" href="portfolio.html"><span class="ico">📁</span> Professional Portfolio</a>
+        <div class="rail-group">Insight</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Leadership Dashboard</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Learn / <b>Leadership Courses</b></div>
+          <div class="app-actions">
+            <button class="out-btn" type="button" onclick="document.querySelector('.fab').click()">⌘K Jump to…</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📚 Course Catalog</span>
+          <h1>Leadership Courses</h1>
+          <p class="lead">Ten research-informed courses spanning the leadership journey — each mapped to a pathway and the competency framework. Mark a course complete to track your progress; the first three sync with the Learning Academy. Your progress is saved privately in your browser.</p>
+        </div>
+
+        <!-- progress strip -->
+        <div class="stat-strip">
+          <div class="stat-tile"><div class="s-num"><span data-courses-done>0</span>/10</div><div class="s-label">Courses completed</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-count="10">0</span></div><div class="s-label">Courses in catalog</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-count="60">0</span>+</div><div class="s-label">Modules</div></div>
+          <div class="stat-tile"><div class="s-num"><span data-count="8">0</span></div><div class="s-label">Competencies covered</div></div>
+        </div>
+
+        <h2 style="margin-top:1.4rem;">Catalog</h2>
+        <div class="course-grid" style="margin-top:.8rem;">
+
+          <div class="course-card" data-course="found-led"><div class="c-top"><span class="c-ico">🌟</span><h3 style="color:#fff;margin:.3rem 0 0;">Foundations of Educational Leadership</h3></div><div class="c-body"><p class="c-meta">Aspiring &amp; New Leaders · 6 modules · ~8 hrs</p><p class="muted">Core leadership knowledge, identity, and first-90-days priorities.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="found-led">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="instr-led"><div class="c-top"><span class="c-ico">📚</span><h3 style="color:#fff;margin:.3rem 0 0;">Instructional Leadership Excellence</h3></div><div class="c-body"><p class="c-meta">Experienced Principals · 7 modules · ~10 hrs</p><p class="muted">Walkthroughs, coaching, and a culture of instructional excellence.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="instr-led">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="sch-improve"><div class="c-top"><span class="c-ico">📈</span><h3 style="color:#fff;margin:.3rem 0 0;">Leading School Improvement</h3></div><div class="c-body"><p class="c-meta">Experienced &amp; District Leaders · 6 modules · ~9 hrs</p><p class="muted">Diagnose needs and run continuous-improvement cycles that stick.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="sch-improve">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="retention"><div class="c-top"><span class="c-ico">🤝</span><h3 style="color:#fff;margin:.3rem 0 0;">Teacher Retention &amp; Workforce Leadership</h3></div><div class="c-body"><p class="c-meta">All leaders · 5 modules · ~6 hrs</p><p class="muted">Research-based behaviors that retain great teachers.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="retention">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="strategic"><div class="c-top"><span class="c-ico">♟️</span><h3 style="color:#fff;margin:.3rem 0 0;">Strategic Planning</h3></div><div class="c-body"><p class="c-meta">District &amp; Executive Leaders · 6 modules · ~8 hrs</p><p class="muted">Turn vision into a coherent, prioritized, measurable strategy.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="strategic">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="change"><div class="c-top"><span class="c-ico">🔄</span><h3 style="color:#fff;margin:.3rem 0 0;">Leading Change</h3></div><div class="c-body"><p class="c-meta">Experienced &amp; Executive Leaders · 6 modules · ~7 hrs</p><p class="muted">Lead change people will sustain — from urgency to institutionalization.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="change">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="culture"><div class="c-top"><span class="c-ico">🌡️</span><h3 style="color:#fff;margin:.3rem 0 0;">School Culture &amp; Climate</h3></div><div class="c-body"><p class="c-meta">All leaders · 5 modules · ~6 hrs</p><p class="muted">Build a positive, inclusive culture where students and staff thrive.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="culture">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="data"><div class="c-top"><span class="c-ico">📊</span><h3 style="color:#fff;margin:.3rem 0 0;">Data-Informed Leadership</h3></div><div class="c-body"><p class="c-meta">All leaders · 6 modules · ~7 hrs</p><p class="muted">Use the right data well to drive decisions and equitable outcomes.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="data">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="innovation"><div class="c-top"><span class="c-ico">💡</span><h3 style="color:#fff;margin:.3rem 0 0;">Educational Innovation</h3></div><div class="c-body"><p class="c-meta">Experienced &amp; Executive Leaders · 6 modules · ~7 hrs</p><p class="muted">Build a culture of experimentation, pilots, and continuous renewal.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="innovation">Mark complete</button></div></div></div>
+
+          <div class="course-card" data-course="ai"><div class="c-top"><span class="c-ico">🤖</span><h3 style="color:#fff;margin:.3rem 0 0;">AI for School Leaders</h3></div><div class="c-body"><p class="c-meta">All leaders · 6 modules · ~7 hrs</p><p class="muted">Lead the responsible, ethical adoption of AI in schools.</p><div class="c-foot"><span class="course-prog"><span class="fill"></span></span><button class="out-btn" data-course-toggle="ai">Mark complete</button></div></div></div>
+
+        </div>
+
+        <!-- research note -->
+        <div class="research" style="margin-top:1.8rem;">
+          <span class="tag">Research note</span>
+          <p style="margin:.4rem 0 0;">High-impact leadership learning is job-embedded, sustained over time, and tied to authentic problems of practice rather than one-off workshops. Each course in this catalog therefore pairs concise modules with applied assignments and reflection, and maps to the <a href="competencies.html">competency framework</a> and a <a href="leadership-pathways.html">pathway</a> so learning connects directly to the leader's role. Courses are illustrative.</p>
+        </div>
+
+        <!-- what's in every course -->
+        <h2 style="margin-top:1.8rem;">What's in Every Course</h2>
+        <div class="card" style="margin-top:.8rem;">
+          <ul style="margin:0;padding-left:1.2rem;line-height:1.9;">
+            <li><b>Overview</b> — the purpose, audience, and pathway and competency alignment.</li>
+            <li><b>Learning outcomes</b> — what you will be able to do by the end.</li>
+            <li><b>Modules</b> — concise, sequenced lessons with video, readings, and microlearning.</li>
+            <li><b>Assignments</b> — job-embedded tasks you apply in your own setting.</li>
+            <li><b>Assessments</b> — knowledge checks and an applied capstone.</li>
+            <li><b>Resources</b> — tools, templates, and a curated reading list.</li>
+            <li><b>Completion certificate</b> — a credential added to your professional portfolio.</li>
+          </ul>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.6rem;">
+          <a class="btn" href="leadership-pathways.html">Find Your Pathway</a>
+          <a class="btn ghost" href="certifications.html">View Certifications</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">Courses are illustrative. Completion is saved privately in your browser and reflected across the Academy — nothing leaves this device.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Educational Leadership Academy</h4><p style="color:#c9d6e6;">A professional learning ecosystem — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Academy</h4><ul><li><a href="leadership-pathways.html">Pathways</a></li><li><a href="courses.html">Courses</a></li><li><a href="simulations.html">Simulations</a></li><li><a href="certifications.html">Certifications</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · Research-informed; courses and scenarios are illustrative.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
