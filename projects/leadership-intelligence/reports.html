@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports Center — Leadership Intelligence</title>
+  <meta name="description" content="Executive reports center: generate board, principal, district, ministry, school-improvement, leadership, retention, and strategic-progress reports from illustrative data — interactive, PDF-ready via the browser.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>Reports Center</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📄 Executive Reporting</span>
+          <h1>Reports Center</h1>
+          <p class="lead">Generate audience-ready executive reports in seconds. Report types include the <b>Board, Principal, District, Ministry, School Improvement, Leadership Performance Review, Teacher Retention,</b> and <b>Strategic Progress</b> reports. Each renders as an interactive, PDF-style document — use <b>Print / PDF</b> to save or share via your browser. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="gen-layout">
+          <form class="gen-form" data-generator="report">
+            <h3>Build a report</h3>
+            <div class="field">
+              <label for="rep-type">Report type</label>
+              <select id="rep-type" name="type">
+                <option>Board Report</option>
+                <option>Principal Report</option>
+                <option>District Report</option>
+                <option>Ministry Report</option>
+                <option>School Improvement Report</option>
+                <option>Leadership Performance Review</option>
+                <option>Teacher Retention Report</option>
+                <option>Strategic Progress Report</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="rep-org">Organization</label>
+                <input id="rep-org" name="org" type="text" value="Sample School District">
+              </div>
+              <div class="field">
+                <label for="rep-term">Reporting term</label>
+                <select id="rep-term" name="term">
+                  <option>This Year</option>
+                  <option>Last Year</option>
+                  <option>This Quarter</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn" type="submit">✨ Generate report</button>
+            <p class="muted" style="font-size:.84rem;margin-top:.9rem;">Reports are assembled from illustrative sample data and are intended for demonstration. Review every figure before distribution.</p>
+          </form>
+
+          <div class="gen-output" data-output="report">
+            <div class="out-toolbar">
+              <span class="ai-pill">Draft</span>
+              <button class="out-btn" data-act="regen">↻ Regenerate</button>
+              <button class="out-btn" data-act="copy">📋 Copy</button>
+              <button class="out-btn" data-act="print">🖨️ Print / PDF</button>
+            </div>
+            <div class="out-body">
+              <div class="out-empty">
+                <div><div class="big">📄</div><p>Choose a report type and Generate.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin:2rem 0 1rem;">Report Library</h2>
+        <div class="tool-grid">
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🏛️</div><h4>Board Report</h4><p>Concise, governance-ready summary prepared for the Board of Education.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🧑‍🏫</div><h4>Principal Report</h4><p>School-level view for a principal's leadership review and planning.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🏢</div><h4>District Report</h4><p>System-level rollup for the district office and superintendent.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🏤</div><h4>Ministry Report</h4><p>Formal accountability summary prepared for the Ministry of Education.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🛠️</div><h4>School Improvement Report</h4><p>Action-oriented brief for the school-improvement team.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">🧭</div><h4>Leadership Performance Review</h4><p>Summary of leadership effectiveness across the eight domains.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">💚</div><h4>Teacher Retention Report</h4><p>Retention, engagement, and workforce-health summary.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="#" data-no-link><div class="t-ico">📈</div><h4>Strategic Progress Report</h4><p>Progress against strategic goals and key milestones.</p><span class="t-go">Generate above →</span></a>
+          <a class="tool-card" href="dashboard.html"><div class="t-ico">📊</div><h4>Executive Summaries</h4><p>One-glance executive snapshots drawn from the dashboard view.</p><span class="t-go">Open dashboard →</span></a>
+        </div>
+
+        <p class="muted" style="margin-top:1.4rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration. Generated reports should be human-reviewed before sharing.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

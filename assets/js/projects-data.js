@@ -283,5 +283,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "💗",
     tags: ["Organizational Culture", "School Climate", "Psychological Safety", "Teacher Engagement", "Belonging", "Research-Based"],
     summary: "A research-based organizational-culture framework built on six domains (Trust & Relationships, Psychological Safety, Shared Vision & Values, Collaboration & Teamwork, Recognition & Belonging, Continuous Learning & Innovation) — with a scored 9-dimension Culture Health Assessment, a trust dashboard, a live teacher-voice idea portal, a live recognition wall, collaboration tools, culture analytics, and a saved 90-day culture action planner. Grounded in Dr. Franks' doctoral research on leadership behaviors that shape culture & teacher retention. Command palette, dark mode. A project in the Educational Leadership & School Improvement Suite."
+  },
+  {
+    id: "leadership-intelligence",
+    title: "Leadership Intelligence",
+    subtitle: "Executive decision-intelligence for educational leadership",
+    pillar: "il",
+    grade: "Leadership · System",
+    status: "done",
+    url: "projects/leadership-intelligence/index.html",
+    icon: "📊",
+    tags: ["Executive Dashboards", "Business Intelligence", "People Analytics", "Teacher Retention", "Predictive Insights", "Data-Driven Leadership"],
+    summary: "An executive decision-intelligence platform that measures what most dashboards ignore — leadership effectiveness, organizational health, teacher engagement & retention, and strategic execution. Includes an Executive Dashboard, a scored 8-domain Leadership Scorecard, School Performance & People Analytics, a doctoral-research-based Teacher Retention module with predictive turnover risk, Strategic Performance tracking, a ten-domain School Health Index with heat maps, Predictive Insights (framed as decision-support, not autopilot), and an executive Reports Center. Command palette, dark mode, notification center. A project in the Educational Leadership & School Improvement Suite."
   }
 ];

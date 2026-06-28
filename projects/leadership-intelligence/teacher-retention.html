@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Retention Analytics — Leadership Intelligence</title>
+  <meta name="description" content="A premium executive dashboard: overall leadership effectiveness, School Health Index, strategic goal progress, teacher retention & engagement, achievement, climate, operations, and risk indicators.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Performance / <b>Teacher Retention</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">💚 Workforce Intelligence</span>
+          <h1>Teacher Retention Analytics</h1>
+          <p class="lead">Retention, wellbeing, and the leadership behaviors that keep great teachers — operationalizing doctoral research on how leaders influence teacher retention. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="ret-school">School</label><select id="ret-school"><option>District (all schools)</option><option>Lincoln High</option><option>Harbor Middle</option></select>
+          <label for="ret-year">Year</label><select id="ret-year"><option>2025–26</option><option>2024–25</option></select>
+          <label for="ret-dept">Department</label><select id="ret-dept"><option>All departments</option><option>Mathematics</option><option>Humanities</option><option>STEM</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- research note -->
+        <div class="card research" style="margin-bottom:1.4rem;">
+          <span class="tag">Research-grounded module</span>
+          <p style="margin:.4rem 0 0;">This module operationalizes Dr. Barbara Z. Franks' doctoral research on the leadership behaviors that influence teacher retention. The retention drivers, wellbeing signals, and recommended interventions below translate those findings — trust, recognition, voice, manageable workload, growth, and support — into an executive decision-support view.</p>
+        </div>
+
+        <!-- hero gauge + KPIs -->
+        <div class="grid" style="grid-template-columns:1fr 2fr;gap:1.4rem;margin-bottom:1.4rem;align-items:center;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="88" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Teacher retention</small></div></div></div>
+          <div class="kpi-grid">
+            <div class="kpi green"><div class="k-label">💚 Retention Rate</div><div class="k-num"><span data-count="88" data-suffix="%">0</span></div><div class="k-trend up">▲ 4% vs. last year</div></div>
+            <div class="kpi green"><div class="k-label">🔥 Teacher Engagement</div><div class="k-num"><span data-count="84" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+            <div class="kpi amber"><div class="k-label">⚠️ Predicted Turnover Risk</div><div class="k-num"><span data-count="11" data-suffix="%">0</span></div><div class="k-trend down">▲ 1 dept — watch</div></div>
+            <div class="kpi green"><div class="k-label">🌱 Wellbeing Index</div><div class="k-num"><span data-count="79" data-suffix="%">0</span></div><div class="k-trend up">▲ 3%</div></div>
+          </div>
+        </div>
+
+        <!-- retention drivers + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Retention Drivers <span class="muted" style="font-size:.85rem;font-weight:400;">— strength of each leadership lever</span></h3><div class="barlist">
+            <div class="row"><span>Trust in leadership</span><span class="track"><span class="fill" data-pct="87"></span></span><b>87%</b></div>
+            <div class="row"><span>Recognition</span><span class="track"><span class="fill" data-pct="74"></span></span><b>74%</b></div>
+            <div class="row"><span>Teacher voice</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+            <div class="row"><span>Manageable workload</span><span class="track"><span class="fill" data-pct="63"></span></span><b>63%</b></div>
+            <div class="row"><span>Professional growth</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+            <div class="row"><span>Leadership support</span><span class="track"><span class="fill" data-pct="85"></span></span><b>85%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">Retention Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="Teacher retention trend, rising across the year"><path class="area" d="M0,46 L50,44 L100,40 L150,36 L200,32 L250,28 L300,24 L300,64 L0,64 Z"></path><path class="line" d="M0,46 L50,44 L100,40 L150,36 L200,32 L250,28 L300,24"></path></svg><p class="muted" style="font-size:.84rem;">Retention has climbed from 82% to 88% as recognition and voice initiatives matured.</p>
+            <h3 style="margin-bottom:.4rem;">Organizational Commitment</h3><div class="barlist">
+              <div class="row"><span>Affective (belonging)</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+              <div class="row"><span>Normative (obligation)</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+              <div class="row"><span>Continuance (intent to stay)</span><span class="track"><span class="fill" data-pct="86"></span></span><b>86%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- exit interview table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Exit-Interview Themes</h3>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Themes from exit interviews with frequency and recommended action</caption>
+              <thead><tr><th scope="col">Theme</th><th scope="col">Frequency</th><th scope="col">Recommended action</th></tr></thead>
+              <tbody>
+                <tr><td>Workload &amp; time pressure</td><td>31%</td><td>Protect planning time; audit non-teaching duties</td></tr>
+                <tr><td>Felt unrecognized</td><td>22%</td><td>Embed regular, specific recognition routines</td></tr>
+                <tr><td>Limited career growth</td><td>18%</td><td>Build teacher-leader and coaching pathways</td></tr>
+                <tr><td>Leadership communication</td><td>15%</td><td>Increase listening sessions &amp; transparency</td></tr>
+                <tr><td>Compensation / external offer</td><td>9%</td><td>Benchmark pay; strengthen stay-conversations</td></tr>
+                <tr><td>Relocation / personal</td><td>5%</td><td>Outside leadership influence — monitor only</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- predictive risk + interventions -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">🔮 Predictive Turnover Risk <span class="muted" style="font-size:.85rem;font-weight:400;">— decision-support, not a prediction about any individual</span></h3>
+            <div class="barlist">
+              <div class="row"><span>Mathematics dept.</span><span class="track"><span class="fill" data-pct="34"></span></span><b>34%</b></div>
+              <div class="row"><span>Humanities dept.</span><span class="track"><span class="fill" data-pct="12"></span></span><b>12%</b></div>
+              <div class="row"><span>STEM dept.</span><span class="track"><span class="fill" data-pct="9"></span></span><b>9%</b></div>
+              <div class="row"><span>Specialists</span><span class="track"><span class="fill" data-pct="7"></span></span><b>7%</b></div>
+            </div>
+            <p class="muted" style="font-size:.85rem;margin-top:.7rem;">Modeled aggregate risk by team. These are decision-support signals to prompt supportive leadership action — they are <b>not</b> predictions about any individual teacher.</p>
+          </div>
+          <div class="card"><h3 style="margin-top:0;">🎯 Recommended Interventions <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Protect teacher time</b></span><span class="tl-pill amber">Workload</span></div>
+            <div class="drill-panel"><p class="muted">Workload is the lowest driver (63%) and the top exit theme. Audit meetings and non-teaching duties; reclaim planning blocks.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Systematize recognition</b></span><span class="tl-pill amber">Recognition</span></div>
+            <div class="drill-panel"><p class="muted">Recognition (74%) lags trust and support. Embed specific, frequent recognition tied to instructional excellence.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Stay-conversations in Math</b></span><span class="tl-pill red">Priority</span></div>
+            <div class="drill-panel"><p class="muted">Highest modeled risk team. Lead proactive, supportive stay-conversations focused on growth and voice.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Open growth pathways</b></span><span class="tl-pill indigo">Growth</span></div>
+            <div class="drill-panel"><p class="muted">Career growth is a recurring exit theme. Build teacher-leader, mentoring, and coaching pathways.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="predictive-insights.html">🔮 Predictive Insights</a>
+          <a class="btn ghost" href="people-analytics.html">👥 People Analytics</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Retention Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration. Predictive figures are decision-support, not predictions about any individual.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

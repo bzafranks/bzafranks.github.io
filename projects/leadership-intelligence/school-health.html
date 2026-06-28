@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Health Index — Leadership Intelligence</title>
+  <meta name="description" content="A premium executive dashboard: overall leadership effectiveness, School Health Index, strategic goal progress, teacher retention & engagement, achievement, climate, operations, and risk indicators.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Intelligence / <b>School Health Index</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">❤️ Organizational Health</span>
+          <h1>School Health Index</h1>
+          <p class="lead">A ten-domain model of organizational health — leadership, teaching, culture, professional learning, student outcomes, operations, governance, community, innovation, and wellbeing — distilled into one composite score. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="sh-school">School</label><select id="sh-school"><option>District (all schools)</option><option>Lincoln High</option><option>Harbor Middle</option></select>
+          <label for="sh-year">Year</label><select id="sh-year"><option>2025–26</option><option>2024–25</option></select>
+          <label for="sh-view">View</label><select id="sh-view"><option>All domains</option><option>Strengths</option><option>Priority domains</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall banner -->
+        <div class="overall" style="margin-bottom:1.4rem;">
+          <div><div class="big-score"><span data-count="80">0</span></div><div class="muted" style="color:#dbe3f5;">School Health Index — composite of 10 domains</div></div>
+          <div style="display:flex;flex-direction:column;gap:.5rem;">
+            <span class="grade">Grade B+</span>
+            <span class="sc-trend up" style="color:#8ce0a8;">▲ 4 vs. last year</span>
+          </div>
+        </div>
+
+        <!-- heat map -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Health by Domain × Term <span class="muted" style="font-size:.85rem;font-weight:400;">— heat map</span></h3>
+          <div class="heat" style="grid-template-columns:170px repeat(4,1fr);" role="table" aria-label="School health by domain across four terms">
+            <div role="columnheader" style="background:none;color:var(--ink-soft);justify-content:flex-start;">Domain</div>
+            <div role="columnheader" style="background:none;color:var(--ink-soft);">T1</div>
+            <div role="columnheader" style="background:none;color:var(--ink-soft);">T2</div>
+            <div role="columnheader" style="background:none;color:var(--ink-soft);">T3</div>
+            <div role="columnheader" style="background:none;color:var(--ink-soft);">T4</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Leadership</div>
+            <div class="hcell h4" role="cell">82</div><div class="hcell h4" role="cell">84</div><div class="hcell h5" role="cell">86</div><div class="hcell h5" role="cell">87</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Teaching</div>
+            <div class="hcell h4" role="cell">78</div><div class="hcell h4" role="cell">80</div><div class="hcell h4" role="cell">81</div><div class="hcell h4" role="cell">83</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Culture</div>
+            <div class="hcell h4" role="cell">79</div><div class="hcell h5" role="cell">85</div><div class="hcell h5" role="cell">86</div><div class="hcell h5" role="cell">87</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Prof. learning</div>
+            <div class="hcell h3" role="cell">70</div><div class="hcell h4" role="cell">74</div><div class="hcell h4" role="cell">76</div><div class="hcell h4" role="cell">78</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Student outcomes</div>
+            <div class="hcell h3" role="cell">68</div><div class="hcell h3" role="cell">70</div><div class="hcell h2" role="cell">66</div><div class="hcell h3" role="cell">71</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Operations</div>
+            <div class="hcell h4" role="cell">80</div><div class="hcell h4" role="cell">81</div><div class="hcell h4" role="cell">82</div><div class="hcell h4" role="cell">83</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Governance</div>
+            <div class="hcell h4" role="cell">84</div><div class="hcell h5" role="cell">85</div><div class="hcell h5" role="cell">86</div><div class="hcell h5" role="cell">88</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Community</div>
+            <div class="hcell h3" role="cell">72</div><div class="hcell h4" role="cell">76</div><div class="hcell h4" role="cell">78</div><div class="hcell h4" role="cell">79</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Innovation</div>
+            <div class="hcell h2" role="cell">62</div><div class="hcell h3" role="cell">66</div><div class="hcell h3" role="cell">68</div><div class="hcell h3" role="cell">69</div>
+
+            <div role="rowheader" style="background:none;color:var(--ink);justify-content:flex-start;font-weight:600;">Wellbeing</div>
+            <div class="hcell h3" role="cell">71</div><div class="hcell h4" role="cell">75</div><div class="hcell h4" role="cell">77</div><div class="hcell h4" role="cell">79</div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem;align-items:center;" aria-label="Heat map legend">
+            <span class="muted" style="font-size:.8rem;font-weight:700;">Legend:</span>
+            <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;"><span class="hcell h1" style="width:22px;height:22px;border-radius:5px;" aria-hidden="true"></span> Critical (&lt;60)</span>
+            <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;"><span class="hcell h2" style="width:22px;height:22px;border-radius:5px;" aria-hidden="true"></span> At risk (60–66)</span>
+            <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;"><span class="hcell h3" style="width:22px;height:22px;border-radius:5px;" aria-hidden="true"></span> Developing (67–72)</span>
+            <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;"><span class="hcell h4" style="width:22px;height:22px;border-radius:5px;" aria-hidden="true"></span> Healthy (73–84)</span>
+            <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;"><span class="hcell h5" style="width:22px;height:22px;border-radius:5px;" aria-hidden="true"></span> Thriving (85+)</span>
+          </div>
+        </div>
+
+        <!-- domain bars + trend -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Health by Domain <span class="muted" style="font-size:.85rem;font-weight:400;">— current term</span></h3><div class="barlist">
+            <div class="row"><span>Leadership</span><span class="track"><span class="fill" data-pct="87"></span></span><b>87%</b></div>
+            <div class="row"><span>Teaching</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+            <div class="row"><span>Culture</span><span class="track"><span class="fill" data-pct="87"></span></span><b>87%</b></div>
+            <div class="row"><span>Professional learning</span><span class="track"><span class="fill" data-pct="78"></span></span><b>78%</b></div>
+            <div class="row"><span>Student outcomes</span><span class="track"><span class="fill" data-pct="71"></span></span><b>71%</b></div>
+            <div class="row"><span>Operations</span><span class="track"><span class="fill" data-pct="83"></span></span><b>83%</b></div>
+            <div class="row"><span>Governance</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+            <div class="row"><span>Community engagement</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+            <div class="row"><span>Innovation</span><span class="track"><span class="fill" data-pct="69"></span></span><b>69%</b></div>
+            <div class="row"><span>Wellbeing</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">Health Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" role="img" aria-label="School Health Index trend, rising across the year"><path class="area" d="M0,42 L50,40 L100,38 L150,34 L200,32 L250,28 L300,26 L300,64 L0,64 Z"></path><path class="line" d="M0,42 L50,40 L100,38 L150,34 L200,32 L250,28 L300,26"></path></svg><p class="muted" style="font-size:.84rem;">Composite index rose from 76 to 80 over the year — culture, governance, and leadership lead; innovation and student outcomes lag.</p>
+            <div class="kpi-grid" style="margin-top:1rem;">
+              <div class="kpi green"><div class="k-label">🌟 Top domain</div><div class="k-num"><span data-count="88">0</span></div><div class="k-trend up">Governance</div></div>
+              <div class="kpi amber"><div class="k-label">⚠️ Lowest domain</div><div class="k-num"><span data-count="69">0</span></div><div class="k-trend down">Innovation</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- improvement recommendations per weak domain -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">🎯 Improvement Recommendations <span class="muted" style="font-size:.85rem;font-weight:400;">— per priority domain · click to expand</span></h3>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Innovation</b> — 69%</span><span class="tl-pill red">Priority</span></div>
+          <div class="drill-panel"><p class="muted">Lowest-scoring domain. Create protected time and a small budget to pilot and scale teacher-led ideas; celebrate fast, low-risk experiments.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Student outcomes</b> — 71%</span><span class="tl-pill red">Priority</span></div>
+          <div class="drill-panel"><p class="muted">Dragged by Grade-8 math. Launch a focused instructional-improvement cycle with coaching and reteach blocks; monitor monthly.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Professional learning</b> — 78%</span><span class="tl-pill amber">Develop</span></div>
+          <div class="drill-panel"><p class="muted">Shift PD from one-off sessions to job-embedded coaching aligned to the improvement priorities.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Wellbeing</b> — 79%</span><span class="tl-pill amber">Develop</span></div>
+          <div class="drill-panel"><p class="muted">Protect teacher time and strengthen recognition — reinforcing the retention drivers identified in the retention module.</p></div>
+          <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Community engagement</b> — 79%</span><span class="tl-pill amber">Develop</span></div>
+          <div class="drill-panel"><p class="muted">Expand two-way family communication and partnership opportunities; survey to confirm impact.</p></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="dashboard.html">📊 Executive Dashboard</a>
+          <a class="btn ghost" href="strategic-performance.html">📈 Strategic Performance</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Performance — Leadership Intelligence</title>
+  <meta name="description" content="A premium executive dashboard: overall leadership effectiveness, School Health Index, strategic goal progress, teacher retention & engagement, achievement, climate, operations, and risk indicators.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Performance / <b>Strategic Performance</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📈 Strategic Execution</span>
+          <h1>Strategic Performance</h1>
+          <p class="lead">Strategic goals, a balanced scorecard, KPI monitoring, and milestone tracking — turning the strategic plan into measurable execution. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="sp-plan">Plan</label><select id="sp-plan"><option>School Improvement Plan 2025–28</option><option>Annual Operating Plan</option></select>
+          <label for="sp-year">Year</label><select id="sp-year"><option>2025–26</option><option>2024–25</option></select>
+          <label for="sp-persp">Perspective</label><select id="sp-persp"><option>All perspectives</option><option>Student &amp; community</option><option>Internal process</option><option>Learning &amp; growth</option><option>Resources</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- gauge + KPIs -->
+        <div class="grid" style="grid-template-columns:1fr 2fr;gap:1.4rem;margin-bottom:1.4rem;align-items:center;">
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="74" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Goals on track</small></div></div></div>
+          <div class="kpi-grid">
+            <div class="kpi green"><div class="k-label">🎯 Goals On Track</div><div class="k-num"><span data-count="74" data-suffix="%">0</span></div><div class="k-trend up">▲ 6%</div></div>
+            <div class="kpi gold"><div class="k-label">🚧 Initiatives Active</div><div class="k-num"><span data-count="12">0</span></div><div class="k-trend flat">3 launching</div></div>
+            <div class="kpi green"><div class="k-label">✅ Milestones Met</div><div class="k-num"><span data-count="68" data-suffix="%">0</span></div><div class="k-trend up">▲ 9%</div></div>
+            <div class="kpi amber"><div class="k-label">⚠️ Goals At Risk</div><div class="k-num"><span data-count="2">0</span></div><div class="k-trend down">▲ 1 — watch</div></div>
+          </div>
+        </div>
+
+        <!-- balanced scorecard + exec brief -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Balanced Scorecard <span class="muted" style="font-size:.85rem;font-weight:400;">— 4 perspectives</span></h3><div class="barlist">
+            <div class="row"><span>Student &amp; community</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+            <div class="row"><span>Internal process</span><span class="track"><span class="fill" data-pct="72"></span></span><b>72%</b></div>
+            <div class="row"><span>Learning &amp; growth</span><span class="track"><span class="fill" data-pct="77"></span></span><b>77%</b></div>
+            <div class="row"><span>Resources &amp; finance</span><span class="track"><span class="fill" data-pct="69"></span></span><b>69%</b></div>
+          </div><p class="muted" style="font-size:.84rem;margin-top:.7rem;">Composite attainment per strategic perspective against annual targets.</p></div>
+          <div class="card exec-brief"><h4>📋 Executive Summary</h4><p>Strategic execution is healthy: <b>74%</b> of goals are on track (▲6) and milestone completion is climbing to <b>68%</b>. Student &amp; community outcomes lead at 81%; <b>resources &amp; finance</b> (69%) is the lagging perspective. Two goals are behind schedule — the Grade-8 math improvement cycle and the facilities upgrade. Recommended focus: reallocate capacity to the two at-risk goals and protect momentum on the three initiatives launching this term. <a href="reports.html">Generate strategic progress report →</a></p></div>
+        </div>
+
+        <!-- strategic goals table -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Strategic Goals</h3>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Strategic goals with KPI, target, current value, and status</caption>
+              <thead><tr><th scope="col">Goal</th><th scope="col">KPI</th><th scope="col">Target</th><th scope="col">Current</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td>Raise literacy proficiency</td><td>% proficient (ELA)</td><td>80%</td><td>77%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>Close the math gap</td><td>Grade-8 math proficiency</td><td>78%</td><td>66%</td><td><span class="tl-pill red">At risk</span></td></tr>
+                <tr><td>Strengthen retention</td><td>Teacher retention</td><td>90%</td><td>88%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>Improve attendance</td><td>Chronic absenteeism</td><td>≤12%</td><td>16%</td><td><span class="tl-pill amber">Watch</span></td></tr>
+                <tr><td>Deepen family engagement</td><td>Community satisfaction</td><td>82%</td><td>79%</td><td><span class="tl-pill green">On track</span></td></tr>
+                <tr><td>Modernize facilities</td><td>Capital plan completion</td><td>60%</td><td>41%</td><td><span class="tl-pill amber">Watch</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- milestones timeline + initiatives drill -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Milestones</h3>
+            <ul class="timeline">
+              <li class="done"><span class="t-when">Q1 · Complete</span><br><b>Strategic plan ratified</b> by the board with measurable targets.</li>
+              <li class="done"><span class="t-when">Q2 · Complete</span><br><b>Literacy coaching cycle</b> launched across all grades.</li>
+              <li class="now"><span class="t-when">Q3 · In progress</span><br><b>Math improvement cycle</b> underway; reteach blocks scheduled.</li>
+              <li><span class="t-when">Q3 · Upcoming</span><br><b>Tiered attendance initiative</b> rollout to all sites.</li>
+              <li><span class="t-when">Q4 · Planned</span><br><b>Year-end review</b> &amp; next-cycle target-setting.</li>
+            </ul>
+          </div>
+          <div class="card"><h3 style="margin-top:0;">🚧 Initiatives <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Math improvement cycle</b></span><span class="tl-pill amber">62%</span></div>
+            <div class="drill-panel"><p class="muted">Coaching + reteach blocks for Grade-8 math. Behind plan; add instructional-leadership support.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Literacy coaching cycle</b></span><span class="tl-pill green">88%</span></div>
+            <div class="drill-panel"><p class="muted">On track and showing early proficiency gains. Sustain cadence into next term.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Tiered attendance response</b></span><span class="tl-pill amber">45%</span></div>
+            <div class="drill-panel"><p class="muted">Launching district-wide. Targets Monday/Friday absenteeism clusters.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Continuous-improvement reviews</b></span><span class="tl-pill green">90%</span></div>
+            <div class="drill-panel"><p class="muted">Quarterly data reviews embedded in leadership routines and on schedule.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="dashboard.html">📊 Executive Dashboard</a>
+          <a class="btn ghost" href="school-health.html">❤️ School Health Index</a>
+          <a class="btn ghost" href="reports.html">📄 Strategic Progress Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

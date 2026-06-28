@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Dashboard — Leadership Intelligence</title>
+  <meta name="description" content="A premium executive dashboard: overall leadership effectiveness, School Health Index, strategic goal progress, teacher retention & engagement, achievement, climate, operations, and risk indicators.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Overview / <b>Executive Dashboard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">📊 Executive Command Center</span>
+          <h1>Executive Dashboard</h1>
+          <p class="lead">Leadership effectiveness, organizational health, performance, and strategy — in one executive view. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label>School</label><select><option>District (all schools)</option><option>Lincoln High</option><option>Harbor Middle</option></select>
+          <label>Year</label><select><option>2025–26</option><option>2024–25</option></select>
+          <label>Team</label><select><option>All leadership</option><option>Instructional</option><option>Operations</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <!-- overall + gauges -->
+        <div class="grid" style="grid-template-columns:1.3fr 1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;">
+          <div class="overall"><div><div class="big-score"><span data-count="82">0</span></div><div class="muted" style="color:#dbe3f5;">Leadership Effectiveness</div></div><div style="display:flex;flex-direction:column;gap:.5rem;"><span class="grade">Grade B+</span><span class="sc-trend up" style="color:#8ce0a8;">▲ 3 vs. last year</span></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="80" data-gauge-suffix=""><div class="hole"><b data-gauge-num>0</b><small>School Health Index</small></div></div></div>
+          <div class="card" style="text-align:center;"><div class="gauge" data-gauge="88" data-gauge-suffix="%"><div class="hole"><b data-gauge-num>0%</b><small>Teacher retention</small></div></div></div>
+        </div>
+
+        <!-- KPI widgets -->
+        <div class="kpi-grid" style="margin-bottom:1.4rem;">
+          <div class="kpi green"><div class="k-label">🎯 Strategic Goals On Track</div><div class="k-num"><span data-count="74" data-suffix="%">0</span></div><div class="k-trend up">▲ 6%</div></div>
+          <div class="kpi green"><div class="k-label">🔥 Teacher Engagement</div><div class="k-num"><span data-count="84" data-suffix="%">0</span></div><div class="k-trend up">▲ 5%</div></div>
+          <div class="kpi gold"><div class="k-label">🎓 Student Growth</div><div class="k-num"><span data-count="4" data-prefix="+" data-suffix="%">0</span></div><div class="k-trend up">▲ vs. prior</div></div>
+          <div class="kpi amber"><div class="k-label">📅 Chronic Absenteeism</div><div class="k-num"><span data-count="16" data-suffix="%">0</span></div><div class="k-trend down">▲ 2% — watch</div></div>
+          <div class="kpi green"><div class="k-label">🌍 Community Satisfaction</div><div class="k-num"><span data-count="79" data-suffix="%">0</span></div><div class="k-trend up">▲ 3%</div></div>
+          <div class="kpi red"><div class="k-label">⚠️ Predicted Turnover Risk</div><div class="k-num"><span data-count="9" data-suffix="%">0</span></div><div class="k-trend down">▲ 1 dept</div></div>
+        </div>
+
+        <!-- exec brief + trends -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 Executive Briefing</h4><p>Leadership effectiveness is strong and improving (82, ▲3). Retention (88%) and engagement (84%) are healthy. Two risks: <b>Grade 8 math</b> and a department with rising <b>predicted turnover risk</b>. Recommended focus: a math improvement cycle and proactive retention conversations. <a href="predictive-insights.html">Open predictive insights →</a></p></div>
+          <div class="card"><h3 style="margin-top:0;">Leadership Effectiveness Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Leadership effectiveness trend"><path class="area" d="M0,44 L50,40 L100,38 L150,32 L200,30 L250,26 L300,22 L300,64 L0,64 Z"></path><path class="line" d="M0,44 L50,40 L100,38 L150,32 L200,30 L250,26 L300,22"></path></svg><p class="muted" style="font-size:.84rem;">Steady upward trend across the year.</p></div>
+        </div>
+
+        <!-- domain bars + risk drilldown -->
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card"><h3 style="margin-top:0;">Leadership Domains</h3><div class="barlist">
+            <div class="row"><span>Visionary</span><span class="track"><span class="fill" data-pct="86"></span></span><b>86%</b></div>
+            <div class="row"><span>Instructional</span><span class="track"><span class="fill" data-pct="81"></span></span><b>81%</b></div>
+            <div class="row"><span>People</span><span class="track"><span class="fill" data-pct="88"></span></span><b>88%</b></div>
+            <div class="row"><span>Operational</span><span class="track"><span class="fill" data-pct="76"></span></span><b>76%</b></div>
+            <div class="row"><span>Strategic</span><span class="track"><span class="fill" data-pct="79"></span></span><b>79%</b></div>
+          </div></div>
+          <div class="card"><h3 style="margin-top:0;">🚦 Risk Indicators <span class="muted" style="font-size:.85rem;font-weight:400;">— click to expand</span></h3>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Grade 8 mathematics</b></span><span class="tl-pill red">High</span></div>
+            <div class="drill-panel"><p class="muted">66% proficiency (▼6). Recommend coaching cycle + reteach block.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Department turnover risk</b></span><span class="tl-pill amber">Watch</span></div>
+            <div class="drill-panel"><p class="muted">Engagement dipped; predicted risk rising. Recommend stay-conversations.</p></div>
+            <div class="drill-row"><span class="chev">▸</span><span style="flex:1;"><b>Chronic absenteeism</b></span><span class="tl-pill amber">Watch</span></div>
+            <div class="drill-panel"><p class="muted">16%, clustered Mon/Fri. Recommend tiered attendance response.</p></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="leadership-scorecard.html">🧭 Leadership Scorecard</a>
+          <a class="btn ghost" href="teacher-retention.html">💚 Retention Analytics</a>
+          <a class="btn ghost" href="reports.html">📄 Generate Report</a>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

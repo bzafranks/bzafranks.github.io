@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Scorecard — Leadership Intelligence</title>
+  <meta name="description" content="A leadership performance framework that generates a Leadership Performance Score, growth trends, recommended actions, and benchmark comparisons across eight leadership domains.">
+  <link rel="stylesheet" href="../../assets/css/design-system.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Leadership Intelligence" data-project-root="../../" data-a11y-toolbar>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">LI</span><span class="brand-text"><span class="brand-title">Leadership Intelligence</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="leadership-scorecard.html">Scorecard</a></li>
+        <li><a href="teacher-retention.html">Retention</a></li>
+        <li><a href="predictive-insights.html">Predictive</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+      <!-- ===== SHARED RAIL (copied to every platform page) ===== -->
+      <aside class="app-rail" aria-label="Platform">
+        <div class="rail-brand"><span class="mark">LI</span><b>Leadership Intelligence</b></div>
+        <div class="rail-group">Overview</div>
+        <a class="rail-link" href="dashboard.html"><span class="ico">📊</span> Executive Dashboard</a>
+        <div class="rail-group">Leadership</div>
+        <a class="rail-link" href="leadership-scorecard.html"><span class="ico">🧭</span> Leadership Scorecard</a>
+        <div class="rail-group">Performance</div>
+        <a class="rail-link" href="school-performance.html"><span class="ico">🎓</span> School Performance</a>
+        <a class="rail-link" href="people-analytics.html"><span class="ico">👥</span> People Analytics</a>
+        <a class="rail-link" href="teacher-retention.html"><span class="ico">💚</span> Teacher Retention</a>
+        <a class="rail-link" href="strategic-performance.html"><span class="ico">📈</span> Strategic Performance</a>
+        <div class="rail-group">Intelligence</div>
+        <a class="rail-link" href="school-health.html"><span class="ico">❤️</span> School Health Index</a>
+        <a class="rail-link" href="predictive-insights.html"><span class="ico">🔮</span> Predictive Insights</a>
+        <a class="rail-link" href="reports.html"><span class="ico">📄</span> Reports Center</a>
+        <a class="rail-link" href="resources.html"><span class="ico">📂</span> Resources</a>
+      </aside>
+
+      <!-- ===== MAIN ===== -->
+      <section class="app-main">
+        <div class="app-bar">
+          <div class="crumb">Leadership / <b>Leadership Scorecard</b></div>
+          <div class="app-actions">
+            <div class="notif-wrap" data-notif>
+              <button class="notif-btn" type="button" aria-label="Notifications">🔔<span class="badge-count">3</span></button>
+              <div class="notif-panel" role="dialog" aria-label="Executive alerts">
+                <h4 style="margin:.2rem .4rem .6rem;">Executive Alerts</h4>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-red);"></span><div><b>Grade 8 math</b> down 6 pts — instructional review advised.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>Predicted turnover risk</b> rising in 1 department.</div></div>
+                <div class="notif-item"><span class="sev" style="background:var(--rag-amber);"></span><div><b>2 strategic goals</b> behind schedule.</div></div>
+                <div style="text-align:center;margin-top:.5rem;"><a class="out-btn" href="predictive-insights.html">See predictive insights →</a></div>
+              </div>
+            </div>
+            <button class="out-btn" type="button" data-download-report>⬇ Export</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="tool-head">
+          <span class="tool-badge">🧭 Leadership Performance Framework</span>
+          <h1>Leadership Scorecard</h1>
+          <p class="lead">A leadership performance framework that generates a Leadership Performance Score, growth trends, recommended actions, and benchmark comparisons. Rate yourself across eight research-aligned leadership domains, then generate your score. All figures are illustrative sample data.</p>
+        </div>
+
+        <div class="filter-strip" data-filters>
+          <label for="sc-leader">Leader</label><select id="sc-leader"><option>Self-evaluation</option><option>360° composite</option><option>Supervisor rating</option></select>
+          <label for="sc-cycle">Cycle</label><select id="sc-cycle"><option>2025–26</option><option>2024–25</option></select>
+          <label for="sc-bench">Benchmark</label><select id="sc-bench"><option>District median</option><option>National sample</option></select>
+          <span class="spacer"></span>
+          <button class="out-btn" data-download-report>⬇ Download report</button>
+        </div>
+
+        <div class="grid grid-2" style="gap:1.4rem;margin-bottom:1.4rem;">
+          <div class="card exec-brief"><h4>📋 How the scorecard works</h4><p>Rate each indicator from <b>1 (Rarely)</b> to <b>5 (Consistently)</b>. The framework converts your ratings into a 0–100 <b>Leadership Performance Score</b>, ranks your eight domains, surfaces strengths, and recommends targeted growth actions against an illustrative benchmark of 74.</p></div>
+          <div class="card"><h3 style="margin-top:0;">Leadership Growth Trend</h3><svg class="trendline" viewBox="0 0 300 64" preserveAspectRatio="none" aria-label="Leadership growth trend over recent cycles"><path class="area" d="M0,46 L50,42 L100,38 L150,34 L200,30 L250,27 L300,23 L300,64 L0,64 Z"></path><path class="line" d="M0,46 L50,42 L100,38 L150,34 L200,30 L250,27 L300,23"></path></svg><p class="muted" style="font-size:.84rem;">Composite leadership performance has risen across recent review cycles (illustrative).</p></div>
+        </div>
+
+        <p class="muted" style="font-size:.85rem;margin-bottom:1rem;">Scale: <b>1 = Rarely</b> · 2 = Occasionally · 3 = Sometimes · 4 = Often · <b>5 = Consistently</b>.</p>
+
+        <!-- ===== ASSESSMENT ===== -->
+        <div data-assessment>
+          <div class="assess-card">
+            <h3>🔭 Visionary Leadership</h3>
+            <div class="assess-item" data-domain="visionary">
+              <p id="ind-visionary-1">I articulate a clear, compelling vision that staff can describe in their own words.</p>
+              <div class="likert" role="group" aria-labelledby="ind-visionary-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="visionary">
+              <p id="ind-visionary-2">I translate the vision into measurable goals that guide daily decisions.</p>
+              <div class="likert" role="group" aria-labelledby="ind-visionary-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>📚 Instructional Leadership</h3>
+            <div class="assess-item" data-domain="instructional">
+              <p id="ind-instructional-1">I conduct regular classroom walkthroughs and provide timely instructional feedback.</p>
+              <div class="likert" role="group" aria-labelledby="ind-instructional-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="instructional">
+              <p id="ind-instructional-2">I use evidence of student learning to coach teachers and guide professional growth.</p>
+              <div class="likert" role="group" aria-labelledby="ind-instructional-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🤝 People Leadership</h3>
+            <div class="assess-item" data-domain="people">
+              <p id="ind-people-1">I recognize staff contributions and create genuine opportunities for voice.</p>
+              <div class="likert" role="group" aria-labelledby="ind-people-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="people">
+              <p id="ind-people-2">I invest in relationships and act to support staff wellbeing and retention.</p>
+              <div class="likert" role="group" aria-labelledby="ind-people-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🏛️ Operational Leadership</h3>
+            <div class="assess-item" data-domain="operational">
+              <p id="ind-operational-1">I design systems and routines that protect teacher time and run smoothly.</p>
+              <div class="likert" role="group" aria-labelledby="ind-operational-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="operational">
+              <p id="ind-operational-2">I manage budget, facilities, and resources to maximize impact on learning.</p>
+              <div class="likert" role="group" aria-labelledby="ind-operational-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🎯 Strategic Leadership</h3>
+            <div class="assess-item" data-domain="strategic">
+              <p id="ind-strategic-1">I align resources and effort to a few high-leverage priorities.</p>
+              <div class="likert" role="group" aria-labelledby="ind-strategic-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="strategic">
+              <p id="ind-strategic-2">I monitor progress with data and adjust the plan when results stall.</p>
+              <div class="likert" role="group" aria-labelledby="ind-strategic-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>🌍 Community Leadership</h3>
+            <div class="assess-item" data-domain="community">
+              <p id="ind-community-1">I build authentic partnerships with families and community stakeholders.</p>
+              <div class="likert" role="group" aria-labelledby="ind-community-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="community">
+              <p id="ind-community-2">I communicate transparently and invite community input on key decisions.</p>
+              <div class="likert" role="group" aria-labelledby="ind-community-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>💡 Innovation Leadership</h3>
+            <div class="assess-item" data-domain="innovation">
+              <p id="ind-innovation-1">I create safe space for staff to pilot, test, and refine new ideas.</p>
+              <div class="likert" role="group" aria-labelledby="ind-innovation-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="innovation">
+              <p id="ind-innovation-2">I scale what works and retire practices that no longer serve students.</p>
+              <div class="likert" role="group" aria-labelledby="ind-innovation-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="assess-card">
+            <h3>⚖️ Ethical Leadership</h3>
+            <div class="assess-item" data-domain="ethical">
+              <p id="ind-ethical-1">I make values-based decisions and explain my reasoning openly.</p>
+              <div class="likert" role="group" aria-labelledby="ind-ethical-1">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+            <div class="assess-item" data-domain="ethical">
+              <p id="ind-ethical-2">I act equitably and hold myself accountable to the same standards as others.</p>
+              <div class="likert" role="group" aria-labelledby="ind-ethical-2">
+                <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn" type="button" data-assess-run>Generate Leadership Score</button>
+            <button class="out-btn" type="button" data-assess-reset>Reset</button>
+          </div>
+        </div>
+
+        <div data-assess-result class="assess-result"></div>
+
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">All data shown is illustrative sample data created for demonstration. This is a reflective leadership self-evaluation, not a clinical or personnel instrument.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Leadership Intelligence</h4><p style="color:#c9d6e6;">Executive decision intelligence for educational leadership — part of Dr. Barbara Z. Franks' portfolio.</p></div>
+        <div><h4>Platform</h4><ul><li><a href="leadership-scorecard.html">Leadership Scorecard</a></li><li><a href="school-health.html">School Health Index</a></li><li><a href="teacher-retention.html">Teacher Retention</a></li><li><a href="reports.html">Reports</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="case-study.html">Case Study</a></li><li><a href="reflection.html">Reflection</a></li><li><a href="../../index.html">All Projects</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© Dr. Barbara Z. Franks · All data is illustrative sample data for demonstration.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/portfolio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
