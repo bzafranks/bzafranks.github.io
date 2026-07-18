@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportation — Inclusive Learning Hub</title>
+<meta name="description" content="Bus route overview and accessible-transportation accommodations for administrators.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="transportation" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Transportation</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🚌 Transportation</span>
+        <h1>Transportation Overview</h1>
+        <p class="lead">Bus route status and accessible-transportation planning across the school. Route data is illustrative for this demo.</p>
+      </div>
+
+      <!-- ===== ROUTES TABLE ===== -->
+      <h3>Bus Routes</h3>
+      <div class="data-table-wrap" data-table style="margin-bottom:1.8rem;">
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search routes…" aria-label="Search routes">
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead><tr>
+              <th class="sortable" data-col="route">Route #</th>
+              <th class="sortable" data-col="driver">Driver</th>
+              <th>Vehicle</th>
+              <th class="sortable" data-col="capacity">Capacity</th>
+              <th class="sortable" data-col="stops">Stops</th>
+              <th class="sortable" data-col="ontime">On-Time %</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td data-route="1"><b>Route 1 — North Loop</b></td>
+                <td data-driver="Harold Jennings">Harold Jennings</td>
+                <td>72-passenger bus, wheelchair lift</td>
+                <td data-capacity="72">72</td>
+                <td data-stops="14">14</td>
+                <td data-ontime="97"><span class="status-pill good">97%</span></td>
+              </tr>
+              <tr>
+                <td data-route="2"><b>Route 2 — East Corridor</b></td>
+                <td data-driver="Bethany Rourke">Bethany Rourke</td>
+                <td>54-passenger bus</td>
+                <td data-capacity="54">54</td>
+                <td data-stops="11">11</td>
+                <td data-ontime="94"><span class="status-pill good">94%</span></td>
+              </tr>
+              <tr>
+                <td data-route="3"><b>Route 3 — South Hills</b></td>
+                <td data-driver="Marcus Delaney">Marcus Delaney</td>
+                <td>54-passenger bus, wheelchair lift</td>
+                <td data-capacity="54">54</td>
+                <td data-stops="16">16</td>
+                <td data-ontime="88"><span class="status-pill warn">88%</span></td>
+              </tr>
+              <tr>
+                <td data-route="4"><b>Route 4 — Westgate Express</b></td>
+                <td data-driver="Yolanda Pierce">Yolanda Pierce</td>
+                <td>36-passenger mini-bus</td>
+                <td data-capacity="36">36</td>
+                <td data-stops="9">9</td>
+                <td data-ontime="99"><span class="status-pill good">99%</span></td>
+              </tr>
+              <tr>
+                <td data-route="5"><b>Route 5 — Downtown Shuttle</b></td>
+                <td data-driver="Owen Castellanos">Owen Castellanos</td>
+                <td>36-passenger mini-bus, wheelchair lift</td>
+                <td data-capacity="36">36</td>
+                <td data-stops="12">12</td>
+                <td data-ontime="91"><span class="status-pill good">91%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-foot">On-time % reflects the trailing 30-day average, morning and afternoon runs combined.</div>
+      </div>
+
+      <!-- ===== ACCESSIBLE TRANSPORTATION CARD ===== -->
+      <div class="card">
+        <h4 style="margin-top:0;">♿ Accessible Transportation Accommodations</h4>
+        <p class="muted">Illustrative note: the following students are noted as requiring wheelchair-lift-equipped or accessible-seating transportation as part of their individual plan.</p>
+        <ul class="feed" id="accessibleRoster"></ul>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render accessible-transportation roster directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    var ids = ["S03", "S13", "S19"]; // Noah Bennett, Elijah Ramirez, Jayden Mitchell — illustrative, all active IEPs w/ OT or multiple services
+    document.getElementById("accessibleRoster").innerHTML = ids.map(function (id) {
+      var s = D.getStudent(id);
+      if (!s) return "";
+      return '<li><span class="f-ico">🚐</span><div class="f-body"><b>' + esc(s.name) + '</b><small>Grade ' + s.grade + ' · Homeroom ' + esc(s.homeroom) + ' · ' + esc(s.supportPlan.type) + ' active</small></div></li>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

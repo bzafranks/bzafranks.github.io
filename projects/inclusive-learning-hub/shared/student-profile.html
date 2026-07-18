@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile — Inclusive Learning Hub</title>
+<meta name="description" content="Comprehensive shared student profile: overview, academics, attendance, individualized plan, goals, accommodations, therapy services, behavior, documents, and family communications in one view.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="container section">
+
+    <div style="display:flex;flex-wrap:wrap;gap:0.9rem;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+      <a href="../demo.html" style="text-decoration:none;font-weight:700;color:var(--navy);">← Back to Role Selector</a>
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <label for="studentSwitch" class="muted" style="font-size:0.85rem;font-weight:700;">View another student:</label>
+        <select id="studentSwitch" aria-label="Switch student profile" style="padding:0.4rem 0.7rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;font-size:0.86rem;"></select>
+      </div>
+    </div>
+
+    <div class="card" id="profileHeader" style="margin-bottom:1.6rem;"></div>
+
+    <div class="tabs" data-tabs>
+      <div class="tab-btns">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="academics">Academics</button>
+        <button class="tab-btn" data-tab="attendance">Attendance</button>
+        <button class="tab-btn" data-tab="courses">Courses</button>
+        <button class="tab-btn" data-tab="assessments">Assessments</button>
+        <button class="tab-btn" data-tab="plan">Individual Plan</button>
+        <button class="tab-btn" data-tab="goals">Goals</button>
+        <button class="tab-btn" data-tab="accommodations">Accommodations</button>
+        <button class="tab-btn" data-tab="therapy">Therapy</button>
+        <button class="tab-btn" data-tab="behavior">Behavior</button>
+        <button class="tab-btn" data-tab="documents">Documents</button>
+        <button class="tab-btn" data-tab="communications">Communications</button>
+      </div>
+      <div class="tab-panel active" data-tab-panel="overview" id="panel-overview"></div>
+      <div class="tab-panel" data-tab-panel="academics" id="panel-academics"></div>
+      <div class="tab-panel" data-tab-panel="attendance" id="panel-attendance"></div>
+      <div class="tab-panel" data-tab-panel="courses" id="panel-courses"></div>
+      <div class="tab-panel" data-tab-panel="assessments" id="panel-assessments"></div>
+      <div class="tab-panel" data-tab-panel="plan" id="panel-plan"></div>
+      <div class="tab-panel" data-tab-panel="goals" id="panel-goals"></div>
+      <div class="tab-panel" data-tab-panel="accommodations" id="panel-accommodations"></div>
+      <div class="tab-panel" data-tab-panel="therapy" id="panel-therapy"></div>
+      <div class="tab-panel" data-tab-panel="behavior" id="panel-behavior"></div>
+      <div class="tab-panel" data-tab-panel="documents" id="panel-documents"></div>
+      <div class="tab-panel" data-tab-panel="communications" id="panel-communications"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.ILH;
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function qs(name) { var m = new RegExp("[?&]" + name + "=([^&]+)").exec(location.search); return m ? decodeURIComponent(m[1]) : null; }
+  function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+  function emptyState(icon, title, msg) {
+    return '<div class="empty-state"><span class="es-ico">' + icon + '</span><h4>' + esc(title) + '</h4><p>' + esc(msg) + '</p></div>';
+  }
+  function infoRow(label, value) {
+    return '<div><div class="muted" style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">' + esc(label) + '</div><div style="font-weight:600;">' + esc(value) + '</div></div>';
+  }
+  function metricTile(label, valueHtml) {
+    return '<div class="metric"><div class="m-label">' + esc(label) + '</div><div style="font-weight:700;margin-top:0.3rem;">' + valueHtml + '</div></div>';
+  }
+  function teamRow(initials, color, name, sub) {
+    return '<div style="display:flex;align-items:center;gap:0.8rem;"><span class="avatar-circ sm" style="background:' + color + ';">' + esc(initials) + '</span><div><b>' + esc(name) + '</b><div class="muted" style="font-size:0.85rem;">' + esc(sub) + '</div></div></div>';
+  }
+  function isAboutStudent(m, s) {
+    var text = (m.subject + " " + m.body + " " + m.from + " " + m.to).toLowerCase();
+    return text.indexOf(String(s.first).toLowerCase()) > -1;
+  }
+  function attendancePill(rate) { if (rate >= 90) return "good"; if (rate >= 85) return "warn"; return "bad"; }
+  function academicPillClass(status) { return { "on-track": "good", "needs-support": "warn", "at-risk": "bad" }[status] || "neutral"; }
+  function academicLabel(status) { return { "on-track": "✅ On Track", "needs-support": "⚠️ Needs Support", "at-risk": "🚨 At Risk" }[status] || (status || "Unknown"); }
+  function planPill(sp) {
+    if (!sp || !sp.type) return { cls: "neutral", label: "General Education — No Plan" };
+    var label = sp.type + (sp.status ? " — " + capitalize(sp.status.replace("-", " ")) : "");
+    return { cls: sp.status === "review-due" ? "warn" : "good", label: label };
+  }
+  function statusPillClass(st) { return { "Submitted": "good", "In Progress": "info", "Not Started": "warn", "Assigned": "neutral" }[st] || "neutral"; }
+  function enrolledCourseIds(s) {
+    if (s.id === "S01") return ["C1", "C5"];
+    if (D.g7elaRoster.indexOf(s.id) > -1) return ["C1"];
+    return [];
+  }
+  function performanceSummary(s) {
+    var map = {
+      "on-track": s.name + " is performing at or above grade-level expectations across current coursework, with consistent assignment completion and no active interventions.",
+      "needs-support": s.name + " is showing gaps against current grade-level standards and is receiving targeted, tiered support; progress is monitored regularly by the assigned support team.",
+      "at-risk": s.name + " is significantly below grade-level benchmarks and/or showing a downward trend in engagement; the support team is actively monitoring and adjusting intervention intensity."
+    };
+    return map[s.academicStatus] || "Performance data is not yet available for this student in this demo.";
+  }
+  function presentLevels(s) {
+    var strengthsText = (s.strengths && s.strengths.length) ? s.strengths[0].toLowerCase() : "engaging with grade-level content";
+    var map = {
+      "on-track": s.name + " is currently meeting grade-level expectations with the supports outlined in this plan; " + strengthsText + " is a consistent strength the team leverages across settings.",
+      "needs-support": s.name + " is performing below grade-level expectations in targeted skill areas and benefits from consistent use of individualized supports; " + strengthsText + " is a notable strength the team builds on during instruction.",
+      "at-risk": s.name + " is significantly below grade-level expectations across multiple areas and requires intensive, closely monitored support; " + strengthsText + " remains a strength the team actively incorporates to build engagement and confidence."
+    };
+    return map[s.academicStatus] || (s.name + "'s present levels of performance are being established.");
+  }
+
+  /* ---------------- delegated interactions ---------------- */
+  document.addEventListener("click", function (e) {
+    var jump = e.target.closest("[data-jump-tab]");
+    if (jump) {
+      var b = document.querySelector('.tab-btn[data-tab="' + jump.getAttribute("data-jump-tab") + '"]');
+      if (b) b.click();
+      return;
+    }
+    var rowLink = e.target.closest("[data-row-href]");
+    if (rowLink) location.href = rowLink.getAttribute("data-row-href");
+  });
+
+  /* ---------------- header ---------------- */
+  function buildHeader(s) {
+    var teacher = s.caseManagerId ? D.getTeacher(s.caseManagerId) : null;
+    var para = s.paraId ? D.getPara(s.paraId) : null;
+    var therapists = (s.therapistIds || []).map(function (tid) { return D.getTherapist(tid); }).filter(Boolean);
+    var parentMatch = (D.parent.studentIds || []).indexOf(s.id) > -1 ? D.parent : null;
+    var pp = planPill(s.supportPlan);
+
+    var html =
+      '<div style="display:flex;flex-wrap:wrap;gap:1.4rem;align-items:flex-start;">' +
+        '<div class="avatar-circ" style="width:68px;height:68px;font-size:1.4rem;background:' + s.color + ';">' + esc(s.initials) + '</div>' +
+        '<div style="flex:1;min-width:220px;">' +
+          '<h1 style="margin:0 0 0.2rem;">' + esc(s.name) + '</h1>' +
+          '<div class="muted" style="margin-bottom:0.7rem;">Student ID ' + esc(s.id) + ' · Grade ' + s.grade + ' · Homeroom ' + esc(s.homeroom) + ' · ' + esc(s.programme) + '</div>' +
+          '<div class="pill-row">' +
+            '<span class="status-pill ' + attendancePill(s.attendanceRate) + '">📅 ' + s.attendanceRate + '% Attendance</span>' +
+            '<span class="status-pill ' + academicPillClass(s.academicStatus) + '">' + academicLabel(s.academicStatus) + '</span>' +
+            '<span class="status-pill ' + pp.cls + '">🧩 ' + esc(pp.label) + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="dash-grid" style="margin-top:1.3rem;">' +
+        metricTile("Case Manager", teacher ? esc(teacher.name) + '<br><small class="muted">' + esc(teacher.title) + '</small>' : '<span class="muted">Not assigned</span>') +
+        metricTile("Paraprofessional", para ? esc(para.name) + '<br><small class="muted">' + esc(para.title) + '</small>' : '<span class="muted">Not assigned</span>') +
+        metricTile("Therapy Services", therapists.length ? therapists.map(function (t) { return esc(t.discipline); }).join("<br>") : '<span class="muted">None on file</span>') +
+        metricTile("Parent Contact", parentMatch ? esc(parentMatch.name) + '<br><small class="muted">' + esc(parentMatch.relationship) + " · " + esc(parentMatch.email) + '</small>' : '<span class="muted">Not on file for this demo</span>') +
+      '</div>';
+    document.getElementById("profileHeader").innerHTML = html;
+  }
+
+  /* ---------------- overview ---------------- */
+  function renderOverview(s) {
+    var strengths = (s.strengths && s.strengths.length) ? '<ul class="check-list">' + s.strengths.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"
+      : emptyState("💪", "No strengths on file", "Strengths have not been documented for this student in this demo.");
+    var interests = (s.interests && s.interests.length) ? '<div class="pill-row">' + s.interests.map(function (x) { return '<span class="tag navy">' + esc(x) + "</span>"; }).join("") + "</div>"
+      : emptyState("🎨", "No interests on file", "An interest inventory has not been documented for this student in this demo.");
+
+    var alerts = (s.alerts && s.alerts.length)
+      ? '<div class="pill-row">' + s.alerts.map(function (a) { return '<span class="status-pill bad">⚠️ ' + esc(a) + "</span>"; }).join("") + "</div>"
+      : '<p class="muted">No active alerts.</p>';
+
+    var feedback = D.messages.filter(function (m) { return isAboutStudent(m, s); });
+    var feedbackHtml = feedback.length ? feedback.map(function (m) {
+      return '<div class="alert-row"><span class="sev low"></span><div><b>' + esc(m.from) + "</b> → " + esc(m.to) + '<div class="muted" style="font-size:0.85rem;">' + esc(m.subject) + " — " + m.date + '</div><p style="margin:.3rem 0 0;">' + esc(m.body) + "</p></div></div>";
+    }).join("") : emptyState("✉️", "No recent feedback", "No recent teacher feedback on file for this student's family.");
+
+    var events = D.scheduleEvents.filter(function (e) { return e.studentIds && e.studentIds.indexOf(s.id) > -1; });
+    var appts = events.filter(function (e) { return e.type !== "class"; });
+    var apptsHtml = appts.length
+      ? '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Day</th><th>Time</th><th>Type</th><th>With</th><th>Where</th></tr></thead><tbody>' +
+        appts.map(function (e) { return "<tr><td>" + e.day + "</td><td>" + e.start + "–" + e.end + "</td><td>" + capitalize(e.type) + "</td><td>" + esc(e.who) + "</td><td>" + esc(e.where) + (e.virtual ? " · 💻 Virtual" : "") + "</td></tr>"; }).join("") +
+        "</tbody></table></div></div>"
+      : emptyState("🗓️", "No upcoming appointments", "No therapy or support appointments on file for this student.");
+
+    var weekly = events.length
+      ? '<div class="pill-row">' + events.map(function (e) { return '<span class="tag ' + (e.type === "therapy" ? "coral" : e.type === "para" ? "plum" : "navy") + '">' + e.day + " " + e.start + " — " + esc(e.title) + "</span>"; }).join("") + "</div>"
+      : emptyState("📆", "No weekly schedule on file", "No class or support sessions on file for this student in the scheduling demo.");
+
+    var team = [];
+    var teacher = s.caseManagerId ? D.getTeacher(s.caseManagerId) : null;
+    if (teacher) team.push(teamRow(teacher.initials, teacher.color, teacher.name, teacher.title));
+    var para = s.paraId ? D.getPara(s.paraId) : null;
+    if (para) team.push(teamRow(para.initials, para.color, para.name, para.title));
+    (s.therapistIds || []).forEach(function (tid) { var t = D.getTherapist(tid); if (t) team.push(teamRow(t.initials, t.color, t.name, t.discipline)); });
+    var teamHtml = team.length ? '<div style="display:flex;flex-direction:column;gap:0.7rem;">' + team.join("") + "</div>"
+      : emptyState("🤝", "No formal support team", "This student does not have a formal support team on file — general education student.");
+
+    document.getElementById("panel-overview").innerHTML =
+      '<div class="grid grid-2">' +
+        '<div class="card"><h3>💪 Strengths</h3>' + strengths + "</div>" +
+        '<div class="card"><h3>🎨 Interests</h3>' + interests + "</div>" +
+      "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📊 Current Performance Summary</h3><p>' + esc(performanceSummary(s)) + "</p></div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>🚨 Alerts</h3>' + alerts + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>✉️ Recent Teacher Feedback</h3>' + feedbackHtml + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>🗓️ Upcoming Appointments</h3>' + apptsHtml + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📆 Weekly Schedule (mini view)</h3>' + weekly + '<p class="muted" style="margin-top:0.6rem;font-size:0.85rem;">See the full <a href="scheduling.html?view=student&id=' + s.id + '">weekly scheduling view →</a></p></div>' +
+      '<div class="card" style="margin-top:1.2rem;"><h3>🤝 Assigned Support Team</h3>' + teamHtml + "</div>";
+  }
+
+  /* ---------------- academics ---------------- */
+  function renderAcademics(s) {
+    var courseIds = enrolledCourseIds(s);
+    var coursesHtml = courseIds.length ? courseIds.map(function (cid) {
+      var c = D.getCourse(cid);
+      if (!c) return "";
+      var teacher = D.getTeacher(c.teacherId);
+      return '<div class="card compact" style="margin-bottom:0.8rem;"><h4 style="margin:0 0 0.3rem;"><a href="course.html?id=' + c.id + '">' + esc(c.title) + '</a></h4><div class="muted" style="font-size:0.86rem;">' + esc(c.mode) + " · " + esc(c.period) + " · Teacher: " + esc(teacher ? teacher.name : "—") + "</div></div>";
+    }).join("") : emptyState("📚", "No course enrollment on file", "This demo's course catalog centers on the flagship Grade 7 ELA class — a full SIS would show this student's complete course schedule here.");
+
+    var isG7ELA = courseIds.indexOf("C1") > -1;
+    var standards = isG7ELA
+      ? '<div class="grid grid-2">' + D.standardsMastery.map(function (sm) {
+          return '<div class="card compact"><div class="muted" style="font-size:0.82rem;">' + esc(sm.standard) + '</div><div data-chart="donut" data-value="' + sm.mastery + '" data-label="' + sm.mastery + '%"></div></div>';
+        }).join("") + "</div>"
+      : emptyState("📐", "No standards mastery on file", "Standards mastery tracking in this demo is scoped to Grade 7 ELA.");
+
+    var completion;
+    if (s.id === "S01") {
+      completion = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Assignment</th><th>Course</th><th>Due</th><th>Status</th></tr></thead><tbody>' +
+        D.assignments.map(function (a) {
+          var st = D.jordanAssignmentStatus[a.id] || a.status;
+          return "<tr><td>" + esc(a.title) + "</td><td>" + esc((D.getCourse(a.courseId) || {}).title || a.courseId) + "</td><td>" + a.due + '</td><td><span class="status-pill ' + statusPillClass(st) + '">' + esc(st) + "</span></td></tr>";
+        }).join("") + "</tbody></table></div></div>";
+    } else if (isG7ELA) {
+      completion = "<p>Classwide completion for Grade 7 ELA: <b>" + D.classCompletion.onTrack + " of " + (D.classCompletion.onTrack + D.classCompletion.needsSupport) + '</b> students on track with current assignments.</p><p class="muted">Individual assignment-by-assignment status is tracked for Jordan Thompson only in this demo.</p>';
+    } else {
+      completion = emptyState("📋", "No assignment data on file", "Assignment completion tracking in this demo is scoped to Jordan Thompson and the Grade 7 ELA class.");
+    }
+
+    var growth = '<div data-chart="trend" data-values=\'' + JSON.stringify(D.academicPerformanceTrend.map(function (t) { return { v: t.avg }; })) + "'></div>" +
+      '<div class="legend"><span>Illustrative quarterly academic growth (schoolwide average, shown for demonstration)</span></div>';
+
+    var assessments;
+    if (s.id === "S01") {
+      assessments = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Assessment</th><th>Type</th><th>Date</th><th>Jordan’s Score</th><th>Class Avg</th></tr></thead><tbody>' +
+        D.jordanAssessmentScores.map(function (js) {
+          var a = D.assessments.filter(function (x) { return x.id === js.assessmentId; })[0];
+          if (!a) return "";
+          return "<tr><td>" + esc(a.title) + "</td><td>" + esc(a.type) + "</td><td>" + a.date + "</td><td><b>" + js.score + "%</b></td><td>" + a.classAvg + "%</td></tr>";
+        }).join("") + "</tbody></table></div></div>";
+    } else if (isG7ELA) {
+      assessments = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Assessment</th><th>Type</th><th>Date</th><th>Class Avg</th></tr></thead><tbody>' +
+        D.assessments.map(function (a) { return "<tr><td>" + esc(a.title) + "</td><td>" + esc(a.type) + "</td><td>" + a.date + "</td><td>" + a.classAvg + "%</td></tr>"; }).join("") +
+        '</tbody></table></div></div><p class="muted" style="margin-top:0.4rem;">Individual scores are tracked for Jordan Thompson only in this demo.</p>';
+    } else {
+      assessments = emptyState("🧪", "No assessments on file", "No assessment records on file for this student's courses in this demo.");
+    }
+
+    var comments = D.messages.filter(function (m) { return isAboutStudent(m, s) && m.from !== D.parent.name; });
+    var commentsHtml = comments.length ? comments.map(function (m) {
+      return '<div class="alert-row"><span class="sev low"></span><div><b>' + esc(m.from) + '</b><div class="muted" style="font-size:0.85rem;">' + m.date + '</div><p style="margin:0.3rem 0 0;">' + esc(m.body) + "</p></div></div>";
+    }).join("") : emptyState("💬", "No teacher comments", "No teacher comments on file for this student.");
+
+    var intervention;
+    if (s.academicStatus === "needs-support" || s.academicStatus === "at-risk") {
+      var caseMgr = s.caseManagerId ? D.getTeacher(s.caseManagerId) : null;
+      intervention = '<ul class="arrow-list">' +
+        "<li>Tier 2 small-group instruction added for core skill gaps, monitored " + (caseMgr ? "by " + esc(caseMgr.name) : "by the support team") + ".</li>" +
+        "<li>Progress-monitoring probes scheduled bi-weekly to track response to intervention.</li>" +
+        (s.academicStatus === "at-risk" ? "<li>Case conference scheduled to review intervention intensity and consider additional service minutes.</li>" : "") +
+        "</ul>";
+    } else {
+      intervention = emptyState("📈", "No formal interventions on file", "Student is meeting grade-level expectations; no formal intervention plan is currently active.");
+    }
+
+    document.getElementById("panel-academics").innerHTML =
+      '<div class="card"><h3>📚 Enrolled Courses</h3>' + coursesHtml + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📐 Standards Mastery</h3>' + standards + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📋 Assignment Completion</h3>' + completion + "</div>" +
+      '<div class="chart-card" style="margin-top:1.2rem;"><h4>📈 Growth Trend</h4>' + growth + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>🧪 Recent Assessments</h3>' + assessments + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>💬 Teacher Comments</h3>' + commentsHtml + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>🩹 Intervention History</h3>' + intervention + "</div>";
+  }
+
+  /* ---------------- attendance ---------------- */
+  function renderAttendance(s) {
+    var trend = '<div data-chart="trend" data-values=\'' + JSON.stringify(D.attendanceTrend.map(function (t) { return { v: t.rate }; })) + "'></div>" +
+      '<div class="legend"><span>Schoolwide weekly attendance trend (illustrative)</span></div>';
+    var log = s.id === "S01"
+      ? '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Date</th><th>Status</th></tr></thead><tbody>' +
+        D.jordanAttendanceLog.map(function (l) { return "<tr><td>" + l.date + "</td><td>" + esc(l.status) + "</td></tr>"; }).join("") + "</tbody></table></div></div>"
+      : emptyState("📋", "No detailed log for this student", "A detailed daily attendance log is available for Jordan Thompson in this demo.");
+
+    document.getElementById("panel-attendance").innerHTML =
+      '<div class="dash-grid" style="margin-bottom:1.2rem;"><div class="metric ' + (s.attendanceRate < 85 ? "plum" : "teal") + '"><div class="m-label">Attendance Rate</div><div class="m-num">' + s.attendanceRate + "%</div></div></div>" +
+      '<div class="chart-card"><h4>📈 Attendance Trend</h4>' + trend + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📋 Detailed Log</h3>' + log + "</div>";
+  }
+
+  /* ---------------- courses ---------------- */
+  function renderCourses(s) {
+    var ids = enrolledCourseIds(s);
+    var html;
+    if (!ids.length) {
+      html = emptyState("📚", "No courses on file", "This student is not enrolled in the flagship Grade 7 ELA course modeled in this demo.");
+    } else {
+      html = '<div class="grid grid-2">' + ids.map(function (cid) {
+        var c = D.getCourse(cid);
+        var teacher = D.getTeacher(c.teacherId);
+        var built = c.id === "C1";
+        return '<div class="card">' +
+          "<h4 style=\"margin-top:0;\">" + esc(c.title) + (built ? "" : ' <span class="tag">Preview</span>') + "</h4>" +
+          '<p class="muted" style="font-size:0.9rem;">' + esc(c.subject) + " · Grade " + c.grade + " · " + esc(c.mode) + " · " + esc(c.period) + " · Room " + esc(c.room) + "</p>" +
+          '<p class="muted" style="font-size:0.9rem;">Teacher: ' + esc(teacher ? teacher.name : "—") + "</p>" +
+          '<a class="btn secondary small" href="course.html?id=' + c.id + '">' + (built ? "Open Course →" : "Preview Course →") + "</a>" +
+        "</div>";
+      }).join("") + "</div>";
+    }
+    document.getElementById("panel-courses").innerHTML = html;
+  }
+
+  /* ---------------- assessments ---------------- */
+  function renderAssessmentsTab(s) {
+    var isG7ELA = enrolledCourseIds(s).indexOf("C1") > -1;
+    var html;
+    if (!isG7ELA) {
+      html = emptyState("🧪", "No assessments on file", "No assessment records on file for this student's grade/courses in this demo.");
+    } else {
+      html = '<div class="data-table-wrap" data-table><div class="table-toolbar"><input type="search" data-table-search placeholder="Search assessments…" aria-label="Search assessments"><span class="tt-count" data-table-count></span></div><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th class="sortable" data-col="date">Date</th><th>Title</th><th>Type</th>' + (s.id === "S01" ? "<th>Jordan’s Score</th>" : "") + '<th class="sortable" data-col="avg">Class Avg</th></tr></thead><tbody>' +
+        D.assessments.map(function (a) {
+          var score = s.id === "S01" ? (D.jordanAssessmentScores.filter(function (j) { return j.assessmentId === a.id; })[0] || {}).score : null;
+          return '<tr data-date="' + a.date + '" data-avg="' + a.classAvg + '"><td>' + a.date + "</td><td>" + esc(a.title) + "</td><td>" + esc(a.type) + "</td>" + (s.id === "S01" ? "<td><b>" + (score != null ? score + "%" : "—") + "</b></td>" : "") + "<td>" + a.classAvg + "%</td></tr>";
+        }).join("") + "</tbody></table></div></div>";
+    }
+    document.getElementById("panel-assessments").innerHTML = html;
+  }
+
+  /* ---------------- individual plan ---------------- */
+  function renderPlan(s) {
+    var panel = document.getElementById("panel-plan");
+    var sp = s.supportPlan;
+    if (!sp || !sp.type) {
+      panel.innerHTML = emptyState("🧩", "No individualized plan on file", "This is a general education student with no active IEP or 504 plan in this demo.");
+      return;
+    }
+    var caseMgr = s.caseManagerId ? D.getTeacher(s.caseManagerId) : null;
+    var team = [];
+    if (caseMgr) team.push(caseMgr.name + " (Case Manager)");
+    if (s.paraId) { var p = D.getPara(s.paraId); if (p) team.push(p.name + " (Paraprofessional)"); }
+    (s.therapistIds || []).forEach(function (tid) { var t = D.getTherapist(tid); if (t) team.push(t.name + " (" + t.discipline + ")"); });
+
+    panel.innerHTML =
+      '<div class="card"><div class="grid grid-2">' +
+        infoRow("Plan Type", sp.type) +
+        infoRow("Status", capitalize((sp.status || "active").replace("-", " "))) +
+        infoRow("Start Date", sp.startDate || "—") +
+        infoRow("Review Date", sp.reviewDate || "—") +
+        infoRow("Case Manager", caseMgr ? caseMgr.name : "—") +
+      "</div></div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📝 Present Levels of Performance</h3><p>' + esc(presentLevels(s)) + "</p></div>" +
+      '<div class="grid grid-2" style="margin-top:1.2rem;">' +
+        '<div class="card"><h4>🎯 Annual Goals</h4><p class="muted">' + (s.id === "S01" ? D.goals.length + " active goals on file." : "See the Goals tab for details.") + '</p><button type="button" class="btn secondary small" data-jump-tab="goals">View Goals →</button></div>' +
+        '<div class="card"><h4>🧩 Accommodations</h4><p class="muted">' + (s.id === "S01" ? D.accommodations.length + " documented accommodations." : "See the Accommodations tab for details.") + '</p><button type="button" class="btn secondary small" data-jump-tab="accommodations">View Accommodations →</button></div>' +
+        '<div class="card"><h4>🩺 Services</h4><p class="muted">See the Therapy tab for related services and delivered minutes.</p><button type="button" class="btn secondary small" data-jump-tab="therapy">View Therapy →</button></div>' +
+        '<div class="card"><h4>🧑‍🤝‍🧑 Team Members</h4><p class="muted">' + (team.length ? esc(team.join(", ")) : "Team not documented.") + "</p></div>" +
+      "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h4>👪 Parent Participation</h4><p class="muted">Parent/guardian is invited to all annual review and progress-report meetings' + ((D.parent.studentIds || []).indexOf(s.id) > -1 ? " — " + D.parent.name + " has been an active participant this year." : ".") + "</p></div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h4>📊 Progress-Report Schedule</h4><p class="muted">Progress toward annual goals is reported quarterly, aligned with the school’s report-card cycle.</p></div>';
+  }
+
+  /* ---------------- goals ---------------- */
+  function renderGoals(s) {
+    var panel = document.getElementById("panel-goals");
+    if (s.id !== "S01") {
+      panel.innerHTML = emptyState("🎯", "No goals on file", "This student does not have individualized goals documented in this demo — goal tracking here is scoped to Jordan Thompson.");
+      return;
+    }
+    var goals = D.goals.filter(function (g) { return g.studentId === s.id; });
+    panel.innerHTML = '<div style="display:grid;gap:1.4rem;">' + goals.map(function (g) {
+      var trendVals = JSON.stringify(g.history.map(function (v) { return { v: v }; }));
+      var st = g.status === "on-track" ? { pill: "good", label: "On Track", ico: "✅" } : { pill: "warn", label: "Needs Attention", ico: "⚠️" };
+      return '<div class="goal-card">' +
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;">' +
+          "<div><h4>🎯 " + esc(g.domain) + '</h4><div class="goal-meta">Baseline ' + g.baseline + "% → Target " + g.target + "%</div></div>" +
+          '<span class="status-pill ' + st.pill + '">' + st.ico + " " + st.label + "</span>" +
+        "</div>" +
+        "<p>" + esc(g.description) + "</p>" +
+        '<div class="grid grid-2" style="align-items:center;gap:1.4rem;margin:0.9rem 0;">' +
+          '<div style="text-align:center;"><div data-goal-ring="' + g.current + '"></div><div class="muted" style="font-size:0.85rem;margin-top:0.5rem;">Current progress toward this goal</div></div>' +
+          '<div><div data-chart="trend" data-values=\'' + trendVals + '\'></div><div class="legend"><span>Progress across the last 8 check-ins</span></div></div>' +
+        "</div>" +
+        '<div style="display:flex;flex-wrap:wrap;gap:1.4rem;padding-top:0.8rem;border-top:1px solid var(--border);font-size:0.9rem;"><div>🧑‍🏫 <b>Staff:</b> ' + esc(g.staff) + "</div><div>🗓️ <b>Last update:</b> " + g.lastUpdate + "</div></div>" +
+      "</div>";
+    }).join("") + "</div>";
+  }
+
+  /* ---------------- accommodations ---------------- */
+  function renderAccommodations(s) {
+    var panel = document.getElementById("panel-accommodations");
+    if (s.id === "S01") {
+      panel.innerHTML = '<div class="data-table-wrap" data-table><div class="table-toolbar"><input type="search" data-table-search placeholder="Search accommodations…" aria-label="Search accommodations"><span class="tt-count" data-table-count></span></div><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th class="sortable" data-col="type">Type</th><th>Setting</th><th>Staff</th><th>Frequency</th><th class="sortable" data-col="lastuse">Last Use</th></tr></thead><tbody>' +
+        D.accommodations.map(function (a) { return '<tr data-type="' + esc(a.type) + '" data-lastuse="' + a.lastUse + '"><td><b>' + esc(a.type) + "</b></td><td>" + esc(a.setting) + "</td><td>" + esc(a.staff) + "</td><td>" + esc(a.frequency) + "</td><td>" + a.lastUse + "</td></tr>"; }).join("") +
+        "</tbody></table></div></div>";
+      return;
+    }
+    if (s.supportPlan && s.supportPlan.type === "504") {
+      var illustrative = [
+        { type: "Extended Time", setting: "All assessments", frequency: "Every assessment" },
+        { type: "Preferential Seating", setting: "All classes", frequency: "Daily" },
+        { type: "Frequent Check-Ins", setting: "Core classes", frequency: "Weekly" }
+      ];
+      panel.innerHTML = '<p class="muted">Illustrative accommodations for this 504 plan (not individually tracked in this demo’s data layer):</p>' +
+        '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Type</th><th>Setting</th><th>Frequency</th></tr></thead><tbody>' +
+        illustrative.map(function (a) { return "<tr><td><b>" + esc(a.type) + "</b></td><td>" + esc(a.setting) + "</td><td>" + esc(a.frequency) + "</td></tr>"; }).join("") +
+        "</tbody></table></div></div>";
+      return;
+    }
+    panel.innerHTML = emptyState("🧩", "No accommodations on file", "Documented accommodations are tracked for Jordan Thompson in this demo; other students' accommodation logs are not included.");
+  }
+
+  /* ---------------- therapy ---------------- */
+  function renderTherapy(s) {
+    var panel = document.getElementById("panel-therapy");
+    if (s.id === "S01") {
+      var svc = D.therapyServices.filter(function (v) { return v.studentId === s.id; });
+      var sessions = D.therapySessions.filter(function (v) { return v.studentId === s.id; });
+      var svcHtml = svc.map(function (v) {
+        var th = D.getTherapist(v.therapistId);
+        var pct = Math.round((v.deliveredMinutesMonthly / v.requiredMinutesMonthly) * 100);
+        return '<div class="card compact" style="margin-bottom:0.8rem;">' +
+          "<h4 style=\"margin-top:0;\">" + esc(v.type) + "</h4>" +
+          '<p class="muted" style="font-size:0.9rem;">Therapist: ' + esc(th ? th.name : "—") + " · Frequency: " + esc(v.frequency) + "</p>" +
+          '<div class="progress-bar"><div class="progress-fill" style="width:' + pct + '%;"></div></div>' +
+          '<p class="muted" style="font-size:0.85rem;">' + v.deliveredMinutesMonthly + " of " + v.requiredMinutesMonthly + " required minutes delivered this month.</p>" +
+        "</div>";
+      }).join("");
+
+      var sessionsHtml = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Date</th><th>Time</th><th>Mode</th><th>Status</th><th>Summary</th></tr></thead><tbody>' +
+        sessions.map(function (ss) {
+          return '<tr class="clickable" data-row-href="../therapist/session-detail.html?id=' + ss.id + '"><td>' + ss.date + "</td><td>" + ss.time + "</td><td>" + esc(ss.mode || "—") + '</td><td><span class="status-pill ' + (ss.status === "Completed" ? "good" : ss.status === "Missed" ? "bad" : "info") + '">' + esc(ss.status) + '</span></td><td class="muted">' + esc(ss.summary || "—") + "</td></tr>";
+        }).join("") + "</tbody></table></div></div>";
+
+      panel.innerHTML = '<div class="card"><h3>🩺 Services</h3>' + svcHtml + "</div>" +
+        '<div class="card" style="margin-top:1.2rem;"><h3>📅 Upcoming &amp; Recent Sessions</h3>' + sessionsHtml + '<p class="muted" style="margin-top:0.6rem;font-size:0.85rem;">Click a row to open the full session detail (therapist view).</p></div>' +
+        '<div class="card" style="margin-top:1.2rem;"><h3>📈 General Progress Summary</h3><p>Jordan is showing steady progress toward the Communication goal tied to this service, initiating conversational exchanges with decreasing prompting across recent sessions.</p></div>';
+      return;
+    }
+    if (s.therapistIds && s.therapistIds.length) {
+      panel.innerHTML = '<div class="card"><h3>🩺 Therapy Services</h3><ul class="check-list">' +
+        s.therapistIds.map(function (tid) { var t = D.getTherapist(tid); return t ? "<li>" + esc(t.discipline) + " — " + esc(t.name) + "</li>" : ""; }).join("") +
+        '</ul><p class="muted">Full session history and service-minute detail is available for Jordan Thompson only in this demo.</p></div>';
+      return;
+    }
+    panel.innerHTML = emptyState("🩺", "No therapy services on file", "This student does not receive related services in this demo.");
+  }
+
+  /* ---------------- behavior ---------------- */
+  function renderBehavior(s) {
+    var incidents = D.behaviorIncidents.filter(function (b) { return b.studentId === s.id; });
+    var panel = document.getElementById("panel-behavior");
+    if (!incidents.length) {
+      panel.innerHTML = emptyState("🙂", "No behavior incidents on file", "No behavior incidents on file for this student.");
+      return;
+    }
+    panel.innerHTML = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Date</th><th>Type</th><th>Response</th><th>Staff</th></tr></thead><tbody>' +
+      incidents.map(function (b) { return "<tr><td>" + b.date + "</td><td>" + esc(b.type) + "</td><td>" + esc(b.response) + "</td><td>" + esc(b.staff) + "</td></tr>"; }).join("") + "</tbody></table></div></div>";
+  }
+
+  /* ---------------- documents ---------------- */
+  function renderDocuments(s) {
+    var docs = [
+      { name: "Individualized Education Program (IEP) / 504 Plan", ico: "📄" },
+      { name: "Most Recent Evaluation Report", ico: "🧾" },
+      { name: "Report Card — Current Term", ico: "🗒️" },
+      { name: "Emergency Contact Form", ico: "📇" },
+      { name: "Signed Consent for Services", ico: "✍️" }
+    ];
+    document.getElementById("panel-documents").innerHTML = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Document</th><th></th></tr></thead><tbody>' +
+      docs.map(function (d) { return "<tr><td>" + d.ico + " " + esc(d.name) + '</td><td><button type="button" class="btn secondary small" data-toast="info" data-toast-msg="📄 Opening ' + esc(d.name) + '… (simulated in this demo)">View</button></td></tr>'; }).join("") +
+      '</tbody></table></div></div><p class="muted" style="margin-top:0.6rem;font-size:0.85rem;">Illustrative document list — files are simulated in this portfolio demo.</p>';
+  }
+
+  /* ---------------- communications ---------------- */
+  function renderCommunications(s) {
+    var msgs = D.messages.filter(function (m) { return isAboutStudent(m, s); });
+    var msgsHtml = msgs.length ? msgs.map(function (m) {
+      return '<div class="alert-row"><span class="sev low"></span><div><b>' + esc(m.from) + "</b> → " + esc(m.to) + '<div class="muted" style="font-size:0.85rem;">' + esc(m.subject) + " — " + m.date + '</div><p style="margin:0.3rem 0 0;">' + esc(m.body) + "</p></div></div>";
+    }).join("") : emptyState("✉️", "No messages on file", "No messages on file for this student's family.");
+
+    var toName = (D.parent.studentIds || []).indexOf(s.id) > -1 ? D.parent.name : "Family Contact";
+    document.getElementById("panel-communications").innerHTML =
+      '<div class="card"><h3>✉️ Message History</h3>' + msgsHtml + "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>📝 Send a Message</h3><form data-form-mock data-success-msg="Message sent ✓ (simulated in this demo)">' +
+        '<div class="field"><label for="msgTo">To</label><input id="msgTo" name="to" type="text" value="' + esc(toName) + '"></div>' +
+        '<div class="field"><label for="msgSubject">Subject</label><input id="msgSubject" name="subject" type="text" placeholder="Message subject…"></div>' +
+        '<div class="field"><label for="msgBody">Message</label><textarea id="msgBody" name="body" rows="4" placeholder="Type a message…"></textarea></div>' +
+        '<button type="submit" class="btn">Send Message</button>' +
+      "</form></div>";
+  }
+
+  /* ---------------- student switcher ---------------- */
+  function buildSwitcher(currentId) {
+    var sel = document.getElementById("studentSwitch");
+    sel.innerHTML = D.students.map(function (s) {
+      return '<option value="' + s.id + '"' + (s.id === currentId ? " selected" : "") + ">" + esc(s.name) + " — Grade " + s.grade + "</option>";
+    }).join("");
+    sel.addEventListener("change", function () { location.href = "student-profile.html?id=" + sel.value; });
+  }
+
+  /* ---------------- init ---------------- */
+  function render() {
+    var id = qs("id") || "S01";
+    var s = D.getStudent(id) || D.getStudent("S01");
+    document.title = s.name + " — Student Profile — Inclusive Learning Hub";
+    buildSwitcher(s.id);
+    buildHeader(s);
+    renderOverview(s);
+    renderAcademics(s);
+    renderAttendance(s);
+    renderCourses(s);
+    renderAssessmentsTab(s);
+    renderPlan(s);
+    renderGoals(s);
+    renderAccommodations(s);
+    renderTherapy(s);
+    renderBehavior(s);
+    renderDocuments(s);
+    renderCommunications(s);
+  }
+  render();
+})();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

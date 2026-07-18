@@ -355,5 +355,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "💼",
     tags: ["Executive Consulting", "Systems Transformation", "Change Management", "Strategic Planning", "Organizational Development", "Capstone"],
     summary: "The CAPSTONE of the Educational Leadership & School Improvement Suite — a comprehensive consulting methodology for leading sustainable educational transformation from diagnosis through long-term sustainability. Built on a six-phase lifecycle (Discover, Diagnose, Design, Develop, Deliver, Sustain), it includes a Transformation Dashboard, an interactive maturity model, a scored Transformation Readiness diagnostic across six dimensions (leadership, culture, instruction, strategy, talent, innovation), a transformation blueprint generator, an implementation-services catalogue, a Leadership Solutions hub that integrates every framework in the suite, a consulting toolkit, and five client success stories. Integrates Dr. Franks' doctoral dissertation with transformational leadership, school-improvement, continuous-improvement, and organizational-development research, translated into practical consulting tools. Command palette, dark mode, notification center. The flagship methodology that brings the whole Leadership Suite together."
+  },
+  {
+    id: "inclusive-learning-hub",
+    title: "Inclusive Learning Hub",
+    subtitle: "A unified LMS, SIS, CMS & student support platform",
+    pillar: "id",
+    grade: "K-12 · Whole-School Platform",
+    status: "done",
+    url: "projects/inclusive-learning-hub/index.html",
+    icon: "🏫",
+    tags: ["LMS", "SIS", "Special Education", "Therapy Scheduling", "UDL", "Accessibility", "School Analytics"],
+    summary: "A full product-design and front-end prototype of an inclusive school platform that unifies learning management, student information, curriculum, special education management, therapy scheduling, and school analytics into one system. Six role-based portals (Administrator, Teacher, Parent, Student, Paraprofessional, Speech-Language Therapist) share a single student record — 24 mock students, 6 teachers, 4 paraprofessionals, 3 therapists, 8 courses — so an IEP goal, an accommodation, or a therapy session shows up consistently in every portal that needs it. Includes a 12-tab shared Student Profile, a blended Course & Lesson experience with a UDL lesson planner and a 'Choose How to Respond' pattern, a multi-view Scheduling demo with live conflict detection, and a real, full-featured accessibility toolbar (text sizing, high contrast, dark mode, dyslexia font, reading-focus mode, reduced motion, genuine text-to-speech) available across every role. Built around Universal Design for Learning and plain-language family communication as core architecture, not add-ons."
   }
 ];

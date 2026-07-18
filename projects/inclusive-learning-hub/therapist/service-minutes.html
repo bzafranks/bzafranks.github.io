@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Minutes — Inclusive Learning Hub</title>
+<meta name="description" content="Speech-language service-minute compliance for Emily Castillo's caseload — required vs. delivered minutes month-to-date, schoolwide and per-student.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="therapist" data-active="service-minutes" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Therapist navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Therapist / <b>Service Minutes</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">⏱️ Service Minute Compliance</span>
+        <h1>Service Minutes</h1>
+        <p class="lead">Speech-language service-minute compliance month-to-date — required vs. delivered, schoolwide and broken down by student.</p>
+      </div>
+
+      <!-- ===== SUMMARY ===== -->
+      <div class="dash-grid" style="margin-bottom:1.6rem;">
+        <div class="metric" id="smOverallCard"><div class="m-label">Overall Compliance (MTD)</div><div class="m-num" id="smOverall">—</div><div class="m-trend down" id="smOverallTrend">—</div></div>
+        <div class="metric teal"><div class="m-label">Students on Caseload</div><div class="m-num">6</div><div class="m-trend up">Speech-Language Therapy</div></div>
+        <div class="metric plum"><div class="m-label">Students Below 90% Compliance</div><div class="m-num" id="smBelow">—</div><div class="m-trend down" id="smBelowTrend">—</div></div>
+      </div>
+
+      <!-- ===== CHART ===== -->
+      <div class="chart-card" style="margin-bottom:1.6rem;">
+        <h4>Required vs. Delivered Minutes — Speech-Language (Month-to-Date)</h4>
+        <div id="minutesChart" data-chart="bar"></div>
+        <div class="legend"><span>Schoolwide speech-language totals across Emily Castillo's full caseload</span></div>
+      </div>
+
+      <!-- ===== PER-STUDENT BREAKDOWN ===== -->
+      <h3>Per-Student Breakdown</h3>
+      <div class="data-table-wrap" data-table>
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search students…" aria-label="Search students">
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead><tr>
+              <th class="sortable" data-col="name">Student</th>
+              <th class="sortable" data-col="required">Required (min/mo)</th>
+              <th class="sortable" data-col="delivered">Delivered (min/mo)</th>
+              <th class="sortable" data-col="compliance">Compliance</th>
+            </tr></thead>
+            <tbody id="perStudentBody"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Jordan Thompson's figures (240 required / 210 delivered) come directly from his IEP-mandated service record. Other students' figures are illustrative.</div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Overall compliance + chart come directly from ILH.serviceMinuteCompliance
+  // (Speech-Language Therapy record). The per-student breakdown mirrors the same
+  // detail used on caseload.html: Jordan's numbers are real (ILH.therapyServices,
+  // SV1); the other 5 students are illustrative, defined here.
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function pillFor(pct) { if (pct >= 90) return "good"; if (pct >= 75) return "warn"; return "bad"; }
+
+    var rec = D.serviceMinuteCompliance.filter(function (r) { return r.discipline === "Speech-Language Therapy"; })[0];
+    var overallPct = Math.round((rec.delivered / rec.required) * 100);
+    document.getElementById("smOverall").textContent = overallPct + "%";
+    document.getElementById("smOverallCard").className = "metric " + (overallPct >= 90 ? "leaf" : "plum");
+    document.getElementById("smOverallTrend").textContent = rec.delivered + " of " + rec.required + " required minutes delivered MTD";
+
+    document.getElementById("minutesChart").setAttribute("data-values", JSON.stringify([
+      { label: "Required", v: rec.required },
+      { label: "Delivered", v: rec.delivered }
+    ]));
+
+    var svc = D.therapyServices.filter(function (s) { return s.studentId === "S01"; })[0];
+    var DETAIL = {
+      S01: { required: svc.requiredMinutesMonthly, delivered: svc.deliveredMinutesMonthly },
+      S04: { required: 120, delivered: 112 },
+      S10: { required: 240, delivered: 228 },
+      S15: { required: 160, delivered: 150 },
+      S19: { required: 240, delivered: 165 },
+      S23: { required: 200, delivered: 188 }
+    };
+
+    var emily = D.getTherapist("TH1");
+    var belowCount = 0;
+    var rows = emily.caseloadIds.map(function (id) {
+      var s = D.getStudent(id);
+      var d = DETAIL[id];
+      var pct = Math.round((d.delivered / d.required) * 100);
+      if (pct < 90) belowCount++;
+      return { s: s, d: d, pct: pct };
+    });
+
+    document.getElementById("smBelow").textContent = belowCount;
+    document.getElementById("smBelowTrend").textContent = belowCount ? rows.filter(function (r) { return r.pct < 90; }).map(function (r) { return r.s.name; }).join(", ") : "All students compliant";
+
+    document.getElementById("perStudentBody").innerHTML = rows.map(function (r) {
+      return '<tr>' +
+        '<td data-name="' + esc(r.s.name) + '"><div style="display:flex;align-items:center;gap:0.6rem;"><span class="avatar-circ sm" style="background:' + r.s.color + '">' + esc(r.s.initials) + '</span><a href="../shared/student-profile.html?id=' + r.s.id + '" style="font-weight:700;color:var(--navy);text-decoration:none;">' + esc(r.s.name) + '</a></div></td>' +
+        '<td data-required="' + r.d.required + '">' + r.d.required + '</td>' +
+        '<td data-delivered="' + r.d.delivered + '">' + r.d.delivered + '</td>' +
+        '<td data-compliance="' + r.pct + '"><span class="status-pill ' + pillFor(r.pct) + '">' + r.pct + '%</span></td>' +
+      '</tr>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

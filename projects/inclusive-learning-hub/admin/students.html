@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Directory — Inclusive Learning Hub</title>
+<meta name="description" content="Searchable, filterable directory of all students, including academic status, support-plan status, case manager, and therapy services.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="students" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Students</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🛠️ Administrator Portal</span>
+        <h1>Student Directory</h1>
+        <p class="lead">All 24 students enrolled at Inclusive Learning Hub Academy — search, filter, and open any profile for full academic, behavioral, and support-plan detail.</p>
+      </div>
+
+      <!-- ===== FILTERS ===== -->
+      <div class="filter-row" id="studentFilters">
+        <select data-table-filter="grade" aria-label="Filter by grade">
+          <option value="">All Grades</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+        </select>
+        <select data-table-filter="programme" aria-label="Filter by programme">
+          <option value="">All Programmes</option>
+          <option value="General Education">General Education</option>
+          <option value="Inclusive Learning Support">Inclusive Learning Support</option>
+        </select>
+        <select data-table-filter="academic" aria-label="Filter by academic status">
+          <option value="">All Academic Statuses</option>
+          <option value="on-track">On Track</option>
+          <option value="needs-support">Needs Support</option>
+          <option value="at-risk">At Risk</option>
+        </select>
+        <select data-table-filter="attn" aria-label="Filter by attendance concern">
+          <option value="">All Attendance</option>
+          <option value="concern">Below 85% (Concern)</option>
+        </select>
+        <select data-table-filter="plan" aria-label="Filter by individualized plan">
+          <option value="">All Plans</option>
+          <option value="IEP">IEP</option>
+          <option value="504">504</option>
+          <option value="None">No Plan</option>
+        </select>
+        <select data-table-filter="therapy" aria-label="Filter by therapy service">
+          <option value="">All Therapy Services</option>
+          <option value="Speech-Language Therapy">Speech-Language Therapy</option>
+          <option value="Occupational Therapy">Occupational Therapy</option>
+          <option value="Behavioral &amp; Mental Health Counseling">Counseling</option>
+        </select>
+        <select data-table-filter="casemgr" aria-label="Filter by case manager">
+          <option value="">All Case Managers</option>
+        </select>
+      </div>
+
+      <!-- ===== TABLE ===== -->
+      <div class="data-table-wrap" data-table>
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search students by name, homeroom, case manager…" aria-label="Search students">
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;box-shadow:none;">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th class="sortable" data-col="name">Name</th>
+                <th class="sortable" data-col="sid">Student ID</th>
+                <th class="sortable" data-col="grade">Grade</th>
+                <th>Programme</th>
+                <th class="sortable" data-col="homeroom">Homeroom</th>
+                <th class="sortable" data-col="attnrate">Attendance</th>
+                <th>Academic Status</th>
+                <th>Support Plan</th>
+                <th>Case Manager</th>
+                <th>Therapy Services</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="studentRows"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Showing all enrolled students. Click a name to open the full student profile.</div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render the full student directory table directly from window.ILH so it's guaranteed consistent with mock-data.js
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    function academicPill(status) {
+      var map = { "on-track": ["good", "On Track"], "needs-support": ["warn", "Needs Support"], "at-risk": ["bad", "At Risk"] };
+      var m = map[status] || ["neutral", status];
+      return '<span class="status-pill ' + m[0] + '">' + m[1] + '</span>';
+    }
+    function planPill(s) {
+      var sp = s.supportPlan || {};
+      if (!sp.type) return '<span class="status-pill neutral">None</span>';
+      if (sp.status === "review-due") return '<span class="status-pill warn">' + sp.type + ' — Review Due</span>';
+      return '<span class="status-pill good">' + sp.type + ' Active</span>';
+    }
+    function overallStatus(s) {
+      if (s.academicStatus === "at-risk" || (s.supportPlan && s.supportPlan.status === "review-due")) return '<span class="status-pill bad">Needs Attention</span>';
+      if (s.academicStatus === "needs-support" || s.attendanceRate < 90) return '<span class="status-pill warn">Monitor</span>';
+      return '<span class="status-pill good">Good Standing</span>';
+    }
+
+    // Populate case manager filter dynamically from the teachers who serve as case managers
+    var casemgrSel = document.querySelector('[data-table-filter="casemgr"]');
+    var caseMgrNames = {};
+    D.students.forEach(function (s) { if (s.caseManagerId) { var t = D.getTeacher(s.caseManagerId); if (t) caseMgrNames[t.name] = true; } });
+    Object.keys(caseMgrNames).sort().forEach(function (name) {
+      var opt = document.createElement("option"); opt.value = name; opt.textContent = name; casemgrSel.appendChild(opt);
+    });
+
+    var rowsHtml = D.students.map(function (s) {
+      var cm = s.caseManagerId ? D.getTeacher(s.caseManagerId) : null;
+      var therapyNames = (s.therapistIds || []).map(function (id) { var t = D.getTherapist(id); return t ? t.discipline : ""; }).filter(Boolean);
+      var attnFlag = s.attendanceRate < 85 ? "concern" : "";
+      var planType = (s.supportPlan && s.supportPlan.type) ? s.supportPlan.type : "None";
+      var profileUrl = "../shared/student-profile.html?id=" + s.id;
+
+      return '<tr class="clickable" data-grade="' + s.grade + '" data-programme="' + esc(s.programme) + '" data-academic="' + s.academicStatus + '" data-attn="' + attnFlag + '" data-plan="' + esc(planType) + '" data-therapy="' + esc(therapyNames.join(",")) + '" data-casemgr="' + esc(cm ? cm.name : "") + '" data-name="' + esc(s.name) + '" data-sid="' + esc(s.id) + '" data-homeroom="' + esc(s.homeroom) + '" data-attnrate="' + s.attendanceRate + '" onclick="location.href=\'' + profileUrl + '\'">' +
+        '<td><span class="avatar-circ sm" style="background:' + s.color + '">' + s.initials + '</span></td>' +
+        '<td><a href="' + profileUrl + '" style="font-weight:700;text-decoration:none;color:var(--navy);" onclick="event.stopPropagation();">' + esc(s.name) + '</a></td>' +
+        '<td>' + s.id + '</td>' +
+        '<td>Grade ' + s.grade + '</td>' +
+        '<td>' + esc(s.programme) + '</td>' +
+        '<td>' + esc(s.homeroom) + '</td>' +
+        '<td>' + s.attendanceRate + '%' + (s.attendanceRate < 85 ? ' ⚠️' : '') + '</td>' +
+        '<td>' + academicPill(s.academicStatus) + '</td>' +
+        '<td>' + planPill(s) + '</td>' +
+        '<td>' + (cm ? esc(cm.name) : '<span class="muted">—</span>') + '</td>' +
+        '<td>' + (therapyNames.length ? esc(therapyNames.join(", ")) : '<span class="muted">—</span>') + '</td>' +
+        '<td>' + overallStatus(s) + '</td>' +
+        '</tr>';
+    }).join("");
+
+    document.getElementById("studentRows").innerHTML = rowsHtml;
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

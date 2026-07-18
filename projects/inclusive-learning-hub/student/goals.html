@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Goals — Inclusive Learning Hub</title>
+<meta name="description" content="Jordan's personal learning goals, shown kid-friendly with progress rings and encouraging notes.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="student" data-active="goals" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Student navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Student / <b>Goals</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🎒 Student Portal</span>
+        <h1>My Goals</h1>
+        <p class="lead">These are the things you and your team are working on together this year <span class="muted">(part of your learning plan)</span>. Every one of them is about helping you grow — not about what you can't do yet.</p>
+      </div>
+
+      <div class="grid grid-2" id="goalCards"></div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+(function () {
+  var D = window.ILH;
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  var KID_FRIENDLY = {
+    "Reading Comprehension": {
+      title: "Understanding What I Read",
+      restate: "When I read a story, I'm working on finding the main idea and pointing out three details that back it up.",
+      ico: "📖"
+    },
+    "Written Expression": {
+      title: "Writing My Own Stories",
+      restate: "I'm working on writing a 3-paragraph story on my own, with a clear beginning, middle, and end.",
+      ico: "✍️"
+    },
+    "Executive Functioning": {
+      title: "Planning My Work",
+      restate: "I'm using a visual planner to help me break a task into steps and finish it on my own.",
+      ico: "🗂️"
+    },
+    "Communication": {
+      title: "Talking with Friends",
+      restate: "I'm practicing starting a conversation with a friend and keeping it going for a few back-and-forths.",
+      ico: "💬"
+    }
+  };
+
+  var ENCOURAGE = {
+    "on-track": "You're right on track — keep it up, this is really paying off!",
+    "needs-attention": "This one's still growing. Growth takes time, and you've already come a long way from where you started."
+  };
+
+  document.getElementById("goalCards").innerHTML = D.goals.filter(function (g) { return g.studentId === "S01"; }).map(function (g) {
+    var kf = KID_FRIENDLY[g.domain] || { title: g.domain, restate: g.description, ico: "🎯" };
+    return '<div class="goal-card">' +
+      '<div style="display:flex; gap:1rem; align-items:center;">' +
+        '<div data-goal-ring="' + g.current + '" style="width:90px; flex:0 0 auto;"></div>' +
+        '<div>' +
+          '<h4 style="margin:0 0 0.2rem;">' + kf.ico + ' ' + esc(kf.title) + '</h4>' +
+          '<div class="goal-meta">Started at ' + g.baseline + '% · Goal is ' + g.target + '%</div>' +
+        '</div>' +
+      '</div>' +
+      '<p style="margin:1rem 0 0.6rem;"><b>What I\'m working on:</b> ' + esc(kf.restate) + '</p>' +
+      '<p class="muted" style="margin:0;">' + esc(ENCOURAGE[g.status] || ENCOURAGE["on-track"]) + '</p>' +
+      '<p class="muted" style="margin:0.6rem 0 0; font-size:0.8rem;">Helping me with this: ' + esc(g.staff) + '</p>' +
+      '</div>';
+  }).join("");
+})();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports — Inclusive Learning Hub</title>
+<meta name="description" content="Therapist reports center: generate caseload summaries, service-minute compliance, goal progress, and session log exports.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="therapist" data-active="reports" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Therapist navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Therapist / <b>Reports</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">📈 Reports Center</span>
+        <h1>Reports Center</h1>
+        <p class="lead">Generate the reports you need for IEP meetings, compliance reviews, and caseload management — in one click. (Generation is simulated in this portfolio demo.)</p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Available Reports</h3>
+        <div class="report-row">
+          <div><b>Caseload Summary</b><div class="muted" style="font-size:.85rem;">All 6 students on your caseload — service frequency, goal domain, and current status in one page.</div></div>
+          <button class="btn secondary small" type="button" data-toast="ok" data-toast-msg="📄 Caseload Summary generated (simulated) — ready to download.">Generate</button>
+        </div>
+        <div class="report-row">
+          <div><b>Service Minute Compliance</b><div class="muted" style="font-size:.85rem;">Required vs. delivered speech-language minutes, schoolwide and per-student, month-to-date.</div></div>
+          <button class="btn secondary small" type="button" data-toast="ok" data-toast-msg="📄 Service Minute Compliance report generated (simulated) — ready to download.">Generate</button>
+        </div>
+        <div class="report-row">
+          <div><b>Goal Progress Report</b><div class="muted" style="font-size:.85rem;">Baseline, target, and current performance across every active speech-language goal.</div></div>
+          <button class="btn secondary small" type="button" data-toast="ok" data-toast-msg="📄 Goal Progress Report generated (simulated) — ready to download.">Generate</button>
+        </div>
+        <div class="report-row">
+          <div><b>Session Log Export</b><div class="muted" style="font-size:.85rem;">Full session history — dates, activities, performance data, and prompting levels — as a clinical export.</div></div>
+          <button class="btn secondary small" type="button" data-toast="ok" data-toast-msg="📄 Session Log Export generated (simulated) — ready to download.">Generate</button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

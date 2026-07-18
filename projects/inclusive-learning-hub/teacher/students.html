@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Students — Inclusive Learning Hub</title>
+<meta name="description" content="Patricia Nguyen's students across her Grade 7 ELA sections — academic status, attendance, support-plan status, and accommodations at a glance.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="students" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Students</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🍎 Teacher Portal</span>
+        <h1>My Students</h1>
+        <p class="lead">Every student across Patricia Nguyen's Grade 7 ELA sections — Period 2 (the flagship roster used throughout this demo) and an illustrative Period 6 section shown for a fuller gradebook-style view.</p>
+      </div>
+
+      <!-- ===== SUMMARY METRICS ===== -->
+      <div class="dash-grid" style="margin-bottom:1.6rem;">
+        <div class="metric"><div class="m-label">Total Students</div><div class="m-num" id="mTotal">—</div><div class="m-trend up">2 sections</div></div>
+        <div class="metric teal"><div class="m-label">Period 2 (ELA Roster)</div><div class="m-num">6</div><div class="m-trend up">Full profiles available</div></div>
+        <div class="metric plum"><div class="m-label">With IEP / 504</div><div class="m-num" id="mPlans">—</div><div class="m-trend down">Active support plans</div></div>
+        <div class="metric"><div class="m-label">Needing Support / At Risk</div><div class="m-num" id="mSupport">—</div><div class="m-trend down">Below on-track threshold</div></div>
+      </div>
+
+      <!-- ===== FILTERS ===== -->
+      <div class="filter-row">
+        <select data-table-filter="period" aria-label="Filter by section">
+          <option value="">All Sections</option>
+          <option value="Period 2">Period 2 (Grade 7 ELA roster)</option>
+          <option value="Period 6">Period 6 (illustrative)</option>
+        </select>
+        <select data-table-filter="plan" aria-label="Filter by support plan">
+          <option value="">All Plans</option>
+          <option value="IEP">IEP</option>
+          <option value="504">504</option>
+          <option value="None">No Plan</option>
+        </select>
+        <select data-table-filter="status" aria-label="Filter by academic status">
+          <option value="">All Statuses</option>
+          <option value="on-track">On Track</option>
+          <option value="needs-support">Needs Support</option>
+          <option value="at-risk">At Risk</option>
+        </select>
+      </div>
+
+      <!-- ===== TABLE ===== -->
+      <div class="data-table-wrap" data-table>
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search students by name…" aria-label="Search students">
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;box-shadow:none;">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th class="sortable" data-col="name">Name</th>
+                <th>Section</th>
+                <th class="sortable" data-col="avg">Current Avg.</th>
+                <th class="sortable" data-col="attendance">Attendance</th>
+                <th>Support Plan</th>
+                <th class="sortable" data-col="acc">Accommodations</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="studentRows"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Period 2 rows link to the full student profile used throughout this demo. Period 6 rows are illustrative students, not part of the seeded roster — their profiles aren't built out in this portfolio demo.</div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    // Running-average lookup for Period 2 students, matching gradebook.html exactly (Jordan = 71, needs-support).
+    var period2Avg = { S01: 71, S06: 87, S10: 81, S14: 71, S18: 89, S22: 84 };
+
+    // Illustrative Period 6 section — invented for a fuller table, clearly not part of the seeded roster.
+    var period6 = [
+      { name: "Diego Salazar", avg: 85, attendance: 96, plan: "None", acc: 0 },
+      { name: "Freya Lindholm", avg: 91, attendance: 98, plan: "None", acc: 0 },
+      { name: "Malik Jefferson", avg: 74, attendance: 90, plan: "504", acc: 3 },
+      { name: "Simone Achebe", avg: 82, attendance: 94, plan: "None", acc: 0 },
+      { name: "Tobias Hartwell", avg: 69, attendance: 84, plan: "IEP", acc: 5 },
+      { name: "Nolan Petrakis", avg: 79, attendance: 92, plan: "None", acc: 0 },
+      { name: "Ava-Rose Kim", avg: 95, attendance: 99, plan: "None", acc: 0 }
+    ];
+    var colors = ["#3a6ea5", "#5b8c5a", "#8a5fb0", "#c07830", "#2f8f8a", "#b0507e"];
+
+    function initials(name) { var p = name.split(" "); return (p[0][0] + p[p.length - 1][0]).toUpperCase(); }
+    function statusFromAvg(avg) { return avg >= 80 ? "on-track" : (avg >= 70 ? "needs-support" : "at-risk"); }
+    function statusPill(status) {
+      var map = { "on-track": ["good", "On Track"], "needs-support": ["warn", "Needs Support"], "at-risk": ["bad", "At Risk"] };
+      var m = map[status] || ["neutral", status];
+      return '<span class="status-pill ' + m[0] + '">' + m[1] + '</span>';
+    }
+    function planPill(plan) {
+      if (plan === "None" || !plan) return '<span class="status-pill neutral">None</span>';
+      return '<span class="status-pill good">' + plan + ' Active</span>';
+    }
+    function avgPill(avg) {
+      var status = statusFromAvg(avg);
+      var map = { "on-track": "good", "needs-support": "warn", "at-risk": "bad" };
+      return '<span class="status-pill ' + map[status] + '">' + avg + '%</span>';
+    }
+
+    var planCount = 0, supportCount = 0, total = 0;
+
+    // Period 2 — real g7elaRoster students, sourced from ILH.students
+    var p2Html = D.g7elaRoster.map(function (id) {
+      var s = D.getStudent(id);
+      var avg = period2Avg[id];
+      var status = s.academicStatus; // authoritative, from mock-data.js
+      var planType = (s.supportPlan && s.supportPlan.type) ? s.supportPlan.type : "None";
+      var accCount = D.accommodations.filter(function (a) { return a.studentId === s.id; }).length;
+      total++;
+      if (planType !== "None") planCount++;
+      if (status !== "on-track") supportCount++;
+      var profileUrl = "../shared/student-profile.html?id=" + s.id;
+      return '<tr class="clickable" data-period="Period 2" data-plan="' + planType + '" data-status="' + status + '" data-name="' + esc(s.name) + '" data-avg="' + avg + '" data-attendance="' + s.attendanceRate + '" data-acc="' + accCount + '" onclick="location.href=\'' + profileUrl + '\'">' +
+        '<td><span class="avatar-circ sm" style="background:' + s.color + '">' + s.initials + '</span></td>' +
+        '<td><a href="' + profileUrl + '" style="font-weight:700;text-decoration:none;color:var(--navy);" onclick="event.stopPropagation();">' + esc(s.name) + '</a><div class="muted" style="font-size:.8rem;">Grade 7 · Homeroom ' + esc(s.homeroom) + '</div></td>' +
+        '<td>Period 2</td>' +
+        '<td>' + avgPill(avg) + '</td>' +
+        '<td>' + s.attendanceRate + '%' + (s.attendanceRate < 85 ? ' ⚠️' : '') + '</td>' +
+        '<td>' + planPill(planType) + '</td>' +
+        '<td>' + accCount + '</td>' +
+        '<td><a href="' + profileUrl + '" class="btn secondary small" onclick="event.stopPropagation();">View Profile</a></td>' +
+        '</tr>';
+    }).join("");
+
+    // Period 6 — illustrative, no seeded profile
+    var p6Html = period6.map(function (s, i) {
+      var status = statusFromAvg(s.avg);
+      total++;
+      if (s.plan !== "None") planCount++;
+      if (status !== "on-track") supportCount++;
+      return '<tr data-period="Period 6" data-plan="' + s.plan + '" data-status="' + status + '" data-name="' + esc(s.name) + '" data-avg="' + s.avg + '" data-attendance="' + s.attendance + '" data-acc="' + s.acc + '">' +
+        '<td><span class="avatar-circ sm" style="background:' + colors[i % colors.length] + '">' + initials(s.name) + '</span></td>' +
+        '<td><b>' + esc(s.name) + '</b><div class="muted" style="font-size:.8rem;">Grade 7 · Homeroom 7C · illustrative</div></td>' +
+        '<td>Period 6</td>' +
+        '<td>' + avgPill(s.avg) + '</td>' +
+        '<td>' + s.attendance + '%' + (s.attendance < 85 ? ' ⚠️' : '') + '</td>' +
+        '<td>' + planPill(s.plan) + '</td>' +
+        '<td>' + s.acc + '</td>' +
+        '<td><button class="btn secondary small" type="button" data-toast="info" data-toast-msg="🔒 Full profile available in Administrator &gt; Students in this demo.">View Profile</button></td>' +
+        '</tr>';
+    }).join("");
+
+    document.getElementById("studentRows").innerHTML = p2Html + p6Html;
+    document.getElementById("mTotal").textContent = total;
+    document.getElementById("mPlans").textContent = planCount;
+    document.getElementById("mSupport").textContent = supportCount;
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

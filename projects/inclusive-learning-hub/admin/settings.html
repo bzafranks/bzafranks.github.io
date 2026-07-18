@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings — Inclusive Learning Hub</title>
+<meta name="description" content="Administrator settings: school profile, roles and permissions, integrations, and notification preferences.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="settings" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Settings</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">⚙️ Administrator Settings</span>
+        <h1>Settings</h1>
+        <p class="lead">Manage the school profile, staff roles and access levels, connected systems, and notification preferences.</p>
+      </div>
+
+      <div class="tabs" data-tabs>
+        <div class="tab-btns">
+          <button class="tab-btn active" data-tab="profile">School Profile</button>
+          <button class="tab-btn" data-tab="roles">Roles &amp; Permissions</button>
+          <button class="tab-btn" data-tab="integrations">Integrations</button>
+          <button class="tab-btn" data-tab="notifications">Notifications</button>
+        </div>
+
+        <!-- ===== SCHOOL PROFILE ===== -->
+        <div class="tab-panel active" data-tab-panel="profile">
+          <div class="card">
+            <h3 style="margin-top:0;">🏫 School Profile</h3>
+            <form data-form-mock data-success-msg="🏫 School profile saved (simulated).">
+              <div class="form-group" style="margin-bottom:0.9rem;">
+                <label for="schoolName" style="display:block;font-weight:700;margin-bottom:0.3rem;">School Name</label>
+                <input id="schoolName" name="School Name" type="text" value="Inclusive Learning Hub Academy" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+              </div>
+              <div class="form-group" style="margin-bottom:0.9rem;">
+                <label for="schoolAddress" style="display:block;font-weight:700;margin-bottom:0.3rem;">Address</label>
+                <input id="schoolAddress" name="Address" type="text" value="482 Harbor View Lane, Riverside, CA 92501" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+              </div>
+              <div class="grid grid-2" style="gap:0.9rem;margin-bottom:1.1rem;">
+                <div class="form-group">
+                  <label for="termStart" style="display:block;font-weight:700;margin-bottom:0.3rem;">Term Start Date</label>
+                  <input id="termStart" name="Term Start Date" type="date" value="2026-08-25" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+                </div>
+                <div class="form-group">
+                  <label for="termEnd" style="display:block;font-weight:700;margin-bottom:0.3rem;">Term End Date</label>
+                  <input id="termEnd" name="Term End Date" type="date" value="2027-06-11" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+                </div>
+              </div>
+              <button class="btn" type="submit">Save Changes</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ===== ROLES & PERMISSIONS ===== -->
+        <div class="tab-panel" data-tab-panel="roles">
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Role</th><th>Access Level</th></tr></thead>
+              <tbody>
+                <tr><td><b>Administrator</b></td><td>Full access — all students, staff, reports, billing, and settings</td></tr>
+                <tr><td><b>Teacher</b></td><td>Their own classes, gradebook, assignments; view-only on IEP/504 accommodations for their students</td></tr>
+                <tr><td><b>Special Education Case Manager</b></td><td>Full access to assigned students' individual plans, goals, and service records</td></tr>
+                <tr><td><b>Therapist</b></td><td>Their own caseload, session notes, and service-minute tracking</td></tr>
+                <tr><td><b>Paraprofessional</b></td><td>Assigned students' daily support tasks and data collection only</td></tr>
+                <tr><td><b>Parent</b></td><td>Their own child's progress, goals, attendance, messages, and forms</td></tr>
+                <tr><td><b>Student</b></td><td>Their own courses, assignments, and goals</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== INTEGRATIONS ===== -->
+        <div class="tab-panel" data-tab-panel="integrations">
+          <div class="grid grid-2">
+            <div class="card compact">
+              <h4 style="margin-top:0;">🔄 SIS Sync</h4>
+              <p class="muted" style="font-size:.88rem;">Nightly sync of enrollment, attendance, and grades with the Student Information System.</p>
+              <span class="status-pill good">Connected</span>
+              <button class="btn ghost small" type="button" style="float:right;" data-toast="info" data-toast-msg="🔄 SIS Sync settings updated (simulated).">Manage</button>
+            </div>
+            <div class="card compact">
+              <h4 style="margin-top:0;">📧 Google Workspace</h4>
+              <p class="muted" style="font-size:.88rem;">Single sign-on and shared calendar/email integration for staff and families.</p>
+              <span class="status-pill good">Connected</span>
+              <button class="btn ghost small" type="button" style="float:right;" data-toast="info" data-toast-msg="📧 Google Workspace settings updated (simulated).">Manage</button>
+            </div>
+            <div class="card compact">
+              <h4 style="margin-top:0;">🏛️ State Reporting</h4>
+              <p class="muted" style="font-size:.88rem;">Automated submission of enrollment and IEP compliance data to the state portal.</p>
+              <span class="status-pill warn">Not Connected</span>
+              <button class="btn secondary small" type="button" style="float:right;" data-toast="ok" data-toast-msg="🏛️ State Reporting connection started (simulated).">Connect</button>
+            </div>
+            <div class="card compact">
+              <h4 style="margin-top:0;">🔐 SSO</h4>
+              <p class="muted" style="font-size:.88rem;">District-wide single sign-on for staff and student accounts.</p>
+              <span class="status-pill good">Connected</span>
+              <button class="btn ghost small" type="button" style="float:right;" data-toast="info" data-toast-msg="🔐 SSO settings updated (simulated).">Manage</button>
+            </div>
+            <div class="card compact">
+              <h4 style="margin-top:0;">🧪 Assessment Platform</h4>
+              <p class="muted" style="font-size:.88rem;">Auto-import of benchmark and formative assessment scores.</p>
+              <span class="status-pill warn">Not Connected</span>
+              <button class="btn secondary small" type="button" style="float:right;" data-toast="ok" data-toast-msg="🧪 Assessment Platform connection started (simulated).">Connect</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== NOTIFICATIONS ===== -->
+        <div class="tab-panel" data-tab-panel="notifications">
+          <div class="card">
+            <h3 style="margin-top:0;">🔔 Notification Preferences</h3>
+            <form data-form-mock data-success-msg="🔔 Notification preferences saved (simulated).">
+              <div style="display:grid;gap:0.7rem;margin-bottom:1.1rem;">
+                <label class="acc-check"><input type="checkbox" name="Missed Therapy Sessions" checked> Missed therapy sessions</label>
+                <label class="acc-check"><input type="checkbox" name="Expiring Individual Plans" checked> Expiring IEP/504 plans (30-day warning)</label>
+                <label class="acc-check"><input type="checkbox" name="Chronic Attendance" checked> Chronic attendance concerns</label>
+                <label class="acc-check"><input type="checkbox" name="Overdue Evaluations" checked> Overdue evaluations</label>
+                <label class="acc-check"><input type="checkbox" name="Behavior Incidents"> New behavior incident logged</label>
+                <label class="acc-check"><input type="checkbox" name="Overdue Billing" checked> Overdue billing accounts</label>
+                <label class="acc-check"><input type="checkbox" name="Weekly Digest" checked> Weekly summary digest email</label>
+              </div>
+              <button class="btn" type="submit">Save Preferences</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

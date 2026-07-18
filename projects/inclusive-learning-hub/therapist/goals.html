@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goals — Inclusive Learning Hub</title>
+<meta name="description" content="Speech-language goal progress across Emily Castillo's caseload — communication, articulation, language processing, and social communication goals with progress rings and trend lines.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="therapist" data-active="goals" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Therapist navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Therapist / <b>Goals</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🎯 Speech-Language Goals</span>
+        <h1>Goals</h1>
+        <p class="lead">Communication goal progress across your caseload. Each ring shows current performance against target; the sparkline shows the trend across recent data-collection points.</p>
+      </div>
+
+      <!-- ===== JORDAN THOMPSON — REAL GOAL (G4) ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <div style="display:flex;align-items:center;gap:0.9rem;margin-bottom:0.4rem;">
+          <span class="avatar-circ" style="background:#3a6ea5;">JT</span>
+          <div>
+            <h3 style="margin:0;"><a href="../shared/student-profile.html?id=S01" style="color:var(--navy);text-decoration:none;">Jordan Thompson</a></h3>
+            <span class="muted" style="font-size:0.86rem;">Grade 7 · Homeroom 7B · IEP (active)</span>
+          </div>
+          <span class="status-pill good" style="margin-left:auto;">On Track</span>
+        </div>
+        <div id="jordanGoal"></div>
+      </div>
+
+      <!-- ===== OTHER CASELOAD STUDENTS ===== -->
+      <div class="tool-head" style="margin-top:0.4rem;">
+        <h2 style="margin-bottom:0.2rem;">Other Caseload Goals</h2>
+        <p class="lead" style="font-size:1.05rem;">Illustrative speech-language goals for three more students on your caseload, spanning articulation, language processing, and social communication.</p>
+      </div>
+
+      <div class="grid grid-2" id="otherGoals" style="margin-bottom:1.6rem;"></div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Jordan Thompson's Communication goal (G4) comes verbatim from ILH.goals.
+  // The other three caseload students' goals are illustrative — not modeled per-student
+  // in mock-data.js — and defined here, mirroring the pattern used on
+  // teacher/progress-monitoring.html for Amara Johnson / Grace Okonkwo.
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    function goalCardHtml(g, anchorId) {
+      return '<div class="goal-card" id="' + anchorId + '">' +
+        '<div style="display:flex;gap:1.1rem;align-items:flex-start;flex-wrap:wrap;">' +
+          '<div data-goal-ring="' + g.current + '" style="width:110px;height:110px;flex:0 0 auto;"></div>' +
+          '<div style="flex:1;min-width:180px;">' +
+            '<h4>' + esc(g.domain) + '</h4>' +
+            '<div class="goal-meta">Baseline ' + g.baseline + '% → Target ' + g.target + '% · <span class="status-pill ' + (g.status === "on-track" ? "good" : "warn") + '">' + (g.status === "on-track" ? "On Track" : "Needs Attention") + '</span></div>' +
+            '<p class="muted" style="font-size:0.86rem;margin-bottom:0.5rem;">' + esc(g.description) + '</p>' +
+            '<div style="font-size:0.8rem;color:var(--ink-soft);">Staff: ' + esc(g.staff) + ' · Last update: ' + g.lastUpdate + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div style="margin-top:0.8rem;"><div class="muted" style="font-size:0.76rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.2rem;">Trend</div><div data-chart="trend" data-values=\'' + JSON.stringify(g.history.map(function (v) { return { v: v }; })) + '\'></div></div>' +
+      '</div>';
+    }
+
+    // ---- Jordan Thompson: real G4 from ILH.goals ----
+    var g4 = D.goals.filter(function (g) { return g.id === "G4"; })[0];
+    document.getElementById("jordanGoal").innerHTML = goalCardHtml(g4, "goal-G4");
+
+    // ---- Illustrative goal for Sophia Chen (S04, 504, Articulation) ----
+    var sophiaGoal = {
+      domain: "Articulation", baseline: 50, target: 90, current: 78, status: "on-track",
+      staff: "Emily Castillo (Speech-Language Therapist)", lastUpdate: "2026-07-09",
+      history: [50, 55, 60, 65, 70, 74, 78],
+      description: "When producing multisyllabic words in structured conversation, Sophia will correctly articulate target sounds /r/ and /s/ with 90% accuracy across 3 consecutive sessions."
+    };
+
+    // ---- Illustrative goal for Jayden Mitchell (S19, IEP, Language Processing) ----
+    var jaydenGoal = {
+      domain: "Language Processing", baseline: 30, target: 75, current: 42, status: "needs-attention",
+      staff: "Emily Castillo (Speech-Language Therapist)", lastUpdate: "2026-07-07",
+      history: [30, 33, 35, 37, 39, 41, 42],
+      description: "When given 2-step verbal directions in a small-group setting, Jayden will accurately follow and execute both steps with 75% accuracy across 4 consecutive trials."
+    };
+
+    // ---- Illustrative goal for Gabriel Moreau (S23, IEP, Social Communication) ----
+    var gabrielGoal = {
+      domain: "Social Communication", baseline: 40, target: 85, current: 67, status: "on-track",
+      staff: "Emily Castillo (Speech-Language Therapist)", lastUpdate: "2026-07-08",
+      history: [40, 45, 50, 55, 60, 64, 67],
+      description: "During structured small-group activities, Gabriel will initiate and respond to peer comments using appropriate social language in 4 of 5 observed opportunities."
+    };
+
+    var others = [
+      { stu: D.getStudent("S04"), goal: sophiaGoal, anchor: "goal-artic-sophia" },
+      { stu: D.getStudent("S19"), goal: jaydenGoal, anchor: "goal-lang-jayden" },
+      { stu: D.getStudent("S23"), goal: gabrielGoal, anchor: "goal-socialcomm-gabriel" }
+    ];
+
+    document.getElementById("otherGoals").innerHTML = others.map(function (o) {
+      return '<div>' +
+        '<div style="display:flex;align-items:center;gap:0.7rem;margin-bottom:0.6rem;">' +
+          '<span class="avatar-circ sm" style="background:' + o.stu.color + '">' + esc(o.stu.initials) + '</span>' +
+          '<div><a href="../shared/student-profile.html?id=' + o.stu.id + '" style="font-weight:700;color:var(--navy);text-decoration:none;">' + esc(o.stu.name) + '</a><div class="muted" style="font-size:0.8rem;">Grade ' + o.stu.grade + ' · Homeroom ' + esc(o.stu.homeroom) + '</div></div>' +
+        '</div>' +
+        goalCardHtml(o.goal, o.anchor) +
+      '</div>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

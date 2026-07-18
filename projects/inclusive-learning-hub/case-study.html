@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study — Inclusive Learning Hub · Dr. Barbara Z. Franks</title>
+<meta name="description" content="A product design case study: unifying LMS, SIS, CMS, special education management, and therapy scheduling into one inclusive school platform.">
+<link rel="stylesheet" href="../../assets/css/design-system.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Inclusive Learning Hub" data-project-root="../../">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="demo.html">Explore Demo</a></li>
+      <li><a href="project-overview.html">Project Overview</a></li>
+      <li><a href="case-study.html" class="active">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Product Design Case Study</p>
+      <h1>Designing Inclusive Learning Hub</h1>
+      <p class="lead">How a fragmented stack of five school systems becomes one inclusive platform — without asking any role to learn software built for someone else's job.</p>
+    </div>
+  </section>
+
+  <section class="section"><div class="container narrow">
+
+    <div class="lesson-block">
+      <h3>The Educational Challenge</h3>
+      <p>Schools serving both general education and special education students typically run an LMS, a student information system, a curriculum platform, an IEP/504 compliance tool, and a separate therapy scheduling system — often from different vendors, on different logins, with no shared student record. The result isn't just inconvenience: accommodations documented in one system never surface in the classroom tool where a teacher is actually planning a lesson; a therapist's session note never reaches the general education teacher; a family gets a login for grades and a phone call for everything else.</p>
+      <p>The design challenge was to prove that a <strong>single unified platform</strong> — not a stack of integrations — could serve every role around a student without becoming a bloated, everything-app that serves no one well.</p>
+    </div>
+
+    <div class="lesson-block gold">
+      <h3>Stakeholder Analysis</h3>
+      <p>Six roles orbit every student, each with a genuinely different job-to-be-done:</p>
+      <ul class="check-list">
+        <li><strong>Administrators</strong> need compliance visibility and operational oversight across the whole school in minutes, not days.</li>
+        <li><strong>Teachers</strong> need accommodations and progress data inside their instructional workflow — not a separate portal they have to remember to check.</li>
+        <li><strong>Families</strong> need plain-language answers to "how is my child doing," not a compliance document.</li>
+        <li><strong>Students</strong> need an accessible, motivating view of their own learning that respects their age without being childish.</li>
+        <li><strong>Paraprofessionals</strong> need fast, structured daily data collection — prompting levels and independence data, not a blank notes field.</li>
+        <li><strong>Therapists</strong> need caseload, scheduling, and service-minute compliance tools built for clinical practice, not repurposed classroom software.</li>
+      </ul>
+      <p>The design principle that fell out of this analysis: <strong>one student record, six lenses</strong> — never six separate records.</p>
+    </div>
+
+    <div class="lesson-block teal">
+      <h3>UDL &amp; Accessibility Design Philosophy</h3>
+      <p>Universal Design for Learning shaped the architecture, not just the visual style. Every lesson template carries multiple means of engagement, representation, and action/expression as standing fields — not a special-education-only feature bolted onto a general-education product. The platform ships with a real, full-featured accessibility toolbar (text sizing, high contrast, dark mode, dyslexia-friendly font, adjustable line spacing, a reading-focus mode, reduced motion, and genuine text-to-speech via the browser's Web Speech API) available to every role, because accessibility that only exists for one persona isn't really built in.</p>
+    </div>
+
+    <div class="lesson-block plum">
+      <h3>UX Design Process</h3>
+      <ul class="check-list">
+        <li><strong>Role-first navigation</strong> — a distinct, purpose-built side rail per role rather than one universal menu everyone has to filter mentally.</li>
+        <li><strong>Consistent app-shell</strong> — the same header (search, notifications, messages, role switcher, help), the same card/table/chart vocabulary, and the same accessibility toolbar everywhere, so switching roles never feels like switching products.</li>
+        <li><strong>Calm, healthcare-adjacent visual system</strong> — soft blue, teal, sage green, and warm coral accents that stay professional for staff-facing screens and slightly warmer for the student and family experience, without ever feeling clinical or childish.</li>
+        <li><strong>Explainable dashboards</strong> — every summary metric links to the specific students or records behind it, so a number is always one click from an action.</li>
+      </ul>
+    </div>
+
+    <div class="lesson-block teal">
+      <h3>Information Architecture</h3>
+      <p>Six role-based portals sit on top of three shared surfaces that every role can reach: a <strong>Student Profile</strong> with twelve tabs spanning academics, attendance, IEP/504, goals, accommodations, therapy, and behavior; a <strong>Course &amp; Lesson experience</strong> that runs identically in-person, online, or blended; and a <strong>Scheduling</strong> view that switches between student, teacher, therapist, paraprofessional, and room perspectives — with automatic conflict detection across all of them. A single mock data layer (24 students, 6 teachers, 4 paraprofessionals, 3 therapists, 8 courses) powers every chart, table, and profile, so the same student tells the same story no matter which portal you're standing in.</p>
+    </div>
+
+    <div class="lesson-block">
+      <h3>Data Model Design</h3>
+      <p>The hardest modeling decision was where special-education data lives. The design rejected a parallel "SPED system" in favor of attaching goals, accommodations, and therapy services directly to the same student record every role already queries — a teacher's gradebook, a therapist's caseload, and a parent's dashboard all read from the identical underlying goal object, just rendered differently. That single decision is what makes the "one flag becomes one coordinated response" user journey (see the <a href="project-overview.html#main">Project Overview</a>) possible without any manual re-entry between systems.</p>
+    </div>
+
+    <div class="lesson-block coral">
+      <h3>Compliance &amp; Governance Considerations</h3>
+      <ul class="check-list">
+        <li><strong>Plan timelines are first-class data</strong> — review dates, annual review dates, and days-remaining calculations drive the Administrator's "Attention Required" alerts automatically.</li>
+        <li><strong>Service-minute compliance is computed, not eyeballed</strong> — required vs. delivered minutes roll up from individual sessions to a therapist's caseload to a schoolwide compliance number.</li>
+        <li><strong>Family-facing language is translated</strong> — the parent portal never surfaces raw compliance terminology without a plain-language explanation alongside it.</li>
+        <li><strong>Privacy by design in the prototype</strong> — this demo keeps all data client-side with no real student information; a production build would add authentication, role-based access control, and audit logging.</li>
+      </ul>
+    </div>
+
+    <div class="lesson-block plum">
+      <h3>Implementation Strategy</h3>
+      <p><em>Presented as if to a school board or Ministry of Education audience.</em> A four-stage rollout would de-risk adoption:</p>
+      <ul class="check-list">
+        <li><strong>Stage 1 — Data migration &amp; governance:</strong> map existing SIS/IEP data into the unified model; establish access-control policy before any live use.</li>
+        <li><strong>Stage 2 — Staff onboarding by role:</strong> role-specific training (not one universal training) so each group learns only the portal built for their job.</li>
+        <li><strong>Stage 3 — Pilot cohort:</strong> one grade band, both general and special education populations, measured against baseline coordination gaps (missed accommodations, late service-minute reporting, family confusion).</li>
+        <li><strong>Stage 4 — Scale with a compliance gate:</strong> phased expansion, with each new site required to demonstrate the plan-review and service-minute dashboards are populated correctly before go-live.</li>
+      </ul>
+    </div>
+
+    <div class="lesson-block gold">
+      <h3>Expected Impact</h3>
+      <p><em>Illustrative figures for demonstration.</em></p>
+      <ul class="check-list">
+        <li><strong>Fewer missed accommodations</strong> — because they surface inside the lesson, not just the compliance file.</li>
+        <li><strong>Faster plan-review turnaround</strong> — automatic day-count alerts replace manual tickler files.</li>
+        <li><strong>Higher family engagement</strong> — a portal families can actually read tends to get used; the demo's mock trend shows engagement climbing from 61% to 75% over six weeks.</li>
+        <li><strong>Cleaner service-minute compliance reporting</strong> — computed automatically instead of reconstructed at audit time.</li>
+      </ul>
+    </div>
+
+    <div class="lesson-block teal">
+      <h3>Future Enhancements</h3>
+      <ul class="check-list">
+        <li><strong>Real backend &amp; authentication</strong> — replacing the client-side mock data layer with a database and role-based auth.</li>
+        <li><strong>OneRoster / QTI-style interoperability</strong> — for SIS sync and standards-aligned assessment exchange.</li>
+        <li><strong>Explainable early-warning models</strong> — attendance, academic-risk, and service-minute prediction, always decision-support rather than autopilot.</li>
+        <li><strong>Native mobile companion</strong> — especially for the paraprofessional data-collection workflow.</li>
+      </ul>
+    </div>
+
+    <div class="callout note">
+      <h3>A platform that connects to the practice</h3>
+      <p>This design applies the same instructional-leadership and inclusive-education principles found across this portfolio — UDL, accommodation fidelity, and plain-language family communication — and packages them as a coherent, buildable product.</p>
+    </div>
+
+    <div class="lesson-block">
+      <h3>Professional Reflection</h3>
+      <p>Designing this platform sharpened a belief that runs through my leadership work: systems fail students when they fragment the adults around them. The full first-person <a href="reflection.html">reflection →</a> explores what this build demonstrates about leading inclusive, accessible edtech design.</p>
+      <div class="btn-row" style="margin-top:1rem;">
+        <a class="btn" href="demo.html">Explore the Demo</a>
+        <a class="btn ghost" href="../../index.html#case-studies">All Case Studies</a>
+      </div>
+    </div>
+
+  </div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="demo.html">Demo Role Selector</a></li><li><a href="project-overview.html">Project Overview</a></li><li><a href="reflection.html">Reflection</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../assets/js/portfolio.js"></script>
+<script src="mock-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

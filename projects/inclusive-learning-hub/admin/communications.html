@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Communications — Inclusive Learning Hub</title>
+<meta name="description" content="District/school-wide communication center: compose announcements to families and staff, and review sent history and parent engagement trends.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="communications" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Communications</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">✉️ Communications Center</span>
+        <h1>Communications Center</h1>
+        <p class="lead">Send schoolwide or targeted announcements to families and staff, and track how engaged families are with what we send.</p>
+      </div>
+
+      <div class="grid grid-2" style="align-items:start;margin-bottom:1.6rem;">
+        <!-- ===== COMPOSE CARD ===== -->
+        <div class="card">
+          <h3 style="margin-top:0;">📝 Compose Announcement</h3>
+          <form data-form-mock data-success-msg="✉️ Announcement sent (simulated)." data-append-to="#sentFeed">
+            <div class="form-group" style="margin-bottom:0.9rem;">
+              <label for="audience" style="display:block;font-weight:700;margin-bottom:0.3rem;">Audience</label>
+              <select id="audience" name="Audience" required style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+                <option>All Families</option>
+                <option>Grade 7 Families</option>
+                <option>Inclusive Support Families</option>
+                <option>Staff</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0.9rem;">
+              <label for="subject" style="display:block;font-weight:700;margin-bottom:0.3rem;">Subject</label>
+              <input id="subject" name="Subject" type="text" required placeholder="e.g., Reminder: Field Trip Permission Due Friday" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;">
+            </div>
+            <div class="form-group" style="margin-bottom:1.1rem;">
+              <label for="message" style="display:block;font-weight:700;margin-bottom:0.3rem;">Message</label>
+              <textarea id="message" name="Message" rows="5" required placeholder="Type your announcement…" style="width:100%;padding:0.55rem 0.8rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;resize:vertical;"></textarea>
+            </div>
+            <button class="btn" type="submit">✉️ Send Announcement</button>
+          </form>
+        </div>
+
+        <!-- ===== PARENT ENGAGEMENT CHART ===== -->
+        <div class="chart-card">
+          <h4>Parent Portal Engagement</h4>
+          <div id="engagementChart" data-chart="trend"></div>
+          <div class="legend"><span>% of families logging in weekly</span></div>
+        </div>
+      </div>
+
+      <!-- ===== SENT HISTORY ===== -->
+      <div class="card">
+        <h3 style="margin-top:0;">📤 Sent History</h3>
+        <ul class="feed" id="sentFeed">
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>Annual IEP Review Season — What to Expect</b><small>Jul 9, 2026 · Inclusive Support Families</small></div></li>
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>Regional Science Fair — Field Trip Permission Open</b><small>Jul 7, 2026 · All Families</small></div></li>
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>Grade 7 Personal Narrative Unit Kickoff</b><small>Jul 3, 2026 · Grade 7 Families</small></div></li>
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>End-of-Term Progress Reports Now Available</b><small>Jun 26, 2026 · All Families</small></div></li>
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>Staff PD Day — Reminder</b><small>Jun 22, 2026 · Staff</small></div></li>
+          <li><span class="f-ico">✉️</span><div class="f-body"><b>Summer Extended School Year (ESY) Sign-Up</b><small>Jun 15, 2026 · Inclusive Support Families</small></div></li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render parent-engagement chart directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    document.getElementById("engagementChart").setAttribute("data-values", JSON.stringify(D.parentEngagement.map(function (w) { return { v: w.pct }; })));
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

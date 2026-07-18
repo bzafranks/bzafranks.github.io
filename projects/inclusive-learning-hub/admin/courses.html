@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses — Inclusive Learning Hub</title>
+<meta name="description" content="Course catalog: subject, grade, teacher, mode, period, room, and roster size for every course offered this term.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="courses" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Courses</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🛠️ Administrator Portal</span>
+        <h1>Course Catalog</h1>
+        <p class="lead">All 8 courses offered this term. The flagship Grade 7 ELA course has a full course builder — open it to see modules, assignments, and mastery data. Other courses are shown as previews in this demo.</p>
+      </div>
+
+      <div class="grid grid-3" id="courseGrid"></div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render the course catalog directly from window.ILH.courses
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    var modeIco = { "Blended": "🔀", "In-Person": "🏫", "Online": "💻" };
+
+    document.getElementById("courseGrid").innerHTML = D.courses.map(function (c) {
+      var t = D.getTeacher(c.teacherId) || {};
+      var roster = D.students.filter(function (s) { return s.grade === c.grade; }).length;
+      var flagshipBadge = c.flagship ? '<span class="badge gold">Flagship Course</span>' : '<span class="badge">Preview Only</span>';
+
+      if (c.flagship) {
+        return '<a class="card hoverable" href="../shared/course.html?id=' + c.id + '" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;">' +
+          '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.6rem;">' + flagshipBadge + '<span class="tag teal">' + modeIco[c.mode] + ' ' + esc(c.mode) + '</span></div>' +
+          '<h3 style="margin:0.7rem 0 0.2rem;">' + esc(c.title) + '</h3>' +
+          '<p class="muted" style="margin-bottom:0.6rem;">' + esc(c.subject) + ' · Grade ' + c.grade + '</p>' +
+          '<div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;"><span class="avatar-circ sm" style="background:' + t.color + '">' + t.initials + '</span><span>' + esc(t.name) + '</span></div>' +
+          '<p class="muted mb0">' + esc(c.period) + ' · ' + esc(c.room) + ' · ' + roster + ' students</p>' +
+          '<span class="link-more">Open full course builder →</span>' +
+          '</a>';
+      }
+      return '<div class="card" style="display:flex;flex-direction:column;">' +
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.6rem;">' + flagshipBadge + '<span class="tag">' + modeIco[c.mode] + ' ' + esc(c.mode) + '</span></div>' +
+        '<h3 style="margin:0.7rem 0 0.2rem;">' + esc(c.title) + '</h3>' +
+        '<p class="muted" style="margin-bottom:0.6rem;">' + esc(c.subject) + ' · Grade ' + c.grade + '</p>' +
+        '<div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;"><span class="avatar-circ sm" style="background:' + t.color + '">' + t.initials + '</span><span>' + esc(t.name) + '</span></div>' +
+        '<p class="muted mb0">' + esc(c.period) + ' · ' + esc(c.room) + ' · ' + roster + ' students</p>' +
+        '<button class="btn secondary small" type="button" style="margin-top:0.8rem;align-self:flex-start;" data-toast="info" data-toast-msg="📚 Full course builder — preview only in this demo. Grade 7 ELA is the flagship built-out example.">Preview Course</button>' +
+        '</div>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course — Inclusive Learning Hub</title>
+<meta name="description" content="Blended course experience: modules, assignments, discussions, gradebook summary, resources, and calendar — flagship view is Grade 7 English Language Arts.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="container section">
+
+    <p><a href="../demo.html" style="text-decoration:none;font-weight:700;color:var(--navy);">← Back to Role Selector</a></p>
+
+    <div class="card" id="courseHeader" style="margin-bottom:1.6rem;"></div>
+
+    <div id="courseBody"></div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.ILH;
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function qs(name) { var m = new RegExp("[?&]" + name + "=([^&]+)").exec(location.search); return m ? decodeURIComponent(m[1]) : null; }
+  function emptyState(icon, title, msg) {
+    return '<div class="empty-state"><span class="es-ico">' + icon + '</span><h4>' + esc(title) + '</h4><p>' + esc(msg) + '</p></div>';
+  }
+
+  function buildHeader(c, teacher) {
+    document.getElementById("courseHeader").innerHTML =
+      '<div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;justify-content:space-between;">' +
+        '<div>' +
+          "<h1 style=\"margin:0 0 0.3rem;\">" + esc(c.title) + (c.flagship ? ' <span class="tag gold">Flagship Course</span>' : "") + "</h1>" +
+          '<div class="muted">' + esc(c.subject) + " · Grade " + c.grade + " · " + esc(c.mode) + " · " + esc(c.period) + " · Room " + esc(c.room) + "</div>" +
+        "</div>" +
+        '<div class="pill-row">' +
+          '<span class="status-pill info">🧑‍🏫 ' + esc(teacher ? teacher.name : "—") + "</span>" +
+          '<span class="status-pill neutral">👥 ' + (c.id === "C1" ? D.g7elaRoster.length : "—") + " students</span>" +
+        "</div>" +
+      "</div>";
+  }
+
+  /* ---------------- flagship course: C1 ---------------- */
+  function renderFlagship(c, teacher) {
+    var modules = D.modules.filter(function (m) { return m.courseId === c.id; });
+    var roster = D.g7elaRoster.map(function (id) { return D.getStudent(id); }).filter(Boolean);
+    var assignments = D.assignments.filter(function (a) { return a.courseId === c.id; });
+    var classEvents = D.scheduleEvents.filter(function (e) { return e.type === "class" && e.who === teacher.name; });
+
+    var description = "A blended Grade 7 ELA course combining in-class instruction with online modules. Across the term, students " +
+      modules.map(function (m) { return m.summary.charAt(0).toLowerCase() + m.summary.slice(1); }).join(" Then, they ") +
+      " Each module blends a video lesson, guided reading, an interactive activity, a printable worksheet, an online assignment, a discussion, and an assessment.";
+
+    var overviewHtml =
+      '<div class="card"><h3>📖 Course Description</h3><p>' + esc(description) + "</p></div>" +
+      '<div class="grid grid-3" style="margin-top:1.2rem;">' +
+        '<div class="metric"><div class="m-label">Teacher</div><div style="font-weight:700;margin-top:0.3rem;">' + esc(teacher.name) + '<br><small class="muted">' + esc(teacher.title) + "</small></div></div>" +
+        '<div class="metric teal"><div class="m-label">Roster Size</div><div class="m-num">' + roster.length + "</div></div>" +
+        '<div class="metric"><div class="m-label">Delivery Mode</div><div style="font-weight:700;margin-top:0.3rem;">' + esc(c.mode) + " · " + esc(c.period) + "</div></div>" +
+      "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h3>👥 Roster</h3><div class="pill-row">' +
+        roster.map(function (s) { return '<a class="tag navy" style="text-decoration:none;" href="student-profile.html?id=' + s.id + '">' + esc(s.name) + "</a>"; }).join("") +
+      "</div></div>";
+
+    var modulesHtml = modules.map(function (m) {
+      return '<details class="acc"' + (m.order === 1 ? " open" : "") + '><summary>Module ' + m.order + ": " + esc(m.title) + (m.lessonReady ? ' <span class="tag gold" style="margin-left:0.6rem;">Full Lesson Available</span>' : "") + '</summary>' +
+        '<div class="acc-body">' +
+          "<p>" + esc(m.summary) + "</p>" +
+          '<div class="muted" style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.4rem;">Module Components</div>' +
+          '<ul class="check-list">' + m.components.map(function (comp) { return "<li>" + esc(comp) + "</li>"; }).join("") + "</ul>" +
+          (m.lessonReady ? '<a class="btn small" href="' + esc(m.lessonUrl) + '">Open Full Lesson →</a>' : '<p class="muted" style="font-size:0.85rem;">This module\'s full interactive lesson is not built out in this demo.</p>') +
+        "</div>" +
+      "</details>";
+    }).join("");
+
+    var assignmentsHtml = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Assignment</th><th>Module</th><th>Due</th><th>Status</th></tr></thead><tbody>' +
+      assignments.map(function (a) {
+        var mod = D.modules.filter(function (m) { return m.id === a.moduleId; })[0];
+        return "<tr><td>" + esc(a.title) + "</td><td>" + (mod ? esc(mod.title) : "—") + "</td><td>" + a.due + '</td><td><span class="status-pill ' + (a.status === "Assigned" ? "info" : "warn") + '">' + esc(a.status) + "</span></td></tr>";
+      }).join("") + '</tbody></table></div></div><p class="muted" style="margin-top:0.6rem;font-size:0.85rem;">Individual student submission status is tracked on each student\'s profile — see <a href="student-profile.html?id=S01#academics">Jordan Thompson\'s Academics tab</a> for an example.</p>';
+
+    var discussionSeed = [
+      { module: "M1", prompt: "Pick a story you've read recently. How would it feel different if it were told from a different character's point of view?", replies: [roster[0], roster[2]] },
+      { module: "M2", prompt: "Choose a character from our class reading. What does their dialogue reveal about who they are, even when the narrator doesn't say it directly?", replies: [roster[1], roster[4]] },
+      { module: "M3", prompt: "Great personal narratives use sensory details to put the reader right in the moment. Share one small, specific memory — what did you see, hear, or feel?", replies: [roster[3], roster[5]] }
+    ];
+    var discussionsHtml = discussionSeed.map(function (d) {
+      var mod = D.modules.filter(function (m) { return m.id === d.module; })[0];
+      return '<div class="card" style="margin-bottom:1rem;"><h4 style="margin-top:0;">💬 ' + esc(mod ? mod.title : d.module) + " Discussion</h4><p>" + esc(d.prompt) + "</p>" +
+        '<div style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid var(--border);">' +
+        d.replies.filter(Boolean).map(function (s) {
+          return '<div style="display:flex;gap:0.7rem;"><span class="avatar-circ sm" style="background:' + s.color + ';">' + esc(s.initials) + '</span><div><b>' + esc(s.name) + "</b><p style=\"margin:0.2rem 0 0;\" class=\"muted\">" + esc(discussionReply(d.module, s)) + "</p></div></div>";
+        }).join("") +
+        "</div></div>";
+    }).join("");
+
+    var gradesHtml =
+      '<div class="grid grid-2">' +
+        '<div class="card"><h4>✅ Class Completion</h4><div data-chart="donut" data-value="' + Math.round((D.classCompletion.onTrack / (D.classCompletion.onTrack + D.classCompletion.needsSupport)) * 100) + '" data-label="' + D.classCompletion.onTrack + " of " + (D.classCompletion.onTrack + D.classCompletion.needsSupport) + '"></div><p class="muted" style="text-align:center;">students on track with current assignments</p></div>' +
+        '<div class="card"><h4>📐 Standards Mastery (class average)</h4><div data-chart="bar" data-values=\'' + JSON.stringify(D.standardsMastery.map(function (sm) { return { label: sm.standard.split(" ")[0], v: sm.mastery }; })) + "'></div></div>" +
+      "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><h4>👥 Roster Status</h4><div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Student</th><th>Programme</th><th>Status</th></tr></thead><tbody>' +
+        roster.map(function (s) { return '<tr><td><a href="student-profile.html?id=' + s.id + '">' + esc(s.name) + "</a></td><td>" + esc(s.programme) + '</td><td><span class="status-pill ' + (s.academicStatus === "on-track" ? "good" : s.academicStatus === "needs-support" ? "warn" : "bad") + '">' + esc(s.academicStatus.replace("-", " ")) + "</span></td></tr>"; }).join("") +
+      "</tbody></table></div></div></div>";
+
+    var resources = [
+      { name: "Grade 7 ELA Style & Vocabulary Guide", ico: "📘" },
+      { name: "Narrative Writing Rubric", ico: "🧾" },
+      { name: "Point-of-View Reference Chart", ico: "🗂️" },
+      { name: "Independent Reading List — Grade 7", ico: "📚" },
+      { name: "Family Guide to Grade 7 ELA", ico: "👪" }
+    ];
+    var resourcesHtml = '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Resource</th><th></th></tr></thead><tbody>' +
+      resources.map(function (r) { return "<tr><td>" + r.ico + " " + esc(r.name) + '</td><td><button type="button" class="btn secondary small" data-toast="info" data-toast-msg="📄 Opening ' + esc(r.name) + '… (simulated in this demo)">Open</button></td></tr>'; }).join("") +
+      "</tbody></table></div></div>";
+
+    var calendarHtml = classEvents.length
+      ? '<div class="data-table-wrap"><div class="table-wrap" style="margin:0;box-shadow:none;"><table><thead><tr><th>Day</th><th>Time</th><th>Room</th></tr></thead><tbody>' +
+        classEvents.map(function (e) { return "<tr><td>" + e.day + "</td><td>" + e.start + "–" + e.end + "</td><td>" + esc(e.where) + "</td></tr>"; }).join("") +
+        '</tbody></table></div></div><p class="muted" style="margin-top:0.6rem;font-size:0.85rem;">See the full <a href="scheduling.html?view=teacher&id=' + teacher.id + '">weekly scheduling view →</a></p>'
+      : emptyState("🗓️", "No calendar entries on file", "No class meeting times on file for this course in the scheduling demo.");
+
+    document.getElementById("courseBody").innerHTML =
+      '<div class="tabs" data-tabs>' +
+        '<div class="tab-btns">' +
+          '<button class="tab-btn active" data-tab="overview">Overview</button>' +
+          '<button class="tab-btn" data-tab="modules">Modules</button>' +
+          '<button class="tab-btn" data-tab="assignments">Assignments</button>' +
+          '<button class="tab-btn" data-tab="discussions">Discussions</button>' +
+          '<button class="tab-btn" data-tab="grades">Grades</button>' +
+          '<button class="tab-btn" data-tab="resources">Resources</button>' +
+          '<button class="tab-btn" data-tab="calendar">Calendar</button>' +
+        "</div>" +
+        '<div class="tab-panel active" data-tab-panel="overview">' + overviewHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="modules">' + modulesHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="assignments">' + assignmentsHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="discussions">' + discussionsHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="grades">' + gradesHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="resources">' + resourcesHtml + "</div>" +
+        '<div class="tab-panel" data-tab-panel="calendar">' + calendarHtml + "</div>" +
+      "</div>";
+  }
+
+  function discussionReply(moduleId, s) {
+    var replies = {
+      M1: { "default": "I think if the story was told by a different character, it would feel more mysterious because we wouldn't know what the main character was really thinking." },
+      M2: { "default": "The way the character talks — short sentences, kind of nervous — tells me they're worried even though the narrator never says it outright." },
+      M3: { "default": "Mine is the smell of rain on the sidewalk right before a basketball game — it always makes me feel calm and focused at the same time." }
+    };
+    return (replies[moduleId] && replies[moduleId]["default"]) || "Great point — thanks for sharing!";
+  }
+
+  /* ---------------- light preview for any other course ---------------- */
+  function renderPreview(c, teacher) {
+    document.getElementById("courseBody").innerHTML =
+      '<div class="callout note">' +
+        '<h4>Preview only</h4>' +
+        '<p style="margin-bottom:0;">This course isn\'t fully built out in this demo. The flagship <a href="course.html?id=C1">Grade 7 English Language Arts</a> course includes the complete modules, assignments, discussions, gradebook, resources, and calendar experience.</p>' +
+      "</div>" +
+      '<div class="card" style="margin-top:1.2rem;"><div class="grid grid-2">' +
+        infoTile("Subject", c.subject) +
+        infoTile("Grade", "Grade " + c.grade) +
+        infoTile("Teacher", teacher ? teacher.name : "—") +
+        infoTile("Delivery Mode", c.mode + " · " + c.period + " · " + c.room) +
+      "</div></div>";
+  }
+  function infoTile(label, value) {
+    return '<div><div class="muted" style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">' + esc(label) + '</div><div style="font-weight:600;">' + esc(value) + "</div></div>";
+  }
+
+  function render() {
+    var id = qs("id") || "C1";
+    var c = D.getCourse(id) || D.getCourse("C1");
+    var teacher = D.getTeacher(c.teacherId);
+    document.title = c.title + " — Inclusive Learning Hub";
+    buildHeader(c, teacher);
+    if (c.id === "C1") renderFlagship(c, teacher);
+    else renderPreview(c, teacher);
+  }
+  render();
+})();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

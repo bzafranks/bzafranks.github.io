@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Planner — Inclusive Learning Hub</title>
+<meta name="description" content="UDL-based lesson planner for Patricia Nguyen's Grade 7 ELA class: a worked example for Writing a Personal Narrative, with Universal Design for Learning strategies and accommodation options.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="lesson-planner" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Lesson Planner</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">📝 Teacher Portal</span>
+        <h1>UDL Lesson Planner</h1>
+        <p class="lead">Build a lesson using the Universal Design for Learning framework, attach accommodation supports for individual students, and generate accessible alternatives for any text-based material. Shown below: a worked example for <b>Writing a Personal Narrative</b> (Module 3, Grade 7 ELA).</p>
+      </div>
+
+      <form data-form-mock data-success-msg="Lesson plan saved ✓">
+
+        <!-- ===== CORE LESSON FIELDS ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Lesson Details</h3>
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="lpTitle">Lesson Title</label>
+              <input type="text" id="lpTitle" name="title" value="Writing a Personal Narrative — Planning &amp; Drafting the Opening">
+            </div>
+            <div class="field">
+              <label for="lpGrade">Grade</label>
+              <select id="lpGrade" name="grade">
+                <option value="6">Grade 6</option>
+                <option value="7" selected>Grade 7</option>
+                <option value="8">Grade 8</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="lpSubject">Subject</label>
+              <input type="text" id="lpSubject" name="subject" value="English Language Arts">
+            </div>
+            <div class="field">
+              <label for="lpStandards">Standards</label>
+              <input type="text" id="lpStandards" name="standards" value="W.7.3, W.7.3.a (builds on RL.7.6)">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="lpObjectives">Learning Objectives</label>
+            <textarea id="lpObjectives" name="objectives" rows="3">Students will plan a personal narrative with a clear sequence of events; draft an engaging opening paragraph that establishes context and narrator point of view; and incorporate at least two sensory details into that opening.</textarea>
+          </div>
+
+          <div class="field">
+            <label for="lpSuccess">Success Criteria</label>
+            <textarea id="lpSuccess" name="success" rows="4">I can identify the beginning, middle, and end of my narrative on a graphic organizer.
+I can write an opening paragraph that tells the reader who, when, and where.
+I can include at least 2 sensory details that help the reader picture the moment.
+I can explain whether I'm writing from first-person or third-person point of view and why.</textarea>
+          </div>
+
+          <div class="field">
+            <label for="lpMaterials">Materials</label>
+            <textarea id="lpMaterials" name="materials" rows="3">Personal Narrative planning graphic organizer (printable + digital); mentor text excerpt "The Bike Ride" (teacher-created model); sensory-detail word bank; devices or paper for drafting; chunked visual planner cards for students using Executive Functioning supports.</textarea>
+          </div>
+        </div>
+
+        <!-- ===== LESSON FLOW ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Lesson Flow</h3>
+
+          <div class="lesson-block">
+            <h4>🎯 Direct Instruction <span class="tag">10 min</span></h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="direct-instruction" rows="3">Review the difference between first- and third-person point of view using today's mentor text excerpt. Model planning a personal narrative moment on the graphic organizer, thinking aloud about sequencing events and choosing two sensory details for the opening.</textarea>
+            </div>
+          </div>
+
+          <div class="lesson-block teal">
+            <h4>🤝 Guided Practice <span class="tag">15 min</span></h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="guided-practice" rows="3">In pairs, students choose a small moment from their own lives and complete the first three boxes of the graphic organizer together. Partners share their moment aloud and give one piece of feedback using the starter "One sensory detail you could add is…"</textarea>
+            </div>
+          </div>
+
+          <div class="lesson-block gold">
+            <h4>✍️ Independent Practice <span class="tag">20 min</span></h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="independent-practice" rows="3">Students independently draft the opening paragraph of their personal narrative using their completed graphic organizer, establishing point of view and including at least two sensory details. Flexible groups (Close Reading Support / On-Level / Extension) rotate through short teacher conferences.</textarea>
+            </div>
+          </div>
+
+          <div class="lesson-block plum">
+            <h4>🧪 Assessment</h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="assessment" rows="2">Formative check: opening paragraph scored against the Success Criteria using a 4-point rubric (context/point of view, sequencing, sensory detail, mechanics). Results feed W.7.3 standards mastery and the Module 3 assessment.</textarea>
+            </div>
+          </div>
+
+          <div class="lesson-block leaf">
+            <h4>🏠 Homework</h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="homework" rows="2">Read your opening paragraph aloud to a family member and ask: "Can you picture the moment I'm describing?" Bring one piece of feedback to share tomorrow.</textarea>
+            </div>
+          </div>
+
+          <div class="lesson-block coral">
+            <h4>💭 Reflection</h4>
+            <div class="field" style="margin-bottom:0;">
+              <textarea name="reflection" rows="3">Note which students needed the graphic organizer chunked into smaller steps and which flexible group best matched today's independent work. Revisit Jordan Thompson's Written Expression goal (G2) — progress toward independently producing a 3-paragraph narrative.</textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== UDL SECTIONS ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Universal Design for Learning</h3>
+          <p class="muted">Every lesson is planned across all three UDL principles so it works for the whole class without retrofitting later.</p>
+          <div class="grid grid-3">
+            <div class="udl-col">
+              <h4>💛 Multiple Means of Engagement</h4>
+              <ul>
+                <li>Offer choice of "small moment" topic from students' known interests (e.g., basketball, LEGO, ocean animals, graphic novels) so every student has an authentic story to tell.</li>
+                <li>Open with a relatable mentor text to build interest before independent writing begins.</li>
+                <li>Provide a visual progress tracker so students can see each planning step move them closer to a finished draft.</li>
+                <li>Build in low-stakes partner rehearsal before writing, reducing anxiety around getting started.</li>
+              </ul>
+            </div>
+            <div class="udl-col rep">
+              <h4>🟢 Multiple Means of Representation</h4>
+              <ul>
+                <li>Present the mentor text in print, audio read-aloud, and think-aloud video-annotated formats.</li>
+                <li>Model the graphic organizer with a completed visual example, not just a blank template.</li>
+                <li>Pre-teach key vocabulary (sensory detail, point of view, sequence) with icons and one-sentence, student-friendly definitions.</li>
+                <li>Provide sentence starters and a sensory-detail word bank for students who need support generating language.</li>
+              </ul>
+            </div>
+            <div class="udl-col act">
+              <h4>🟠 Multiple Means of Action &amp; Expression</h4>
+              <ul>
+                <li>Offer response-format choice: type, handwrite, or dictate the opening paragraph using speech-to-text.</li>
+                <li>Provide a chunked, one-box-at-a-time version of the graphic organizer for students with executive-functioning needs.</li>
+                <li>Allow extended time and a reduced-distraction workspace during independent drafting.</li>
+                <li>Give students a self-checklist in the Success Criteria language so they can monitor their own progress before submitting.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ACCOMMODATIONS ===== -->
+        <div class="card" style="margin-bottom:1.4rem;">
+          <h3 style="margin-top:0;">Accommodation Options</h3>
+          <p class="muted">Toggle the supports built into this lesson. Pre-checked items match Jordan Thompson's active IEP accommodations for this class.</p>
+          <div class="acc-toggle-grid">
+            <label class="acc-check"><input type="checkbox" name="acc" value="Extended Time" checked> Extended Time</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Read-Aloud" checked> Read-Aloud</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Simplified Directions" checked> Simplified Directions</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Visual Supports" checked> Visual Supports</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Alternative Response Format" checked> Alternative Response Format</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Reduced Workload"> Reduced Workload</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Frequent Breaks"> Frequent Breaks</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Small-Group Instruction"> Small-Group Instruction</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Assistive Technology"> Assistive Technology</label>
+            <label class="acc-check"><input type="checkbox" name="acc" value="Preferential Seating" checked> Preferential Seating</label>
+          </div>
+          <p class="muted" style="margin-top:0.8rem;font-size:0.85rem;">Mapped from Jordan's IEP: Extended Time → Extended Time; Read-Aloud → Read-Aloud; Chunked Assignments → Simplified Directions; Visual Directions → Visual Supports; Alternative Response Options → Alternative Response Format; Reduced-Distraction Setting → Preferential Seating.</p>
+        </div>
+
+        <!-- ===== GENERATE ACCESSIBLE ALTERNATIVES ===== -->
+        <div class="card" style="margin-bottom:1.4rem;text-align:center;">
+          <h3 style="margin-top:0;">Accessible Alternatives</h3>
+          <p class="muted">Automatically generate a simplified-text, audio, visual-support, printable, and alternative-assessment version of today's mentor text and directions.</p>
+          <button type="button" class="btn" data-generate-alts>✨ Generate Accessible Alternatives</button>
+        </div>
+
+        <div style="display:flex;gap:0.8rem;justify-content:flex-end;">
+          <button type="button" class="btn secondary" data-toast="info" data-toast-msg="Draft saved.">Save Draft</button>
+          <button type="submit" class="btn">Save Lesson Plan</button>
+        </div>
+
+      </form>
+
+    </section>
+  </div>
+
+  <div class="modal-overlay" id="altFormatsModal">
+    <div class="modal-box">
+      <div class="modal-head"><h3>Accessible Alternatives</h3><button class="modal-close" data-modal-close>✕</button></div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messages — Inclusive Learning Hub</title>
+<meta name="description" content="Emily Castillo's message center — conversations with parents and teachers about students on her speech-language caseload.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="therapist" data-active="messages" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Therapist navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Therapist / <b>Messages</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">✉️ Message Center</span>
+        <h1>Messages</h1>
+        <p class="lead">Stay in touch with parents and teachers about students on your speech-language caseload.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: 300px 1fr; gap:1.4rem; align-items:start;">
+        <div class="card compact" style="padding:0.8rem;">
+          <h4 style="margin:0.3rem 0.5rem 0.6rem;">Conversations</h4>
+          <ul class="feed" id="threadList" style="padding:0 0.2rem;"></ul>
+        </div>
+
+        <div class="chat">
+          <div class="chat-head"><span class="bot" id="chatAvatar">✉️</span><div id="chatHeadName">Loading…</div></div>
+          <div class="chat-log" id="chatLog"></div>
+          <form data-form-mock data-success-msg="Message sent ✓" id="composeForm" style="padding:1rem 1.2rem;border-top:1px solid var(--border);display:flex;gap:0.6rem;">
+            <input type="text" name="message" id="composeInput" placeholder="Type a message…" required autocomplete="off" style="flex:1;padding:0.6rem 0.9rem;border:1.5px solid var(--border);border-radius:999px;font:inherit;">
+            <button class="btn small" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Build Emily Castillo's message threads — seeded from ILH.messages (MS2, verbatim),
+  // plus 3 illustrative threads about other caseload students. From Emily's point of
+  // view, "user" bubbles are her own outgoing messages and "coach" bubbles are the
+  // other party's replies (mirroring the pattern used on parent/messages.html).
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    var ms2 = D.messages.filter(function (m) { return m.id === "MS2"; })[0]; // Emily Castillo -> Maria Thompson
+
+    var threads = [
+      {
+        id: "t-maria", name: "Maria Thompson", title: "Jordan Thompson's Mother", initials: "MT", color: "#5b8c5a",
+        messages: [
+          { who: "user", from: ms2.from, date: ms2.date, text: ms2.subject + " — " + ms2.body },
+          { who: "coach", from: "Maria Thompson", date: "2026-07-08", text: "Thank you so much for the update! We've been practicing a 2-minute check-in at dinner just like you suggested — glad to hear it's carrying over to sessions." }
+        ]
+      },
+      {
+        id: "t-angela", name: "Angela Brooks", title: "Case Manager — Jayden Mitchell", initials: "AB", color: "#8a5fb0",
+        messages: [
+          { who: "coach", from: "Angela Brooks", date: "2026-07-09", text: "Hi Emily — Jayden's attendance has been rough this month and I know he's missed a couple of speech sessions too. Is there anything the classroom team can do to help him get to those appointments?" },
+          { who: "user", from: "Emily Castillo", date: "2026-07-09", text: "Thanks for flagging it, Angela. He's missed 2 sessions this month and his Language Processing goal has plateaued as a result. A gentle reminder from the classroom 10 minutes before his slot would help a lot — I'll also loop in his case team for the attendance piece." }
+        ]
+      },
+      {
+        id: "t-rachel", name: "Rachel Whitfield", title: "Case Manager — Jordan Thompson", initials: "RW", color: "#b0507e",
+        messages: [
+          { who: "coach", from: "Rachel Whitfield", date: "2026-07-07", text: "Emily, Jordan's annual IEP review is coming up in January. Could you send over a short progress summary on the Communication goal ahead of the meeting?" },
+          { who: "user", from: "Emily Castillo", date: "2026-07-07", text: "Absolutely — he's grown from a 45% baseline to 66% and is right at the 4-of-5 independence criterion in his last two sessions. I'll have the full write-up to you by next week." }
+        ]
+      },
+      {
+        id: "t-david", name: "David Chen", title: "Sophia Chen's Father", initials: "DC", color: "#c07830",
+        messages: [
+          { who: "user", from: "Emily Castillo", date: "2026-07-09", text: "Hi Mr. Chen — Sophia is making great progress on her articulation goal, now at 78% accuracy on target sounds, up from a 50% baseline. Keep encouraging her to slow down on multisyllabic words at home!" },
+          { who: "coach", from: "David Chen", date: "2026-07-09", text: "That's great to hear — we've noticed she's much more confident reading aloud too. Thank you for all the support this year." }
+        ]
+      }
+    ];
+
+    var activeId = threads[0].id;
+
+    function lastMsg(t) { return t.messages[t.messages.length - 1]; }
+    function renderThreadList() {
+      document.getElementById("threadList").innerHTML = threads.map(function (t) {
+        var last = lastMsg(t);
+        var active = t.id === activeId ? " style=\"background:var(--ilh-glow);border-radius:10px;\"" : "";
+        return '<li data-thread="' + t.id + '"' + active + ' style="cursor:pointer;">' +
+          '<span class="avatar-circ sm" style="background:' + t.color + '">' + esc(t.initials) + '</span>' +
+          '<div class="f-body"><b>' + esc(t.name) + '</b><small>' + esc(t.title) + '</small>' +
+          '<small class="muted">' + esc(last.text.slice(0, 46)) + (last.text.length > 46 ? "…" : "") + '</small></div>' +
+        '</li>';
+      }).join("");
+      document.querySelectorAll("#threadList li").forEach(function (li) {
+        li.addEventListener("click", function () { activeId = li.getAttribute("data-thread"); renderThreadList(); renderChat(); });
+      });
+    }
+
+    function renderChat() {
+      var t = threads.filter(function (x) { return x.id === activeId; })[0];
+      document.getElementById("chatHeadName").innerHTML = esc(t.name) + '<div style="font-size:0.75rem;font-weight:500;opacity:0.85;">' + esc(t.title) + '</div>';
+      document.getElementById("chatAvatar").textContent = t.initials;
+      var log = document.getElementById("chatLog");
+      log.innerHTML = t.messages.map(function (m) {
+        return '<div class="chat-msg ' + m.who + '"><span class="who">' + esc(m.from) + ' &middot; ' + m.date + '</span>' + esc(m.text) + '</div>';
+      }).join("");
+      log.scrollTop = log.scrollHeight;
+    }
+
+    renderThreadList();
+    renderChat();
+
+    // Compose box — append a new "sent" bubble to the active thread, then let script.js's
+    // data-form-mock handler show the confirmation toast and reset the input.
+    document.getElementById("composeForm").addEventListener("submit", function () {
+      var input = document.getElementById("composeInput");
+      var text = input.value.trim();
+      if (!text) return;
+      var t = threads.filter(function (x) { return x.id === activeId; })[0];
+      t.messages.push({ who: "user", from: "Emily Castillo", date: D.meta.today, text: text });
+      renderChat();
+      renderThreadList();
+    });
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

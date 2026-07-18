@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflection — Inclusive Learning Hub · Dr. Barbara Z. Franks</title>
+<meta name="description" content="A first-person reflection on designing an inclusive, unified school platform: one student record, plain-language family design, and UDL as infrastructure.">
+<link rel="stylesheet" href="../../assets/css/design-system.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-project="Inclusive Learning Hub" data-project-root="../../">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="demo.html">Explore Demo</a></li>
+      <li><a href="project-overview.html">Project Overview</a></li>
+      <li><a href="case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Reflection</p>
+      <h1>What it means to design for the whole team around a child</h1>
+      <p class="lead">A first-person look back at building Inclusive Learning Hub — what I learned about designing one product for six very different roles, and what this work says about leading inclusive, accessible school systems.</p>
+    </div>
+  </section>
+
+  <section class="section"><div class="container narrow">
+
+    <div class="lesson-block">
+      <h3>Starting from the student, not the department</h3>
+      <p>Every edtech tool I've used or evaluated in eighteen years of K-12 and online leadership starts from a department: "the SIS," "the IEP system," "the LMS." I wanted to start somewhere else — from Jordan, a real-feeling seventh grader with strengths, an IEP, a paraprofessional, a speech therapist, and a mother checking in after work. Once I put one student at the center and asked "who touches this child's day, and what do they each actually need to see," the six-portal structure fell out almost on its own. The organizing question was never "what modules does the system have" — it was "who is standing around this kid, and are they looking at the same picture."</p>
+    </div>
+
+    <div class="lesson-block teal">
+      <h3>Why "one student, one record" was the whole design</h3>
+      <p>The single hardest and most important decision in this build was refusing to create a parallel special-education data structure. It would have been easier, honestly, to bolt an "IEP module" onto a generic SIS. Instead, Jordan's goals, accommodations, and therapy minutes live on the exact same student object his teacher's gradebook reads from. That constraint made every other design decision harder — and made the product honest. If accommodations only lived in a compliance file, I'd be building the same fragmentation I was trying to fix, just with nicer visuals.</p>
+    </div>
+
+    <div class="lesson-block plum">
+      <h3>Designing for families, not around them</h3>
+      <p>I've sat across the table from parents who nodded through an IEP meeting because the language made disagreement feel unqualified. That memory shaped the parent portal more than any UX pattern did. "Present levels" became "how Jordan's doing right now." "Service minutes" became a simple bar comparing what's owed to what's delivered. The rule I held myself to: if a plain-language rewrite would insult a parent's intelligence, I hadn't actually simplified anything — I'd just cut information. The goal was clarity, not simplicity for its own sake.</p>
+    </div>
+
+    <div class="lesson-block coral">
+      <h3>UDL and accessibility as infrastructure, not a feature flag</h3>
+      <p>It would have been easy to build a nice general product and then add "an accessibility toolbar" as one more sidebar item. I deliberately built the toolbar into the shared engine every single page depends on, and built UDL's three principles into the lesson template itself rather than as an optional accommodation. That ordering — infrastructure first, feature second — is the difference between a school that has an accessibility statement and a school where accessibility is just how things work. I wanted the product to model the second one.</p>
+    </div>
+
+    <div class="lesson-block">
+      <h3>Designing six portals without designing six products</h3>
+      <p>The temptation with role-based software is to let each portal drift into its own visual language, since each team asks for what they need in isolation. I fought that by building one shared app-shell — the same rail pattern, the same card and chart vocabulary, the same header — and only letting the accent color and the content change by role. A teacher and a therapist should feel like they're using the same product, just standing in a different room of it, not like they've opened two different apps that happen to share a login screen.</p>
+    </div>
+
+    <div class="lesson-block teal">
+      <h3>What this demonstrates about leading inclusive edtech</h3>
+      <p>My doctoral research centers on how leadership behaviors shape outcomes for the adults inside a school system; this project is the same conviction applied to software. A platform that fragments the adults around a student — teacher, therapist, paraprofessional, family — will fragment that student's experience no matter how good any single feature is. Leading inclusive, accessible technology means insisting on the harder architectural choice (one record, not six) even when the easier path would ship faster. That's the same judgment call I'd bring to leading a school system, a curriculum team, or a product roadmap.</p>
+    </div>
+
+    <div class="callout tip">
+      <h3>Where this goes next</h3>
+      <p>The <a href="project-overview.html">Project Overview</a> lays out the roadmap toward a real backend, interoperability, and predictive insight. But the part I'd protect above all in any future build is the one that's hardest to see in a demo: the data model that refuses to separate a student's academic story from their support story.</p>
+    </div>
+
+    <div class="btn-row" style="margin-top:1.4rem;">
+      <a class="btn" href="demo.html">Explore the Demo</a>
+      <a class="btn ghost" href="case-study.html">Read the Case Study</a>
+    </div>
+
+  </div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="demo.html">Demo Role Selector</a></li><li><a href="project-overview.html">Project Overview</a></li><li><a href="case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../index.html">All Projects</a></li><li><a href="../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../assets/js/portfolio.js"></script>
+<script src="mock-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheduling — Inclusive Learning Hub</title>
+<meta name="description" content="Weekly scheduling demo combining classes, therapy and related services, paraprofessional support, and room bookings — switchable by role, with automatic conflict detection.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="container section">
+
+    <p><a href="../demo.html" style="text-decoration:none;font-weight:700;color:var(--navy);">← Back to Role Selector</a></p>
+
+    <div class="tool-head">
+      <span class="tool-badge">🗓️ Scheduling</span>
+      <h1>Weekly Schedule</h1>
+      <p class="lead">One combined weekly calendar for classes, therapy and related services, paraprofessional support, and room bookings — switchable by student, teacher, therapist, paraprofessional, or room. Overlapping sessions are automatically flagged so staff can resolve conflicts before they cause a missed service.</p>
+    </div>
+
+    <div class="callout note">
+      <h4>See it in action</h4>
+      <p style="margin-bottom:0.6rem;">This demo includes two intentional scheduling conflicts. Try either view below to see the automatic conflict banner appear:</p>
+      <div class="btn-row">
+        <a class="btn secondary small" href="scheduling.html?view=room&id=Room%20214">🏫 Room 214 — Friday double-booking</a>
+        <a class="btn secondary small" href="scheduling.html?view=therapist&id=TH1">🩺 Emily Castillo — Monday overlapping sessions</a>
+      </div>
+    </div>
+
+    <div class="legend" style="margin:1.2rem 0;">
+      <span><i style="background:var(--ilh-accent);"></i> Class</span>
+      <span><i style="background:var(--ilh-danger);"></i> Therapy / Related Service</span>
+      <span><i style="background:#8a5fb0;"></i> Paraprofessional Support</span>
+      <span><i style="background:var(--ilh-warn);"></i> Room Booking</span>
+      <span><i style="background:transparent;border:2px dashed var(--ilh-danger);"></i> Conflict detected</span>
+    </div>
+
+    <div class="schedule-toolbar" data-schedule-toolbar></div>
+    <div class="conflict-banner" data-schedule-conflict style="display:none;"></div>
+    <div class="schedule-grid" data-schedule></div>
+
+    <p class="muted" style="margin-top:1rem;font-size:0.85rem;">All times, rooms, and staff shown are illustrative demo data — no real student information is used.</p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Collection — Inclusive Learning Hub</title>
+<meta name="description" content="Quick data-entry form for paraprofessional Priya Patel to log prompting level, participation, independence, and behavior observations for her assigned students.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="para" data-active="data-collection" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Paraprofessional navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Paraprofessional / <b>Data Collection</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🧑‍🏫 Paraprofessional Portal</span>
+        <h1>Data Collection</h1>
+        <p class="lead">Log a quick data point right after an activity — prompting level, participation, independence, and any behavior observations.</p>
+      </div>
+
+      <div class="card" style="margin-bottom:1.6rem;">
+        <form data-form-mock data-success-msg="Data point logged ✓" data-append-to="#dataLog">
+          <div class="quick-form">
+            <div class="field">
+              <label for="dcStudent">Student</label>
+              <select id="dcStudent" name="Student" required>
+                <option value="">Select a student…</option>
+                <option value="Jordan Thompson">Jordan Thompson — Grade 7</option>
+                <option value="Mason Delgado">Mason Delgado — Grade 8</option>
+                <option value="Elijah Ramirez">Elijah Ramirez — Grade 6</option>
+                <option value="Jayden Mitchell">Jayden Mitchell — Grade 8</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="dcActivity">Activity</label>
+              <input type="text" id="dcActivity" name="Activity" placeholder="e.g. Character Trait Web independent practice" required>
+            </div>
+
+            <div class="field">
+              <label>Prompting Level</label>
+              <div class="prompt-scale">
+                <input type="hidden" name="Prompting Level" value="">
+                <button type="button">Full Physical</button>
+                <button type="button">Partial Physical</button>
+                <button type="button">Verbal</button>
+                <button type="button">Gestural</button>
+                <button type="button">Independent</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="dcParticipation">Participation</label>
+              <select id="dcParticipation" name="Participation" required>
+                <option value="">Select a rating…</option>
+                <option value="5 — Fully engaged">5 — Fully engaged</option>
+                <option value="4 — Mostly engaged">4 — Mostly engaged</option>
+                <option value="3 — Partially engaged">3 — Partially engaged</option>
+                <option value="2 — Minimally engaged">2 — Minimally engaged</option>
+                <option value="1 — Did not participate">1 — Did not participate</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="dcIndependence">Independence</label>
+              <select id="dcIndependence" name="Independence" required>
+                <option value="">Select a level…</option>
+                <option value="Independent">Independent</option>
+                <option value="Minimal Support">Minimal Support</option>
+                <option value="Moderate Support">Moderate Support</option>
+                <option value="Maximum Support">Maximum Support</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="dcBehavior">Behavior Observation</label>
+              <textarea id="dcBehavior" name="Behavior Observation" rows="2" placeholder="Any behaviors observed during the activity (optional)"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="dcNotes">Notes</label>
+              <textarea id="dcNotes" name="Notes" rows="3" placeholder="Additional context for the teacher or case manager"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Log Data Point</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Recent Entries</h3>
+        <p class="muted">Newest entries appear at the top.</p>
+        <div id="dataLog"></div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Seed #dataLog with illustrative previously-logged entries, matching the markup
+  // shape script.js's appendMockRow() will prepend to when the form is submitted.
+  (function () {
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function row(student, activity, prompt, participation, independence, note) {
+      var parts = ["<b>Student:</b> " + esc(student), "<b>Activity:</b> " + esc(activity), "<b>Prompting Level:</b> " + esc(prompt), "<b>Participation:</b> " + esc(participation), "<b>Independence:</b> " + esc(independence)];
+      if (note) parts.push("<b>Notes:</b> " + esc(note));
+      return '<div class="dd-item" style="border-bottom:1px solid var(--border);"><span class="dd-ico">🧮</span><div>' + parts.join(" &nbsp;·&nbsp; ") + "</div></div>";
+    }
+    document.getElementById("dataLog").innerHTML = [
+      row("Jayden Mitchell", "Morning arrival transition", "Verbal", "4 — Mostly engaged", "Minimal Support", "Needed one verbal reminder to head to homeroom."),
+      row("Elijah Ramirez", "Math small-group warm-up", "Gestural", "5 — Fully engaged", "Moderate Support", "Used the visual planner with a gestural point-to prompt."),
+      row("Jordan Thompson", "ELA independent writing block", "Verbal", "3 — Partially engaged", "Minimal Support", "Frustration surfaced mid-task; offered a short break."),
+      row("Mason Delgado", "Science ecosystems lab setup", "Partial Physical", "4 — Mostly engaged", "Moderate Support", "Hand-over-hand support for measuring tools."),
+      row("Jordan Thompson", "Morning check-in", "Independent", "5 — Fully engaged", "Independent", "Reviewed visual schedule independently."),
+      row("Jayden Mitchell", "Transition to lunch", "Verbal", "3 — Partially engaged", "Minimal Support", "")
+    ].join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

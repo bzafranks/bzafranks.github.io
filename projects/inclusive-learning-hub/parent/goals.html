@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan's Individual Goals — Inclusive Learning Hub</title>
+<meta name="description" content="Plain-language view of Jordan Thompson's 4 IEP goals, with progress rings, trend charts, and who's working with him on each one.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="parent" data-active="goals" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Parent navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Parent / <b>Individual Goals</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🎯 Jordan's Progress</span>
+        <h1>Jordan's Individual Goals</h1>
+        <p class="lead">These are the 4 specific skills Jordan's team is helping him build this year. Each card shows how far he's come, who's working with him, and when it was last updated.</p>
+      </div>
+
+      <div class="callout note">
+        <h4>💡 What is an IEP goal?</h4>
+        <p>An IEP (Individualized Education Program) is Jordan's personal learning plan. Instead of general expectations, each IEP goal names one specific, measurable skill — so everyone (including you!) can see real progress over time, not just a grade. The percentage on each card below shows how close Jordan is to reaching that skill's target.</p>
+      </div>
+
+      <div id="goalsList" style="display:grid;gap:1.4rem;margin-top:1.4rem;"></div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render Jordan's goal cards directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    var PLAIN = {
+      "Reading Comprehension": "In plain terms: can Jordan read a grade-level story and explain what it's mostly about, plus point to 3 details that back that up?",
+      "Written Expression": "In plain terms: can Jordan write a short story on his own with a clear beginning, middle, and end?",
+      "Executive Functioning": "In plain terms: can Jordan use a visual planner — like a picture checklist — to finish a 3-step task by himself?",
+      "Communication": "In plain terms: can Jordan start a conversation with a friend about something he enjoys, and keep it going for a few back-and-forths?"
+    };
+    var STATUS = {
+      "on-track": { pill: "good", label: "On Track", ico: "✅" },
+      "needs-attention": { pill: "warn", label: "Needs Attention", ico: "⚠️" }
+    };
+
+    var jordan = D.jordan();
+    var goals = D.goals.filter(function (g) { return g.studentId === jordan.id; });
+
+    document.getElementById("goalsList").innerHTML = goals.map(function (g) {
+      var st = STATUS[g.status] || STATUS["on-track"];
+      var trendVals = JSON.stringify(g.history.map(function (v) { return { v: v }; }));
+      return '<div class="goal-card">' +
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;">' +
+          '<div><h4>🎯 ' + esc(g.domain) + '</h4>' +
+          '<div class="goal-meta">Started at ' + g.baseline + '% &middot; Target: ' + g.target + '%</div></div>' +
+          '<span class="status-pill ' + st.pill + '">' + st.ico + ' ' + st.label + '</span>' +
+        '</div>' +
+        '<p>' + esc(g.description) + '</p>' +
+        '<p class="muted">' + esc(PLAIN[g.domain] || "") + '</p>' +
+        '<div class="grid grid-2" style="align-items:center;gap:1.4rem;margin:0.9rem 0;">' +
+          '<div style="text-align:center;">' +
+            '<div data-goal-ring="' + g.current + '"></div>' +
+            '<div class="muted" style="font-size:0.85rem;margin-top:0.5rem;">Current progress toward this goal</div>' +
+          '</div>' +
+          '<div>' +
+            '<div data-chart="trend" data-values=\'' + trendVals + '\'></div>' +
+            '<div class="legend"><span>Progress across the last 8 check-ins</span></div>' +
+          '</div>' +
+        '</div>' +
+        '<div style="display:flex;flex-wrap:wrap;gap:1.4rem;padding-top:0.8rem;border-top:1px solid var(--border);font-size:0.9rem;">' +
+          '<div>🧑‍🏫 <b>Working with Jordan:</b> ' + esc(g.staff) + '</div>' +
+          '<div>🗓️ <b>Last update:</b> ' + g.lastUpdate + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

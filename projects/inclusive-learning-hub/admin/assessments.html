@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessments — Inclusive Learning Hub</title>
+<meta name="description" content="Schoolwide assessment overview: assessment log, standards mastery, and the upcoming assessment calendar.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="assessments" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Assessments</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🧪 Schoolwide Assessments</span>
+        <h1>Assessment Overview</h1>
+        <p class="lead">A schoolwide view of formative and benchmark assessments, standards mastery across the flagship Grade 7 ELA course, and the upcoming assessment calendar by grade band.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:1.6rem;">
+        <!-- ===== ASSESSMENTS TABLE ===== -->
+        <div style="grid-column: 1 / -1;">
+          <h3>Assessment Log</h3>
+          <div class="data-table-wrap" data-table>
+            <div class="table-toolbar">
+              <input type="search" data-table-search placeholder="Search assessments…" aria-label="Search assessments">
+              <select data-table-filter="type" aria-label="Filter by type">
+                <option value="">All Types</option>
+                <option value="Formative Quiz">Formative Quiz</option>
+                <option value="Module Assessment">Module Assessment</option>
+                <option value="Benchmark">Benchmark</option>
+              </select>
+              <span class="tt-count" data-table-count></span>
+            </div>
+            <div class="table-wrap" style="margin:0;">
+              <table>
+                <thead><tr>
+                  <th class="sortable" data-col="title">Assessment</th>
+                  <th>Course / Subject</th>
+                  <th class="sortable" data-col="type">Type</th>
+                  <th class="sortable" data-col="date">Date</th>
+                  <th class="sortable" data-col="avg">Class Average</th>
+                </tr></thead>
+                <tbody id="assessmentsBody"></tbody>
+              </table>
+            </div>
+            <div class="table-foot">Assessment data currently reflects the flagship Grade 7 ELA course in this demo build.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:1.6rem;">
+        <!-- ===== STANDARDS MASTERY CHART ===== -->
+        <div class="chart-card">
+          <h4>Standards Mastery (Grade 7 ELA)</h4>
+          <div id="standardsChart" data-chart="bar"></div>
+          <div class="legend"><span>% of students demonstrating mastery, by standard</span></div>
+        </div>
+
+        <!-- ===== ASSESSMENT CALENDAR ===== -->
+        <div class="card">
+          <h4 style="margin-top:0;">📅 Upcoming Assessment Calendar</h4>
+          <p class="muted" style="font-size:.85rem;">Illustrative benchmark windows by grade band, next testing cycle.</p>
+          <ul class="feed">
+            <li><span class="f-ico">📖</span><div class="f-body"><b>Grades 6–7 Reading Benchmark</b><small>August 4, 2026</small></div></li>
+            <li><span class="f-ico">🧮</span><div class="f-body"><b>Grades 8–9 Algebra I / Biology Benchmark</b><small>August 11, 2026</small></div></li>
+            <li><span class="f-ico">✍️</span><div class="f-body"><b>Grades 6–9 Writing Benchmark</b><small>August 18, 2026</small></div></li>
+            <li><span class="f-ico">🧩</span><div class="f-body"><b>Grades 6–8 Universal Screener (MTSS)</b><small>August 25, 2026</small></div></li>
+            <li><span class="f-ico">🎯</span><div class="f-body"><b>Grades 7–9 IEP/504 Progress Data Review</b><small>September 1, 2026</small></div></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render assessments page directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function pillFor(avg) { if (avg >= 80) return "good"; if (avg >= 70) return "warn"; return "bad"; }
+
+    document.getElementById("assessmentsBody").innerHTML = D.assessments.map(function (a) {
+      var course = D.getCourse(a.courseId);
+      return '<tr data-type="' + esc(a.type) + '">' +
+        '<td><b>' + esc(a.title) + '</b></td>' +
+        '<td>' + esc(course ? course.title + " (" + course.subject + ")" : a.courseId) + '</td>' +
+        '<td>' + esc(a.type) + '</td>' +
+        '<td data-date="' + a.date + '">' + a.date + '</td>' +
+        '<td data-avg="' + a.classAvg + '"><span class="status-pill ' + pillFor(a.classAvg) + '">' + a.classAvg + '%</span></td>' +
+        '</tr>';
+    }).join("");
+
+    document.getElementById("standardsChart").setAttribute("data-values", JSON.stringify(D.standardsMastery.map(function (s) {
+      return { label: s.standard.split(" ")[0], v: s.mastery };
+    })));
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

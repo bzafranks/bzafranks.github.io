@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Overview — Inclusive Learning Hub</title>
+<meta name="description" content="Maria Thompson's family dashboard for her son Jordan — a plain-language snapshot of how Jordan is doing this week across academics, attendance, goals, and therapy.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="parent" data-active="overview" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Parent navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Family Portal / <b>Overview</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">👪 Family Portal</span>
+        <h1>Welcome back, Maria!</h1>
+        <p class="lead">Here's a friendly, plain-language look at how Jordan is doing this week — Sunday, July 12, 2026.</p>
+      </div>
+
+      <!-- ===== SUMMARY CARDS ===== -->
+      <div class="dash-grid" id="summaryMetrics" style="margin-bottom:1.6rem;"></div>
+
+      <!-- ===== CHARTS ROW ===== -->
+      <div class="grid grid-3" style="margin-bottom:1.6rem;">
+        <div class="chart-card">
+          <h4>📚 Progress by Subject This Term</h4>
+          <div id="subjectBar" data-chart="bar"></div>
+          <div class="legend"><span>How far along Jordan is on ELA and Social Studies work</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>✅ Assignments On Track</h4>
+          <div id="assignDonut" data-chart="donut"></div>
+          <div class="legend"><span id="assignDonutCaption"></span></div>
+        </div>
+        <div class="chart-card">
+          <h4>📅 School Attendance Trend</h4>
+          <div id="attnTrend" data-chart="trend"></div>
+          <div class="legend"><span>Weekly attendance rate, last 8 weeks (schoolwide) — Jordan's own rate is 93% this term</span></div>
+        </div>
+      </div>
+
+      <!-- ===== RECENT ASSESSMENT RESULTS ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🧪 Recent Assessment Results</h3>
+        <p class="muted">A plain-language look at Jordan's most recent check-ins in ELA. These are short, low-stakes check-ins — not final grades — that help teachers see what to work on next.</p>
+        <div id="assessResults"></div>
+      </div>
+
+      <!-- ===== SKILLS MASTERED / DEVELOPING ===== -->
+      <div class="grid grid-2" style="margin-bottom:1.6rem;">
+        <div class="card">
+          <h3 style="margin-top:0;">🌟 Skills Jordan Has Mastered</h3>
+          <p class="muted">Things Jordan can now do confidently and independently.</p>
+          <div class="chip-row" id="skillsMastered" style="display:flex;flex-wrap:wrap;gap:0.6rem;"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">🌱 Skills Jordan Is Building</h3>
+          <p class="muted">Things Jordan is actively practicing and growing with support.</p>
+          <div class="chip-row" id="skillsDeveloping" style="display:flex;flex-wrap:wrap;gap:0.6rem;"></div>
+        </div>
+      </div>
+
+      <!-- ===== INDIVIDUAL GOAL PROGRESS ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🎯 Jordan's Individual Goal Progress</h3>
+        <p class="muted">Jordan has 4 personal learning goals written into his support plan. Each ring shows how close he is to his target right now.</p>
+        <div class="grid grid-4" id="goalCards"></div>
+        <p style="margin-top:1rem;"><a class="btn secondary small" href="goals.html">See full goal detail →</a></p>
+      </div>
+
+      <!-- ===== THERAPY SERVICE SUMMARY ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🩺 Therapy Service Summary</h3>
+        <div id="therapySummary"></div>
+      </div>
+
+      <!-- ===== TEACHER FEEDBACK + MESSAGES ===== -->
+      <div class="grid grid-2" style="margin-bottom:1.6rem;align-items:start;">
+        <div class="card">
+          <h3 style="margin-top:0;">💬 Teacher & Therapist Feedback</h3>
+          <ul class="feed" id="feedbackFeed"></ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">✉️ Your Messages</h3>
+          <ul class="feed" id="messagesFeed"></ul>
+          <p style="margin-top:0.8rem;"><a class="btn secondary small" href="messages.html">Open Messages →</a></p>
+        </div>
+      </div>
+
+      <!-- ===== UPCOMING SCHEDULE ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🗓️ Jordan's Upcoming Schedule</h3>
+        <ul class="feed" id="scheduleFeed"></ul>
+        <p style="margin-top:0.8rem;"><a class="btn secondary small" href="../shared/scheduling.html?view=student&id=S01">View full weekly schedule →</a></p>
+      </div>
+
+      <!-- ===== HOME SUPPORT RECOMMENDATIONS ===== -->
+      <div class="callout tip">
+        <h4>🏡 Ways to Support Jordan at Home</h4>
+        <ul id="homeTips" style="margin:0;padding-left:1.2rem;"></ul>
+      </div>
+
+      <div class="btn-row" style="margin-top:1.4rem;">
+        <button class="btn secondary" type="button" data-toast="ok" data-toast-msg="📄 Report downloaded (simulated).">⬇ Download Family Progress Report</button>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+(function () {
+  var D = window.ILH;
+  var jordan = D.jordan();
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function fmtDate(iso) { var d = new Date(iso + "T00:00:00"); return d.toLocaleDateString("en-US", { month: "short", day: "numeric" }); }
+
+  /* ---------- SUMMARY CARDS ---------- */
+  var overall = jordan.academicStatus === "at-risk" ? { cls: "bad", label: "Needs Attention", ico: "⚠️" }
+    : jordan.academicStatus === "needs-support" ? { cls: "info", label: "Improving", ico: "📈" }
+    : { cls: "good", label: "On Track", ico: "✅" };
+
+  var attn = { cls: jordan.attendanceRate >= 90 ? "good" : jordan.attendanceRate >= 85 ? "warn" : "bad",
+    label: jordan.attendanceRate >= 90 ? "Good Attendance" : jordan.attendanceRate >= 85 ? "Keep an Eye On It" : "Needs Attention" };
+
+  var today = new Date(D.meta.today + "T00:00:00");
+  var weekOut = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+  var dueThisWeek = D.assignments.filter(function (a) {
+    if (D.jordanAssignmentStatus[a.id] === "Submitted") return false;
+    var due = new Date(a.due + "T00:00:00");
+    return due <= weekOut;
+  }).length;
+
+  var goalsOnTrack = D.goals.filter(function (g) { return g.status === "on-track"; }).length;
+
+  var nextSession = D.therapySessions.filter(function (s) { return s.status === "Scheduled"; })[0];
+
+  var formsNeedingAttention = D.forms.filter(function (f) { return f.status !== "Complete"; }).length;
+
+  var metrics = [
+    { cls: "", label: "How Jordan's Doing Overall", body: '<span class="status-pill ' + overall.cls + '">' + overall.ico + ' ' + overall.label + '</span>', trend: "Based on this term's classwork and support goals" },
+    { cls: "teal", label: "Attendance This Term", body: '<div class="m-num">' + jordan.attendanceRate + '%</div>', trend: '<span class="status-pill ' + attn.cls + '">' + attn.label + '</span>' },
+    { cls: "plum", label: "Assignments Due This Week", body: '<div class="m-num">' + dueThisWeek + '</div>', trend: dueThisWeek ? "Nothing urgent — see Assignments for details" : "Nothing due — Jordan is caught up!" },
+    { cls: "leaf", label: "Goals On Track", body: '<div class="m-num">' + goalsOnTrack + ' of ' + D.goals.length + '</div>', trend: "See goal-by-goal detail below" },
+    { cls: "", label: "Next Therapy Session", body: nextSession ? '<div class="m-num" style="font-size:1.3rem;">' + fmtDate(nextSession.date) + '</div>' : '<div class="m-num" style="font-size:1.3rem;">—</div>', trend: nextSession ? nextSession.time + " · " + nextSession.type + " (" + nextSession.mode + ")" : "None scheduled" },
+    { cls: "teal", label: "Forms Needing Your Attention", body: '<div class="m-num">' + formsNeedingAttention + '</div>', trend: formsNeedingAttention ? '<a href="forms.html" style="font-weight:700;">Review forms →</a>' : "You're all caught up!" }
+  ];
+  document.getElementById("summaryMetrics").innerHTML = metrics.map(function (m) {
+    return '<div class="metric ' + m.cls + '"><div class="m-label">' + esc(m.label) + '</div>' + m.body + '<div class="m-trend" style="color:var(--ink-soft);font-weight:600;">' + m.trend + '</div></div>';
+  }).join("");
+
+  /* ---------- SUBJECT PROGRESS BAR ---------- */
+  function statusPct(st) { return st === "Submitted" ? 100 : st === "In Progress" ? 50 : 0; }
+  function subjectPct(courseId) {
+    var items = D.assignments.filter(function (a) { return a.courseId === courseId; });
+    var vals = items.map(function (a) { return statusPct(D.jordanAssignmentStatus[a.id]); });
+    return D.avg(vals);
+  }
+  document.getElementById("subjectBar").setAttribute("data-values", JSON.stringify([
+    { label: "ELA", v: subjectPct("C1") },
+    { label: "Social Studies", v: subjectPct("C5") }
+  ]));
+
+  /* ---------- ASSIGNMENT DONUT ---------- */
+  var total = D.assignments.length;
+  var onTrackCount = D.assignments.filter(function (a) { return D.jordanAssignmentStatus[a.id] !== "Not Started"; }).length;
+  var donutPct = Math.round((onTrackCount / total) * 100);
+  document.getElementById("assignDonut").setAttribute("data-value", donutPct);
+  document.getElementById("assignDonut").setAttribute("data-label", donutPct + "%");
+  document.getElementById("assignDonutCaption").textContent = onTrackCount + " of " + total + " assignments submitted or in progress";
+
+  /* ---------- ATTENDANCE TREND ---------- */
+  document.getElementById("attnTrend").setAttribute("data-values", JSON.stringify(D.attendanceTrend.map(function (w) { return { v: w.rate }; })));
+
+  /* ---------- ASSESSMENT RESULTS ---------- */
+  var assessCopy = {
+    AS1: "This check-in looked at whether Jordan can tell who is 'telling' a story (first-person 'I' vs. third-person 'he/she/they').",
+    AS2: "This assessment looked at how well Jordan can describe a character's traits and motivations using story details.",
+    AS3: "This is a broader reading check-in that looks at overall reading comprehension across a full school year."
+  };
+  document.getElementById("assessResults").innerHTML = D.jordanAssessmentScores.map(function (sc) {
+    var a = D.assessments.filter(function (x) { return x.id === sc.assessmentId; })[0];
+    var diff = sc.score - a.classAvg;
+    var note = diff >= 0 ? "right around the class average of " + a.classAvg + "%" : "a bit below the class average of " + a.classAvg + "% — a good area to keep practicing together";
+    return '<div class="alert-row"><span class="sev ' + (sc.score >= 75 ? "low" : sc.score >= 65 ? "med" : "high") + '"></span><div><b>' + esc(a.title) + '</b> — ' + sc.score + '%<div class="muted" style="font-size:0.88rem;">' + fmtDate(a.date) + ' · ' + esc(assessCopy[a.id] || "") + ' Jordan scored ' + note + '.</div></div></div>';
+  }).join("");
+
+  /* ---------- SKILLS CHIPS ---------- */
+  var mastered = [
+    { label: "Understanding whose perspective a story is told from", sub: "Point of view — 81%" },
+    { label: "Completing a graphic organizer independently", sub: "Noted by Ms. Nguyen, Jul 9" },
+    { label: "Being a kind, collaborative classmate", sub: "Ongoing strength" }
+  ];
+  var developing = [
+    { label: "Finding evidence for what characters say and do", sub: "74%" },
+    { label: "Understanding why characters act the way they do", sub: "68%" },
+    { label: "Writing a complete story — beginning, middle, end", sub: "48 of 75 on the writing goal" },
+    { label: "Using a visual planner to stay organized", sub: "58 of 85 on the planning goal" },
+    { label: "Starting and continuing a conversation with a friend", sub: "66 of 85 on the communication goal" }
+  ];
+  function chipHtml(list, cls) {
+    return list.map(function (c) { return '<span class="tag ' + cls + '" title="' + esc(c.sub) + '">' + esc(c.label) + '</span>'; }).join("");
+  }
+  document.getElementById("skillsMastered").innerHTML = chipHtml(mastered, "leaf");
+  document.getElementById("skillsDeveloping").innerHTML = chipHtml(developing, "gold");
+
+  /* ---------- GOAL CARDS ---------- */
+  var statusMap = { "on-track": ["good", "On Track"], "needs-attention": ["warn", "Needs Attention"] };
+  document.getElementById("goalCards").innerHTML = D.goals.map(function (g) {
+    var sm = statusMap[g.status] || ["neutral", g.status];
+    return '<div class="goal-card"><h4>' + esc(g.domain) + '</h4>' +
+      '<div class="goal-meta">' + esc(g.staff) + '</div>' +
+      '<div data-goal-ring="' + g.current + '"></div>' +
+      '<p style="font-size:0.85rem;text-align:center;margin:0.5rem 0 0.3rem;">Started at ' + g.baseline + '% · goal is ' + g.target + '%</p>' +
+      '<div style="text-align:center;"><span class="status-pill ' + sm[0] + '">' + sm[1] + '</span></div></div>';
+  }).join("");
+
+  /* ---------- THERAPY SUMMARY ---------- */
+  document.getElementById("therapySummary").innerHTML = D.therapyServices.filter(function (s) { return s.studentId === "S01"; }).map(function (sv) {
+    var th = D.getTherapist(sv.therapistId);
+    var pct = Math.round((sv.deliveredMinutesMonthly / sv.requiredMinutesMonthly) * 100);
+    return '<div class="alert-row"><span class="sev ' + (pct >= 90 ? "low" : pct >= 75 ? "med" : "high") + '"></span><div><b>' + esc(sv.type) + '</b> with ' + esc(th.name) + '<div class="muted" style="font-size:0.88rem;">' + esc(sv.frequency) + ' · This month Jordan has received ' + sv.deliveredMinutesMonthly + ' of the ' + sv.requiredMinutesMonthly + ' recommended minutes (about ' + pct + '%).</div></div></div>';
+  }).join("");
+
+  /* ---------- FEEDBACK + MESSAGES ---------- */
+  var feedbackIds = ["MS1", "MS2"];
+  document.getElementById("feedbackFeed").innerHTML = D.messages.filter(function (m) { return feedbackIds.indexOf(m.id) > -1; }).map(function (m) {
+    return '<li><span class="f-ico">💬</span><div class="f-body"><b>' + esc(m.from) + '</b> — ' + esc(m.subject) + '<small>' + fmtDate(m.date) + ' · ' + esc(m.body) + '</small></div></li>';
+  }).join("");
+  document.getElementById("messagesFeed").innerHTML = D.messages.slice(0, 3).map(function (m) {
+    var mine = m.from === "Maria Thompson";
+    return '<li><span class="f-ico">' + (mine ? "📤" : "📥") + '</span><div class="f-body"><b>' + esc(mine ? "You → " + m.to : m.from + " → You") + '</b> — ' + esc(m.subject) + '<small>' + fmtDate(m.date) + '</small></div></li>';
+  }).join("");
+
+  /* ---------- UPCOMING SCHEDULE ---------- */
+  var dayOrder = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4 };
+  var jordanEvents = D.scheduleEvents.filter(function (e) { return e.studentIds && e.studentIds.indexOf("S01") > -1; })
+    .sort(function (a, b) { return (dayOrder[a.day] - dayOrder[b.day]) || a.start.localeCompare(b.start); })
+    .slice(0, 3);
+  var typeIco = { class: "📚", therapy: "🩺", para: "🧑‍🏫" };
+  document.getElementById("scheduleFeed").innerHTML = jordanEvents.map(function (e) {
+    return '<li><span class="f-ico">' + (typeIco[e.type] || "🗓️") + '</span><div class="f-body"><b>' + esc(e.title) + '</b><small>' + e.day + " · " + e.start + "–" + e.end + " · " + esc(e.where) + (e.virtual ? " · 💻 Virtual" : "") + '</small></div></li>';
+  }).join("");
+
+  /* ---------- HOME SUPPORT TIPS ---------- */
+  var interests = jordan.interests.slice(0, 3).join(", ");
+  var tips = [
+    "Practice a 2-minute check-in conversation about Jordan's day at dinner, using open-ended questions — a tip from Jordan's speech-language therapist, Emily Castillo.",
+    "Keep using conversation starters about things Jordan loves — like " + esc(interests) + " — to build on his speech practice.",
+    "Try a simple visual planner or checklist at home for homework, just like Jordan uses at school, to build on his organization goal.",
+    "Celebrate any writing Jordan does at home — texts, lists, or captions for LEGO builds — to reinforce his story-writing goal."
+  ];
+  document.getElementById("homeTips").innerHTML = tips.map(function (t) { return "<li style='margin-bottom:0.4rem;'>" + t + "</li>"; }).join("");
+})();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

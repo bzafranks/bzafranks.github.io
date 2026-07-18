@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Inclusive Learning Hub</title>
+<meta name="description" content="Paraprofessional dashboard for Priya Patel: daily schedule, assigned students, support responsibilities, accommodations, prompting and independence data, behavior data, and therapy carryover activities.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="para" data-active="dashboard" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Paraprofessional navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Paraprofessional / <b>Dashboard</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🧑‍🏫 Paraprofessional Portal</span>
+        <h1>Good morning, Priya</h1>
+        <p class="lead">Here's your day supporting Jordan Thompson, Mason Delgado, Elijah Ramirez, and Jayden Mitchell.</p>
+      </div>
+
+      <!-- ===== SUMMARY CARDS ===== -->
+      <div class="dash-grid" style="margin-bottom:1.6rem;">
+        <div class="metric"><div class="m-label">Assigned Students</div><div class="m-num" id="metricAssigned">4</div><div class="m-trend up">Full caseload today</div></div>
+        <div class="metric teal"><div class="m-label">Classes Today</div><div class="m-num">3</div><div class="m-trend up">ELA · Science · Math support</div></div>
+        <div class="metric plum"><div class="m-label">Data Collection Tasks Due</div><div class="m-num">4</div><div class="m-trend down">One per assigned student</div></div>
+        <div class="metric"><div class="m-label">Support Notes Due</div><div class="m-num">2</div><div class="m-trend down">By end of day</div></div>
+        <div class="metric leaf"><div class="m-label">Upcoming Transitions</div><div class="m-num">3</div><div class="m-trend up">Next: 10:40 AM</div></div>
+        <div class="metric teal"><div class="m-label">Alerts</div><div class="m-num" id="metricAlerts">4</div><div class="m-trend down">Across 2 students</div></div>
+      </div>
+
+      <!-- ===== DAILY SCHEDULE ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🗓️ Daily Schedule</h3>
+        <p class="muted">Today's periods and support assignments. See <a href="../shared/scheduling.html?view=para&amp;id=P1">My Schedule</a> for the full weekly grid.</p>
+        <ul class="feed" id="scheduleFeed"></ul>
+      </div>
+
+      <!-- ===== ASSIGNED STUDENTS ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🧑‍🎓 Assigned Students</h3>
+        <p class="muted">Your four assigned students, pulled live from the paraprofessional roster.</p>
+        <div class="grid grid-2" id="assignedStudentsGrid"></div>
+      </div>
+
+      <!-- ===== SUPPORT RESPONSIBILITIES ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">📋 Support Responsibilities</h3>
+        <p class="muted">Key responsibilities for each assigned student today.</p>
+        <div id="responsibilitiesList"></div>
+      </div>
+
+      <!-- ===== STUDENT ACCOMMODATIONS ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🧩 Student Accommodations — Jordan Thompson</h3>
+        <p class="muted">Jordan's active accommodations, several of which you help implement directly. Mason, Elijah, and Jayden's accommodation logs are managed by their case managers — check each student's profile for details.</p>
+        <div class="data-table-wrap" data-table>
+          <div class="table-toolbar">
+            <input type="search" data-table-search placeholder="Search accommodations…" aria-label="Search accommodations">
+            <span class="tt-count" data-table-count></span>
+          </div>
+          <div class="table-wrap" style="margin:0;box-shadow:none;">
+            <table>
+              <thead><tr><th class="sortable" data-col="type">Accommodation</th><th>Setting</th><th>Staff</th><th class="sortable" data-col="frequency">Frequency</th><th class="sortable" data-col="lastuse">Last Used</th></tr></thead>
+              <tbody id="accommodationsRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PROMPTING + TASK COMPLETION + INDEPENDENCE ===== -->
+      <div class="grid grid-3" style="margin-bottom:1.6rem;">
+        <div class="chart-card">
+          <h4>Prompting-Level Tracking (this week)</h4>
+          <div data-chart="bar" data-values='[{"label":"Full Phys.","v":3},{"label":"Partial Phys.","v":6},{"label":"Verbal","v":14},{"label":"Gestural","v":11},{"label":"Indep.","v":9}]'></div>
+          <div class="legend"><span>Prompt levels logged across all 4 students, last 5 school days</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Task Completion</h4>
+          <div data-chart="donut" data-value="82" data-label="82%"></div>
+          <div class="legend"><span>Support tasks completed on time this week</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Independence Data (illustrative)</h4>
+          <div data-chart="trend" data-values='[{"v":38},{"v":42},{"v":47},{"v":49},{"v":54},{"v":58},{"v":61},{"v":65}]'></div>
+          <div class="legend"><span>% of prompted tasks completed independently, 8-week trend across caseload</span></div>
+        </div>
+      </div>
+
+      <!-- ===== BEHAVIOR DATA ===== -->
+      <div class="card" style="margin-bottom:1.6rem;border-top:4px solid var(--ilh-danger);">
+        <h3 style="margin-top:0;">🧠 Behavior Data</h3>
+        <p class="muted">Incidents logged for your assigned students.</p>
+        <div id="behaviorRows"></div>
+      </div>
+
+      <!-- ===== TEACHER INSTRUCTIONS ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🍎 Teacher Instructions</h3>
+        <p class="muted">Recent notes from classroom teachers about how to support students today.</p>
+        <ul class="feed">
+          <li><span class="f-ico">📝</span><div class="f-body"><b>Patricia Nguyen — ELA</b><small>For Jordan: use the graphic organizer before he starts the Character Trait Web independent practice — he does best when he sketches ideas first.</small></div></li>
+          <li><span class="f-ico">📝</span><div class="f-body"><b>Patricia Nguyen — ELA</b><small>Chunk today's reading into 2 sections with a check-in between for Jordan — his accommodation plan calls for chunked assignments.</small></div></li>
+          <li><span class="f-ico">📝</span><div class="f-body"><b>Angela Brooks — Science</b><small>Mason and Jayden are starting the ecosystems lab today — please pre-teach the vocabulary card set with both before class if there's a moment during homeroom.</small></div></li>
+        </ul>
+      </div>
+
+      <!-- ===== THERAPY CARRYOVER ACTIVITIES ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <h3 style="margin-top:0;">🩺 Therapy Carryover Activities</h3>
+        <p class="muted">Activities from recent therapy sessions to reinforce with Jordan during the school day.</p>
+        <div id="carryoverList"></div>
+      </div>
+
+      <!-- ===== NOTES SUBMISSION STATUS ===== -->
+      <div class="card">
+        <h3 style="margin-top:0;">🗒️ Notes Submission Status</h3>
+        <p class="muted">Daily support note status for each assigned student. Submit or review on the <a href="notes.html">Notes</a> page.</p>
+        <div id="notesStatusList"></div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render everything live from window.ILH — Priya Patel is paraprofessional P1.
+  (function () {
+    var D = window.ILH;
+    var priya = D.getPara("P1");
+    var students = priya.assignedStudentIds.map(function (id) { return D.getStudent(id); });
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function planPill(s) {
+      if (!s.supportPlan || !s.supportPlan.type) return '<span class="status-pill neutral">No Plan</span>';
+      return '<span class="status-pill good">' + esc(s.supportPlan.type) + ' (' + esc(s.supportPlan.status || "active") + ')</span>';
+    }
+
+    document.getElementById("metricAssigned").textContent = students.length;
+    var alertCount = students.reduce(function (n, s) { return n + (s.alerts ? s.alerts.length : 0); }, 0);
+    document.getElementById("metricAlerts").textContent = alertCount;
+
+    // ---- Daily schedule: real event(s) for Priya Patel + illustrative periods ----
+    var realEvents = D.scheduleEvents.filter(function (e) { return e.who === "Priya Patel"; });
+    var illustrative = [
+      { start: "8:00", end: "8:45", title: "Push-In Support — Grade 7 ELA", where: "Room 214", note: "Supporting Jordan during whole-group instruction and independent work." },
+      { start: "9:45", end: "10:30", title: "Push-In Support — Grade 8 Science", where: "Lab 2", note: "Supporting Mason and Jayden during the ecosystems lab." },
+      { start: "2:45", end: "3:15", title: "Small-Group Check-In", where: "Room 214", note: "End-of-day independence and behavior data review with Elijah." }
+    ];
+    var scheduleHtml = realEvents.map(function (e) {
+      return '<li><span class="f-ico">🗓️</span><div class="f-body"><b>' + e.start + '–' + e.end + ' · ' + esc(e.title) + '</b><small>' + esc(e.where) + ' · Students: ' + e.studentIds.map(function (id) { return esc(D.getStudent(id).name); }).join(", ") + '</small></div></li>';
+    }).join("");
+    scheduleHtml += illustrative.map(function (e) {
+      return '<li><span class="f-ico">🗓️</span><div class="f-body"><b>' + e.start + '–' + e.end + ' · ' + esc(e.title) + '</b><small>' + esc(e.where) + ' · ' + esc(e.note) + '</small></div></li>';
+    }).join("");
+    document.getElementById("scheduleFeed").innerHTML = scheduleHtml;
+
+    // ---- Assigned students ----
+    document.getElementById("assignedStudentsGrid").innerHTML = students.map(function (s) {
+      return '<a class="card compact hoverable" href="../shared/student-profile.html?id=' + s.id + '" style="text-decoration:none;color:inherit;display:flex;gap:0.8rem;align-items:center;">' +
+        '<span class="avatar-circ" style="background:' + s.color + ';">' + esc(s.initials) + '</span>' +
+        '<div><h4 style="margin:0 0 0.15rem;color:var(--navy);">' + esc(s.name) + '</h4>' +
+        '<span class="muted" style="font-size:0.82rem;">Grade ' + s.grade + ' · ' + esc(s.programme) + '</span><br>' +
+        planPill(s) + '</div></a>';
+    }).join("");
+
+    // ---- Support responsibilities per student ----
+    var responsibilities = {
+      S01: ["Visual schedule check-in before ELA and before/after transitions", "Reduced-distraction setting for independent writing tasks", "Frequent check-ins every class period"],
+      S07: ["1:1 prompting during Science lab work, per OT recommendations", "Support with fine-motor lab tasks and materials setup", "Monitor for frustration cues during multi-step tasks"],
+      S13: ["Support sequencing multi-step directions during Math", "Prompt use of fidget/sensory tools as needed (OT plan)", "Collect independence data during small-group work"],
+      S19: ["Check-in on arrival to support the transition into first period", "Behavior redirect + offer a break before frustration escalates", "Extra encouragement around attendance and re-engagement"]
+    };
+    document.getElementById("responsibilitiesList").innerHTML = students.map(function (s) {
+      var items = responsibilities[s.id] || [];
+      return '<div style="margin-bottom:1rem;"><b>' + esc(s.name) + '</b><ul style="margin:0.3rem 0 0 1.2rem;color:var(--ink-soft);">' + items.map(function (i) { return "<li>" + esc(i) + "</li>"; }).join("") + '</ul></div>';
+    }).join("");
+
+    // ---- Accommodations (Jordan) ----
+    document.getElementById("accommodationsRows").innerHTML = D.accommodations.filter(function (a) { return a.studentId === "S01"; }).map(function (a) {
+      return '<tr data-type="' + esc(a.type) + '" data-frequency="' + esc(a.frequency) + '" data-lastuse="' + a.lastUse + '">' +
+        '<td><b>' + esc(a.type) + '</b></td><td>' + esc(a.setting) + '</td><td>' + esc(a.staff) + '</td><td>' + esc(a.frequency) + '</td><td>' + a.lastUse + '</td></tr>';
+    }).join("");
+
+    // ---- Behavior data filtered to Priya's students ----
+    var assignedIds = priya.assignedStudentIds;
+    var incidents = D.behaviorIncidents.filter(function (b) { return assignedIds.indexOf(b.studentId) > -1; });
+    document.getElementById("behaviorRows").innerHTML = incidents.length ? incidents.map(function (b) {
+      var s = D.getStudent(b.studentId);
+      return '<div class="alert-row"><span class="sev med"></span><div><b>' + esc(s.name) + '</b> — ' + esc(b.type) + '<div class="muted" style="font-size:0.85rem;">' + b.date + ' · Response: ' + esc(b.response) + ' · Logged by ' + esc(b.staff) + '</div></div></div>';
+    }).join("") : '<p class="muted">No behavior incidents logged this week.</p>';
+
+    // ---- Therapy carryover activities (Jordan's real sessions) ----
+    var sessions = D.therapySessions.filter(function (s) { return s.studentId === "S01" && s.homeRecommendation && s.homeRecommendation !== "—"; });
+    document.getElementById("carryoverList").innerHTML = sessions.map(function (s) {
+      return '<div class="alert-row"><span class="sev low"></span><div><b>' + esc(s.type) + ' — ' + s.date + '</b><div class="muted" style="font-size:0.85rem;">Session activity: ' + esc(s.activities) + '</div><div style="margin-top:0.3rem;"><b>Reinforce today:</b> ' + esc(s.homeRecommendation) + '</div></div></div>';
+    }).join("");
+
+    // ---- Notes submission status (illustrative) ----
+    var noteStatus = { S01: "Submitted — 8:20 AM", S07: "Submitted — 8:25 AM", S13: "Pending", S19: "Pending" };
+    document.getElementById("notesStatusList").innerHTML = students.map(function (s) {
+      var st = noteStatus[s.id];
+      var pill = st.indexOf("Submitted") === 0 ? '<span class="status-pill good">Submitted</span>' : '<span class="status-pill warn">Pending</span>';
+      return '<div class="alert-row"><span class="sev ' + (st.indexOf("Submitted") === 0 ? "low" : "med") + '"></span><div><b>' + esc(s.name) + '</b> ' + pill + '<div class="muted" style="font-size:0.85rem;">' + esc(st) + '</div></div></div>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

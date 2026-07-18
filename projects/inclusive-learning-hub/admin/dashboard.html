@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administrator Dashboard — Inclusive Learning Hub</title>
+<meta name="description" content="Schoolwide dashboard for administrators: enrollment, attendance, therapy compliance, goal progress, and attention-required alerts.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="dashboard" data-project="Inclusive Learning Hub" data-project-root="../../../">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Dashboard</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🛠️ Administrator Portal</span>
+        <h1>Good morning, Michael</h1>
+        <p class="lead">Here's how Inclusive Learning Hub Academy is doing today — Wednesday, July 8, 2026.</p>
+      </div>
+
+      <!-- ===== SUMMARY CARDS ===== -->
+      <div class="dash-grid" style="margin-bottom:1.6rem;">
+        <div class="metric"><div class="m-label">Total Students</div><div class="m-num">24</div><div class="m-trend up">▲ Steady enrollment</div></div>
+        <div class="metric teal"><div class="m-label">Daily Attendance Rate</div><div class="m-num">93%</div><div class="m-trend down">▼ 1.1% vs last week</div></div>
+        <div class="metric plum"><div class="m-label">Students Needing Intervention</div><div class="m-num">10</div><div class="m-trend down">6 at-risk · 4 declining</div></div>
+        <div class="metric"><div class="m-label">Staff Absent Today</div><div class="m-num">1</div><div class="m-trend up">Corey Banks — approved leave</div></div>
+        <div class="metric leaf"><div class="m-label">Therapy Sessions Scheduled</div><div class="m-num">12</div><div class="m-trend up">4 today, 2 virtual</div></div>
+        <div class="metric teal"><div class="m-label">Missed Service Minutes (MTD)</div><div class="m-num">255</div><div class="m-trend down">Speech + Counseling</div></div>
+        <div class="metric plum"><div class="m-label">Individual Plan Reviews Due</div><div class="m-num">2</div><div class="m-trend down">Within 30 days</div></div>
+        <div class="metric"><div class="m-label">Outstanding Parent Forms</div><div class="m-num">7</div><div class="m-trend down">IEP input + field trip</div></div>
+      </div>
+
+      <!-- ===== CHARTS ===== -->
+      <div class="grid grid-2" style="margin-bottom:1.6rem;">
+        <div class="chart-card">
+          <h4>Schoolwide Academic Performance</h4>
+          <div data-chart="trend" data-values='[{"v":74},{"v":76},{"v":75},{"v":78}]'></div>
+          <div class="legend"><span>Q1 → Q4 (to date) average score</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Attendance Trend (8 weeks)</h4>
+          <div data-chart="trend" data-values='[{"v":96},{"v":95},{"v":94},{"v":93},{"v":95},{"v":92},{"v":94},{"v":93}]'></div>
+          <div class="legend"><span>Schoolwide daily attendance rate</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Enrollment by Programme</h4>
+          <div data-chart="bar" data-values='[{"label":"Gen Ed","v":11},{"label":"Inclusive Support","v":13}]'></div>
+        </div>
+        <div class="chart-card">
+          <h4>Students On Track vs. Needing Support</h4>
+          <div data-chart="bar" data-values='[{"label":"On Track","v":14},{"label":"Needs Support","v":6},{"label":"At Risk","v":4}]'></div>
+        </div>
+        <div class="chart-card">
+          <h4>Therapy Services: Delivered vs. Required Minutes (MTD)</h4>
+          <div data-chart="bar" data-values='[{"label":"Speech Req","v":1440},{"label":"Speech Del","v":1305},{"label":"OT Req","v":960},{"label":"OT Del","v":900},{"label":"Counsel Req","v":720},{"label":"Counsel Del","v":660}]'></div>
+        </div>
+        <div class="chart-card">
+          <h4>Goal Progress by Domain</h4>
+          <div data-chart="bar" data-values='[{"label":"Reading","v":71},{"label":"Writing","v":63},{"label":"Exec. Fn","v":68},{"label":"Comm.","v":75}]'></div>
+        </div>
+        <div class="chart-card">
+          <h4>Behavior Incident Trend</h4>
+          <div data-chart="trend" data-values='[{"v":14},{"v":11},{"v":9},{"v":8},{"v":6},{"v":5}]'></div>
+          <div class="legend"><span>Monthly incidents, Feb → Jul</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Parent Portal Engagement</h4>
+          <div data-chart="trend" data-values='[{"v":61},{"v":64},{"v":68},{"v":66},{"v":72},{"v":75}]'></div>
+          <div class="legend"><span>% of families logging in weekly</span></div>
+        </div>
+        <div class="chart-card">
+          <h4>Staff Workload (active students / caseload)</h4>
+          <div data-chart="bar" data-values='[{"label":"P. Nguyen","v":96},{"label":"R. Whitfield","v":88},{"label":"E. Castillo","v":6},{"label":"P. Patel","v":4}]'></div>
+        </div>
+        <div class="chart-card">
+          <h4>Subgroup Performance (avg. score)</h4>
+          <div data-chart="bar" data-values='[{"label":"Gen Ed","v":82},{"label":"Inclusive Support","v":71},{"label":"English Learners","v":74}]'></div>
+        </div>
+      </div>
+
+      <!-- ===== ATTENTION REQUIRED ===== -->
+      <div class="card" style="border-top:4px solid var(--ilh-danger);">
+        <h3 style="margin-top:0;">🚨 Attention Required</h3>
+        <p class="muted">Six areas the admin team is tracking this week — click any student to open their full profile.</p>
+        <div class="grid grid-2">
+          <div>
+            <h4>📉 Declining Performance</h4>
+            <div id="ar-declining"></div>
+          </div>
+          <div>
+            <h4>🩺 Missed Therapy Sessions</h4>
+            <div id="ar-missed-therapy"></div>
+          </div>
+          <div>
+            <h4>🧩 Expiring Individual Plans</h4>
+            <div id="ar-expiring"></div>
+          </div>
+          <div>
+            <h4>📅 Chronic Attendance Concerns</h4>
+            <div id="ar-attendance"></div>
+          </div>
+          <div>
+            <h4>🧑‍🏫 Uncovered Staff Assignments</h4>
+            <div id="ar-uncovered"></div>
+          </div>
+          <div>
+            <h4>⏰ Overdue Evaluations</h4>
+            <div id="ar-overdue"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render "Attention Required" directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH, base = "../shared/student-profile.html?id=";
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function row(icon, title, sub, href) {
+      return '<div class="alert-row"><span class="sev high"></span><div>' + (href ? '<a href="' + href + '" style="font-weight:700;text-decoration:none;color:var(--navy);">' + esc(title) + "</a>" : "<b>" + esc(title) + "</b>") + "<div class='muted' style='font-size:.85rem;'>" + esc(sub) + "</div></div></div>";
+    }
+    document.getElementById("ar-declining").innerHTML = D.attentionRequired.decliningPerformance.map(function (s) {
+      return row("📉", s.name, "Grade " + s.grade + " · " + s.academicStatus.replace("-", " "), base + s.id);
+    }).join("") || '<p class="muted">None this week.</p>';
+    document.getElementById("ar-missed-therapy").innerHTML = D.attentionRequired.missedTherapy.map(function (m) {
+      return row("🩺", m.student, m.service + " — " + m.missed, base + (D.students.filter(function (s) { return s.name === m.student; })[0] || {}).id);
+    }).join("");
+    document.getElementById("ar-expiring").innerHTML = D.attentionRequired.expiringPlans.map(function (p) {
+      return row("🧩", p.student, p.plan + " expires " + p.expires + " (" + p.daysLeft + " days)", base + (D.students.filter(function (s) { return s.name === p.student; })[0] || {}).id);
+    }).join("");
+    document.getElementById("ar-attendance").innerHTML = D.attentionRequired.attendanceConcerns.map(function (s) {
+      return row("📅", s.name, "Attendance: " + s.attendanceRate + "%", base + s.id);
+    }).join("") || '<p class="muted">None this week.</p>';
+    document.getElementById("ar-uncovered").innerHTML = D.attentionRequired.uncoveredAssignments.map(function (u) {
+      return row("🧑‍🏫", u.role + " — " + u.period, u.reason, null);
+    }).join("");
+    document.getElementById("ar-overdue").innerHTML = D.attentionRequired.overdueEvaluations.map(function (e) {
+      return row("⏰", e.student + " — " + e.evaluation, "Due " + e.due + " · " + e.status, base + (D.students.filter(function (s) { return s.name === e.student; })[0] || {}).id);
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

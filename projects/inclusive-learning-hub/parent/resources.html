@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Resources — Inclusive Learning Hub</title>
+<meta name="description" content="A family resource library for parents of students with IEPs — plain-language guides, articles, videos, and printables.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="parent" data-active="resources" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Parent navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Parent / <b>Resources</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🗂️ Family Resource Library</span>
+        <h1>Resources</h1>
+        <p class="lead">Plain-language guides and tools to help you understand Jordan's plan and support his learning at home — no jargon required.</p>
+      </div>
+
+      <div class="grid grid-3" id="resourceGrid"></div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render the family resource library
+  (function () {
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    var TAG_CLASS = { Guide: "navy", Article: "teal", Video: "coral", Printable: "leaf" };
+
+    var resources = [
+      { title: "Understanding Your Child's IEP", type: "Guide", ico: "🧩", desc: "A plain-language walkthrough of what an IEP is, who's on the team, and how it supports Jordan." },
+      { title: "Supporting Reading at Home", type: "Article", ico: "📖", desc: "Simple, low-pressure ways to build reading comprehension during everyday reading time." },
+      { title: "What to Expect at an IEP Meeting", type: "Video", ico: "🎥", desc: "A short walkthrough of a typical annual review meeting, so nothing feels like a surprise." },
+      { title: "Speech Therapy Home Activities", type: "Printable", ico: "🗣️", desc: "Conversation-starter cards from Emily Castillo to practice turn-taking chats at home." },
+      { title: "Building Executive Function Skills at Home", type: "Article", ico: "🧠", desc: "Ideas for visual planners and checklists that carry over from school to home routines." },
+      { title: "Understanding Accommodations vs. Modifications", type: "Guide", ico: "⚖️", desc: "A clear explanation of the difference, with everyday examples from Jordan's classes." },
+      { title: "Talking to Your Child About Their Learning Differences", type: "Article", ico: "💬", desc: "Age-appropriate ways to talk with Jordan about his strengths and the support he receives." },
+      { title: "Family Rights Under IDEA: A Plain-Language Overview", type: "Guide", ico: "📜", desc: "Your rights as a parent in the special education process, explained without legal jargon." }
+    ];
+
+    document.getElementById("resourceGrid").innerHTML = resources.map(function (r) {
+      return '<div class="card hoverable compact">' +
+        '<span class="icon">' + r.ico + '</span>' +
+        '<span class="tag ' + (TAG_CLASS[r.type] || "") + '">' + esc(r.type) + '</span>' +
+        '<h3 style="margin:0.5rem 0 0.3rem;font-size:1.05rem;">' + esc(r.title) + '</h3>' +
+        '<p class="muted" style="font-size:0.9rem;">' + esc(r.desc) + '</p>' +
+        '<button class="btn secondary small" type="button" data-toast="info" data-toast-msg="📂 Opening \'' + esc(r.title).replace(/'/g, "&#39;") + '\'… (simulated)">View Resource</button>' +
+      '</div>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

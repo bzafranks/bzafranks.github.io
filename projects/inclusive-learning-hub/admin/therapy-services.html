@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Therapy Services — Inclusive Learning Hub</title>
+<meta name="description" content="Administrator oversight of all therapy services: caseloads, service-minute compliance, and session activity across speech-language, occupational therapy, and counseling.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="admin" data-active="therapy-services" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Administrator navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Administrator / <b>Therapy Services</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🩺 Therapy Services Oversight</span>
+        <h1>Therapy Services Overview</h1>
+        <p class="lead">Schoolwide oversight of speech-language, occupational therapy, and counseling services — caseloads, delivered-vs-required minutes, and session activity across all three providers.</p>
+      </div>
+
+      <!-- ===== SUMMARY METRICS ===== -->
+      <div class="dash-grid" style="margin-bottom:1.6rem;">
+        <div class="metric"><div class="m-label">Students Receiving Services</div><div class="m-num" id="tsTotalStudents">—</div><div class="m-trend up">Across all disciplines</div></div>
+        <div class="metric teal"><div class="m-label">Speech-Language Caseload</div><div class="m-num" id="tsSpeechCaseload">—</div><div class="m-trend up">Emily Castillo, M.S. CCC-SLP</div></div>
+        <div class="metric leaf"><div class="m-label">Occupational Therapy Caseload</div><div class="m-num" id="tsOTCaseload">—</div><div class="m-trend up">Jason Whitfield, OTR/L</div></div>
+        <div class="metric plum"><div class="m-label">Counseling Caseload</div><div class="m-num" id="tsCounselingCaseload">—</div><div class="m-trend up">Renee Okafor, LPC</div></div>
+        <div class="metric" id="tsComplianceCard"><div class="m-label">Service-Minute Compliance (MTD)</div><div class="m-num" id="tsCompliance">—</div><div class="m-trend down" id="tsComplianceTrend">Delivered vs. required minutes</div></div>
+      </div>
+
+      <!-- ===== CHART ===== -->
+      <div class="chart-card" style="margin-bottom:1.6rem;">
+        <h4>Required vs. Delivered Minutes by Discipline (Month-to-Date)</h4>
+        <div id="disciplineChart" data-chart="bar"></div>
+        <div class="legend"><span>Minutes required (IEP/504-mandated) vs. minutes actually delivered this month</span></div>
+      </div>
+
+      <!-- ===== THERAPISTS TABLE ===== -->
+      <h3>Therapy Providers</h3>
+      <div class="data-table-wrap" data-table style="margin-bottom:1.8rem;">
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search providers…" aria-label="Search providers">
+          <select data-table-filter="discipline" aria-label="Filter by discipline">
+            <option value="">All Disciplines</option>
+            <option value="Speech-Language Therapy">Speech-Language Therapy</option>
+            <option value="Occupational Therapy">Occupational Therapy</option>
+            <option value="Behavioral & Mental Health Counseling">Behavioral &amp; Mental Health Counseling</option>
+          </select>
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead><tr>
+              <th class="sortable" data-col="name">Provider</th>
+              <th class="sortable" data-col="discipline">Discipline</th>
+              <th class="sortable" data-col="caseload">Caseload</th>
+              <th class="sortable" data-col="compliance">This-Month Compliance</th>
+            </tr></thead>
+            <tbody id="therapistsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== SESSIONS TABLE ===== -->
+      <h3>Recent &amp; Upcoming Sessions</h3>
+      <div class="data-table-wrap" data-table>
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search sessions…" aria-label="Search sessions">
+          <select data-table-filter="status" aria-label="Filter by status">
+            <option value="">All Statuses</option>
+            <option value="Completed">Completed</option>
+            <option value="Missed">Missed</option>
+            <option value="Scheduled">Scheduled</option>
+          </select>
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead><tr>
+              <th class="sortable" data-col="date">Date</th>
+              <th class="sortable" data-col="student">Student</th>
+              <th class="sortable" data-col="therapist">Therapist</th>
+              <th class="sortable" data-col="type">Type</th>
+              <th class="sortable" data-col="status">Status</th>
+            </tr></thead>
+            <tbody id="sessionsBody"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Session log reflects the current demo term. Missed sessions are automatically flagged for admin follow-up on the Dashboard.</div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render therapy-services page directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    var DISCIPLINE_TO_COMPLIANCE_KEY = {
+      "Speech-Language Therapy": "Speech-Language Therapy",
+      "Occupational Therapy": "Occupational Therapy",
+      "Behavioral & Mental Health Counseling": "Counseling"
+    };
+    function complianceRecord(discipline) {
+      var key = DISCIPLINE_TO_COMPLIANCE_KEY[discipline] || discipline;
+      return D.serviceMinuteCompliance.filter(function (r) { return r.discipline === key; })[0];
+    }
+    function pillFor(pct) {
+      if (pct >= 90) return "good"; if (pct >= 75) return "warn"; return "bad";
+    }
+
+    // ---- summary metrics ----
+    document.getElementById("tsTotalStudents").textContent = D.students.filter(function (s) { return s.therapistIds.length > 0; }).length;
+    document.getElementById("tsSpeechCaseload").textContent = D.getTherapist("TH1").caseloadIds.length;
+    document.getElementById("tsOTCaseload").textContent = D.getTherapist("TH2").caseloadIds.length;
+    document.getElementById("tsCounselingCaseload").textContent = D.getTherapist("TH3").caseloadIds.length;
+
+    var totalReq = 0, totalDel = 0;
+    D.serviceMinuteCompliance.forEach(function (r) { totalReq += r.required; totalDel += r.delivered; });
+    var overallPct = Math.round((totalDel / totalReq) * 100);
+    document.getElementById("tsCompliance").textContent = overallPct + "%";
+    document.getElementById("tsComplianceCard").className = "metric " + (overallPct >= 90 ? "leaf" : "plum");
+    document.getElementById("tsComplianceTrend").textContent = totalDel + " of " + totalReq + " required minutes delivered MTD";
+
+    // ---- discipline bar chart (reuses serviceMinuteCompliance directly) ----
+    var chartData = [];
+    D.serviceMinuteCompliance.forEach(function (r) {
+      var short = r.discipline.indexOf("Speech") > -1 ? "Speech" : (r.discipline.indexOf("Occupational") > -1 ? "OT" : "Counsel");
+      chartData.push({ label: short + " Req", v: r.required });
+      chartData.push({ label: short + " Del", v: r.delivered });
+    });
+    document.getElementById("disciplineChart").setAttribute("data-values", JSON.stringify(chartData));
+
+    // ---- therapists table ----
+    document.getElementById("therapistsBody").innerHTML = D.therapists.map(function (t) {
+      var rec = complianceRecord(t.discipline);
+      var pct = rec ? Math.round((rec.delivered / rec.required) * 100) : 0;
+      return '<tr data-discipline="' + esc(t.discipline) + '">' +
+        '<td><div style="display:flex;align-items:center;gap:0.6rem;"><span class="avatar-circ sm" style="background:' + t.color + '">' + esc(t.initials) + '</span><div><b>' + esc(t.name) + '</b><div class="muted" style="font-size:.8rem;">' + esc(t.title) + '</div></div></div></td>' +
+        '<td>' + esc(t.discipline) + '</td>' +
+        '<td data-caseload="' + t.caseloadIds.length + '">' + t.caseloadIds.length + ' students</td>' +
+        '<td data-compliance="' + pct + '"><span class="status-pill ' + pillFor(pct) + '">' + pct + '% compliant</span></td>' +
+        '</tr>';
+    }).join("");
+
+    // ---- sessions table ----
+    var statusPill = { Completed: "good", Missed: "bad", Scheduled: "info" };
+    document.getElementById("sessionsBody").innerHTML = D.therapySessions.map(function (s) {
+      var student = D.getStudent(s.studentId);
+      var therapist = D.getTherapist(s.therapistId);
+      return '<tr data-status="' + esc(s.status) + '">' +
+        '<td data-date="' + s.date + '">' + s.date + '</td>' +
+        '<td>' + esc(student ? student.name : s.studentId) + '</td>' +
+        '<td>' + esc(therapist ? therapist.name : s.therapistId) + '</td>' +
+        '<td>' + esc(s.type) + '</td>' +
+        '<td><span class="status-pill ' + (statusPill[s.status] || "neutral") + '">' + esc(s.status) + '</span></td>' +
+        '</tr>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

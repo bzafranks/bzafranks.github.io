@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress Monitoring — Inclusive Learning Hub</title>
+<meta name="description" content="Teacher progress-monitoring view: IEP/504 goal tracking with progress rings and trend lines for students with a support plan in Patricia Nguyen's Grade 7 ELA class.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="progress-monitoring" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Progress Monitoring</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🍎 Teacher Portal</span>
+        <h1>Progress Monitoring</h1>
+        <p class="lead">Live IEP and 504 goal progress for students in Grade 7 ELA who carry a support plan. Each ring shows current performance against target; the sparkline shows the trend across recent data-collection points.</p>
+      </div>
+
+      <!-- ===== JORDAN THOMPSON ===== -->
+      <div class="card" style="margin-bottom:1.6rem;">
+        <div style="display:flex;align-items:center;gap:0.9rem;margin-bottom:0.4rem;">
+          <span class="avatar-circ" style="background:#3a6ea5;">JT</span>
+          <div>
+            <h3 style="margin:0;"><a href="../shared/student-profile.html?id=S01" style="color:var(--navy);text-decoration:none;">Jordan Thompson</a></h3>
+            <span class="muted" style="font-size:0.86rem;">Grade 7 · Homeroom 7B · IEP (active) · Case Manager: Rachel Whitfield</span>
+          </div>
+          <span class="status-pill good" style="margin-left:auto;">4 Active Goals</span>
+        </div>
+        <p class="muted" style="margin-bottom:1.2rem;">Jordan's four IEP goals span reading, writing, executive functioning, and communication. Reading Comprehension and Communication are progressing on pace; Written Expression needs closer attention heading into the next progress review.</p>
+
+        <div class="grid grid-2" id="jordanGoals"></div>
+      </div>
+
+      <!-- ===== OTHER ILLUSTRATIVE STUDENTS ===== -->
+      <div class="tool-head" style="margin-top:0.4rem;">
+        <h2 style="margin-bottom:0.2rem;">Other Students with a Support Plan</h2>
+        <p class="lead" style="font-size:1.05rem;">Two more students from the Grade 7 ELA roster who carry an active IEP or 504 plan, shown here for illustration of how progress monitoring scales across a caseload.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:1.6rem;">
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:0.9rem;margin-bottom:0.6rem;">
+            <span class="avatar-circ" style="background:#c07830;">AJ</span>
+            <div>
+              <h4 style="margin:0;"><a href="../shared/student-profile.html?id=S10" style="color:var(--navy);text-decoration:none;">Amara Johnson</a></h4>
+              <span class="muted" style="font-size:0.82rem;">Grade 7 · Homeroom 7B · IEP (active)</span>
+            </div>
+          </div>
+          <div id="amaraGoal"></div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:0.9rem;margin-bottom:0.6rem;">
+            <span class="avatar-circ" style="background:#5b8c5a;">GO</span>
+            <div>
+              <h4 style="margin:0;"><a href="../shared/student-profile.html?id=S14" style="color:var(--navy);text-decoration:none;">Grace Okonkwo</a></h4>
+              <span class="muted" style="font-size:0.82rem;">Grade 7 · Homeroom 7A · 504 Plan (active)</span>
+            </div>
+          </div>
+          <div id="graceGoal"></div>
+        </div>
+      </div>
+
+      <!-- ===== MONTHLY DATA POINTS TABLE ===== -->
+      <div class="tool-head">
+        <h2 style="margin-bottom:0.2rem;">Data Points Collected This Month</h2>
+        <p class="lead" style="font-size:1.05rem;">Progress-monitoring probes logged in July 2026 across the students shown above.</p>
+      </div>
+      <div class="data-table-wrap" data-table>
+        <div class="table-toolbar">
+          <input type="search" data-table-search placeholder="Search by student or goal domain…" aria-label="Search data points">
+          <span class="tt-count" data-table-count></span>
+        </div>
+        <div class="table-wrap" style="margin:0;box-shadow:none;">
+          <table>
+            <thead>
+              <tr>
+                <th class="sortable" data-col="date">Date</th>
+                <th class="sortable" data-col="student">Student</th>
+                <th>Goal Domain</th>
+                <th class="sortable" data-col="score">Score</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody id="dpRows"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Scores reflect the most recent probe for each goal at the time of collection; see individual goal cards above for full trend history.</div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render Jordan's 4 goals from ILH.goals, plus two illustrative single-goal students
+  // (Amara Johnson, Grace Okonkwo) whose per-goal detail is not part of the shared
+  // mock-data.js goals array — they exist only to show how progress monitoring scales
+  // across a caseload, and are built here rather than in mock-data.js.
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    function goalCardHtml(g) {
+      return '<div class="goal-card">' +
+        '<div style="display:flex;gap:1.1rem;align-items:flex-start;flex-wrap:wrap;">' +
+          '<div data-goal-ring="' + g.current + '" style="width:110px;height:110px;flex:0 0 auto;"></div>' +
+          '<div style="flex:1;min-width:180px;">' +
+            '<h4>' + esc(g.domain) + '</h4>' +
+            '<div class="goal-meta">Baseline ' + g.baseline + '% → Target ' + g.target + '% · <span class="status-pill ' + (g.status === "on-track" ? "good" : "warn") + '">' + (g.status === "on-track" ? "On Track" : "Needs Attention") + '</span></div>' +
+            '<p class="muted" style="font-size:0.86rem;margin-bottom:0.5rem;">' + esc(g.description) + '</p>' +
+            '<div style="font-size:0.8rem;color:var(--ink-soft);">Staff: ' + esc(g.staff) + ' · Last update: ' + g.lastUpdate + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div style="margin-top:0.8rem;"><div class="muted" style="font-size:0.76rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.2rem;">Trend</div><div data-chart="trend" data-values=\'' + JSON.stringify(g.history.map(function (v) { return { v: v }; })) + '\'></div></div>' +
+      '</div>';
+    }
+
+    // ---- Jordan Thompson: real goals from ILH.goals ----
+    var jordanGoals = D.goals.filter(function (g) { return g.studentId === "S01"; });
+    document.getElementById("jordanGoals").innerHTML = jordanGoals.map(goalCardHtml).join("");
+
+    // ---- Illustrative goal for Amara Johnson (S10, IEP) ----
+    var amaraGoal = {
+      domain: "Reading Fluency", baseline: 45, target: 85, current: 74, status: "on-track",
+      staff: "Rachel Whitfield (Case Manager)", lastUpdate: "2026-07-10",
+      history: [52, 56, 60, 63, 68, 71, 74],
+      description: "When given a grade-level passage, Amara will read aloud with 95% accuracy at a rate of 120+ words per minute, self-correcting errors, across 3 consecutive trials."
+    };
+    document.getElementById("amaraGoal").innerHTML = goalCardHtml(amaraGoal);
+
+    // ---- Illustrative goal for Grace Okonkwo (S14, 504) ----
+    var graceGoal = {
+      domain: "Written Expression", baseline: 40, target: 80, current: 61, status: "on-track",
+      staff: "Patricia Nguyen (ELA Teacher)", lastUpdate: "2026-07-09",
+      history: [42, 46, 49, 52, 55, 58, 61],
+      description: "Grace will produce a five-paragraph organized essay with a clear introduction, three body paragraphs, and conclusion, scoring 80% or higher on the writing rubric."
+    };
+    document.getElementById("graceGoal").innerHTML = goalCardHtml(graceGoal);
+
+    // ---- Data points collected this month ----
+    var dataPoints = [
+      { date: "2026-07-02", student: "Grace Okonkwo", domain: "Written Expression", score: "55%", note: "Draft essay scored against rubric; strong topic sentence, needs more supporting detail." },
+      { date: "2026-07-03", student: "Amara Johnson", domain: "Reading Fluency", score: "68%", note: "Timed cold read; 2 self-corrections, rate improving." },
+      { date: "2026-07-05", student: "Jordan Thompson", domain: "Written Expression", score: "48%", note: "3-paragraph narrative draft scored on class rubric; sequencing improving, needs stronger detail." },
+      { date: "2026-07-07", student: "Jordan Thompson", domain: "Communication", score: "66%", note: "Structured peer conversation, 4-exchange target; 1 verbal prompt needed." },
+      { date: "2026-07-08", student: "Jordan Thompson", domain: "Reading Comprehension", score: "63%", note: "Main idea + 3 details probe on grade-level narrative passage." },
+      { date: "2026-07-09", student: "Grace Okonkwo", domain: "Written Expression", score: "61%", note: "Revised essay draft; added transitions between body paragraphs." },
+      { date: "2026-07-09", student: "Jordan Thompson", domain: "Executive Functioning", score: "58%", note: "Used visual planner to sequence a 3-step assignment; 1 check-in prompt." },
+      { date: "2026-07-10", student: "Amara Johnson", domain: "Reading Fluency", score: "74%", note: "Timed cold read; independent self-correction, rate at goal pace." }
+    ];
+    document.getElementById("dpRows").innerHTML = dataPoints.map(function (d) {
+      return '<tr data-date="' + d.date + '" data-student="' + esc(d.student) + '" data-score="' + parseInt(d.score, 10) + '">' +
+        '<td>' + d.date + '</td>' +
+        '<td>' + esc(d.student) + '</td>' +
+        '<td>' + esc(d.domain) + '</td>' +
+        '<td><b>' + d.score + '</b></td>' +
+        '<td class="muted">' + esc(d.note) + '</td>' +
+      '</tr>';
+    }).join("");
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resource Library — Inclusive Learning Hub</title>
+<meta name="description" content="Teacher resource library: searchable, filterable collection of worksheets, videos, slide decks, rubrics, and graphic organizers for Grade 7 ELA and inclusive instruction.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="resources" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Resources</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🍎 Teacher Portal</span>
+        <h1>Resource Library</h1>
+        <p class="lead">Curated teaching materials for Grade 7 ELA and inclusive instruction — save resources for later or download them for class use.</p>
+      </div>
+
+      <input type="search" id="resSearch" placeholder="Search resources by title, type, or tag…" aria-label="Search resources" style="width:100%;max-width:420px;padding:0.6rem 0.9rem;border:1.5px solid var(--border);border-radius:999px;font:inherit;font-size:0.92rem;margin-bottom:1rem;display:block;">
+
+      <div class="filter-row" id="resFilters">
+        <button type="button" class="chip-filter active" data-cat="all">All</button>
+        <button type="button" class="chip-filter" data-cat="Worksheet">Worksheets</button>
+        <button type="button" class="chip-filter" data-cat="Video">Videos</button>
+        <button type="button" class="chip-filter" data-cat="Slide Deck">Slide Decks</button>
+        <button type="button" class="chip-filter" data-cat="Rubric">Rubrics</button>
+        <button type="button" class="chip-filter" data-cat="Graphic Organizer">Graphic Organizers</button>
+      </div>
+
+      <div class="grid grid-3" id="resGrid"></div>
+      <p class="empty-state" id="resEmpty" style="display:none;"><span class="es-ico">🔎</span><span class="muted">No resources match your search or filter.</span></p>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Illustrative teacher resource library — static demo content, not sourced from mock-data.js
+  (function () {
+    var ICONS = { "Worksheet": "📄", "Video": "🎬", "Slide Deck": "📊", "Rubric": "📋", "Graphic Organizer": "🗺️" };
+    var resources = [
+      { title: "Point-of-View Analysis Worksheet", type: "Worksheet", tag: "Grade 7 · ELA · RL.7.6", desc: "Guided practice identifying first-, second-, and third-person narration in short passages." },
+      { title: "Understanding Narrative Perspective — Video Lesson", type: "Video", tag: "Grade 7 · ELA · RL.7.6", desc: "8-minute video walkthrough of narrator point of view with captioned examples." },
+      { title: "Character Development Slide Deck", type: "Slide Deck", tag: "Grade 7 · ELA · RL.7.3", desc: "Direct-instruction slides on revealing character through action, dialogue, and thought." },
+      { title: "Personal Narrative Writing Rubric", type: "Rubric", tag: "Grade 7 · ELA · W.7.3", desc: "4-point analytic rubric covering sequence, detail, dialogue, and reflective conclusion." },
+      { title: "Character Trait Web", type: "Graphic Organizer", tag: "Grade 7 · ELA · RL.7.3", desc: "Printable web for mapping a character's traits to supporting text evidence." },
+      { title: "Chunked Assignment Template", type: "Worksheet", tag: "Universal · Accommodation Support", desc: "Blank template for breaking any multi-step assignment into 3–4 numbered chunks." },
+      { title: "Visual Directions Card Set", type: "Graphic Organizer", tag: "Universal · Accommodation Support", desc: "Icon-based step cards for independent-work routines and transitions." },
+      { title: "Reading Comprehension Benchmark — Study Guide Video", type: "Video", tag: "Grade 7 · ELA · RL.7.1", desc: "6-minute review video covering citing evidence and identifying main idea + details." },
+      { title: "Community & Government Reading Response Rubric", type: "Rubric", tag: "Grade 7 · Social Studies", desc: "3-point rubric for short constructed responses on civics readings." },
+      { title: "Sensory Detail Bank — Slide Deck", type: "Slide Deck", tag: "Grade 7 · ELA · W.7.3", desc: "Word bank and mentor-sentence slides for adding sensory detail to narrative writing." }
+    ];
+
+    var grid = document.getElementById("resGrid");
+    var empty = document.getElementById("resEmpty");
+    var search = document.getElementById("resSearch");
+    var filters = document.getElementById("resFilters");
+    var activeCat = "all";
+
+    function cardHtml(r) {
+      return '<div class="card compact res-card" data-cat="' + r.type + '" data-text="' + (r.title + " " + r.type + " " + r.tag).toLowerCase() + '">' +
+        '<span class="icon" aria-hidden="true">' + ICONS[r.type] + '</span>' +
+        '<h3 style="font-size:1.05rem;margin-bottom:0.2rem;">' + r.title + '</h3>' +
+        '<span class="tag navy" style="margin-bottom:0.6rem;display:inline-block;">' + r.type + '</span> ' +
+        '<span class="tag" style="margin-bottom:0.6rem;display:inline-block;">' + r.tag + '</span>' +
+        '<p class="muted" style="font-size:0.88rem;">' + r.desc + '</p>' +
+        '<div class="btn-row" style="margin-top:0.6rem;">' +
+          '<button type="button" class="btn secondary small" data-toast="ok" data-toast-msg="Saved to My Resources ✓">💾 Save</button>' +
+          '<button type="button" class="btn small" data-toast="info" data-toast-msg="Downloading ' + r.title + '… (simulated)">⬇ Download</button>' +
+        '</div>' +
+      '</div>';
+    }
+
+    grid.innerHTML = resources.map(cardHtml).join("");
+
+    function applyFilters() {
+      var q = search.value.trim().toLowerCase();
+      var shown = 0;
+      grid.querySelectorAll(".res-card").forEach(function (card) {
+        var matchesCat = activeCat === "all" || card.getAttribute("data-cat") === activeCat;
+        var matchesText = !q || card.getAttribute("data-text").indexOf(q) > -1;
+        var show = matchesCat && matchesText;
+        card.classList.toggle("hidden", !show);
+        if (show) shown++;
+      });
+      empty.style.display = shown ? "none" : "block";
+    }
+
+    filters.querySelectorAll(".chip-filter").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        filters.querySelectorAll(".chip-filter").forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        activeCat = btn.getAttribute("data-cat");
+        applyFilters();
+      });
+    });
+    search.addEventListener("input", applyFilters);
+
+    applyFilters();
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forms — Inclusive Learning Hub</title>
+<meta name="description" content="Parent forms and tasks for Jordan Thompson — IEP parent input, field trip permission, and emergency contact update.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="parent" data-active="forms" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Parent navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Parent / <b>Forms</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🖊️ Forms &amp; Tasks</span>
+        <h1>Forms</h1>
+        <p class="lead">A few quick items need your attention. Each one only takes a couple of minutes — click "Complete Now" to fill it out right here.</p>
+      </div>
+
+      <div class="data-table-wrap">
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead><tr><th>Form</th><th>Due Date</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="formsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== MODAL: IEP Parent Input Form (F1) ===== -->
+      <div class="modal-overlay" id="modal-F1">
+        <div class="modal-box">
+          <div class="modal-head"><h3>Annual IEP Review — Parent Input Form</h3><button class="modal-close" type="button" data-modal-close aria-label="Close">✕</button></div>
+          <form data-form-mock data-form-id="F1" data-success-msg="Thank you — your input has been submitted ✓" data-reset-after="true">
+            <div class="modal-body">
+              <p class="muted">Your annual IEP review meeting is coming up. Sharing your thoughts ahead of time helps the team prepare — there are no wrong answers here.</p>
+              <div class="field">
+                <label for="f1-priorities">What are your top priorities for Jordan this year?</label>
+                <textarea id="f1-priorities" name="priorities" rows="3" placeholder="e.g., building reading confidence, making friends…"></textarea>
+              </div>
+              <div class="field">
+                <label for="f1-strengths">What strengths or interests should the team know about?</label>
+                <textarea id="f1-strengths" name="strengths" rows="3" placeholder="e.g., loves graphic novels, great with LEGO builds…"></textarea>
+              </div>
+              <div class="field">
+                <label for="f1-questions">Any questions or topics you'd like added to the agenda?</label>
+                <textarea id="f1-questions" name="questions" rows="3" placeholder="e.g., extended time on the state assessment…"></textarea>
+              </div>
+              <div class="field">
+                <label for="f1-time">Preferred meeting time</label>
+                <select id="f1-time" name="preferredTime">
+                  <option value="Weekday morning">Weekday morning</option>
+                  <option value="Weekday afternoon">Weekday afternoon</option>
+                  <option value="After 4pm">After 4pm</option>
+                  <option value="Virtual — any time">Virtual — any time</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-foot"><button class="btn secondary small" type="button" data-modal-close>Cancel</button><button class="btn small" type="submit">Submit Input</button></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===== MODAL: Field Trip Permission (F2) ===== -->
+      <div class="modal-overlay" id="modal-F2">
+        <div class="modal-box">
+          <div class="modal-head"><h3>Field Trip Permission — Regional Science Fair</h3><button class="modal-close" type="button" data-modal-close aria-label="Close">✕</button></div>
+          <form data-form-mock data-form-id="F2" data-success-msg="Permission form submitted ✓ Thank you!" data-reset-after="true">
+            <div class="modal-body">
+              <p class="muted">Jordan's class is invited to the Regional Science Fair. Please let us know if he has permission to attend.</p>
+              <div class="field">
+                <label for="f2-permission">Permission to attend</label>
+                <select id="f2-permission" name="permission">
+                  <option value="Yes, Jordan may attend">Yes, Jordan may attend</option>
+                  <option value="No, Jordan may not attend">No, Jordan may not attend</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f2-contact">Emergency contact for trip day</label>
+                <input type="text" id="f2-contact" name="emergencyContact" placeholder="Name and phone number">
+              </div>
+              <div class="field">
+                <label for="f2-notes">Allergies or medical notes for the trip</label>
+                <textarea id="f2-notes" name="medicalNotes" rows="2" placeholder="Leave blank if none"></textarea>
+              </div>
+            </div>
+            <div class="modal-foot"><button class="btn secondary small" type="button" data-modal-close>Cancel</button><button class="btn small" type="submit">Submit Permission</button></div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Render the parent forms list directly from the shared mock-data layer
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    var PILL = { "Complete": "good", "Not Started": "warn", "Needs Attention": "bad" };
+    var MODAL = { "F1": "modal-F1", "F2": "modal-F2" };
+
+    document.getElementById("formsBody").innerHTML = D.forms.map(function (f) {
+      var pill = PILL[f.status] || "neutral";
+      var action = f.status === "Complete"
+        ? '<span class="muted">✓ Done</span>'
+        : (MODAL[f.id] ? '<button class="btn small" type="button" data-modal-open="' + MODAL[f.id] + '">Complete Now</button>' : '<span class="muted">—</span>');
+      return '<tr id="form-row-' + f.id + '"><td><b>' + esc(f.title) + '</b></td><td>' + f.due + '</td>' +
+        '<td><span class="status-pill ' + pill + '" id="form-status-' + f.id + '">' + esc(f.status) + '</span></td>' +
+        '<td>' + action + '</td></tr>';
+    }).join("");
+
+    // When a mock form inside a modal is submitted, close the modal and mark the row Complete.
+    document.querySelectorAll("form[data-form-id]").forEach(function (form) {
+      form.addEventListener("submit", function () {
+        var id = form.getAttribute("data-form-id");
+        var pill = document.getElementById("form-status-" + id);
+        if (pill) { pill.textContent = "Complete"; pill.className = "status-pill good"; }
+        var row = document.getElementById("form-row-" + id);
+        if (row) { var td = row.lastElementChild; td.innerHTML = '<span class="muted">✓ Done</span>'; }
+        var modal = form.closest(".modal-overlay");
+        if (modal) setTimeout(function () { modal.classList.remove("open"); }, 400);
+      });
+    });
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

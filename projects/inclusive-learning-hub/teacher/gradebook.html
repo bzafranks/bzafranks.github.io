@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradebook — Inclusive Learning Hub</title>
+<meta name="description" content="Full gradebook for Patricia Nguyen's Grade 7 ELA class — assignment and assessment scores for all 6 students with running averages.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="gradebook" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Gradebook</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🍎 Teacher Portal</span>
+        <h1>Gradebook — Grade 7 ELA</h1>
+        <p class="lead">Assignment and assessment scores for all 6 students in Patricia Nguyen's Grade 7 ELA roster (Period 2), with a running average and status for each student.</p>
+      </div>
+
+      <div class="btn-row" style="margin-bottom:1.2rem;">
+        <button class="btn secondary" type="button" data-toast="ok" data-toast-msg="📤 Grades exported to CSV (simulated — portfolio demo).">⬇ Export Grades</button>
+        <a class="btn secondary" href="assignments.html">📋 Manage Assignments</a>
+        <a class="btn secondary" href="assessments.html">🧪 Manage Assessments</a>
+      </div>
+
+      <!-- ===== GRADEBOOK TABLE ===== -->
+      <div class="data-table-wrap" style="overflow-x:auto;">
+        <div class="table-wrap" style="margin:0;box-shadow:none;">
+          <table id="gradeTable">
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th title="Character Trait Web (graphic organizer)">Character<br>Trait Web</th>
+                <th title="Personal Narrative — First Draft">Narrative<br>First Draft</th>
+                <th title="Narrator Voice Reading Log">Reading<br>Log</th>
+                <th title="Point-of-View Exit Ticket">POV Exit<br>Ticket</th>
+                <th title="Narrative Perspective Check">Narrative<br>Perspective Quiz</th>
+                <th title="Character Development Assessment">Character Dev.<br>Assessment</th>
+                <th title="Reading Comprehension Benchmark">Reading<br>Benchmark</th>
+                <th>Running<br>Average</th>
+              </tr>
+            </thead>
+            <tbody id="gradeRows"></tbody>
+          </table>
+        </div>
+        <div class="table-foot">Columns map to <code>ILH.assignments</code> / <code>ILH.assessments</code> (AG2, AG3, AS1–AS3) plus two graded illustrative assignments (Reading Log, POV Exit Ticket) that also appear on the Assignments page. Running average is calculated from the 5 numerically graded columns only.</div>
+      </div>
+
+      <!-- ===== LEGEND ===== -->
+      <div class="card compact" style="margin-top:1.4rem;">
+        <h4 style="margin-top:0;">Legend</h4>
+        <div class="filter-row" style="margin-bottom:0;">
+          <span class="status-pill good">≥ 80% — On Track</span>
+          <span class="status-pill warn">70–79% — Needs Support</span>
+          <span class="status-pill bad">&lt; 70% — At Risk</span>
+          <span class="status-pill info">Submitted, Not Yet Graded</span>
+          <span class="status-pill neutral">Not Started</span>
+        </div>
+      </div>
+
+      <div class="callout note" style="margin-top:1.2rem;">
+        <h4>🧑‍🎓 A Note on Jordan Thompson's Row</h4>
+        <p class="mb0">Jordan was excused-absent on 2026-07-06 (the date the POV Exit Ticket was administered — see his attendance log), so that cell shows a make-up status rather than a score. His three graded assessment scores (74, 71, 68) and Reading Log score (72) match <code>ILH.jordanAssessmentScores</code> and drive a running average of 71% — consistent with his <code>academicStatus: "needs-support"</code> in the roster.</p>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    // Per-student scores for the 7 gradebook columns. Jordan Thompson's values are pulled
+    // directly from ILH.jordanAssessmentScores / ILH.jordanAssignmentStatus / ILH.jordanAttendanceLog
+    // so his row stays consistent everywhere he appears. Other roster members' scores are
+    // illustrative but internally consistent with the submission counts shown on Assignments.html.
+    var grades = {
+      S01: { AG2: "Submitted", AG3: "Not Started", AG5: 72, AG8: "Excused", AS1: 74, AS2: 71, AS3: 68 }, // Jordan Thompson
+      S06: { AG2: "Submitted", AG3: "Not Started", AG5: 90, AG8: 88, AS1: 88, AS2: 85, AS3: 83 },        // Isabella Rossi
+      S10: { AG2: "Submitted", AG3: "Not Started", AG5: 84, AG8: 80, AS1: 83, AS2: 80, AS3: 78 },        // Amara Johnson
+      S14: { AG2: "In Progress", AG3: "Not Started", AG5: 75, AG8: 70, AS1: 76, AS2: 69, AS3: 65 },      // Grace Okonkwo
+      S18: { AG2: "Submitted", AG3: "Not Started", AG5: 92, AG8: 90, AS1: 91, AS2: 87, AS3: 85 },        // Olivia Santos
+      S22: { AG2: "In Progress", AG3: "Not Started", AG5: 88, AG8: 85, AS1: 85, AS2: 82, AS3: 80 }       // Layla Haddad
+    };
+    var NUMERIC_COLS = ["AG5", "AG8", "AS1", "AS2", "AS3"];
+
+    function scoreCell(v) {
+      if (typeof v === "number") {
+        var pill = v >= 80 ? "good" : (v >= 70 ? "warn" : "bad");
+        return '<span class="status-pill ' + pill + '">' + v + '%</span>';
+      }
+      var map = { "Submitted": "info", "In Progress": "info", "Not Started": "neutral", "Excused": "neutral" };
+      var label = v === "Excused" ? "Excused — Make-up 7/13" : v;
+      return '<span class="status-pill ' + (map[v] || "neutral") + '">' + esc(label) + '</span>';
+    }
+
+    function runningAverage(row) {
+      var sum = 0, n = 0;
+      NUMERIC_COLS.forEach(function (c) { if (typeof row[c] === "number") { sum += row[c]; n++; } });
+      return n ? Math.round(sum / n) : null;
+    }
+    function avgPill(v) {
+      if (v == null) return '<span class="status-pill neutral">—</span>';
+      var pill = v >= 80 ? "good" : (v >= 70 ? "warn" : "bad");
+      return '<span class="status-pill ' + pill + '">' + v + '%</span>';
+    }
+
+    var rowsHtml = D.g7elaRoster.map(function (id) {
+      var s = D.getStudent(id);
+      var row = grades[id] || {};
+      var avg = runningAverage(row);
+      return '<tr>' +
+        '<td><a href="../shared/student-profile.html?id=' + s.id + '" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--navy);font-weight:700;">' +
+          '<span class="avatar-circ sm" style="background:' + s.color + '">' + s.initials + '</span>' + esc(s.name) +
+        '</a></td>' +
+        '<td>' + scoreCell(row.AG2) + '</td>' +
+        '<td>' + scoreCell(row.AG3) + '</td>' +
+        '<td>' + scoreCell(row.AG5) + '</td>' +
+        '<td>' + scoreCell(row.AG8) + '</td>' +
+        '<td>' + scoreCell(row.AS1) + '</td>' +
+        '<td>' + scoreCell(row.AS2) + '</td>' +
+        '<td>' + scoreCell(row.AS3) + '</td>' +
+        '<td>' + avgPill(avg) + '</td>' +
+        '</tr>';
+    }).join("");
+
+    document.getElementById("gradeRows").innerHTML = rowsHtml;
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

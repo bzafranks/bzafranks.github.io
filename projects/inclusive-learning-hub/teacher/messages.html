@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messages — Inclusive Learning Hub</title>
+<meta name="description" content="Teacher message center: two-pane conversation view for communicating with parents and the student-support team.">
+<link rel="stylesheet" href="../../../assets/css/design-system.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-role="teacher" data-active="messages" data-project="Inclusive Learning Hub" data-project-root="../../../" data-ilh-a11y>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true">ILH</span><span class="brand-text"><span class="brand-title">Inclusive Learning Hub</span><span class="brand-sub">Dr. Barbara Z. Franks · Portfolio</span></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../demo.html">Switch Role</a></li>
+      <li><a href="../project-overview.html">Project Overview</a></li>
+      <li><a href="../case-study.html">Case Study</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="app-shell">
+    <button class="btn secondary small rail-toggle" type="button" data-rail-toggle style="margin-bottom:0.6rem;">☰ Menu</button>
+    <aside class="app-rail" id="appRail" aria-label="Teacher navigation"></aside>
+
+    <section class="app-main">
+      <div class="app-bar">
+        <div class="crumb">Teacher / <b>Messages</b></div>
+        <div class="app-actions" id="hdrTools"></div>
+      </div>
+
+      <div class="tool-head">
+        <span class="tool-badge">🍎 Teacher Portal</span>
+        <h1>Messages</h1>
+        <p class="lead">Conversations with families and the student-support team, in one place.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:minmax(260px,320px) 1fr;gap:1.2rem;align-items:start;">
+
+        <!-- ===== THREAD LIST ===== -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 6px 20px var(--shadow);overflow:hidden;">
+          <div style="padding:0.9rem 1.1rem;border-bottom:1px solid var(--border);font-weight:700;">Conversations</div>
+          <div id="threadList"></div>
+        </div>
+
+        <!-- ===== CHAT VIEW ===== -->
+        <div class="chat">
+          <div class="chat-head">
+            <span class="bot" id="chatAvatar">MT</span>
+            <div>
+              <b id="chatName">Maria Thompson</b><br>
+              <small style="font-weight:400;opacity:0.85;" id="chatRole">Parent of Jordan Thompson</small>
+            </div>
+          </div>
+          <div class="chat-log" id="chatLog"></div>
+          <form id="composeForm" style="display:flex;gap:0.6rem;padding:0.9rem 1.2rem;border-top:1px solid var(--border);align-items:flex-end;">
+            <textarea id="composeText" rows="1" placeholder="Type a message…" aria-label="Message text" required style="flex:1;resize:none;padding:0.65rem 0.95rem;border:1.5px solid var(--border);border-radius:16px;font:inherit;font-size:0.92rem;background:var(--surface-alt);color:var(--ink);"></textarea>
+            <button type="submit" class="btn small">Send</button>
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Inclusive Learning Hub</h4><p style="color:#c9d6e6;">A unified LMS, SIS, CMS, and student support platform — portfolio concept prototype by Dr. Barbara Z. Franks.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="../demo.html">Demo Role Selector</a></li><li><a href="../project-overview.html">Project Overview</a></li><li><a href="../case-study.html">Case Study</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="../../../index.html">All Projects</a></li><li><a href="../../../contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">© Dr. Barbara Z. Franks · Conceptual portfolio prototype — no real student data.</div>
+  </div>
+</footer>
+
+<script src="../../../assets/js/portfolio.js"></script>
+<script src="../mock-data.js"></script>
+<script>
+  // Message center — the Maria Thompson, Rachel Whitfield, and Emily Castillo threads are
+  // seeded from ILH.messages (MS1/MS3/MS2); a couple of follow-up lines were added per
+  // thread so the conversation reads naturally, plus two fully illustrative threads
+  // (another parent, a paraprofessional) to show the center scaling across a caseload.
+  (function () {
+    var D = window.ILH;
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    var seedMS1 = D.messages[0], seedMS2 = D.messages[1], seedMS3 = D.messages[2];
+
+    var threads = [
+      {
+        id: "t1", name: "Maria Thompson", role: "Parent of Jordan Thompson", initials: "MT", color: "#5b8c5a",
+        messages: [
+          { who: "user", from: "Patricia Nguyen", date: seedMS1.date, text: seedMS1.body },
+          { who: "coach", from: "Maria Thompson", date: "2026-07-09", text: "Thank you so much for letting me know! He's been really into graphic novels lately — glad to hear that's carrying over into his writing." },
+          { who: "user", from: "Patricia Nguyen", date: "2026-07-10", text: "It really is! I'm planning to lean into that interest as he starts drafting his personal narrative this week." }
+        ]
+      },
+      {
+        id: "t2", name: "Rachel Whitfield", role: "Case Manager · Special Education", initials: "RW", color: "#b0507e",
+        messages: [
+          { who: "coach", from: "Rachel Whitfield", date: seedMS3.date, text: "Quick heads up — " + esc(seedMS3.body) },
+          { who: "user", from: "Patricia Nguyen", date: "2026-07-06", text: "Good to know — extended time has been working really well for him on ELA assessments. I'll support that request at the meeting." },
+          { who: "coach", from: "Rachel Whitfield", date: "2026-07-07", text: "Perfect, I'll add your notes to the review packet. The annual review meeting is confirmed for January 15." }
+        ]
+      },
+      {
+        id: "t3", name: "Emily Castillo", role: "Speech-Language Therapist", initials: "EC", color: "#3a6ea5",
+        messages: [
+          { who: "coach", from: "Emily Castillo", date: seedMS2.date, text: seedMS2.body },
+          { who: "user", from: "Patricia Nguyen", date: "2026-07-08", text: "That's wonderful — I've noticed he's more willing to share out during partner discussions too. I'll keep giving him low-pressure chances to practice." }
+        ]
+      },
+      {
+        id: "t4", name: "Adaeze Okonkwo", role: "Parent of Grace Okonkwo", initials: "AO", color: "#5b8c5a",
+        messages: [
+          { who: "coach", from: "Adaeze Okonkwo", date: "2026-07-09", text: "Hi Ms. Nguyen — Grace mentioned she revised her essay draft today. Is there anything we should be practicing at home with her 504 writing supports?" },
+          { who: "user", from: "Patricia Nguyen", date: "2026-07-10", text: "Great question! Reading her draft aloud together and checking that each paragraph has a clear topic sentence would help — she's close to hitting her writing goal." }
+        ]
+      },
+      {
+        id: "t5", name: "Priya Patel", role: "Paraprofessional", initials: "PP", color: "#3a6ea5",
+        messages: [
+          { who: "coach", from: "Priya Patel", date: "2026-07-09", text: "Jordan used his visual planner independently for the Character Trait Web today — only needed one check-in prompt. Executive functioning goal data logged." },
+          { who: "user", from: "Patricia Nguyen", date: "2026-07-09", text: "Awesome, thank you for tracking that! I'll mention it in my note home to his mom today." }
+        ]
+      }
+    ];
+
+    var activeId = "t1";
+    var listEl = document.getElementById("threadList");
+    var logEl = document.getElementById("chatLog");
+    var nameEl = document.getElementById("chatName");
+    var roleEl = document.getElementById("chatRole");
+    var avatarEl = document.getElementById("chatAvatar");
+
+    function findThread(id) { return threads.filter(function (t) { return t.id === id; })[0]; }
+    function fmtDate(d) { return d; }
+
+    function renderList() {
+      listEl.innerHTML = threads.map(function (t) {
+        var last = t.messages[t.messages.length - 1];
+        var active = t.id === activeId;
+        return '<button type="button" class="thread-item" data-thread="' + t.id + '" style="display:flex;gap:0.7rem;align-items:center;width:100%;text-align:left;background:' + (active ? "var(--ilh-glow)" : "none") + ';border:none;border-bottom:1px solid var(--border);padding:0.8rem 1rem;cursor:pointer;font:inherit;">' +
+          '<span class="avatar-circ sm" style="background:' + t.color + ';">' + t.initials + '</span>' +
+          '<span style="flex:1;min-width:0;">' +
+            '<b style="display:block;font-size:0.92rem;color:var(--ink);">' + esc(t.name) + '</b>' +
+            '<small class="muted" style="display:block;font-size:0.76rem;">' + esc(t.role) + '</small>' +
+            '<small class="muted" style="display:block;font-size:0.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;">' + esc(last.text) + '</small>' +
+          '</span>' +
+          '<small class="muted" style="font-size:0.7rem;white-space:nowrap;">' + fmtDate(last.date).slice(5) + '</small>' +
+        '</button>';
+      }).join("");
+
+      listEl.querySelectorAll("[data-thread]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          activeId = btn.getAttribute("data-thread");
+          renderList();
+          renderChat();
+        });
+      });
+    }
+
+    function renderChat() {
+      var t = findThread(activeId);
+      nameEl.textContent = t.name;
+      roleEl.textContent = t.role;
+      avatarEl.textContent = t.initials;
+      avatarEl.style.background = "rgba(255,255,255,0.2)";
+      logEl.innerHTML = t.messages.map(function (m) {
+        return '<div class="chat-msg ' + m.who + '"><span class="who">' + esc(m.from) + ' · ' + m.date + '</span>' + esc(m.text) + '</div>';
+      }).join("");
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    document.getElementById("composeForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var box = document.getElementById("composeText");
+      var text = box.value.trim();
+      if (!text) return;
+      var t = findThread(activeId);
+      t.messages.push({ who: "user", from: "Patricia Nguyen", date: (D.meta && D.meta.today) || "2026-07-12", text: text });
+      box.value = "";
+      renderList();
+      renderChat();
+      if (window.ILH_UI) window.ILH_UI.toast("Message sent ✓", "ok");
+    });
+
+    renderList();
+    renderChat();
+  })();
+</script>
+<script src="../script.js"></script>
+</body>
+</html>
