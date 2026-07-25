@@ -367,5 +367,17 @@ window.PORTFOLIO_PROJECTS = [
     icon: "🏫",
     tags: ["LMS", "SIS", "Special Education", "Therapy Scheduling", "UDL", "Accessibility", "School Analytics"],
     summary: "A full product-design and front-end prototype of an inclusive school platform that unifies learning management, student information, curriculum, special education management, therapy scheduling, and school analytics into one system. Six role-based portals (Administrator, Teacher, Parent, Student, Paraprofessional, Speech-Language Therapist) share a single student record — 24 mock students, 6 teachers, 4 paraprofessionals, 3 therapists, 8 courses — so an IEP goal, an accommodation, or a therapy session shows up consistently in every portal that needs it. Includes a 12-tab shared Student Profile, a blended Course & Lesson experience with a UDL lesson planner and a 'Choose How to Respond' pattern, a multi-view Scheduling demo with live conflict detection, and a real, full-featured accessibility toolbar (text sizing, high contrast, dark mode, dyslexia font, reading-focus mode, reduced motion, genuine text-to-speech) available across every role. Built around Universal Design for Learning and plain-language family communication as core architecture, not add-ons."
+  },
+  {
+    id: "scholarsearch-ai",
+    title: "ScholarSearch AI",
+    subtitle: "AI-powered academic headhunting & recruitment for universities",
+    pillar: "il",
+    grade: "Higher Ed · Recruitment Platform",
+    status: "done",
+    url: "https://scholarsearch-ai-pi.vercel.app",
+    icon: "🎓",
+    tags: ["AI Recruitment", "Higher Education HR", "Search Committees", "Candidate Matching", "Governance & Human Oversight", "Next.js"],
+    summary: "A full-stack, live-deployed SaaS platform that manages the entire academic recruitment lifecycle for a fictional university — from workforce planning and AI-drafted job advertisements through candidate sourcing, eligibility screening, search-committee evaluation, teaching demonstrations, finalist comparison, department-chair recommendation, and a formal HR handoff. Ten role-based perspectives (recruiter, chair, dean, search committee, executive, HR officer, candidate, and more) share one recruitment file, walked through via a featured 18-applicant demo search. AI drafts, summarizes, scores, and compares throughout — via a provider-agnostic AI service layer with a floating recruitment assistant — but every eligibility call, evaluation, and hiring recommendation requires explicit human approval, with a dedicated governance center documenting what AI is (and is explicitly not) permitted to do. Built with Next.js 16, TypeScript, Tailwind, and a hand-built shadcn-style component system; includes a separate candidate-facing portal and a downloadable PDF candidate dossier. Live demo + source on GitHub."
   }
 ];
