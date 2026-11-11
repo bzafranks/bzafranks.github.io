@@ -1,5 +1,5 @@
 /* =====================================================================
-   D.R.E.A.M. Education Solutions — Portfolio shared JavaScript
+   D.R.E.A.M. Learning Solutions — Portfolio shared JavaScript
    ---------------------------------------------------------------------
    One module for the whole portfolio. Includes:
      • Portfolio chrome: mobile nav, active nav, project-page ribbon

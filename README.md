@@ -14,7 +14,7 @@
 **Innovative Learning Solutions for Schools, Districts, Ministries of Education, and EdTech Organizations.**
 
 The **personal professional portfolio of Dr. Barbara Z. Franks** — educator, instructional
-designer, curriculum developer, and academic leader (President & CEO of D.R.E.A.M. Education
+designer, curriculum developer, and academic leader (President & CEO of D.R.E.A.M. Learning
 Solutions, a separate organization with its own website). A growing collection of complete
 instructional-design and instructional-leadership solutions, all built on one shared design
 system so the whole portfolio feels like a single premium educational platform.
@@ -89,4 +89,4 @@ AI). The design system is built to absorb them with zero redesign.
 
 ---
 *All content is original and created for demonstration. Standards reference the Common Core State
-Standards. © D.R.E.A.M. Education Solutions.*
+Standards. © D.R.E.A.M. Learning Solutions LLC.*

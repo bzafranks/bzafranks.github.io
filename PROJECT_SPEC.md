@@ -4,13 +4,13 @@
 
 ## 1. Summary
 The umbrella **monorepo + shared design system** for Dr. Barbara Z. Franks' portfolio
-(D.R.E.A.M. Education Solutions). Static site (HTML/CSS/JS, no deps, `localStorage`), hosted as a
+(D.R.E.A.M. Learning Solutions). Static site (HTML/CSS/JS, no deps, `localStorage`), hosted as a
 **GitHub user site** at the repo `bzafranks.github.io` → root domain `https://bzafranks.github.io/`.
 Every project shares ONE `design-system.css` + `portfolio.js`. Two pillars: **Instructional
 Design** (gold) and **Instructional Leadership** (teal).
 
 ## 2. Brand
-D.R.E.A.M. Education Solutions · Dr. Barbara Z. Franks, President & CEO ·
+D.R.E.A.M. Learning Solutions · Dr. Barbara Z. Franks, President & CEO ·
 barbara.franks@mydreamedu.org · GitHub github.com/bzafranks. Subtitle: "Innovative Learning
 Solutions for Schools, Districts, Ministries of Education, and EdTech Organizations."
 

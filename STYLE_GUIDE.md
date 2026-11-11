@@ -1,4 +1,4 @@
-# D.R.E.A.M. Education Solutions — Portfolio Style Guide
+# D.R.E.A.M. Learning Solutions — Portfolio Style Guide
 
 The contract every project follows so the portfolio reads as one premium platform.
 This is the written companion to the living style guide at `design-system.html`.
@@ -6,7 +6,7 @@ This is the written companion to the living style guide at `design-system.html`.
 ---
 
 ## 1. Brand & Voice
-- **Brand:** D.R.E.A.M. Education Solutions · **Owner:** Dr. Barbara Z. Franks, President & CEO.
+- **Brand:** D.R.E.A.M. Learning Solutions · **Owner:** Dr. Barbara Z. Franks, President & CEO.
 - **Portfolio:** Curriculum Innovation & Instructional Design Portfolio.
 - **Subtitle:** Innovative Learning Solutions for Schools, Districts, Ministries of Education, and EdTech Organizations.
 - **Personality:** authoritative, modern, warm, evidence-based. Academic credibility (serif
