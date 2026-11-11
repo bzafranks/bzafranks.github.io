@@ -15,7 +15,7 @@ Educational leaders shape school performance, teacher retention, culture, and st
 
 ## Framework philosophy
 
-Growth over compliance. Six integrated leadership domains — **Visionary · Instructional · People · Strategic · Operational · Ethical** — each with standards, observable behaviors, evidence sources, growth indicators, and coaching strategies. A through-line to Dr. Franks' doctoral research connects leadership growth to teacher satisfaction, culture, and retention.
+Growth over compliance. Six integrated leadership domains — **Visionary · Instructional · People · Organizational · Community · Ethical** — each with standards, observable behaviors, evidence sources, growth indicators, and coaching strategies. A through-line to Dr. Franks' doctoral research connects leadership growth to teacher satisfaction, culture, and retention.
 
 > All figures throughout the site are **illustrative sample data**. The self-assessment, growth-plan builder, and reflection journal save locally in the browser via `localStorage`.
 

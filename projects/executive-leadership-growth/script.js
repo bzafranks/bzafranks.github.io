@@ -18,8 +18,8 @@
     { id: "visionary",     name: "Visionary Leadership",     ico: "🔭" },
     { id: "instructional", name: "Instructional Leadership",  ico: "📚" },
     { id: "people",        name: "People Leadership",         ico: "🤝" },
-    { id: "strategic",     name: "Strategic Leadership",      ico: "🎯" },
-    { id: "operational",   name: "Operational Leadership",    ico: "🏛️" },
+    { id: "organizational", name: "Organizational Leadership", ico: "🏛️" },
+    { id: "community",     name: "Community Leadership",      ico: "🌍" },
     { id: "ethical",       name: "Ethical Leadership",        ico: "⚖️" }
   ];
 
@@ -118,8 +118,8 @@
       visionary: "co-create &amp; communicate a compelling vision with measurable goals.",
       instructional: "increase instructional walkthroughs &amp; feedback cycles.",
       people: "deepen recognition, trust &amp; retention-focused leadership behaviors.",
-      strategic: "align resources to a few high-leverage strategic priorities.",
-      operational: "streamline systems &amp; protect time for instructional leadership.",
+      organizational: "align resources to a few high-leverage priorities &amp; streamline systems to protect instructional time.",
+      community: "strengthen two-way communication &amp; partnerships with families.",
       ethical: "make values-based, transparent, equity-centered decisions visible."
     }[id]; }
   }
