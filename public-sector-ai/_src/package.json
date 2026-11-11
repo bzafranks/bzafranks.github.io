@@ -1,0 +1,14 @@
+{
+  "name": "public-sector-ai-build",
+  "private": true,
+  "description": "Builds /public-sector-ai/ pages and the PDF capability portfolio from content.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "pdf": "node build.mjs --pdf",
+    "strict": "node build.mjs --pdf --strict"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
