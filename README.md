@@ -40,6 +40,7 @@ bzafranks.github.io/            ← root domain = portfolio home
 ├── assets/
 │   ├── css/design-system.css   THE shared design system (single source of truth)
 │   ├── js/portfolio.js         Shared components + homepage logic
+│   ├── js/listen.js            "Listen" text-to-speech reader (auto-loaded by portfolio.js)
 │   ├── js/projects-data.js     Project registry — add 1 entry to publish a project
 │   └── img/
 ├── templates/                  project / lesson / case-study starters
@@ -59,7 +60,9 @@ bzafranks.github.io/            ← root domain = portfolio home
   accordions, tables, AI video player, quiz, flashcards, drag-and-drop, fill-in-blank, progress
   trackers, dashboards, achievement badges, reflection, annotation — all in one CSS + JS pair.
 - **Accessibility:** UDL-minded, keyboard support, captions, color-plus-text, print styles,
-  reduced-motion.
+  reduced-motion, and a **Listen** button on every page that reads the main content aloud with the
+  browser's built-in voices (play/pause, back/next, speed, voice; highlights the part being read).
+  Add `class="listen-skip"` to leave an element out, or `data-listen` to make any button start it.
 
 ## ➕ Adding a new project (no redesign required)
 1. Copy `templates/project-template.html` (and `lesson-template.html`) into `projects/<your-project>/`.

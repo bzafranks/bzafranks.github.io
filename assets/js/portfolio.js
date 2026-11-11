@@ -11,6 +11,17 @@
    only needs the markup for what it uses.
    ===================================================================== */
 
+/* Load the "Listen" text-to-speech reader (assets/js/listen.js) next to
+   this file, so every page that includes portfolio.js gets it. */
+(function () {
+  var me = document.currentScript;
+  if (!me || !me.src || document.querySelector("script[data-listen-loader]")) return;
+  var s = document.createElement("script");
+  s.src = me.src.replace(/portfolio\.js(\?.*)?$/, "listen.js");
+  s.async = true; s.setAttribute("data-listen-loader", "");
+  document.head.appendChild(s);
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   initNav();
   initActiveNav();
@@ -60,6 +71,7 @@ function initA11yToolbar() {
   btn("Toggle readable font and spacing", "𝐀", function () { st.readable = !st.readable; apply(); });
   var speaking = false;
   btn("Read page aloud", "🔊", function () {
+    if (window.PortfolioListen) { window.PortfolioListen.toggle(); return; }
     if (!("speechSynthesis" in window)) return;
     if (speaking) { window.speechSynthesis.cancel(); speaking = false; return; }
     var main = document.getElementById("main") || document.body;
