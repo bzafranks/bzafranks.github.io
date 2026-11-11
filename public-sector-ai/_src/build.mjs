@@ -32,7 +32,7 @@ const args = new Set(process.argv.slice(2));
 /* ---------- helpers ---------- */
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const EV = { A: "Verified experience", B: "Public source", C: "Proposed", D: "Illustrative" };
-const ev = (k, txt) => `<span class="x-ev ${k}" title="Evidence category ${k}: ${esc(EV[k])}"><b>${k}</b>${esc(txt || EV[k])}</span>`;
+const ev = (k, txt) => `<span class="x-ev ${k}" title="${esc(EV[k])}">${esc(txt || EV[k])}</span>`;
 const pendingCount = { n: 0, items: [] };
 const pend = (src, what) => {
   if (src !== C.PENDING) return "";
@@ -746,7 +746,7 @@ function pagePrint() {
     <div class="pcta">
       <div><h3>Request a strategic consultation</h3><p><a href="${CONSULT}">${esc(P.email)}</a> · <a href="${P.linkedin}">LinkedIn</a> · <a href="${B}">Online portfolio</a> · <a href="${C.meta.siteUrl}assets/docs/Dr-Barbara-Z-Franks-CV.pdf">Full CV</a></p></div>
     </div>
-    <p class="pdisc"><strong>Evidence key:</strong> ${C.evidenceKey.map((k) => `${k.k} = ${esc(k.h)}`).join("; ")}. <strong>Independence:</strong> ${esc(C.disclaimer)} Full register: <a href="${B}sources.html">${B.replace("https://", "")}sources.html</a>.</p>
+    <p class="pdisc"><strong>Labels:</strong> ${C.evidenceKey.map((k) => `${esc(EV[k.k])} = ${esc(k.h.toLowerCase())}`).join("; ")}. <strong>Independence:</strong> ${esc(C.disclaimer)} Full register: <a href="${B}sources.html">${B.replace("https://", "")}sources.html</a>.</p>
     ${foot(7)}
   </section>`;
   return `<!DOCTYPE html>
