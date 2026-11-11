@@ -1,6 +1,6 @@
 # Public Sector AI Workforce Portfolio (`/public-sector-ai/`)
 
-This is an executive portfolio section for public service AI workforce development and digital transformation, with the Bahamas Ministry of Innovation and National Development as its target audience. It is a separate addition to the main portfolio, and no existing page was changed.
+This is an executive portfolio section for public service AI workforce development and digital transformation, with the Bahamas Ministry of Innovation and National Development as its target audience. It is a separate addition to the main portfolio. The only change outside this folder is two links on the homepage.
 
 Live URL once merged to `main`: <https://bzafranks.github.io/public-sector-ai/>
 
@@ -48,4 +48,4 @@ Every claim is tagged with one of four categories: **A** verified professional a
 
 GitHub Pages publishes `main` automatically. This work lives on a feature branch. Merging the pull request to `main` publishes it, so merge only when you're ready.
 
-The section isn't linked from the main navigation yet, so it is reachable by URL only. To link it, add a link to `index.html` (for example, the "Ministry / System Leader" card) or to the site nav.
+The homepage (`/index.html`) links here from a hero button and from the "Ministry / System Leader" card.

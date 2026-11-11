@@ -584,7 +584,7 @@ function pageSources() {
             <td data-th="Finding">${esc(s.finding)}<small>${esc(s.relevance)}</small></td>
             <td data-th="Source"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source)}</a><small>${esc(s.type)}</small></td>
             <td data-th="Date">${esc(s.date)}</td>
-            <td data-th="Status"><span class="x-status ${s.status}">${esc(C.statusLabels[s.status])}</span></td>
+            <td data-th="Status"><span class="x-status ${s.status}">${esc(s.statusLabel || C.statusLabels[s.status])}</span></td>
           </tr>`).join("");
   const body = `
     <section class="x-page-hero">
@@ -604,7 +604,7 @@ function pageSources() {
     <section class="section section-warm">
       <div class="container">
         <h2>Ministry and government context ${ev("B")}</h2>
-        <p class="x-note">Items from mindbahamas.com are labelled "Ministry website". That site presents itself as the Ministry's, but it is not on a .gov.bs domain, and on the review date no .gov.bs page linked to it. Its claims should be confirmed with the Ministry before anyone relies on them.</p>
+        <p class="x-note">Items marked "per Ministry website" use the status labels shown on the Ministry's own site (mindbahamas.com) on the review date. Other items come from Bahamas Information Services, other .gov.bs pages, the national broadcaster or press reporting, as noted.</p>
         <div class="table-wrap">
           <table class="x-table">
             <caption class="sr-only">Reference register of government initiatives</caption>
@@ -742,7 +742,7 @@ function pagePrint() {
     <p>${esc(C.engagement.intro)}</p>
     <div class="proles">${C.engagement.roles.map((r) => `<div><strong>${esc(r.h)}</strong><span>${esc(r.p)}</span></div>`).join("")}</div>
     <h3 class="pmt">Alignment with documented priorities ${ev("B")}</h3>
-    <ul class="psrc">${C.sources.filter((s) => ["mind-pillars", "ai-literacy-bis", "m365", "future-skills", "ai-committee"].includes(s.id)).map((s) => `<li>${esc(s.finding)} <em>(${esc(C.statusLabels[s.status])}; <a href="${esc(s.url)}">${esc(s.source.split(":")[0])}</a>, ${esc(s.date)})</em></li>`).join("")}</ul>
+    <ul class="psrc">${C.sources.filter((s) => ["mind-pillars", "ai-literacy-bis", "m365", "future-skills", "ai-committee"].includes(s.id)).map((s) => `<li>${esc(s.finding)} <em>(${esc(s.statusLabel || C.statusLabels[s.status])}; <a href="${esc(s.url)}">${esc(s.source.split(":")[0])}</a>, ${esc(s.date)})</em></li>`).join("")}</ul>
     <div class="pcta">
       <div><h3>Request a strategic consultation</h3><p><a href="${CONSULT}">${esc(P.email)}</a> · <a href="${P.linkedin}">LinkedIn</a> · <a href="${B}">Online portfolio</a> · <a href="${C.meta.siteUrl}assets/docs/Dr-Barbara-Z-Franks-CV.pdf">Full CV</a></p></div>
     </div>
