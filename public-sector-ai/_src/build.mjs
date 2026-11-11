@@ -141,7 +141,7 @@ function diagramHtml(d) {
   if (d.kind === "flow") inner = `<ol class="x-flow">${li(d.steps)}</ol>`;
   if (d.kind === "cycle") inner = `<ol class="x-cycle">${li(d.steps)}</ol><p class="x-cycle-ret" aria-hidden="true">↺ repeat the cycle</p>`;
   if (d.kind === "hub") inner = `<div class="x-hub"><div class="c">${esc(d.center)}</div><ul>${li(d.steps)}</ul></div>`;
-  return `<figure class="x-diagram" aria-label="${esc(d.caption)}">${inner}<figcaption>${ev("D")} ${esc(d.caption)}</figcaption></figure>`;
+  return `<figure class="x-diagram" aria-label="${esc(d.caption)}">${inner}<figcaption>${esc(d.caption)}</figcaption></figure>`;
 }
 
 function frameworkHtml() {
@@ -222,7 +222,7 @@ function pageIndex() {
     <!-- 2. WHY THIS WORK MATTERS -->
     <section class="section" id="why" aria-labelledby="why-h">
       <div class="container">
-        <p class="x-note">${ev("C", "Perspective")} ${esc(C.why.label)}</p>
+        <p class="x-note">${esc(C.why.label)}</p>
         <div class="x-why">
           <div>
             <p class="eyebrow">Why this work matters</p>
@@ -241,7 +241,7 @@ function pageIndex() {
         <div class="section-head">
           <p class="eyebrow">Expertise &amp; capabilities</p>
           <h2 id="cap-h">An executive capability matrix</h2>
-          <p class="muted">Each capability shows what it involves, the institutional challenge it addresses, possible deliverables ${ev("C")}, and the verified experience behind it ${ev("A")}.</p>
+          <p class="muted">Each capability shows what it involves, the institutional challenge it addresses, possible deliverables, and the verified experience behind it.</p>
         </div>
         <div class="x-matrix">${C.capabilities.map((c, i) => `
           <article class="x-cap" data-fade>
@@ -265,7 +265,7 @@ function pageIndex() {
         <div class="section-head">
           <p class="eyebrow">Selected case studies</p>
           <h2 id="cases-h">Evidence from complex learning systems and institutions</h2>
-          <p class="muted">Four case studies drawn from my professional experience. Each one separates documented work ${ev("A")} from proposed public service applications ${ev("C")}.</p>
+          <p class="muted">Four case studies drawn from my professional experience. Each one separates what I have documented from how it could apply in the public service.</p>
         </div>
         <div class="x-cases">${C.caseStudies.map((cs) => `
           <a class="x-case" href="case-studies.html#${cs.id}" data-fade>
@@ -289,7 +289,7 @@ function pageIndex() {
           <h2 id="fw-h">${esc(C.framework.name)}</h2>
           <p class="muted">Five learning levels, from individual AI literacy to sustained organizational performance.</p>
         </div>
-        <p class="x-note">${ev("D")} ${esc(C.framework.label)}</p>
+        <p class="x-note">${esc(C.framework.label)}</p>
         ${frameworkHtml()}
         <p class="muted" style="margin-top:1.2rem;font-size:.92rem;">${esc(C.framework.note)}</p>
       </div>
@@ -302,7 +302,7 @@ function pageIndex() {
           <div>
             <p class="eyebrow">Sample learning experience · ${esc(C.module.minutes)}</p>
             <h2 id="mod-h">${esc(C.module.title)}</h2>
-            <p class="x-note" style="margin-bottom:1rem;">${ev("D")} An interactive demonstration of my instructional design, using a fictional scenario and synthetic data.</p>
+            <p class="x-note" style="margin-bottom:1rem;">An interactive demonstration of my instructional design, using a fictional scenario and synthetic data.</p>
             <p>It is mapped to ${esc(C.module.level)}. Learners work through:</p>
             <ol>
               <li>A realistic public service scenario with five everyday AI decisions</li>
@@ -331,10 +331,10 @@ function pageIndex() {
           <p class="eyebrow">Proposed 90-day pilot</p>
           <h2 id="pilot-h">${esc(C.pilot.name)}</h2>
         </div>
-        <p class="x-note">${ev("C")} ${esc(C.pilot.label)}</p>
+        <p class="x-note">${esc(C.pilot.label)}</p>
         ${pilotHtml()}
         <h3 style="margin-top:2.4rem;">Proposed indicators of success</h3>
-        <p class="x-note">${ev("C")} ${esc(C.pilot.indicatorsLabel)}</p>
+        <p class="x-note">${esc(C.pilot.indicatorsLabel)}</p>
         <div class="x-ind">${C.pilot.indicators.map((i) => `<div><strong>${esc(i.h)}</strong><span>${esc(i.p)}</span></div>`).join("")}</div>
       </div>
     </section>
@@ -347,7 +347,7 @@ function pageIndex() {
           <h2 id="eng-h">Flexible ways to work together</h2>
           <p class="muted">${esc(C.engagement.intro)}</p>
         </div>
-        <p class="x-note">${ev("C")} ${esc(C.engagement.label)}</p>
+        <p class="x-note">${esc(C.engagement.label)}</p>
         <div class="x-roles">${C.engagement.roles.map((r) => `<div><h3>${esc(r.h)}</h3><p>${esc(r.p)}</p></div>`).join("")}</div>
       </div>
     </section>
@@ -603,7 +603,7 @@ function pageSources() {
     </section>
     <section class="section section-warm">
       <div class="container">
-        <h2>Ministry and government context ${ev("B")}</h2>
+        <h2>Ministry and government context</h2>
         <p class="x-note">Items marked "per Ministry website" use the status labels shown on the Ministry's own site (mindbahamas.com) on the review date. Other items come from Bahamas Information Services, other .gov.bs pages, the national broadcaster or press reporting, as noted.</p>
         <div class="table-wrap">
           <table class="x-table">
@@ -617,7 +617,7 @@ function pageSources() {
     </section>
     <section class="section">
       <div class="container narrow">
-        <h2>Professional evidence ${ev("A")}</h2>
+        <h2>Professional evidence</h2>
         <p>Professional claims come from Dr. Franks' CV (<a href="${C.person.cvPdf}" download>download</a>). Employer names are given for context only. No confidential employer information, proprietary content, student data or internal screenshots are reproduced. Figures from K–12 settings show that she can design and scale learning systems. They are not presented as evidence of public service outcomes.</p>
         <h2>Independence</h2>
         <p>${esc(C.disclaimer)} No government branding or national symbols are used.</p>
@@ -684,7 +684,7 @@ function pagePrint() {
     <div class="pcols">
       <div>${C.profile.bio.slice(0, 2).map((p) => `<p>${esc(p)}</p>`).join("")}<p class="pnote"><strong>Positioning:</strong> ${esc(C.engagement.worksWith)}</p></div>
       <div class="pside">
-        <h4>Qualifications ${ev("A")}</h4>
+        <h4>Qualifications</h4>
         <ul>${C.profile.education.slice(0, 3).map((e) => `<li><strong>${esc(e.deg)}</strong><br>${esc(e.inst)}, ${esc(e.yr)}</li>`).join("")}<li>Teacher and K–12 administrative certifications (District of Columbia)</li></ul>
       </div>
     </div>
@@ -712,13 +712,13 @@ function pagePrint() {
   </section>
 
   <section class="pg">
-    <p class="peye">Proposed framework ${ev("D")}</p>
+    <p class="peye">Proposed framework · illustrative</p>
     <h2>${esc(C.framework.name)}</h2>
     <p class="pnote">${esc(C.framework.label)}</p>
     <ol class="pfw">${fw}</ol>
     <div class="pfwbase"><strong>Across every level:</strong> ${esc(C.framework.crossCutting.join(" · "))}</div>
     <p class="pnote">${esc(C.framework.note)}</p>
-    <h3 class="pmt">Why this matters ${ev("C", "Perspective")}</h3>
+    <h3 class="pmt">Why this matters</h3>
     <p class="plead">${esc(C.centralMessage)}</p>
     <div class="pwhy">${C.why.points.map((p) => `<div><strong>${esc(p.h)}</strong><span>${esc(p.p)}</span></div>`).join("")}</div>
     <p class="pnote" style="margin-top:.6rem;">${esc(C.why.label)} <a href="${B}learning-module.html">Try the interactive sample module (Levels 1–2)</a>.</p>
@@ -726,7 +726,7 @@ function pagePrint() {
   </section>
 
   <section class="pg">
-    <p class="peye">Illustrative 90-day pilot ${ev("C")}</p>
+    <p class="peye">Illustrative 90-day pilot</p>
     <h2>${esc(C.pilot.name)}</h2>
     <p class="pnote">${esc(C.pilot.label)}</p>
     <ol class="ppilot">${C.pilot.phases.map((p) => `<li><span class="pdays">Phase ${p.n} · ${esc(p.days)}</span><h3>${esc(p.name)}</h3><p>${esc(p.focus)}</p><ul>${li(p.deliverables)}</ul></li>`).join("")}</ol>
@@ -737,11 +737,11 @@ function pagePrint() {
   </section>
 
   <section class="pg">
-    <p class="peye">Potential engagement models ${ev("C")}</p>
+    <p class="peye">Potential engagement models</p>
     <h2>Flexible ways to work together</h2>
     <p>${esc(C.engagement.intro)}</p>
     <div class="proles">${C.engagement.roles.map((r) => `<div><strong>${esc(r.h)}</strong><span>${esc(r.p)}</span></div>`).join("")}</div>
-    <h3 class="pmt">Alignment with documented priorities ${ev("B")}</h3>
+    <h3 class="pmt">Alignment with documented priorities</h3>
     <ul class="psrc">${C.sources.filter((s) => ["mind-pillars", "ai-literacy-bis", "m365", "future-skills", "ai-committee"].includes(s.id)).map((s) => `<li>${esc(s.finding)} <em>(${esc(s.statusLabel || C.statusLabels[s.status])}; <a href="${esc(s.url)}">${esc(s.source.split(":")[0])}</a>, ${esc(s.date)})</em></li>`).join("")}</ul>
     <div class="pcta">
       <div><h3>Request a strategic consultation</h3><p><a href="${CONSULT}">${esc(P.email)}</a> · <a href="${P.linkedin}">LinkedIn</a> · <a href="${B}">Online portfolio</a> · <a href="${C.meta.siteUrl}assets/docs/Dr-Barbara-Z-Franks-CV.pdf">Full CV</a></p></div>
