@@ -19,7 +19,7 @@ p { margin: 0 0 0.55em; }
 ul { margin: 0; padding-left: 1.1em; }
 li { margin-bottom: 0.2em; }
 
-.pg { width: 8.5in; height: 11in; padding: 0.6in 0.68in 0.85in; position: relative; overflow: hidden; page-break-after: always; break-after: page; }
+.pg { width: 8.5in; height: 11in; padding: 0.58in 0.68in 0.76in; position: relative; overflow: hidden; page-break-after: always; break-after: page; }
 .pg:last-child { page-break-after: auto; break-after: auto; }
 .pf { position: absolute; left: 0.68in; right: 0.68in; bottom: 0.4in; display: flex; justify-content: space-between; font-size: 7.4pt; color: var(--soft); border-top: 0.6pt solid var(--line); padding-top: 0.08in; }
 .pf a { border: 0; color: var(--soft); }
@@ -57,12 +57,12 @@ li { margin-bottom: 0.2em; }
 .pcontact strong { color: var(--navy); font-size: 7.6pt; letter-spacing: 0.1em; text-transform: uppercase; }
 
 /* Page 2 */
-.pcols { display: grid; grid-template-columns: 1.55fr 1fr; gap: 0.3in; font-size: 9.2pt; }
+.pcols { display: grid; grid-template-columns: 1.55fr 1fr; gap: 0.3in; font-size: 8.9pt; }
 .pside { background: var(--warm); padding: 0.14in 0.16in; border-radius: 4pt; font-size: 8.6pt; }
 .pside h4 { font-family: var(--body); text-transform: uppercase; letter-spacing: 0.08em; font-size: 7.4pt; color: var(--slate); margin: 0 0 0.06in; }
 .pside ul { list-style: none; padding: 0; margin: 0 0 0.12in; }
 .pside li { padding: 0.04in 0; border-top: 0.6pt solid var(--line); }
-.pcaps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.12in; }
+.pcaps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.09in; }
 .pcaps > div { border: 0.6pt solid var(--line); border-top: 2.5pt solid var(--navy); border-radius: 3pt; padding: 0.08in 0.11in; font-size: 7.9pt; line-height: 1.38; }
 .pcaps p { margin-bottom: 0.35em; }
 .pcaps .pn { font-family: var(--head); color: var(--goldt); margin: 0; font-size: 9pt; }

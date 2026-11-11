@@ -42,7 +42,7 @@ The build fails if any PDF page overflows Letter size, so clipped pages can't sh
 
 ## Evidence rules (built into the content file)
 
-Every claim is tagged with one of four categories: **A** verified professional achievement, **B** verified Ministry initiative, **C** proposed consulting capability, or **D** illustrative concept. Professional figures not yet found in the July 2026 CV are marked `PENDING` and show a small "to verify" tag on the page and in the PDF. Once a figure is confirmed against the 09.2026 CV, change its `src` to the CV and rebuild. Run with `--strict` to make the build fail while any PENDING item remains, and use that before publishing.
+Every claim is tagged with one of four categories: **A** verified professional achievement, **B** verified Ministry initiative, **C** proposed consulting capability, or **D** illustrative concept. All professional figures are verified against the 09.2026 CV. If you add a new figure before checking it, set `src: PENDING`: it then shows a small "to verify" tag on the page and in the PDF until you change `src` to the CV and rebuild. Run with `--strict` to make the build fail while any PENDING item remains, and use that before publishing.
 
 ## Deploying
 

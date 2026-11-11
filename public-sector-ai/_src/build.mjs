@@ -412,7 +412,7 @@ function pageCases() {
             <h3>Context</h3><p>${esc(cs.context)}</p>
             <h3>Challenge</h3><p>${esc(cs.challenge)}</p>
             <h3>My responsibilities</h3><ul>${li(cs.responsibilities)}</ul>
-            <h3>Approach &amp; solution</h3><ul>${cs.approach.map((a) => `<li>${esc(a)}${/dashboard/i.test(a) ? pend(C.PENDING, "dashboards (approach)") : ""}${/open-response/i.test(a) ? pend(C.PENDING, "AI-graded open response") : ""}${/specifications/i.test(a) ? pend(C.PENDING, "specification-driven content") : ""}</li>`).join("")}</ul>
+            <h3>Approach &amp; solution</h3><ul>${cs.approach.map((a) => `<li>${esc(a)}</li>`).join("")}</ul>
           </div>
           <aside class="x-evbox" aria-label="Verified scale and evidence">
             ${ev("A", "Verified scale & evidence")}

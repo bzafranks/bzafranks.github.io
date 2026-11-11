@@ -13,15 +13,14 @@
      C = Proposed consulting capability
      D = Illustrative concept or demonstration
 
-   `src` on category-A items says which document verifies the claim.
-   PENDING marks a figure supplied by Dr. Franks in the project brief that
-   is not in the July 2026 CV PDF and must be confirmed against the
-   09.2026 CV (.docx) before publishing. Run with --strict to fail the
+   `src` on category-A items says which document verifies the claim
+   (currently the 09.2026 CV). Use src: PENDING for any new figure that
+   has not yet been checked against the CV; it shows a "to verify" tag. Run with --strict to fail the
    build while any PENDING item remains.
    ===================================================================== */
 
-export const PENDING = "PENDING: confirm against CV 09.2026";
-const CV = "CV (07.2026 PDF)";
+export const PENDING = "PENDING: confirm against the current CV";
+const CV = "CV (09.2026)";
 
 export const meta = {
   version: "1.0",
@@ -45,7 +44,7 @@ export const person = {
   linkedin: "https://www.linkedin.com/in/barbara-franks/",
   portrait: "../assets/img/barbara-franks.jpg",
   cvPdf: "../assets/docs/Dr-Barbara-Z-Franks-CV.pdf",
-  company: "D.R.E.A.M. Learning Solutions LLC",
+  company: "D.R.E.A.M. Learning Solutions",
   companyRole: "Founder & Principal Consultant",
 };
 
@@ -71,8 +70,8 @@ export const hero = {
   /* 30-second facts strip */
   facts: [
     { num: "50+", label: "campuses served by AI-enabled language arts programming I lead", ev: "A", src: CV },
-    { num: "~35,490", label: "assessment items architected across five intervention courses", ev: "A", src: PENDING },
-    { num: "1,200+", label: "students across four campuses under my regional leadership", ev: "A", src: CV },
+    { num: "~35,490", label: "assessment items architected across five intervention courses", ev: "A", src: CV },
+    { num: "1,200+", label: "students across eight campuses under my academic and operational leadership", ev: "A", src: CV },
     { num: "18 yrs", label: "of education, training and institutional leadership", ev: "A", src: CV },
   ],
 };
@@ -99,7 +98,7 @@ export const capabilities = [
     involves: "Defining what AI-capable performance looks like by role, then building the pathways, practice and support to get there.",
     challenge: "Staff receive AI tools without clear expectations, safe-use guidance or role relevance.",
     deliverables: ["Role-based AI capability profiles", "Tiered learning pathways", "Manager and champion toolkits"],
-    evidence: "I lead AI-enabled learning pathways in which each learner progresses on demonstrated mastery, across 50+ campuses (2 Hour Learning / Alpha Schools).",
+    evidence: "I own K–12 Language Arts programming across 50+ Alpha Schools campuses, spanning curriculum, assessment, intervention, analytics and AI-generated learning systems.",
     evidenceSrc: CV,
   },
   {
@@ -108,7 +107,7 @@ export const capabilities = [
     involves: "Designing complete learning systems, from competency maps and course structures to lessons, practice and media.",
     challenge: "Training is built course by course, so quality is uneven and nothing can be reused at scale.",
     deliverables: ["Curriculum architecture and blueprints", "Specification-driven content standards", "Prototype modules"],
-    evidence: "I built full standards-aligned courses and narrated video lessons, each component mapped to sub-standards and calibrated for rigour.",
+    evidence: "I built five intervention courses (209 components, 974 subskill lessons, about 35,490 assessment items) to a defined rigour specification.",
     evidenceSrc: CV,
   },
   {
@@ -117,7 +116,7 @@ export const capabilities = [
     involves: "Shaping AI-enabled learning products with engineering and product teams: requirements, content models, quality rules and evaluation.",
     challenge: "Vendors and developers need a learning lead who can translate pedagogy into specifications they can build.",
     deliverables: ["Product and content specifications", "AI-use and quality rules", "Vendor evaluation criteria"],
-    evidence: "I work cross-functionally with learning science, engineering, product and academic leadership on AI-powered adaptive platforms.",
+    evidence: "I led the move from manually assembled content to versioned, auto-graded, specification-driven learning objects, working with product and engineering teams.",
     evidenceSrc: CV,
   },
   {
@@ -126,7 +125,7 @@ export const capabilities = [
     involves: "Designing competency frameworks, mastery rules and assessment item banks that measure real capability, including scenario-based tasks.",
     challenge: "Completion rates do not show whether staff can actually apply a skill safely and well.",
     deliverables: ["Competency framework", "Scenario-based assessment banks", "Mastery and certification rules"],
-    evidence: "I develop and quality-control standards-aligned assessment content. I use item-level analysis to redesign tests for construct validity.",
+    evidence: "I designed standardised assessments using QTI response formats, DOK expectations and AI-graded production items, and I diagnose construct-validity problems.",
     evidenceSrc: CV,
   },
   {
@@ -135,7 +134,7 @@ export const capabilities = [
     involves: "Defining indicators, dashboards and evaluation designs that show leaders who is progressing, who is at risk and what is working.",
     challenge: "Leaders cannot see whether an investment in training is changing practice.",
     deliverables: ["Indicator framework", "Dashboard specifications", "Pilot evaluation report"],
-    evidence: "I review placement and performance using assessment scores, accuracy and time-on-task data, and I lead mixed-methods applied research.",
+    evidence: "I designed live dashboards tracking enrolment, mastery, stalled progress and item performance, and I lead program efficacy and mixed-methods research.",
     evidenceSrc: CV,
   },
   {
@@ -159,12 +158,13 @@ export const caseStudies = [
     num: "01",
     title: "Scalable AI-Enabled Curriculum and Assessment Architecture",
     org: "2 Hour Learning / Alpha Schools",
-    role: "AI-Driven English Language Arts Learning Strategist & Curriculum DRI · 12/2025 to present",
+    role: "AI-Driven English Language Arts Learning Strategist | Curriculum DRI · 12/2025 to present",
     summary: "I architected specification-driven courses and assessment banks that power AI-enabled, mastery-based learning across a 50+ campus network.",
     context: "A national network of 50+ campuses uses AI-powered adaptive platforms. Each learner advances at their own demonstrated level rather than by age or grade.",
     challenge: "Content had to be built at very high volume and still be rigorous, consistent, mapped to standards and usable by adaptive software. That could not be done one lesson at a time.",
     responsibilities: [
-      "Directly Responsible Individual for Grades 3–8 Language Arts and PreK–12 Vocabulary across the system",
+      "Own Language Arts programming across Grades K–12 for 50+ campuses",
+      "Directly Responsible Individual for Grades 3–8 Language Arts and PreK–12 Vocabulary: program strategy, product requirements, quality assurance and implementation",
       "Course and program architecture, standards mapping and rigour calibration",
       "Assessment design and quality control, including item-level analysis and redesign",
       "Cross-functional work with learning science, engineering, product and academic leadership",
@@ -172,16 +172,17 @@ export const caseStudies = [
     approach: [
       "Defined a layered architecture: standards → components → subskill lessons → assessment items → mastery rules",
       "Calibrated item difficulty to external benchmarks (NWEA MAP RIT bands, Bloom's taxonomy distributions)",
-      "Wrote reusable specifications so content and structured data could be produced consistently and consumed by software",
-      "Designed AI-graded open-response assessment alongside selected-response items",
+      "Led the transition from manually assembled content to versioned, auto-graded, specification-driven learning objects",
+      "Designed standardised assessments with multiple QTI response formats, grade-banded DOK expectations, and AI-graded and auto-scored production items",
+      "Built a cross-program vocabulary registry (3,964 words, 4,230 word senses, 8,531 course placements) published as reusable JSON/CSV services for curriculum and product teams",
     ],
     evidence: [
       { num: "50+", label: "campuses in scope", src: CV },
-      { num: "5", label: "language intervention courses", src: PENDING },
-      { num: "209", label: "course components", src: PENDING },
-      { num: "974", label: "subskill lessons", src: PENDING },
-      { num: "~35,490", label: "assessment items", src: PENDING },
-      { num: "1,800", label: "words in a Grades 7–12 vocabulary program", src: PENDING },
+      { num: "5", label: "Language intervention courses (Grades 3–7)", src: CV },
+      { num: "209", label: "course components", src: CV },
+      { num: "974", label: "subskill lessons", src: CV },
+      { num: "~35,490", label: "assessment items", src: CV },
+      { num: "1,800", label: "words in a Grades 7–12 vocabulary program with AI-graded sentence production", src: CV },
     ],
     competencies: ["Curriculum architecture", "Assessment design", "Specification writing", "AI-enabled product collaboration", "Quality assurance"],
     application: [
@@ -197,7 +198,7 @@ export const caseStudies = [
     num: "02",
     title: "Analytics-Driven Learning Performance and Intervention Systems",
     org: "2 Hour Learning / Alpha Schools",
-    role: "AI-Driven English Language Arts Learning Strategist & Curriculum DRI",
+    role: "AI-Driven English Language Arts Learning Strategist | Curriculum DRI · 12/2025 to present",
     summary: "I used learning data to find mis-placed and at-risk learners, close enrolment gaps and drive targeted interventions across campuses.",
     context: "Adaptive learning produces rich data on each learner: assessment scores, accuracy, experience points and time-on-task. It is only useful if someone turns it into action.",
     challenge: "Some learners were on the wrong level, some assessments were mis-calibrated, and some students had no active course assignment. All of these were hidden in system-wide data.",
@@ -211,18 +212,22 @@ export const caseStudies = [
       "Combined several indicators to decide whether each learner was correctly placed, at risk or ready to advance",
       "Ran system-wide queries so every eligible learner had an active Language and Vocabulary assignment",
       "Redesigned weak tests with passage-based items and balanced answer keys",
-      "Built analytics dashboards that track learning performance and progression",
+      "Designed live analytics dashboards tracking enrolment, testing, mastery, stalled progress, learner efficiency, standards coverage and item performance",
+      "Diagnosed data-quality issues affecting program reporting and rebuilt learner-data ingestion through the live gradebook API",
+      "Led a program efficacy analysis linking learner activity to growth, reported as correlational with potential confounding documented",
     ],
     evidence: [
       { num: "Grades 3–8", label: "Language placement reviews across the system", src: CV },
-      { num: "All campuses", label: "queried for enrolment gaps", src: CV },
-      { num: "Dashboards", label: "tracking performance & progression", src: PENDING },
+      { num: "3,530", label: "learner vocabulary baseline analysed to target intervention", src: CV },
+      { num: "182", label: "vocabulary lists in an intervention content catalogue", src: CV },
+      { num: "Live", label: "dashboards: enrolment, mastery, stalled progress, item performance", src: CV },
     ],
     competencies: ["Learning analytics", "Data-informed decision-making", "Assessment validity", "Intervention design", "Stakeholder coordination"],
     application: [
       "An adoption and capability dashboard showing participation, competency and confidence by department",
       "Early identification of teams that need coaching or follow-up support",
       "Assessment quality review, so pilot results reflect real capability and not test artefacts",
+      "Honest evaluation that separates correlation from causation when reporting programme impact",
     ],
     caution: "No student data, internal dashboards or proprietary content are shown. The diagram is a generic reconstruction.",
     diagram: { kind: "cycle", caption: "Generic data-to-intervention cycle (illustrative)", steps: ["Collect performance data", "Diagnose placement & risk", "Intervene with targeted support", "Re-assess & adjust"] },
@@ -238,7 +243,7 @@ export const caseStudies = [
     challenge: "Teaching quality, policies and standards had to be consistent across several campuses and an online program. Each site was growing and had its own staff, culture and regulatory needs.",
     responsibilities: [
       "Directed academic operations for a multi-campus network of American international schools (Chief Academic Officer)",
-      "Directed academic and operational management across four campuses serving over 1,200 students (Regional Dean)",
+      "Directed academic and operational management across eight campuses serving more than 1,200 students",
       "Standardised academic policies, handbooks and course catalogues; led curriculum alignment and audits",
       "Designed onboarding, in-service training, coaching and performance evaluation for faculty",
     ],
@@ -249,7 +254,7 @@ export const caseStudies = [
       "Mentoring of academic leaders, plus faculty recruitment and development",
     ],
     evidence: [
-      { num: "4", label: "campuses under regional leadership", src: CV },
+      { num: "8", label: "campuses under academic & operational management", src: CV },
       { num: "1,200+", label: "students across those campuses", src: CV },
       { num: "900+", label: "students in one middle & high school I led", src: CV },
       { num: "2019–25", label: "progression from Dean of Faculty to Chief Academic Officer", src: CV },
@@ -274,7 +279,7 @@ export const caseStudies = [
     challenge: "Turning mixed qualitative and quantitative evidence into findings that are credible, ethical and useful to decision-makers.",
     responsibilities: [
       "Lead applied research strategy and a multi-year research agenda, including workforce readiness and career outcomes",
-      "Direct survey design, interview protocols, mixed-methods studies and data analysis",
+      "Design survey instruments, research protocols, regression analyses and mixed-methods studies",
       "Supervise research staff and collaborators for methodological rigour, data integrity and ethical compliance",
       "Author and oversee reports, white papers and presentations for institutions, employers and policymakers",
     ],
@@ -282,7 +287,7 @@ export const caseStudies = [
       "Mixed-methods designs that pair survey data with interviews",
       "Ethics and data-integrity controls built into each study",
       "Plain-language translation of findings into actionable recommendations",
-      "Proprietary research frameworks for workforce intelligence",
+      "Proprietary research frameworks and dashboards for workforce intelligence",
     ],
     evidence: [
       { num: "Multi-year", label: "research agenda on workforce readiness & outcomes", src: CV },
@@ -474,7 +479,7 @@ export const pilot = {
 
 /* ---------------- SECTION 8: ENGAGEMENT (ev C) ---------------- */
 export const engagement = {
-  intro: "I am flexible about the form of engagement. It could be a defined project, an advisory role, an institutional partnership or another suitable arrangement. Work can be delivered personally or through D.R.E.A.M. Learning Solutions LLC.",
+  intro: "I am flexible about the form of engagement. It could be a defined project, an advisory role, an institutional partnership or another suitable arrangement. Work can be delivered personally or through D.R.E.A.M. Learning Solutions.",
   label: "These are possible arrangements only. No engagement with the Ministry exists or is implied.",
   roles: [
     { h: "AI Workforce Learning Design Consultant", p: "Designs the end-to-end AI learning architecture for public officers." },
@@ -491,7 +496,7 @@ export const engagement = {
 export const profile = {
   bio: [
     "Dr. Barbara Zá Franks is a Bahamian education executive and AI learning architect based in Freeport, Grand Bahama. Over 18 years she has worked across K–12, online and international education, moving from the classroom to Chief Academic Officer of a multi-campus international school network.",
-    "She currently directs AI-enabled Language Arts and Vocabulary programming for a 50+ campus network at 2 Hour Learning / Alpha Schools. There she architects mastery-based courses, assessment systems and learning analytics alongside engineering and product teams. As Chief Research Officer (consulting) at Virtuous Sea Corporation, she leads applied research on workforce readiness and labour-market trends.",
+    "She currently owns K–12 Language Arts programming for 50+ Alpha Schools campuses at 2 Hour Learning, with responsibility spanning curriculum, assessment, intervention, analytics and AI-generated learning systems, working alongside learning science, product and engineering teams. As Chief Research Officer (consulting) at Virtuous Sea Corporation, she leads applied research on workforce readiness and labour-market trends.",
     "Earlier, she held executive roles with KnowledgeLink, including Chief Academic Officer, Regional Dean and Academic Dean. In those roles she led policy, quality assurance and faculty development across campuses in China and an online U.S. diploma program, and she later served as Head of School in Anguilla. She holds a Doctor of Education in Leadership.",
     "She is committed to contributing her experience to national development: helping Bahamian institutions prepare their people for AI-driven change, responsibly and measurably.",
   ],
@@ -505,9 +510,9 @@ export const profile = {
   tech: {
     note: "Working knowledge and AI-assisted development, applied to learning products. These are not advanced software-engineering credentials.",
     groups: [
-      { h: "Learning standards", items: ["QTI 3 (assessment)", "OneRoster (rostering)", "CASE (competency frameworks)"], src: PENDING },
-      { h: "Data & analytics", items: ["SQL / PostgreSQL", "Structured learning data", "Learning analytics & dashboards"], src: PENDING },
-      { h: "Prototyping", items: ["Python & Flask", "REST APIs & OAuth", "Vercel deployment", "AI-assisted product development"], src: PENDING },
+      { h: "Learning standards", items: ["QTI 3 (assessment)", "OneRoster 1.2 (rostering)", "CASE (competency frameworks)", "Content & progression APIs"], src: CV },
+      { h: "Data & analytics", items: ["SQL / PostgreSQL", "Structured learning data", "Learning analytics & dashboards"], src: CV },
+      { h: "Prototyping", items: ["Python & Flask", "REST APIs & OAuth", "Vercel deployment", "AI-assisted product development"], src: CV },
     ],
   },
 };
