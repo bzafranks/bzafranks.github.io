@@ -26,11 +26,11 @@ body.cp {
   color: var(--c-ink);
   background: #fff;
 }
-.cp h1, .cp h2, .cp h3, .cp h4 { color: var(--c-navy); letter-spacing: -0.005em; }
+.cp main h1, .cp main h2, .cp main h3, .cp main h4 { color: var(--c-navy); letter-spacing: -0.005em; }
 .cp h2 { margin-top: 2.2rem; }
 .cp h3 { margin-top: 1.6rem; }
 .cp .eyebrow { color: var(--c-gold-text); }
-.cp a { color: var(--c-navy-2); }
+.cp main a { color: var(--c-navy-2); }
 .cp :focus-visible { outline: 3px solid var(--c-gold); outline-offset: 2px; border-radius: 4px; }
 .cp .muted { color: var(--c-ink-soft); }
 .cp .section { padding: 3.2rem 0; }

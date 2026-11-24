@@ -206,3 +206,13 @@ body.ats-dark .out-body h4 { color: #aeb7ff; }
 @media (max-width: 560px) {
   .field-row { grid-template-columns: 1fr; }
 }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.card.card span.soon.soon { color: #5768e6; }
+.chip-set.chip-set button.chip-toggle.on.chip-toggle.on { color: #080808; }
+.composer.composer button { color: #080808; }
+.metric.metric div.m-trend.up.m-trend.up { color: #40815c; }
+.muted.muted span.soon.soon { color: #5768e6; }
+.table-wrap.table-wrap span.soon.soon { color: #5768e6; }
+.tool-card.tool-card span.t-go.t-go { color: #5768e6; }

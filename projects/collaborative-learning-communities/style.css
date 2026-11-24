@@ -200,3 +200,12 @@ body.clc-dark .research { background: rgba(224,118,78,0.12); }
   .rail-group { grid-column: 1 / -1; } .gen-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 120px 1fr 40px; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.card.card span.tag.coral.tag.coral { color: #a8462e; }
+.drill-row.drill-row span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.kpi.kpi div.k-trend.up.k-trend.up { color: #28863a; }
+.notif-btn.notif-btn span.badge-count.badge-count { color: #2b2b2b; }
+.research.research span.tag.tag { color: #a6573a; }
+.ai-pill { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), linear-gradient(135deg, var(--clc-accent), var(--clc-accent-2)); } /* contrast: white text needs a darker pill */

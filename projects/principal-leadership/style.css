@@ -191,3 +191,11 @@ body.ple-dark .research { background: rgba(184,134,42,0.12); }
   .rail-group { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 120px 1fr 40px; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.drill-row.drill-row span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.research.research span.tag.tag { color: #8c6620; }
+.scorecard.scorecard div.sc-trend.sc-trend { color: #28863a; }
+.table-wrap.table-wrap span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.ai-pill { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), linear-gradient(135deg, var(--ple-accent), var(--ple-accent-2)); } /* contrast: white text needs a darker pill */

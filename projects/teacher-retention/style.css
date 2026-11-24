@@ -184,3 +184,9 @@ body.trw-dark .out-body h4 { color: #6fd6bf; }
   .rail-group { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 120px 1fr 40px; } .riskcalc .factor { grid-template-columns: 1fr; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.scorecard.scorecard div.sc-trend.up.sc-trend.up { color: #28863a; }
+.ai-pill { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), linear-gradient(135deg, var(--trw-accent), var(--trw-accent-2)); } /* contrast: white text needs a darker pill */
+.research-hero .tag { color: #fff; } /* contrast */

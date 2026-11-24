@@ -192,3 +192,12 @@ body.cf-dark .tl-pill.green { background: rgba(47,158,68,.18); color: #69db7c; }
   .rail-group { grid-column: 1 / -1; } .gen-layout, .ws-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 96px 1fr 40px; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.app-actions.app-actions span.autosave.autosave { color: #a35f00; }
+.card.card span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.drill-row.drill-row span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.metric.metric div.m-trend.up.m-trend.up { color: #40815c; }
+.scorecard.scorecard div.sc-trend.sc-trend { color: #40815c; }
+.table-wrap.table-wrap span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
