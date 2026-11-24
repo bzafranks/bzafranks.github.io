@@ -109,7 +109,7 @@ body.cp {
 .cp .c-table caption { text-align: left; font-weight: 700; color: var(--c-navy); padding-bottom: 0.4rem; }
 .cp .c-table th, .cp .c-table td { border: 1px solid var(--c-line); padding: 0.5rem 0.65rem; vertical-align: top; text-align: left; }
 .cp .c-table thead th { background: var(--c-warm); color: var(--c-navy); font-size: 0.85rem; }
-.cp .c-table tbody th { background: #fbfaf7; font-weight: 600; }
+.cp .c-table tbody th { background: #fbfaf7; color: var(--c-ink, #1b2533); font-weight: 600; font-family: inherit; }
 .cp .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
 /* Passages and student-facing text */
