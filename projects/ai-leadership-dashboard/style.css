@@ -234,3 +234,12 @@ body.sld-dark .out-body h4 { color: #aeb9ff; }
   .gen-layout, .ws-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 96px 1fr 40px; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.drill-row.drill-row span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.heatmap.heatmap div.hm-cell.hm-3.hm-cell.hm-3 { color: #212121; }
+.heatmap.heatmap span.hm-cell.hm-3.hm-cell.hm-3 { color: #212121; }
+.scorecard.scorecard div.sc-trend.up.sc-trend.up { color: #28863a; }
+.table-wrap.table-wrap span.sc-trend.up.sc-trend.up { color: #257b35; }
+.table-wrap.table-wrap span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }

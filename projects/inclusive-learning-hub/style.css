@@ -10,21 +10,21 @@
 :root {
   --ilh-accent: #3a6ea5;      /* default / admin — calm denim blue */
   --ilh-accent-2: #5b8c5a;    /* sage green */
-  --ilh-accent-dark: #2c5580;
+  --ilh-accent-dark: #264b72;
   --ilh-glow: rgba(58, 110, 165, 0.14);
   --ilh-rail-w: 258px;
   --ilh-warn: #c07830;
   --ilh-danger: #b0503f;
-  --ilh-good: #4c9a6e;
+  --ilh-good: #357050;
 }
 
 /* ---------- Role accent variants ---------- */
 body[data-role="teacher"]   { --ilh-accent: #2f8f8a; --ilh-accent-dark: #21706c; --ilh-glow: rgba(47,143,138,0.14); }
 body[data-role="parent"]    { --ilh-accent: #5b8c5a; --ilh-accent-dark: #45703f; --ilh-glow: rgba(91,140,90,0.14); }
-body[data-role="student"]   { --ilh-accent: #c07830; --ilh-accent-dark: #a5631f; --ilh-glow: rgba(192,120,48,0.14); }
+body[data-role="student"]   { --ilh-accent: #c07830; --ilh-accent-dark: #8a5119; --ilh-glow: rgba(192,120,48,0.14); }
 body[data-role="para"]      { --ilh-accent: #8a5fb0; --ilh-accent-dark: #6d4790; --ilh-glow: rgba(138,95,176,0.14); }
-body[data-role="therapist"] { --ilh-accent: #b0507e; --ilh-accent-dark: #8e3c63; --ilh-glow: rgba(176,80,126,0.14); }
-body[data-role="admin"]     { --ilh-accent: #3a6ea5; --ilh-accent-dark: #2c5580; --ilh-glow: rgba(58,110,165,0.14); }
+body[data-role="therapist"] { --ilh-accent: #b0507e; --ilh-accent-dark: #803659; --ilh-glow: rgba(176,80,126,0.14); }
+body[data-role="admin"]     { --ilh-accent: #3a6ea5; --ilh-accent-dark: #264b72; --ilh-glow: rgba(58,110,165,0.14); }
 
 /* ---------- Dark mode: re-theme shared tokens ---------- */
 body.ilh-dark {

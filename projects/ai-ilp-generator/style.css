@@ -204,3 +204,22 @@ body.ilp-dark .out-body h4 { color: #ffb08a; }
   .rail-group { grid-column: 1 / -1; } .gen-layout, .ws-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } .barlist .row { grid-template-columns: 96px 1fr 40px; } }
+
+
+/* ---- Contrast fixes: text colors raised to WCAG 2.2 AA (4.5:1, or 3:1 for large text) ---- */
+.app-actions.app-actions span.autosave.autosave { color: #268037; }
+.app-rail.app-rail a.rail-link.active.rail-link.active { color: #b64406; }
+.card.card span.tool-badge.tool-badge { color: #b64406; }
+.chip-set.chip-set button.chip-toggle.on.chip-toggle.on { color: #1f1f1f; }
+.drill-row.drill-row span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.heatmap.heatmap div.hm-cell.hm-3.hm-cell.hm-3 { color: #212121; }
+.insight.insight b { color: #bc4606; }
+.muted.muted span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.now.now span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.scorecard.scorecard div.sc-trend.up.sc-trend.up { color: #28863a; }
+.stack.stack span.soon.soon { color: #c84d0a; }
+.table-wrap.table-wrap span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.timeline.timeline span.tl-pill.amber.tl-pill.amber { color: #9f5d00; }
+.tool-card.tool-card span.t-go.t-go { color: #c84d0a; }
+.tool-head.tool-head span.tool-badge.tool-badge { color: #b04205; }
+.profile-head { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), linear-gradient(135deg, var(--ilp-accent), var(--ilp-accent-dark)); } /* contrast */
