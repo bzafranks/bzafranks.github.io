@@ -68,7 +68,7 @@ body.cp {
 .cp .c-hero .btn.ghost:hover { background: #fff; color: var(--c-navy); }
 
 /* Evidence labels */
-.c-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 4px; padding: 0.16rem 0.5rem; vertical-align: middle; white-space: nowrap; }
+.c-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 4px; padding: 0.16rem 0.5rem; vertical-align: middle; max-width: 100%; }
 .c-label.rep { background: var(--c-teal-soft); color: var(--c-teal); }
 .c-label.sim { background: var(--c-sim-soft); color: var(--c-sim); }
 .c-label.ai { background: var(--c-ai-soft); color: var(--c-ai); }
@@ -117,7 +117,7 @@ body.cp {
 .cp .c-passage h4 { margin-top: 0; font-size: 1.25rem; }
 .cp .c-passage .byline { font-family: "Segoe UI", system-ui, sans-serif; font-size: 0.8rem; color: var(--c-ink-soft); margin-top: -0.4rem; }
 .cp .c-passage p { margin: 0 0 0.9rem; }
-.cp .c-passage .pn { font-family: "Segoe UI", system-ui, sans-serif; font-size: 0.72rem; color: #6b7684; margin-right: 0.35rem; vertical-align: super; }
+.cp .c-passage .pn { font-family: "Segoe UI", system-ui, sans-serif; font-size: 0.8rem; font-weight: 700; color: #4a5563; margin-right: 0.4rem; }
 .cp .c-meta { font-size: 0.85rem; color: #33435a; background: var(--c-warm); border-radius: 6px; padding: 0.6rem 0.8rem; }
 
 /* Lesson blocks */
@@ -194,3 +194,5 @@ body.cp {
   .cp .c-passage, .cp .c-table, .cp figure { break-inside: avoid; }
 }
 .cp .who { font-weight: 700; color: var(--c-navy); }
+.cp main li, .cp main p { overflow-wrap: anywhere; }
+.cp main td { overflow-wrap: break-word; }

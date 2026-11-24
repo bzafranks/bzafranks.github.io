@@ -188,6 +188,16 @@ if (args.has("--pdf")) {
     singles[f] = out;
     console.log("PDF", meta.pdf);
   }
+  // Student handouts: standalone print layouts in _src/handouts/
+  const HO = join(HERE, "handouts");
+  if (existsSync(HO)) for (const f of readdirSync(HO).filter((x) => x.endsWith(".html"))) {
+    const tmp = join(TMP, f);
+    writeFileSync(tmp, expand(readFileSync(join(HO, f), "utf8")));
+    await page.goto(pathToFileURL(tmp).href, { waitUntil: "load" });
+    await page.emulateMedia({ media: "print" });
+    await page.pdf({ path: join(DL, f.replace(".html", ".pdf")), format: "Letter", printBackground: false, margin: { top: "0.6in", bottom: "0.6in", left: "0.6in", right: "0.6in" } });
+    console.log("Handout", f.replace(".html", ".pdf"));
+  }
   await browser.close();
   // Packets: merged selections, defined in packets.json
   const packets = JSON.parse(readFileSync(join(HERE, "packets.json"), "utf8"));
