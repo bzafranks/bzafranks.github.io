@@ -1,0 +1,15 @@
+You are a curriculum writer. Write a complete Grade 4 English Language Arts lesson (45 minutes) for a unit called "Nature's Engineers: How Animals Shape Their Environments." This lesson is about beavers.
+
+Include, in this order:
+1. Lesson title, grade, time
+2. Standards (Common Core) with codes and wording
+3. Learning objective written as a student-friendly "I can" statement
+4. Materials
+5. An original informational reading passage of about 300 words titled "The Busy Builders" explaining how beavers build dams and lodges and how this changes the environment for other plants and animals
+6. Five key vocabulary words from the passage with student-friendly definitions
+7. A step-by-step lesson procedure with timings (opening, vocabulary, reading, discussion, practice, closing)
+8. Four text-dependent comprehension questions with an answer key
+9. An exit ticket
+10. Differentiation notes for English learners and for students who need more reading support
+
+Write it ready to hand to a teacher. Output only the lesson, formatted in Markdown.

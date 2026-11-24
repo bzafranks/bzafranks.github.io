@@ -1,0 +1,152 @@
+<!--meta {"title": "WS7 · Editing an AI-Drafted Lesson: An Editorial QA Case Study", "desc": "A real AI-generated Grade 4 lesson, reviewed in six passes: redline, issue log by category and severity, revision cycle, clean final and print proof.", "nav": "work-samples.html", "pdf": "Franks-WS7-Editorial-QA-Case-Study.pdf"} -->
+<section class="c-hero">
+  <div class="container">
+    <p class="eyebrow">WS7 · Editorial quality assurance</p>
+    <h1>Editing an AI-Drafted Lesson</h1>
+    <p>An AI model was given a lesson brief for the Nature's Engineers unit. I reviewed its unedited draft the way a curriculum editor would, logged every issue, revised it, and proofed the final handout. Every issue below is one the draft really had.</p>
+  </div>
+</section>
+<section class="section">
+<div class="container prose-wide">
+  <dl class="c-glance">
+    <div><dt>Role</dt><dd>Editor and reviewer</dd></div>
+    <div><dt>Material</dt><dd>Grade 4 ELA lesson, 45 minutes, with passage and questions</dd></div>
+    <div><dt>Review passes</dt><dd>6</dd></div>
+    <div><dt>Issues logged</dt><dd>21: 0 critical, 7 major, 14 minor</dd></div>
+    <div><dt>Passage</dt><dd>363 → 319 words; FK estimate 5.6 → 4.8</dd></div>
+    <div><dt>Label</dt><dd>{{LABEL:ai}}</dd></div>
+  </dl>
+  <div class="c-look"><strong>Look at this first:</strong> the <a href="#log">issue log</a>, then issues <a href="#e7">E7</a> and <a href="#e8">E8</a>. They are the kind that pass a quick read but would confuse students or make an assessment item measure the wrong thing.</div>
+
+  <h2>1. Challenge</h2>
+  <p class="prose">AI tools can produce a complete-looking lesson in seconds. The risk is that it <em>looks</em> finished. A curriculum editor's job is to find what a fast read misses: facts that are slightly wrong, questions that do not measure their standard, and small inconsistencies that cost a teacher time in front of a class.</p>
+
+  <h2>2. The brief and the prompt</h2>
+  <p class="prose">The prompt below was given to a general-purpose AI model on 24 November 2026. The draft that came back is shown exactly as generated. I did not choose among several drafts; this was the only one requested.</p>
+  <details class="c-lesson"><summary>The prompt, as sent</summary><div>{{INCLUDE:prompt-ws7}}</div></details>
+  <details class="c-lesson"><summary>The AI draft, unedited (version 1)</summary><div><div class="c-draft">{{INCLUDE:draft-ws7}}</div></div></details>
+
+  <h2>3. How I reviewed it</h2>
+  <p class="prose">One read cannot catch everything, so I reviewed in six passes, each with its own question:</p>
+  <ol class="prose">
+    <li><strong>Accuracy and sources.</strong> Is every fact true, and can I show where it comes from? I checked the beaver facts against three wildlife agency pages and one peer-reviewed study (source log below).</li>
+    <li><strong>Alignment.</strong> Do the objective, practice, questions and exit ticket all measure the same thing? Are the standards quoted correctly?</li>
+    <li><strong>Pedagogy and clarity.</strong> Could a teacher run this tomorrow without guessing? Can a Grade 4 student do each task in the time given?</li>
+    <li><strong>Accessibility and bias.</strong> Does any task depend on color, vision, or one kind of response? Is anything one-sided or culturally narrow?</li>
+    <li><strong>Specification and style.</strong> Does it match the brief (about 300 words) and house style?</li>
+    <li><strong>Print proof.</strong> Does the final student handout lay out cleanly on paper?</li>
+  </ol>
+
+  <h2 id="log">4. Issue log</h2>
+  <p class="prose">Severity: <span class="c-sev critical">Critical</span> would mislead students or make the lesson unusable. <span class="c-sev major">Major</span> weakens learning or assessment and must be fixed before release. <span class="c-sev minor">Minor</span> should be fixed but does not change what students learn.</p>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">ID</th><th scope="col">Location</th><th scope="col">Category</th><th scope="col">Severity</th><th scope="col">Issue</th><th scope="col">Fix</th></tr></thead>
+    <tbody>
+      <tr id="e1"><td>E1</td><td>Passage ¶6</td><td>Accuracy</td><td><span class="c-sev major">Major</span></td><td>"Some people once thought beavers caused problems" implies the problems are only a past belief. Beaver dams still flood roads and land today (CT DEEP).</td><td>State both sides: ponds can flood roads or fields and need managing, and they also help the land.</td></tr>
+      <tr><td>E2</td><td>Passage ¶3</td><td>Accuracy</td><td><span class="c-sev minor">Minor</span></td><td>"Beavers cannot hibernate" suggests an inability. Sources say they do not hibernate.</td><td>"Beavers do not hibernate."</td></tr>
+      <tr><td>E3</td><td>Passage ¶2</td><td>Accuracy</td><td><span class="c-sev minor">Minor</span></td><td>"Usually build dams across slow-moving streams" is not supported by any source I checked.</td><td>"Beavers build dams across streams and creeks."</td></tr>
+      <tr><td>E4</td><td>Vocabulary</td><td>Accuracy</td><td><span class="c-sev minor">Minor</span></td><td>"Wetland… wet for most of the year." Many wetlands are wet only part of the year.</td><td>"Wet for all or part of the year."</td></tr>
+      <tr><td>E5</td><td>Differentiation</td><td>Accuracy</td><td><span class="c-sev minor">Minor</span></td><td>Calls "nature's engineers" an idiom. It is a metaphor, and the scientific term is "ecosystem engineers."</td><td>Teach it as a metaphor; use the scientific term in the passage.</td></tr>
+      <tr><td>E6</td><td>Standards</td><td>Accuracy</td><td><span class="c-sev minor">Minor</span></td><td>RI.4.4 is misquoted ("words and phrases"; the standard says "words or phrases").</td><td>Quote standards verbatim from the source.</td></tr>
+      <tr id="e7"><td>E7</td><td>Question 3</td><td>Clarity</td><td><span class="c-sev major">Major</span></td><td>Refers to "the section titled 'The changes beavers make do not stop with their own homes.'" The passage has no section titles; that is the first sentence of paragraph 5. Students would hunt for a heading that does not exist.</td><td>Number the paragraphs and ask about paragraph 5.</td></tr>
+      <tr id="e8"><td>E8</td><td>Question 4</td><td>Alignment</td><td><span class="c-sev major">Major</span></td><td>Asks students to use context clues for "transform," but the vocabulary step already models exactly that word and clue. The item measures recall of the modeled answer, not independent use of context (L.4.4a).</td><td>Assess a word that was not pre-taught and has a clear context clue: "pantry" in ¶3.</td></tr>
+      <tr><td>E9</td><td>Standards</td><td>Alignment</td><td><span class="c-sev major">Major</span></td><td>Six standards are listed for one 45-minute lesson, but the objective addresses only one. The list signals coverage it does not deliver.</td><td>Two focus standards (RI.4.3, RI.4.1) and two supporting (L.4.4a, SL.4.1).</td></tr>
+      <tr><td>E10</td><td>Practice</td><td>Alignment</td><td><span class="c-sev major">Major</span></td><td>The practice task is a summary (RI.4.2). The objective is to explain how beavers change their environment and how that helps others. Students never practice the objective before the exit ticket asks for it.</td><td>Replace with a cause-and-effect chain and a short written explanation.</td></tr>
+      <tr><td>E11</td><td>Objective</td><td>Alignment</td><td><span class="c-sev minor">Minor</span></td><td>"Change their environment by building dams and lodges." In the passage, lodges do not change the environment; dams do.</td><td>"By building dams."</td></tr>
+      <tr><td>E12</td><td>Reading step</td><td>Pedagogy</td><td><span class="c-sev major">Major</span></td><td>In 12 minutes of silent reading, students must underline the main idea of six paragraphs and place two kinds of sticky notes. Too many tasks on a first read, and main idea is not the lesson's focus.</td><td>First read for the gist; second read to mark two kinds of evidence.</td></tr>
+      <tr><td>E13</td><td>Exit ticket</td><td>Pedagogy</td><td><span class="c-sev minor">Minor</span></td><td>A 4-point scale for two short answers, with "missing" scored as 1 point.</td><td>A 2-point scale per answer; no response scores 0.</td></tr>
+      <tr><td>E14</td><td>Answer key Q1</td><td>Pedagogy</td><td><span class="c-sev minor">Minor</span></td><td>Lists "a safe place to live" as a third reason, repeating the first (protection).</td><td>Two distinct reasons: safety and food storage.</td></tr>
+      <tr><td>E15</td><td>Opening</td><td>Clarity</td><td><span class="c-sev minor">Minor</span></td><td>Uses a photo of a beaver dam that is not in the materials list.</td><td>Add it to materials, with alt text for projection.</td></tr>
+      <tr><td>E16</td><td>Vocabulary step</td><td>Clarity</td><td><span class="c-sev minor">Minor</span></td><td>Students note "the page and sentence" for each word; the passage is one page.</td><td>"Paragraph number."</td></tr>
+      <tr><td>E17</td><td>Reading step</td><td>Accessibility</td><td><span class="c-sev minor">Minor</span></td><td>Two colors of sticky notes are the only way the two kinds of evidence are told apart. This fails for students with color-vision differences.</td><td>Mark with letters: C for a change, H for who it helps.</td></tr>
+      <tr><td>E18</td><td>Passage</td><td>Sources</td><td><span class="c-sev major">Major</span></td><td>No sources for facts students will repeat: food caches, flood reduction, sediment trapping, orange teeth.</td><td>Source log added (below); every fact traced to a source.</td></tr>
+      <tr><td>E19</td><td>Passage</td><td>Specification</td><td><span class="c-sev minor">Minor</span></td><td>The brief asked for about 300 words. The draft is 363 and says "approximately 350."</td><td>Trimmed to 319 words.</td></tr>
+      <tr><td>E20</td><td>Passage</td><td>Production</td><td><span class="c-sev minor">Minor</span></td><td>"(Word count: approximately 350)" is left inside the student-facing text.</td><td>Removed.</td></tr>
+      <tr><td>E21</td><td>Standards</td><td>Style</td><td><span class="c-sev minor">Minor</span></td><td>Code style "L.4.4.a" does not match house style "L.4.4a."</td><td>Standardized.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose muted">Checked with no issue found: bias and representation (the content is North American, which matches the brief), timing (sections add to 45 minutes), tone, and the accuracy of the lodge, predator and teeth facts.</p>
+
+  <h2>5. What the log shows</h2>
+  <div class="c-bars" role="img" aria-label="Issues by category: Accuracy 6, Alignment 4, Clarity 3, Pedagogy 3, Sources 1, Specification 1, Production 1, Accessibility 1, Style 1">
+    <div class="c-bar"><span>Accuracy</span><span class="track"><span class="fill" style="width:100%;display:block"></span></span><span>6</span></div>
+    <div class="c-bar"><span>Alignment</span><span class="track"><span class="fill" style="width:66.7%;display:block"></span></span><span>4</span></div>
+    <div class="c-bar"><span>Clarity</span><span class="track"><span class="fill" style="width:50%;display:block"></span></span><span>3</span></div>
+    <div class="c-bar"><span>Pedagogy</span><span class="track"><span class="fill" style="width:50%;display:block"></span></span><span>3</span></div>
+    <div class="c-bar"><span>Sources, spec, production</span><span class="track"><span class="fill" style="width:50%;display:block"></span></span><span>3</span></div>
+    <div class="c-bar"><span>Accessibility, style</span><span class="track"><span class="fill" style="width:33.3%;display:block"></span></span><span>2</span></div>
+  </div>
+  <p class="prose">The draft's errors were mostly small facts stated a little too confidently, and the pieces of the lesson not lining up with each other. Four of the seven major issues are about alignment or clarity, not facts. That pattern matters for a QA process: a fact-check alone would have passed this lesson with its two weakest questions intact.</p>
+
+  <h2>6. Redline: selected changes</h2>
+  <p class="prose">Deletions are struck through and insertions are underlined. Issue numbers link to the log.</p>
+  <h3>Passage, paragraph 3</h3>
+  <p class="c-passage">Why do beavers go to all this trouble? A <del class="c-del">deeper</del><ins class="c-ins">deep</ins> pond is a safer place to live. Water helps protect beavers from predators such as wolves, coyotes<del class="c-del">,</del> and bears. The pond <del class="c-del">also gives beavers a place to store food</del><ins class="c-ins">is also a pantry</ins>. Beavers <del class="c-del">cannot</del><ins class="c-ins">do not</ins> hibernate<a class="c-issue" href="#log">E2</a>, so <ins class="c-ins">in autumn</ins> they <del class="c-del">stash tree</del><ins class="c-ins">push</ins> branches <ins class="c-ins">into</ins> <del class="c-del">in</del> the mud at the bottom of the pond. <del class="c-del">They can swim to this underwater pantry and eat all winter long.</del><ins class="c-ins">In winter, they swim under the ice to eat them.</ins><a class="c-issue" href="#e8">E8</a></p>
+  <h3>Passage, paragraph 6</h3>
+  <p class="c-passage"><del class="c-del">Some people once thought beavers caused problems, but scientists now understand that these builders can help the land.</del><ins class="c-ins">Beaver ponds can cause problems, too. Sometimes they flood roads or fields, and people have to manage them. But scientists have found that beaver ponds also help the land.</ins><a class="c-issue" href="#e1">E1</a> <del class="c-del">Ponds</del><ins class="c-ins">They</ins> slow down rushing water, which can reduce flooding downstream. <del class="c-del">Wetlands also hold water during dry months, and they can filter out dirt</del><ins class="c-ins">They store water for dry months, and they trap mud</ins> before it reaches rivers.</p>
+  <h3>Question 3</h3>
+  <p class="c-passage"><del class="c-del">What is the main idea of the section titled "The changes beavers make do not stop with their own homes"?</del><ins class="c-ins">Reread paragraph 5. How does a beaver pond help other living things?</ins><a class="c-issue" href="#e7">E7</a> Support your answer with two details from the text.</p>
+  <h3>Question 4</h3>
+  <p class="c-passage"><del class="c-del">The author uses the word "transform" in the last paragraph.</del><ins class="c-ins">In paragraph 3, the author says the pond "is also a pantry."</ins> Using context clues, explain what <del class="c-del">"transform"</del><ins class="c-ins">"pantry"</ins> means<ins class="c-ins"> and which words helped you</ins>.<a class="c-issue" href="#e8">E8</a></p>
+
+  <h2>7. Revision cycle</h2>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Version</th><th scope="col">What changed</th><th scope="col">Check before moving on</th></tr></thead>
+    <tbody>
+      <tr><td>v1</td><td>AI draft, unedited</td><td>Six review passes; 21 issues logged</td></tr>
+      <tr><td>v2</td><td>All 21 fixes made; passage rewritten where facts or balance changed; practice task and two questions replaced</td><td>Re-read against the log: every issue closed or justified</td></tr>
+      <tr><td>v3</td><td>Second pass on v2. Re-checked every answer key against the revised passage (Q1 now matches the rewritten paragraph 3, and Q4 has its context clue in the sentences right after the word). Recounted words and re-ran the readability estimate. Confirmed no new fact was added without a source.</td><td>Print proof of the student handout</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>8. Clean final (version 3)</h2>
+  <details class="c-lesson" open><summary>The Busy Builders: Grade 4 lesson, 45 minutes</summary><div>
+    <p><strong>Focus standards:</strong> RI.4.3 Explain events, procedures, ideas, or concepts in a historical, scientific, or technical text, including what happened and why, based on specific information in the text. RI.4.1 Refer to details and examples in a text when explaining what the text says explicitly and when drawing inferences from the text.<br><strong>Supporting:</strong> L.4.4a (context clues), SL.4.1 (collaborative discussion).</p>
+    <p><strong>Objective:</strong> I can explain how beavers change their environment by building dams, and how those changes help other living things.</p>
+    <p><strong>Materials:</strong> student passage with numbered paragraphs; photo of a beaver dam (alt text: "A wall of sticks and mud across a stream, with a wide pond behind it"); vocabulary cards (dam, lodge, predator, wetland, transform); sticky notes; cause-and-effect chain organizer; exit ticket.</p>
+    <div class="c-step"><span class="t">Open · 5 min</span><div>Show the dam photo. Ask: "What do you notice? What might this animal be trying to do?" Read the objective aloud.</div></div>
+    <div class="c-step"><span class="t">Words · 7 min</span><div>Introduce the five words with student-friendly definitions. Model the context clue for <em>transform</em> in paragraph 6. Pairs find each word and note its paragraph number.</div></div>
+    <div class="c-step"><span class="t">Read · 12 min</span><div>First read for the gist: "What is this mostly about?" Second read: mark a <strong>C</strong> next to a detail about how beavers change the land and an <strong>H</strong> next to a detail about who it helps.</div></div>
+    <div class="c-step"><span class="t">Discuss · 8 min</span><div>Pairs: "How does a dam change a stream? Use a detail." Frame: "The text says ___. This shows that ___." Whole class: "Why do scientists call beavers ecosystem engineers?"</div></div>
+    <div class="c-step"><span class="t">Practice · 10 min</span><div>Complete the chain: beavers build a dam → ___ → ___ → who it helps. Then write three or four sentences explaining the chain, using two details from the text.</div></div>
+    <div class="c-step"><span class="t">Close · 3 min</span><div>Exit ticket.</div></div>
+    <h4>Passage</h4>
+    {{INCLUDE:passage-busy-builders}}
+    <p class="c-meta">319 words · Flesch–Kincaid grade estimate 4.8 (a formula estimate; qualitative review places it in the Grade 4 band: one clear structure, domain words defined in context, and familiar animals).</p>
+    <h4>Questions and answer key</h4>
+    <ol>
+      <li>According to the passage, what are two reasons beavers build dams? (RI.4.1)<br><em>Key:</em> the deep pond protects them from predators; the pond holds their winter food. Accept both ideas in any words.</li>
+      <li>Why is it helpful that the lodge entrances are underwater? (RI.4.3)<br><em>Key:</em> the family can go in and out without leaving the water, which keeps them safe from predators.</li>
+      <li>Reread paragraph 5. How does a beaver pond help other living things? Support your answer with two details. (RI.4.3, RI.4.1)<br><em>Key:</em> the pond can become a wetland where other living things find food and shelter; any two of cattails and water lilies grow, frogs, ducks, fish and turtles feed and hide, dragonflies lay eggs, herons hunt.</li>
+      <li>In paragraph 3, the author says the pond "is also a pantry." Using context clues, explain what "pantry" means and which words helped you. (L.4.4a)<br><em>Key:</em> a place to store food. Clues: beavers push branches into the mud and swim under the ice to eat them in winter.</li>
+    </ol>
+    <h4>Exit ticket (2 points each)</h4>
+    <p>1. Name one way a beaver dam changes the environment. 2. Explain how that change helps one other living thing, with a detail from the text.<br><em>2 points:</em> accurate and supported by the text. <em>1 point:</em> accurate but not supported, or partly accurate. <em>0:</em> inaccurate or no response.</p>
+  </div></details>
+
+  <h2>9. Source log</h2>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Claim in the passage</th><th scope="col">Source checked</th></tr></thead>
+    <tbody>
+      <tr><td>Beavers do not hibernate; they store branches underwater for winter</td><td>Maine Department of Inland Fisheries and Wildlife, "Beaver"; Connecticut DEEP, "Beaver" fact sheet</td></tr>
+      <tr><td>Orange front teeth used to cut trees</td><td>Maine IF&amp;W, "Beaver"</td></tr>
+      <tr><td>Lodge entrances are underwater</td><td>National Park Service, Gates of the Arctic, "Nature's Engineer"; CT DEEP; Maine IF&amp;W</td></tr>
+      <tr><td>Predators include wolves, coyotes and bears</td><td>CT DEEP (coyote; timber wolf historically); Maine IF&amp;W (black bears, coyote); NPS (bears)</td></tr>
+      <tr><td>Ponds and wetlands provide habitat for many animals and plants</td><td>CT DEEP; Maine IF&amp;W</td></tr>
+      <tr><td>Beaver ponds can flood roads and land</td><td>CT DEEP</td></tr>
+      <tr><td>Ponds store water and trap sediment</td><td>CT DEEP ("filter and trap sediments… serve as water storage")</td></tr>
+      <tr><td>Beaver activity can reduce downstream flooding</td><td>Puttock et al. (2017), which found beaver dams increased water storage and attenuated flow</td></tr>
+      <tr><td>"Ecosystem engineers"</td><td>Jones, Lawton &amp; Shachak (1994)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose muted">Full citations and links are on the <a href="references.html#ws7">references page</a>.</p>
+
+  <h2 id="proof">10. Print proof</h2>
+  <div id="proof-results">{{INCLUDE:proof-ws7}}</div>
+
+  <h2>11. What I'd do next</h2>
+  <p class="prose">Add this lesson's patterns to the team's AI-draft checklist: check that every question's location reference exists, that assessed words were not pre-taught, and that the practice task matches the objective. Those three checks would have caught three of the seven major issues before review.</p>
+  {{NEXT:ws8}}
+  {{DISCLOSURE}}
+</div>
+</section>
