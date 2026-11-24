@@ -1,0 +1,155 @@
+<!--meta {"title": "WS8 · Running a Curriculum Release: An Editorial Operations Simulation", "desc": "A simulated curriculum release run end to end: editorial brief, QA workflow, tracker, reviewer calibration, vendor queries, change request, decision log, status updates and quality scorecard.", "nav": "work-samples.html", "pdf": "Franks-WS8-Editorial-Operations-Simulation.pdf"} -->
+<section class="c-hero">
+  <div class="container">
+    <p class="eyebrow">WS8 · Editorial operations and QA leadership</p>
+    <h1>Running a Curriculum Release</h1>
+    <p>How I would run quality assurance for a team of contract editors shipping one curriculum unit in print and digital. The scenario, people, dates and numbers are invented to show the method.</p>
+  </div>
+</section>
+<section class="section">
+<div class="container prose-wide">
+  <div class="c-note sim"><strong>Simulated scenario.</strong> The publisher, the editors and every number on this page are fictional. This sample shows how I would set up and run a QA process. It is not a record of a team I have led.</div>
+  <dl class="c-glance">
+    <div><dt>Role in scenario</dt><dd>Editorial QA lead</dd></div>
+    <div><dt>Scope</dt><dd>Grade 4 ELA unit: 10 lessons, assessment, student book pages, digital slides</dd></div>
+    <div><dt>Team</dt><dd>4 contract editors, 1 proofreader, typesetting vendor</dd></div>
+    <div><dt>Timeline</dt><dd>3 weeks to print-ready files</dd></div>
+    <div><dt>Label</dt><dd>{{LABEL:sim}}</dd></div>
+  </dl>
+  <div class="c-look"><strong>Look at this first:</strong> the <a href="#calibration">reviewer calibration guide</a>. Inconsistent severity ratings across contractors are the most common reason QA data cannot be trusted, and this is how I would prevent it.</div>
+
+  <h2>1. Editorial brief</h2>
+  <div class="table-scroll"><table class="c-table"><tbody>
+    <tr><th scope="row">Deliverable</th><td>Grade 4 Unit 3, "Nature's Engineers": teacher guide (10 lessons), 24 student book pages, end-of-unit assessment, 10 slide decks</td></tr>
+    <tr><th scope="row">Quality bar</th><td>Zero critical and zero major issues at print release; minor issues under 1 per page; all standards quoted verbatim; all facts sourced</td></tr>
+    <tr><th scope="row">Style</th><td>House style guide v4 plus the unit glossary; Chicago for anything the guide does not cover</td></tr>
+    <tr><th scope="row">Accessibility</th><td>Digital: WCAG 2.2 AA as the reference checklist; alt text for every image; no meaning carried by color alone. Print: minimum 12 pt body text in student pages</td></tr>
+    <tr><th scope="row">Out of scope</th><td>Changing the scope and sequence; new texts (any request goes through change control)</td></tr>
+    <tr><th scope="row">Dates</th><td>Week 1 content review · Week 2 revisions and first proofs · Week 3 second proofs and print release</td></tr>
+  </tbody></table></div>
+
+  <h2>2. QA workflow and checkpoints</h2>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Stage</th><th scope="col">Owner</th><th scope="col">Entry criteria</th><th scope="col">Checks</th><th scope="col">Exit criteria</th></tr></thead>
+    <tbody>
+      <tr><td>0. Kickoff and calibration</td><td>QA lead</td><td>Brief signed off</td><td>Calibration exercise; agreement on severity</td><td>Reviewers within one severity level on 9 of 10 samples</td></tr>
+      <tr><td>1. Content review</td><td>Editors A–D, one lesson set each</td><td>Manuscript locked</td><td>Accuracy and sources; alignment; pedagogy; bias</td><td>Every issue logged with category and severity</td></tr>
+      <tr><td>2. Cross-check</td><td>Editors swap 20% of each other's lessons</td><td>Stage 1 logs complete</td><td>Second-reader sample for missed issues</td><td>Miss rate recorded; recalibrate if over 15%</td></tr>
+      <tr><td>3. Author revisions</td><td>Writers, with queries from QA lead</td><td>Consolidated query list</td><td>Each query answered or escalated</td><td>All critical and major issues closed</td></tr>
+      <tr><td>4. First proofs</td><td>Proofreader + editor of record</td><td>Typeset pages received</td><td>Text matches manuscript; layout; art and captions; page references</td><td>Corrections marked; vendor query sent</td></tr>
+      <tr><td>5. Second proofs</td><td>Proofreader</td><td>Corrections returned</td><td>Every correction verified; no new errors introduced</td><td>Zero critical or major; signed print release</td></tr>
+      <tr><td>6. Digital check</td><td>Editor C</td><td>Slides exported</td><td>Accessibility checklist; links; slide numbering</td><td>Checklist complete</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>3. Tracker</h2>
+  <p class="prose">A snapshot at the end of week 2, day 3. In practice this lives in a shared sheet or a project tool; the columns are what matter.</p>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Component</th><th scope="col">Editor</th><th scope="col">Stage</th><th scope="col">Open crit/maj/min</th><th scope="col">Due</th><th scope="col">Status</th></tr></thead>
+    <tbody>
+      <tr><td>Lessons 1–3</td><td>Editor A</td><td>4. First proofs</td><td>0 / 0 / 3</td><td>Wk 2 Thu</td><td>On track</td></tr>
+      <tr><td>Lessons 4–6</td><td>Editor B</td><td>3. Author revisions</td><td>0 / 2 / 5</td><td>Wk 2 Wed</td><td>At risk: two queries unanswered</td></tr>
+      <tr><td>Lessons 7–10</td><td>Editor C</td><td>4. First proofs</td><td>0 / 0 / 6</td><td>Wk 2 Thu</td><td>On track</td></tr>
+      <tr><td>Assessment</td><td>Editor D</td><td>3. Author revisions</td><td>1 / 1 / 2</td><td>Wk 2 Wed</td><td>Blocked: key error (see decision log)</td></tr>
+      <tr><td>Student pages 1–24</td><td>Proofreader</td><td>4. First proofs</td><td>0 / 3 / 11</td><td>Wk 2 Fri</td><td>On track</td></tr>
+      <tr><td>Slide decks 1–10</td><td>Editor C</td><td>6. Digital check</td><td>0 / 1 / 8</td><td>Wk 3 Mon</td><td>Not started</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="calibration">4. Reviewer calibration guide</h2>
+  <p class="prose">Before reviewing, every editor rates the same ten sample issues alone, then we compare. Where ratings differ by more than one level, we discuss until we agree on the rule, and the rule goes into this guide.</p>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Severity</th><th scope="col">Rule</th><th scope="col">Example</th></tr></thead>
+    <tbody>
+      <tr><td><span class="c-sev critical">Critical</span></td><td>A student or teacher would learn something false, an assessment would score wrongly, or content could cause harm or legal exposure.</td><td>Wrong answer key; a factual error in a passage; an image used without permission.</td></tr>
+      <tr><td><span class="c-sev major">Major</span></td><td>Weakens learning or assessment, or would confuse most users, but does not teach an error.</td><td>A question refers to a heading that does not exist; practice that does not match the objective; a standard misquoted.</td></tr>
+      <tr><td><span class="c-sev minor">Minor</span></td><td>Should be fixed for quality and consistency; does not change what students learn.</td><td>Style inconsistency; a missing item in a materials list; slide number off by one.</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Calibration exercise results (simulated)</h3>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Sample issue</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">Agreed</th><th scope="col">Rule added</th></tr></thead>
+    <tbody>
+      <tr><td>Passage says hail falls "when the air is very cold"</td><td>Maj</td><td>Crit</td><td>Crit</td><td>Min</td><td>Critical</td><td>Any fact students would learn wrongly is critical, even if it is one clause.</td></tr>
+      <tr><td>Footer text contrast 4.27:1 on a slide</td><td>Min</td><td>Min</td><td>Maj</td><td>Min</td><td>Major (digital)</td><td>Fails a WCAG AA check on student-facing material: major in digital, minor in teacher-only notes.</td></tr>
+      <tr><td>Vocabulary item tests a word taught in the lesson</td><td>Min</td><td>Maj</td><td>Maj</td><td>Maj</td><td>Major</td><td>An item that measures recall of a lesson instead of the skill is a validity issue: major.</td></tr>
+      <tr><td>"L.4.4.a" instead of house style "L.4.4a"</td><td>Min</td><td>Min</td><td>Min</td><td>Min</td><td>Minor</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose muted">The sample issues are real issues from <a href="ws7-editorial-qa.html">WS7</a> and <a href="ws10-ai-evaluation.html">WS10</a>. The editors' ratings are simulated.</p>
+
+  <h2>5. Vendor and author query templates</h2>
+  <div class="grid grid-2">
+    <div class="c-card"><h3>Author query</h3><p><strong>Query ID:</strong> AQ-U3-L5-02<br><strong>Location:</strong> Lesson 5, step 3, paragraph 2<br><strong>Issue:</strong> The text says the story "never states" what the white cloud is; the teacher note on page 47 states it directly. Students reading the teacher-facing slide would see the answer.<br><strong>Question:</strong> Can we move the note to the speaker notes only?<br><strong>Needed by:</strong> Wed 12:00 · <strong>Severity:</strong> Major</p></div>
+    <div class="c-card"><h3>Typesetter query</h3><p><strong>Query ID:</strong> TQ-U3-SB-14<br><strong>Pages:</strong> Student book 12–13<br><strong>Issue:</strong> Paragraph numbers 4–6 are missing on page 13, but Questions 3 and 4 refer to them.<br><strong>Requested fix:</strong> Restore paragraph numbers in the left margin, same style as page 12.<br><strong>Return by:</strong> Thu proofs · <strong>Severity:</strong> Major</p></div>
+    <div class="c-card"><h3>Permissions and art query</h3><p><strong>Query ID:</strong> PQ-U3-07<br><strong>Item:</strong> Beaver dam photo, Lesson 1<br><strong>Issue:</strong> Credit line missing; source and license not recorded in the rights log.<br><strong>Request:</strong> Confirm source and license or replace with a public-domain image; send the credit line.<br><strong>Severity:</strong> Critical until resolved</p></div>
+    <div class="c-card"><h3>Escalation</h3><p>Any query not answered by its deadline goes to the managing editor in the daily status note with the impact on the release date. Two missed deadlines from one vendor trigger a call, not another email.</p></div>
+  </div>
+
+  <h2>6. Change request</h2>
+  <div class="table-scroll"><table class="c-table"><tbody>
+    <tr><th scope="row">Request</th><td>CR-03: Replace Text 5 ("When Engineers Cause Trouble") with a shorter text for Grade 4.</td></tr>
+    <tr><th scope="row">Requested by</th><td>Pilot teacher feedback via product team</td></tr>
+    <tr><th scope="row">Impact</th><td>Affects Lesson 6, assessment items 17 and 18, the synthesis chart in Lesson 7. New text needs fact check and rights clearance. Estimated 3 editor days; pushes print release by 4 days.</td></tr>
+    <tr><th scope="row">Alternatives</th><td>(a) Keep the text; add a chunked reading guide (1 day, no date change). (b) Replace after this print run, in the digital version first.</td></tr>
+    <tr><th scope="row">Recommendation</th><td>Option (a) now, (b) for the next revision. The text is a deliberate stretch text and the unit's knowledge progression depends on it.</td></tr>
+    <tr><th scope="row">Decision</th><td>Approved: option (a). Logged as D-05.</td></tr>
+  </tbody></table></div>
+
+  <h2>7. Decision log</h2>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">ID</th><th scope="col">Date</th><th scope="col">Decision</th><th scope="col">Why</th><th scope="col">Owner</th></tr></thead>
+    <tbody>
+      <tr><td>D-01</td><td>Wk 1 Mon</td><td>Severity rules adopted from calibration</td><td>Ratings varied by two levels on 3 of 10 samples</td><td>QA lead</td></tr>
+      <tr><td>D-02</td><td>Wk 1 Thu</td><td>All readability levels reported as estimates; no Lexile claims without an official measure</td><td>Two lessons stated Lexile numbers with no source</td><td>QA lead</td></tr>
+      <tr><td>D-03</td><td>Wk 2 Mon</td><td>Assessment held at Stage 3 until item 14 key is fixed</td><td>Key marked the wrong Part B sentence (critical)</td><td>Editor D</td></tr>
+      <tr><td>D-04</td><td>Wk 2 Tue</td><td>Cross-check sample raised from 20% to 30% for Lessons 4–6</td><td>Second reader found a 22% miss rate</td><td>QA lead</td></tr>
+      <tr><td>D-05</td><td>Wk 2 Wed</td><td>CR-03 option (a): keep Text 5, add a chunked reading guide</td><td>Protects date and knowledge progression</td><td>Managing editor</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>8. Status updates</h2>
+  <div class="c-passage" style="font-family:inherit;font-size:.97rem">
+    <p><strong>Subject: Unit 3 QA status, end of week 1: on track, one risk</strong></p>
+    <p><strong>Summary:</strong> Content review is complete for all lessons and the assessment. We logged 142 issues: 2 critical, 19 major, 121 minor. Print release date holds.</p>
+    <p><strong>Risk:</strong> Lessons 4–6 have two unanswered author queries due Wednesday. If they slip past Thursday, first proofs for those lessons move a day. I'll confirm Thursday morning.</p>
+    <p><strong>Decision needed:</strong> none this week.</p>
+    <p><strong>Pattern worth knowing:</strong> 11 of the 19 major issues are practice tasks that don't match the lesson objective. I've added a check for this to the writer checklist for Unit 4.</p>
+  </div>
+  <div class="c-passage" style="font-family:inherit;font-size:.97rem">
+    <p><strong>Subject: Unit 3 QA status, mid-week 2: assessment blocked, date at risk by 1 day</strong></p>
+    <p><strong>Summary:</strong> Lessons and student pages are on track for Friday proofs. The assessment is blocked: item 14's answer key marks the wrong evidence sentence. Editor D has the fix; I need the item writer to confirm by noon tomorrow.</p>
+    <p><strong>Decision needed by Thursday:</strong> if the item writer can't confirm, do we (a) ship with item 14 removed and rescore out of 29, or (b) hold the assessment one day? I recommend (b).</p>
+  </div>
+
+  <h2>9. Quality scorecard (simulated data)</h2>
+  <div class="table-scroll"><table class="c-table">
+    <thead><tr><th scope="col">Measure</th><th scope="col">Definition</th><th scope="col">Target</th><th scope="col">Result</th></tr></thead>
+    <tbody>
+      <tr><td>Issues found before proofs</td><td>Share of all issues caught at Stages 1–3</td><td>85% or more</td><td>88% (142 of 161)</td></tr>
+      <tr><td>Escape rate</td><td>Critical or major issues found after print release, per 100 pages</td><td>0</td><td>0 (tracked for 60 days)</td></tr>
+      <tr><td>Reviewer miss rate</td><td>Issues found by the second reader in the cross-check sample</td><td>Under 15%</td><td>12% overall; 22% for Lessons 4–6 before D-04</td></tr>
+      <tr><td>First-pass yield</td><td>Components that passed second proofs with no new errors</td><td>90%</td><td>83% (5 of 6)</td></tr>
+      <tr><td>Query turnaround</td><td>Median time for author and vendor queries</td><td>Under 24 hours</td><td>19 hours</td></tr>
+      <tr><td>On-time release</td><td>Print files delivered by the agreed date</td><td>Yes</td><td>One day late (D-03)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>Retrospective, three actions:</strong> add "practice matches objective" and "assessed words not pre-taught" to the writer checklist; keep the 30% cross-check for any lesson set with a miss rate over 15%; move the assessment key check to Stage 1 so it can't block proofs.</p>
+
+  <h2>10. Print proofing checklist</h2>
+  <ul class="check-list prose">
+    <li>Text on the page matches the approved manuscript, word for word, in a side-by-side check.</li>
+    <li>Paragraph numbers, page references and question references all match.</li>
+    <li>No widows or orphans in student passages; no passage split mid-sentence across a spread.</li>
+    <li>Every image has a credit line matching the rights log; captions are correct.</li>
+    <li>Running heads, folios and lesson numbers are correct and in sequence.</li>
+    <li>Answer keys match the items as typeset, including option order.</li>
+    <li>Every correction from first proofs is made, and nothing else changed.</li>
+  </ul>
+
+  <h2>11. How I would lead the team</h2>
+  <p class="prose">My leadership experience is as an academic leader: I have run curriculum and academic audit processes across campuses as a chief academic officer and dean, and I have managed teachers and staff. I have not managed a team of contract editors. This simulation shows how I would apply the same habits to one: agree on the rules before the work starts, make every issue visible in one place, give each contractor clear deadlines and fast answers, review a sample of everyone's work, and report risks early with a recommendation rather than a surprise.</p>
+  {{NEXT:ws9}}
+  {{DISCLOSURE}}
+</div>
+</section>
